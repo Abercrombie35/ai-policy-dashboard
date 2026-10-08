@@ -1,59 +1,60 @@
-import { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
+import USMap from './components/USMap';
 import StateView from './components/StateView';
 import './styles.css';
 
-const states = [
-  { abbr: 'WA', name: 'Washington', col: 1, row: 1, region: 'West', party: 'Democratic' },
-  { abbr: 'OR', name: 'Oregon', col: 2, row: 1, region: 'West', party: 'Democratic' },
-  { abbr: 'CA', name: 'California', col: 3, row: 2, region: 'West', party: 'Democratic' },
-  { abbr: 'NV', name: 'Nevada', col: 4, row: 2, region: 'West', party: 'Republican' },
-  { abbr: 'ID', name: 'Idaho', col: 5, row: 1, region: 'West', party: 'Republican' },
-  { abbr: 'MT', name: 'Montana', col: 6, row: 1, region: 'Mountain', party: 'Republican' },
-  { abbr: 'WY', name: 'Wyoming', col: 6, row: 2, region: 'Mountain', party: 'Republican' },
-  { abbr: 'UT', name: 'Utah', col: 5, row: 3, region: 'Mountain', party: 'Republican' },
-  { abbr: 'AZ', name: 'Arizona', col: 4, row: 3, region: 'Mountain', party: 'Republican' },
-  { abbr: 'CO', name: 'Colorado', col: 6, row: 3, region: 'Mountain', party: 'Democratic' },
-  { abbr: 'NM', name: 'New Mexico', col: 5, row: 4, region: 'Mountain', party: 'Democratic' },
-  { abbr: 'TX', name: 'Texas', col: 7, row: 4, region: 'South', party: 'Republican' },
-  { abbr: 'OK', name: 'Oklahoma', col: 7, row: 3, region: 'South', party: 'Republican' },
-  { abbr: 'KS', name: 'Kansas', col: 7, row: 2, region: 'Midwest', party: 'Republican' },
-  { abbr: 'NE', name: 'Nebraska', col: 7, row: 1, region: 'Midwest', party: 'Republican' },
-  { abbr: 'SD', name: 'South Dakota', col: 7, row: 2, region: 'Midwest', party: 'Republican' },
-  { abbr: 'ND', name: 'North Dakota', col: 7, row: 1, region: 'Midwest', party: 'Republican' },
-  { abbr: 'MN', name: 'Minnesota', col: 8, row: 1, region: 'Midwest', party: 'Democratic' },
-  { abbr: 'IA', name: 'Iowa', col: 8, row: 2, region: 'Midwest', party: 'Republican' },
-  { abbr: 'MO', name: 'Missouri', col: 8, row: 3, region: 'Midwest', party: 'Republican' },
-  { abbr: 'WI', name: 'Wisconsin', col: 8, row: 1, region: 'Midwest', party: 'Democratic' },
-  { abbr: 'IL', name: 'Illinois', col: 9, row: 2, region: 'Midwest', party: 'Democratic' },
-  { abbr: 'MI', name: 'Michigan', col: 9, row: 1, region: 'Midwest', party: 'Democratic' },
-  { abbr: 'IN', name: 'Indiana', col: 9, row: 3, region: 'Midwest', party: 'Republican' },
-  { abbr: 'OH', name: 'Ohio', col: 9, row: 2, region: 'Midwest', party: 'Republican' },
-  { abbr: 'KY', name: 'Kentucky', col: 9, row: 4, region: 'South', party: 'Republican' },
-  { abbr: 'WV', name: 'West Virginia', col: 9, row: 5, region: 'South', party: 'Republican' },
-  { abbr: 'VA', name: 'Virginia', col: 10, row: 5, region: 'South', party: 'Democratic' },
-  { abbr: 'NC', name: 'North Carolina', col: 10, row: 4, region: 'South', party: 'Republican' },
-  { abbr: 'SC', name: 'South Carolina', col: 10, row: 3, region: 'South', party: 'Republican' },
-  { abbr: 'GA', name: 'Georgia', col: 10, row: 2, region: 'South', party: 'Democratic' },
-  { abbr: 'FL', name: 'Florida', col: 11, row: 4, region: 'South', party: 'Republican' },
-  { abbr: 'AL', name: 'Alabama', col: 10, row: 1, region: 'South', party: 'Republican' },
-  { abbr: 'MS', name: 'Mississippi', col: 9, row: 6, region: 'South', party: 'Republican' },
-  { abbr: 'TN', name: 'Tennessee', col: 8, row: 4, region: 'South', party: 'Republican' },
-  { abbr: 'AR', name: 'Arkansas', col: 8, row: 5, region: 'South', party: 'Republican' },
-  { abbr: 'LA', name: 'Louisiana', col: 8, row: 6, region: 'South', party: 'Republican' },
-  { abbr: 'AK', name: 'Alaska', col: 1, row: 6, region: 'West', party: 'Republican' },
-  { abbr: 'HI', name: 'Hawaii', col: 3, row: 7, region: 'West', party: 'Democratic' },
-  { abbr: 'ME', name: 'Maine', col: 11, row: 1, region: 'Northeast', party: 'Democratic' },
-  { abbr: 'VT', name: 'Vermont', col: 11, row: 2, region: 'Northeast', party: 'Democratic' },
-  { abbr: 'NH', name: 'New Hampshire', col: 11, row: 3, region: 'Northeast', party: 'Democratic' },
-  { abbr: 'MA', name: 'Massachusetts', col: 11, row: 4, region: 'Northeast', party: 'Democratic' },
-  { abbr: 'CT', name: 'Connecticut', col: 11, row: 5, region: 'Northeast', party: 'Democratic' },
-  { abbr: 'RI', name: 'Rhode Island', col: 11, row: 6, region: 'Northeast', party: 'Democratic' },
-  { abbr: 'NJ', name: 'New Jersey', col: 10, row: 6, region: 'Northeast', party: 'Democratic' },
-  { abbr: 'NY', name: 'New York', col: 10, row: 7, region: 'Northeast', party: 'Democratic' },
-  { abbr: 'PA', name: 'Pennsylvania', col: 9, row: 4, region: 'Northeast', party: 'Democratic' },
-  { abbr: 'MD', name: 'Maryland', col: 10, row: 5, region: 'South', party: 'Democratic' },
-  { abbr: 'DE', name: 'Delaware', col: 10, row: 6, region: 'South', party: 'Democratic' },
-  { abbr: 'DC', name: 'D.C.', col: 10, row: 7, region: 'South', party: 'Democratic' },
+const stateMetadata = [
+  { abbr: 'WA', name: 'Washington', party: 'Democratic' },
+  { abbr: 'OR', name: 'Oregon', party: 'Democratic' },
+  { abbr: 'CA', name: 'California', party: 'Democratic' },
+  { abbr: 'NV', name: 'Nevada', party: 'Republican' },
+  { abbr: 'ID', name: 'Idaho', party: 'Republican' },
+  { abbr: 'MT', name: 'Montana', party: 'Republican' },
+  { abbr: 'WY', name: 'Wyoming', party: 'Republican' },
+  { abbr: 'UT', name: 'Utah', party: 'Republican' },
+  { abbr: 'AZ', name: 'Arizona', party: 'Republican' },
+  { abbr: 'CO', name: 'Colorado', party: 'Democratic' },
+  { abbr: 'NM', name: 'New Mexico', party: 'Democratic' },
+  { abbr: 'TX', name: 'Texas', party: 'Republican' },
+  { abbr: 'OK', name: 'Oklahoma', party: 'Republican' },
+  { abbr: 'KS', name: 'Kansas', party: 'Republican' },
+  { abbr: 'NE', name: 'Nebraska', party: 'Republican' },
+  { abbr: 'SD', name: 'South Dakota', party: 'Republican' },
+  { abbr: 'ND', name: 'North Dakota', party: 'Republican' },
+  { abbr: 'MN', name: 'Minnesota', party: 'Democratic' },
+  { abbr: 'IA', name: 'Iowa', party: 'Republican' },
+  { abbr: 'MO', name: 'Missouri', party: 'Republican' },
+  { abbr: 'WI', name: 'Wisconsin', party: 'Democratic' },
+  { abbr: 'IL', name: 'Illinois', party: 'Democratic' },
+  { abbr: 'MI', name: 'Michigan', party: 'Democratic' },
+  { abbr: 'IN', name: 'Indiana', party: 'Republican' },
+  { abbr: 'OH', name: 'Ohio', party: 'Republican' },
+  { abbr: 'KY', name: 'Kentucky', party: 'Republican' },
+  { abbr: 'WV', name: 'West Virginia', party: 'Republican' },
+  { abbr: 'VA', name: 'Virginia', party: 'Democratic' },
+  { abbr: 'NC', name: 'North Carolina', party: 'Republican' },
+  { abbr: 'SC', name: 'South Carolina', party: 'Republican' },
+  { abbr: 'GA', name: 'Georgia', party: 'Democratic' },
+  { abbr: 'FL', name: 'Florida', party: 'Republican' },
+  { abbr: 'AL', name: 'Alabama', party: 'Republican' },
+  { abbr: 'MS', name: 'Mississippi', party: 'Republican' },
+  { abbr: 'TN', name: 'Tennessee', party: 'Republican' },
+  { abbr: 'AR', name: 'Arkansas', party: 'Republican' },
+  { abbr: 'LA', name: 'Louisiana', party: 'Republican' },
+  { abbr: 'AK', name: 'Alaska', party: 'Republican' },
+  { abbr: 'HI', name: 'Hawaii', party: 'Democratic' },
+  { abbr: 'ME', name: 'Maine', party: 'Democratic' },
+  { abbr: 'VT', name: 'Vermont', party: 'Democratic' },
+  { abbr: 'NH', name: 'New Hampshire', party: 'Democratic' },
+  { abbr: 'MA', name: 'Massachusetts', party: 'Democratic' },
+  { abbr: 'CT', name: 'Connecticut', party: 'Democratic' },
+  { abbr: 'RI', name: 'Rhode Island', party: 'Democratic' },
+  { abbr: 'NJ', name: 'New Jersey', party: 'Democratic' },
+  { abbr: 'NY', name: 'New York', party: 'Democratic' },
+  { abbr: 'PA', name: 'Pennsylvania', party: 'Democratic' },
+  { abbr: 'MD', name: 'Maryland', party: 'Democratic' },
+  { abbr: 'DE', name: 'Delaware', party: 'Democratic' },
+  { abbr: 'DC', name: 'D.C.', party: 'Democratic' },
 ];
 
 const partyOptions = ['all', 'Democratic', 'Republican'];
@@ -62,15 +63,28 @@ function App() {
   const [selectedState, setSelectedState] = useState(null);
   const [partyFilter, setPartyFilter] = useState('all');
 
+  const stateMetadataMap = useMemo(() => {
+    const map = {};
+    stateMetadata.forEach(state => {
+      map[state.abbr] = state;
+    });
+    return map;
+  }, []);
+
   const visibleStates = useMemo(() => {
-    if (partyFilter === 'all') return states;
-    return states.filter((state) => state.party === partyFilter);
+    if (partyFilter === 'all') return stateMetadata;
+    return stateMetadata.filter((state) => state.party === partyFilter);
   }, [partyFilter]);
+
+  const visibleStateAbbrs = useMemo(() => {
+    return visibleStates.map(s => s.abbr);
+  }, [visibleStates]);
 
   if (selectedState) {
     return (
       <StateView
         stateAbbr={selectedState}
+        stateName={stateMetadataMap[selectedState]?.name}
         onBack={() => setSelectedState(null)}
       />
     );
@@ -81,7 +95,7 @@ function App() {
       <header className="topbar">
         <div>
           <p className="eyebrow">Yale SOM AI Policy Dashboard</p>
-          <h1>State-by-State AI Policy Map</h1>
+          <h1>U.S. Senate AI Policy Map</h1>
         </div>
         <div className="topbar-actions">
           <button className="chip active">Live Overview</button>
@@ -95,12 +109,12 @@ function App() {
           <strong>50</strong>
         </div>
         <div className="stat-box">
-          <span className="label">Candidates profiled</span>
-          <strong>120+</strong>
+          <span className="label">Data available</span>
+          <strong>Michigan</strong>
         </div>
         <div className="stat-box">
           <span className="label">AI policy lens</span>
-          <strong>Safety + law</strong>
+          <strong>Safety + Regulation</strong>
         </div>
       </section>
 
@@ -117,18 +131,12 @@ function App() {
             </select>
           </div>
 
-          <div className="state-grid" role="img" aria-label="Map of the United States state view">
-            {visibleStates.map((state) => (
-              <button
-                key={state.abbr}
-                className={`state-button ${state.abbr === selectedState ? 'selected' : ''} ${state.party === 'Democratic' ? 'd' : 'r'}`}
-                style={{ gridColumn: state.col, gridRow: state.row }}
-                onClick={() => setSelectedState(state.abbr)}
-              >
-                {state.abbr}
-              </button>
-            ))}
-          </div>
+          <USMap
+            selectedState={selectedState}
+            visibleStates={visibleStateAbbrs}
+            stateMetadata={stateMetadataMap}
+            onStateClick={setSelectedState}
+          />
         </aside>
 
         <main className="detail-panel">
