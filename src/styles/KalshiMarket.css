@@ -1,0 +1,165 @@
+.kalshi-market {
+  background: rgba(10, 18, 28, 0.92);
+  border: 1px solid rgba(147, 177, 216, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.kalshi-market h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.kalshi-market.error {
+  color: #ff9a9a;
+}
+
+.disclaimer {
+  color: #9eb7d7;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-bottom: 24px;
+  padding: 12px 14px;
+  background: rgba(123, 181, 248, 0.06);
+  border-left: 3px solid #7bb5f8;
+  border-radius: 0 8px 8px 0;
+}
+
+.market-section {
+  margin-bottom: 24px;
+}
+
+.market-section h4 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.section-note {
+  color: #9eb7d7;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.odds-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.odds-item {
+  background: rgba(15, 31, 45, 0.5);
+  border: 1px solid rgba(147, 177, 216, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.odds-item.dem {
+  border-left: 4px solid #7bb5f8;
+}
+
+.odds-item.rep {
+  border-left: 4px solid #ff9a9a;
+}
+
+.odds-candidate {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #e5edf7;
+}
+
+.odds-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.odds-item.dem .odds-number {
+  color: #7bb5f8;
+}
+
+.odds-item.rep .odds-number {
+  color: #ff9a9a;
+}
+
+.odds-label {
+  font-size: 0.8rem;
+  color: #9eb7d7;
+  text-transform: uppercase;
+}
+
+.milestones-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.milestone-row {
+  background: rgba(15, 31, 45, 0.5);
+  border: 1px solid rgba(147, 177, 216, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.milestone-title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #e5edf7;
+}
+
+.milestone-odds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.dem-odds,
+.rep-odds {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dem-odds {
+  background: rgba(54, 113, 228, 0.12);
+  color: #7db0ff;
+}
+
+.rep-odds {
+  background: rgba(255, 99, 99, 0.12);
+  color: #ff9a9a;
+}
+
+.kalshi-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(147, 177, 216, 0.2);
+  text-align: right;
+}
+
+.kalshi-footer a {
+  color: #7bb5f8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.kalshi-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .odds-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .milestone-odds {
+    grid-template-columns: 1fr;
+  }
+}

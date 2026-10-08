@@ -1,4 +1,6 @@
 import { useMemo, useState } from 'react';
+import StateView from './components/StateView';
+import './styles.css';
 
 const states = [
   { abbr: 'WA', name: 'Washington', col: 1, row: 1, region: 'West', party: 'Democratic' },
@@ -54,85 +56,10 @@ const states = [
   { abbr: 'DC', name: 'D.C.', col: 10, row: 7, region: 'South', party: 'Democratic' },
 ];
 
-const stateProfiles = {
-  MI: {
-    race: 'Michigan Senate Race',
-    summary: 'A competitive state race where AI regulation and labor impacts are emerging as major campaign issues.',
-    candidates: [
-      {
-        name: 'Abdul El-Sayed',
-        party: 'Democratic',
-        polling: '42%',
-        aiStance: 'Strong federal AI safety rules',
-        alignment: 'Mostly aligns with progressive climate-tech agenda',
-        policyProjection: 'National AI licensing framework + robust worker protections',
-        quote: 'A.I. should be governed by public-interest standards, not just market incentives.',
-      },
-      {
-        name: 'Mike Rogers',
-        party: 'Republican',
-        polling: '39%',
-        aiStance: 'Light-touch regulation',
-        alignment: 'More skeptical of heavy federal intervention',
-        policyProjection: 'Private-sector innovation first with sector-specific safety rules',
-        quote: 'The goal is to keep America competitive without strangling innovation.',
-      },
-    ],
-  },
-  CA: {
-    race: 'California Senate Race',
-    summary: 'State-level AI policy is tied to platform accountability, data rights, and labor guarantees.',
-    candidates: [
-      {
-        name: 'Alex Padilla',
-        party: 'Democratic',
-        polling: '49%',
-        aiStance: 'Aggressive accountability and transparency',
-        alignment: 'Consistent with California tech regulation leadership',
-        policyProjection: 'Mandatory disclosure and stronger data-governance requirements',
-        quote: 'We need rules that protect consumers and workers while encouraging innovation.',
-      },
-      {
-        name: 'Mark Meuser',
-        party: 'Republican',
-        polling: '36%',
-        aiStance: 'Innovation first, limited oversight',
-        alignment: 'Reinforces a lighter regulatory posture',
-        policyProjection: 'Minimal federal intervention and emphasis on speed-to-market',
-        quote: 'The U.S. should lead in AI without overregulating the sector.',
-      },
-    ],
-  },
-  NY: {
-    race: 'New York Senate Race',
-    summary: 'AI debate is centered on privacy, labor displacement, and public sector implementation.',
-    candidates: [
-      {
-        name: 'Kirsten Gillibrand',
-        party: 'Democratic',
-        polling: '50%',
-        aiStance: 'Public-interest regulation',
-        alignment: 'Tracks with party policy focus on rights and oversight',
-        policyProjection: 'National AI oversight board + stronger consumer protections',
-        quote: 'AI governance should protect rights and place accountability on the deployers.',
-      },
-      {
-        name: 'Mike Lawler',
-        party: 'Republican',
-        polling: '34%',
-        aiStance: 'Support innovation and local flexibility',
-        alignment: 'Pushes back on broad federal mandates',
-        policyProjection: 'State-led pilots and limited federal standards',
-        quote: 'We should create a policy environment that supports innovation and entrepreneurship.',
-      },
-    ],
-  },
-};
-
 const partyOptions = ['all', 'Democratic', 'Republican'];
 
 function App() {
-  const [selectedState, setSelectedState] = useState('MI');
+  const [selectedState, setSelectedState] = useState(null);
   const [partyFilter, setPartyFilter] = useState('all');
 
   const visibleStates = useMemo(() => {
@@ -140,10 +67,14 @@ function App() {
     return states.filter((state) => state.party === partyFilter);
   }, [partyFilter]);
 
-  const currentState =
-    states.find((state) => state.abbr === selectedState) || states[0];
-
-  const profile = stateProfiles[selectedState] || stateProfiles.MI;
+  if (selectedState) {
+    return (
+      <StateView
+        stateAbbr={selectedState}
+        onBack={() => setSelectedState(null)}
+      />
+    );
+  }
 
   return (
     <div className="page-shell">
@@ -190,7 +121,7 @@ function App() {
             {visibleStates.map((state) => (
               <button
                 key={state.abbr}
-                className={`state-button ${selectedState === state.abbr ? 'selected' : ''} ${state.party === 'Democratic' ? 'd' : 'r'}`}
+                className={`state-button ${state.abbr === selectedState ? 'selected' : ''} ${state.party === 'Democratic' ? 'd' : 'r'}`}
                 style={{ gridColumn: state.col, gridRow: state.row }}
                 onClick={() => setSelectedState(state.abbr)}
               >
@@ -203,50 +134,27 @@ function App() {
         <main className="detail-panel">
           <div className="detail-header">
             <div>
-              <p className="eyebrow">Selected state</p>
-              <h2>{currentState.name}</h2>
+              <p className="eyebrow">Quick start</p>
+              <h2>Click a state to explore</h2>
             </div>
-            <span className={`party-pill ${currentState.party === 'Democratic' ? 'dem' : 'rep'}`}>
-              {currentState.party}
-            </span>
           </div>
 
           <div className="section-block">
-            <h3>{profile.race}</h3>
-            <p>{profile.summary}</p>
-          </div>
-
-          <div className="candidate-list">
-            {profile.candidates.map((candidate) => (
-              <article key={candidate.name} className="candidate-card">
-                <div className="candidate-topline">
-                  <div>
-                    <h4>{candidate.name}</h4>
-                    <span className={`mini-badge ${candidate.party === 'Democratic' ? 'dem' : 'rep'}`}>
-                      {candidate.party}
-                    </span>
-                  </div>
-                  <strong>{candidate.polling}</strong>
-                </div>
-
-                <div className="metric-grid">
-                  <div>
-                    <label>AI stance</label>
-                    <p>{candidate.aiStance}</p>
-                  </div>
-                  <div>
-                    <label>Party alignment</label>
-                    <p>{candidate.alignment}</p>
-                  </div>
-                  <div>
-                    <label>Policy projection</label>
-                    <p>{candidate.policyProjection}</p>
-                  </div>
-                </div>
-
-                <blockquote>{candidate.quote}</blockquote>
-              </article>
-            ))}
+            <h3>Welcome to the AI Policy Dashboard</h3>
+            <p>
+              This dashboard aggregates political positions on AI safety and regulation across U.S. Senate races.
+              Currently tracking: <strong>Michigan Senate Race</strong> (Abdul El-Sayed vs. Mike Rogers).
+            </p>
+            <p>
+              For each race, you'll find:
+            </p>
+            <ul>
+              <li>Candidate quotes and public statements on AI</li>
+              <li>Comparison of AI policy positions</li>
+              <li>Party alignment scores</li>
+              <li>Policy projections if elected</li>
+              <li>Prediction market odds from Kalshi</li>
+            </ul>
           </div>
         </main>
       </div>

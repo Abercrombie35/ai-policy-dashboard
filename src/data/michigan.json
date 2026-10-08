@@ -1,0 +1,168 @@
+{
+  "state": "Michigan",
+  "abbr": "MI",
+  "races": [
+    {
+      "id": "mi-senate-2024",
+      "type": "Senate",
+      "year": 2024,
+      "title": "U.S. Senate",
+      "location": {
+        "region": "statewide",
+        "coordinates": { "lat": 43.3266, "lng": -84.5361 }
+      },
+      "candidates": [
+        {
+          "id": "abdul-el-sayed",
+          "name": "Abdul El-Sayed",
+          "party": "Democratic",
+          "photo": "https://via.placeholder.com/180?text=Abdul+El-Sayed",
+          "bio": "Democratic candidate for U.S. Senate, former Michigan health director and public health advocate.",
+          "polling": {
+            "current": 42,
+            "trend": "up",
+            "source": "RCP Average",
+            "lastUpdated": "2026-10-08"
+          },
+          "quotes": [
+            {
+              "text": "A.I. should be governed by public-interest standards, not just market incentives. We need federal AI safety rules that protect workers and communities.",
+              "source": "Campaign speech, Detroit Economic Club",
+              "date": "2026-09-15",
+              "context": "AI policy and labor protection"
+            },
+            {
+              "text": "Michigan workers built this state. We need to ensure AI systems don't eliminate jobs without a transition plan for working families.",
+              "source": "UAW Forum",
+              "date": "2026-08-22",
+              "context": "AI and labor displacement"
+            },
+            {
+              "text": "Generative AI companies should be required to disclose training data sources and ensure fair compensation for creators whose work was used.",
+              "source": "Town hall Q&A",
+              "date": "2026-07-10",
+              "context": "AI copyright and creator rights"
+            }
+          ],
+          "aiPolicy": {
+            "stance": "Strong federal AI safety and regulation",
+            "keyPositions": [
+              "Federal AI licensing framework for high-risk systems",
+              "Mandatory impact assessments for AI deployment in critical sectors",
+              "Worker protection and transition funds for AI-displaced workers",
+              "Transparency requirements for training data and algorithms",
+              "Strong consumer privacy protections"
+            ]
+          },
+          "partyAlignment": {
+            "score": 0.92,
+            "description": "Strongly aligned with Democratic Party AI safety platform",
+            "deviations": ["Slightly more labor-focused than national party platform"]
+          },
+          "endorsements": [
+            {
+              "organization": "United Auto Workers (UAW)",
+              "date": "2026-08-01"
+            },
+            {
+              "organization": "Michigan Environmental Council",
+              "date": "2026-07-20"
+            },
+            {
+              "organization": "Digital Rights Foundation",
+              "date": "2026-06-15"
+            }
+          ],
+          "policyProjection": {
+            "ifElected": "If elected, El-Sayed would likely push for comprehensive federal AI regulation including a national AI licensing board, strong worker protections in the AI sector, and mandatory algorithmic transparency. His administration would likely prioritize labor protections over innovation speed.",
+            "keyInitiatives": [
+              "National AI Safety and Standards Board",
+              "AI Worker Transition Fund ($5B)",
+              "Algorithmic Accountability Act",
+              "AI Copyright and Creator Protection Act"
+            ]
+          }
+        },
+        {
+          "id": "mike-rogers",
+          "name": "Mike Rogers",
+          "party": "Republican",
+          "photo": "https://via.placeholder.com/180?text=Mike+Rogers",
+          "bio": "Republican candidate for U.S. Senate, former U.S. Representative and cybersecurity expert.",
+          "polling": {
+            "current": 39,
+            "trend": "flat",
+            "source": "RCP Average",
+            "lastUpdated": "2026-10-08"
+          },
+          "quotes": [
+            {
+              "text": "America must lead in AI innovation. Over-regulation will hand the competitive advantage to China and Russia. We need light-touch rules that protect security without strangling innovation.",
+              "source": "Campaign website",
+              "date": "2026-09-20",
+              "context": "AI competitiveness"
+            },
+            {
+              "text": "The best regulation is no regulation. Let the private sector innovate, and we'll step in only when national security is at stake.",
+              "source": "Interview with Detroit News",
+              "date": "2026-08-30",
+              "context": "Regulatory philosophy"
+            },
+            {
+              "text": "Cybersecurity and national defense must be priorities in AI policy. We need to secure our AI systems against foreign threats while maintaining our technological edge.",
+              "source": "Defense Policy Forum",
+              "date": "2026-07-25",
+              "context": "National security and AI"
+            }
+          ],
+          "aiPolicy": {
+            "stance": "Light-touch regulation, innovation-first approach",
+            "keyPositions": [
+              "Sector-specific, self-regulatory approaches to AI governance",
+              "National security and cybersecurity focus",
+              "Avoid prescriptive federal standards",
+              "Support for private-sector innovation",
+              "International coordination on AI standards (security-focused)"
+            ]
+          },
+          "partyAlignment": {
+            "score": 0.85,
+            "description": "Aligned with Republican emphasis on innovation and lighter regulation",
+            "deviations": ["Slightly more focused on national security than mainstream GOP platform"]
+          },
+          "endorsements": [
+            {
+              "organization": "Chamber of Commerce",
+              "date": "2026-08-10"
+            },
+            {
+              "organization": "Michigan Tech Alliance",
+              "date": "2026-07-15"
+            },
+            {
+              "organization": "National Defense Industrial Association",
+              "date": "2026-06-20"
+            }
+          ],
+          "policyProjection": {
+            "ifElected": "If elected, Rogers would likely block comprehensive federal AI regulation in favor of sector-specific oversight. His focus would be on national security and maintaining U.S. competitiveness in AI. He would resist labor-focused regulations and advocate for minimal compliance burdens on industry.",
+            "keyInitiatives": [
+              "AI Cybersecurity and National Security Framework",
+              "Public-Private AI Security Task Force",
+              "Voluntary Industry AI Standards Program",
+              "U.S.-Allied Nations AI Coordination Agreement"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2026-10-08",
+    "dataSource": "Campaign statements, public records, polling aggregators",
+    "kalshiMarkets": {
+      "status": "ready_to_integrate",
+      "note": "Kalshi API keys and market IDs to be added"
+    }
+  }
+}
