@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import USMap from './components/USMap';
-import StateView from './components/StateView';
+import StateModal from './components/StateModal';
 import './styles.css';
 
 const stateMetadata = [
@@ -65,7 +65,7 @@ function App() {
 
   const stateMetadataMap = useMemo(() => {
     const map = {};
-    stateMetadata.forEach(state => {
+    stateMetadata.forEach((state) => {
       map[state.abbr] = state;
     });
     return map;
@@ -76,19 +76,7 @@ function App() {
     return stateMetadata.filter((state) => state.party === partyFilter);
   }, [partyFilter]);
 
-  const visibleStateAbbrs = useMemo(() => {
-    return visibleStates.map(s => s.abbr);
-  }, [visibleStates]);
-
-  if (selectedState) {
-    return (
-      <StateView
-        stateAbbr={selectedState}
-        stateName={stateMetadataMap[selectedState]?.name}
-        onBack={() => setSelectedState(null)}
-      />
-    );
-  }
+  const visibleStateAbbrs = useMemo(() => visibleStates.map((state) => state.abbr), [visibleStates]);
 
   return (
     <div className="page-shell">
@@ -138,34 +126,15 @@ function App() {
             onStateClick={setSelectedState}
           />
         </aside>
-
-        <main className="detail-panel">
-          <div className="detail-header">
-            <div>
-              <p className="eyebrow">Quick start</p>
-              <h2>Click a state to explore</h2>
-            </div>
-          </div>
-
-          <div className="section-block">
-            <h3>Welcome to the AI Policy Dashboard</h3>
-            <p>
-              This dashboard aggregates political positions on AI safety and regulation across U.S. Senate races.
-              Currently tracking: <strong>Michigan Senate Race</strong> (Abdul El-Sayed vs. Mike Rogers).
-            </p>
-            <p>
-              For each race, you'll find:
-            </p>
-            <ul>
-              <li>Candidate quotes and public statements on AI</li>
-              <li>Comparison of AI policy positions</li>
-              <li>Party alignment scores</li>
-              <li>Policy projections if elected</li>
-              <li>Prediction market odds from Kalshi</li>
-            </ul>
-          </div>
-        </main>
       </div>
+
+      {selectedState && (
+        <StateModal
+          stateAbbr={selectedState}
+          stateName={stateMetadataMap[selectedState]?.name}
+          onClose={() => setSelectedState(null)}
+        />
+      )}
     </div>
   );
 }

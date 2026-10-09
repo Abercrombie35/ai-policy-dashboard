@@ -3,26 +3,24 @@ import michiganData from '../data/michigan.json';
 import RaceView from './RaceView';
 import '../styles/StateView.css';
 
-function StateView({ stateAbbr, onBack }) {
+function StateView({ stateAbbr, stateName, onBack }) {
   const [selectedRaceId, setSelectedRaceId] = useState(null);
-
-  // For now, only Michigan has data
   const stateData = stateAbbr === 'MI' ? michiganData : null;
 
   if (!stateData) {
     return (
       <div className="state-view empty">
-        <button className="back-button" onClick={onBack}>← Back to map</button>
+        <button className="back-button" onClick={onBack}>← Back</button>
         <div className="empty-state">
           <h2>No data yet</h2>
-          <p>Senate race data for this state is coming soon.</p>
+          <p>Senate race data for {stateName || 'this state'} is coming soon.</p>
         </div>
       </div>
     );
   }
 
   if (selectedRaceId) {
-    const race = stateData.races.find(r => r.id === selectedRaceId);
+    const race = stateData.races.find((item) => item.id === selectedRaceId);
     return (
       <RaceView
         race={race}
@@ -34,7 +32,7 @@ function StateView({ stateAbbr, onBack }) {
 
   return (
     <div className="state-view">
-      <button className="back-button" onClick={onBack}>← Back to map</button>
+      <button className="back-button" onClick={onBack}>← Back</button>
 
       <div className="state-header">
         <h2>{stateData.state}</h2>
@@ -42,7 +40,7 @@ function StateView({ stateAbbr, onBack }) {
       </div>
 
       <div className="races-grid">
-        {stateData.races.map(race => (
+        {stateData.races.map((race) => (
           <button
             key={race.id}
             className="race-card"
@@ -52,9 +50,9 @@ function StateView({ stateAbbr, onBack }) {
             <div className="race-title">{race.title}</div>
             <div className="race-year">{race.year}</div>
             <div className="candidate-previews">
-              {race.candidates.map(c => (
-                <span key={c.id} className={`preview ${c.party.toLowerCase()}`}>
-                  {c.name.split(' ').pop()}
+              {race.candidates.map((candidate) => (
+                <span key={candidate.id} className={`preview ${candidate.party.toLowerCase()}`}>
+                  {candidate.name.split(' ').pop()}
                 </span>
               ))}
             </div>
