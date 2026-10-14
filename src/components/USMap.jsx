@@ -1,58 +1,50 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/USMap.css';
 
-// This component attempts to load an external, accurate SVG map of the US
-// from src/assets/us-states.svg. If that SVG is present and its state paths
-// contain recognizable IDs (e.g. "MI", "US-MI", "state-MI"), those path
-// shapes will be used. If the SVG cannot be loaded or parsed, the component
-// falls back to the original simplified box shapes so the app keeps working.
+// This component fetches an accurate SVG map of the US from Wikimedia Commons
+// (public-domain file) and uses its path/polygon/rect elements when available.
+// If the remote SVG can't be loaded or parsed, the component falls back to
+// simplified shapes so the app remains usable.
 
 function normalizeIdToAbbr(id) {
   if (!id) return null;
-  // common id patterns: "MI", "US-MI", "state-MI", "mi"
   const up = id.toUpperCase();
-  // If it's exactly two letters, use it
   if (/^[A-Z]{2}$/.test(up)) return up;
-  // If it ends with -XX or _XX, take last two letters
   const m = up.match(/([A-Z]{2})$/);
   if (m) return m[1];
   return null;
 }
 
 const fallbackShapes = {
-  // simplified fallback shapes (same as before) so that the app still works
   WA: { path: 'M80,60 L100,50 L105,120 L85,130 Z', center: [92, 90] },
   OR: { path: 'M65,120 L100,110 L110,200 L70,210 Z', center: [82, 160] },
   CA: { path: 'M50,180 L100,170 L115,350 L55,365 Z', center: [75, 270] },
-  // ... keep a small subset so fallback remains usable
+  NV: { path: 'M105,130 L150,125 L160,280 L110,285 Z', center: [130, 205] },
+  MI: { path: 'M410,150 L460,140 L475,280 L425,290 Z', center: [440, 215] },
 };
 
 function USMap({ selectedState, visibleStates, stateMetadata, onStateClick }) {
   const [hoveredState, setHoveredState] = useState(null);
   const [stateShapes, setStateShapes] = useState(null);
-  const offscreenSvgRef = useRef(null);
 
   useEffect(() => {
     let cancelled = false;
 
     async function loadSvg() {
       try {
-        // Resolve the SVG path relative to this module. Using import.meta.url
-        // ensures Vite serves the file from the correct location.
-        const url = new URL('../assets/us-states.svg', import.meta.url).href;
+        // Use the Wikimedia Commons public-domain SVG of US states
+        const url = 'https://upload.wikimedia.org/wikipedia/commons/5/5c/US_states_with_ids.svg';
         const res = await fetch(url);
         if (!res.ok) throw new Error('SVG not found');
         const text = await res.text();
-
         if (cancelled) return;
 
-        // Parse the SVG into an offscreen container so we can measure paths
         const parser = new DOMParser();
         const doc = parser.parseFromString(text, 'image/svg+xml');
         const svgEl = doc.querySelector('svg');
         if (!svgEl) throw new Error('No <svg> element found in SVG file');
 
-        // Create an in-document hidden svg so we can call getBBox() on paths
+        // Append a hidden SVG into the document so getBBox() works
         const hiddenSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
         hiddenSvg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
         hiddenSvg.style.position = 'absolute';
@@ -74,7 +66,6 @@ function USMap({ selectedState, visibleStates, stateMetadata, onStateClick }) {
           if (!abbr) return;
 
           let d = el.getAttribute('d');
-          // Convert polygon/rect to a path if needed
           if (!d) {
             if (el.tagName.toLowerCase() === 'polygon') {
               const points = el.getAttribute('points');
@@ -88,7 +79,6 @@ function USMap({ selectedState, visibleStates, stateMetadata, onStateClick }) {
             }
           }
 
-          // Try to compute a center using getBBox if available
           let cx = 0;
           let cy = 0;
           try {
@@ -96,7 +86,6 @@ function USMap({ selectedState, visibleStates, stateMetadata, onStateClick }) {
             cx = bbox.x + bbox.width / 2;
             cy = bbox.y + bbox.height / 2;
           } catch (e) {
-            // If getBBox fails, leave center as 0,0 and skip
             cx = 0;
             cy = 0;
           }
@@ -104,21 +93,18 @@ function USMap({ selectedState, visibleStates, stateMetadata, onStateClick }) {
           shapes[abbr] = { path: d || '', center: [cx, cy] };
         });
 
-        // Clean up the hidden svg
         document.body.removeChild(hiddenSvg);
 
-        // If we discovered shapes, use them; otherwise fall back
         if (Object.keys(shapes).length > 0) {
           setStateShapes(shapes);
         } else {
           setStateShapes(fallbackShapes);
         }
       } catch (err) {
-        // If anything goes wrong, keep the fallback shapes
-        setStateShapes(fallbackShapes);
-        // Optionally keep a console message for debugging
+        // Fall back to simplified shapes if anything fails
         // eslint-disable-next-line no-console
-        console.warn('USMap: failed to load usable SVG map, using fallback shapes', err);
+        console.warn('USMap: failed to load remote SVG, using fallback shapes', err);
+        setStateShapes(fallbackShapes);
       }
     }
 
@@ -135,7 +121,6 @@ function USMap({ selectedState, visibleStates, stateMetadata, onStateClick }) {
   const getParty = (abbr) => stateMetadata[abbr]?.party || 'Unknown';
   const hasData = (abbr) => abbr === 'MI';
 
-  // While loading, show nothing (or you could show a spinner).
   const shapes = stateShapes || fallbackShapes;
 
   return (
@@ -151,7 +136,6 @@ function USMap({ selectedState, visibleStates, stateMetadata, onStateClick }) {
           const data = hasData(abbr);
           const [cx, cy] = shape.center || [0, 0];
 
-          // If there is no path data, skip rendering this state
           if (!shape.path) return null;
 
           return (
