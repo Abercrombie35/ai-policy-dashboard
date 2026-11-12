@@ -1,5 +1,5 @@
 import React from 'react';
-import { codebook, dimensions, resultLabel } from '../lib/data';
+import { codebook, dimensions, resultLabel, domains, categoryLabel, partyLines } from '../lib/data';
 
 const REPO_ISSUES = 'https://github.com/Abercrombie35/ai-policy-dashboard/issues';
 
@@ -46,6 +46,59 @@ function MethodsView() {
           <li>Records are versioned and never silently overwritten. Every change raises the version number and adds a dated note to the record's history.</li>
           <li>Sparse coverage is recorded as sparse rather than filled in by inference. It is itself evidence of how salient AI is in a race.</li>
         </ul>
+      </section>
+
+      <section>
+        <h3>Two policy areas, and said vs. proposed</h3>
+        <p>
+          The project studies two policy areas separately: <strong>{domains['data-centers'].label}</strong> and{' '}
+          <strong>{domains['ai-general'].label}</strong>. A record belongs to an area through its coded issue areas and
+          stances, and can belong to both. Within each area, what is <strong>said</strong> is kept apart from what is{' '}
+          <strong>proposed</strong>, using the codebook's specificity coding:
+        </p>
+        <ul>
+          {codebook.tracks.map((t) => (
+            <li key={t.id}>
+              <strong>{t.label}:</strong> {t.description} (specificity:{' '}
+              {t.specificity.map((sp) => categoryLabel('specificity', sp)).join(', ')})
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h3>Party lines and deviation</h3>
+        <ul>
+          {partyLines.parties.map((p) => (
+            <li key={p.party}><strong>{p.party} line:</strong> {p.referenceActors}.</li>
+          ))}
+          <li>Leaders not yet elected or sworn in are treated as leaders.</li>
+          <li>
+            Each line is an editorial judgment built from the listed evidence on six directional policy questions. Where
+            the reference actors have no clear position, there is no line, and deviation is not judged.
+          </li>
+          <li>
+            A candidate deviates on a question when their stance differs from their party's line. The analysis uses the
+            latest stance in each of "said" and "proposed", and flags candidates whose stance shifted over time.
+          </li>
+          <li>
+            Stances were coded by an AI model from web search summaries and have not been reviewed. Results are
+            model-generated analysis, not findings.
+          </li>
+        </ul>
+        <div className="table-wrap">
+          <table className="data-table">
+            <thead><tr><th scope="col">Policy question</th><th scope="col">Stances (ordered)</th></tr></thead>
+            <tbody>
+              {codebook.policyQuestions.map((q) => (
+                <tr key={q.id}>
+                  <th scope="row">{q.label}<div className="q-text">{q.question}</div></th>
+                  <td>{q.options.map((o) => o.label).join(' / ')}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section>

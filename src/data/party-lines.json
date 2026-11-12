@@ -1,0 +1,550 @@
+{
+  "note": "Party lines for the deviation analysis. Republican line: the general attitude of the Trump administration. Democratic line: the general attitude of the incoming Democratic congressional leaders. Leaders not yet elected or sworn in are treated as leaders.",
+  "asOf": "2026-11-12",
+  "parties": [
+    {
+      "party": "Republican",
+      "referenceActors": "The Trump administration (President Trump and White House AI policy)"
+    },
+    {
+      "party": "Democratic",
+      "referenceActors": "Chuck Schumer (Senate Democratic leader; presumptive majority leader, caucus vote not before December 2026) and Hakeem Jeffries (House Democratic leader; presumptive Speaker)"
+    }
+  ],
+  "positions": [
+    {
+      "id": "pl-r-preemption",
+      "party": "Republican",
+      "questionId": "preemption",
+      "stance": "supports-preemption",
+      "summary": "Use federal power to stop states from regulating AI: a litigation task force against state AI laws, funding leverage, and a push for preemptive federal legislation with a child-safety carve-out.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-12-11",
+          "track": "proposed",
+          "summary": "Executive order \"Ensuring a National Policy Framework for Artificial Intelligence\" creates a DOJ AI Litigation Task Force to challenge state AI laws, ties some federal funding to state AI policy, and tasks the White House AI adviser with proposing federal legislation that broadly preempts state AI laws, with carve-outs for child safety.",
+          "source": {
+            "title": "Axios: Trump signs executive order targeting state AI laws",
+            "url": "https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws"
+          }
+        },
+        {
+          "date": "2025-12-11",
+          "track": "proposed",
+          "summary": "Text of the executive order.",
+          "source": {
+            "title": "The White House: Ensuring a National Policy Framework for Artificial Intelligence",
+            "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/"
+          }
+        }
+      ],
+      "source": {
+        "title": "Axios: Trump signs executive order targeting state AI laws",
+        "url": "https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws"
+      },
+      "publishedDate": "2025-12-11",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-r-data-centers",
+      "party": "Republican",
+      "questionId": "data-centers",
+      "stance": "accelerate",
+      "summary": "Build data centers fast: faster federal permitting, a voluntary industry pledge on power costs, and opposition to local resistance, framed as helping China.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-07-23",
+          "track": "proposed",
+          "summary": "Executive order accompanying the AI Action Plan speeds federal permitting for data center infrastructure and opens some federal and military land.",
+          "source": {
+            "title": "Hunton: Trump administration issues AI Action Plan and AI executive orders",
+            "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/trump-administration-issues-ai-action-plan-and-ai-executive-orders"
+          }
+        },
+        {
+          "date": "2026-02-24",
+          "track": "proposed",
+          "summary": "Ratepayer Protection Pledge introduced in the State of the Union: large AI companies agree to build, bring or buy their own power for new data centers. The pledge is voluntary and not binding.",
+          "source": {
+            "title": "Tom's Hardware: Trump says communities that reject data centers want to be 'backwards and poor'",
+            "url": "https://www.tomshardware.com/tech-industry/data-centers/trump-says-communities-that-reject-data-centers-want-to-end-up-being-backwards-and-poor-president-claims-china-could-not-be-happier-with-ai-data-center-backlash-in-the-us"
+          }
+        },
+        {
+          "date": "2026-08-31",
+          "track": "said",
+          "summary": "Trump wrote that the only reason to reject data centers is wanting \"to end up being backwards and poor\" and that \"China could not be happier with this anti Data Center movement.\"",
+          "source": {
+            "title": "The Spokesman-Review: Trump slams opposition to data centers",
+            "url": "https://www.spokesman.com/stories/2026/aug/31/trump-slams-opposition-to-data-centers-china-could/"
+          }
+        },
+        {
+          "date": "2026-11-09",
+          "track": "said",
+          "summary": "Trump urged the Senate to pass a permitting bill that he said codifies his Ratepayer Protection Pledge, adding \"China will take any Data Center that we don't want.\"",
+          "source": {
+            "title": "TIME: Congress's permitting bill is a 'massive giveaway' to the AI data center industry, critics warn",
+            "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers"
+          }
+        }
+      ],
+      "source": {
+        "title": "Hunton: Trump administration issues AI Action Plan and AI executive orders",
+        "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/trump-administration-issues-ai-action-plan-and-ai-executive-orders"
+      },
+      "publishedDate": "2026-11-09",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-r-chips",
+      "party": "Republican",
+      "questionId": "chip-sales-china",
+      "stance": "allow-sales",
+      "summary": "Allow licensed sales of advanced AI chips to China in exchange for a government revenue share.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-07",
+          "track": "proposed",
+          "summary": "After halting Nvidia H20 exports in April 2025, the administration allowed sales to resume about three months later.",
+          "source": {
+            "title": "Built In: Trump lifted the AI chip ban on China",
+            "url": "https://builtin.com/articles/trump-lifts-ai-chip-ban-china-nvidia"
+          }
+        },
+        {
+          "date": "2026-01-15",
+          "track": "proposed",
+          "summary": "Commerce rule implementing the December 2025 decision to allow Nvidia H200 and AMD MI325X sales to China in exchange for a 25% fee.",
+          "source": {
+            "title": "Pillsbury: Trump administration targets advanced AI semiconductors",
+            "url": "https://www.pillsburylaw.com/en/news-and-insights/trump-advanced-ai-semiconductors-actions.html"
+          }
+        }
+      ],
+      "source": {
+        "title": "Built In: Trump lifted the AI chip ban on China",
+        "url": "https://builtin.com/articles/trump-lifts-ai-chip-ban-china-nvidia"
+      },
+      "publishedDate": "2026-01-15",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-r-safety",
+      "party": "Republican",
+      "questionId": "safety-rules",
+      "stance": "voluntary",
+      "summary": "Light-touch rules for AI developers: remove regulatory barriers and rely on voluntary commitments rather than binding safety mandates.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-07-23",
+          "track": "proposed",
+          "summary": "\"Winning the AI Race: America's AI Action Plan\" sets out more than 90 federal actions focused on innovation, infrastructure and international leadership, with a permissive approach to regulation.",
+          "source": {
+            "title": "Fenwick: Trump administration releases sweeping AI Action Plan",
+            "url": "https://www.fenwick.com/insights/publications/trump-administration-releases-sweeping-ai-action-plan"
+          }
+        },
+        {
+          "date": "2026-09",
+          "track": "proposed",
+          "summary": "A White House frontier AI safety pact with developers is voluntary, with no penalties, disclosure duty or enforcement role; the administration has opposed binding safety mandates.",
+          "source": {
+            "title": "Foley: What Democratic control of Congress means for AI regulation",
+            "url": "https://www.foley.com/insights/publications/2026/11/blue-wave-new-ai-rules-what-democratic-control-of-congress-means-for-ai-regulation/"
+          }
+        }
+      ],
+      "source": {
+        "title": "Fenwick: Trump administration releases sweeping AI Action Plan",
+        "url": "https://www.fenwick.com/insights/publications/trump-administration-releases-sweeping-ai-action-plan"
+      },
+      "publishedDate": "2026-09",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-r-harmful",
+      "party": "Republican",
+      "questionId": "harmful-content",
+      "stance": "supports-rules",
+      "summary": "Supports targeted rules against harmful AI content, especially sexual deepfakes and harms to children.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-05-19",
+          "track": "proposed",
+          "summary": "Trump signed the Take It Down Act, making it a federal crime to publish non-consensual intimate images, including AI deepfakes, and requiring platforms to remove them within 48 hours.",
+          "source": {
+            "title": "Decrypt: Trump signs bipartisan act targeting deepfake abuse",
+            "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
+          }
+        },
+        {
+          "date": "2025-12-11",
+          "track": "proposed",
+          "summary": "The preemption push carves out child-safety laws.",
+          "source": {
+            "title": "Axios: Trump signs executive order targeting state AI laws",
+            "url": "https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws"
+          }
+        }
+      ],
+      "source": {
+        "title": "Decrypt: Trump signs bipartisan act targeting deepfake abuse",
+        "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
+      },
+      "publishedDate": "2025-12-11",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-r-workers",
+      "party": "Republican",
+      "questionId": "workers",
+      "stance": "retraining-led",
+      "summary": "Help workers through retraining and upskilling, with no new worker protections.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-07-23",
+          "track": "proposed",
+          "summary": "The AI Action Plan's \"Empower American Workers in the Age of AI\" section funds rapid retraining for workers displaced by AI and creates an AI Workforce Research Hub at the Labor Department.",
+          "source": {
+            "title": "SHRM: Trump administration unveils sweeping AI Action Plan",
+            "url": "https://www.shrm.org/topics-tools/news/trump-administration-unveils-sweeping-ai-action-plan-"
+          }
+        },
+        {
+          "date": "2025-07-23",
+          "track": "said",
+          "summary": "Coverage noted the plan keeps a training focus and drops worker protections.",
+          "source": {
+            "title": "Bloomberg Government: Trump AI plan ditches worker protections, keeps training focus",
+            "url": "https://news.bgov.com/safety/trump-ai-plan-ditches-worker-protections-keeps-training-focus"
+          }
+        }
+      ],
+      "source": {
+        "title": "SHRM: Trump administration unveils sweeping AI Action Plan",
+        "url": "https://www.shrm.org/topics-tools/news/trump-administration-unveils-sweeping-ai-action-plan-"
+      },
+      "publishedDate": "2025-07-23",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-d-preemption",
+      "party": "Democratic",
+      "questionId": "preemption",
+      "stance": null,
+      "summary": "No clear position from either leader. In December 2025 Jeffries said the issue \"hasn't been brought to the leadership level yet\". Other Democrats, such as Sens. Markey and Schiff, strongly opposed the December 2025 order, but they are not the reference actors.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-12-12",
+          "track": "said",
+          "summary": "Jeffries on Trump's proposed preemption order: \"That conversation hasn't been brought to the leadership level yet.\"",
+          "source": {
+            "title": "The American Prospect: Democratic voters are clamoring for AI regulation. Their leaders aren't interested.",
+            "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
+          }
+        },
+        {
+          "date": "2025-12-19",
+          "track": "proposed",
+          "summary": "Senate Democrats such as Markey and Schatz moved to block the order; Markey introduced the States' Right to Regulate AI Act.",
+          "source": {
+            "title": "Axios: Senate Dems fight back on Trump's AI order",
+            "url": "https://www.axios.com/2025/12/19/trump-democrats-fight-back-ai-order"
+          }
+        }
+      ],
+      "source": {
+        "title": "The American Prospect: Democratic voters are clamoring for AI regulation. Their leaders aren't interested.",
+        "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
+      },
+      "publishedDate": "2025-12-19",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-d-data-centers",
+      "party": "Democratic",
+      "questionId": "data-centers",
+      "stance": "conditional",
+      "summary": "Allow data centers, but with binding rules so they pay their own power and grid costs; the leaders are skeptical of a moratorium.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2026-09",
+          "track": "said",
+          "summary": "Schumer: \"Senate Democrats want to make it mandatory for data centers to cover their own costs by law.\" Democrats blocked the Republican Ratepayer Protection Act as \"toothless\".",
+          "source": {
+            "title": "NBC News: Senate Democrats block Husted-led bill on data centers",
+            "url": "https://www.nbcnews.com/politics/congress/senate-democrats-block-sen-husted-led-bill-data-centers-calling-toothl-rcna600269"
+          }
+        },
+        {
+          "date": "2026-10",
+          "track": "said",
+          "summary": "Jeffries and other House Democratic leaders remain skeptical of a data center ban; Jeffries framed the issue around electricity bills.",
+          "source": {
+            "title": "NOTUS: A Democratic reckoning on data centers is coming",
+            "url": "https://www.notus.org/congress/jeffries-data-centers-progressives-moratorium"
+          }
+        },
+        {
+          "date": "2026-11-06",
+          "track": "proposed",
+          "summary": "Democrats plan data-center electricity-cost bills for the new Congress; Schumer named shielding consumers from data-center-driven power costs as a priority. The plans stop short of binding limits on AI deployment or energy use.",
+          "source": {
+            "title": "Crypto Briefing (citing Reuters): Democrats plan a wave of AI and data-center bills",
+            "url": "https://cryptobriefing.com/democrats-plan-ai-legislation-congress-january/"
+          }
+        }
+      ],
+      "source": {
+        "title": "NBC News: Senate Democrats block Husted-led bill on data centers",
+        "url": "https://www.nbcnews.com/politics/congress/senate-democrats-block-sen-husted-led-bill-data-centers-calling-toothl-rcna600269"
+      },
+      "publishedDate": "2026-11-06",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-d-chips",
+      "party": "Democratic",
+      "questionId": "chip-sales-china",
+      "stance": "restrict-sales",
+      "summary": "Block China's access to advanced AI chips and chipmaking tools.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2026-09-23",
+          "track": "proposed",
+          "summary": "Schumer backed three bipartisan bills (MATCH Act, AI OVERWATCH Act, Chip Security Act) and said the Senate could pass them immediately.",
+          "source": {
+            "title": "The Washington Times: Senate Democrats push trio of bills to block China from access to AI chips",
+            "url": "https://www.washingtontimes.com/news/2026/sep/23/senate-democrats-push-trio-bills-block-china-access-ai-chips/"
+          }
+        },
+        {
+          "date": "2026-11-10",
+          "track": "said",
+          "summary": "Schumer accused Trump of defending Nvidia's CEO at the cost of national security.",
+          "source": {
+            "title": "CNBC: Schumer accuses Trump of defending Nvidia CEO Jensen Huang",
+            "url": "https://cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html"
+          }
+        }
+      ],
+      "source": {
+        "title": "The Washington Times: Senate Democrats push trio of bills to block China from access to AI chips",
+        "url": "https://www.washingtontimes.com/news/2026/sep/23/senate-democrats-push-trio-bills-block-china-access-ai-chips/"
+      },
+      "publishedDate": "2026-11-10",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-d-safety",
+      "party": "Democratic",
+      "questionId": "safety-rules",
+      "stance": "broad-binding",
+      "summary": "Binding guardrails for AI developers, such as independent testing and liability, while letting AI companies keep growing.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-12-09",
+          "track": "said",
+          "summary": "Jeffries created the House Democratic Commission on AI and the Innovation Economy to produce \"an aggressive framework\", balancing AI companies' ability to \"continue to thrive\" with preventing harm.",
+          "source": {
+            "title": "Office of Leader Jeffries: New House Democratic Commission on AI and the Innovation Economy",
+            "url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/"
+          }
+        },
+        {
+          "date": "2026-09",
+          "track": "said",
+          "summary": "Schumer demanded a classified all-senators briefing on frontier AI risks and urged guardrails for AI's risks.",
+          "source": {
+            "title": "Senate Democrats: Schumer demands classified briefing on AI risks",
+            "url": "https://www.democrats.senate.gov/newsroom/press-releases/as-ai-industry-leaders-sound-alarm-on-ai-risks-and-trump-dismisses-warnings-schumer-demands-immediate-classified-all-senators-briefing"
+          }
+        },
+        {
+          "date": "2026-11-06",
+          "track": "proposed",
+          "summary": "Democrats plan independent AI testing and AI liability bills for the new Congress.",
+          "source": {
+            "title": "Crypto Briefing (citing Reuters): Democrats plan a wave of AI and data-center bills",
+            "url": "https://cryptobriefing.com/democrats-plan-ai-legislation-congress-january/"
+          }
+        }
+      ],
+      "source": {
+        "title": "Office of Leader Jeffries: New House Democratic Commission on AI and the Innovation Economy",
+        "url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/"
+      },
+      "publishedDate": "2026-11-06",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-d-harmful",
+      "party": "Democratic",
+      "questionId": "harmful-content",
+      "stance": null,
+      "summary": "No statement from either leader was found. The Take It Down Act had bipartisan sponsors, but that does not establish the leaders' own position.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-05-19",
+          "track": "proposed",
+          "summary": "The Take It Down Act was introduced by Sens. Ted Cruz (R) and Amy Klobuchar (D).",
+          "source": {
+            "title": "Decrypt: Trump signs bipartisan act targeting deepfake abuse",
+            "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
+          }
+        }
+      ],
+      "source": {
+        "title": "Decrypt: Trump signs bipartisan act targeting deepfake abuse",
+        "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
+      },
+      "publishedDate": "2025-05-19",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    },
+    {
+      "id": "pl-d-workers",
+      "party": "Democratic",
+      "questionId": "workers",
+      "stance": null,
+      "summary": "No clear statement from either leader on AI and workers was found.",
+      "labelType": "editorial-judgment",
+      "evidence": [
+        {
+          "date": "2025-12-09",
+          "track": "said",
+          "summary": "The Jeffries commission is framed around AI and the \"innovation economy\"; its framework had not been confirmed as released.",
+          "source": {
+            "title": "Office of Leader Jeffries: New House Democratic Commission on AI and the Innovation Economy",
+            "url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/"
+          }
+        }
+      ],
+      "source": {
+        "title": "Office of Leader Jeffries: New House Democratic Commission on AI and the Innovation Economy",
+        "url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/"
+      },
+      "publishedDate": "2025-12-09",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        }
+      ]
+    }
+  ]
+}

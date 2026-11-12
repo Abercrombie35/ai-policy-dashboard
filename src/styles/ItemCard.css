@@ -84,3 +84,24 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+.scope-tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.domain-tag {
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1px 7px;
+  border-radius: 4px;
+  background: rgba(147, 177, 216, 0.1);
+  color: #c7d8ee;
+}
+.domain-tag.data-centers { background: rgba(56, 189, 248, 0.14); color: #93dcfb; }
+.domain-tag.ai-general { background: rgba(167, 139, 250, 0.14); color: #cdbdff; }
+.stance-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.stance-list li { font-size: 0.74rem; background: rgba(251, 191, 36, 0.08); color: #f1e3a1; padding: 3px 8px; border-radius: 6px; }
+.stance-list .dim { color: #b9a970; }
+.date-note { margin: 0; font-size: 0.76rem; color: #9eb7d7; }
+.track-group h5 { margin: 4px 0 8px; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.06em; color: #9eb7d7; }
+.track-group + .track-group { margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(147, 177, 216, 0.15); }
+.track-group { display: flex; flex-direction: column; gap: 10px; }

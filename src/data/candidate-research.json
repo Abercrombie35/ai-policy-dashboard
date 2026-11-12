@@ -1,0 +1,908 @@
+{
+  "note": "Candidate records researched on 2026-11-12 for the party-line deviation analysis. Kept separate from the race files, which are not edited. Every record cites its source and needs checking against it.",
+  "records": [
+    {
+      "id": "cr-mi-sen-elsayed-1",
+      "raceId": "mi-senate-2026",
+      "candidateId": "abdul-el-sayed",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Set out \"terms of engagement\" for AI data centers: no electricity rate increases for residents, data centers paying for their own energy, closed-loop cooling and a union-jobs guarantee. Said the standards should be set federally and, until then, backed local and state moratoriums.",
+      "source": {
+        "title": "Michigan Advance: El-Sayed lays out policy \"terms of engagement\" with AI data centers",
+        "url": "https://michiganadvance.com/2026/01/08/el-sayed-lays-out-policy-terms-of-engagement-with-ai-data-centers-in-u-s-senate-hunt/"
+      },
+      "publishedDate": "2026-01-08",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal",
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers",
+          "labor"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-sen-elsayed-2",
+      "raceId": "mi-senate-2026",
+      "candidateId": "abdul-el-sayed",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Released \"AI Under Democracy\", a 22-proposal AI platform built around democratic ownership and governance of AI, including support for public ownership of AI and protecting American jobs.",
+      "source": {
+        "title": "El-Sayed campaign: AI Under Democracy platform",
+        "url": "https://abdulforsenate.com/2026/06/dr-abdul-el-sayed-announces-ai-policy-platform-ai-under-democracy/"
+      },
+      "publishedDate": "2026-06",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "safety",
+          "labor"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "safety-rules": "pause-or-public-control",
+        "workers": "active-protections"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-sen-elsayed-3",
+      "raceId": "mi-senate-2026",
+      "candidateId": "abdul-el-sayed",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Reported to propose freezing the development of powerful AI systems and new data centers.",
+      "source": {
+        "title": "The Washington Post: Michigan Senate candidate El-Sayed issues AI policy",
+        "url": "https://www.washingtonpost.com/politics/2026/10/13/michigan-senate-candidate-el-sayed-issues-ai-policy/"
+      },
+      "publishedDate": "2026-10-13",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "safety",
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause",
+        "safety-rules": "pause-or-public-control"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-sen-rogers-1",
+      "raceId": "mi-senate-2026",
+      "candidateId": "mike-rogers",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "For months argued that Michigan should compete for AI investment and supported faster permitting. Endorsed the Trump administration's \"National Policy Framework for Artificial Intelligence\" and said Michigan must be \"competitive for new AI-supported jobs and investments ... while setting a responsible framework for safety and data privacy.\"",
+      "source": {
+        "title": "Detroit Metro Times: Mike Rogers loved data centers until voters didn't",
+        "url": "https://www.metrotimes.com/news/mike-rogers-loved-data-centers-until-voters-didnt/"
+      },
+      "publishedDate": null,
+      "dateNote": "Before Aug. 20, 2026 (exact dates not recorded)",
+      "sortDate": "2026-08",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "federal",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers",
+          "innovation-competitiveness"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "accelerate",
+        "preemption": "supports-preemption"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-sen-rogers-2",
+      "raceId": "mi-senate-2026",
+      "candidateId": "mike-rogers",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Called for a one-year moratorium on new data center construction in Michigan until \"we establish a fair, transparent approval process that puts local communities first.\" Continued to oppose a federal ban.",
+      "source": {
+        "title": "The Hill: Mike Rogers calls for one-year data center moratorium",
+        "url": "https://thehill.com/policy/technology/6042582-ai-infrastructure-political-toxicity-midterms/"
+      },
+      "publishedDate": "2026-08-20",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-sen-talarico-1",
+      "raceId": "tx-senate-2026",
+      "candidateId": "james-talarico",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Campaign platform calls for regulations that hold AI companies accountable while protecting workers, for AI companies to follow the same copyright laws as everyone else, and for limits on invasive workplace AI surveillance.",
+      "source": {
+        "title": "Talarico campaign: Social media, AI and tech",
+        "url": "https://jamestalarico.com/issue/social-media-artificial-intelligence-tech/"
+      },
+      "publishedDate": null,
+      "dateNote": "Campaign platform, 2026",
+      "sortDate": "2026",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "labor",
+          "privacy"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "safety-rules": "broad-binding",
+        "workers": "active-protections"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-sen-talarico-2",
+      "raceId": "tx-senate-2026",
+      "candidateId": "james-talarico",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Proposed an \"AI dividend\" to give ordinary people a share of the profits of companies developing AI. No implementation details were given.",
+      "source": {
+        "title": "Austin American-Statesman: James Talarico calls for AI dividends",
+        "url": "https://www.statesman.com/news/politics/state/article/james-talarico-calls-ai-dividends-help-22377208.php"
+      },
+      "publishedDate": null,
+      "dateNote": "During the 2026 campaign",
+      "sortDate": "2026",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "labor"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "workers": "active-protections"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-sen-talarico-3",
+      "raceId": "tx-senate-2026",
+      "candidateId": "james-talarico",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Called for tighter regulation of data centers, describing his approach as a balance between welcoming the investment and protecting working people.",
+      "source": {
+        "title": "Tom's Guide: What Talarico, El-Sayed and other midterm winners say about AI data centers",
+        "url": "https://www.tomsguide.com/ai/heres-what-james-talarico-abdul-el-sayed-and-other-us-midterm-election-winners-have-to-say-about-ai-data-centers"
+      },
+      "publishedDate": null,
+      "dateNote": "Reported after the Nov. 3, 2026 election",
+      "sortDate": "2026-11",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers",
+          "labor"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-sen-paxton-1",
+      "raceId": "tx-senate-2026",
+      "candidateId": "ken-paxton",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "As Texas attorney general, opened an investigation into two AI developers for possible deceptive trade practices and misleading marketing. Earlier reached a settlement with a generative-AI health care company over deceptive claims.",
+      "source": {
+        "title": "JD Supra: State attorneys general and AI (topic page)",
+        "url": "https://www.jdsupra.com/topics/state-attorneys-general/artificial-intelligence/technology-sector"
+      },
+      "publishedDate": "2025-08-18",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "privacy"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "safety-rules": "targeted-binding"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-sen-paxton-2",
+      "raceId": "tx-senate-2026",
+      "candidateId": "ken-paxton",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Released a four-point AI data center plan calling for federal legislation to block Chinese technology in data centers and criminal liability for data centers that power AI chatbots that harm children. Stopped short of a moratorium on new data centers.",
+      "source": {
+        "title": "Breitbart: Ken Paxton unveils plan to prevent \"negative impact\" of AI data centers on Texas",
+        "url": "https://www.breitbart.com/tech/2026/08/25/ken-paxton-unveils-plan-to-prevent-negative-impact-of-ai-data-centers-on-texas/"
+      },
+      "publishedDate": "2026-08-25",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "liability",
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers",
+          "child-safety",
+          "national-security-china"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional",
+        "harmful-content": "supports-rules",
+        "safety-rules": "targeted-binding"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-gov-benson-1",
+      "raceId": "mi-governor-2026",
+      "candidateId": "jocelyn-benson",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "As Michigan secretary of state, testified to the U.S. Senate Rules Committee that 2024 would be the first election cycle in which AI would be used to amplify election disinformation tactics \"exponentially\".",
+      "source": {
+        "title": "U.S. Senate Rules Committee: Benson testimony",
+        "url": "https://www.rules.senate.gov/download/06/11/2024/testimony_benson1"
+      },
+      "publishedDate": "2024-06-11",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal",
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "deepfakes-elections"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "direct-quote",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "harmful-content": "supports-rules"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-gov-benson-2",
+      "raceId": "mi-governor-2026",
+      "candidateId": "jocelyn-benson",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "In a TV ad launched Sept. 13, 2026, called for a moratorium on data centers, an end to their tax breaks and stopping them from raising electric bills. Did not say how long a moratorium should last.",
+      "source": {
+        "title": "Yahoo News: Jocelyn Benson's new ad calls for ending data center tax breaks",
+        "url": "https://www.yahoo.com/news/politics/articles/jocelyn-bensons-ad-calls-ending-100559557.html"
+      },
+      "publishedDate": "2026-09-13",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans",
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-gov-james-1",
+      "raceId": "mi-governor-2026",
+      "candidateId": "john-james",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "As a U.S. representative, voted for legislation that would have prohibited state and local governments from regulating AI systems, including data centers (the House budget bill carrying a 10-year moratorium on state AI laws).",
+      "source": {
+        "title": "Michigan Advance: As James pushes local control on data centers, past congressional votes sought to limit just that",
+        "url": "https://michiganadvance.com/2026/09/02/as-james-pushes-local-control-on-data-centers-past-congressional-votes-sought-to-limit-just-that/"
+      },
+      "publishedDate": "2025-05",
+      "dateNote": "House vote in May 2025; the vote was on a broad budget bill, not a standalone AI measure",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "federal",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "voting-record",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "preemption": "supports-preemption"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-gov-james-2",
+      "raceId": "mi-governor-2026",
+      "candidateId": "john-james",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "His campaign said he supported a moratorium on new data centers until a local-control standard and protections for the environment and electricity bills were in place.",
+      "source": {
+        "title": "The Detroit News: John James favors moratorium on data centers, more local control",
+        "url": "https://www.detroitnews.com/story/news/politics/2026/08/01/john-james-data-center-moratorium-michigan-governor-race-perry-johnson/91134570007/"
+      },
+      "publishedDate": "2026-08-01",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-gov-james-3",
+      "raceId": "mi-governor-2026",
+      "candidateId": "john-james",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In the Oct. 6 debate, said communities should decide whether to accept data centers, called his approach \"a moratorium on Lansing and not the people\", and afterwards said he would not push for a statewide moratorium.",
+      "source": {
+        "title": "Michigan Public: James distances himself from Trump as Benson tries to connect them",
+        "url": "https://www.michiganpublic.org/politics-government/2026-10-07/james-distances-himself-from-trump-as-benson-tries-to-connect-them-in-gubernatorial-debate"
+      },
+      "publishedDate": "2026-10-06",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-mi-gov-james-4",
+      "raceId": "mi-governor-2026",
+      "candidateId": "john-james",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Described a \"five-part moratorium\" and said: \"No new data centers until we have a plan to protect our communities.\"",
+      "source": {
+        "title": "WNEM: John James says no new data centers until plan to protect communities",
+        "url": "https://www.wnem.com/2026/10/30/john-james-says-no-new-data-centers-until-plan-protect-communities/"
+      },
+      "publishedDate": "2026-10-30",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-gov-hinojosa-1",
+      "raceId": "tx-governor-2026",
+      "candidateId": "gina-hinojosa",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Pledged an immediate moratorium on new data centers until the Legislature puts protections in place, an end to data center tax breaks and a local say over projects. Goals include American union jobs, transparency, data centers paying for themselves and putting water and power for Texans first. Called Gov. Abbott's pause \"just words\".",
+      "source": {
+        "title": "FOX 4: Hinojosa challenges Abbott's data center policies",
+        "url": "https://www.fox4news.com/news/hinojosa-challenges-abbott-data-center-policies-during-campaign-stop"
+      },
+      "publishedDate": null,
+      "dateNote": "During the 2026 campaign",
+      "sortDate": "2026",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans",
+          "funding",
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers",
+          "labor"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-gov-hinojosa-2",
+      "raceId": "tx-governor-2026",
+      "candidateId": "gina-hinojosa",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "As governor-elect, said the state will have laws to shield residents from data centers and that new projects should pause until then: \"It is not that I hate data centers. I hate the way they are taking advantage of Texas.\"",
+      "source": {
+        "title": "U.S. News: Texas governor-elect says state will have laws to shield citizens from data centers",
+        "url": "https://www.usnews.com/news/us/articles/2026-11-05/texas-governor-elect-says-state-will-have-laws-to-shield-citizens-from-data-centers"
+      },
+      "publishedDate": "2026-11-05",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-gov-abbott-1",
+      "raceId": "tx-governor-2026",
+      "candidateId": "greg-abbott",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Signed HB 149, the Texas Responsible Artificial Intelligence Governance Act (TRAIGA), effective Jan. 1, 2026. It bans a short list of AI uses, including AI-generated child sexual abuse material and government social scoring, and requires state agencies to disclose AI use to consumers.",
+      "source": {
+        "title": "Texas Legislature Online: HB 149 history",
+        "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149"
+      },
+      "publishedDate": "2025-06-22",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans",
+          "disclosure"
+        ],
+        "issueAreas": [
+          "child-safety",
+          "discrimination"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "safety-rules": "targeted-binding",
+        "harmful-content": "supports-rules"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-gov-abbott-2",
+      "raceId": "tx-governor-2026",
+      "candidateId": "greg-abbott",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Told state regulators and the grid operator ERCOT to stop approving new data center grid connections until an audit is done; the pause was later set out in an executive order. Critics said it had no clear timeline and did not cover most mid-size projects.",
+      "source": {
+        "title": "E&E News: Texas governor talks tough on data centers, calls for clampdown",
+        "url": "https://www.eenews.net/articles/texas-governor-talks-tough-on-data-centers-calls-for-clampdown/"
+      },
+      "publishedDate": "2026-08",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-tx-gov-abbott-3",
+      "raceId": "tx-governor-2026",
+      "candidateId": "greg-abbott",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Said he wants the Legislature to write his data center restrictions into law in 2027 and to give cities, counties and residents more authority over where data centers are built.",
+      "source": {
+        "title": "Texarkana Gazette: Abbott wants Texas lawmakers to turn data center restrictions into law",
+        "url": "https://www.texarkanagazette.com/news/2026/oct/14/election-2026-abbott-wants-texas-lawmakers-to/"
+      },
+      "publishedDate": "2026-10-14",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    }
+  ]
+}

@@ -106,7 +106,7 @@ function PartySummary() {
 
       {records.length === 0 ? (
         <div className="empty-panel">
-          <h3>No verified coded records yet</h3>
+          <h3>No sourced coded records yet</h3>
           <p>
             Party comparisons appear here once records have been checked against sources and coded.
             {!includeDrafts && drafts > 0 && ` ${drafts} unverified draft records exist.`}

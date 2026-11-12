@@ -1,15 +1,13 @@
 import React from 'react';
 import RaceView from './RaceView';
-import BillCard from './BillCard';
-import { HiddenDraftsNotice } from './ItemCard';
+import ProposalsPanel from './ProposalsPanel';
 import { ResultSummary } from './ElectionResult';
-import { racesForState, billsForState, raceById, stateName, filterDrafts, isVerified } from '../lib/data';
-import { useDrafts } from '../lib/drafts';
+import { racesForState, raceById, stateName, isVerified, itemsForRace } from '../lib/data';
 import { navigate } from '../lib/router';
 import '../styles/StateView.css';
 
 function RaceCard({ race }) {
-  const records = [...race.items, ...race.contextSignals];
+  const records = [...itemsForRace(race), ...race.contextSignals];
   const verified = records.filter(isVerified).length;
   return (
     <button type="button" className="race-card" onClick={() => navigate(`/state/${race.state}/${race.id}`)}>
@@ -21,7 +19,7 @@ function RaceCard({ race }) {
         ))}
       </div>
       <div className="race-counts">
-        {verified} verified record{verified === 1 ? '' : 's'} · {records.length - verified} unverified draft{records.length - verified === 1 ? '' : 's'}
+        {verified} sourced record{verified === 1 ? '' : 's'} · {records.length - verified} unverified draft{records.length - verified === 1 ? '' : 's'}
       </div>
       <ResultSummary raceId={race.id} />
     </button>
@@ -29,7 +27,6 @@ function RaceCard({ race }) {
 }
 
 function StateView({ stateAbbr, raceId, onClose }) {
-  const { includeDrafts } = useDrafts();
   const name = stateName(stateAbbr);
 
   if (raceId) {
@@ -40,8 +37,6 @@ function StateView({ stateAbbr, raceId, onClose }) {
   }
 
   const stateRaces = racesForState(stateAbbr);
-  const allBills = billsForState(stateAbbr);
-  const shownBills = filterDrafts(allBills, includeDrafts);
 
   return (
     <div className="state-view">
@@ -61,17 +56,7 @@ function StateView({ stateAbbr, raceId, onClose }) {
         )}
       </section>
 
-      <section className="state-section">
-        <h3>State AI legislation</h3>
-        <HiddenDraftsNotice count={allBills.length - shownBills.length} />
-        {shownBills.length ? (
-          <div className="bill-list">
-            {shownBills.map((bill) => <BillCard key={bill.id} bill={bill} />)}
-          </div>
-        ) : (
-          allBills.length === 0 && <p className="empty-note">No {name} AI bills have been coded yet.</p>
-        )}
-      </section>
+      <ProposalsPanel state={stateAbbr} title={`Proposed bills and moratoriums: federal and ${name}`} />
     </div>
   );
 }

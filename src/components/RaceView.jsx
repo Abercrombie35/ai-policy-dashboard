@@ -2,6 +2,8 @@ import React from 'react';
 import CandidateComparison from './CandidateComparison';
 import ItemCard, { HiddenDraftsNotice } from './ItemCard';
 import ElectionResult from './ElectionResult';
+import ProposalsPanel from './ProposalsPanel';
+import { RaceDeviation } from './Analysis';
 import { stateName, filterDrafts } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/RaceView.css';
@@ -28,6 +30,7 @@ function RaceView({ race, onBack }) {
       {/* Pre-election tracking comes first; the election result follows it. */}
       <h2 className="section-title">Pre-election tracking</h2>
       <CandidateComparison race={race} />
+      <RaceDeviation race={race} />
 
       <section className="context-signals">
         <h3>Context signals</h3>
@@ -51,6 +54,8 @@ function RaceView({ race, onBack }) {
       </section>
 
       <ElectionResult race={race} />
+
+      <ProposalsPanel state={race.state} title={`Proposed bills and moratoriums: federal and ${stateName(race.state)}`} />
     </div>
   );
 }

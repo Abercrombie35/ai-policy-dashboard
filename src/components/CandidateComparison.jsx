@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 import ItemCard, { HiddenDraftsNotice } from './ItemCard';
-import { filterDrafts } from '../lib/data';
+import { filterDrafts, itemsForRace, domainsOf, trackOf, domains, tracks } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/CandidateComparison.css';
 
-// Every candidate gets the same tabs and fields (symmetric treatment).
+// Every candidate gets the same tabs and fields (symmetric treatment). The two
+// policy-area tabs split each candidate's records into what they said and
+// what they proposed.
+const POLICY_KINDS = ['statement', 'position', 'action'];
 const TABS = [
   { id: 'overview', label: 'Overview', kinds: ['profile', 'stance'] },
-  { id: 'statements', label: 'Statements', kinds: ['statement'] },
-  { id: 'positions', label: 'Positions', kinds: ['position'] },
+  { id: 'data-centers', label: 'Data centers', domain: 'data-centers' },
+  { id: 'ai-general', label: 'Everything else in AI', domain: 'ai-general' },
   { id: 'alignment', label: 'Alignment & endorsements', kinds: ['alignment', 'endorsement'] },
   { id: 'projections', label: 'Projections', kinds: ['projection'] },
 ];
+
+const inTab = (tab, item) =>
+  tab.domain ? POLICY_KINDS.includes(item.kind) && domainsOf(item).includes(tab.domain) : tab.kinds.includes(item.kind);
 
 const initials = (name) => name.split(/\s+/).map((p) => p[0]).slice(0, 2).join('').toUpperCase();
 
@@ -34,8 +40,8 @@ function CandidateComparison({ race }) {
   const { includeDrafts } = useDrafts();
   const tab = TABS.find((t) => t.id === activeTab);
 
-  const inTab = race.items.filter((i) => tab.kinds.includes(i.kind));
-  const shown = filterDrafts(inTab, includeDrafts);
+  const tabItems = itemsForRace(race).filter((i) => inTab(tab, i));
+  const shown = filterDrafts(tabItems, includeDrafts);
 
   return (
     <div className="candidate-comparison">
@@ -73,21 +79,35 @@ function CandidateComparison({ race }) {
             Projections are conditional estimates of possible policy direction, not predictions or facts.
           </p>
         )}
-        <HiddenDraftsNotice count={inTab.length - shown.length} />
+        {tab.domain && <p className="section-note">{domains[tab.domain].description}</p>}
+        <HiddenDraftsNotice count={tabItems.length - shown.length} />
         <div className="comparison-row" style={{ '--cols': race.candidates.length }}>
           {race.candidates.map((c) => {
             const mine = shown.filter((i) => i.candidateId === c.id);
-            const anyAtAll = inTab.some((i) => i.candidateId === c.id);
+            const anyAtAll = tabItems.some((i) => i.candidateId === c.id);
+            const empty = (
+              <p className="empty-note">
+                {anyAtAll ? 'Only unverified drafts here so far.' : 'No records in this category yet.'}
+              </p>
+            );
             return (
               <div key={c.id} className="candidate-column" aria-label={c.name}>
                 <div className="column-name">{c.name}</div>
-                {mine.length ? (
-                  mine.map((item) => <ItemCard key={item.id} item={item} />)
-                ) : (
-                  <p className="empty-note">
-                    {anyAtAll ? 'No verified records in this category yet.' : 'No records in this category yet.'}
-                  </p>
-                )}
+                {tab.domain
+                  ? ['said', 'proposed'].map((t) => {
+                      const list = mine.filter((i) => trackOf(i) === t);
+                      return (
+                        <div key={t} className={`track-group track-${t}`}>
+                          <h5 title={tracks[t].description}>{tracks[t].label}</h5>
+                          {list.length ? list.map((item) => <ItemCard key={item.id} item={item} />) : (
+                            <p className="empty-note">Nothing recorded.</p>
+                          )}
+                        </div>
+                      );
+                    })
+                  : mine.length
+                    ? mine.map((item) => <ItemCard key={item.id} item={item} />)
+                    : empty}
               </div>
             );
           })}

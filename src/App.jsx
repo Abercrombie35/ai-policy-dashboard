@@ -6,7 +6,10 @@ import LegislationView from './pages/LegislationView';
 import InternationalView from './pages/InternationalView';
 import MethodsView from './pages/MethodsView';
 import DataView from './pages/DataView';
-import { races, bills, results, geo, countRecords, datasetUpdated } from './lib/data';
+import AnalysisPage from './pages/AnalysisPage';
+import ProposalsPanel from './components/ProposalsPanel';
+import { races, bills, results, geo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains } from './lib/data';
+import { allCandidates, questionsInDomain, deviationCell } from './lib/analysis';
 import { useDrafts } from './lib/drafts';
 import { useHashRoute, navigate } from './lib/router';
 import './styles.css';
@@ -14,6 +17,7 @@ import './styles/pages.css';
 
 const NAV = [
   { id: 'map', label: 'Map', path: '/' },
+  { id: 'analysis', label: 'Policy analysis', path: '/analysis' },
   { id: 'parties', label: 'Party comparison', path: '/parties' },
   { id: 'legislation', label: 'Legislation', path: '/legislation' },
   { id: 'international', label: 'International', path: '/international' },
@@ -27,13 +31,55 @@ const MAP_FILTERS = [
   { id: 'legislation', label: 'States with coded AI bills' },
 ];
 
+// Home-screen summary of the two policy areas: how much is said vs proposed,
+// and how many candidates currently deviate from their party line.
+function PolicyFronts() {
+  const { includeDrafts } = useDrafts();
+  const coded = allCodedRecords(includeDrafts).map((r) => r.record);
+  const props = proposals(includeDrafts);
+  return (
+    <section className="fronts" aria-label="The two policy areas">
+      {['data-centers', 'ai-general'].map((d) => {
+        const inDomain = coded.filter((r) => domainsOf(r).includes(d));
+        const said = inDomain.filter((r) => trackOf(r) === 'said').length;
+        const proposed = props.filter((p) => p.domains.includes(d));
+        const moratoriums = proposed.filter((p) => p.isMoratorium).length;
+        const qs = questionsInDomain(d);
+        const deviating = allCandidates().filter(({ race, candidate }) =>
+          qs.some((q) => deviationCell(race, candidate, q.id, includeDrafts).status === 'deviates'),
+        );
+        return (
+          <div key={d} className={`front ${d}`}>
+            <h3>{domains[d].label}</h3>
+            <div className="front-stats">
+              <div className="front-stat"><strong>{said}</strong><span>records of what is said</span></div>
+              <div className="front-stat">
+                <strong>{proposed.length}</strong>
+                <span>proposals and actions{d === 'data-centers' ? ` (${moratoriums} moratoriums or bans)` : ''}</span>
+              </div>
+              <div className="front-stat">
+                <strong>{deviating.length} of {allCandidates().length}</strong>
+                <span>candidates deviate from their party line</span>
+              </div>
+            </div>
+            <p>
+              {deviating.length > 0 ? `Deviating: ${deviating.map(({ candidate }) => candidate.name).join(', ')}. ` : ''}
+              <a href="#/analysis">See where and when</a>.
+            </p>
+          </div>
+        );
+      })}
+    </section>
+  );
+}
+
 function MapPage({ selectedState, raceId }) {
   const [filter, setFilter] = useState('all');
   const close = useCallback(() => navigate('/'), []);
   const statesWithRaces = new Set(races.map((r) => r.state)).size;
   const senate = races.filter((r) => r.office === 'U.S. Senate').length;
   const governor = races.filter((r) => r.office === 'Governor').length;
-  const { verified, drafts } = countRecords();
+  const { sourced, drafts } = countRecords();
 
   return (
     <>
@@ -47,12 +93,12 @@ function MapPage({ selectedState, raceId }) {
           </span>
         </div>
         <div className="stat-box">
-          <span className="label">Verified records</span>
-          <strong>{verified}</strong>
-          <span className="stat-sub">{drafts} unverified draft{drafts === 1 ? '' : 's'} awaiting checks</span>
+          <span className="label">Sourced records</span>
+          <strong>{sourced}</strong>
+          <span className="stat-sub">Each cites its source; most are Low confidence until checked · {drafts} hidden draft{drafts === 1 ? '' : 's'}</span>
         </div>
         <div className="stat-box">
-          <span className="label">State AI bills coded</span>
+          <span className="label">AI bills tracked</span>
           <strong>{bills.length}</strong>
           <span className="stat-sub">Dataset last edited {datasetUpdated || 'never'}</span>
         </div>
@@ -70,6 +116,9 @@ function MapPage({ selectedState, raceId }) {
         <USMap selectedState={selectedState} filter={filter} onStateClick={(abbr) => navigate(`/state/${abbr}`)} />
       </div>
 
+      <PolicyFronts />
+      <ProposalsPanel title="Proposed bills and moratoriums" />
+
       {selectedState && <StateModal stateAbbr={selectedState} raceId={raceId} onClose={close} />}
     </>
   );
@@ -83,6 +132,7 @@ function App() {
 
   let content;
   switch (page) {
+    case 'analysis': content = <AnalysisPage />; break;
     case 'parties': content = <PartySummary />; break;
     case 'legislation': content = <LegislationView />; break;
     case 'international': content = <InternationalView />; break;

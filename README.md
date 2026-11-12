@@ -26,7 +26,24 @@ them as facts.
 2. FEATURE STATUS
 =================
 
+The two policy areas this project studies are DATA CENTERS and EVERYTHING ELSE
+IN AI. Within each, what candidates SAY (statements, stated principles) is kept
+apart from what they PROPOSE (bills, moratoriums, plans, official actions).
+
 Built:
+- Policy analysis page (#/analysis): party lines, a deviation matrix (each
+  candidate against their party line, split into said vs. proposed), a "where
+  deviation exists" summary and a "when" timeline, separately for data centers
+  and for everything else in AI. Party lines: Republican = the Trump
+  administration; Democratic = the incoming congressional leaders (Schumer,
+  presumptive Senate majority leader; Jeffries, presumptive Speaker).
+- Proposed bills and moratoriums, each with its source and a "To verify"
+  marker, split into the two policy areas: on the home screen and at the
+  bottom of every state and race page.
+- Home screen summary of the two policy areas: records of what is said,
+  proposals, and how many candidates deviate from their party line.
+- Race pages: "Data centers" and "Everything else in AI" tabs, each showing
+  what each candidate said and what they proposed, plus a deviation section.
 - Accurate map of all 50 states plus D.C., bundled with the app (no runtime
   download). States are colored by data coverage and can be used by keyboard.
 - Multi-race support: each race is one file in src/data/races/. Four 2026
@@ -55,8 +72,11 @@ Built:
   labeling rules.
 
 Not built yet / needs people:
-- Verification. Every record is an unverified draft until someone checks it
-  against a primary source (see section 4).
+- Verification. The prototype Michigan records are unverified drafts. The
+  records added on 2026-11-12 (candidate stances, party lines, bills and
+  moratoriums) cite sources but came from web search summaries, so they are
+  marked Low confidence and "To verify" until someone checks each one.
+- Review of the AI-model stance coding and party-line judgments.
 - AI policy records for Texas and for both governor races (none entered
   yet), the final 10-20 race list, and certified 2026 election results.
 - Coding review. The draft coding was produced by an AI model and is marked
@@ -93,6 +113,10 @@ All data lives in src/data/:
 - races/<race-id>.json: one file per race (candidates, items, context
   signals, result). The file name must match the race id.
 - results.json: election results (separate "Election result" label).
+- candidate-research.json: sourced candidate records with stances on the
+  policy questions (kept apart from the race files, which are not edited).
+- party-lines.json: the Republican and Democratic party lines, one per policy
+  question, each with dated, sourced evidence.
 - legislation.json: state AI bills.
 - international.json: elections outside the U.S.
 - us-states-geo.json: map shapes (generated; see tools/build-state-paths.mjs).
@@ -108,6 +132,13 @@ To verify a record:
 5. Run "npm run validate". It rejects verified records that have no URL or
    no last-verified date, unknown codebook categories, and version numbers
    that don't match the history.
+
+To verify a bill, moratorium, candidate record or party line marked "To verify":
+open its source, check the facts (bill number, sponsors, status, wording,
+date), then set "confidence" to "medium" or "high", update "lastVerified",
+increase "version" and add a history entry. Where a record has "stances", also
+check that the stance fits the codebook's policy-question definitions, and set
+"coding.reviewed": true.
 
 To add a race, copy src/data/races/tx-governor-2026.json, rename it to the
 new race id, and fill it in. It appears on the map automatically.
@@ -141,6 +172,9 @@ Key files:
 - src/components/ItemCard.jsx: the labeled record card used everywhere.
 - src/components/BillCard.jsx: a bill record.
 - src/components/ElectionResult.jsx: the election-result panel and badges.
+- src/lib/analysis.js, src/components/Analysis.jsx, src/pages/AnalysisPage.jsx:
+  party-line deviation analysis.
+- src/components/ProposalsPanel.jsx: proposed bills and moratoriums.
 - src/pages/: Party comparison, Legislation, International, Methodology,
   Download data.
 - src/lib/drafts.jsx: the drafts switch. Set SHOW_DRAFTS_BY_DEFAULT to change
