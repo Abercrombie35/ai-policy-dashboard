@@ -1,0 +1,43 @@
+.election-result {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(45, 212, 191, 0.35);
+  background: rgba(13, 32, 36, 0.75);
+}
+.election-result.empty { border-style: dashed; border-color: rgba(147, 177, 216, 0.25); background: rgba(10, 18, 28, 0.6); }
+.election-result h3 { margin: 0; }
+.result-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+
+.badge.type-election-result { background: rgba(45, 212, 191, 0.16); color: #7eeadb; }
+.badge.result-unofficial { background: rgba(251, 191, 36, 0.14); color: #fcd34d; }
+.badge.result-certified { background: rgba(74, 222, 128, 0.14); color: #86efac; }
+
+.result-winner { margin: 0; color: #e5edf7; }
+.result-call { color: #9eb7d7; font-size: 0.9rem; }
+
+.result-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.result-table th,
+.result-table td { padding: 8px 6px; text-align: left; vertical-align: middle; }
+.result-table thead th { color: #7a8fa3; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+.result-table tbody tr + tr { border-top: 1px solid rgba(147, 177, 216, 0.1); }
+.result-table tbody th { color: #c7d8ee; font-weight: 500; }
+.result-table tbody tr.winner th { color: #ffffff; font-weight: 700; }
+.result-table td { color: #c7d8ee; }
+.result-table td:last-child { width: 45%; }
+.winner-mark { color: #7eeadb; font-weight: 600; font-size: 0.8rem; }
+.party-note { color: #7a8fa3; font-size: 0.78rem; }
+.meter-fill.other { background: #8a9bb0; }
+
+.result-asof,
+.result-context { margin: 0; color: #9eb7d7; font-size: 0.85rem; }
+.result-history { margin: 0; }
+.result-sources summary { cursor: pointer; color: #9eb7d7; font-size: 0.82rem; }
+.result-sources ul { margin: 8px 0 0; padding-left: 18px; font-size: 0.82rem; }
+.result-sources a { color: #7bb5f8; }
+
+.result-summary { font-size: 0.82rem; color: #7eeadb; font-weight: 600; }
+.result-summary.pending { color: #7a8fa3; font-weight: 400; }

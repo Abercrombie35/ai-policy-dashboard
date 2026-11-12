@@ -1,29 +1,27 @@
-.state-view {
-  padding: 20px;
-  max-height: calc(90vh - 40px);
-  overflow-y: auto;
-}
+.state-view { padding: 24px; }
 
 .back-button {
   background: none;
   border: none;
   color: #7bb5f8;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.95rem;
   padding: 8px 0;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-weight: 600;
 }
+.back-button:hover { color: #a8c5e0; text-decoration: underline; }
 
-.back-button:hover { color: #a8c5e0; }
-
-.state-header { margin-bottom: 24px; }
+.state-header { margin-bottom: 16px; }
 .state-header h2 { font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 4px; }
-.state-header p {
-  color: #9eb7d7;
-  font-size: 0.85rem;
+
+.state-section { margin-bottom: 28px; display: flex; flex-direction: column; gap: 12px; }
+.state-section h3 {
+  margin: 0;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  color: #9eb7d7;
 }
 
 .races-grid {
@@ -38,45 +36,48 @@
   border-radius: 12px;
   padding: 18px;
   text-align: left;
+  color: inherit;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-
-.race-card:hover {
-  border-color: rgba(147, 177, 216, 0.5);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(61, 116, 255, 0.1);
-}
+.race-card:hover,
+.race-card:focus-visible { border-color: rgba(147, 177, 216, 0.6); transform: translateY(-2px); }
 
 .race-type {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #7bb5f8;
-  margin-bottom: 6px;
 }
-
-.race-title { font-size: 1.2rem; font-weight: 700; color: #e5edf7; margin-bottom: 4px; }
-.race-year { font-size: 0.8rem; color: #9eb7d7; margin-bottom: 12px; }
+.race-title { font-size: 1.05rem; font-weight: 700; color: #e5edf7; }
+.race-counts { font-size: 0.78rem; color: #9eb7d7; }
 
 .candidate-previews { display: flex; gap: 8px; flex-wrap: wrap; }
 .candidate-previews .preview {
   display: inline-block;
   padding: 5px 10px;
   border-radius: 16px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 600;
+  background: rgba(147, 177, 216, 0.14);
+  color: #c7d8ee;
 }
 .candidate-previews .preview.democratic { background: rgba(54, 113, 228, 0.17); color: #7db0ff; }
 .candidate-previews .preview.republican { background: rgba(255, 99, 99, 0.12); color: #ff9a9a; }
 
-.empty-state { text-align: center; padding: 40px 20px; }
-.empty-state h2 { color: #9eb7d7; margin-bottom: 8px; }
-.empty-state p { color: #7a8fa3; }
+.bill-list { display: flex; flex-direction: column; gap: 12px; }
+.bill-head h4 { margin: 0 0 4px; font-size: 1rem; color: #e5edf7; }
+.bill-state { color: #7bb5f8; }
+.bill-sub, .bill-sponsors { font-size: 0.82rem; color: #9eb7d7; }
+.party-tag.democratic { color: #7db0ff; }
+.party-tag.republican { color: #ff9a9a; }
+
+.empty-note { margin: 0; color: #7a8fa3; font-size: 0.9rem; font-style: italic; }
 
 @media (max-width: 480px) {
-  .state-view { padding: 16px; max-height: calc(95vh - 32px); }
-  .state-header h2 { font-size: 1.5rem; }
+  .state-view { padding: 16px; }
   .races-grid { grid-template-columns: 1fr; gap: 12px; }
-  .race-card { padding: 14px; }
 }

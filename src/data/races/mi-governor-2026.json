@@ -1,0 +1,28 @@
+{
+  "id": "mi-governor-2026",
+  "state": "MI",
+  "office": "Governor",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "open",
+    "note": "Gov. Gretchen Whitmer (D) was term-limited."
+  },
+  "nomineesSource": "Major-party nominees as listed in the election results (see this race's election-result record).",
+  "candidates": [
+    {
+      "id": "jocelyn-benson",
+      "name": "Jocelyn Benson",
+      "party": "Democratic",
+      "questionnaire": { "status": "not-sent", "deadline": null, "asOf": null }
+    },
+    {
+      "id": "john-james",
+      "name": "John James",
+      "party": "Republican",
+      "questionnaire": { "status": "not-sent", "deadline": null, "asOf": null }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

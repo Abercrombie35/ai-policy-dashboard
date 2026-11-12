@@ -1,140 +1,130 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import USMap from './components/USMap';
 import StateModal from './components/StateModal';
+import PartySummary from './pages/PartySummary';
+import LegislationView from './pages/LegislationView';
+import InternationalView from './pages/InternationalView';
+import MethodsView from './pages/MethodsView';
+import DataView from './pages/DataView';
+import { races, bills, results, geo, countRecords, datasetUpdated } from './lib/data';
+import { useDrafts } from './lib/drafts';
+import { useHashRoute, navigate } from './lib/router';
 import './styles.css';
+import './styles/pages.css';
 
-const stateMetadata = [
-  { abbr: 'WA', name: 'Washington', party: 'Democratic' },
-  { abbr: 'OR', name: 'Oregon', party: 'Democratic' },
-  { abbr: 'CA', name: 'California', party: 'Democratic' },
-  { abbr: 'NV', name: 'Nevada', party: 'Republican' },
-  { abbr: 'ID', name: 'Idaho', party: 'Republican' },
-  { abbr: 'MT', name: 'Montana', party: 'Republican' },
-  { abbr: 'WY', name: 'Wyoming', party: 'Republican' },
-  { abbr: 'UT', name: 'Utah', party: 'Republican' },
-  { abbr: 'AZ', name: 'Arizona', party: 'Republican' },
-  { abbr: 'CO', name: 'Colorado', party: 'Democratic' },
-  { abbr: 'NM', name: 'New Mexico', party: 'Democratic' },
-  { abbr: 'TX', name: 'Texas', party: 'Republican' },
-  { abbr: 'OK', name: 'Oklahoma', party: 'Republican' },
-  { abbr: 'KS', name: 'Kansas', party: 'Republican' },
-  { abbr: 'NE', name: 'Nebraska', party: 'Republican' },
-  { abbr: 'SD', name: 'South Dakota', party: 'Republican' },
-  { abbr: 'ND', name: 'North Dakota', party: 'Republican' },
-  { abbr: 'MN', name: 'Minnesota', party: 'Democratic' },
-  { abbr: 'IA', name: 'Iowa', party: 'Republican' },
-  { abbr: 'MO', name: 'Missouri', party: 'Republican' },
-  { abbr: 'WI', name: 'Wisconsin', party: 'Democratic' },
-  { abbr: 'IL', name: 'Illinois', party: 'Democratic' },
-  { abbr: 'MI', name: 'Michigan', party: 'Democratic' },
-  { abbr: 'IN', name: 'Indiana', party: 'Republican' },
-  { abbr: 'OH', name: 'Ohio', party: 'Republican' },
-  { abbr: 'KY', name: 'Kentucky', party: 'Republican' },
-  { abbr: 'WV', name: 'West Virginia', party: 'Republican' },
-  { abbr: 'VA', name: 'Virginia', party: 'Democratic' },
-  { abbr: 'NC', name: 'North Carolina', party: 'Republican' },
-  { abbr: 'SC', name: 'South Carolina', party: 'Republican' },
-  { abbr: 'GA', name: 'Georgia', party: 'Democratic' },
-  { abbr: 'FL', name: 'Florida', party: 'Republican' },
-  { abbr: 'AL', name: 'Alabama', party: 'Republican' },
-  { abbr: 'MS', name: 'Mississippi', party: 'Republican' },
-  { abbr: 'TN', name: 'Tennessee', party: 'Republican' },
-  { abbr: 'AR', name: 'Arkansas', party: 'Republican' },
-  { abbr: 'LA', name: 'Louisiana', party: 'Republican' },
-  { abbr: 'AK', name: 'Alaska', party: 'Republican' },
-  { abbr: 'HI', name: 'Hawaii', party: 'Democratic' },
-  { abbr: 'ME', name: 'Maine', party: 'Democratic' },
-  { abbr: 'VT', name: 'Vermont', party: 'Democratic' },
-  { abbr: 'NH', name: 'New Hampshire', party: 'Democratic' },
-  { abbr: 'MA', name: 'Massachusetts', party: 'Democratic' },
-  { abbr: 'CT', name: 'Connecticut', party: 'Democratic' },
-  { abbr: 'RI', name: 'Rhode Island', party: 'Democratic' },
-  { abbr: 'NJ', name: 'New Jersey', party: 'Democratic' },
-  { abbr: 'NY', name: 'New York', party: 'Democratic' },
-  { abbr: 'PA', name: 'Pennsylvania', party: 'Democratic' },
-  { abbr: 'MD', name: 'Maryland', party: 'Democratic' },
-  { abbr: 'DE', name: 'Delaware', party: 'Democratic' },
-  { abbr: 'DC', name: 'D.C.', party: 'Democratic' },
+const NAV = [
+  { id: 'map', label: 'Map', path: '/' },
+  { id: 'parties', label: 'Party comparison', path: '/parties' },
+  { id: 'legislation', label: 'Legislation', path: '/legislation' },
+  { id: 'international', label: 'International', path: '/international' },
+  { id: 'methods', label: 'Methodology', path: '/methods' },
+  { id: 'data', label: 'Download data', path: '/data' },
 ];
 
-const partyOptions = ['all', 'Democratic', 'Republican'];
+const MAP_FILTERS = [
+  { id: 'all', label: 'All states' },
+  { id: 'races', label: 'States with tracked races' },
+  { id: 'legislation', label: 'States with coded AI bills' },
+];
+
+function MapPage({ selectedState, raceId }) {
+  const [filter, setFilter] = useState('all');
+  const close = useCallback(() => navigate('/'), []);
+  const statesWithRaces = new Set(races.map((r) => r.state)).size;
+  const senate = races.filter((r) => r.office === 'U.S. Senate').length;
+  const governor = races.filter((r) => r.office === 'Governor').length;
+  const { verified, drafts } = countRecords();
+
+  return (
+    <>
+      <section className="summary-row">
+        <div className="stat-box">
+          <span className="label">Tracked races</span>
+          <strong>{races.length}</strong>
+          <span className="stat-sub">
+            {senate} Senate · {governor} governor in {statesWithRaces} state{statesWithRaces === 1 ? '' : 's'} ·{' '}
+            {results.length} result{results.length === 1 ? '' : 's'} recorded
+          </span>
+        </div>
+        <div className="stat-box">
+          <span className="label">Verified records</span>
+          <strong>{verified}</strong>
+          <span className="stat-sub">{drafts} unverified draft{drafts === 1 ? '' : 's'} awaiting checks</span>
+        </div>
+        <div className="stat-box">
+          <span className="label">State AI bills coded</span>
+          <strong>{bills.length}</strong>
+          <span className="stat-sub">Dataset last edited {datasetUpdated || 'never'}</span>
+        </div>
+      </section>
+
+      <div className="map-panel">
+        <div className="panel-head">
+          <h2>United States</h2>
+          <label className="visually-hidden" htmlFor="map-filter">Filter states</label>
+          <select id="map-filter" value={filter} onChange={(e) => setFilter(e.target.value)}>
+            {MAP_FILTERS.map((f) => <option key={f.id} value={f.id}>{f.label}</option>)}
+          </select>
+        </div>
+        <p className="panel-note">Select a state to see its tracked races and AI legislation.</p>
+        <USMap selectedState={selectedState} filter={filter} onStateClick={(abbr) => navigate(`/state/${abbr}`)} />
+      </div>
+
+      {selectedState && <StateModal stateAbbr={selectedState} raceId={raceId} onClose={close} />}
+    </>
+  );
+}
 
 function App() {
-  const [selectedState, setSelectedState] = useState(null);
-  const [partyFilter, setPartyFilter] = useState('all');
+  const { page, params } = useHashRoute();
+  const { includeDrafts, setIncludeDrafts } = useDrafts();
+  const activeNav = page === 'state' ? 'map' : page;
+  const selectedState = page === 'state' && geo.states[params[0]?.toUpperCase()] ? params[0].toUpperCase() : null;
 
-  const stateMetadataMap = useMemo(() => {
-    const map = {};
-    stateMetadata.forEach((state) => {
-      map[state.abbr] = state;
-    });
-    return map;
-  }, []);
-
-  const visibleStates = useMemo(() => {
-    if (partyFilter === 'all') return stateMetadata;
-    return stateMetadata.filter((state) => state.party === partyFilter);
-  }, [partyFilter]);
-
-  const visibleStateAbbrs = useMemo(() => visibleStates.map((state) => state.abbr), [visibleStates]);
+  let content;
+  switch (page) {
+    case 'parties': content = <PartySummary />; break;
+    case 'legislation': content = <LegislationView />; break;
+    case 'international': content = <InternationalView />; break;
+    case 'methods': content = <MethodsView />; break;
+    case 'data': content = <DataView />; break;
+    default: content = <MapPage selectedState={selectedState} raceId={params[1]} />;
+  }
 
   return (
     <div className="page-shell">
       <header className="topbar">
         <div>
           <p className="eyebrow">Yale SOM AI Policy Dashboard</p>
-          <h1>U.S. Senate AI Policy Map</h1>
+          <h1>Mapping the AI Policy Divide</h1>
+          <p className="subtitle">Candidate positions, state legislation and party approaches to AI regulation</p>
         </div>
-        <div className="topbar-actions">
-          <button className="chip active">Live Overview</button>
-          <button className="chip">Citations</button>
-        </div>
+        <label className="drafts-toggle">
+          <input type="checkbox" checked={includeDrafts} onChange={(e) => setIncludeDrafts(e.target.checked)} />
+          <span>Show unverified drafts</span>
+        </label>
       </header>
 
-      <section className="summary-row">
-        <div className="stat-box">
-          <span className="label">Tracked states</span>
-          <strong>50</strong>
-        </div>
-        <div className="stat-box">
-          <span className="label">Data available</span>
-          <strong>Michigan</strong>
-        </div>
-        <div className="stat-box">
-          <span className="label">AI policy lens</span>
-          <strong>Safety + Regulation</strong>
-        </div>
-      </section>
+      <nav className="main-nav" aria-label="Sections">
+        {NAV.map((n) => (
+          <a key={n.id} href={`#${n.path}`} className={`chip ${activeNav === n.id ? 'active' : ''}`} aria-current={activeNav === n.id ? 'page' : undefined}>
+            {n.label}
+          </a>
+        ))}
+      </nav>
 
-      <div className="content-grid">
-        <aside className="map-panel">
-          <div className="panel-head">
-            <h2>United States</h2>
-            <select value={partyFilter} onChange={(e) => setPartyFilter(e.target.value)}>
-              {partyOptions.map((option) => (
-                <option key={option} value={option}>
-                  {option === 'all' ? 'All parties' : option}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <USMap
-            selectedState={selectedState}
-            visibleStates={visibleStateAbbrs}
-            stateMetadata={stateMetadataMap}
-            onStateClick={setSelectedState}
-          />
-        </aside>
-      </div>
-
-      {selectedState && (
-        <StateModal
-          stateAbbr={selectedState}
-          stateName={stateMetadataMap[selectedState]?.name}
-          onClose={() => setSelectedState(null)}
-        />
+      {includeDrafts && (
+        <div className="drafts-banner" role="status">
+          You are viewing unverified drafts. They have not been checked against sources and must not be cited as facts.
+        </div>
       )}
+
+      <main>{content}</main>
+
+      <footer className="site-footer">
+        A research demonstration. Records are labeled by type and confidence. See the{' '}
+        <a href="#/methods">methodology</a> for how they are sourced and corrected.
+      </footer>
     </div>
   );
 }

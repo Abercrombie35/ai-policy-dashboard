@@ -1,0 +1,37 @@
+{
+  "note": "State AI legislation layer (proposal Track B). Primary bill data should come from official state legislature websites. Trackers such as IAPP, NCSL and MultiState are reference and validation sources only, not data to copy.",
+  "bills": [
+    {
+      "id": "tx-89r-hb149",
+      "state": "TX",
+      "session": "89th Legislature, Regular Session (2025)",
+      "billNumber": "HB 149",
+      "title": "Texas Responsible Artificial Intelligence Governance Act (TRAIGA)",
+      "sponsors": [
+        { "name": "Giovanni Capriglione", "party": "Republican", "role": "author", "linkedCandidateId": null }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-06-22",
+      "summary": "Sets rules for some AI uses by government and businesses in Texas, including prohibited uses and disclosure duties, and creates a regulatory sandbox.",
+      "labelType": "source-summary",
+      "source": { "title": "Texas Legislature Online: HB 149 history", "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149" },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": ["state"],
+        "instruments": ["disclosure", "bans"],
+        "issueAreas": ["discrimination", "innovation-competitiveness"],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        { "version": 1, "date": "2026-11-12", "note": "Draft example entered from general knowledge to demonstrate the legislation layer. Status, date, sponsor, summary and coding all need checking against the official bill page." }
+      ]
+    }
+  ]
+}

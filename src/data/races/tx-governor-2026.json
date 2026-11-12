@@ -1,0 +1,28 @@
+{
+  "id": "tx-governor-2026",
+  "state": "TX",
+  "office": "Governor",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "incumbent",
+    "note": "Gov. Greg Abbott (R) sought a fourth term."
+  },
+  "nomineesSource": "Major-party nominees as listed in the election results (see this race's election-result record).",
+  "candidates": [
+    {
+      "id": "gina-hinojosa",
+      "name": "Gina Hinojosa",
+      "party": "Democratic",
+      "questionnaire": { "status": "not-sent", "deadline": null, "asOf": null }
+    },
+    {
+      "id": "greg-abbott",
+      "name": "Greg Abbott",
+      "party": "Republican",
+      "questionnaire": { "status": "not-sent", "deadline": null, "asOf": null }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

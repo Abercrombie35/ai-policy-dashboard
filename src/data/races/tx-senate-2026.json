@@ -1,0 +1,42 @@
+{
+  "id": "tx-senate-2026",
+  "state": "TX",
+  "office": "U.S. Senate",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "to-verify",
+    "note": "Seat status to verify."
+  },
+  "nomineesSource": "Project proposal (Oct 2026). Nominees to verify against official Texas results.",
+  "result": {
+    "status": "not-recorded",
+    "winnerId": null,
+    "source": null,
+    "note": "Record the certified result with its source once available."
+  },
+  "candidates": [
+    {
+      "id": "james-talarico",
+      "name": "James Talarico",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "ken-paxton",
+      "name": "Ken Paxton",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}
