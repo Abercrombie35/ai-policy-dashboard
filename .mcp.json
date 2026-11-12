@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "replit": {
+      "type": "http",
+      "url": "https://mcp.replit.com/server/mcp"
+    }
+  }
+}
