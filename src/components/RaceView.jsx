@@ -1,7 +1,7 @@
 import React from 'react';
 import CandidateComparison from './CandidateComparison';
 import ItemCard, { HiddenDraftsNotice } from './ItemCard';
-import ElectionResult, { ResultSummary } from './ElectionResult';
+import ElectionResult from './ElectionResult';
 import { stateName, filterDrafts } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/RaceView.css';
@@ -21,14 +21,12 @@ function RaceView({ race, onBack }) {
         <p className="race-meta">
           <span>{race.cycle} general election · {race.electionDate}</span>
           <span title={race.seat?.note}>{SEAT_LABELS[race.seat?.type] || race.seat?.type}</span>
-          <ResultSummary raceId={race.id} />
         </p>
         {race.nomineesSource && <p className="race-source">Candidates listed: {race.nomineesSource}</p>}
       </div>
 
-      <ElectionResult race={race} />
-
-      <h2 className="section-title">AI policy records</h2>
+      {/* Pre-election tracking comes first; the election result follows it. */}
+      <h2 className="section-title">Pre-election tracking</h2>
       <CandidateComparison race={race} />
 
       <section className="context-signals">
@@ -51,6 +49,8 @@ function RaceView({ race, onBack }) {
           race.contextSignals.length === 0 && <p className="empty-note">No context signals recorded.</p>
         )}
       </section>
+
+      <ElectionResult race={race} />
     </div>
   );
 }

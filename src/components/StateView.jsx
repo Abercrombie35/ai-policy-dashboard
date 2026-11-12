@@ -15,7 +15,6 @@ function RaceCard({ race }) {
     <button type="button" className="race-card" onClick={() => navigate(`/state/${race.state}/${race.id}`)}>
       <div className="race-type">{race.office}</div>
       <div className="race-title">{race.cycle} election · {race.electionDate}</div>
-      <ResultSummary raceId={race.id} />
       <div className="candidate-previews">
         {race.candidates.map((c) => (
           <span key={c.id} className={`preview ${c.party.toLowerCase()}`}>{c.name}</span>
@@ -24,6 +23,7 @@ function RaceCard({ race }) {
       <div className="race-counts">
         {verified} verified record{verified === 1 ? '' : 's'} · {records.length - verified} unverified draft{records.length - verified === 1 ? '' : 's'}
       </div>
+      <ResultSummary raceId={race.id} />
     </button>
   );
 }
