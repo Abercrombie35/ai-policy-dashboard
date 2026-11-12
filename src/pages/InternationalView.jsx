@@ -11,7 +11,7 @@ function InternationalView() {
         <h2>Elections outside the U.S.</h2>
         <p>
           A pilot to show that the framework works outside the U.S. (research question 5). It starts with France's
-          presidential election, which compares candidates the same way the Senate races do. Parliamentary contests compare
+          presidential election, which compares candidates the same way the U.S. races do. Parliamentary contests compare
           party manifestos instead.
         </p>
         <p className="fine-print">{internationalNote}</p>

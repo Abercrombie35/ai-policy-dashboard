@@ -30,3 +30,11 @@
 @media (max-width: 480px) {
   .race-view { padding: 16px; }
 }
+
+.section-title {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9eb7d7;
+}

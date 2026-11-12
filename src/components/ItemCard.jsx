@@ -1,10 +1,10 @@
 import React from 'react';
-import { labelTypes, confidenceLevels, dimensions, categoryLabel, isVerified } from '../lib/data';
+import { labelInfo, confidenceLevels, dimensions, categoryLabel, isVerified } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/ItemCard.css';
 
 export function LabelBadges({ record }) {
-  const type = labelTypes[record.labelType];
+  const type = labelInfo(record.labelType);
   const confidence = confidenceLevels[record.confidence];
   return (
     <div className="label-badges">

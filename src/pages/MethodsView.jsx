@@ -1,5 +1,5 @@
 import React from 'react';
-import { codebook, dimensions } from '../lib/data';
+import { codebook, dimensions, resultLabel } from '../lib/data';
 
 const REPO_ISSUES = 'https://github.com/Abercrombie35/ai-policy-dashboard/issues';
 
@@ -46,6 +46,29 @@ function MethodsView() {
           <li>Records are versioned and never silently overwritten. Every change raises the version number and adds a dated note to the record's history.</li>
           <li>Sparse coverage is recorded as sparse rather than filled in by inference. It is itself evidence of how salient AI is in a race.</li>
         </ul>
+      </section>
+
+      <section>
+        <h3>Election results: a separate label</h3>
+        <p>
+          Results carry their own label, "{resultLabel.label}", and are stored apart from candidate statements, so a
+          vote count is never confused with a position. {resultLabel.description}
+        </p>
+        <div className="table-wrap">
+          <table className="data-table">
+            <thead><tr><th scope="col">Result status</th><th scope="col">Meaning</th></tr></thead>
+            <tbody>
+              {codebook.resultStatuses.map((s) => (
+                <tr key={s.id}><th scope="row">{s.label}</th><td>{s.description}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Every result records when and where its figures were taken. When a state certifies its canvass, the result
+          gets a new version with status "Certified" and the official source. Unofficial figures are never silently
+          replaced.
+        </p>
       </section>
 
       <section>

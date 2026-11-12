@@ -2,6 +2,7 @@ import React from 'react';
 import RaceView from './RaceView';
 import BillCard from './BillCard';
 import { HiddenDraftsNotice } from './ItemCard';
+import { ResultSummary } from './ElectionResult';
 import { racesForState, billsForState, raceById, stateName, filterDrafts, isVerified } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import { navigate } from '../lib/router';
@@ -14,6 +15,7 @@ function RaceCard({ race }) {
     <button type="button" className="race-card" onClick={() => navigate(`/state/${race.state}/${race.id}`)}>
       <div className="race-type">{race.office}</div>
       <div className="race-title">{race.cycle} election · {race.electionDate}</div>
+      <ResultSummary raceId={race.id} />
       <div className="candidate-previews">
         {race.candidates.map((c) => (
           <span key={c.id} className={`preview ${c.party.toLowerCase()}`}>{c.name}</span>
@@ -49,7 +51,7 @@ function StateView({ stateAbbr, raceId, onClose }) {
       </div>
 
       <section className="state-section">
-        <h3>Senate races</h3>
+        <h3>Tracked races</h3>
         {stateRaces.length ? (
           <div className="races-grid">
             {stateRaces.map((race) => <RaceCard key={race.id} race={race} />)}

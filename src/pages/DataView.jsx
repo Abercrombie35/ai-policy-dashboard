@@ -1,5 +1,5 @@
 import React from 'react';
-import { codebook, races, bills, elections, filterDrafts, stateName, datasetUpdated, countRecords } from '../lib/data';
+import { codebook, races, bills, results, elections, filterDrafts, stateName, datasetUpdated, countRecords, raceById } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 
 // Quote every field and neutralise spreadsheet formulas (CSV injection).
@@ -46,6 +46,27 @@ function billRows(includeDrafts) {
   );
 }
 
+// One row per candidate per result, so the file opens cleanly in a spreadsheet.
+function resultRows(includeDrafts) {
+  const rows = [];
+  for (const r of filterDrafts(results, includeDrafts)) {
+    const race = raceById(r.raceId);
+    for (const c of r.candidates) {
+      rows.push([
+        r.id, r.raceId, race?.state, race?.office, race?.cycle, r.labelType, r.resultStatus, c.name, c.party,
+        c.candidateId, c.votePct, c.votes, c.name === r.winner.name, r.figuresAsOf, r.source?.title, r.source?.url,
+        r.confidence, r.lastVerified, r.version,
+      ]);
+    }
+  }
+  return toCsv(
+    ['result_id', 'race_id', 'state', 'office', 'cycle', 'label_type', 'result_status', 'candidate_name', 'party',
+      'candidate_id', 'vote_pct', 'votes', 'is_winner', 'figures_as_of', 'source_title', 'source_url', 'confidence',
+      'last_verified', 'version'],
+    rows,
+  );
+}
+
 function fullJson(includeDrafts) {
   return JSON.stringify(
     {
@@ -58,6 +79,7 @@ function fullJson(includeDrafts) {
         items: filterDrafts(r.items, includeDrafts),
         contextSignals: filterDrafts(r.contextSignals, includeDrafts),
       })),
+      electionResults: filterDrafts(results, includeDrafts),
       bills: filterDrafts(bills, includeDrafts),
       internationalElections: elections,
     },
@@ -83,7 +105,8 @@ function DataView() {
   const suffix = includeDrafts ? '-with-drafts' : '';
 
   const files = [
-    { name: `ai-policy-dataset${suffix}.json`, label: 'Full dataset (JSON)', desc: 'Races, candidates, labeled records, bills, international elections and the codebook.', make: () => fullJson(includeDrafts), type: 'application/json' },
+    { name: `ai-policy-dataset${suffix}.json`, label: 'Full dataset (JSON)', desc: 'Races, candidates, labeled records, election results, bills, international elections and the codebook.', make: () => fullJson(includeDrafts), type: 'application/json' },
+    { name: `election-results${suffix}.csv`, label: 'Election results (CSV)', desc: 'One row per candidate per race, with unofficial or certified status and sources.', make: () => resultRows(includeDrafts), type: 'text/csv' },
     { name: `campaign-records${suffix}.csv`, label: 'Campaign records (CSV)', desc: 'One row per candidate record, with labels and coding.', make: () => itemRows(includeDrafts), type: 'text/csv' },
     { name: `state-ai-bills${suffix}.csv`, label: 'State AI bills (CSV)', desc: 'One row per bill, with sponsors, status, labels and coding.', make: () => billRows(includeDrafts), type: 'text/csv' },
     { name: 'codebook.json', label: 'Codebook (JSON)', desc: 'Dimensions, categories, label types and confidence levels.', make: () => JSON.stringify(codebook, null, 2), type: 'application/json' },

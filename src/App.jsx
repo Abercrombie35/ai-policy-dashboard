@@ -6,7 +6,7 @@ import LegislationView from './pages/LegislationView';
 import InternationalView from './pages/InternationalView';
 import MethodsView from './pages/MethodsView';
 import DataView from './pages/DataView';
-import { races, bills, geo, countRecords, datasetUpdated } from './lib/data';
+import { races, bills, results, geo, countRecords, datasetUpdated } from './lib/data';
 import { useDrafts } from './lib/drafts';
 import { useHashRoute, navigate } from './lib/router';
 import './styles.css';
@@ -31,15 +31,20 @@ function MapPage({ selectedState, raceId }) {
   const [filter, setFilter] = useState('all');
   const close = useCallback(() => navigate('/'), []);
   const statesWithRaces = new Set(races.map((r) => r.state)).size;
+  const senate = races.filter((r) => r.office === 'U.S. Senate').length;
+  const governor = races.filter((r) => r.office === 'Governor').length;
   const { verified, drafts } = countRecords();
 
   return (
     <>
       <section className="summary-row">
         <div className="stat-box">
-          <span className="label">Tracked Senate races</span>
+          <span className="label">Tracked races</span>
           <strong>{races.length}</strong>
-          <span className="stat-sub">{statesWithRaces} state{statesWithRaces === 1 ? '' : 's'}, 2026 cycle</span>
+          <span className="stat-sub">
+            {senate} Senate · {governor} governor in {statesWithRaces} state{statesWithRaces === 1 ? '' : 's'} ·{' '}
+            {results.length} result{results.length === 1 ? '' : 's'} recorded
+          </span>
         </div>
         <div className="stat-box">
           <span className="label">Verified records</span>

@@ -1,0 +1,250 @@
+{
+  "note": "Election results, labeled separately from candidate statements. Each result is a versioned record: when a state certifies its canvass, add a new version with status \"certified\" and the official source rather than editing figures in place.",
+  "results": [
+    {
+      "id": "result-mi-senate-2026",
+      "raceId": "mi-senate-2026",
+      "labelType": "election-result",
+      "resultStatus": "unofficial",
+      "winner": {
+        "name": "Abdul El-Sayed",
+        "party": "Democratic",
+        "candidateId": "abdul-el-sayed"
+      },
+      "call": "Called for El-Sayed by the Associated Press, Decision Desk HQ and Fox News.",
+      "candidates": [
+        {
+          "name": "Abdul El-Sayed",
+          "party": "Democratic",
+          "candidateId": "abdul-el-sayed",
+          "votePct": 52.5
+        },
+        {
+          "name": "Mike Rogers",
+          "party": "Republican",
+          "candidateId": "mike-rogers",
+          "votePct": 45.5
+        },
+        {
+          "name": "Lydia Christensen",
+          "party": "Libertarian",
+          "candidateId": null,
+          "votePct": 1.0
+        }
+      ],
+      "figuresAsOf": "Unofficial results as of 2:30 p.m., Nov. 4, 2026, as reported by The Detroit News.",
+      "context": "Open seat: Sen. Gary Peters (D) retired.",
+      "source": {
+        "title": "The Detroit News: Abdul El-Sayed claims victory over Mike Rogers in Michigan Senate race",
+        "url": "https://www.detroitnews.com/story/news/politics/elections/2026/11/03/michigan-senate-election-results-abdul-el-sayed-mike-rogers/92466965007/"
+      },
+      "additionalSources": [
+        {
+          "title": "PBS NewsHour: Democrat Abdul El-Sayed wins election to U.S. Senate from Michigan",
+          "url": "https://www.pbs.org/newshour/politics/democrat-abdul-el-sayed-wins-election-to-u-s-senate-from-michigan"
+        },
+        {
+          "title": "Patch: El-Sayed Wins U.S. Senate Race In Michigan: AP",
+          "url": "https://patch.com/michigan/across-mi/michigan-u-s-senate-election-results-2026-el-sayed-vs-rogers-live-updates"
+        },
+        {
+          "title": "NBC News: Michigan U.S. Senate Election 2026 Live Results",
+          "url": "https://www.nbcnews.com/politics/2026-elections/michigan-senate-results"
+        }
+      ],
+      "publishedDate": "2026-11-03",
+      "lastVerified": "2026-11-12",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        }
+      ]
+    },
+    {
+      "id": "result-tx-senate-2026",
+      "raceId": "tx-senate-2026",
+      "labelType": "election-result",
+      "resultStatus": "unofficial",
+      "winner": {
+        "name": "James Talarico",
+        "party": "Democratic",
+        "candidateId": "james-talarico"
+      },
+      "call": "Called for Talarico by the Associated Press on election night. Paxton conceded the same night.",
+      "candidates": [
+        {
+          "name": "James Talarico",
+          "party": "Democratic",
+          "candidateId": "james-talarico",
+          "votePct": 55.1
+        },
+        {
+          "name": "Ken Paxton",
+          "party": "Republican",
+          "candidateId": "ken-paxton",
+          "votePct": 43.0
+        },
+        {
+          "name": "Ted Brown",
+          "party": "Other",
+          "partyNote": "Listed as independent in NBC's results summary; party to verify.",
+          "candidateId": null,
+          "votePct": 1.9
+        }
+      ],
+      "figuresAsOf": "Unofficial results as shown on NBC News's results page when retrieved on Nov. 12, 2026.",
+      "context": "Sen. John Cornyn (R) lost the Republican primary runoff to Paxton, so the incumbent was not on the November ballot.",
+      "source": {
+        "title": "NBC News: Texas U.S. Senate Election 2026 Live Results",
+        "url": "https://www.nbcnews.com/politics/2026-elections/texas-senate-results"
+      },
+      "additionalSources": [
+        {
+          "title": "Houston Public Media: Democrat James Talarico wins U.S. Senate seat",
+          "url": "https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/11/03/565938/talarico-paxton-senate-race-texas-results/"
+        },
+        {
+          "title": "The Washington Post: Texas Senate election live results 2026",
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/texas-senate-paxton-talarico-live-updates/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        }
+      ]
+    },
+    {
+      "id": "result-mi-governor-2026",
+      "raceId": "mi-governor-2026",
+      "labelType": "election-result",
+      "resultStatus": "unofficial",
+      "winner": {
+        "name": "Jocelyn Benson",
+        "party": "Democratic",
+        "candidateId": "jocelyn-benson"
+      },
+      "call": "Reported as a Benson win by NBC News, The Washington Post, Decision Desk HQ and MultiState.",
+      "candidates": [
+        {
+          "name": "Jocelyn Benson",
+          "party": "Democratic",
+          "candidateId": "jocelyn-benson",
+          "votePct": 54.56
+        },
+        {
+          "name": "John James",
+          "party": "Republican",
+          "candidateId": "john-james",
+          "votePct": 43.72
+        },
+        {
+          "name": "Anthony Hudson",
+          "party": "Libertarian",
+          "candidateId": null,
+          "votePct": 0.93
+        }
+      ],
+      "figuresAsOf": "Unofficial results as shown by Decision Desk HQ when retrieved on Nov. 12, 2026.",
+      "context": "Open seat: Gov. Gretchen Whitmer (D) was term-limited. Former Detroit mayor Mike Duggan ended his independent campaign in May 2026 and was not on the ballot.",
+      "source": {
+        "title": "Decision Desk HQ: 2026 Michigan Governor General Election Results",
+        "url": "https://votes.decisiondeskhq.com/races/2026-11-03/michigan-governor-general-election"
+      },
+      "additionalSources": [
+        {
+          "title": "NBC News: Michigan Governor Election 2026 Live Results",
+          "url": "https://www.nbcnews.com/politics/2026-elections/michigan-governor-results"
+        },
+        {
+          "title": "MultiState: Michigan Governor Election Results 2026",
+          "url": "https://www.multistate.us/elections/governor-race/michigan-2026"
+        },
+        {
+          "title": "Bridge Michigan: Mike Duggan drops governor bid",
+          "url": "https://bridgemi.com/michigan-government/mike-duggan-drops-governor-bid-in-michigan-election-shocker/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        }
+      ]
+    },
+    {
+      "id": "result-tx-governor-2026",
+      "raceId": "tx-governor-2026",
+      "labelType": "election-result",
+      "resultStatus": "unofficial",
+      "winner": {
+        "name": "Gina Hinojosa",
+        "party": "Democratic",
+        "candidateId": "gina-hinojosa"
+      },
+      "call": "Gov. Greg Abbott conceded on election night.",
+      "candidates": [
+        {
+          "name": "Gina Hinojosa",
+          "party": "Democratic",
+          "candidateId": "gina-hinojosa",
+          "votePct": 52.8
+        },
+        {
+          "name": "Greg Abbott",
+          "party": "Republican",
+          "candidateId": "greg-abbott",
+          "votePct": 45.7
+        },
+        {
+          "name": "Pat Dixon",
+          "party": "Libertarian",
+          "candidateId": null,
+          "votePct": 1.5
+        }
+      ],
+      "figuresAsOf": "Unofficial results as shown by Decision Desk HQ (more than 95% of the vote counted) when retrieved on Nov. 12, 2026. Shares are rounded.",
+      "context": "Gov. Greg Abbott (R), elected in 2014, 2018 and 2022, sought a fourth term.",
+      "source": {
+        "title": "Decision Desk HQ: 2026 Texas Governor General Election Results",
+        "url": "https://votes.decisiondeskhq.com/races/2026-11-03/texas-governor-general-election"
+      },
+      "additionalSources": [
+        {
+          "title": "MultiState: Texas Governor Election Results 2026",
+          "url": "https://www.multistate.us/elections/governor-race/texas-2026"
+        },
+        {
+          "title": "The Washington Post: Texas governor election live results 2026",
+          "url": "https://www.washingtonpost.com/elections/results/2026/11/03/texas-governor-abbott-hinojosa-live-updates/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        }
+      ]
+    }
+  ]
+}

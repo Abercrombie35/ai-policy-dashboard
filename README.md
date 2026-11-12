@@ -29,8 +29,12 @@ them as facts.
 Built:
 - Accurate map of all 50 states plus D.C., bundled with the app (no runtime
   download). States are colored by data coverage and can be used by keyboard.
-- Multi-race support: each race is one file in src/data/races/. Michigan
-  (El-Sayed vs. Rogers) and Texas (Talarico vs. Paxton) are set up.
+- Multi-race support: each race is one file in src/data/races/. Four 2026
+  races are tracked: the U.S. Senate and governor races in Michigan and Texas.
+- Election results, with their own "Election result" label kept apart from
+  the six statement labels (src/data/results.json). Each result is marked
+  Unofficial or Certified and records its sources and when its figures were
+  taken. All four current results are unofficial (see section 4).
 - Candidate comparison with the same tabs and fields for every candidate:
   Overview, Statements, Positions, Alignment & endorsements, Projections.
 - Labels, sources, dates, confidence, version, and codebook coding on every
@@ -53,8 +57,8 @@ Built:
 Not built yet / needs people:
 - Verification. Every record is an unverified draft until someone checks it
   against a primary source (see section 4).
-- Texas candidate records (none entered yet), the final 10-20 race list, and
-  certified 2026 election results.
+- AI policy records for Texas and for both governor races (none entered
+  yet), the final 10-20 race list, and certified 2026 election results.
 - Coding review. The draft coding was produced by an AI model and is marked
   "not reviewed". The codebook needs piloting on Michigan and Texas. One gap
   found so far: there is no issue area for copyright or creator compensation.
@@ -88,6 +92,7 @@ All data lives in src/data/:
 - codebook.json: dimensions, categories, label types, confidence levels.
 - races/<race-id>.json: one file per race (candidates, items, context
   signals, result). The file name must match the race id.
+- results.json: election results (separate "Election result" label).
 - legislation.json: state AI bills.
 - international.json: elections outside the U.S.
 - us-states-geo.json: map shapes (generated; see tools/build-state-paths.mjs).
@@ -104,10 +109,21 @@ To verify a record:
    no last-verified date, unknown codebook categories, and version numbers
    that don't match the history.
 
-To add a race, copy src/data/races/tx-senate-2026.json, rename it to the new
-race id, and fill it in. It appears on the map automatically. To record a
-result, set "result": { "status": "recorded", "winnerId": ..., "source":
-{ "url": ... } }.
+To add a race, copy src/data/races/tx-governor-2026.json, rename it to the
+new race id, and fill it in. It appears on the map automatically.
+
+Election results go in src/data/results.json, one record per race, never in
+the race file. (The Senate race files still have an older "result"
+placeholder; it is not used.) The current results are unofficial: the winners
+were checked across several news reports, and the vote shares are unofficial
+figures quoted from the cited outlets. When a state certifies its canvass:
+1. Replace the figures with the official canvass (add vote counts in
+   "votes").
+2. Set "resultStatus": "certified", "confidence": "high", the official
+   canvass as "source", and a new "lastVerified" date.
+3. Increase "version" and add a history entry. "npm run validate" checks that
+   the winner is one of the listed candidates, that shares don't add up to
+   more than 100%, and that certified results have high confidence.
 
 5. HOW THE PROJECT WORKS
 ========================
@@ -124,6 +140,7 @@ Key files:
 - src/components/RaceView.jsx, CandidateComparison.jsx: race page and tabs.
 - src/components/ItemCard.jsx: the labeled record card used everywhere.
 - src/components/BillCard.jsx: a bill record.
+- src/components/ElectionResult.jsx: the election-result panel and badges.
 - src/pages/: Party comparison, Legislation, International, Methodology,
   Download data.
 - src/lib/drafts.jsx: the drafts switch. Set SHOW_DRAFTS_BY_DEFAULT to change

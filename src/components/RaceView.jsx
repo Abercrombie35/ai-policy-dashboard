@@ -1,24 +1,12 @@
 import React from 'react';
 import CandidateComparison from './CandidateComparison';
 import ItemCard, { HiddenDraftsNotice } from './ItemCard';
+import ElectionResult, { ResultSummary } from './ElectionResult';
 import { stateName, filterDrafts } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/RaceView.css';
 
 const SEAT_LABELS = { open: 'Open seat', incumbent: 'Incumbent running', 'to-verify': 'Seat status to verify' };
-
-function ResultLine({ race }) {
-  if (race.result?.status === 'recorded') {
-    const winner = race.candidates.find((c) => c.id === race.result.winnerId);
-    return (
-      <span>
-        Result: {winner?.name} won ({' '}
-        <a href={race.result.source.url} target="_blank" rel="noopener noreferrer">source</a> )
-      </span>
-    );
-  }
-  return <span>Result not yet recorded</span>;
-}
 
 function RaceView({ race, onBack }) {
   const { includeDrafts } = useDrafts();
@@ -32,12 +20,15 @@ function RaceView({ race, onBack }) {
         <h1>{race.office}: {stateName(race.state)}</h1>
         <p className="race-meta">
           <span>{race.cycle} general election · {race.electionDate}</span>
-          <span>{SEAT_LABELS[race.seat?.type] || race.seat?.type}</span>
-          <ResultLine race={race} />
+          <span title={race.seat?.note}>{SEAT_LABELS[race.seat?.type] || race.seat?.type}</span>
+          <ResultSummary raceId={race.id} />
         </p>
         {race.nomineesSource && <p className="race-source">Candidates listed: {race.nomineesSource}</p>}
       </div>
 
+      <ElectionResult race={race} />
+
+      <h2 className="section-title">AI policy records</h2>
       <CandidateComparison race={race} />
 
       <section className="context-signals">

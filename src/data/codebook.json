@@ -302,5 +302,22 @@
       "id": "failed",
       "label": "Failed / died"
     }
+  ],
+  "resultLabel": {
+    "id": "election-result",
+    "label": "Election result",
+    "description": "Vote shares and outcome of an election. Kept separate from the six statement labels: a result is a count reported by election authorities and news organizations, not a candidate's position."
+  },
+  "resultStatuses": [
+    {
+      "id": "unofficial",
+      "label": "Unofficial",
+      "description": "Called by news organizations or reported from election-night counts. Figures can change until certified."
+    },
+    {
+      "id": "certified",
+      "label": "Certified",
+      "description": "Certified by the state's canvassing authority. Cite the official canvass as the source."
+    }
   ]
 }

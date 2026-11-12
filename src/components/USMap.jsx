@@ -70,7 +70,7 @@ function USMap({ selectedState, filter, onStateClick }) {
         })}
       </svg>
       <ul className="map-legend" aria-label="Map legend">
-        <li><span className="swatch has-races" /> Tracked Senate race</li>
+        <li><span className="swatch has-races" /> Tracked race (Senate or governor)</li>
         <li><span className="swatch has-bills" /> AI legislation coded, no race yet</li>
         <li><span className="swatch no-data" /> No data yet</li>
       </ul>

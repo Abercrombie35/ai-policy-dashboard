@@ -15,6 +15,8 @@ const CONFIDENCE = ids(codebook.confidenceLevels);
 const KINDS = ids(codebook.itemKinds);
 const BILL_STATUSES = ids(codebook.billStatuses);
 const DIMENSIONS = Object.fromEntries(codebook.dimensions.map((d) => [d.id, d]));
+const RESULT_LABEL = codebook.resultLabel.id;
+const RESULT_STATUSES = ids(codebook.resultStatuses);
 const STATES = new Set(Object.keys(read('us-states-geo.json').states));
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -50,12 +52,12 @@ function checkCoding(where, coding) {
   if (typeof coding.reviewed !== 'boolean') fail(where, 'coding.reviewed must be true or false');
 }
 
-// Rules shared by race items, context signals and bills.
-function checkLabeledRecord(where, rec) {
+// Rules shared by race items, context signals, bills and election results.
+function checkLabeledRecord(where, rec, allowedLabels = LABEL_TYPES) {
   if (!rec.id) fail(where, 'missing id');
   else if (seenIds.has(rec.id)) fail(where, `duplicate id "${rec.id}"`);
   else seenIds.add(rec.id);
-  if (!LABEL_TYPES.has(rec.labelType)) fail(where, `labelType "${rec.labelType}" is not in the codebook`);
+  if (!allowedLabels.has(rec.labelType)) fail(where, `labelType "${rec.labelType}" is not allowed here`);
   if (!CONFIDENCE.has(rec.confidence)) fail(where, `confidence "${rec.confidence}" is not in the codebook`);
   if (!rec.source || typeof rec.source !== 'object') fail(where, 'source object is required (title/url may be null for drafts)');
   checkDate(where, 'publishedDate', rec.publishedDate);
@@ -80,6 +82,7 @@ function checkLabeledRecord(where, rec) {
 // Races
 const raceFiles = readdirSync(join(root, 'races')).filter((f) => f.endsWith('.json'));
 const raceIds = new Set();
+const raceCandidates = {};
 for (const file of raceFiles) {
   const race = read(join('races', file));
   const where = `races/${file}`;
@@ -87,7 +90,7 @@ for (const file of raceFiles) {
   if (raceIds.has(race.id)) fail(where, 'duplicate race id');
   raceIds.add(race.id);
   if (!STATES.has(race.state)) fail(where, `unknown state "${race.state}"`);
-  ['office', 'cycle', 'electionDate', 'candidates', 'items', 'contextSignals', 'result'].forEach((k) => {
+  ['office', 'cycle', 'electionDate', 'candidates', 'items', 'contextSignals'].forEach((k) => {
     if (race[k] == null) fail(where, `missing ${k}`);
   });
   checkDate(where, 'electionDate', race.electionDate, true);
@@ -98,9 +101,11 @@ for (const file of raceFiles) {
     candidateIds.add(c.id);
     if (!c.questionnaire?.status) fail(where, `candidate ${c.id} needs questionnaire.status`);
   }
-  if (race.result?.status === 'recorded') {
-    if (!candidateIds.has(race.result.winnerId)) fail(where, 'result.winnerId must be one of the candidates');
-    if (!race.result.source?.url) fail(where, 'a recorded result needs source.url');
+  raceCandidates[race.id] = candidateIds;
+  // Results are separately labeled records in results.json. The old
+  // per-race "result" field is only a placeholder.
+  if (race.result && race.result.status !== 'not-recorded') {
+    fail(where, 'record election results in results.json, not in the race file');
   }
   for (const [list, kindsAllowed] of [['items', null], ['contextSignals', new Set(['poll', 'market'])]]) {
     (race[list] || []).forEach((item, i) => {
@@ -129,6 +134,37 @@ legislation.bills.forEach((bill, i) => {
   checkLabeledRecord(w, bill);
 });
 
+// Election results (separate label)
+const results = read('results.json').results;
+const resultRaces = new Set();
+results.forEach((r, i) => {
+  const w = `results.json results[${i}] (${r.id})`;
+  checkLabeledRecord(w, r, new Set([RESULT_LABEL]));
+  if (!raceIds.has(r.raceId)) fail(w, `raceId "${r.raceId}" has no race file`);
+  if (resultRaces.has(r.raceId)) fail(w, 'only one result record per race; add a new version instead');
+  resultRaces.add(r.raceId);
+  if (!RESULT_STATUSES.has(r.resultStatus)) fail(w, `resultStatus "${r.resultStatus}" is not in the codebook`);
+  const known = raceCandidates[r.raceId] || new Set();
+  const names = new Set();
+  let total = 0;
+  (r.candidates || []).forEach((c) => {
+    if (!c.name || !c.party) fail(w, 'each result candidate needs name and party');
+    if (c.candidateId != null && !known.has(c.candidateId)) fail(w, `candidateId "${c.candidateId}" is not in the race`);
+    if (c.votePct != null && (typeof c.votePct !== 'number' || c.votePct < 0 || c.votePct > 100)) fail(w, `votePct for ${c.name} must be 0-100`);
+    if (c.votes != null && !Number.isInteger(c.votes)) fail(w, `votes for ${c.name} must be a whole number`);
+    total += c.votePct || 0;
+    names.add(c.name);
+  });
+  if (total > 100.5) fail(w, `vote shares add up to ${total.toFixed(1)}%`);
+  if (!r.winner?.name || !names.has(r.winner.name)) fail(w, 'winner must be one of the listed result candidates');
+  if (r.winner?.candidateId != null && !known.has(r.winner.candidateId)) fail(w, 'winner.candidateId is not in the race');
+  if (!r.figuresAsOf) fail(w, 'figuresAsOf is required: say when and where the figures were taken');
+  (r.additionalSources || []).forEach((s) => {
+    if (!s.url) fail(w, 'each additional source needs a url');
+  });
+  if (r.resultStatus === 'certified' && r.confidence !== 'high') fail(w, 'a certified result should cite the official canvass with high confidence');
+});
+
 // International
 read('international.json').elections.forEach((e, i) => {
   const w = `international.json elections[${i}]`;
@@ -140,4 +176,4 @@ if (errors.length) {
   console.error(`Data validation failed with ${errors.length} problem(s):\n- ${errors.join('\n- ')}`);
   process.exit(1);
 }
-console.log(`Data OK: ${raceFiles.length} races, ${legislation.bills.length} bills, ${seenIds.size} labeled records.`);
+console.log(`Data OK: ${raceFiles.length} races, ${results.length} election results, ${legislation.bills.length} bills, ${seenIds.size} labeled records.`);
