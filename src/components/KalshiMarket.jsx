@@ -19,7 +19,7 @@ function KalshiMarket({ race, data }) {
           },
           milestones: [
             {
-              title: 'Federal AI Licensing Framework passed by 2027",
+              title: 'Federal AI Licensing Framework passed by 2027',
               dem: '58%',
               rep: '22%',
             },

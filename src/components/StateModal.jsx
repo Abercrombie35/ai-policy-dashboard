@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import StateView from './StateView';
-import './styles/StateModal.css';
+import '../styles/StateModal.css';
 
 function StateModal({ stateAbbr, stateName, onClose }) {
   useEffect(() => {
