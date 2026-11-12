@@ -1,0 +1,122 @@
+import React from 'react';
+import { codebook, races, bills, elections, filterDrafts, stateName, datasetUpdated, countRecords } from '../lib/data';
+import { useDrafts } from '../lib/drafts';
+
+// Quote every field and neutralise spreadsheet formulas (CSV injection).
+function csvCell(value) {
+  let s = value == null ? '' : Array.isArray(value) ? value.join('; ') : String(value);
+  if (/^[=+\-@\t\r]/.test(s)) s = `'${s}`;
+  return `"${s.replace(/"/g, '""')}"`;
+}
+const toCsv = (header, rows) => [header, ...rows].map((r) => r.map(csvCell).join(',')).join('\r\n');
+
+const CODING_COLUMNS = codebook.dimensions.map((d) => d.id);
+
+function itemRows(includeDrafts) {
+  const rows = [];
+  for (const race of races) {
+    for (const item of filterDrafts([...race.items, ...race.contextSignals], includeDrafts)) {
+      const c = race.candidates.find((x) => x.id === item.candidateId);
+      rows.push([
+        item.id, race.id, race.state, race.office, race.cycle, item.candidateId, c?.name, c?.party,
+        item.kind, item.labelType, item.confidence, item.text, item.source?.title, item.source?.url,
+        item.publishedDate, item.lastVerified, item.version,
+        ...CODING_COLUMNS.map((k) => item.coding?.[k]), item.coding ? item.coding.reviewed : '',
+      ]);
+    }
+  }
+  return toCsv(
+    ['id', 'race_id', 'state', 'office', 'cycle', 'candidate_id', 'candidate_name', 'party', 'kind', 'label_type',
+      'confidence', 'text', 'source_title', 'source_url', 'published_date', 'last_verified', 'version',
+      ...CODING_COLUMNS, 'coding_reviewed'],
+    rows,
+  );
+}
+
+function billRows(includeDrafts) {
+  const rows = filterDrafts(bills, includeDrafts).map((b) => [
+    b.id, b.state, stateName(b.state), b.session, b.billNumber, b.title, b.status, b.statusDate,
+    b.sponsors.map((s) => `${s.name} (${s.party})`), b.labelType, b.confidence, b.summary, b.source?.title,
+    b.source?.url, b.lastVerified, b.version, ...CODING_COLUMNS.map((k) => b.coding?.[k]), b.coding ? b.coding.reviewed : '',
+  ]);
+  return toCsv(
+    ['id', 'state', 'state_name', 'session', 'bill_number', 'title', 'status', 'status_date', 'sponsors', 'label_type',
+      'confidence', 'summary', 'source_title', 'source_url', 'last_verified', 'version', ...CODING_COLUMNS, 'coding_reviewed'],
+    rows,
+  );
+}
+
+function fullJson(includeDrafts) {
+  return JSON.stringify(
+    {
+      generated: new Date().toISOString(),
+      datasetUpdated,
+      includesUnverifiedDrafts: includeDrafts,
+      codebook,
+      races: races.map((r) => ({
+        ...r,
+        items: filterDrafts(r.items, includeDrafts),
+        contextSignals: filterDrafts(r.contextSignals, includeDrafts),
+      })),
+      bills: filterDrafts(bills, includeDrafts),
+      internationalElections: elections,
+    },
+    null,
+    2,
+  );
+}
+
+function download(filename, content, type) {
+  const url = URL.createObjectURL(new Blob([content], { type }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function DataView() {
+  const { includeDrafts, setIncludeDrafts } = useDrafts();
+  const { verified, drafts } = countRecords();
+  const suffix = includeDrafts ? '-with-drafts' : '';
+
+  const files = [
+    { name: `ai-policy-dataset${suffix}.json`, label: 'Full dataset (JSON)', desc: 'Races, candidates, labeled records, bills, international elections and the codebook.', make: () => fullJson(includeDrafts), type: 'application/json' },
+    { name: `campaign-records${suffix}.csv`, label: 'Campaign records (CSV)', desc: 'One row per candidate record, with labels and coding.', make: () => itemRows(includeDrafts), type: 'text/csv' },
+    { name: `state-ai-bills${suffix}.csv`, label: 'State AI bills (CSV)', desc: 'One row per bill, with sponsors, status, labels and coding.', make: () => billRows(includeDrafts), type: 'text/csv' },
+    { name: 'codebook.json', label: 'Codebook (JSON)', desc: 'Dimensions, categories, label types and confidence levels.', make: () => JSON.stringify(codebook, null, 2), type: 'application/json' },
+  ];
+
+  return (
+    <div className="page">
+      <header className="page-head">
+        <h2>Download the data</h2>
+        <p>
+          The coded dataset and its codebook, released for reuse. Last edited {datasetUpdated || 'never'}.
+          {' '}{verified} verified record{verified === 1 ? '' : 's'}, {drafts} unverified draft{drafts === 1 ? '' : 's'}.
+        </p>
+      </header>
+
+      <label className="checkbox-row">
+        <input type="checkbox" checked={includeDrafts} onChange={(e) => setIncludeDrafts(e.target.checked)} />
+        Include unverified drafts (the file names will say "with-drafts")
+      </label>
+
+      <div className="download-grid">
+        {files.map((f) => (
+          <div key={f.name} className="download-card">
+            <h3>{f.label}</h3>
+            <p>{f.desc}</p>
+            <button type="button" className="chip active" onClick={() => download(f.name, f.make(), f.type)}>
+              Download {f.name}
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default DataView;

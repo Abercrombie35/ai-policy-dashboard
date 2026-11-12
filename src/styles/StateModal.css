@@ -44,3 +44,28 @@
     border-radius: 20px 20px 0 0;
   }
 }
+
+.state-modal-content { position: relative; }
+.state-modal-content:focus { outline: none; }
+.modal-close {
+  position: sticky;
+  top: 12px;
+  float: right;
+  margin: 12px 12px 0 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(147, 177, 216, 0.25);
+  background: rgba(15, 31, 45, 0.9);
+  color: #e5edf7;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+.modal-close:hover { background: rgba(35, 55, 80, 0.95); }
+
+@media (prefers-reduced-motion: reduce) {
+  .state-modal-overlay,
+  .state-modal-content { animation: none; }
+}

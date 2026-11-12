@@ -1,0 +1,1229 @@
+{
+  "id": "mi-senate-2026",
+  "state": "MI",
+  "office": "U.S. Senate",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "open",
+    "note": "Open seat per the project proposal. To verify."
+  },
+  "nomineesSource": "Project proposal (Oct 2026). Nominees to verify against official Michigan results.",
+  "result": {
+    "status": "not-recorded",
+    "winnerId": null,
+    "source": null,
+    "note": "Record the certified result with its source once available."
+  },
+  "candidates": [
+    {
+      "id": "abdul-el-sayed",
+      "name": "Abdul El-Sayed",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "mike-rogers",
+      "name": "Mike Rogers",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-profile-1",
+      "candidateId": "abdul-el-sayed",
+      "kind": "profile",
+      "labelType": "source-summary",
+      "text": "Democratic candidate for U.S. Senate, former Michigan health director and public health advocate.",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-stance-2",
+      "candidateId": "abdul-el-sayed",
+      "kind": "stance",
+      "labelType": "source-summary",
+      "text": "Strong federal AI safety and regulation",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-statement-3",
+      "candidateId": "abdul-el-sayed",
+      "kind": "statement",
+      "labelType": "direct-quote",
+      "text": "A.I. should be governed by public-interest standards, not just market incentives. We need federal AI safety rules that protect workers and communities.",
+      "source": {
+        "title": "Campaign speech, Detroit Economic Club",
+        "url": null
+      },
+      "publishedDate": "2026-09-15",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "safety",
+          "labor"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "direct-quote",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed. Prototype context label: \"AI policy and labor protection\"."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-statement-4",
+      "candidateId": "abdul-el-sayed",
+      "kind": "statement",
+      "labelType": "direct-quote",
+      "text": "Michigan workers built this state. We need to ensure AI systems don't eliminate jobs without a transition plan for working families.",
+      "source": {
+        "title": "UAW Forum",
+        "url": null
+      },
+      "publishedDate": "2026-08-22",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "labor"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "direct-quote",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed. Prototype context label: \"AI and labor displacement\"."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-statement-5",
+      "candidateId": "abdul-el-sayed",
+      "kind": "statement",
+      "labelType": "direct-quote",
+      "text": "Generative AI companies should be required to disclose training data sources and ensure fair compensation for creators whose work was used.",
+      "source": {
+        "title": "Town hall Q&A",
+        "url": null
+      },
+      "publishedDate": "2026-07-10",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [],
+        "specificity": "concrete-proposal",
+        "evidenceType": "direct-quote",
+        "coder": "model-draft",
+        "reviewed": false,
+        "note": "Codebook gap: no issue area for copyright / creator compensation."
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed. Prototype context label: \"AI copyright and creator rights\"."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-position-6",
+      "candidateId": "abdul-el-sayed",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Federal AI licensing framework for high-risk systems",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "licensing"
+        ],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-position-7",
+      "candidateId": "abdul-el-sayed",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Mandatory impact assessments for AI deployment in critical sectors",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [],
+        "instruments": [
+          "audits"
+        ],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-position-8",
+      "candidateId": "abdul-el-sayed",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Worker protection and transition funds for AI-displaced workers",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "labor"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-position-9",
+      "candidateId": "abdul-el-sayed",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Transparency requirements for training data and algorithms",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-position-10",
+      "candidateId": "abdul-el-sayed",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Strong consumer privacy protections",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [],
+        "instruments": [],
+        "issueAreas": [
+          "privacy"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-alignment-11",
+      "candidateId": "abdul-el-sayed",
+      "kind": "alignment",
+      "labelType": "editorial-judgment",
+      "text": "Strongly aligned with Democratic Party AI safety platform",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed. The prototype's numeric alignment score (0.92) was dropped because no method was disclosed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-alignment-12",
+      "candidateId": "abdul-el-sayed",
+      "kind": "alignment",
+      "labelType": "editorial-judgment",
+      "text": "Deviation: Slightly more labor-focused than national party platform",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-endorsement-13",
+      "candidateId": "abdul-el-sayed",
+      "kind": "endorsement",
+      "labelType": "reported-fact",
+      "text": "Endorsed by United Auto Workers (UAW)",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": "2026-08-01",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-endorsement-14",
+      "candidateId": "abdul-el-sayed",
+      "kind": "endorsement",
+      "labelType": "reported-fact",
+      "text": "Endorsed by Michigan Environmental Council",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": "2026-07-20",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-endorsement-15",
+      "candidateId": "abdul-el-sayed",
+      "kind": "endorsement",
+      "labelType": "reported-fact",
+      "text": "Endorsed by Digital Rights Foundation",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": "2026-06-15",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-projection-16",
+      "candidateId": "abdul-el-sayed",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "If elected, El-Sayed would likely push for comprehensive federal AI regulation including a national AI licensing board, strong worker protections in the AI sector, and mandatory algorithmic transparency. His administration would likely prioritize labor protections over innovation speed.",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-projection-17",
+      "candidateId": "abdul-el-sayed",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "Possible initiative: National AI Safety and Standards Board",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-projection-18",
+      "candidateId": "abdul-el-sayed",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "Possible initiative: AI Worker Transition Fund ($5B)",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-projection-19",
+      "candidateId": "abdul-el-sayed",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "Possible initiative: Algorithmic Accountability Act",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-projection-20",
+      "candidateId": "abdul-el-sayed",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "Possible initiative: AI Copyright and Creator Protection Act",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-profile-22",
+      "candidateId": "mike-rogers",
+      "kind": "profile",
+      "labelType": "source-summary",
+      "text": "Republican candidate for U.S. Senate, former U.S. Representative and cybersecurity expert.",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-stance-23",
+      "candidateId": "mike-rogers",
+      "kind": "stance",
+      "labelType": "source-summary",
+      "text": "Light-touch regulation, innovation-first approach",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-statement-24",
+      "candidateId": "mike-rogers",
+      "kind": "statement",
+      "labelType": "direct-quote",
+      "text": "America must lead in AI innovation. Over-regulation will hand the competitive advantage to China and Russia. We need light-touch rules that protect security without strangling innovation.",
+      "source": {
+        "title": "Campaign website",
+        "url": null
+      },
+      "publishedDate": "2026-09-20",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness",
+          "national-security-china"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "direct-quote",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed. Prototype context label: \"AI competitiveness\"."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-statement-25",
+      "candidateId": "mike-rogers",
+      "kind": "statement",
+      "labelType": "direct-quote",
+      "text": "The best regulation is no regulation. Let the private sector innovate, and we'll step in only when national security is at stake.",
+      "source": {
+        "title": "Interview with Detroit News",
+        "url": null
+      },
+      "publishedDate": "2026-08-30",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "direct-quote",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed. Prototype context label: \"Regulatory philosophy\"."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-statement-26",
+      "candidateId": "mike-rogers",
+      "kind": "statement",
+      "labelType": "direct-quote",
+      "text": "Cybersecurity and national defense must be priorities in AI policy. We need to secure our AI systems against foreign threats while maintaining our technological edge.",
+      "source": {
+        "title": "Defense Policy Forum",
+        "url": null
+      },
+      "publishedDate": "2026-07-25",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "direct-quote",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed. Prototype context label: \"National security and AI\"."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-position-27",
+      "candidateId": "mike-rogers",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Sector-specific, self-regulatory approaches to AI governance",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [],
+        "instruments": [
+          "voluntary-standards"
+        ],
+        "issueAreas": [],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-position-28",
+      "candidateId": "mike-rogers",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "National security and cybersecurity focus",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-position-29",
+      "candidateId": "mike-rogers",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Avoid prescriptive federal standards",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-position-30",
+      "candidateId": "mike-rogers",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Support for private-sector innovation",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-position-31",
+      "candidateId": "mike-rogers",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "International coordination on AI standards (security-focused)",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "voluntary-standards"
+        ],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-alignment-32",
+      "candidateId": "mike-rogers",
+      "kind": "alignment",
+      "labelType": "editorial-judgment",
+      "text": "Aligned with Republican emphasis on innovation and lighter regulation",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed. The prototype's numeric alignment score (0.85) was dropped because no method was disclosed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-alignment-33",
+      "candidateId": "mike-rogers",
+      "kind": "alignment",
+      "labelType": "editorial-judgment",
+      "text": "Deviation: Slightly more focused on national security than mainstream GOP platform",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-endorsement-34",
+      "candidateId": "mike-rogers",
+      "kind": "endorsement",
+      "labelType": "reported-fact",
+      "text": "Endorsed by Chamber of Commerce",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": "2026-08-10",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-endorsement-35",
+      "candidateId": "mike-rogers",
+      "kind": "endorsement",
+      "labelType": "reported-fact",
+      "text": "Endorsed by Michigan Tech Alliance",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": "2026-07-15",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-endorsement-36",
+      "candidateId": "mike-rogers",
+      "kind": "endorsement",
+      "labelType": "reported-fact",
+      "text": "Endorsed by National Defense Industrial Association",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": "2026-06-20",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-projection-37",
+      "candidateId": "mike-rogers",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "If elected, Rogers would likely block comprehensive federal AI regulation in favor of sector-specific oversight. His focus would be on national security and maintaining U.S. competitiveness in AI. He would resist labor-focused regulations and advocate for minimal compliance burdens on industry.",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-projection-38",
+      "candidateId": "mike-rogers",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "Possible initiative: AI Cybersecurity and National Security Framework",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-projection-39",
+      "candidateId": "mike-rogers",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "Possible initiative: Public-Private AI Security Task Force",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-projection-40",
+      "candidateId": "mike-rogers",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "Possible initiative: Voluntary Industry AI Standards Program",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-projection-41",
+      "candidateId": "mike-rogers",
+      "kind": "projection",
+      "labelType": "projection",
+      "text": "Possible initiative: U.S.-Allied Nations AI Coordination Agreement",
+      "source": {
+        "title": null,
+        "url": null
+      },
+      "publishedDate": null,
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    }
+  ],
+  "contextSignals": [
+    {
+      "id": "mi-senate-2026-abdul-el-sayed-poll-21",
+      "candidateId": "abdul-el-sayed",
+      "kind": "poll",
+      "labelType": "reported-fact",
+      "text": "Pre-election polling: 42% (trend: up)",
+      "source": {
+        "title": "RCP Average",
+        "url": null
+      },
+      "publishedDate": "2026-10-08",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "mi-senate-2026-mike-rogers-poll-42",
+      "candidateId": "mike-rogers",
+      "kind": "poll",
+      "labelType": "reported-fact",
+      "text": "Pre-election polling: 39% (trend: flat)",
+      "source": {
+        "title": "RCP Average",
+        "url": null
+      },
+      "publishedDate": "2026-10-08",
+      "lastVerified": null,
+      "confidence": "unverified",
+      "coding": null,
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Migrated from the prototype (src/data/michigan.json). Not checked against any source; wording, attribution and date are unconfirmed."
+        }
+      ]
+    }
+  ]
+}

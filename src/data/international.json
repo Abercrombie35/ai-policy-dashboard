@@ -1,0 +1,10 @@
+{
+  "note": "Track C (proposal section 4). Treated as a pilot: France first, other contests as an optional extension. EU member states operate under the EU AI Act, so national positions are partly about implementation and enforcement rather than whether to regulate.",
+  "elections": [
+    { "id": "fr-2027-presidential", "country": "France", "type": "Presidential", "dateText": "April 18 and May 2", "year": 2027, "unit": "candidate", "plan": "Pilot (first international case)", "euAiAct": true, "dateStatus": "to-verify", "coverage": "not-started" },
+    { "id": "fi-2027-parliamentary", "country": "Finland", "type": "Parliamentary", "dateText": "April 18", "year": 2027, "unit": "party-manifesto", "plan": "Optional extension", "euAiAct": true, "dateStatus": "to-verify", "coverage": "not-started" },
+    { "id": "pl-2027-parliamentary", "country": "Poland", "type": "Parliamentary", "dateText": "By November 11", "year": 2027, "unit": "party-manifesto", "plan": "Optional extension", "euAiAct": true, "dateStatus": "to-verify", "coverage": "not-started" },
+    { "id": "it-2027-general", "country": "Italy", "type": "General", "dateText": "By December 22", "year": 2027, "unit": "party-manifesto", "plan": "Optional extension", "euAiAct": true, "dateStatus": "to-verify", "coverage": "not-started" },
+    { "id": "es-2026-snap", "country": "Spain", "type": "Snap general", "dateText": "November 29, 2026", "year": 2026, "unit": "party-manifesto", "plan": "Listed in proposal", "euAiAct": true, "dateStatus": "to-verify", "coverage": "not-started" }
+  ]
+}
