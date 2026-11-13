@@ -3,7 +3,8 @@ import { LabelBadges, RecordMeta, CodingChips, ScopeTags } from './ItemCard';
 import { billStatuses, isVerified, stateName } from '../lib/data';
 
 function BillCard({ bill, showState = false }) {
-  const latest = bill.history[bill.history.length - 1];
+  const history = bill.history || [];
+  const latest = history[history.length - 1];
   return (
     <article className={`item-card bill-card ${isVerified(bill) ? '' : 'draft'}`}>
       <LabelBadges record={bill} />

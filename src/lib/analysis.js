@@ -64,7 +64,7 @@ export function deviationCell(race, candidate, questionId, includeDrafts) {
   };
 }
 
-export const allCandidates = () => races.flatMap((race) => race.candidates.map((candidate) => ({ race, candidate })));
+export const allCandidates = () => races.flatMap((race) => (race.candidates || []).map((candidate) => ({ race, candidate })));
 
 export const questionsInDomain = (domainId) => {
   const ids = codebook.domains.find((d) => d.id === domainId)?.policyQuestions || [];

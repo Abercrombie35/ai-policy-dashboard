@@ -8,6 +8,8 @@ import MethodsView from './pages/MethodsView';
 import DataView from './pages/DataView';
 import AnalysisPage from './pages/AnalysisPage';
 import ProposalsPanel from './components/ProposalsPanel';
+import ErrorBoundary from './components/ErrorBoundary';
+import { APP_VERSION } from './version';
 import { races, bills, results, geo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains } from './lib/data';
 import { allCandidates, questionsInDomain, deviationCell } from './lib/analysis';
 import { useDrafts } from './lib/drafts';
@@ -169,11 +171,13 @@ function App() {
         </div>
       )}
 
-      <main>{content}</main>
+      <main>
+        <ErrorBoundary resetKey={`${page}/${params.join('/')}`}>{content}</ErrorBoundary>
+      </main>
 
       <footer className="site-footer">
         A research demonstration. Records are labeled by type and confidence. See the{' '}
-        <a href="#/methods">methodology</a> for how they are sourced and corrected.
+        <a href="#/methods">methodology</a> for how they are sourced and corrected. Version {APP_VERSION}.
       </footer>
     </div>
   );

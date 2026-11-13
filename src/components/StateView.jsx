@@ -7,15 +7,15 @@ import { navigate } from '../lib/router';
 import '../styles/StateView.css';
 
 function RaceCard({ race }) {
-  const records = [...itemsForRace(race), ...race.contextSignals];
+  const records = [...itemsForRace(race), ...(race.contextSignals || [])];
   const verified = records.filter(isVerified).length;
   return (
     <button type="button" className="race-card" onClick={() => navigate(`/state/${race.state}/${race.id}`)}>
       <div className="race-type">{race.office}</div>
       <div className="race-title">{race.cycle} election · {race.electionDate}</div>
       <div className="candidate-previews">
-        {race.candidates.map((c) => (
-          <span key={c.id} className={`preview ${c.party.toLowerCase()}`}>{c.name}</span>
+        {(race.candidates || []).map((c) => (
+          <span key={c.id} className={`preview ${(c.party || '').toLowerCase()}`}>{c.name}</span>
         ))}
       </div>
       <div className="race-counts">

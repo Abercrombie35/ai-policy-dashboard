@@ -41,7 +41,7 @@ export function RecordMeta({ record }) {
       </div>
       <div>
         <dt>Version</dt>
-        <dd title={record.history.map((h) => `v${h.version} (${h.date}): ${h.note}`).join('\n')}>v{record.version}</dd>
+        <dd title={(record.history || []).map((h) => `v${h.version} (${h.date}): ${h.note}`).join('\n')}>v{record.version}</dd>
       </div>
     </dl>
   );
@@ -96,7 +96,8 @@ function Stances({ stances }) {
 }
 
 function ItemCard({ item }) {
-  const latest = item.history[item.history.length - 1];
+  const history = item.history || [];
+  const latest = history[history.length - 1];
   return (
     <article className={`item-card ${isVerified(item) ? '' : 'draft'}`}>
       <LabelBadges record={item} />

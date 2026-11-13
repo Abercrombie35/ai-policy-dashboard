@@ -39,19 +39,20 @@ function CandidateComparison({ race }) {
   const [activeTab, setActiveTab] = useState('overview');
   const { includeDrafts } = useDrafts();
   const tab = TABS.find((t) => t.id === activeTab);
+  const candidates = race.candidates || [];
 
   const tabItems = itemsForRace(race).filter((i) => inTab(tab, i));
   const shown = filterDrafts(tabItems, includeDrafts);
 
   return (
     <div className="candidate-comparison">
-      <div className="candidate-headers" style={{ '--cols': race.candidates.length }}>
-        {race.candidates.map((c) => (
+      <div className="candidate-headers" style={{ '--cols': candidates.length }}>
+        {candidates.map((c) => (
           <div key={c.id} className="candidate-header">
-            <div className={`avatar ${c.party.toLowerCase()}`} aria-hidden="true">{initials(c.name)}</div>
+            <div className={`avatar ${(c.party || '').toLowerCase()}`} aria-hidden="true">{initials(c.name)}</div>
             <div>
               <h3>{c.name}</h3>
-              <span className={`party-badge ${c.party.toLowerCase()}`}>{c.party}</span>
+              <span className={`party-badge ${(c.party || '').toLowerCase()}`}>{c.party}</span>
               <div className="questionnaire"><QuestionnaireStatus q={c.questionnaire} /></div>
             </div>
           </div>
@@ -81,8 +82,8 @@ function CandidateComparison({ race }) {
         )}
         {tab.domain && <p className="section-note">{domains[tab.domain].description}</p>}
         <HiddenDraftsNotice count={tabItems.length - shown.length} />
-        <div className="comparison-row" style={{ '--cols': race.candidates.length }}>
-          {race.candidates.map((c) => {
+        <div className="comparison-row" style={{ '--cols': candidates.length }}>
+          {candidates.map((c) => {
             const mine = shown.filter((i) => i.candidateId === c.id);
             const anyAtAll = tabItems.some((i) => i.candidateId === c.id);
             const empty = (

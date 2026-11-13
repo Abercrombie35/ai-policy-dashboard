@@ -152,7 +152,7 @@ export function DeviationTimeline({ domainId, raceId }) {
 
 // Race-level view: both policy areas for the race's candidates.
 export function RaceDeviation({ race }) {
-  const rows = race.candidates.map((candidate) => ({ race, candidate }));
+  const rows = (race.candidates || []).map((candidate) => ({ race, candidate }));
   return (
     <section className="race-deviation">
       <h3>Deviation from the party line</h3>

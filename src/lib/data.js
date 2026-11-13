@@ -93,7 +93,7 @@ export const raceById = (id) => races.find((r) => r.id === id);
 
 // A race's records: the race file's own items plus researched records, which
 // are stored separately so the race files are never edited.
-export const itemsForRace = (race) => [...race.items, ...researchRecords.filter((r) => r.raceId === race.id)];
+export const itemsForRace = (race) => [...(race.items || []), ...researchRecords.filter((r) => r.raceId === race.id)];
 
 // Election results live in results.json, separate from the race files.
 export const results = resultsData.results;
