@@ -1,5 +1,5 @@
 {
-  "note": "State AI legislation layer (proposal Track B). Primary bill data should come from official state legislature websites. Trackers such as IAPP, NCSL and MultiState are reference and validation sources only, not data to copy.",
+  "note": "State and federal AI bills, including proposed data center moratoriums. Primary bill data should come from official legislature websites. Every entry cites its source; entries added on 2026-11-12 came from web search results and are marked for verification.",
   "bills": [
     {
       "id": "tx-89r-hb149",
@@ -8,21 +8,98 @@
       "billNumber": "HB 149",
       "title": "Texas Responsible Artificial Intelligence Governance Act (TRAIGA)",
       "sponsors": [
-        { "name": "Giovanni Capriglione", "party": "Republican", "role": "author", "linkedCandidateId": null }
+        {
+          "name": "Giovanni Capriglione",
+          "party": "Republican",
+          "role": "author",
+          "linkedCandidateId": null
+        }
       ],
       "status": "enacted",
       "statusDate": "2025-06-22",
-      "summary": "Sets rules for some AI uses by government and businesses in Texas, including prohibited uses and disclosure duties, and creates a regulatory sandbox.",
+      "summary": "Bans a short list of AI uses, including AI-generated child sexual abuse material and government social scoring, and requires Texas state agencies to disclose AI use to consumers. A broader high-risk impact-assessment regime in early drafts was cut from the final bill.",
       "labelType": "source-summary",
-      "source": { "title": "Texas Legislature Online: HB 149 history", "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149" },
+      "source": {
+        "title": "Texas Legislature Online: HB 149 history",
+        "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149"
+      },
       "publishedDate": null,
-      "lastVerified": null,
-      "confidence": "unverified",
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
-        "levelOfGovernment": ["state"],
-        "instruments": ["disclosure", "bans"],
-        "issueAreas": ["discrimination", "innovation-competitiveness"],
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety",
+          "discrimination"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 2,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Draft example entered from general knowledge to demonstrate the legislation layer. Status, date, sponsor, summary and coding all need checking against the official bill page."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-12",
+          "note": "Summary and status updated from web search results (signing date, effective date, scope). Still needs checking against the official bill page."
+        }
+      ],
+      "statusNote": "Signed June 22, 2025; effective Jan. 1, 2026."
+    },
+    {
+      "id": "us-s4214",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "S. 4214",
+      "title": "Artificial Intelligence Data Center Moratorium Act",
+      "sponsors": [
+        {
+          "name": "Bernie Sanders",
+          "party": "Independent",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-03-25",
+      "statusNote": "Introduced Mar. 25, 2026; referred to committee.",
+      "tags": [
+        "moratorium"
+      ],
+      "summary": "Would prohibit building or upgrading AI data centers until laws regulating AI and AI data centers are enacted. Referred to the Senate Commerce Committee.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Congress.gov: S.4214",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4214"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers",
+          "safety"
+        ],
         "specificity": "legislative-action",
         "evidenceType": "bill",
         "coder": "model-draft",
@@ -30,7 +107,988 @@
       },
       "version": 1,
       "history": [
-        { "version": 1, "date": "2026-11-12", "note": "Draft example entered from general knowledge to demonstrate the legislation layer. Status, date, sponsor, summary and coding all need checking against the official bill page." }
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-hr9442",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "H.R. 9442",
+      "title": "Artificial Intelligence Data Center Moratorium Act",
+      "sponsors": [
+        {
+          "name": "Alexandria Ocasio-Cortez",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-06-24",
+      "statusNote": "Introduced June 24, 2026; referred to committee.",
+      "tags": [
+        "moratorium"
+      ],
+      "summary": "House companion to S. 4214, with about 20 cosponsors. Referred to the Energy and Commerce and Foreign Affairs committees.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Congress.gov: H.R.9442",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/9442/all-info"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers",
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-s5658",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "S. 5658",
+      "title": "A bill to prohibit the construction of data centers on Federal land",
+      "sponsors": [
+        {
+          "name": "Ron Wyden",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-09-30",
+      "statusNote": "Introduced Sept. 30, 2026; referred to committee.",
+      "tags": [
+        "ban"
+      ],
+      "summary": "Would prohibit building data centers on federal land. Referred to the Energy and Natural Resources Committee.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Congress.gov: S.5658",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5658"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-s5653",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "S. 5653",
+      "title": "Bipartisan American Affordability and Jobs Act (permitting bill)",
+      "sponsors": [
+        {
+          "name": "Martin Heinrich",
+          "party": "Democratic",
+          "role": "negotiator",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Sheldon Whitehouse",
+          "party": "Democratic",
+          "role": "negotiator",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Shelley Moore Capito",
+          "party": "Republican",
+          "role": "negotiator",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Mike Lee",
+          "party": "Republican",
+          "role": "negotiator",
+          "linkedCandidateId": null
+        }
+      ],
+      "sponsorsNote": "Named as negotiators in coverage; formal sponsor list to verify.",
+      "status": "introduced",
+      "statusDate": "2026-11-09",
+      "statusNote": "Senate voted 73-25 to advance it on Nov. 9, 2026; floor debate pending.",
+      "summary": "Energy permitting bill that would have federal regulators make data centers and other large computing users pay for the grid infrastructure built to serve them. Heinrich and Trump both say it codifies the White House Ratepayer Protection Pledge; critics call it a giveaway to the industry.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "OPB: Senate advances sweeping energy legislation",
+        "url": "https://www.opb.org/article/2026/11/09/senate-advances-sweeping-energy-legislation-in-first-major-action-since-midterm-elections/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-ratepayer-protection-act",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "Number to verify",
+      "title": "Ratepayer Protection Act",
+      "sponsors": [
+        {
+          "name": "Jon Husted",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "passed-one-chamber",
+      "statusDate": "2026-09",
+      "statusNote": "Passed the House; blocked in the Senate, Sept. 2026.",
+      "summary": "Would have states consider making data centers pay for grid upgrades. Passed the House with bipartisan support; Senate Democrats blocked it as \"toothless\".",
+      "labelType": "source-summary",
+      "source": {
+        "title": "NBC News: Senate Democrats block Husted-led bill on data centers",
+        "url": "https://www.nbcnews.com/politics/congress/senate-democrats-block-sen-husted-led-bill-data-centers-calling-toothl-rcna600269"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal",
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-grid-savings-act",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "Number to verify",
+      "title": "GRID Savings Act",
+      "sponsors": [
+        {
+          "name": "Martin Heinrich",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "introduced",
+      "statusDate": null,
+      "statusNote": "Status to verify.",
+      "summary": "Would direct federal regulators to require large electricity customers such as data centers to pay for the infrastructure needed to connect them to the grid.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "The Hill: Democrats block data center electricity bill",
+        "url": "https://thehill.com/policy/energy-environment/6119834-senate-data-center-bill-ratepayer-protection-act/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-2026-house-moratorium",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "House package (numbers to verify)",
+      "title": "Statewide data center moratorium (bipartisan House package)",
+      "sponsors": [],
+      "sponsorsNote": "Bipartisan sponsors; names to verify.",
+      "status": "introduced",
+      "statusDate": "2026-02",
+      "statusNote": "Introduced Feb. 2026; not enacted as of Sept. 2026 reports.",
+      "tags": [
+        "moratorium"
+      ],
+      "summary": "Would pause data center approvals until April 1, 2027, including directing the Michigan Public Service Commission to halt approval of utility contracts or rates with data centers. Gov. Whitmer has said she will not sign a statewide moratorium.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "The Midwesterner: Bipartisan House bills put 1-year statewide moratorium on data centers",
+        "url": "https://www.themidwesterner.news/2026/02/bipartisan-house-bills-put-1-year-statewide-moratorium-on-data-centers/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-2026-sb1018",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "SB 1018-1020",
+      "title": "Moratorium on certain approvals for and operation of new data centers",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "introduced",
+      "statusDate": null,
+      "statusNote": "Status to verify.",
+      "tags": [
+        "moratorium"
+      ],
+      "summary": "Senate package placing a moratorium on certain approvals for, and the operation of, new data centers.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Michigan Legislature: Senate Bill 1018 of 2026",
+        "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1018"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-hb5396",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "HB 5396 (with HB 5397-5398)",
+      "title": "Repeal of data center sales and use tax exemptions",
+      "sponsors": [
+        {
+          "name": "Dylan Wegela",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "introduced",
+      "statusDate": null,
+      "statusNote": "Under consideration; not enacted as of Sept. 2026 reports.",
+      "summary": "Would repeal the sales and use tax exemptions for data centers; companion bills address property tax treatment.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Bridge Michigan: Michigan lawmakers unveil plan to repeal data center tax breaks",
+        "url": "https://bridgemi.com/michigan-environment-watch/michigan-lawmakers-unveil-plan-to-repeal-data-center-tax-breaks/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "tx-90r-sb296",
+      "state": "TX",
+      "session": "90th Legislature (2027), prefiled",
+      "billNumber": "SB 296",
+      "title": "Two-year pause on new data centers, local votes and resident payments",
+      "sponsors": [
+        {
+          "name": "Roland Gutierrez",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "introduced",
+      "statusDate": "2026-11-09",
+      "statusNote": "Filed Nov. 9, 2026 for the session starting Jan. 12, 2027.",
+      "tags": [
+        "moratorium"
+      ],
+      "summary": "Would pause new data centers for two years (\"a utility may not energize a new or expanded electric service connection for a project\"), then require local votes and yearly payments to county residents.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "The Texas Dispatch: SB 296",
+        "url": "https://thetexasdispatch.com/sb-296-data-center-moratorium-local-vote-resident-payments/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans",
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "tx-90r-sb293",
+      "state": "TX",
+      "session": "90th Legislature (2027), prefiled",
+      "billNumber": "SB 293 (also HB 167)",
+      "title": "Repeal of the data center sales tax exemption",
+      "sponsors": [],
+      "sponsorsNote": "Authors to verify.",
+      "status": "introduced",
+      "statusDate": "2026-11-09",
+      "statusNote": "Filed Nov. 9, 2026.",
+      "summary": "Would end existing data center sales tax breaks. SB 293 reportedly has 23 Senate authors; HB 167 is a House bill with the same aim.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "National Law Review: Texas lawmakers file to repeal data center sales tax exemption",
+        "url": "https://natlawreview.com/article/texas-lawmakers-file-repeal-data-center-sales-tax-exemption"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "tx-90r-sb33",
+      "state": "TX",
+      "session": "90th Legislature (2027), prefiled",
+      "billNumber": "SB 33, SB 35, SB 36",
+      "title": "Data center cost, water-reporting and local-incentive bills",
+      "sponsors": [
+        {
+          "name": "Judith Zaffirini",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "introduced",
+      "statusDate": "2026-11-09",
+      "statusNote": "Filed Nov. 9, 2026.",
+      "summary": "SB 33: data centers may not raise electricity costs for Texas residents. SB 35: large data centers report water use to the Texas Water Development Board. SB 36: no new local tax incentives for data centers.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Houston Chronicle: The first Texas bills of 2027 are in",
+        "url": "https://www.chron.com/politics/article/texas-legislature-bills-prefiling-2027-22521040.php"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-take-it-down-act",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "Take It Down Act",
+      "title": "Take It Down Act",
+      "sponsors": [
+        {
+          "name": "Ted Cruz",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Amy Klobuchar",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-05-19",
+      "summary": "Makes it a federal crime to publish or threaten to publish non-consensual intimate images, including AI deepfakes; platforms must remove flagged content within 48 hours.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Decrypt: Trump signs bipartisan act targeting deepfake abuse",
+        "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety",
+          "privacy"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-states-right-to-regulate-ai",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "Number to verify",
+      "title": "States' Right to Regulate AI Act",
+      "sponsors": [
+        {
+          "name": "Ed Markey",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "introduced",
+      "statusDate": "2025-12",
+      "summary": "Would bar the use of federal funds to carry out the December 2025 executive order targeting state AI laws.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Axios: Senate Dems fight back on Trump's AI order",
+        "url": "https://www.axios.com/2025/12/19/trump-democrats-fight-back-ai-order"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-hr3447",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "H.R. 3447",
+      "title": "Chip Security Act",
+      "sponsors": [
+        {
+          "name": "Bill Huizenga",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Bill Foster",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-03-26",
+      "statusNote": "Ordered reported 42-0 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA.",
+      "summary": "Would require advanced AI chips to carry security mechanisms that verify their location.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "MLQ: Speaker Johnson sees a developing consensus on limiting chip exports to China",
+        "url": "https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal",
+          "international"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-hr6875",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "H.R. 6875",
+      "title": "AI OVERWATCH Act",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "in-committee",
+      "statusDate": "2026-01-21",
+      "statusNote": "Ordered reported 42-2 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA.",
+      "summary": "Would require the administration to notify Congress before approving advanced chip exports and let Congress block them.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "MLQ: Speaker Johnson sees a developing consensus on limiting chip exports to China",
+        "url": "https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal",
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-hr8170",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "H.R. 8170",
+      "title": "MATCH Act",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "in-committee",
+      "statusDate": "2026-04-22",
+      "statusNote": "Ordered reported 36-8 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA.",
+      "summary": "Would require allied nations to match U.S. controls on exports of advanced chipmaking equipment to China.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "MLQ: Speaker Johnson sees a developing consensus on limiting chip exports to China",
+        "url": "https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal",
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-sb757-760",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "SB 757-760",
+      "title": "\"Kids Over Clicks\" package (AI chatbots and social media for minors)",
+      "sponsors": [
+        {
+          "name": "Dayna Polehanki",
+          "party": "Democratic",
+          "role": "sponsor of SB 760",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "passed-one-chamber",
+      "statusDate": "2026-04-30",
+      "statusNote": "Passed the Senate Apr. 2026; not voted on in the House as of Oct. 2026.",
+      "summary": "Would limit minors' access to AI chatbots and addictive social media feeds. SB 760 would bar chatbot products for minors unless they cannot encourage self-harm, violence, drug use or disordered eating, and would hold AI companies responsible if a chatbot leads to a child being hurt.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Michigan Public: \"Kids over clicks\" passes in state Legislature",
+        "url": "https://www.michiganpublic.org/politics-government/2026-04-30/kids-over-clicks-passes-in-state-legislature"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans",
+          "liability"
+        ],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-hb4047-4048",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "HB 4047-4048 (PA 11 of 2025)",
+      "title": "Intimate deepfake acts",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2025-08-26",
+      "statusNote": "Effective date from a secondary tracker; verify.",
+      "summary": "Add a civil cause of action and criminal penalties for intimate deepfakes. Effective Aug. 26, 2025.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "iMiel: Michigan AI law 2026 (tracker)",
+        "url": "https://imiel.dev/explore/us-ai-legislation-2026/michigan/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans",
+          "liability"
+        ],
+        "issueAreas": [
+          "privacy",
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-2023-election-deepfakes",
+      "state": "MI",
+      "session": "2023-2024 session",
+      "billNumber": "HB 5141, 5143, 5144",
+      "title": "Election deepfake disclosure laws",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2023",
+      "statusNote": "Enacted 2023, per a secondary tracker; verify.",
+      "summary": "Require disclosure of AI-generated content in political communications.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "iMiel: Michigan AI law 2026 (tracker)",
+        "url": "https://imiel.dev/explore/us-ai-legislation-2026/michigan/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-12",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "deepfakes-elections"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        }
       ]
     }
   ]

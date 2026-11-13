@@ -253,6 +253,10 @@
       "label": "Positions"
     },
     {
+      "id": "action",
+      "label": "Actions and votes"
+    },
+    {
       "id": "endorsement",
       "label": "Endorsements"
     },
@@ -318,6 +322,185 @@
       "id": "certified",
       "label": "Certified",
       "description": "Certified by the state's canvassing authority. Cite the official canvass as the source."
+    }
+  ],
+  "policyQuestions": [
+    {
+      "id": "preemption",
+      "label": "Federal preemption of state AI laws",
+      "question": "Should federal law override state AI laws?",
+      "options": [
+        {
+          "id": "supports-preemption",
+          "label": "Supports preemption",
+          "description": "Federal rules should displace state AI laws."
+        },
+        {
+          "id": "mixed",
+          "label": "Mixed / conditional",
+          "description": "Some federal floor, some room for states, or conflicting signals."
+        },
+        {
+          "id": "opposes-preemption",
+          "label": "Opposes preemption",
+          "description": "States should keep the power to regulate AI."
+        }
+      ]
+    },
+    {
+      "id": "data-centers",
+      "label": "AI data center buildout",
+      "question": "How fast should AI data centers be built, and on what terms?",
+      "options": [
+        {
+          "id": "accelerate",
+          "label": "Accelerate buildout",
+          "description": "Faster permitting; opposition treated as a threat to competitiveness."
+        },
+        {
+          "id": "conditional",
+          "label": "Build with binding conditions",
+          "description": "New data centers allowed if conditions on costs, local say, water, security or jobs are met."
+        },
+        {
+          "id": "pause",
+          "label": "Pause / moratorium",
+          "description": "Halt new data centers until rules are in place."
+        }
+      ]
+    },
+    {
+      "id": "chip-sales-china",
+      "label": "AI chip sales to China",
+      "question": "Should advanced AI chips be sold to China?",
+      "options": [
+        {
+          "id": "allow-sales",
+          "label": "Allow licensed sales",
+          "description": "Permit sales, for example under licences or a revenue share."
+        },
+        {
+          "id": "restrict-sales",
+          "label": "Restrict sales",
+          "description": "Tighten export controls on advanced chips."
+        }
+      ]
+    },
+    {
+      "id": "safety-rules",
+      "label": "Binding rules on AI developers",
+      "question": "How binding should rules on AI developers be?",
+      "options": [
+        {
+          "id": "voluntary",
+          "label": "Voluntary / light-touch",
+          "description": "Voluntary commitments and industry standards."
+        },
+        {
+          "id": "targeted-binding",
+          "label": "Targeted binding rules",
+          "description": "Specific prohibitions, disclosure duties or enforcement against specific harms."
+        },
+        {
+          "id": "broad-binding",
+          "label": "Broad binding guardrails",
+          "description": "Testing, audits, liability or licensing across AI developers."
+        },
+        {
+          "id": "pause-or-public-control",
+          "label": "Freeze or public control",
+          "description": "Freeze powerful AI development or place AI under public ownership or control."
+        }
+      ]
+    },
+    {
+      "id": "harmful-content",
+      "label": "Child safety and deepfakes",
+      "question": "Should there be rules against harmful AI content such as sexual deepfakes, harms to children and election deepfakes?",
+      "options": [
+        {
+          "id": "supports-rules",
+          "label": "Supports rules",
+          "description": "Backs legal limits or enforcement against harmful AI content."
+        },
+        {
+          "id": "opposes-rules",
+          "label": "Opposes rules",
+          "description": "Opposes such limits."
+        }
+      ]
+    },
+    {
+      "id": "workers",
+      "label": "Workers and AI",
+      "question": "How should workers be protected from AI disruption?",
+      "options": [
+        {
+          "id": "retraining-led",
+          "label": "Retraining and market adjustment",
+          "description": "Upskilling and retraining; no new worker protections."
+        },
+        {
+          "id": "active-protections",
+          "label": "Active worker protections",
+          "description": "Job or union standards, surveillance limits, or sharing AI gains with workers."
+        }
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "said",
+      "label": "What is said",
+      "description": "Statements, rhetoric and stated principles.",
+      "specificity": [
+        "general-rhetoric",
+        "stated-principle"
+      ]
+    },
+    {
+      "id": "proposed",
+      "label": "What is proposed",
+      "description": "Concrete proposals (bills, moratoriums, plans) and official actions or votes.",
+      "specificity": [
+        "concrete-proposal",
+        "legislative-action"
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "id": "data-centers",
+      "label": "Data centers",
+      "description": "Records coded with the issue area \"Energy and data centers\", or with a stance on data center buildout.",
+      "issueAreas": [
+        "energy-data-centers"
+      ],
+      "policyQuestions": [
+        "data-centers"
+      ]
+    },
+    {
+      "id": "ai-general",
+      "label": "Everything else in AI",
+      "description": "All other AI policy: rules on AI developers, federal preemption, chips and China, child safety and deepfakes, workers.",
+      "issueAreas": [
+        "safety",
+        "labor",
+        "privacy",
+        "child-safety",
+        "deepfakes-elections",
+        "discrimination",
+        "national-security-china",
+        "innovation-competitiveness"
+      ],
+      "policyQuestions": [
+        "preemption",
+        "chip-sales-china",
+        "safety-rules",
+        "harmful-content",
+        "workers"
+      ]
     }
   ]
 }

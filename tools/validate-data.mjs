@@ -19,17 +19,33 @@ const RESULT_LABEL = codebook.resultLabel.id;
 const RESULT_STATUSES = ids(codebook.resultStatuses);
 const STATES = new Set(Object.keys(read('us-states-geo.json').states));
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
+// Publication, status and evidence dates may be partial (year or year-month).
+const PARTIAL_DATE = /^\d{4}(-\d{2}(-\d{2})?)?$/;
+const QUESTIONS = Object.fromEntries(codebook.policyQuestions.map((q) => [q.id, ids(q.options)]));
+const PARTIES = new Set(['Republican', 'Democratic']);
+// "US" marks federal bills.
+const JURISDICTIONS = new Set([...Object.keys(read('us-states-geo.json').states), 'US']);
 
 const errors = [];
 const seenIds = new Set();
 const fail = (where, msg) => errors.push(`${where}: ${msg}`);
 
-function checkDate(where, field, value, required = false) {
+function checkDate(where, field, value, required = false, partial = false) {
   if (value == null) {
     if (required) fail(where, `${field} is required`);
     return;
   }
-  if (!DATE.test(value)) fail(where, `${field} must be YYYY-MM-DD, got "${value}"`);
+  if (partial ? !PARTIAL_DATE.test(value) : !DATE.test(value)) {
+    fail(where, `${field} must be ${partial ? 'YYYY, YYYY-MM or ' : ''}YYYY-MM-DD, got "${value}"`);
+  }
+}
+
+function checkStances(where, stances) {
+  if (stances == null) return;
+  for (const [q, option] of Object.entries(stances)) {
+    if (!QUESTIONS[q]) fail(where, `unknown policy question "${q}"`);
+    else if (!QUESTIONS[q].has(option)) fail(where, `${q}: unknown stance "${option}"`);
+  }
 }
 
 function checkCoding(where, coding) {
@@ -60,7 +76,7 @@ function checkLabeledRecord(where, rec, allowedLabels = LABEL_TYPES) {
   if (!allowedLabels.has(rec.labelType)) fail(where, `labelType "${rec.labelType}" is not allowed here`);
   if (!CONFIDENCE.has(rec.confidence)) fail(where, `confidence "${rec.confidence}" is not in the codebook`);
   if (!rec.source || typeof rec.source !== 'object') fail(where, 'source object is required (title/url may be null for drafts)');
-  checkDate(where, 'publishedDate', rec.publishedDate);
+  checkDate(where, 'publishedDate', rec.publishedDate, false, true);
   checkDate(where, 'lastVerified', rec.lastVerified);
   if (rec.confidence !== 'unverified') {
     if (!rec.lastVerified) fail(where, 'verified records need lastVerified');
@@ -77,6 +93,7 @@ function checkLabeledRecord(where, rec, allowedLabels = LABEL_TYPES) {
     history.forEach((h, i) => checkDate(`${where} history[${i}]`, 'date', h.date, true));
   }
   checkCoding(where, rec.coding);
+  checkStances(where, rec.stances);
 }
 
 // Races
@@ -124,14 +141,52 @@ for (const file of raceFiles) {
 const legislation = read('legislation.json');
 legislation.bills.forEach((bill, i) => {
   const w = `legislation.json bills[${i}] (${bill.id})`;
-  if (!STATES.has(bill.state)) fail(w, `unknown state "${bill.state}"`);
+  if (!JURISDICTIONS.has(bill.state)) fail(w, `unknown jurisdiction "${bill.state}" (use a state code or US)`);
   if (!bill.billNumber || !bill.title || !bill.session) fail(w, 'needs billNumber, title and session');
   if (!BILL_STATUSES.has(bill.status)) fail(w, `status "${bill.status}" is not in the codebook`);
-  checkDate(w, 'statusDate', bill.statusDate);
+  checkDate(w, 'statusDate', bill.statusDate, false, true);
+  if (!bill.coding?.specificity) fail(w, 'bills need coding.specificity so they can be sorted into said / proposed');
   (bill.sponsors || []).forEach((s) => {
     if (!s.name || !s.party) fail(w, 'each sponsor needs name and party');
   });
   checkLabeledRecord(w, bill);
+});
+
+// Candidate research records (kept apart from the race files)
+const raceItemsById = {};
+read('candidate-research.json').records.forEach((rec, i) => {
+  const w = `candidate-research.json records[${i}] (${rec.id})`;
+  if (!raceIds.has(rec.raceId)) fail(w, `raceId "${rec.raceId}" has no race file`);
+  else if (!raceCandidates[rec.raceId].has(rec.candidateId)) fail(w, `candidateId "${rec.candidateId}" is not in ${rec.raceId}`);
+  if (!KINDS.has(rec.kind) || ['poll', 'market'].includes(rec.kind)) fail(w, `kind "${rec.kind}" is not allowed here`);
+  if (!rec.text) fail(w, 'missing text');
+  if (!rec.coding?.specificity) fail(w, 'research records need coding.specificity so they can be sorted into said / proposed');
+  if (!rec.publishedDate && !rec.dateNote) fail(w, 'give publishedDate or a dateNote explaining when');
+  if (!rec.publishedDate && !rec.sortDate) fail(w, 'undated records need an approximate sortDate for the timeline');
+  checkDate(w, 'sortDate', rec.sortDate, false, true);
+  checkLabeledRecord(w, rec);
+  raceItemsById[rec.id] = rec;
+});
+
+// Party lines
+const partyLines = read('party-lines.json');
+const seenLines = new Set();
+partyLines.positions.forEach((pos, i) => {
+  const w = `party-lines.json positions[${i}] (${pos.id})`;
+  if (!PARTIES.has(pos.party)) fail(w, `party must be Republican or Democratic, got "${pos.party}"`);
+  if (!QUESTIONS[pos.questionId]) fail(w, `unknown policy question "${pos.questionId}"`);
+  else if (pos.stance != null && !QUESTIONS[pos.questionId].has(pos.stance)) fail(w, `unknown stance "${pos.stance}"`);
+  const key = `${pos.party}:${pos.questionId}`;
+  if (seenLines.has(key)) fail(w, `duplicate party line for ${key}`);
+  seenLines.add(key);
+  if (!pos.summary) fail(w, 'missing summary');
+  if (!pos.evidence?.length) fail(w, 'a party line needs at least one piece of evidence');
+  (pos.evidence || []).forEach((e, j) => {
+    checkDate(`${w} evidence[${j}]`, 'date', e.date, false, true);
+    if (!['said', 'proposed'].includes(e.track)) fail(`${w} evidence[${j}]`, 'track must be said or proposed');
+    if (!e.source?.url) fail(`${w} evidence[${j}]`, 'evidence needs source.url');
+  });
+  checkLabeledRecord(w, pos);
 });
 
 // Election results (separate label)

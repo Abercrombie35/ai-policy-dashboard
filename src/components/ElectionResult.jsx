@@ -30,7 +30,7 @@ export function ResultSummary({ raceId }) {
   const status = resultStatuses[result.resultStatus]?.label.toLowerCase();
   return (
     <span className="result-summary">
-      Winner ({status}): {result.winner.name} ({result.winner.party[0]})
+      Winner ({status}): {result.winner?.name} ({result.winner?.party?.[0]})
     </span>
   );
 }
@@ -52,7 +52,7 @@ function ElectionResult({ race }) {
     );
   }
 
-  const sorted = [...result.candidates].sort((a, b) => (b.votePct ?? -1) - (a.votePct ?? -1));
+  const sorted = [...(result.candidates || [])].sort((a, b) => (b.votePct ?? -1) - (a.votePct ?? -1));
   const sources = [result.source, ...(result.additionalSources || [])].filter((s) => s?.url);
 
   return (
@@ -107,7 +107,7 @@ function ElectionResult({ race }) {
       {result.context && <p className="result-context">{result.context}</p>}
 
       <RecordMeta record={result} />
-      {result.history.length > 0 && (
+      {(result.history || []).length > 0 && (
         <p className="draft-note result-history">{result.history[result.history.length - 1].note}</p>
       )}
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import { labelInfo, confidenceLevels, dimensions, categoryLabel, isVerified } from '../lib/data';
+import { labelInfo, confidenceLevels, dimensions, categoryLabel, isVerified, trackOf, domainsOf, domains, stanceLabel, questionById } from '../lib/data';
+import { TrackTag } from './Analysis';
 import { useDrafts } from '../lib/drafts';
 import '../styles/ItemCard.css';
 
@@ -40,7 +41,7 @@ export function RecordMeta({ record }) {
       </div>
       <div>
         <dt>Version</dt>
-        <dd title={record.history.map((h) => `v${h.version} (${h.date}): ${h.note}`).join('\n')}>v{record.version}</dd>
+        <dd title={(record.history || []).map((h) => `v${h.version} (${h.date}): ${h.note}`).join('\n')}>v{record.version}</dd>
       </div>
     </dl>
   );
@@ -70,18 +71,46 @@ export function CodingChips({ coding }) {
   );
 }
 
+// Said / proposed and which policy area(s) a record speaks to.
+export function ScopeTags({ record }) {
+  const track = trackOf(record);
+  const ds = domainsOf(record);
+  if (!track && ds.length === 0) return null;
+  return (
+    <div className="scope-tags">
+      <TrackTag track={track} />
+      {ds.map((d) => <span key={d} className={`domain-tag ${d}`}>{domains[d].label}</span>)}
+    </div>
+  );
+}
+
+function Stances({ stances }) {
+  if (!stances || Object.keys(stances).length === 0) return null;
+  return (
+    <ul className="stance-list">
+      {Object.entries(stances).map(([q, s]) => (
+        <li key={q}><span className="dim">{questionById[q]?.label}:</span> {stanceLabel(q, s)}</li>
+      ))}
+    </ul>
+  );
+}
+
 function ItemCard({ item }) {
-  const latest = item.history[item.history.length - 1];
+  const history = item.history || [];
+  const latest = history[history.length - 1];
   return (
     <article className={`item-card ${isVerified(item) ? '' : 'draft'}`}>
       <LabelBadges record={item} />
+      <ScopeTags record={item} />
       {item.labelType === 'direct-quote' ? (
         <blockquote>{item.text}</blockquote>
       ) : (
         <p className="item-text">{item.text}</p>
       )}
+      {item.dateNote && <p className="date-note">When: {item.dateNote}</p>}
+      <Stances stances={item.stances} />
       <RecordMeta record={item} />
-      {!isVerified(item) && latest?.note && <p className="draft-note">{latest.note}</p>}
+      {item.confidence !== 'high' && item.confidence !== 'medium' && latest?.note && <p className="draft-note">{latest.note}</p>}
       <CodingChips coding={item.coding} />
     </article>
   );

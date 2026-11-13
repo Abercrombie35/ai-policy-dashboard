@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import StateView from './StateView';
+import ErrorBoundary from './ErrorBoundary';
 import { stateName } from '../lib/data';
 import '../styles/StateModal.css';
 
@@ -38,7 +39,9 @@ function StateModal({ stateAbbr, raceId, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         <button type="button" className="modal-close" onClick={onClose} aria-label="Close">×</button>
-        <StateView stateAbbr={stateAbbr} raceId={raceId} onClose={onClose} />
+        <ErrorBoundary resetKey={`${stateAbbr}/${raceId || ''}`}>
+          <StateView stateAbbr={stateAbbr} raceId={raceId} onClose={onClose} />
+        </ErrorBoundary>
       </div>
     </div>
   );
