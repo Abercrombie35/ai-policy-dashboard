@@ -197,7 +197,12 @@ Requirements: Node.js 20 and npm.
 On GitHub, every push and pull request runs the data checks and a build
 (.github/workflows/ci.yml).
 
-GitHub Pages (recommended live site): every merge to main is checked and
+Vercel: the repository is connected to Vercel, which deploys every push to
+main (and a preview for every pull request). vercel.json pins the settings:
+install with npm, run "npm run validate" then "npm run build", publish the
+dist folder. A failing data check stops the deploy.
+
+GitHub Pages (second copy of the live site): every merge to main is checked and
 published automatically by .github/workflows/deploy-pages.yml to
 https://abercrombie35.github.io/ai-policy-dashboard/ . This copy is always
 exactly the code on GitHub main. The footer shows the version

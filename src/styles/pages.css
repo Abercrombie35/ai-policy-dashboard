@@ -150,3 +150,5 @@
 .error-detail code { color: #fdba74; overflow-wrap: anywhere; }
 .error-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .error-actions .chip { text-decoration: none; }
+
+.race-page { padding: 0; }

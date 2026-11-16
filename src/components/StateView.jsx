@@ -1,8 +1,7 @@
 import React from 'react';
-import RaceView from './RaceView';
 import ProposalsPanel from './ProposalsPanel';
 import { ResultSummary } from './ElectionResult';
-import { racesForState, raceById, stateName, isVerified, itemsForRace } from '../lib/data';
+import { racesForState, stateName, isVerified, itemsForRace } from '../lib/data';
 import { navigate } from '../lib/router';
 import '../styles/StateView.css';
 
@@ -26,15 +25,8 @@ function RaceCard({ race }) {
   );
 }
 
-function StateView({ stateAbbr, raceId, onClose }) {
+function StateView({ stateAbbr, onClose }) {
   const name = stateName(stateAbbr);
-
-  if (raceId) {
-    const race = raceById(raceId);
-    if (race && race.state === stateAbbr) {
-      return <RaceView race={race} onBack={() => navigate(`/state/${stateAbbr}`)} />;
-    }
-  }
 
   const stateRaces = racesForState(stateAbbr);
 
