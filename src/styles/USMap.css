@@ -64,3 +64,13 @@
   .us-map-container { padding: 8px; }
   .state-label { font-size: 13px; }
 }
+
+/* Europe map */
+.land-background { fill: #111c29; stroke: rgba(7, 20, 32, 0.95); stroke-width: 0.6; pointer-events: none; }
+.state-path.country-pilot { fill: #f59e0b; }
+.state-path.country-planned { fill: #b45309; }
+.state-path.country-eu { fill: #2a3d55; }
+.state-path.country-other { fill: #1d2c3f; }
+.swatch.country-pilot { background: #f59e0b; }
+.swatch.country-planned { background: #b45309; }
+.swatch.country-eu { background: #2a3d55; }

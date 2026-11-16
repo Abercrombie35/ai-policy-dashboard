@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import BillCard from '../components/BillCard';
+import { PolicyBox, SourceList, makeSourceIndex } from '../components/PolicyBox';
 import { HiddenDraftsNotice } from '../components/ItemCard';
-import { bills, billStatuses, filterDrafts, stateName, legislationNote, domainsOf, domains, DOMAIN_IDS, categoriesInDomain, primaryCategory, categoriesOf } from '../lib/data';
+import { bills, billStatuses, filterDrafts, stateName, legislationNote, domainsOf, domains, DOMAIN_IDS, categoriesInDomain, primaryCategory, categoriesOf, billParty } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 
 function LegislationView() {
@@ -81,13 +81,26 @@ function LegislationView() {
             {categoriesInDomain(d).map((cat) => {
               const list = inArea.filter((b) => primaryCategory(b, d) === cat.id);
               if (list.length === 0) return null;
+              const index = makeSourceIndex(list);
+              const refPrefix = `src-leg-${cat.id}`;
               return (
                 <section key={cat.id} className="category-group">
                   <h4 title={cat.description}>{cat.label} ({list.length})</h4>
                   <p className="category-desc">{cat.description}</p>
-                  <div className="bill-list">
-                    {list.map((bill) => <BillCard key={bill.id} bill={bill} showState />)}
-                  </div>
+                  <ul className="policy-list">
+                    {list.map((bill) => (
+                      <li key={bill.id}>
+                        <PolicyBox
+                          record={bill}
+                          party={billParty(bill)}
+                          refNum={index.numberOf(bill)}
+                          refPrefix={refPrefix}
+                          details={[bill.summary, bill.statusNote].filter(Boolean).join(' ')}
+                        />
+                      </li>
+                    ))}
+                  </ul>
+                  <SourceList index={index} refPrefix={refPrefix} />
                 </section>
               );
             })}

@@ -8,11 +8,17 @@ import resultsData from '../data/results.json';
 import researchData from '../data/candidate-research.json';
 import partyLinesData from '../data/party-lines.json';
 import itemCategoriesData from '../data/item-categories.json';
+import europeGeoData from '../data/europe-geo.json';
+import headlinesData from '../data/headlines.json';
 
 const raceModules = import.meta.glob('../data/races/*.json', { eager: true, import: 'default' });
 
 export { codebook, geo };
 export const elections = international.elections;
+export const internationalNextSteps = international.nextSteps;
+export const europeGeo = europeGeoData;
+export const countryName = (code) => europeGeoData.countries[code]?.name || code;
+export const electionsForCountry = (code) => international.elections.filter((e) => e.countryCode === code);
 export const internationalNote = international.note;
 export const legislationNote = legislation.note;
 export const partyLines = partyLinesData;
@@ -73,6 +79,10 @@ export function categoryLabel(dimensionId, categoryId) {
 
 export const stanceLabel = (questionId, optionId) =>
   questionById[questionId]?.options.find((o) => o.id === optionId)?.label || optionId;
+
+// The central point of a record in a few words, for the large text on policy
+// boxes: a written headline, a bill's title, or the record's own text.
+export const headlineOf = (record) => headlinesData.headlines[record.id] || record.title || record.text;
 
 export const isVerified = (record) => record.confidence !== 'unverified';
 export const filterDrafts = (records, includeDrafts) => (includeDrafts ? records : records.filter(isVerified));
@@ -178,6 +188,7 @@ export function proposals(includeDrafts, { state } = {}) {
         type: 'candidate',
         record: rec,
         race,
+        candidate,
         jurisdiction: race.state,
         title: rec.text,
         who: `${candidate?.name} (${candidate?.party[0]}), ${race.office} candidate`,

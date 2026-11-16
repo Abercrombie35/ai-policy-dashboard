@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ItemCard, { HiddenDraftsNotice } from './ItemCard';
+import { PolicyBox, SourceList, makeSourceIndex } from './PolicyBox';
 import { filterDrafts, itemsForRace, domainsOf, trackOf, domains, tracks, categoriesInDomain, primaryCategory } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/CandidateComparison.css';
@@ -18,7 +19,7 @@ const TABS = [
 
 // A policy-area tab: one row per category, with the candidates side by side
 // and each candidate's records split into what they said and proposed.
-function DomainByCategory({ domainId, candidates, shown }) {
+function DomainByCategory({ domainId, candidates, shown, race }) {
   const rows = categoriesInDomain(domainId)
     .map((cat) => ({ cat, items: shown.filter((i) => primaryCategory(i, domainId) === cat.id) }))
     .filter((r) => r.items.length > 0);
@@ -32,7 +33,10 @@ function DomainByCategory({ domainId, candidates, shown }) {
           <span key={cat.id} className="category-chip" title={cat.description}>{cat.label} · {items.length}</span>
         ))}
       </nav>
-      {rows.map(({ cat, items }) => (
+      {rows.map(({ cat, items }) => {
+        const index = makeSourceIndex(items);
+        const refPrefix = `src-${race.id}-${cat.id}`;
+        return (
         <section key={cat.id} className="category-row">
           <h5 title={cat.description}>{cat.label}</h5>
           {cat.description && <p className="category-desc">{cat.description}</p>}
@@ -48,7 +52,16 @@ function DomainByCategory({ domainId, candidates, shown }) {
                     return (
                       <div key={t} className={`track-group track-${t}`}>
                         <h6 title={tracks[t].description}>{tracks[t].label}</h6>
-                        {list.map((item) => <ItemCard key={item.id} item={item} />)}
+                        {list.map((item) => (
+                          <PolicyBox
+                            key={item.id}
+                            record={item}
+                            party={c.party}
+                            candidate={c}
+                            refNum={index.numberOf(item)}
+                            refPrefix={refPrefix}
+                          />
+                        ))}
                       </div>
                     );
                   })}
@@ -57,8 +70,10 @@ function DomainByCategory({ domainId, candidates, shown }) {
               );
             })}
           </div>
+          <SourceList index={index} refPrefix={refPrefix} />
         </section>
-      ))}
+        );
+      })}
     </>
   );
 }
@@ -130,7 +145,7 @@ function CandidateComparison({ race }) {
         {tab.domain && <p className="section-note">{domains[tab.domain].description}</p>}
         <HiddenDraftsNotice count={tabItems.length - shown.length} />
         {tab.domain ? (
-          <DomainByCategory domainId={tab.domain} candidates={candidates} shown={shown} />
+          <DomainByCategory domainId={tab.domain} candidates={candidates} shown={shown} race={race} />
         ) : (
           <div className="comparison-row" style={{ '--cols': candidates.length }}>
             {candidates.map((c) => {

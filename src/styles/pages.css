@@ -155,3 +155,13 @@
 
 .legislation-area { display: flex; flex-direction: column; gap: 4px; }
 .legislation-area .category-group h4 { margin: 12px 0 2px; font-size: 0.95rem; color: #e5edf7; }
+
+/* Home: US map 60% / Europe map 40% */
+.maps-row { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 18px; align-items: start; }
+.map-block { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.map-block .panel-head { margin-bottom: 0; }
+.map-block h2 { margin: 0; }
+.next-steps { margin: 0; padding-left: 20px; color: #c7d8ee; line-height: 1.55; display: flex; flex-direction: column; gap: 6px; }
+@media (max-width: 900px) {
+  .maps-row { grid-template-columns: 1fr; }
+}

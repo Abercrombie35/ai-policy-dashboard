@@ -1,0 +1,36 @@
+{
+  "id": "ca-governor-2026",
+  "state": "CA",
+  "office": "Governor",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "open",
+    "note": "Gov. Gavin Newsom (D) was term-limited. California had no U.S. Senate race in 2026. The general election was a top-two contest from the June 2 primary."
+  },
+  "nomineesSource": "Top-two finishers from the June 2, 2026 primary, as listed in the election results (see this race's election-result record).",
+  "candidates": [
+    {
+      "id": "xavier-becerra",
+      "name": "Xavier Becerra",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "steve-hilton",
+      "name": "Steve Hilton",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

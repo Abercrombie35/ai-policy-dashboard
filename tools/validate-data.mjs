@@ -23,6 +23,7 @@ const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const PARTIAL_DATE = /^\d{4}(-\d{2}(-\d{2})?)?$/;
 const QUESTIONS = Object.fromEntries(codebook.policyQuestions.map((q) => [q.id, ids(q.options)]));
 const PARTIES = new Set(['Republican', 'Democratic']);
+const EUROPE = new Set(Object.keys(read('europe-geo.json').countries));
 // "US" marks federal bills.
 const JURISDICTIONS = new Set([...Object.keys(read('us-states-geo.json').states), 'US']);
 
@@ -214,6 +215,15 @@ for (const item of Object.values(raceItemIndex)) {
   }
 }
 
+// Headlines shown on policy boxes: one per researched record, no strays.
+const headlines = read('headlines.json').headlines;
+for (const id of Object.keys(headlines)) {
+  if (!raceItemsById[id]) fail(`headlines.json ${id}`, 'no researched record has this id');
+}
+for (const id of Object.keys(raceItemsById)) {
+  if (!headlines[id]) fail(`candidate-research.json ${id}`, 'needs a headline in headlines.json');
+}
+
 // Party lines
 const partyLines = read('party-lines.json');
 const seenLines = new Set();
@@ -270,6 +280,7 @@ results.forEach((r, i) => {
 read('international.json').elections.forEach((e, i) => {
   const w = `international.json elections[${i}]`;
   if (!['candidate', 'party-manifesto'].includes(e.unit)) fail(w, 'unit must be candidate or party-manifesto');
+  if (!EUROPE.has(e.countryCode)) fail(w, `countryCode "${e.countryCode}" is not on the Europe map`);
   if (!e.country || !e.type) fail(w, 'needs country and type');
 });
 

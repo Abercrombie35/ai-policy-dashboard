@@ -72,14 +72,9 @@
   display: grid;
   grid-template-columns: 150px 1fr;
   gap: 12px;
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid rgba(147, 177, 216, 0.12);
-  background: rgba(12, 21, 32, 0.8);
-  border-left: 4px solid #8a9bb0;
+  padding: 4px 0;
 }
-.deviation-timeline li.tl-deviates { border-left-color: #fb923c; }
-.deviation-timeline li.tl-aligned { border-left-color: #34d399; }
+.tl-body { display: flex; flex-direction: column; gap: 6px; }
 .tl-date { color: #9eb7d7; font-size: 0.8rem; font-variant-numeric: tabular-nums; }
 .tl-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .tl-meta { color: #8fa3bb; font-size: 0.78rem; }
@@ -205,3 +200,6 @@
 .category-row > h5 { margin: 0 0 2px; font-size: 0.9rem; color: #e5edf7; }
 .category-row > .category-desc { margin-bottom: 10px; }
 .track-group h6 { margin: 0 0 6px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: #9eb7d7; }
+/* The timeline already shows each date in its left column. */
+.deviation-timeline .policy-date { display: none; }
+.deviation-timeline .policy-box { padding-bottom: 14px; }

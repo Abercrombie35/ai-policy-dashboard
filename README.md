@@ -46,11 +46,22 @@ Built:
   what each candidate said and what they proposed, plus a deviation section.
 - Accurate map of all 50 states plus D.C., bundled with the app (no runtime
   download). States are colored by data coverage and can be used by keyboard.
-- Multi-race support: each race is one file in src/data/races/. Six 2026
-  races are tracked: the U.S. Senate and governor races in Michigan and Texas,
-  and in Connecticut the governor race (Lamont vs. Fazio) and the U.S. House
-  race in the 4th District (Himes vs. Goldstein). Connecticut had no U.S.
-  Senate race in 2026; its next one is in 2028.
+- Multi-race support: each race is one file in src/data/races/. Seven 2026
+  races are tracked: the U.S. Senate and governor races in Michigan and Texas;
+  in Connecticut the governor race (Lamont vs. Fazio) and the U.S. House race
+  in the 4th District (Himes vs. Goldstein); and the California governor race
+  (Becerra vs. Hilton). Connecticut and California had no U.S. Senate race in
+  2026. California's data center and AI bills (SB 53, SB 243, the September
+  2026 data center package and more) are on the Legislation page.
+- Home page: the U.S. map (60%) sits beside a Europe map (40%). France, the
+  next pilot (2027 presidential election), is highlighted; other countries with
+  2027 elections listed in the proposal are marked. Selecting a country opens
+  its tracked elections and, for France, the next steps.
+- Policy boxes: every bill, proposal and statement box shows the central point
+  in large type (src/data/headlines.json holds short headlines for candidate
+  records), who is behind it, a blue tint for Democrats and red for
+  Republicans (purple for bipartisan), and the date in small type. Sources
+  are numbered and listed under each category.
 - Categories: every bill and every coded candidate record (statements as
   well as proposals and actions) has a category (for data centers: moratoriums and bans, electricity
   costs and grid, tax breaks, siting and local control, water and
@@ -198,6 +209,8 @@ Key files:
 - tools/validate-data.mjs: the data checks.
 - tools/build-state-paths.mjs: regenerates the map shapes from us-atlas (U.S.
   Census Bureau boundaries).
+- tools/build-europe-paths.mjs: regenerates the Europe map from world-atlas
+  (Natural Earth boundaries).
 
 6. RUNNING, SYNCING, AND PUBLISHING
 ===================================

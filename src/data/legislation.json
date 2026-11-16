@@ -1706,6 +1706,762 @@
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
         }
       ]
+    },
+    {
+      "id": "ca-2024-sb1047",
+      "state": "CA",
+      "session": "2023-2024 session",
+      "billNumber": "SB 1047",
+      "title": "Safe and Secure Innovation for Frontier Artificial Intelligence Models Act",
+      "sponsors": [
+        {
+          "name": "Scott Wiener",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "vetoed",
+      "statusDate": "2024-09",
+      "categories": [
+        "ai-frontier-safety"
+      ],
+      "summary": "Would have required safety testing and added liability for developers of the largest AI models. Vetoed by Gov. Newsom.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "TechCrunch: Newsom signs landmark AI safety bill SB 53 (one year after vetoing SB 1047)",
+        "url": "https://techcrunch.com/2025/09/29/california-governor-newsom-signs-landmark-ai-safety-bill-sb-53/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "liability",
+          "audits"
+        ],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2025-sb53",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "SB 53",
+      "title": "Transparency in Frontier Artificial Intelligence Act",
+      "sponsors": [
+        {
+          "name": "Scott Wiener",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-09-29",
+      "categories": [
+        "ai-frontier-safety",
+        "ai-innovation"
+      ],
+      "summary": "Transparency duties for the largest AI developers, a channel for reporting critical safety incidents to the Office of Emergency Services, whistleblower protections, and a framework for CalCompute, a public AI computing cluster. In force from Jan. 1, 2026.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "TechCrunch: California Governor Newsom signs landmark AI safety bill SB 53",
+        "url": "https://techcrunch.com/2025/09/29/california-governor-newsom-signs-landmark-ai-safety-bill-sb-53/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2025-sb243",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "SB 243",
+      "title": "Companion chatbot safeguards",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2025-10-13",
+      "categories": [
+        "ai-child-safety"
+      ],
+      "summary": "First state law requiring safeguards for AI companion chatbots: reminders that users are talking to AI, protections for minors and protocols for suicidal ideation. In force from Jan. 1, 2026.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "NBC News: California AI law on companion chatbots",
+        "url": "https://www.nbcnews.com/tech/tech-news/ai-law-california-ca-companies-regulation-newsom-rcna234562"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2025-ab1064",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "AB 1064",
+      "title": "LEAD for Kids Act",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "vetoed",
+      "statusDate": "2025-10",
+      "categories": [
+        "ai-child-safety"
+      ],
+      "summary": "Would have restricted AI companion chatbots for children. Vetoed by Gov. Newsom.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Ashurst Perkins Coie: Newsom signs several AI bills but vetoes three",
+        "url": "https://www.ashurstperkinscoie.com/en/insights/california-governor-newsom-signs-several-ai-bills-but-vetoes-three/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2025-sb7",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "SB 7",
+      "title": "Automated decision systems in employment (\"No Robo Bosses\")",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "vetoed",
+      "statusDate": "2025-10",
+      "categories": [
+        "ai-workers"
+      ],
+      "summary": "Would have limited employers' use of automated decision systems in employment decisions. Vetoed by Gov. Newsom; a version was enacted in 2026 as SB 947.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Ashurst Perkins Coie: Newsom signs several AI bills but vetoes three",
+        "url": "https://www.ashurstperkinscoie.com/en/insights/california-governor-newsom-signs-several-ai-bills-but-vetoes-three/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "labor",
+          "discrimination"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-sb947",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "SB 947",
+      "title": "Worker protections for AI and automated decision systems",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2026-09-30",
+      "statusNote": "Signed Sept. 30, 2026.",
+      "categories": [
+        "ai-workers"
+      ],
+      "summary": "Limits on employers' use of AI and automated decision systems, including in firing decisions.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "CalMatters: Newsom enacts only some AI regulations sought by unions",
+        "url": "https://calmatters.org/economy/technology/2026/09/on-ai-newsom-gives-labor-only-some-of-what-it-demanded/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "labor"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-ab1331",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "AB 1331",
+      "title": "Limits on workplace surveillance",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2026-09-30",
+      "statusNote": "Signed Sept. 30, 2026.",
+      "categories": [
+        "ai-privacy-surveillance",
+        "ai-workers"
+      ],
+      "summary": "Limits employers' use of AI-powered workplace surveillance.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Transparency Coalition: Newsom wraps term by enacting 11 more AI safety laws",
+        "url": "https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "privacy",
+          "labor"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-ab1883",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "AB 1883",
+      "title": "Limits on collecting workplace data, including neural data",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2026-09-30",
+      "statusNote": "Signed Sept. 30, 2026.",
+      "categories": [
+        "ai-privacy-surveillance",
+        "ai-workers"
+      ],
+      "summary": "Limits on collecting workers' data, including brain (neural) data, and on predicting workers' emotional states.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Transparency Coalition: Newsom wraps term by enacting 11 more AI safety laws",
+        "url": "https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "privacy",
+          "labor"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-sb1000",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "SB 1000",
+      "title": "Updates to AI disclosure and provenance rules (AI Transparency Act)",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2026-09-30",
+      "statusNote": "Signed Sept. 30, 2026.",
+      "categories": [
+        "ai-deepfakes"
+      ],
+      "summary": "Updates rules on disclosing AI-generated content and its provenance.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Transparency Coalition: Newsom wraps term by enacting 11 more AI safety laws",
+        "url": "https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "deepfakes-elections"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2025-sb57",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "SB 57",
+      "title": "Electrical corporations: data centers: report",
+      "sponsors": [
+        {
+          "name": "Steve Padilla",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025",
+      "statusNote": "Chaptered in 2025 as a reporting bill.",
+      "categories": [
+        "dc-ratepayer",
+        "dc-transparency"
+      ],
+      "summary": "Began as a special electricity rate for data centers; narrowed to a Public Utilities Commission assessment of whether data center costs shift to other customers.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "CalMatters: It proved hard to shield California electricity rates from data centers",
+        "url": "https://calmatters.org/environment/2025/09/data-centers-california-electricity-rates/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-sb886",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "SB 886",
+      "title": "California Technology Innovation and Ratepayer Protection Act",
+      "sponsors": [
+        {
+          "name": "Steve Padilla",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "sponsorsNote": "Author to verify.",
+      "status": "enacted",
+      "statusDate": "2026-09-21",
+      "statusNote": "Signed Sept. 21, 2026.",
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "summary": "Directs the Public Utilities Commission to set transmission-level tariffs for data centers by Jan. 1, 2028, so they pay to connect to the grid and for their power instead of general ratepayers. Part of a seven-bill data center package.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
+        "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-ab2383",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "AB 2383",
+      "title": "Data center tariffs for wildfire and societal program costs",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2026-09-21",
+      "statusNote": "Signed Sept. 21, 2026.",
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "summary": "Data center tariffs must also cover wildfire mitigation and liability, electrification, environmental programs and other costs usually paid by distribution-level ratepayers.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
+        "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-sb1168",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "SB 1168",
+      "title": "Data center rates during demand spikes",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2026-09-21",
+      "statusNote": "Signed Sept. 21, 2026.",
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "summary": "Described as making data centers pay the higher cost of electricity when demand spikes.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
+        "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-ab1577",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "AB 1577",
+      "title": "Data center energy demand and local impact reporting",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2026-09-21",
+      "statusNote": "Signed Sept. 21, 2026.",
+      "categories": [
+        "dc-transparency",
+        "dc-local-control"
+      ],
+      "summary": "Reporting on data centers' energy demand and local impacts.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
+        "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-sb887",
+      "state": "CA",
+      "session": "2025-2026 session",
+      "billNumber": "SB 887",
+      "title": "No exemption from environmental review for data centers",
+      "sponsors": [
+        {
+          "name": "Steve Padilla",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2026-09-21",
+      "statusNote": "Signed Sept. 21, 2026.",
+      "categories": [
+        "dc-water-environment",
+        "dc-local-control"
+      ],
+      "summary": "Prevents data centers from skipping the state-mandated environmental review for new projects. The package also requires developers to disclose projected water use and pay for water supply upgrades.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "KQED: Newsom signs new restrictions on data center development",
+        "url": "https://www.kqed.org/news/12100746/newsom-signs-new-restrictions-on-data-center-development"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
     }
   ]
 }

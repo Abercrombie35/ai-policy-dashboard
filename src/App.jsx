@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useState } from 'react';
 import USMap from './components/USMap';
 import StateModal from './components/StateModal';
 import RaceView from './components/RaceView';
+import EuropeMap from './components/EuropeMap';
+import CountryModal from './components/CountryModal';
 import PartySummary from './pages/PartySummary';
 import LegislationView from './pages/LegislationView';
 import InternationalView from './pages/InternationalView';
@@ -11,7 +13,7 @@ import AnalysisPage from './pages/AnalysisPage';
 import ProposalsPanel from './components/ProposalsPanel';
 import ErrorBoundary from './components/ErrorBoundary';
 import { APP_VERSION } from './version';
-import { races, bills, results, geo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains, raceById, officeType } from './lib/data';
+import { races, bills, results, geo, europeGeo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains, raceById, officeType } from './lib/data';
 import { allCandidates, questionsInDomain, deviationCell } from './lib/analysis';
 import { useDrafts } from './lib/drafts';
 import { useHashRoute, navigate } from './lib/router';
@@ -90,7 +92,7 @@ function RacePage({ race }) {
   );
 }
 
-function MapPage({ selectedState }) {
+function MapPage({ selectedState, selectedCountry }) {
   const [filter, setFilter] = useState('all');
   const close = useCallback(() => navigate('/'), []);
   const statesWithRaces = new Set(races.map((r) => r.state)).size;
@@ -125,22 +127,32 @@ function MapPage({ selectedState }) {
         </div>
       </section>
 
-      <div className="map-panel">
-        <div className="panel-head">
-          <h2>United States</h2>
-          <label className="visually-hidden" htmlFor="map-filter">Filter states</label>
-          <select id="map-filter" value={filter} onChange={(e) => setFilter(e.target.value)}>
-            {MAP_FILTERS.map((f) => <option key={f.id} value={f.id}>{f.label}</option>)}
-          </select>
+      <div className="map-panel maps-row">
+        <div className="map-block us-block">
+          <div className="panel-head">
+            <h2>United States</h2>
+            <label className="visually-hidden" htmlFor="map-filter">Filter states</label>
+            <select id="map-filter" value={filter} onChange={(e) => setFilter(e.target.value)}>
+              {MAP_FILTERS.map((f) => <option key={f.id} value={f.id}>{f.label}</option>)}
+            </select>
+          </div>
+          <p className="panel-note">Select a state to see its tracked races and AI legislation.</p>
+          <USMap selectedState={selectedState} filter={filter} onStateClick={(abbr) => navigate(`/state/${abbr}`)} />
         </div>
-        <p className="panel-note">Select a state to see its tracked races and AI legislation.</p>
-        <USMap selectedState={selectedState} filter={filter} onStateClick={(abbr) => navigate(`/state/${abbr}`)} />
+        <div className="map-block europe-block">
+          <div className="panel-head">
+            <h2>Europe</h2>
+          </div>
+          <p className="panel-note">Next: France's 2027 presidential election. Select a country for its tracked elections.</p>
+          <EuropeMap selectedCountry={selectedCountry} onCountryClick={(code) => navigate(`/country/${code}`)} />
+        </div>
       </div>
 
       <PolicyFronts />
       <ProposalsPanel title="Proposed bills and moratoriums" />
 
       {selectedState && <StateModal stateAbbr={selectedState} onClose={close} />}
+      {selectedCountry && <CountryModal code={selectedCountry} onClose={close} />}
     </>
   );
 }
@@ -148,8 +160,9 @@ function MapPage({ selectedState }) {
 function App() {
   const { page, params } = useHashRoute();
   const { includeDrafts, setIncludeDrafts } = useDrafts();
-  const activeNav = page === 'state' ? 'map' : page;
+  const activeNav = ['state', 'country'].includes(page) ? 'map' : page;
   const selectedState = page === 'state' && geo.states[params[0]?.toUpperCase()] ? params[0].toUpperCase() : null;
+  const selectedCountry = page === 'country' && europeGeo.countries[params[0]?.toUpperCase()] ? params[0].toUpperCase() : null;
 
   let content;
   switch (page) {
@@ -161,7 +174,7 @@ function App() {
     case 'data': content = <DataView />; break;
     default: {
       const race = page === 'state' && params[1] ? raceById(params[1]) : null;
-      content = race && race.state === selectedState ? <RacePage race={race} /> : <MapPage selectedState={selectedState} />;
+      content = race && race.state === selectedState ? <RacePage race={race} /> : <MapPage selectedState={selectedState} selectedCountry={selectedCountry} />;
     }
   }
 
