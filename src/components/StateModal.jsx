@@ -4,7 +4,7 @@ import ErrorBoundary from './ErrorBoundary';
 import { stateName } from '../lib/data';
 import '../styles/StateModal.css';
 
-function StateModal({ stateAbbr, raceId, onClose }) {
+function StateModal({ stateAbbr, onClose }) {
   const contentRef = useRef(null);
 
   useEffect(() => {
@@ -22,11 +22,6 @@ function StateModal({ stateAbbr, raceId, onClose }) {
     };
   }, [onClose]);
 
-  // Scroll back to the top when moving between the state and race views.
-  useEffect(() => {
-    contentRef.current?.scrollTo?.(0, 0);
-  }, [raceId]);
-
   return (
     <div className="state-modal-overlay" onClick={onClose}>
       <div
@@ -39,8 +34,8 @@ function StateModal({ stateAbbr, raceId, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         <button type="button" className="modal-close" onClick={onClose} aria-label="Close">×</button>
-        <ErrorBoundary resetKey={`${stateAbbr}/${raceId || ''}`}>
-          <StateView stateAbbr={stateAbbr} raceId={raceId} onClose={onClose} />
+        <ErrorBoundary resetKey={stateAbbr}>
+          <StateView stateAbbr={stateAbbr} onClose={onClose} />
         </ErrorBoundary>
       </div>
     </div>

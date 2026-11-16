@@ -1,6 +1,7 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import USMap from './components/USMap';
 import StateModal from './components/StateModal';
+import RaceView from './components/RaceView';
 import PartySummary from './pages/PartySummary';
 import LegislationView from './pages/LegislationView';
 import InternationalView from './pages/InternationalView';
@@ -10,7 +11,7 @@ import AnalysisPage from './pages/AnalysisPage';
 import ProposalsPanel from './components/ProposalsPanel';
 import ErrorBoundary from './components/ErrorBoundary';
 import { APP_VERSION } from './version';
-import { races, bills, results, geo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains } from './lib/data';
+import { races, bills, results, geo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains, raceById } from './lib/data';
 import { allCandidates, questionsInDomain, deviationCell } from './lib/analysis';
 import { useDrafts } from './lib/drafts';
 import { useHashRoute, navigate } from './lib/router';
@@ -75,7 +76,21 @@ function PolicyFronts() {
   );
 }
 
-function MapPage({ selectedState, raceId }) {
+// A race is a full page rather than content inside the state pop-up: race
+// pages are long, and very tall scrolling content inside a blurred, fixed
+// overlay is fragile in some browsers.
+function RacePage({ race }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [race.id]);
+  return (
+    <div className="page race-page">
+      <RaceView race={race} onBack={() => navigate(`/state/${race.state}`)} />
+    </div>
+  );
+}
+
+function MapPage({ selectedState }) {
   const [filter, setFilter] = useState('all');
   const close = useCallback(() => navigate('/'), []);
   const statesWithRaces = new Set(races.map((r) => r.state)).size;
@@ -121,7 +136,7 @@ function MapPage({ selectedState, raceId }) {
       <PolicyFronts />
       <ProposalsPanel title="Proposed bills and moratoriums" />
 
-      {selectedState && <StateModal stateAbbr={selectedState} raceId={raceId} onClose={close} />}
+      {selectedState && <StateModal stateAbbr={selectedState} onClose={close} />}
     </>
   );
 }
@@ -140,7 +155,10 @@ function App() {
     case 'international': content = <InternationalView />; break;
     case 'methods': content = <MethodsView />; break;
     case 'data': content = <DataView />; break;
-    default: content = <MapPage selectedState={selectedState} raceId={params[1]} />;
+    default: {
+      const race = page === 'state' && params[1] ? raceById(params[1]) : null;
+      content = race && race.state === selectedState ? <RacePage race={race} /> : <MapPage selectedState={selectedState} />;
+    }
   }
 
   return (
