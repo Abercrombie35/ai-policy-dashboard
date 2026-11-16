@@ -1,0 +1,48 @@
+name: Deploy to GitHub Pages
+
+# Publishes the site straight from main, so the live site always matches the
+# code on GitHub. Runs the data checks first; a failing check blocks the deploy.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/configure-pages@v5
+        with:
+          # Turns on GitHub Pages (source: GitHub Actions) if it is not on yet.
+          enablement: true
+      # No lockfile is committed on GitHub, so use install rather than ci.
+      - run: npm install --no-audit --no-fund
+      - run: npm run validate
+      # The site is served from /<repo-name>/, so build with that base path.
+      - run: npx vite build --base="/${{ github.event.repository.name }}/"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
