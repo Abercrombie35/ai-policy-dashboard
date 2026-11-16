@@ -1,5 +1,5 @@
 import React from 'react';
-import { labelInfo, confidenceLevels, dimensions, categoryLabel, isVerified, trackOf, domainsOf, domains, stanceLabel, questionById } from '../lib/data';
+import { labelInfo, confidenceLevels, dimensions, categoryLabel, isVerified, trackOf, domainsOf, domains, stanceLabel, questionById, categoryById } from '../lib/data';
 import { TrackTag } from './Analysis';
 import { useDrafts } from '../lib/drafts';
 import '../styles/ItemCard.css';
@@ -80,6 +80,9 @@ export function ScopeTags({ record }) {
     <div className="scope-tags">
       <TrackTag track={track} />
       {ds.map((d) => <span key={d} className={`domain-tag ${d}`}>{domains[d].label}</span>)}
+      {(record.categories || []).map((c) => (
+        <span key={c} className="category-tag" title={categoryById[c]?.description}>{categoryById[c]?.label || c}</span>
+      ))}
     </div>
   );
 }

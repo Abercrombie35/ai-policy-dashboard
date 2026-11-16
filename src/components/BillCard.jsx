@@ -9,12 +9,11 @@ function BillCard({ bill, showState = false }) {
     <article className={`item-card bill-card ${isVerified(bill) ? '' : 'draft'}`}>
       <LabelBadges record={bill} />
       <ScopeTags record={bill} />
-      {(bill.tags || []).some((t) => t === 'moratorium' || t === 'ban') && <span className="ptag moratorium-tag">Moratorium / pause</span>}
       <div className="bill-head">
-        <h4>
+        <h5 className="bill-title">
           {showState && <span className="bill-state">{stateName(bill.state)} · </span>}
           {bill.billNumber}: {bill.title}
-        </h4>
+        </h5>
         <div className="bill-sub">
           {bill.session} · <strong>{billStatuses[bill.status]?.label || bill.status}</strong>
           {bill.statusDate ? ` (${bill.statusDate})` : ''}

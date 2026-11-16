@@ -40,6 +40,28 @@ function checkDate(where, field, value, required = false, partial = false) {
   }
 }
 
+// Proposal categories and the two policy areas, mirroring src/lib/data.js:
+// records with stances belong to the areas of those stances; otherwise the
+// data center issue area means data centers, anything else general AI.
+const CATEGORIES = Object.fromEntries(codebook.proposalCategories.map((c) => [c.id, c]));
+const PROPOSED_SPECIFICITY = new Set(codebook.tracks.find((t) => t.id === 'proposed').specificity);
+function domainsOf(rec) {
+  const qs = Object.keys(rec.stances || {});
+  if (qs.length) return new Set(codebook.domains.filter((d) => qs.some((q) => d.policyQuestions.includes(q))).map((d) => d.id));
+  if (!rec.coding) return new Set();
+  const dc = codebook.domains.find((d) => d.id === 'data-centers');
+  return new Set([(rec.coding.issueAreas || []).some((a) => dc.issueAreas.includes(a)) ? 'data-centers' : 'ai-general']);
+}
+function checkCategories(where, rec, required) {
+  const cats = rec.categories || [];
+  if (required && cats.length === 0) fail(where, 'proposals need at least one category so they can be grouped');
+  const areas = domainsOf(rec);
+  cats.forEach((c) => {
+    if (!CATEGORIES[c]) fail(where, `unknown category "${c}"`);
+    else if (!areas.has(CATEGORIES[c].domain)) fail(where, `category "${c}" belongs to ${CATEGORIES[c].domain}, but this record is in ${[...areas].join(', ') || 'no policy area'}`);
+  });
+}
+
 function checkStances(where, stances) {
   if (stances == null) return;
   for (const [q, option] of Object.entries(stances)) {
@@ -150,6 +172,7 @@ legislation.bills.forEach((bill, i) => {
     if (!s.name || !s.party) fail(w, 'each sponsor needs name and party');
   });
   checkLabeledRecord(w, bill);
+  checkCategories(w, bill, true);
 });
 
 // Candidate research records (kept apart from the race files)
@@ -165,6 +188,7 @@ read('candidate-research.json').records.forEach((rec, i) => {
   if (!rec.publishedDate && !rec.sortDate) fail(w, 'undated records need an approximate sortDate for the timeline');
   checkDate(w, 'sortDate', rec.sortDate, false, true);
   checkLabeledRecord(w, rec);
+  checkCategories(w, rec, PROPOSED_SPECIFICITY.has(rec.coding?.specificity));
   raceItemsById[rec.id] = rec;
 });
 

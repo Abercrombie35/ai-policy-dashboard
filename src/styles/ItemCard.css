@@ -105,3 +105,11 @@
 .track-group h5 { margin: 4px 0 8px; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.06em; color: #9eb7d7; }
 .track-group + .track-group { margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(147, 177, 216, 0.15); }
 .track-group { display: flex; flex-direction: column; gap: 10px; }
+.category-tag {
+  font-size: 0.66rem;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(147, 177, 216, 0.3);
+  color: #dfeaf7;
+  cursor: help;
+}

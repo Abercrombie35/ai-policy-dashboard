@@ -17,6 +17,10 @@
       ],
       "status": "enacted",
       "statusDate": "2025-06-22",
+      "categories": [
+        "ai-comprehensive",
+        "ai-child-safety"
+      ],
       "summary": "Bans a short list of AI uses, including AI-generated child sexual abuse material and government social scoring, and requires Texas state agencies to disclose AI use to consumers. A broader high-risk impact-assessment regime in early drafts was cut from the final bill.",
       "labelType": "source-summary",
       "source": {
@@ -44,7 +48,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -55,6 +59,11 @@
           "version": 2,
           "date": "2026-11-12",
           "note": "Summary and status updated from web search results (signing date, effective date, scope). Still needs checking against the official bill page."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ],
       "statusNote": "Signed June 22, 2025; effective Jan. 1, 2026."
@@ -78,6 +87,9 @@
       "statusNote": "Introduced Mar. 25, 2026; referred to committee.",
       "tags": [
         "moratorium"
+      ],
+      "categories": [
+        "dc-moratorium"
       ],
       "summary": "Would prohibit building or upgrading AI data centers until laws regulating AI and AI data centers are enacted. Referred to the Senate Commerce Committee.",
       "labelType": "source-summary",
@@ -105,12 +117,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -133,6 +150,9 @@
       "statusNote": "Introduced June 24, 2026; referred to committee.",
       "tags": [
         "moratorium"
+      ],
+      "categories": [
+        "dc-moratorium"
       ],
       "summary": "House companion to S. 4214, with about 20 cosponsors. Referred to the Energy and Commerce and Foreign Affairs committees.",
       "labelType": "source-summary",
@@ -160,12 +180,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -188,6 +213,10 @@
       "statusNote": "Introduced Sept. 30, 2026; referred to committee.",
       "tags": [
         "ban"
+      ],
+      "categories": [
+        "dc-moratorium",
+        "dc-local-control"
       ],
       "summary": "Would prohibit building data centers on federal land. Referred to the Energy and Natural Resources Committee.",
       "labelType": "source-summary",
@@ -214,12 +243,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -259,6 +293,10 @@
       "status": "introduced",
       "statusDate": "2026-11-09",
       "statusNote": "Senate voted 73-25 to advance it on Nov. 9, 2026; floor debate pending.",
+      "categories": [
+        "dc-permitting",
+        "dc-ratepayer"
+      ],
       "summary": "Energy permitting bill that would have federal regulators make data centers and other large computing users pay for the grid infrastructure built to serve them. Heinrich and Trump both say it codifies the White House Ratepayer Protection Pledge; critics call it a giveaway to the industry.",
       "labelType": "source-summary",
       "source": {
@@ -284,12 +322,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -310,6 +353,9 @@
       "status": "passed-one-chamber",
       "statusDate": "2026-09",
       "statusNote": "Passed the House; blocked in the Senate, Sept. 2026.",
+      "categories": [
+        "dc-ratepayer"
+      ],
       "summary": "Would have states consider making data centers pay for grid upgrades. Passed the House with bipartisan support; Senate Democrats blocked it as \"toothless\".",
       "labelType": "source-summary",
       "source": {
@@ -336,12 +382,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -362,6 +413,9 @@
       "status": "introduced",
       "statusDate": null,
       "statusNote": "Status to verify.",
+      "categories": [
+        "dc-ratepayer"
+      ],
       "summary": "Would direct federal regulators to require large electricity customers such as data centers to pay for the infrastructure needed to connect them to the grid.",
       "labelType": "source-summary",
       "source": {
@@ -387,12 +441,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -409,6 +468,10 @@
       "statusNote": "Introduced Feb. 2026; not enacted as of Sept. 2026 reports.",
       "tags": [
         "moratorium"
+      ],
+      "categories": [
+        "dc-moratorium",
+        "dc-ratepayer"
       ],
       "summary": "Would pause data center approvals until April 1, 2027, including directing the Michigan Public Service Commission to halt approval of utility contracts or rates with data centers. Gov. Whitmer has said she will not sign a statewide moratorium.",
       "labelType": "source-summary",
@@ -435,12 +498,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -457,6 +525,9 @@
       "statusNote": "Status to verify.",
       "tags": [
         "moratorium"
+      ],
+      "categories": [
+        "dc-moratorium"
       ],
       "summary": "Senate package placing a moratorium on certain approvals for, and the operation of, new data centers.",
       "labelType": "source-summary",
@@ -483,12 +554,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -509,6 +585,9 @@
       "status": "introduced",
       "statusDate": null,
       "statusNote": "Under consideration; not enacted as of Sept. 2026 reports.",
+      "categories": [
+        "dc-tax-incentives"
+      ],
       "summary": "Would repeal the sales and use tax exemptions for data centers; companion bills address property tax treatment.",
       "labelType": "source-summary",
       "source": {
@@ -534,12 +613,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -562,6 +646,10 @@
       "statusNote": "Filed Nov. 9, 2026 for the session starting Jan. 12, 2027.",
       "tags": [
         "moratorium"
+      ],
+      "categories": [
+        "dc-moratorium",
+        "dc-local-control"
       ],
       "summary": "Would pause new data centers for two years (\"a utility may not energize a new or expanded electric service connection for a project\"), then require local votes and yearly payments to county residents.",
       "labelType": "source-summary",
@@ -589,12 +677,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -609,6 +702,9 @@
       "status": "introduced",
       "statusDate": "2026-11-09",
       "statusNote": "Filed Nov. 9, 2026.",
+      "categories": [
+        "dc-tax-incentives"
+      ],
       "summary": "Would end existing data center sales tax breaks. SB 293 reportedly has 23 Senate authors; HB 167 is a House bill with the same aim.",
       "labelType": "source-summary",
       "source": {
@@ -634,12 +730,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -660,6 +761,11 @@
       "status": "introduced",
       "statusDate": "2026-11-09",
       "statusNote": "Filed Nov. 9, 2026.",
+      "categories": [
+        "dc-ratepayer",
+        "dc-water-environment",
+        "dc-tax-incentives"
+      ],
       "summary": "SB 33: data centers may not raise electricity costs for Texas residents. SB 35: large data centers report water use to the Texas Water Development Board. SB 36: no new local tax incentives for data centers.",
       "labelType": "source-summary",
       "source": {
@@ -686,12 +792,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -717,6 +828,10 @@
       ],
       "status": "enacted",
       "statusDate": "2025-05-19",
+      "categories": [
+        "ai-deepfakes",
+        "ai-child-safety"
+      ],
       "summary": "Makes it a federal crime to publish or threaten to publish non-consensual intimate images, including AI deepfakes; platforms must remove flagged content within 48 hours.",
       "labelType": "source-summary",
       "source": {
@@ -743,12 +858,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -768,6 +888,9 @@
       ],
       "status": "introduced",
       "statusDate": "2025-12",
+      "categories": [
+        "ai-preemption"
+      ],
       "summary": "Would bar the use of federal funds to carry out the December 2025 executive order targeting state AI laws.",
       "labelType": "source-summary",
       "source": {
@@ -792,12 +915,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -824,6 +952,9 @@
       "status": "in-committee",
       "statusDate": "2026-03-26",
       "statusNote": "Ordered reported 42-0 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA.",
+      "categories": [
+        "ai-chips-china"
+      ],
       "summary": "Would require advanced AI chips to carry security mechanisms that verify their location.",
       "labelType": "source-summary",
       "source": {
@@ -850,12 +981,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -870,6 +1006,9 @@
       "status": "in-committee",
       "statusDate": "2026-01-21",
       "statusNote": "Ordered reported 42-2 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA.",
+      "categories": [
+        "ai-chips-china"
+      ],
       "summary": "Would require the administration to notify Congress before approving advanced chip exports and let Congress block them.",
       "labelType": "source-summary",
       "source": {
@@ -894,12 +1033,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -914,6 +1058,9 @@
       "status": "in-committee",
       "statusDate": "2026-04-22",
       "statusNote": "Ordered reported 36-8 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA.",
+      "categories": [
+        "ai-chips-china"
+      ],
       "summary": "Would require allied nations to match U.S. controls on exports of advanced chipmaking equipment to China.",
       "labelType": "source-summary",
       "source": {
@@ -938,12 +1085,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -964,6 +1116,9 @@
       "status": "passed-one-chamber",
       "statusDate": "2026-04-30",
       "statusNote": "Passed the Senate Apr. 2026; not voted on in the House as of Oct. 2026.",
+      "categories": [
+        "ai-child-safety"
+      ],
       "summary": "Would limit minors' access to AI chatbots and addictive social media feeds. SB 760 would bar chatbot products for minors unless they cannot encourage self-harm, violence, drug use or disordered eating, and would hold AI companies responsible if a chatbot leads to a child being hurt.",
       "labelType": "source-summary",
       "source": {
@@ -990,12 +1145,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -1010,6 +1170,9 @@
       "status": "enacted",
       "statusDate": "2025-08-26",
       "statusNote": "Effective date from a secondary tracker; verify.",
+      "categories": [
+        "ai-deepfakes"
+      ],
       "summary": "Add a civil cause of action and criminal penalties for intimate deepfakes. Effective Aug. 26, 2025.",
       "labelType": "source-summary",
       "source": {
@@ -1037,12 +1200,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -1057,6 +1225,9 @@
       "status": "enacted",
       "statusDate": "2023",
       "statusNote": "Enacted 2023, per a secondary tracker; verify.",
+      "categories": [
+        "ai-deepfakes"
+      ],
       "summary": "Require disclosure of AI-generated content in political communications.",
       "labelType": "source-summary",
       "source": {
@@ -1082,12 +1253,439 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2026-sb5",
+      "state": "CT",
+      "session": "2026 session",
+      "billNumber": "SB 5 (Public Act 26-15)",
+      "title": "Connecticut AI Responsibility and Transparency (CART) Act",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "enacted",
+      "statusDate": "2026-05-27",
+      "statusNote": "Passed the Senate 32-4 and the House 131-17; signed May 27, 2026 (some sources give June 2).",
+      "categories": [
+        "ai-comprehensive",
+        "ai-child-safety"
+      ],
+      "summary": "Broad AI law: using an automated employment decision tool is no defense to a discrimination claim; rules for consumer chatbots and AI companions; whistleblower protections and reporting channels at frontier-model developers; AI content provenance; protections for minors. Provisions phase in from Oct. 1, 2026 to 2028.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Ropes & Gray: Connecticut enacts sweeping AI law",
+        "url": "https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "liability"
+        ],
+        "issueAreas": [
+          "discrimination",
+          "child-safety",
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2025-sb2",
+      "state": "CT",
+      "session": "2025 session",
+      "billNumber": "SB 2 (2025)",
+      "title": "An Act Concerning Artificial Intelligence (revised)",
+      "sponsors": [
+        {
+          "name": "James Maroney",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "failed",
+      "statusDate": "2025",
+      "categories": [
+        "ai-comprehensive"
+      ],
+      "summary": "Revised version of the 2024 comprehensive AI bill, including algorithmic-discrimination duties. Passed the Senate but was not taken up in the House after Gov. Lamont threatened a veto.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Pluribus News: Connecticut AI regulation bill crumbles amid governor's veto threat",
+        "url": "https://pluribusnews.com/news-and-events/connecticut-ai-regulation-bill-crumbles-amid-govs-veto-threat/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "audits",
+          "disclosure"
+        ],
+        "issueAreas": [
+          "discrimination",
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2024-sb2",
+      "state": "CT",
+      "session": "2024 session",
+      "billNumber": "SB 2 (2024)",
+      "title": "An Act Concerning Artificial Intelligence",
+      "sponsors": [
+        {
+          "name": "James Maroney",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "failed",
+      "statusDate": "2024-04-24",
+      "categories": [
+        "ai-comprehensive"
+      ],
+      "summary": "Comprehensive AI standards bill. Passed the Senate 24-12 along party lines; the House Speaker did not call it for a vote after Gov. Lamont said he would veto it.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "CT Mirror: CT AI standards bill passes Senate despite objections from Lamont",
+        "url": "https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "audits",
+          "disclosure"
+        ],
+        "issueAreas": [
+          "discrimination",
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2026-sb245",
+      "state": "CT",
+      "session": "2026 session",
+      "billNumber": "SB 245",
+      "title": "End new applications to the data center tax-incentive program",
+      "sponsors": [],
+      "sponsorsNote": "Raised by the Energy and Technology Committee (to verify).",
+      "status": "failed",
+      "statusDate": "2026-05-06",
+      "statusNote": "Introduced Feb. 19, 2026; died in committee.",
+      "categories": [
+        "dc-tax-incentives"
+      ],
+      "summary": "Would have stopped new applications for the 2021 program that offers sales, use and property tax exemptions of up to 30 years for data center investments.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "LegiScan: CT SB 245 (2026)",
+        "url": "https://legiscan.com/CT/bill/SB00245/2026"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2026-hb5926",
+      "state": "CT",
+      "session": "2026 session",
+      "billNumber": "HB 5926",
+      "title": "Surcharge on electricity used by data centers",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "introduced",
+      "statusDate": "2026",
+      "statusNote": "Not enacted.",
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "summary": "Would add a surcharge on electricity used by data centers.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Quorum: 486 data center measures tracked in 2025-2026",
+        "url": "https://www.quorum.us/policy-pulse/quorum-tracked-486-data-center-measures-in-2025-2026-only-42-became-law/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-sb1292",
+      "state": "CT",
+      "session": "Session to verify (2025 or 2026)",
+      "billNumber": "SB 1292",
+      "title": "Study of energy efficiency for AI data centers",
+      "sponsors": [],
+      "sponsorsNote": "Sponsors to verify.",
+      "status": "introduced",
+      "statusDate": null,
+      "statusNote": "Not enacted; session and status to verify.",
+      "categories": [
+        "dc-transparency"
+      ],
+      "summary": "Would study energy efficiency for AI data centers.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Quorum: 486 data center measures tracked in 2025-2026",
+        "url": "https://www.quorum.us/policy-pulse/quorum-tracked-486-data-center-measures-in-2025-2026-only-42-became-law/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2027-duff-moratorium",
+      "state": "CT",
+      "session": "2027 session (announced)",
+      "billNumber": "To be filed",
+      "title": "Statewide moratorium on AI data centers",
+      "sponsors": [
+        {
+          "name": "Bob Duff",
+          "party": "Democratic",
+          "role": "Senate Majority Leader",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "announced",
+      "statusDate": "2026-10-22",
+      "statusNote": "Announced Oct. 22, 2026; not yet filed.",
+      "categories": [
+        "dc-moratorium"
+      ],
+      "summary": "Senate Majority Leader Bob Duff plans to introduce a statewide moratorium on AI data centers when the 2027 session begins, citing their water and electricity use and the effect on utility rates. Some towns, such as East Lyme, have passed local bans.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "WFSB: Senate leader proposes bill to pause new data centers in Connecticut",
+        "url": "https://www.wfsb.com/2026/10/22/senate-leader-proposes-bill-pause-new-data-centers-connecticut/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-s3852-grid-act",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "S. 3852 (number to verify)",
+      "title": "GRID Act (Guaranteeing Rate Insulation from Data Centers Act)",
+      "sponsors": [
+        {
+          "name": "Josh Hawley",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Richard Blumenthal",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "introduced",
+      "statusDate": "2026-02",
+      "statusNote": "Introduced Feb. 2026.",
+      "categories": [
+        "dc-ratepayer",
+        "dc-transparency"
+      ],
+      "summary": "Would bar most private data centers drawing 20 megawatts or more from using grid power unless they rely entirely on dedicated off-grid sources; existing sites get up to 10 years or a federal \"Zero Rate Effect Certificate\". Companies would publish five-year utility-use estimates.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "E&E News: Bipartisan bill would force data centers to find own power sources",
+        "url": "https://www.eenews.net/articles/bipartisan-bill-would-force-data-centers-to-find-own-power-sources/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans",
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
         }
       ]
     }

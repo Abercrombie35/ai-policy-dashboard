@@ -279,6 +279,10 @@
   ],
   "billStatuses": [
     {
+      "id": "announced",
+      "label": "Announced (not yet filed)"
+    },
+    {
       "id": "introduced",
       "label": "Introduced"
     },
@@ -501,6 +505,104 @@
         "harmful-content",
         "workers"
       ]
+    }
+  ],
+  "proposalCategories": [
+    {
+      "id": "dc-moratorium",
+      "domain": "data-centers",
+      "label": "Moratoriums and bans",
+      "description": "Pauses or prohibitions on new data centers."
+    },
+    {
+      "id": "dc-ratepayer",
+      "domain": "data-centers",
+      "label": "Electricity costs and grid",
+      "description": "Making data centers pay for their power and grid upgrades, surcharges, bring-your-own-power rules."
+    },
+    {
+      "id": "dc-tax-incentives",
+      "domain": "data-centers",
+      "label": "Tax breaks",
+      "description": "Repealing, limiting or opposing tax incentives for data centers."
+    },
+    {
+      "id": "dc-local-control",
+      "domain": "data-centers",
+      "label": "Siting and local control",
+      "description": "Local votes, local approval and where data centers may be built."
+    },
+    {
+      "id": "dc-water-environment",
+      "domain": "data-centers",
+      "label": "Water and environment",
+      "description": "Water use, cooling and environmental limits."
+    },
+    {
+      "id": "dc-transparency",
+      "domain": "data-centers",
+      "label": "Disclosure and studies",
+      "description": "Reporting duties and studies of data center impacts."
+    },
+    {
+      "id": "dc-security",
+      "domain": "data-centers",
+      "label": "Security and foreign technology",
+      "description": "Security rules for data centers, including limits on foreign technology."
+    },
+    {
+      "id": "dc-permitting",
+      "domain": "data-centers",
+      "label": "Permitting and faster buildout",
+      "description": "Speeding up permits and construction."
+    },
+    {
+      "id": "ai-comprehensive",
+      "domain": "ai-general",
+      "label": "Broad AI governance laws",
+      "description": "Laws setting rules across many AI uses, such as Texas TRAIGA or Connecticut SB 5."
+    },
+    {
+      "id": "ai-child-safety",
+      "domain": "ai-general",
+      "label": "Children, chatbots and online safety",
+      "description": "Protections for minors and rules for AI chatbots."
+    },
+    {
+      "id": "ai-deepfakes",
+      "domain": "ai-general",
+      "label": "Deepfakes",
+      "description": "Election deepfakes and AI-generated intimate images."
+    },
+    {
+      "id": "ai-chips-china",
+      "domain": "ai-general",
+      "label": "Chips and China",
+      "description": "Export controls and chip security."
+    },
+    {
+      "id": "ai-preemption",
+      "domain": "ai-general",
+      "label": "Federal vs. state authority",
+      "description": "Who may regulate AI: preemption of state laws or protection of state power."
+    },
+    {
+      "id": "ai-consumer-protection",
+      "domain": "ai-general",
+      "label": "Consumer protection and enforcement",
+      "description": "Enforcement against AI companies under consumer-protection law."
+    },
+    {
+      "id": "ai-workers",
+      "domain": "ai-general",
+      "label": "Workers and the AI economy",
+      "description": "Jobs, training and sharing the gains from AI."
+    },
+    {
+      "id": "ai-innovation",
+      "domain": "ai-general",
+      "label": "Innovation and public investment",
+      "description": "Public funding and support for AI development."
     }
   ]
 }

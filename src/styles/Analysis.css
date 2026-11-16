@@ -176,3 +176,22 @@
   .proposal-columns, .fronts { grid-template-columns: 1fr; }
   .deviation-timeline li { grid-template-columns: 1fr; gap: 4px; }
 }
+
+/* Category grouping */
+.category-index { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 6px; }
+.category-chip {
+  font-size: 0.72rem;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(147, 177, 216, 0.2);
+  color: #c7d8ee;
+  background: rgba(15, 31, 45, 0.6);
+  cursor: help;
+}
+.category-group { margin-top: 14px; }
+.category-group h5 { margin: 0 0 2px !important; color: #e5edf7 !important; font-size: 0.82rem !important; }
+.category-desc { margin: 0 0 8px; color: #8fa3bb; font-size: 0.76rem; }
+.proposal-also { font-size: 0.74rem; color: #9eb7d7; }
+.ptag.party-democratic { background: rgba(54, 113, 228, 0.18); color: #9cc0ff; }
+.ptag.party-republican { background: rgba(229, 96, 92, 0.16); color: #ffb0ad; }
+.ptag.party-other { background: rgba(147, 177, 216, 0.12); color: #c7d8ee; }

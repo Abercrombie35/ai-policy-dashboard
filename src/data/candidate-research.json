@@ -36,12 +36,22 @@
       "stances": {
         "data-centers": "pause"
       },
-      "version": 1,
+      "categories": [
+        "dc-moratorium",
+        "dc-ratepayer",
+        "dc-water-environment"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -78,12 +88,21 @@
         "safety-rules": "pause-or-public-control",
         "workers": "active-protections"
       },
-      "version": 1,
+      "categories": [
+        "ai-comprehensive",
+        "ai-workers"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -122,12 +141,21 @@
         "data-centers": "pause",
         "safety-rules": "pause-or-public-control"
       },
-      "version": 1,
+      "categories": [
+        "dc-moratorium",
+        "ai-comprehensive"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -209,12 +237,21 @@
       "stances": {
         "data-centers": "pause"
       },
-      "version": 1,
+      "categories": [
+        "dc-moratorium",
+        "dc-local-control"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -299,12 +336,20 @@
       "stances": {
         "workers": "active-protections"
       },
-      "version": 1,
+      "categories": [
+        "ai-workers"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -382,12 +427,20 @@
       "stances": {
         "safety-rules": "targeted-binding"
       },
-      "version": 1,
+      "categories": [
+        "ai-consumer-protection"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -429,12 +482,21 @@
         "harmful-content": "supports-rules",
         "safety-rules": "targeted-binding"
       },
-      "version": 1,
+      "categories": [
+        "dc-security",
+        "ai-child-safety"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -515,12 +577,22 @@
       "stances": {
         "data-centers": "pause"
       },
-      "version": 1,
+      "categories": [
+        "dc-moratorium",
+        "dc-tax-incentives",
+        "dc-ratepayer"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -557,12 +629,20 @@
       "stances": {
         "preemption": "supports-preemption"
       },
-      "version": 1,
+      "categories": [
+        "ai-preemption"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -599,12 +679,21 @@
       "stances": {
         "data-centers": "pause"
       },
-      "version": 1,
+      "categories": [
+        "dc-moratorium",
+        "dc-local-control"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -681,12 +770,21 @@
       "stances": {
         "data-centers": "pause"
       },
-      "version": 1,
+      "categories": [
+        "dc-moratorium",
+        "dc-local-control"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -728,12 +826,22 @@
       "stances": {
         "data-centers": "pause"
       },
-      "version": 1,
+      "categories": [
+        "dc-moratorium",
+        "dc-tax-incentives",
+        "dc-local-control"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -813,12 +921,21 @@
         "safety-rules": "targeted-binding",
         "harmful-content": "supports-rules"
       },
-      "version": 1,
+      "categories": [
+        "ai-comprehensive",
+        "ai-child-safety"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -855,12 +972,21 @@
       "stances": {
         "data-centers": "pause"
       },
-      "version": 1,
+      "categories": [
+        "dc-moratorium",
+        "dc-ratepayer"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
         }
       ]
     },
@@ -895,12 +1021,542 @@
       "stances": {
         "data-centers": "conditional"
       },
-      "version": 1,
+      "categories": [
+        "dc-local-control"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-gov-lamont-1",
+      "raceId": "ct-governor-2026",
+      "candidateId": "ned-lamont",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Threatened to veto Connecticut's comprehensive AI bill (SB 2), which passed the state Senate 24-12 and then died in the House without a vote.",
+      "source": {
+        "title": "CT Mirror: CT AI standards bill passes Senate despite objections from Lamont",
+        "url": "https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/"
+      },
+      "publishedDate": "2024-04-24",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-comprehensive"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-gov-lamont-2",
+      "raceId": "ct-governor-2026",
+      "candidateId": "ned-lamont",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "As a revised SB 2 advanced in 2025, his position was that AI regulation should fall to federal bodies such as Congress and the Federal Trade Commission rather than the state.",
+      "source": {
+        "title": "CT News Junkie: Appropriations Committee advances AI regulation bill as federal preemption looms",
+        "url": "https://ctnewsjunkie.com/2025/05/14/appropriations-committee-advances-ai-regulation-bill-as-federal-preemption-looms/"
+      },
+      "publishedDate": "2025-05-14",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "federal",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "preemption": "supports-preemption"
+      },
+      "categories": [
+        "ai-preemption"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-gov-lamont-3",
+      "raceId": "ct-governor-2026",
+      "candidateId": "ned-lamont",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In his February State of the State address, said Connecticut would \"slow down new data centers, unless they add more generation as well.\"",
+      "source": {
+        "title": "WSHU: CT continues debate over AI data center regulations",
+        "url": "https://www.wshu.org/connecticut-news/2026-02-27/ct-ai-data-centers-regulations"
+      },
+      "publishedDate": "2026-02",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-gov-lamont-4",
+      "raceId": "ct-governor-2026",
+      "candidateId": "ned-lamont",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Signed SB 5 (Public Act 26-15), a broad AI law covering automated hiring decisions, consumer chatbots, frontier-model developers (including whistleblower protections), AI content provenance and platforms used by minors.",
+      "source": {
+        "title": "Ropes & Gray: Connecticut enacts sweeping AI law covering employment, healthcare and online safety",
+        "url": "https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
+      },
+      "publishedDate": "2026-05-27",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "liability"
+        ],
+        "issueAreas": [
+          "discrimination",
+          "child-safety",
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "safety-rules": "targeted-binding",
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-comprehensive",
+        "ai-child-safety"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-gov-lamont-5",
+      "raceId": "ct-governor-2026",
+      "candidateId": "ned-lamont",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Said Connecticut is open to IT infrastructure but there is \"no place\" for massive data centers in the state, because they would raise residents' electric rates; proposals should first be reviewed by the Public Utilities Regulatory Authority.",
+      "source": {
+        "title": "WSHU: Lamont says no to big data centers in CT",
+        "url": "https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont"
+      },
+      "publishedDate": "2026-09-07",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "categories": [
+        "dc-moratorium",
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-gov-fazio-1",
+      "raceId": "ct-governor-2026",
+      "candidateId": "ryan-fazio",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "As a state senator, was one of four senators to vote against SB 5, the 2026 AI law (passed 32-4), saying the issue is more properly handled at the federal level.",
+      "source": {
+        "title": "CT News Junkie: AI regulation takes center stage as campaign issue",
+        "url": "https://ctnewsjunkie.com/2026/09/24/ai-regulation-takes-center-stage-as-campaign-issue/"
+      },
+      "publishedDate": "2026-05",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "federal",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "voting-record",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "safety-rules": "voluntary",
+        "preemption": "supports-preemption"
+      },
+      "categories": [
+        "ai-comprehensive",
+        "ai-preemption"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-gov-fazio-2",
+      "raceId": "ct-governor-2026",
+      "candidateId": "ryan-fazio",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Called for ending tax breaks for large data centers and said such facilities should provide or contract for enough electricity to meet their own needs. Does not want to ban data centers.",
+      "source": {
+        "title": "WFSB: Fazio calls for end to tax breaks for large data centers",
+        "url": "https://www.wfsb.com/2026/09/03/fazio-calls-end-tax-breaks-large-data-centers/"
+      },
+      "publishedDate": "2026-09-03",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-tax-incentives",
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-house04-himes-1",
+      "raceId": "ct-house-04-2026",
+      "candidateId": "jim-himes",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "At a Brookings event, called restrictions on advanced chips Washington's main tool for prolonging America's frontier AI lead over China and said the U.S. should slow their spread to China for as long as it can.",
+      "source": {
+        "title": "South China Morning Post (via The Star): Top Democrat says chip restrictions are \"key lever\" for US AI edge over China",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/26/top-democrat-says-chip-restrictions-are-key-lever-for-us-ai-edge-over-china"
+      },
+      "publishedDate": "2026-10-26",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal",
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "chip-sales-china": "restrict-sales"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-house04-himes-2",
+      "raceId": "ct-house-04-2026",
+      "candidateId": "jim-himes",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "At the same event, said he did not know whether claims that China and others were stoking opposition to U.S. data centers were true.",
+      "source": {
+        "title": "South China Morning Post (via The Star): Top Democrat says chip restrictions are \"key lever\" for US AI edge over China",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/26/top-democrat-says-chip-restrictions-are-key-lever-for-us-ai-edge-over-china"
+      },
+      "publishedDate": "2026-10-26",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "unclear",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers",
+          "national-security-china"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-house04-himes-3",
+      "raceId": "ct-house-04-2026",
+      "candidateId": "jim-himes",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "On Face the Nation, raised concerns that Nvidia chips could reach China through intermediaries and questioned why the Commerce Department had not done more to stop the flow of the chips to China.",
+      "source": {
+        "title": "CBS News: Transcript, Rep. Jim Himes on Face the Nation, Nov. 15, 2026",
+        "url": "https://www.cbsnews.com/news/jim-himes-connecticut-democrat-face-the-nation-transcript-11-15-2026/"
+      },
+      "publishedDate": "2026-11-15",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal",
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "direct-quote",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "chip-sales-china": "restrict-sales"
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-house04-goldstein-1",
+      "raceId": "ct-house-04-2026",
+      "candidateId": "michael-goldstein",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In a campaign email, argued the country faces an electricity problem driven by data centers, AI computing and electrification mandates.",
+      "source": {
+        "title": "Political Emails archive: The Goldstein Substack, \"Why Connecticut Republicans should care about congressional elections\"",
+        "url": "https://politicalemails.org/messages/2125190"
+      },
+      "publishedDate": "2026-02-07",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "unclear",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ct-house04-goldstein-2",
+      "raceId": "ct-house-04-2026",
+      "candidateId": "michael-goldstein",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Proposed expanding trade schools to provide \"AI-proof\" jobs, and requiring universities to disclose graduate salary ranges by degree.",
+      "source": {
+        "title": "Connecticut Public: Himes, Goldstein face off in CT's 4th District",
+        "url": "https://www.ctpublic.org/news/2026-10-27/jim-himes-ct-4th-distict-congress-michael-goldstein"
+      },
+      "publishedDate": null,
+      "dateNote": "During the 2026 campaign",
+      "sortDate": "2026-10",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "labor"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "workers": "retraining-led"
+      },
+      "categories": [
+        "ai-workers"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
         }
       ]
     }
