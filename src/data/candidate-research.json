@@ -1666,6 +1666,246 @@
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
         }
       ]
+    },
+    {
+      "id": "cr-ca-gov-becerra-1",
+      "raceId": "ca-governor-2026",
+      "candidateId": "xavier-becerra",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Released an 11-point AI plan: fully fund and launch CalCompute (the public AI computing cluster called for in SB 53), independent audits of every AI system deployed by a state agency, stronger enforcement of California's AI safety laws, tracking AI's effects on jobs, and protecting children from risky AI products.",
+      "source": {
+        "title": "Becerra campaign: Artificial Intelligence",
+        "url": "https://www.xavierbecerra2026.com/priorities/ai/"
+      },
+      "publishedDate": "2026-05",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "audits",
+          "funding"
+        ],
+        "issueAreas": [
+          "safety",
+          "child-safety",
+          "labor",
+          "innovation-competitiveness"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "safety-rules": "broad-binding",
+        "harmful-content": "supports-rules",
+        "workers": "active-protections"
+      },
+      "categories": [
+        "ai-comprehensive",
+        "ai-frontier-safety",
+        "ai-innovation",
+        "ai-child-safety",
+        "ai-workers"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ca-gov-becerra-2",
+      "raceId": "ca-governor-2026",
+      "candidateId": "xavier-becerra",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Said data centers should cover their own energy costs and argued for a predictable regulatory policy that supports data centers using clean energy.",
+      "source": {
+        "title": "Tech Times: California governor race 2026, Becerra and Hilton split sharply on AI regulation",
+        "url": "https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm"
+      },
+      "publishedDate": "2026-08-15",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer",
+        "dc-water-environment"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ca-gov-hilton-1",
+      "raceId": "ca-governor-2026",
+      "candidateId": "steve-hilton",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "His AI plan argues against \"sweeping, preemptive regulation on evolving technologies\" and would limit new AI rules to children's safety, fraud prevention and intellectual property.",
+      "source": {
+        "title": "Tech Times: California governor race 2026, Becerra and Hilton split sharply on AI regulation",
+        "url": "https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm"
+      },
+      "publishedDate": "2026-08-15",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness",
+          "child-safety"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "safety-rules": "voluntary",
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-comprehensive",
+        "ai-child-safety",
+        "ai-copyright"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ca-gov-hilton-2",
+      "raceId": "ca-governor-2026",
+      "candidateId": "steve-hilton",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Wants permitting for data centers made easier and a pro-development policy, while letting localities decide whether and where facilities are built; would expand energy infrastructure to serve them.",
+      "source": {
+        "title": "StateScoop: How do California's gubernatorial candidates stack up on AI and tech policy?",
+        "url": "https://statescoop.com/california-gubernatorial-candidates-ai-tech-policy/"
+      },
+      "publishedDate": null,
+      "dateNote": "During the 2026 campaign",
+      "sortDate": "2026-08",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers",
+          "innovation-competitiveness"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "accelerate"
+      },
+      "categories": [
+        "dc-permitting",
+        "dc-local-control"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ca-gov-hilton-3",
+      "raceId": "ca-governor-2026",
+      "candidateId": "steve-hilton",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Called for \"an immediate pause\" on AI technology in public school classrooms until a safety review is completed, opposing a push for state AI tools in education.",
+      "source": {
+        "title": "San Francisco Examiner: California gubernatorial candidates talk tech policy",
+        "url": "https://www.sfexaminer.com/news/politics/california-gubernatorial-candidates-talk-tech-policy/article_fbb021fb-d56d-4a47-a9a2-bbd025d0ee32.html"
+      },
+      "publishedDate": null,
+      "dateNote": "During the 2026 campaign",
+      "sortDate": "2026-09",
+      "lastVerified": "2026-11-16",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-child-safety"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
     }
   ]
 }

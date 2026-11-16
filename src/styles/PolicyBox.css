@@ -1,0 +1,49 @@
+.policy-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 14px 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(147, 177, 216, 0.14);
+  border-left-width: 4px;
+  background: rgba(12, 21, 32, 0.9);
+}
+.policy-box.tint-democratic { background: rgba(54, 113, 228, 0.13); border-left-color: #5b8def; }
+.policy-box.tint-republican { background: rgba(229, 96, 92, 0.12); border-left-color: #e5605c; }
+.policy-box.tint-bipartisan { background: rgba(167, 139, 250, 0.11); border-left-color: #a78bfa; }
+.policy-box.tint-other { border-left-color: #8a9bb0; }
+
+.policy-headline { margin: 0; font-size: 1.05rem; font-weight: 700; line-height: 1.35; color: #f2f6fc; }
+.policy-ref { margin-left: 4px; font-size: 0.7rem; font-weight: 600; }
+.policy-ref a { color: #9cc0ff; text-decoration: none; }
+.policy-ref a:hover { text-decoration: underline; }
+.policy-who { margin: 0; font-size: 0.85rem; color: #c7d8ee; }
+.policy-date {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  margin: 0;
+  font-size: 0.66rem;
+  color: #8fa3bb;
+}
+.policy-details summary { cursor: pointer; font-size: 0.75rem; color: #9eb7d7; }
+.policy-details p { margin: 6px 0 0; font-size: 0.8rem; color: #c7d8ee; line-height: 1.45; }
+
+.policy-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+
+.source-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed rgba(147, 177, 216, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.72rem;
+  color: #8fa3bb;
+}
+.source-list a { color: #9eb7d7; }
+.source-list .src-n { color: #c7d8ee; font-variant-numeric: tabular-nums; }
+.source-list .src-check { color: #7a8fa3; }
+.source-list li:target { background: rgba(250, 204, 21, 0.08); }

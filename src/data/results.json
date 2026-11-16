@@ -362,6 +362,61 @@
           "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
         }
       ]
+    },
+    {
+      "id": "result-ca-governor-2026",
+      "raceId": "ca-governor-2026",
+      "labelType": "election-result",
+      "resultStatus": "unofficial",
+      "winner": {
+        "name": "Xavier Becerra",
+        "party": "Democratic",
+        "candidateId": "xavier-becerra"
+      },
+      "call": "Reported as a Becerra win by MultiState, Decision Desk HQ and NBC Bay Area.",
+      "candidates": [
+        {
+          "name": "Xavier Becerra",
+          "party": "Democratic",
+          "candidateId": "xavier-becerra",
+          "votePct": 65.6,
+          "votes": 8550463
+        },
+        {
+          "name": "Steve Hilton",
+          "party": "Republican",
+          "candidateId": "steve-hilton",
+          "votePct": 34.4,
+          "votes": 4485454
+        }
+      ],
+      "figuresAsOf": "Unofficial results from the California Secretary of State, as reported in search results on Nov. 16, 2026. The state certifies results by Dec. 11, 2026.",
+      "context": "Open seat: Gov. Gavin Newsom (D) was term-limited.",
+      "source": {
+        "title": "California Secretary of State: Governor, statewide results",
+        "url": "https://electionresults.sos.ca.gov/returns/governor"
+      },
+      "additionalSources": [
+        {
+          "title": "MultiState: California Governor Election Results 2026",
+          "url": "https://www.multistate.us/elections/governor-race/california-2026"
+        },
+        {
+          "title": "Decision Desk HQ: 2026 California Governor General Election Results",
+          "url": "https://votes.decisiondeskhq.com/races/2026-11-03/california-governor-general-election"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Winner checked across several reports found by web search. Vote counts are unofficial figures from the Secretary of State as quoted in search results; the results page could not be opened from the build environment. Replace with the certified canvass when available."
+        }
+      ]
     }
   ]
 }

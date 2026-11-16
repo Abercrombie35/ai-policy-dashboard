@@ -2,6 +2,7 @@ import React from 'react';
 import { stanceLabel, tracks, confidenceLevels, stateName } from '../lib/data';
 import { STATUS, deviationCell, questionsInDomain, partyLine, timeline } from '../lib/analysis';
 import { useDrafts } from '../lib/drafts';
+import { PolicyBox, SourceList, makeSourceIndex } from './PolicyBox';
 import '../styles/Analysis.css';
 
 const fmtDate = (record) => record.publishedDate || record.dateNote || 'Date unknown';
@@ -126,27 +127,33 @@ export function DeviationTimeline({ domainId, raceId }) {
   const { includeDrafts } = useDrafts();
   const entries = timeline(domainId, includeDrafts).filter((e) => !raceId || e.race.id === raceId);
   if (entries.length === 0) return <p className="empty-note">No stances recorded in this area yet.</p>;
+  const index = makeSourceIndex(entries.map((e) => e.record));
+  const refPrefix = `src-tl-${domainId}-${raceId || 'all'}`;
   return (
-    <ol className="deviation-timeline">
-      {entries.map((e) => (
-        <li key={`${e.record.id}-${e.questionId}`} className={`tl-${e.status}`}>
-          <div className="tl-date">{fmtDate(e.record)}</div>
-          <div className="tl-body">
-            <div className="tl-head">
-              <strong>{e.candidate.name}</strong> <span className="tl-meta">({e.candidate.party[0]}, {stateName(e.race.state)} {e.race.office})</span>{' '}
-              <TrackTag track={e.track} /> <StatusTag status={e.status} small />
+    <>
+      <ol className="deviation-timeline">
+        {entries.map((e) => (
+          <li key={`${e.record.id}-${e.questionId}`} className={`tl-${e.status}`}>
+            <div className="tl-date">{fmtDate(e.record)}</div>
+            <div className="tl-body">
+              <PolicyBox
+                record={e.record}
+                party={e.candidate.party}
+                race={e.race}
+                candidate={e.candidate}
+                refNum={index.numberOf(e.record)}
+                refPrefix={refPrefix}
+              />
+              <div className="tl-stance">
+                <StatusTag status={e.status} small /> {questionsInDomain(domainId).find((q) => q.id === e.questionId)?.label}:{' '}
+                <strong>{stanceLabel(e.questionId, e.stance)}</strong>
+              </div>
             </div>
-            <div className="tl-stance">
-              {questionsInDomain(domainId).find((q) => q.id === e.questionId)?.label}: <strong>{stanceLabel(e.questionId, e.stance)}</strong>
-            </div>
-            <p className="tl-text">{e.record.text}</p>
-            <div className="tl-source">
-              Source: <SourceLink source={e.record.source} /> · Confidence: {confidenceLevels[e.record.confidence]?.label}
-            </div>
-          </div>
-        </li>
-      ))}
-    </ol>
+          </li>
+        ))}
+      </ol>
+      <SourceList index={index} refPrefix={refPrefix} />
+    </>
   );
 }
 
