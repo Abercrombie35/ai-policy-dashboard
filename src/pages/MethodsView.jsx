@@ -67,6 +67,29 @@ function MethodsView() {
       </section>
 
       <section>
+        <h3>Proposal categories</h3>
+        <p>
+          Every bill and every candidate proposal or official action has at least one category, so proposals can be grouped
+          by type within each policy area. A proposal is listed under its first category in an area; any others are shown
+          on it. Categories were assigned by an AI model and have not been reviewed.
+        </p>
+        <div className="table-wrap">
+          <table className="data-table">
+            <thead><tr><th scope="col">Policy area</th><th scope="col">Category</th><th scope="col">Covers</th></tr></thead>
+            <tbody>
+              {codebook.proposalCategories.map((c) => (
+                <tr key={c.id}>
+                  <td>{domains[c.domain].label}</td>
+                  <th scope="row">{c.label}</th>
+                  <td>{c.description}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
         <h3>Party lines and deviation</h3>
         <ul>
           {partyLines.parties.map((p) => (

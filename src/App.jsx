@@ -11,7 +11,7 @@ import AnalysisPage from './pages/AnalysisPage';
 import ProposalsPanel from './components/ProposalsPanel';
 import ErrorBoundary from './components/ErrorBoundary';
 import { APP_VERSION } from './version';
-import { races, bills, results, geo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains, raceById } from './lib/data';
+import { races, bills, results, geo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains, raceById, officeType } from './lib/data';
 import { allCandidates, questionsInDomain, deviationCell } from './lib/analysis';
 import { useDrafts } from './lib/drafts';
 import { useHashRoute, navigate } from './lib/router';
@@ -58,7 +58,7 @@ function PolicyFronts() {
               <div className="front-stat"><strong>{said}</strong><span>records of what is said</span></div>
               <div className="front-stat">
                 <strong>{proposed.length}</strong>
-                <span>proposals and actions{d === 'data-centers' ? ` (${moratoriums} moratoriums or bans)` : ''}</span>
+                <span>proposals and actions{d === 'data-centers' ? ` (${moratoriums} moratoriums or bans)` : ''}, grouped by category below</span>
               </div>
               <div className="front-stat">
                 <strong>{deviating.length} of {allCandidates().length}</strong>
@@ -94,8 +94,12 @@ function MapPage({ selectedState }) {
   const [filter, setFilter] = useState('all');
   const close = useCallback(() => navigate('/'), []);
   const statesWithRaces = new Set(races.map((r) => r.state)).size;
-  const senate = races.filter((r) => r.office === 'U.S. Senate').length;
-  const governor = races.filter((r) => r.office === 'Governor').length;
+  const OFFICE_LABELS = { 'U.S. Senate': 'Senate', 'U.S. House': 'House', Governor: 'governor' };
+  const officeCounts = Object.entries(OFFICE_LABELS)
+    .map(([type, label]) => [label, races.filter((r) => officeType(r.office) === type).length])
+    .filter(([, n]) => n > 0)
+    .map(([label, n]) => `${n} ${label}`)
+    .join(' · ');
   const { sourced, drafts } = countRecords();
 
   return (
@@ -105,7 +109,7 @@ function MapPage({ selectedState }) {
           <span className="label">Tracked races</span>
           <strong>{races.length}</strong>
           <span className="stat-sub">
-            {senate} Senate · {governor} governor in {statesWithRaces} state{statesWithRaces === 1 ? '' : 's'} ·{' '}
+            {officeCounts} in {statesWithRaces} state{statesWithRaces === 1 ? '' : 's'} ·{' '}
             {results.length} result{results.length === 1 ? '' : 's'} recorded
           </span>
         </div>

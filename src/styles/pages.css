@@ -152,3 +152,6 @@
 .error-actions .chip { text-decoration: none; }
 
 .race-page { padding: 0; }
+
+.legislation-area { display: flex; flex-direction: column; gap: 4px; }
+.legislation-area .category-group h4 { margin: 12px 0 2px; font-size: 0.95rem; color: #e5edf7; }

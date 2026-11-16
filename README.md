@@ -46,8 +46,20 @@ Built:
   what each candidate said and what they proposed, plus a deviation section.
 - Accurate map of all 50 states plus D.C., bundled with the app (no runtime
   download). States are colored by data coverage and can be used by keyboard.
-- Multi-race support: each race is one file in src/data/races/. Four 2026
-  races are tracked: the U.S. Senate and governor races in Michigan and Texas.
+- Multi-race support: each race is one file in src/data/races/. Six 2026
+  races are tracked: the U.S. Senate and governor races in Michigan and Texas,
+  and in Connecticut the governor race (Lamont vs. Fazio) and the U.S. House
+  race in the 4th District (Himes vs. Goldstein). Connecticut had no U.S.
+  Senate race in 2026; its next one is in 2028.
+- Proposal categories: every bill and every candidate proposal or official
+  action has a category (for data centers: moratoriums and bans, electricity
+  costs and grid, tax breaks, siting and local control, water and
+  environment, disclosure and studies, security, permitting; for everything
+  else in AI: broad AI laws, children and chatbots, deepfakes, chips and
+  China, federal vs. state authority, consumer protection, workers,
+  innovation). Proposals are grouped by category on the home screen, race
+  and state pages and the Legislation page, and the Policy analysis page
+  counts proposals by category and party.
 - Election results, with their own "Election result" label kept apart from
   the six statement labels (src/data/results.json). Each result is marked
   Unofficial or Certified and records its sources and when its figures were

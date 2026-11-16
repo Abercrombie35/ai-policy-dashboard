@@ -1,0 +1,36 @@
+{
+  "id": "ct-governor-2026",
+  "state": "CT",
+  "office": "Governor",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "incumbent",
+    "note": "Gov. Ned Lamont (D) sought a third term."
+  },
+  "nomineesSource": "Major-party nominees as listed in the election results (see this race's election-result record).",
+  "candidates": [
+    {
+      "id": "ned-lamont",
+      "name": "Ned Lamont",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "ryan-fazio",
+      "name": "Ryan Fazio",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

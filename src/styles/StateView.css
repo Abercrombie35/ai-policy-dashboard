@@ -69,7 +69,7 @@
 .candidate-previews .preview.republican { background: rgba(255, 99, 99, 0.12); color: #ff9a9a; }
 
 .bill-list { display: flex; flex-direction: column; gap: 12px; }
-.bill-head h4 { margin: 0 0 4px; font-size: 1rem; color: #e5edf7; }
+.bill-head h4, .bill-head h5 { margin: 0 0 4px; font-size: 1rem; color: #e5edf7; }
 .bill-state { color: #7bb5f8; }
 .bill-sub, .bill-sponsors { font-size: 0.82rem; color: #9eb7d7; }
 .party-tag.democratic { color: #7db0ff; }

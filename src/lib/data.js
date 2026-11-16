@@ -18,9 +18,13 @@ export const partyLines = partyLinesData;
 
 export const stateName = (abbr) => (abbr === 'US' ? 'Federal' : geo.states[abbr]?.name || abbr);
 
-// Senate races are listed before governor races within a state.
-const OFFICE_ORDER = ['U.S. Senate', 'Governor'];
-const officeRank = (office) => (OFFICE_ORDER.includes(office) ? OFFICE_ORDER.indexOf(office) : OFFICE_ORDER.length);
+// Within a state: U.S. Senate, then U.S. House (e.g. "U.S. House (CT-4)"), then governor.
+const OFFICE_ORDER = ['U.S. Senate', 'U.S. House', 'Governor'];
+export const officeType = (office) => OFFICE_ORDER.find((o) => office.startsWith(o)) || office;
+const officeRank = (office) => {
+  const i = OFFICE_ORDER.indexOf(officeType(office));
+  return i === -1 ? OFFICE_ORDER.length : i;
+};
 export const races = Object.values(raceModules).sort(
   (a, b) =>
     stateName(a.state).localeCompare(stateName(b.state)) ||
@@ -43,6 +47,13 @@ export const questionById = byId(codebook.policyQuestions);
 export const tracks = byId(codebook.tracks);
 export const domains = byId(codebook.domains);
 export const DOMAIN_IDS = codebook.domains.map((d) => d.id);
+export const proposalCategories = codebook.proposalCategories;
+export const categoryById = byId(codebook.proposalCategories);
+export const categoriesInDomain = (domainId) => codebook.proposalCategories.filter((c) => c.domain === domainId);
+// The first of a record's categories that belongs to the given policy area;
+// used to place each proposal under one heading.
+export const primaryCategory = (record, domainId) =>
+  (record.categories || []).find((c) => categoryById[c]?.domain === domainId) || null;
 export const TRACK_IDS = codebook.tracks.map((t) => t.id);
 
 // Label metadata for any record: the six statement labels, or the separate
@@ -125,6 +136,14 @@ export function allCodedRecords(includeDrafts) {
   return out;
 }
 
+// Which side a bill comes from: one party, both (bipartisan), or unrecorded.
+export function billParty(bill) {
+  const parties = new Set((bill.sponsors || []).map((s) => s.party));
+  if (parties.size === 0) return 'Sponsor not recorded';
+  if (parties.has('Democratic') && parties.has('Republican')) return 'Bipartisan';
+  return parties.size === 1 ? [...parties][0] : 'Other';
+}
+
 // Proposed policies: bills (including proposed moratoriums) and candidates'
 // concrete proposals and official actions, each with its source.
 export function proposals(includeDrafts, { state } = {}) {
@@ -140,7 +159,8 @@ export function proposals(includeDrafts, { state } = {}) {
       who: bill.sponsors.map((s) => `${s.name} (${s.party[0]})`).join(', ') || bill.sponsorsNote || 'Sponsors to verify',
       date: bill.statusDate,
       domains: domainsOf(bill),
-      isMoratorium: (bill.tags || []).some((t) => t === 'moratorium' || t === 'ban'),
+      party: billParty(bill),
+      isMoratorium: (bill.categories || []).includes('dc-moratorium'),
     });
   }
   for (const race of races) {
@@ -158,7 +178,8 @@ export function proposals(includeDrafts, { state } = {}) {
         who: `${candidate?.name} (${candidate?.party[0]}), ${race.office} candidate`,
         date: rec.publishedDate,
         domains: domainsOf(rec),
-        isMoratorium: rec.stances?.['data-centers'] === 'pause',
+        party: candidate?.party || 'Other',
+        isMoratorium: (rec.categories || []).includes('dc-moratorium'),
       });
     }
   }

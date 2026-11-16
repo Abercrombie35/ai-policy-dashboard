@@ -245,6 +245,123 @@
           "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
         }
       ]
+    },
+    {
+      "id": "result-ct-governor-2026",
+      "raceId": "ct-governor-2026",
+      "labelType": "election-result",
+      "resultStatus": "unofficial",
+      "winner": {
+        "name": "Ned Lamont",
+        "party": "Democratic",
+        "candidateId": "ned-lamont"
+      },
+      "call": "Called for Lamont by the Associated Press shortly before 9:20 p.m. on election night.",
+      "candidates": [
+        {
+          "name": "Ned Lamont",
+          "party": "Democratic",
+          "candidateId": "ned-lamont",
+          "votePct": 59.6,
+          "votes": 773348
+        },
+        {
+          "name": "Ryan Fazio",
+          "party": "Republican",
+          "candidateId": "ryan-fazio",
+          "votePct": 40.4,
+          "votes": 524701
+        }
+      ],
+      "figuresAsOf": "Unofficial results as listed by MultiState when retrieved on Nov. 16, 2026. An earlier NBC News count (about 94% of the expected vote) showed 58.8% to 41.2%.",
+      "context": "Lamont won a third term; his two previous wins were over Bob Stefanowski (2018, 2022).",
+      "source": {
+        "title": "MultiState: Connecticut Governor Election Results 2026",
+        "url": "https://www.multistate.us/elections/governor-race/connecticut-2026"
+      },
+      "additionalSources": [
+        {
+          "title": "CT News Junkie: Lamont wins third term as CT governor against Fazio",
+          "url": "https://ctnewsjunkie.com/2026/11/03/ct-election-governor-lamont-fazio/"
+        },
+        {
+          "title": "NBC News: Connecticut Governor Midterm Election 2026 Live Results",
+          "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-governor-results"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        }
+      ]
+    },
+    {
+      "id": "result-ct-house-04-2026",
+      "raceId": "ct-house-04-2026",
+      "labelType": "election-result",
+      "resultStatus": "unofficial",
+      "winner": {
+        "name": "Jim Himes",
+        "party": "Democratic",
+        "candidateId": "jim-himes"
+      },
+      "call": "Called for Himes by the Associated Press on Nov. 4, 2026.",
+      "candidates": [
+        {
+          "name": "Jim Himes",
+          "party": "Democratic",
+          "candidateId": "jim-himes",
+          "votePct": 65.58,
+          "votes": 157485
+        },
+        {
+          "name": "Michael Goldstein",
+          "party": "Republican",
+          "candidateId": "michael-goldstein",
+          "votePct": 32.51,
+          "votes": 78059
+        },
+        {
+          "name": "Benjamin Wesley",
+          "party": "Independent Party",
+          "candidateId": null,
+          "votePct": 1.91,
+          "votes": 4594
+        }
+      ],
+      "figuresAsOf": "Unofficial results from the FOX61 live results page with 98.44% of the vote counted, as reported in search results on Nov. 16, 2026.",
+      "context": "Himes won a 10th term and is expected to chair the House Intelligence Committee in the new Democratic majority.",
+      "source": {
+        "title": "FOX61: Live election results, Nov. 3, 2026",
+        "url": "https://www.fox61.com/elections"
+      },
+      "additionalSources": [
+        {
+          "title": "Patch: Connecticut 4th District results 2026, Himes wins re-election (AP)",
+          "url": "https://patch.com/connecticut/across-ct/connecticut-4th-district-election-results-2026-himes-wins-re-election-ap"
+        },
+        {
+          "title": "WFSB: Himes wins reelection in Connecticut's 4th District",
+          "url": "https://www.wfsb.com/2026/11/03/connecticuts-4th-congressional-district-three-way-race/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-16",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-16",
+          "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        }
+      ]
     }
   ]
 }

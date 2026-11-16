@@ -1,6 +1,6 @@
 import React from 'react';
 import { PartyLineCell, DeviationMatrix, DeviationTimeline, StatusTag } from '../components/Analysis';
-import { partyLines, domains } from '../lib/data';
+import { partyLines, domains, proposals, categoriesInDomain, primaryCategory } from '../lib/data';
 import { allCandidates, questionsInDomain, deviationSummary, referenceActors } from '../lib/analysis';
 import { useDrafts } from '../lib/drafts';
 
@@ -46,6 +46,49 @@ function WhereSummary() {
   );
 }
 
+// What is proposed in this area, by category and by party. Bills count by
+// their sponsors (both parties = bipartisan); candidate proposals by candidate.
+const PROPOSAL_SIDES = ['Democratic', 'Republican', 'Bipartisan', 'Other / not recorded'];
+const sideOf = (party) => (['Democratic', 'Republican', 'Bipartisan'].includes(party) ? party : 'Other / not recorded');
+
+function ProposalsByCategory({ domainId }) {
+  const { includeDrafts } = useDrafts();
+  const items = proposals(includeDrafts).filter((p) => p.domains.includes(domainId));
+  const rows = categoriesInDomain(domainId)
+    .map((cat) => {
+      const list = items.filter((p) => primaryCategory(p.record, domainId) === cat.id);
+      const counts = Object.fromEntries(PROPOSAL_SIDES.map((s) => [s, list.filter((p) => sideOf(p.party) === s).length]));
+      return { cat, list, counts };
+    })
+    .filter((r) => r.list.length > 0);
+  return (
+    <div className="table-wrap">
+      <table className="data-table where-table">
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            {PROPOSAL_SIDES.map((s) => <th scope="col" key={s}>{s}</th>)}
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map(({ cat, list, counts }) => (
+            <tr key={cat.id}>
+              <th scope="row" title={cat.description}>{cat.label}</th>
+              {PROPOSAL_SIDES.map((s) => <td key={s} className="num">{counts[s] || '–'}</td>)}
+              <td className="num strong">{list.length}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p className="fine-print">
+        Counts of bills (by their sponsors' parties) and candidates' proposals and official actions, each placed under its
+        first category in this area. Details and sources are in "Proposed bills and moratoriums" on the home screen.
+      </p>
+    </div>
+  );
+}
+
 function DomainSection({ domainId }) {
   const questions = questionsInDomain(domainId);
   return (
@@ -72,6 +115,9 @@ function DomainSection({ domainId }) {
           </tbody>
         </table>
       </div>
+
+      <h4>What is proposed, by category and party</h4>
+      <ProposalsByCategory domainId={domainId} />
 
       <h4>Where: each candidate against their party line</h4>
       <p className="section-note">
