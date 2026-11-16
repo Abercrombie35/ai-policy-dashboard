@@ -197,6 +197,14 @@ Requirements: Node.js 20 and npm.
 On GitHub, every push and pull request runs the data checks and a build
 (.github/workflows/ci.yml).
 
+GitHub Pages (recommended live site): every merge to main is checked and
+published automatically by .github/workflows/deploy-pages.yml to
+https://abercrombie35.github.io/ai-policy-dashboard/ . This copy is always
+exactly the code on GitHub main. The footer shows the version
+(src/version.js); bump it when merging changes. If the first deploy fails
+because Pages is off, turn it on once: repository Settings > Pages > Build
+and deployment > Source: GitHub Actions, then re-run the workflow.
+
 On Replit, click Run to start the configured workflows. The "GitHub
 auto-sync" workflow ("npm run sync:github", scripts/github-auto-sync.js)
 fetches the configured upstream branch at startup and every 15 minutes, and
