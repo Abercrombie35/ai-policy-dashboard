@@ -1,0 +1,64 @@
+{
+  "note": "Categories for coded items stored in the race files (the prototype Michigan Senate drafts). Kept here so the race files are not edited. Assigned by an AI model on 2026-11-16; not reviewed.",
+  "assignments": {
+    "mi-senate-2026-abdul-el-sayed-stance-2": [
+      "ai-frontier-safety",
+      "ai-comprehensive"
+    ],
+    "mi-senate-2026-abdul-el-sayed-statement-3": [
+      "ai-comprehensive",
+      "ai-workers"
+    ],
+    "mi-senate-2026-abdul-el-sayed-statement-4": [
+      "ai-workers"
+    ],
+    "mi-senate-2026-abdul-el-sayed-statement-5": [
+      "ai-copyright"
+    ],
+    "mi-senate-2026-abdul-el-sayed-position-6": [
+      "ai-frontier-safety"
+    ],
+    "mi-senate-2026-abdul-el-sayed-position-7": [
+      "ai-frontier-safety"
+    ],
+    "mi-senate-2026-abdul-el-sayed-position-8": [
+      "ai-workers"
+    ],
+    "mi-senate-2026-abdul-el-sayed-position-9": [
+      "ai-comprehensive",
+      "ai-copyright"
+    ],
+    "mi-senate-2026-abdul-el-sayed-position-10": [
+      "ai-privacy-surveillance"
+    ],
+    "mi-senate-2026-mike-rogers-stance-23": [
+      "ai-innovation"
+    ],
+    "mi-senate-2026-mike-rogers-statement-24": [
+      "ai-innovation",
+      "ai-national-security"
+    ],
+    "mi-senate-2026-mike-rogers-statement-25": [
+      "ai-innovation",
+      "ai-national-security"
+    ],
+    "mi-senate-2026-mike-rogers-statement-26": [
+      "ai-national-security"
+    ],
+    "mi-senate-2026-mike-rogers-position-27": [
+      "ai-comprehensive"
+    ],
+    "mi-senate-2026-mike-rogers-position-28": [
+      "ai-national-security"
+    ],
+    "mi-senate-2026-mike-rogers-position-29": [
+      "ai-comprehensive"
+    ],
+    "mi-senate-2026-mike-rogers-position-30": [
+      "ai-innovation"
+    ],
+    "mi-senate-2026-mike-rogers-position-31": [
+      "ai-national-security"
+    ]
+  }
+}

@@ -1280,6 +1280,7 @@
       "statusNote": "Passed the Senate 32-4 and the House 131-17; signed May 27, 2026 (some sources give June 2).",
       "categories": [
         "ai-comprehensive",
+        "ai-frontier-safety",
         "ai-child-safety"
       ],
       "summary": "Broad AI law: using an automated employment decision tool is no defense to a discrimination claim; rules for consumer chatbots and AI companions; whistleblower protections and reporting channels at frontier-model developers; AI content provenance; protections for minors. Provisions phase in from Oct. 1, 2026 to 2028.",
@@ -1310,12 +1311,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -1336,7 +1342,8 @@
       "status": "failed",
       "statusDate": "2025",
       "categories": [
-        "ai-comprehensive"
+        "ai-comprehensive",
+        "ai-privacy-surveillance"
       ],
       "summary": "Revised version of the 2024 comprehensive AI bill, including algorithmic-discrimination duties. Passed the Senate but was not taken up in the House after Gov. Lamont threatened a veto.",
       "labelType": "source-summary",
@@ -1365,12 +1372,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -1391,7 +1403,8 @@
       "status": "failed",
       "statusDate": "2024-04-24",
       "categories": [
-        "ai-comprehensive"
+        "ai-comprehensive",
+        "ai-privacy-surveillance"
       ],
       "summary": "Comprehensive AI standards bill. Passed the Senate 24-12 along party lines; the House Speaker did not call it for a vote after Gov. Lamont said he would veto it.",
       "labelType": "source-summary",
@@ -1420,12 +1433,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
         }
       ]
     },

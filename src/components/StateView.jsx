@@ -1,5 +1,6 @@
 import React from 'react';
 import ProposalsPanel from './ProposalsPanel';
+import CategoryBreakdown from './CategoryBreakdown';
 import { ResultSummary } from './ElectionResult';
 import { racesForState, stateName, isVerified, itemsForRace } from '../lib/data';
 import { navigate } from '../lib/router';
@@ -46,6 +47,14 @@ function StateView({ stateAbbr, onClose }) {
         ) : (
           <p className="empty-note">No race in {name} is tracked yet.</p>
         )}
+      </section>
+
+      <section className="state-section">
+        <h3>{name} by category: said and proposed</h3>
+        <h4 className="domain-heading data-centers">Data centers</h4>
+        <CategoryBreakdown domainId="data-centers" state={stateAbbr} />
+        <h4 className="domain-heading ai-general">Everything else in AI</h4>
+        <CategoryBreakdown domainId="ai-general" state={stateAbbr} />
       </section>
 
       <ProposalsPanel state={stateAbbr} title={`Proposed bills and moratoriums: federal and ${name}`} />

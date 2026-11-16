@@ -69,9 +69,11 @@ function MethodsView() {
       <section>
         <h3>Proposal categories</h3>
         <p>
-          Every bill and every candidate proposal or official action has at least one category, so proposals can be grouped
-          by type within each policy area. A proposal is listed under its first category in an area; any others are shown
-          on it. Categories were assigned by an AI model and have not been reviewed.
+          Every bill and every coded candidate record (statements as well as proposals and official actions) has at least
+          one category, so what is said and what is proposed can be compared category by category within each policy area,
+          by party and by state. A record is counted under its first category in an area; any others are shown on it.
+          Items stored in the race files are categorized through a separate lookup, so those files are not edited.
+          Categories were assigned by an AI model and have not been reviewed.
         </p>
         <div className="table-wrap">
           <table className="data-table">

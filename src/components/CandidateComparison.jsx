@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ItemCard, { HiddenDraftsNotice } from './ItemCard';
-import { filterDrafts, itemsForRace, domainsOf, trackOf, domains, tracks } from '../lib/data';
+import { filterDrafts, itemsForRace, domainsOf, trackOf, domains, tracks, categoriesInDomain, primaryCategory } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/CandidateComparison.css';
 
@@ -15,6 +15,53 @@ const TABS = [
   { id: 'alignment', label: 'Alignment & endorsements', kinds: ['alignment', 'endorsement'] },
   { id: 'projections', label: 'Projections', kinds: ['projection'] },
 ];
+
+// A policy-area tab: one row per category, with the candidates side by side
+// and each candidate's records split into what they said and proposed.
+function DomainByCategory({ domainId, candidates, shown }) {
+  const rows = categoriesInDomain(domainId)
+    .map((cat) => ({ cat, items: shown.filter((i) => primaryCategory(i, domainId) === cat.id) }))
+    .filter((r) => r.items.length > 0);
+  const uncategorized = shown.filter((i) => !primaryCategory(i, domainId));
+  if (uncategorized.length) rows.push({ cat: { id: 'none', label: 'Not yet categorized', description: '' }, items: uncategorized });
+  if (rows.length === 0) return <p className="empty-note">No records in this area yet.</p>;
+  return (
+    <>
+      <nav className="category-index" aria-label="Categories in this area">
+        {rows.map(({ cat, items }) => (
+          <span key={cat.id} className="category-chip" title={cat.description}>{cat.label} · {items.length}</span>
+        ))}
+      </nav>
+      {rows.map(({ cat, items }) => (
+        <section key={cat.id} className="category-row">
+          <h5 title={cat.description}>{cat.label}</h5>
+          {cat.description && <p className="category-desc">{cat.description}</p>}
+          <div className="comparison-row" style={{ '--cols': candidates.length }}>
+            {candidates.map((c) => {
+              const mine = items.filter((i) => i.candidateId === c.id);
+              return (
+                <div key={c.id} className="candidate-column" aria-label={`${c.name}: ${cat.label}`}>
+                  <div className="column-name">{c.name}</div>
+                  {['said', 'proposed'].map((t) => {
+                    const list = mine.filter((i) => trackOf(i) === t);
+                    if (list.length === 0) return null;
+                    return (
+                      <div key={t} className={`track-group track-${t}`}>
+                        <h6 title={tracks[t].description}>{tracks[t].label}</h6>
+                        {list.map((item) => <ItemCard key={item.id} item={item} />)}
+                      </div>
+                    );
+                  })}
+                  {mine.length === 0 && <p className="empty-note">Nothing recorded.</p>}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+    </>
+  );
+}
 
 const inTab = (tab, item) =>
   tab.domain ? POLICY_KINDS.includes(item.kind) && domainsOf(item).includes(tab.domain) : tab.kinds.includes(item.kind);
@@ -82,37 +129,28 @@ function CandidateComparison({ race }) {
         )}
         {tab.domain && <p className="section-note">{domains[tab.domain].description}</p>}
         <HiddenDraftsNotice count={tabItems.length - shown.length} />
-        <div className="comparison-row" style={{ '--cols': candidates.length }}>
-          {candidates.map((c) => {
-            const mine = shown.filter((i) => i.candidateId === c.id);
-            const anyAtAll = tabItems.some((i) => i.candidateId === c.id);
-            const empty = (
-              <p className="empty-note">
-                {anyAtAll ? 'Only unverified drafts here so far.' : 'No records in this category yet.'}
-              </p>
-            );
-            return (
-              <div key={c.id} className="candidate-column" aria-label={c.name}>
-                <div className="column-name">{c.name}</div>
-                {tab.domain
-                  ? ['said', 'proposed'].map((t) => {
-                      const list = mine.filter((i) => trackOf(i) === t);
-                      return (
-                        <div key={t} className={`track-group track-${t}`}>
-                          <h5 title={tracks[t].description}>{tracks[t].label}</h5>
-                          {list.length ? list.map((item) => <ItemCard key={item.id} item={item} />) : (
-                            <p className="empty-note">Nothing recorded.</p>
-                          )}
-                        </div>
-                      );
-                    })
-                  : mine.length
-                    ? mine.map((item) => <ItemCard key={item.id} item={item} />)
-                    : empty}
-              </div>
-            );
-          })}
-        </div>
+        {tab.domain ? (
+          <DomainByCategory domainId={tab.domain} candidates={candidates} shown={shown} />
+        ) : (
+          <div className="comparison-row" style={{ '--cols': candidates.length }}>
+            {candidates.map((c) => {
+              const mine = shown.filter((i) => i.candidateId === c.id);
+              const anyAtAll = tabItems.some((i) => i.candidateId === c.id);
+              return (
+                <div key={c.id} className="candidate-column" aria-label={c.name}>
+                  <div className="column-name">{c.name}</div>
+                  {mine.length ? (
+                    mine.map((item) => <ItemCard key={item.id} item={item} />)
+                  ) : (
+                    <p className="empty-note">
+                      {anyAtAll ? 'Only unverified drafts here so far.' : 'No records in this category yet.'}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );

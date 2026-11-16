@@ -7,6 +7,7 @@ import geo from '../data/us-states-geo.json';
 import resultsData from '../data/results.json';
 import researchData from '../data/candidate-research.json';
 import partyLinesData from '../data/party-lines.json';
+import itemCategoriesData from '../data/item-categories.json';
 
 const raceModules = import.meta.glob('../data/races/*.json', { eager: true, import: 'default' });
 
@@ -50,10 +51,14 @@ export const DOMAIN_IDS = codebook.domains.map((d) => d.id);
 export const proposalCategories = codebook.proposalCategories;
 export const categoryById = byId(codebook.proposalCategories);
 export const categoriesInDomain = (domainId) => codebook.proposalCategories.filter((c) => c.domain === domainId);
+// A record's categories: its own, or (for items stored in the race files,
+// which are never edited) the separate lookup in item-categories.json.
+export const categoriesOf = (record) => record.categories || itemCategoriesData.assignments[record.id] || [];
+
 // The first of a record's categories that belongs to the given policy area;
-// used to place each proposal under one heading.
+// used to place each record under one heading.
 export const primaryCategory = (record, domainId) =>
-  (record.categories || []).find((c) => categoryById[c]?.domain === domainId) || null;
+  categoriesOf(record).find((c) => categoryById[c]?.domain === domainId) || null;
 export const TRACK_IDS = codebook.tracks.map((t) => t.id);
 
 // Label metadata for any record: the six statement labels, or the separate
@@ -160,7 +165,7 @@ export function proposals(includeDrafts, { state } = {}) {
       date: bill.statusDate,
       domains: domainsOf(bill),
       party: billParty(bill),
-      isMoratorium: (bill.categories || []).includes('dc-moratorium'),
+      isMoratorium: categoriesOf(bill).includes('dc-moratorium'),
     });
   }
   for (const race of races) {
@@ -179,11 +184,28 @@ export function proposals(includeDrafts, { state } = {}) {
         date: rec.publishedDate,
         domains: domainsOf(rec),
         party: candidate?.party || 'Other',
-        isMoratorium: (rec.categories || []).includes('dc-moratorium'),
+        isMoratorium: categoriesOf(rec).includes('dc-moratorium'),
       });
     }
   }
   return out.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+}
+
+// Every categorized record (candidate statements, proposals and actions, and
+// bills) with its party, jurisdiction, track and policy areas, for the
+// category breakdowns.
+export function categorizedRecords(includeDrafts) {
+  const out = [];
+  for (const race of races) {
+    for (const rec of filterDrafts(itemsForRace(race), includeDrafts)) {
+      if (!rec.coding || categoriesOf(rec).length === 0) continue;
+      out.push({ record: rec, party: recordParty(rec, race), jurisdiction: race.state, track: trackOf(rec), domains: domainsOf(rec), kind: 'candidate' });
+    }
+  }
+  for (const bill of filterDrafts(bills, includeDrafts)) {
+    out.push({ record: bill, party: billParty(bill), jurisdiction: bill.state, track: 'proposed', domains: domainsOf(bill), kind: 'bill' });
+  }
+  return out;
 }
 
 export function coverageForState(abbr) {

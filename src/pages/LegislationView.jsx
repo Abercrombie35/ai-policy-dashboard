@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import BillCard from '../components/BillCard';
 import { HiddenDraftsNotice } from '../components/ItemCard';
-import { bills, billStatuses, filterDrafts, stateName, legislationNote, domainsOf, domains, DOMAIN_IDS, categoriesInDomain, primaryCategory } from '../lib/data';
+import { bills, billStatuses, filterDrafts, stateName, legislationNote, domainsOf, domains, DOMAIN_IDS, categoriesInDomain, primaryCategory, categoriesOf } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 
 function LegislationView() {
@@ -17,7 +17,7 @@ function LegislationView() {
       (state === 'all' || b.state === state) &&
       (status === 'all' || b.status === status) &&
       (domain === 'all' || domainsOf(b).includes(domain)) &&
-      (category === 'all' || (b.categories || []).includes(category)),
+      (category === 'all' || categoriesOf(b).includes(category)),
   );
   const shown = filterDrafts(inScope, includeDrafts);
   const areas = domain === 'all' ? DOMAIN_IDS : [domain];
