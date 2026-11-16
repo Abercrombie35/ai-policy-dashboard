@@ -1,5 +1,5 @@
 import React from 'react';
-import { codebook, races, bills, results, elections, filterDrafts, stateName, datasetUpdated, countRecords, raceById, itemsForRace, trackOf, domainsOf, partyLines, researchRecords, policyQuestions } from '../lib/data';
+import { codebook, races, bills, results, elections, filterDrafts, stateName, datasetUpdated, countRecords, raceById, itemsForRace, trackOf, domainsOf, partyLines, researchRecords, policyQuestions, categoriesOf } from '../lib/data';
 import { allCandidates, deviationCell } from '../lib/analysis';
 import { useDrafts } from '../lib/drafts';
 
@@ -24,7 +24,7 @@ function itemRows(includeDrafts) {
         item.publishedDate, item.lastVerified, item.version,
         ...CODING_COLUMNS.map((k) => item.coding?.[k]), item.coding ? item.coding.reviewed : '',
         trackOf(item), domainsOf(item), Object.entries(item.stances || {}).map(([q, s]) => `${q}=${s}`), item.dateNote,
-        item.categories,
+        categoriesOf(item),
       ]);
     }
   }
@@ -64,7 +64,7 @@ function billRows(includeDrafts) {
     b.id, b.state, stateName(b.state), b.session, b.billNumber, b.title, b.status, b.statusDate,
     b.sponsors.map((s) => `${s.name} (${s.party})`), b.labelType, b.confidence, b.summary, b.source?.title,
     b.source?.url, b.lastVerified, b.version, ...CODING_COLUMNS.map((k) => b.coding?.[k]), b.coding ? b.coding.reviewed : '',
-    domainsOf(b), b.categories, b.tags, b.statusNote, b.sponsorsNote,
+    domainsOf(b), categoriesOf(b), b.tags, b.statusNote, b.sponsorsNote,
   ]);
   return toCsv(
     ['id', 'state', 'state_name', 'session', 'bill_number', 'title', 'status', 'status_date', 'sponsors', 'label_type',

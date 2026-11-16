@@ -51,15 +51,19 @@ Built:
   and in Connecticut the governor race (Lamont vs. Fazio) and the U.S. House
   race in the 4th District (Himes vs. Goldstein). Connecticut had no U.S.
   Senate race in 2026; its next one is in 2028.
-- Proposal categories: every bill and every candidate proposal or official
-  action has a category (for data centers: moratoriums and bans, electricity
+- Categories: every bill and every coded candidate record (statements as
+  well as proposals and actions) has a category (for data centers: moratoriums and bans, electricity
   costs and grid, tax breaks, siting and local control, water and
   environment, disclosure and studies, security, permitting; for everything
   else in AI: broad AI laws, children and chatbots, deepfakes, chips and
   China, federal vs. state authority, consumer protection, workers,
-  innovation). Proposals are grouped by category on the home screen, race
-  and state pages and the Legislation page, and the Policy analysis page
-  counts proposals by category and party.
+  innovation, plus finer ones: investment and jobs; frontier AI safety;
+  privacy and surveillance; copyright and creators; national security).
+  Race tabs show one row per category with the candidates side by side; the
+  state pop-up and the Policy analysis page break each area down by
+  category, said vs. proposed, party and state (Michigan, Texas,
+  Connecticut, federal). Categories for items in the race files live in
+  src/data/item-categories.json so those files are not edited.
 - Election results, with their own "Election result" label kept apart from
   the six statement labels (src/data/results.json). Each result is marked
   Unofficial or Certified and records its sources and when its figures were

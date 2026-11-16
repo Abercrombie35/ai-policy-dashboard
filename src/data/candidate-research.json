@@ -39,9 +39,10 @@
       "categories": [
         "dc-moratorium",
         "dc-ratepayer",
-        "dc-water-environment"
+        "dc-water-environment",
+        "dc-economy-jobs"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -52,6 +53,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-16",
+          "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -143,9 +149,9 @@
       },
       "categories": [
         "dc-moratorium",
-        "ai-comprehensive"
+        "ai-frontier-safety"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -156,6 +162,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-16",
+          "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -195,12 +206,22 @@
         "data-centers": "accelerate",
         "preemption": "supports-preemption"
       },
-      "version": 1,
+      "categories": [
+        "dc-permitting",
+        "dc-economy-jobs",
+        "ai-preemption"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -292,12 +313,22 @@
         "safety-rules": "broad-binding",
         "workers": "active-protections"
       },
-      "version": 1,
+      "categories": [
+        "ai-comprehensive",
+        "ai-copyright",
+        "ai-privacy-surveillance"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -385,12 +416,20 @@
       "stances": {
         "data-centers": "conditional"
       },
-      "version": 1,
+      "categories": [
+        "dc-economy-jobs"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -534,12 +573,20 @@
       "stances": {
         "harmful-content": "supports-rules"
       },
-      "version": 1,
+      "categories": [
+        "ai-deepfakes"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -728,12 +775,20 @@
       "stances": {
         "data-centers": "conditional"
       },
-      "version": 1,
+      "categories": [
+        "dc-local-control"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -829,9 +884,10 @@
       "categories": [
         "dc-moratorium",
         "dc-tax-incentives",
-        "dc-local-control"
+        "dc-local-control",
+        "dc-economy-jobs"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -842,6 +898,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-16",
+          "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -876,12 +937,20 @@
       "stances": {
         "data-centers": "pause"
       },
-      "version": 1,
+      "categories": [
+        "dc-moratorium"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Summarized from web search results citing this source on 2026-11-12; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -1205,14 +1274,20 @@
       },
       "categories": [
         "ai-comprehensive",
+        "ai-frontier-safety",
         "ai-child-safety"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -1386,12 +1461,20 @@
       "stances": {
         "chip-sales-china": "restrict-sales"
       },
-      "version": 1,
+      "categories": [
+        "ai-chips-china"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -1425,12 +1508,20 @@
         "reviewed": false
       },
       "stances": {},
-      "version": 1,
+      "categories": [
+        "dc-security"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -1466,12 +1557,20 @@
       "stances": {
         "chip-sales-china": "restrict-sales"
       },
-      "version": 1,
+      "categories": [
+        "ai-chips-china"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },
@@ -1504,12 +1603,20 @@
         "reviewed": false
       },
       "stances": {},
-      "version": 1,
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
         }
       ]
     },

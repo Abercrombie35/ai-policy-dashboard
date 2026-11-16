@@ -539,16 +539,10 @@
       "description": "Water use, cooling and environmental limits."
     },
     {
-      "id": "dc-transparency",
+      "id": "dc-economy-jobs",
       "domain": "data-centers",
-      "label": "Disclosure and studies",
-      "description": "Reporting duties and studies of data center impacts."
-    },
-    {
-      "id": "dc-security",
-      "domain": "data-centers",
-      "label": "Security and foreign technology",
-      "description": "Security rules for data centers, including limits on foreign technology."
+      "label": "Investment and jobs",
+      "description": "Data centers as economic development: investment, jobs and union standards."
     },
     {
       "id": "dc-permitting",
@@ -557,10 +551,28 @@
       "description": "Speeding up permits and construction."
     },
     {
+      "id": "dc-security",
+      "domain": "data-centers",
+      "label": "Security and foreign technology",
+      "description": "Security rules for data centers, including limits on foreign technology."
+    },
+    {
+      "id": "dc-transparency",
+      "domain": "data-centers",
+      "label": "Disclosure and studies",
+      "description": "Reporting duties and studies of data center impacts."
+    },
+    {
       "id": "ai-comprehensive",
       "domain": "ai-general",
       "label": "Broad AI governance laws",
       "description": "Laws setting rules across many AI uses, such as Texas TRAIGA or Connecticut SB 5."
+    },
+    {
+      "id": "ai-frontier-safety",
+      "domain": "ai-general",
+      "label": "Frontier and high-risk AI safety",
+      "description": "Licensing, testing, impact assessments, whistleblower protections or freezes for powerful or high-risk AI."
     },
     {
       "id": "ai-child-safety",
@@ -575,10 +587,28 @@
       "description": "Election deepfakes and AI-generated intimate images."
     },
     {
+      "id": "ai-privacy-surveillance",
+      "domain": "ai-general",
+      "label": "Privacy and surveillance",
+      "description": "Consumer privacy and limits on AI surveillance, including in the workplace."
+    },
+    {
+      "id": "ai-copyright",
+      "domain": "ai-general",
+      "label": "Copyright and creators",
+      "description": "Training-data disclosure, copyright compliance and compensation for creators."
+    },
+    {
       "id": "ai-chips-china",
       "domain": "ai-general",
       "label": "Chips and China",
       "description": "Export controls and chip security."
+    },
+    {
+      "id": "ai-national-security",
+      "domain": "ai-general",
+      "label": "National security and defense",
+      "description": "Cybersecurity, defense uses of AI and security-focused international coordination (chip export rules are under Chips and China)."
     },
     {
       "id": "ai-preemption",

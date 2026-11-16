@@ -195,3 +195,13 @@
 .ptag.party-democratic { background: rgba(54, 113, 228, 0.18); color: #9cc0ff; }
 .ptag.party-republican { background: rgba(229, 96, 92, 0.16); color: #ffb0ad; }
 .ptag.party-other { background: rgba(147, 177, 216, 0.12); color: #c7d8ee; }
+
+.group-head { text-align: center !important; border-bottom: 1px solid rgba(147, 177, 216, 0.2); }
+.group-head.said { color: #a5dcfb !important; }
+.group-head.proposed { color: #d4c9ff !important; }
+.sub-head { font-weight: 400; font-size: 0.66rem; text-transform: none; letter-spacing: 0; color: #7a8fa3; }
+.category-breakdown { display: flex; flex-direction: column; gap: 12px; }
+.category-row { margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(147, 177, 216, 0.12); }
+.category-row > h5 { margin: 0 0 2px; font-size: 0.9rem; color: #e5edf7; }
+.category-row > .category-desc { margin-bottom: 10px; }
+.track-group h6 { margin: 0 0 6px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: #9eb7d7; }

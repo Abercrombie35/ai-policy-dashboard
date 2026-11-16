@@ -1,5 +1,5 @@
 import React from 'react';
-import { proposals, billStatuses, confidenceLevels, stateName, domains, categoriesInDomain, categoryById, primaryCategory } from '../lib/data';
+import { proposals, billStatuses, confidenceLevels, stateName, domains, categoriesInDomain, categoryById, primaryCategory, categoriesOf } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/Analysis.css';
 
@@ -11,7 +11,7 @@ function ProposalRow({ p, domainId }) {
   const needsCheck = rec.confidence !== 'high';
   // Other categories this proposal also falls under, in either policy area.
   const primary = primaryCategory(rec, domainId);
-  const others = (rec.categories || []).filter((c) => c !== primary);
+  const others = categoriesOf(rec).filter((c) => c !== primary);
   return (
     <li className="proposal">
       <div className="proposal-tags">

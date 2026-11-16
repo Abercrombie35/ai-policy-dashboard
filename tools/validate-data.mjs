@@ -188,9 +188,31 @@ read('candidate-research.json').records.forEach((rec, i) => {
   if (!rec.publishedDate && !rec.sortDate) fail(w, 'undated records need an approximate sortDate for the timeline');
   checkDate(w, 'sortDate', rec.sortDate, false, true);
   checkLabeledRecord(w, rec);
-  checkCategories(w, rec, PROPOSED_SPECIFICITY.has(rec.coding?.specificity));
+  // Every researched record is categorized, statements as well as proposals.
+  checkCategories(w, rec, true);
   raceItemsById[rec.id] = rec;
 });
+
+// Categories for coded items stored in the race files (kept in a separate
+// lookup so the race files are never edited). Every coded statement, position,
+// action or stance summary must be categorized.
+const itemCategories = read('item-categories.json').assignments;
+const raceItemIndex = {};
+for (const file of raceFiles) {
+  for (const item of read(join('races', file)).items || []) raceItemIndex[item.id] = item;
+}
+for (const [id, cats] of Object.entries(itemCategories)) {
+  const w = `item-categories.json ${id}`;
+  const item = raceItemIndex[id];
+  if (!item) fail(w, 'no race item has this id');
+  else if (!item.coding) fail(w, 'item has no coding, so it has no policy area to categorize');
+  else checkCategories(w, { ...item, categories: cats }, true);
+}
+for (const item of Object.values(raceItemIndex)) {
+  if (item.coding && ['statement', 'position', 'action', 'stance'].includes(item.kind) && !itemCategories[item.id] && !item.categories) {
+    fail(`race item ${item.id}`, 'coded item has no categories (add them to item-categories.json)');
+  }
+}
 
 // Party lines
 const partyLines = read('party-lines.json');
