@@ -1,5 +1,5 @@
 import React from 'react';
-import { headlineOf, stateName, billStatuses, confidenceLevels, trackOf } from '../lib/data';
+import { headlineOf, placeOf, billStatuses, confidenceLevels, trackOf } from '../lib/data';
 import '../styles/PolicyBox.css';
 
 const tintOf = (party) => {
@@ -8,7 +8,15 @@ const tintOf = (party) => {
   if (party === 'Bipartisan') return 'bipartisan';
   return 'other';
 };
-const abbr = (party) => (party ? (party === 'Independent Party' ? 'IP' : party[0]) : '?');
+// Short party name: D or R in the U.S.; abroad the party's own abbreviation,
+// e.g. "Rassemblement National (RN)" -> RN, or its name.
+const abbr = (party) => {
+  if (!party) return '?';
+  if (party === 'Independent Party') return 'IP';
+  if (party === 'Democratic' || party === 'Republican') return party[0];
+  return party.match(/\(([^)]+)\)$/)?.[1] || party;
+};
+const roleOf = (race) => (race.office === 'President' ? 'presidential candidate' : `${race.office} candidate`);
 
 // Who is behind a record: a bill's sponsors, or the candidate.
 export function whoOf(record, { race, candidate } = {}) {
@@ -17,7 +25,7 @@ export function whoOf(record, { race, candidate } = {}) {
     return record.sponsorsNote || 'Sponsors not yet recorded';
   }
   const verb = record.kind === 'action' ? 'Action by' : trackOf(record) === 'said' ? 'Said by' : 'Proposed by';
-  const office = race ? `, ${race.office} candidate, ${stateName(race.state)}` : '';
+  const office = race ? `, ${roleOf(race)}, ${placeOf(race)}` : '';
   return `${verb} ${candidate?.name}${candidate ? ` (${abbr(candidate.party)})` : ''}${office}`;
 }
 
@@ -25,8 +33,8 @@ export function whoOf(record, { race, candidate } = {}) {
 function metaOf(record) {
   if (record.billNumber) {
     const status = billStatuses[record.status]?.label;
-    const number = /verify|to be filed/i.test(record.billNumber) ? '' : ` ${record.billNumber}`;
-    return [`${stateName(record.state)}${number}`, status, record.statusDate].filter(Boolean).join(' · ');
+    const number = /verify|to be filed|announcement/i.test(record.billNumber) ? '' : ` ${record.billNumber}`;
+    return [`${placeOf(record)}${number}`, status, record.statusDate].filter(Boolean).join(' · ');
   }
   return record.publishedDate || record.dateNote || '';
 }
@@ -45,10 +53,12 @@ export function makeSourceIndex(records) {
 }
 
 // A policy box: the central point in large type, who is behind it (tinted by
-// party), a numbered source reference, and the date in small type.
-export function PolicyBox({ record, party, race, candidate, refNum, refPrefix, details }) {
+// party in the U.S., by bloc abroad), a numbered source reference, and the
+// date in small type.
+export function PolicyBox({ record, party, bloc, race, candidate, refNum, refPrefix, details }) {
+  const tint = bloc || candidate?.bloc ? `bloc-${bloc || candidate.bloc}` : tintOf(party);
   return (
-    <article className={`policy-box tint-${tintOf(party)}`}>
+    <article className={`policy-box tint-${tint}`}>
       <p className="policy-headline">
         {headlineOf(record)}
         {refNum && (

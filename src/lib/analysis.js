@@ -2,7 +2,7 @@
 // codebook's policy questions; each stance is compared with the candidate's
 // party line for that question. This is model-generated analysis built on
 // AI-coded stances, and the UI labels it that way.
-import { races, partyLines, policyQuestions, itemsForRace, filterDrafts, trackOf, codebook } from './data';
+import { usRaces, partyLines, policyQuestions, itemsForRace, filterDrafts, trackOf, codebook } from './data';
 
 export const STATUS = {
   aligned: { label: 'Aligned', icon: '✓', description: 'Same stance as the party line.' },
@@ -64,18 +64,22 @@ export function deviationCell(race, candidate, questionId, includeDrafts) {
   };
 }
 
-export const allCandidates = () => races.flatMap((race) => (race.candidates || []).map((candidate) => ({ race, candidate })));
+// Candidates compared against the U.S. party lines.
+export const allCandidates = () => usRaces.flatMap((race) => (race.candidates || []).map((candidate) => ({ race, candidate })));
 
-export const questionsInDomain = (domainId) => {
+// A policy area's questions. Outside the U.S. ("intl"), U.S.-only questions
+// such as federal preemption are left out.
+export const questionsInDomain = (domainId, region = 'us') => {
   const ids = codebook.domains.find((d) => d.id === domainId)?.policyQuestions || [];
-  return policyQuestions.filter((q) => ids.includes(q.id));
+  return policyQuestions.filter((q) => ids.includes(q.id) && !(region === 'intl' && q.scope === 'us'));
 };
 
-// Every stance entry in a policy area, in date order, for the "when" view.
-export function timeline(domainId, includeDrafts) {
+// Every stance entry in a policy area, in date order, for the "when" view:
+// by default the U.S. candidates, or the given candidates.
+export function timeline(domainId, includeDrafts, candidates = allCandidates()) {
   const qs = questionsInDomain(domainId).map((q) => q.id);
   const out = [];
-  for (const { race, candidate } of allCandidates()) {
+  for (const { race, candidate } of candidates) {
     for (const q of qs) out.push(...stanceEntries(race, candidate, q, includeDrafts));
   }
   return out.sort(byDate);

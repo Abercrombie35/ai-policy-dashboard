@@ -2462,6 +2462,263 @@
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
         }
       ]
+    },
+    {
+      "id": "eu-ai-act",
+      "country": "EU",
+      "session": "European Union",
+      "billNumber": "Regulation (EU) 2024/1689",
+      "title": "EU Artificial Intelligence Act",
+      "sponsors": [],
+      "sponsorsNote": "Adopted by the European Parliament and the Council.",
+      "status": "enacted",
+      "statusDate": "2024-08-01",
+      "statusNote": "In force since Aug. 1, 2024; obligations apply in phases.",
+      "categories": [
+        "ai-comprehensive",
+        "ai-frontier-safety"
+      ],
+      "summary": "Risk-based rules for AI across the EU: bans on certain uses, duties for high-risk systems and for general-purpose AI models, applied in phases. Member states such as France implement and enforce it rather than deciding whether to regulate.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "EUR-Lex: Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+        "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "bans",
+          "disclosure",
+          "audits"
+        ],
+        "issueAreas": [
+          "safety",
+          "discrimination"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "eu-digital-omnibus-ai",
+      "country": "EU",
+      "session": "European Union",
+      "billNumber": "Regulation (EU) 2026/1744",
+      "title": "Digital Omnibus on AI",
+      "sponsors": [],
+      "sponsorsNote": "Adopted by the European Parliament and the Council.",
+      "status": "enacted",
+      "statusDate": "2026-07-27",
+      "statusNote": "Final Council approval June 29, 2026; in force July 27, 2026.",
+      "categories": [
+        "ai-comprehensive",
+        "ai-child-safety"
+      ],
+      "summary": "Delays high-risk AI Act duties (stand-alone systems to Dec. 2, 2027; AI in regulated products to Aug. 2, 2028), bans AI systems generating non-consensual intimate images and child sexual abuse material, and simplifies documentation for smaller firms. Transparency duties and general-purpose AI rules keep their original dates.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Regulation-AI.eu: Digital Omnibus on AI, Regulation (EU) 2026/1744",
+        "url": "https://www.regulation-ai.eu/en/omnibus/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "safety",
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fr-ppl-centres-donnees",
+      "country": "FR",
+      "session": "Senate, 2025-2026",
+      "billNumber": "Proposition de loi (Senate)",
+      "title": "Bill to regulate where data centers are built",
+      "sponsors": [
+        {
+          "name": "David Ros",
+          "party": "Socialist (PS)",
+          "bloc": "left",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "passed-one-chamber",
+      "statusDate": "2026-03-25",
+      "statusNote": "Adopted by the Senate Mar. 25, 2026; sent to the National Assembly Mar. 26.",
+      "categories": [
+        "dc-permitting",
+        "dc-local-control"
+      ],
+      "summary": "Lets large data centers be designated \"projects of major national interest\" by decree, which speeds up their approval, and strengthens local elected officials' role through territorial planning (SCoT). A lighter version was adopted after redundant articles were cut.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Banque des Territoires: Datacenters, the Senate adopts a lighter bill",
+        "url": "https://www.banquedesterritoires.fr/datacenters-le-senat-adopte-une-proposition-de-loi-allegee-renvoyant-lessentiel-aux-textes-en-cours"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fr-pjl-simplification",
+      "country": "FR",
+      "session": "Parliament, 2024-2026",
+      "billNumber": "Projet de loi (government bill)",
+      "title": "Bill to simplify economic life (includes fast-track for data centers)",
+      "sponsors": [],
+      "sponsorsNote": "Government bill.",
+      "status": "introduced",
+      "statusDate": null,
+      "statusNote": "Under examination; not definitively adopted as of March 2026 reports (to verify).",
+      "categories": [
+        "dc-permitting"
+      ],
+      "summary": "Government bill that, among many simplification measures, would let large data centers be classed as projects of major national interest to speed up approvals.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Senate report: Projet de loi de simplification de la vie économique",
+        "url": "https://www.senat.fr/rap/l23-634/l23-63413.html"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fr-nuclear-ai-pledge",
+      "country": "FR",
+      "session": "Government",
+      "billNumber": "Government announcement",
+      "title": "Nuclear power for AI data centers",
+      "sponsors": [
+        {
+          "name": "Emmanuel Macron",
+          "party": "Renaissance",
+          "bloc": "centre",
+          "role": "President",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "announced",
+      "statusDate": "2025-02",
+      "statusNote": "Government policy, not a bill.",
+      "categories": [
+        "dc-economy-jobs"
+      ],
+      "summary": "France pledged a gigawatt of nuclear power for AI computing; in March 2026 President Macron said France's nuclear plants let it open data centers and grow its computing capacity.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "TechRadar: France set to pledge one gigawatt of nuclear power for AI",
+        "url": "https://www.techradar.com/pro/france-plans-to-pledge-one-gigawatt-of-nuclear-power-for-ai"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
     }
   ]
 }

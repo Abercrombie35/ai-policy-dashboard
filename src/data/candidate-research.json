@@ -1906,6 +1906,452 @@
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
         }
       ]
+    },
+    {
+      "id": "cr-fr-bardella-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "jordan-bardella",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Calls AI a major question of national sovereignty. Coverage finds the RN has few detailed AI measures so far, focusing mainly on taxing Big Tech and on public procurement.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "unclear",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-philippe-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "edouard-philippe",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "AI plan: double France's AI computing capacity within five years, raise engineers trained each year from 40,000 to 100,000, create a \"right to retraining\" for workers threatened by AI, and use state and local purchasing to back European champions such as Mistral.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "funding",
+          "procurement"
+        ],
+        "issueAreas": [
+          "innovation-competitiveness",
+          "labor",
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "accelerate",
+        "workers": "retraining-led"
+      },
+      "categories": [
+        "dc-permitting",
+        "ai-sovereignty",
+        "ai-innovation",
+        "ai-workers"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-philippe-2",
+      "raceId": "fr-president-2027",
+      "candidateId": "edouard-philippe",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "At VivaTech, made AI sovereignty a central theme and an early credibility test of his campaign.",
+      "source": {
+        "title": "Ecostylia: At VivaTech, Edouard Philippe turns AI sovereignty into an early credibility test",
+        "url": "https://www.ecostylia.com/en/edouard-philippe-ai-2027/"
+      },
+      "publishedDate": "2026-06",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-attal-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "gabriel-attal",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Wants France to control the entire AI value chain, treats AI training as a basic skill, and lists AI among his four \"major projects\" alongside schools, wages and borders.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness",
+          "labor"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty",
+        "ai-workers"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-retailleau-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "bruno-retailleau",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Backs a sovereign AI powered by decarbonized electricity and a leaner state, with a reported €25 billion over five years to bring AI into every level of public administration and the wider economy.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty",
+        "ai-innovation"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-melenchon-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "jean-luc-melenchon",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Backs a moratorium on \"non-sovereign\" data centers built for foreign private companies subject to U.S. law. Asked whether he favours a moratorium and a slowdown of AI, he said yes, with safeguards written into a bill his movement is preparing.",
+      "source": {
+        "title": "L'insoumission: Mélenchon interview with Reporterre",
+        "url": "https://linsoumission.fr/2026/07/22/melenchon-entretien-reporterre/"
+      },
+      "publishedDate": "2026-07-22",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers",
+          "national-security-china"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "categories": [
+        "dc-moratorium",
+        "dc-security"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-melenchon-2",
+      "raceId": "fr-president-2027",
+      "candidateId": "jean-luc-melenchon",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Treats data centers, computing and cloud as sovereignty infrastructure as important as energy, transport or telecoms, and proposes a public digital and AI hub.",
+      "source": {
+        "title": "WYP.agency: Jean-Luc Mélenchon on AI, 2027 proposals and statements",
+        "url": "https://wyp.agency/en/france-2027-election-ai/candidates/jean-luc-melenchon/"
+      },
+      "publishedDate": null,
+      "dateNote": "During the 2026 campaign",
+      "sortDate": "2026-07",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty",
+        "ai-innovation"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-tondelier-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "marine-tondelier",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Criticizes the environmental cost of data centers.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "dc-water-environment"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-tondelier-2",
+      "raceId": "fr-president-2027",
+      "candidateId": "marine-tondelier",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Prefers smaller, specialized, open-source AI models over ever-larger systems.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-ruffin-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "francois-ruffin",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Filed a resolution in the National Assembly on data centers: build on brownfield sites first, end the reduced electricity tax for non-strategic data centers, and bring data centers back under the National Commission for Public Debate.",
+      "source": {
+        "title": "WYP.agency: Data center moratorium, France 2027 candidates",
+        "url": "https://wyp.agency/en/france-2027-election-ai/topics/data-center-moratorium/"
+      },
+      "publishedDate": "2026-10-08",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "funding",
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-local-control",
+        "dc-tax-incentives",
+        "dc-transparency"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
     }
   ]
 }

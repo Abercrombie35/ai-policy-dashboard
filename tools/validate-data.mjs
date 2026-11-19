@@ -26,6 +26,11 @@ const PARTIES = new Set(['Republican', 'Democratic']);
 const EUROPE = new Set(Object.keys(read('europe-geo.json').countries));
 // "US" marks federal bills.
 const JURISDICTIONS = new Set([...Object.keys(read('us-states-geo.json').states), 'US']);
+// Outside the U.S., records name a country on the Europe map, or "EU" for
+// European Union law.
+const COUNTRIES = new Set([...EUROPE, 'EU']);
+const BLOCS = ids(codebook.blocs || []);
+const QUESTION_SCOPE = Object.fromEntries(codebook.policyQuestions.map((q) => [q.id, q.scope || 'all']));
 
 const errors = [];
 const seenIds = new Set();
@@ -123,13 +128,24 @@ function checkLabeledRecord(where, rec, allowedLabels = LABEL_TYPES) {
 const raceFiles = readdirSync(join(root, 'races')).filter((f) => f.endsWith('.json'));
 const raceIds = new Set();
 const raceCandidates = {};
+const raceCountry = {};
 for (const file of raceFiles) {
   const race = read(join('races', file));
   const where = `races/${file}`;
   if (`${race.id}.json` !== file) fail(where, `file name must match race id "${race.id}"`);
   if (raceIds.has(race.id)) fail(where, 'duplicate race id');
   raceIds.add(race.id);
-  if (!STATES.has(race.state)) fail(where, `unknown state "${race.state}"`);
+  // A race is in a U.S. state or, outside the U.S., in a country.
+  if (race.country != null) {
+    if (race.state != null) fail(where, 'give a state or a country, not both');
+    if (!EUROPE.has(race.country)) fail(where, `country "${race.country}" is not on the Europe map`);
+    checkDate(where, 'runoffDate', race.runoffDate);
+    if (race.status !== 'upcoming' && race.status !== 'held') fail(where, 'international races need status "upcoming" or "held"');
+    (race.contextNotes || []).forEach((n, i) => {
+      if (!n.text || !n.source?.url) fail(`${where} contextNotes[${i}]`, 'needs text and a source URL');
+      checkDate(`${where} contextNotes[${i}]`, 'publishedDate', n.publishedDate, false, true);
+    });
+  } else if (!STATES.has(race.state)) fail(where, `unknown state "${race.state}"`);
   ['office', 'cycle', 'electionDate', 'candidates', 'items', 'contextSignals'].forEach((k) => {
     if (race[k] == null) fail(where, `missing ${k}`);
   });
@@ -140,8 +156,12 @@ for (const file of raceFiles) {
     if (candidateIds.has(c.id)) fail(where, `duplicate candidate id "${c.id}"`);
     candidateIds.add(c.id);
     if (!c.questionnaire?.status) fail(where, `candidate ${c.id} needs questionnaire.status`);
+    // Outside the U.S., candidates are placed on a left-right bloc for comparison.
+    if (race.country != null && !BLOCS.has(c.bloc)) fail(where, `candidate ${c.id} needs a bloc from the codebook`);
+    if (c.bloc != null && !BLOCS.has(c.bloc)) fail(where, `candidate ${c.id}: unknown bloc "${c.bloc}"`);
   }
   raceCandidates[race.id] = candidateIds;
+  raceCountry[race.id] = race.country || null;
   // Results are separately labeled records in results.json. The old
   // per-race "result" field is only a placeholder.
   if (race.result && race.result.status !== 'not-recorded') {
@@ -164,13 +184,17 @@ for (const file of raceFiles) {
 const legislation = read('legislation.json');
 legislation.bills.forEach((bill, i) => {
   const w = `legislation.json bills[${i}] (${bill.id})`;
-  if (!JURISDICTIONS.has(bill.state)) fail(w, `unknown jurisdiction "${bill.state}" (use a state code or US)`);
+  if (bill.country != null) {
+    if (bill.state != null) fail(w, 'give a state or a country, not both');
+    if (!COUNTRIES.has(bill.country)) fail(w, `unknown country "${bill.country}" (use a code on the Europe map, or EU)`);
+  } else if (!JURISDICTIONS.has(bill.state)) fail(w, `unknown jurisdiction "${bill.state}" (use a state code or US)`);
   if (!bill.billNumber || !bill.title || !bill.session) fail(w, 'needs billNumber, title and session');
   if (!BILL_STATUSES.has(bill.status)) fail(w, `status "${bill.status}" is not in the codebook`);
   checkDate(w, 'statusDate', bill.statusDate, false, true);
   if (!bill.coding?.specificity) fail(w, 'bills need coding.specificity so they can be sorted into said / proposed');
   (bill.sponsors || []).forEach((s) => {
     if (!s.name || !s.party) fail(w, 'each sponsor needs name and party');
+    if (s.bloc != null && !BLOCS.has(s.bloc)) fail(w, `unknown bloc "${s.bloc}"`);
   });
   checkLabeledRecord(w, bill);
   checkCategories(w, bill, true);
@@ -186,6 +210,10 @@ read('candidate-research.json').records.forEach((rec, i) => {
   if (!rec.text) fail(w, 'missing text');
   if (!rec.coding?.specificity) fail(w, 'research records need coding.specificity so they can be sorted into said / proposed');
   if (!rec.publishedDate && !rec.dateNote) fail(w, 'give publishedDate or a dateNote explaining when');
+  // U.S.-only questions (such as federal preemption) do not apply abroad.
+  for (const q of Object.keys(rec.stances || {})) {
+    if (raceCountry[rec.raceId] && QUESTION_SCOPE[q] === 'us') fail(w, `policy question "${q}" applies only to U.S. races`);
+  }
   if (!rec.publishedDate && !rec.sortDate) fail(w, 'undated records need an approximate sortDate for the timeline');
   checkDate(w, 'sortDate', rec.sortDate, false, true);
   checkLabeledRecord(w, rec);
