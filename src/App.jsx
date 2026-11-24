@@ -184,7 +184,7 @@ function App() {
     <div className="page-shell">
       <header className="topbar">
         <div>
-          <p className="eyebrow">Yale SOM AI Policy Dashboard</p>
+          <p className="eyebrow">Computer Science and Global Affairs (CPSC 6110/GLBL 6115) at Yale</p>
           <h1>Mapping the AI Policy Divide</h1>
           <p className="subtitle">Candidate positions, state legislation and party approaches to AI regulation</p>
         </div>
