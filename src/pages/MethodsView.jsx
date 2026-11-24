@@ -1,5 +1,12 @@
 import React from 'react';
-import { codebook, dimensions, resultLabel, domains, categoryLabel, partyLines } from '../lib/data';
+import { codebook, dimensions, resultLabel, domains, categoryLabel, partyLines, verification, CHECK_RESULTS, blocs, BLOC_IDS } from '../lib/data';
+
+// How many checks ended in each result.
+const checkCounts = () => {
+  const counts = {};
+  for (const c of Object.values(verification.checks)) counts[c.result] = (counts[c.result] || 0) + 1;
+  return counts;
+};
 
 const REPO_ISSUES = 'https://github.com/Abercrombie35/ai-policy-dashboard/issues';
 
@@ -46,6 +53,29 @@ function MethodsView() {
           <li>Records are versioned and never silently overwritten. Every change raises the version number and adds a dated note to the record's history.</li>
           <li>Sparse coverage is recorded as sparse rather than filled in by inference. It is itself evidence of how salient AI is in a race.</li>
         </ul>
+        <h4>How each claim was checked ({verification.checkedOn})</h4>
+        <p>{verification.method}</p>
+        <div className="table-wrap" role="region" aria-label="Check results" tabIndex={0}>
+          <table className="data-table">
+            <thead><tr><th scope="col">Result</th><th scope="col">Claims</th><th scope="col">Shown as</th><th scope="col">Meaning</th></tr></thead>
+            <tbody>
+              {Object.entries(CHECK_RESULTS).map(([id, r]) => (
+                <tr key={id}>
+                  <th scope="row">{r.label}</th>
+                  <td>{checkCounts()[id] || 0}</td>
+                  <td>{r.short ? <em>{r.short}</em> : 'Confirming reports listed under the sources'}</td>
+                  <td>{r.description}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Every box, record and piece of party-line evidence carries its result. Claims that could not be confirmed keep a
+          small note and Low confidence; hover over the note for what was and was not found. Corrections raise the record's
+          version with a dated note. The stance coding and party-line judgments are analysis, not facts, and were not part
+          of this check.
+        </p>
       </section>
 
       <section>

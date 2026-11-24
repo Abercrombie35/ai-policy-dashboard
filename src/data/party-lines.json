@@ -44,14 +44,19 @@
         "url": "https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws"
       },
       "publishedDate": "2025-12-11",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
-      "version": 1,
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (2 confirmed). All evidence confirmed; raised to Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -105,14 +110,19 @@
         "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/trump-administration-issues-ai-action-plan-and-ai-executive-orders"
       },
       "publishedDate": "2026-11-09",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (3 confirmed, 1 partly-confirmed). Not all evidence confirmed; stays Low confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -148,14 +158,19 @@
         "url": "https://builtin.com/articles/trump-lifts-ai-chip-ban-china-nvidia"
       },
       "publishedDate": "2026-01-15",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
-      "version": 1,
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (2 confirmed). All evidence confirmed; raised to Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -191,14 +206,19 @@
         "url": "https://www.fenwick.com/insights/publications/trump-administration-releases-sweeping-ai-action-plan"
       },
       "publishedDate": "2026-09",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (1 confirmed, 1 partly-confirmed). Not all evidence confirmed; stays Low confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -234,14 +254,19 @@
         "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
       },
       "publishedDate": "2025-12-11",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
-      "version": 1,
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (2 confirmed). All evidence confirmed; raised to Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -277,14 +302,19 @@
         "url": "https://www.shrm.org/topics-tools/news/trump-administration-unveils-sweeping-ai-action-plan-"
       },
       "publishedDate": "2025-07-23",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (1 partly-confirmed, 1 confirmed). Not all evidence confirmed; stays Low confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -320,14 +350,19 @@
         "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
       },
       "publishedDate": "2025-12-19",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (1 partly-confirmed, 1 confirmed). Not all evidence confirmed; stays Low confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -349,7 +384,7 @@
           }
         },
         {
-          "date": "2026-10",
+          "date": "2026-09-03",
           "track": "said",
           "summary": "Jeffries and other House Democratic leaders remain skeptical of a data center ban; Jeffries framed the issue around electricity bills.",
           "source": {
@@ -372,14 +407,19 @@
         "url": "https://www.nbcnews.com/politics/congress/senate-democrats-block-sen-husted-led-bill-data-centers-calling-toothl-rcna600269"
       },
       "publishedDate": "2026-11-06",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (1 confirmed, 1 corrected, 1 partly-confirmed). Not all evidence confirmed; stays Low confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -501,14 +541,19 @@
         "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
       },
       "publishedDate": "2025-05-19",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
-      "version": 1,
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (1 confirmed). All evidence confirmed; raised to Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -535,14 +580,19 @@
         "url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/"
       },
       "publishedDate": "2025-12-09",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Party-line stance built by the project (AI-model draft, not reviewed) from the evidence listed, which was gathered through web search summaries on 2026-11-12. Check each source."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Evidence checked 2026-11-24 against other published reports (1 partly-confirmed). Not all evidence confirmed; stays Low confidence. The stance itself remains an editorial judgment."
         }
       ]
     }

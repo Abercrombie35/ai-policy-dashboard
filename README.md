@@ -17,11 +17,15 @@ source-based summary, model-generated analysis, projection, editorial
 judgment), plus a source, publication date, last-verified date, confidence
 level, and version history. Records are never silently overwritten.
 
-IMPORTANT: Nothing in the dataset has been verified yet. The Michigan records
-came from the original prototype and are stored as "unverified drafts". They
-are hidden from the public view by default. Anyone can reveal them with the
-"Show unverified drafts" switch, and they are then clearly marked. Do not cite
-them as facts.
+IMPORTANT: On 2026-11-24 every claim was checked against other published
+reports by web search (see "Checking claims" in section 4). Confirmed claims
+are Medium confidence and list the reports that confirm them; claims that
+could not be confirmed, or were not yet checked, keep Low confidence and a
+small "Not independently verified" or "Partly verified" note. Nothing is High
+confidence: the source pages themselves could not be opened from the build
+environment. The Michigan Senate records from the original prototype are
+"unverified drafts", hidden by default (the "Show unverified drafts" switch
+reveals them). Do not cite them as facts.
 
 2. FEATURE STATUS
 =================
@@ -53,10 +57,23 @@ Built:
   (Becerra vs. Hilton). Connecticut and California had no U.S. Senate race in
   2026. California's data center and AI bills (SB 53, SB 243, the September
   2026 data center package and more) are on the Legislation page.
-- Home page: the U.S. map (60%) sits beside a Europe map (40%). France, the
-  next pilot (2027 presidential election), is highlighted; other countries with
-  2027 elections listed in the proposal are marked. Selecting a country opens
-  its tracked elections and, for France, the next steps.
+- Home page: the U.S. map (60%) sits beside a Europe map (40%). France is
+  highlighted; other countries with 2027 elections listed in the proposal are
+  marked. Selecting a country opens its tracked race and elections.
+- France, 2027 presidential election (#/country/FR/fr-president-2027): seven
+  likely candidates placed on a left / centre / right / far-right bloc;
+  their AI and data center statements and plans in the same two policy areas
+  and categories as the U.S. races; "where the candidates stand" on the policy
+  questions (there is no U.S.-style party line, so candidates are compared
+  with each other); French bills and plans plus the EU AI Act and Digital
+  Omnibus; election dates and context, sourced. Boxes abroad are tinted by
+  bloc (pink left, amber centre, teal right, brown far right), not by the U.S.
+  party colours.
+- Claim checks (src/data/verification.json): one result per claim (confirmed,
+  corrected, partly confirmed, not confirmed, not yet checked, or not a
+  checkable fact), with the confirming reports. Shown as a tiny note on boxes
+  and cards, "confirmed by" links under the numbered sources, a summary on the
+  Methodology page, and columns in the downloads.
 - Policy boxes: every bill, proposal and statement box shows the central point
   in large type (src/data/headlines.json holds short headlines for candidate
   records), who is behind it, a blue tint for Democrats and red for
@@ -111,7 +128,11 @@ Not built yet / needs people:
   found so far: there is no issue area for copyright or creator compensation.
 - Real legislation data. The one Texas bill (HB 149, TRAIGA) is an unverified
   example.
-- International records (France pilot), manifesto coding, and live polling or
+- Finishing the claim checks: 43 claims were not yet searched when the web
+  search limit for the 2026-11-24 round ran out (listed as "not yet checked"
+  in verification.json), and nothing is High confidence until primary
+  sources are read.
+- Manifesto coding for parliamentary elections abroad, and live polling or
   prediction-market data through a backend proxy.
 - The mock Kalshi odds, the made-up polling header, the numeric party-alignment
   scores (which had no disclosed method), and the placeholder photos were
@@ -144,9 +165,27 @@ All data lives in src/data/:
   policy questions (kept apart from the race files, which are not edited).
 - party-lines.json: the Republican and Democratic party lines, one per policy
   question, each with dated, sourced evidence.
-- legislation.json: state AI bills.
-- international.json: elections outside the U.S.
+- legislation.json: state and federal AI bills, plus French and EU laws
+  ("country": "FR" or "EU" instead of "state").
+- verification.json: the result of checking each claim against other
+  published reports, with those reports (kept apart from the records so the
+  race files are never edited).
+- international.json: elections outside the U.S. A race abroad is a race file
+  with "country" instead of "state", candidates with a "bloc", and sourced
+  "contextNotes".
 - us-states-geo.json: map shapes (generated; see tools/build-state-paths.mjs).
+
+Checking claims (verification.json):
+- Each claim (candidate record, bill, result, piece of party-line evidence,
+  race context note, election date) has a check with a result, a one-line
+  note, the reports that confirm it, and anything not confirmed. The
+  validator requires a check for every claim.
+- Confirmed or corrected: the record is Medium confidence, with a new version
+  and history note. Partly confirmed, not confirmed or not yet checked: Low
+  confidence, and the site shows a small note. "Not yet checked" means the
+  web search limit for that round ran out; re-run those first.
+- To raise a claim to High: open the primary source, confirm wording and
+  date, then set "confidence": "high" and follow the steps below.
 
 To verify a record:
 1. Find the primary source and check the wording, speaker, and date.

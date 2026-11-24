@@ -87,3 +87,14 @@
   .candidate-headers,
   .comparison-row { grid-template-columns: 1fr; }
 }
+
+/* Races abroad: many candidates, tinted by bloc. */
+.candidate-note { margin: 6px 0 0; font-size: 0.74rem; line-height: 1.4; opacity: 0.85; }
+.no-record-note { margin: 8px 0 0; font-size: 0.78rem; font-style: italic; opacity: 0.8; }
+.avatar.bloc-left, .party-badge.bloc-left { background: #fbedf3; color: #8c2a55; }
+.avatar.bloc-centre, .party-badge.bloc-centre { background: #fbf3df; color: #7c5512; }
+.avatar.bloc-right, .party-badge.bloc-right { background: #e6f3f1; color: #22625c; }
+.avatar.bloc-far-right, .party-badge.bloc-far-right { background: #efe8e1; color: #5a4230; }
+.bloc-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 10px 0 0; font-size: 0.8rem; }
+.race-context-notes ul { margin: 12px 0 0; padding-left: 18px; line-height: 1.55; }
+.race-context-notes .source-list { font-size: 0.78rem; }

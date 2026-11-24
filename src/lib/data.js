@@ -10,6 +10,7 @@ import partyLinesData from '../data/party-lines.json';
 import itemCategoriesData from '../data/item-categories.json';
 import europeGeoData from '../data/europe-geo.json';
 import headlinesData from '../data/headlines.json';
+import verificationData from '../data/verification.json';
 
 const raceModules = import.meta.glob('../data/races/*.json', { eager: true, import: 'default' });
 
@@ -112,6 +113,25 @@ export const stanceLabel = (questionId, optionId) =>
 export const headlineOf = (record) => headlinesData.headlines[record.id] || record.title || record.text;
 
 export const isVerified = (record) => record.confidence !== 'unverified';
+
+// Checks of each claim against other published reports (verification.json).
+// Keys are record ids; party-line evidence uses "<position id>#<index>".
+export const verification = verificationData;
+export const CHECK_RESULTS = {
+  confirmed: { label: 'Confirmed', short: null, description: 'Confirmed by other published reports.' },
+  corrected: { label: 'Corrected', short: 'Corrected after checking', description: 'A detail was wrong and has been corrected from other published reports.' },
+  'partly-confirmed': { label: 'Partly confirmed', short: 'Partly verified', description: 'The main point is confirmed by other reports; some details are not.' },
+  'not-confirmed': { label: 'Not confirmed', short: 'Not independently verified', description: 'No other published report confirming this was found. Treat with caution.' },
+  contradicted: { label: 'Contradicted', short: 'Contradicted by other reports', description: 'Other published reports contradict this. It is an early draft that is kept unchanged; see the note for what they say.' },
+  'not-checked': { label: 'Not yet checked', short: 'Not independently verified', description: 'Not yet checked against other published reports (the search limit for this round of checks was reached).' },
+  'not-checkable': { label: 'Not a checkable fact', short: 'Opinion or projection, not verifiable', description: 'An opinion, judgment or projection rather than a fact, so it cannot be verified.' },
+};
+export const checkOf = (id) => verificationData.checks[id] || null;
+// Counts of factual claims checked and confirmed (or corrected), for the home page.
+export function checkSummary() {
+  const all = Object.values(verificationData.checks).filter((c) => c.result !== 'not-checkable');
+  return { total: all.length, confirmed: all.filter((c) => c.result === 'confirmed' || c.result === 'corrected').length };
+}
 export const filterDrafts = (records, includeDrafts) => (includeDrafts ? records : records.filter(isVerified));
 
 // "Said" (rhetoric, stated principles) vs "proposed" (concrete proposals and

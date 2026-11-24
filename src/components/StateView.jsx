@@ -6,11 +6,11 @@ import { racesForState, stateName, isVerified, itemsForRace } from '../lib/data'
 import { navigate } from '../lib/router';
 import '../styles/StateView.css';
 
-function RaceCard({ race }) {
+export function RaceCard({ race }) {
   const records = [...itemsForRace(race), ...(race.contextSignals || [])];
   const verified = records.filter(isVerified).length;
   return (
-    <button type="button" className="race-card" onClick={() => navigate(`/state/${race.state}/${race.id}`)}>
+    <button type="button" className="race-card" onClick={() => navigate(race.country ? `/country/${race.country}/${race.id}` : `/state/${race.state}/${race.id}`)}>
       <div className="race-type">{race.office}</div>
       <div className="race-title">{race.cycle} election · {race.electionDate}</div>
       <div className="candidate-previews">

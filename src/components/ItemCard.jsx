@@ -1,6 +1,7 @@
 import React from 'react';
 import { labelInfo, confidenceLevels, dimensions, categoryLabel, isVerified, trackOf, domainsOf, domains, stanceLabel, questionById, categoryById, categoriesOf } from '../lib/data';
 import { TrackTag } from './Analysis';
+import { CheckNote } from './PolicyBox';
 import { useDrafts } from '../lib/drafts';
 import '../styles/ItemCard.css';
 
@@ -104,6 +105,7 @@ function ItemCard({ item }) {
   return (
     <article className={`item-card ${isVerified(item) ? '' : 'draft'}`}>
       <LabelBadges record={item} />
+      <CheckNote id={item.id} className="check-inline" />
       <ScopeTags record={item} />
       {item.labelType === 'direct-quote' ? (
         <blockquote>{item.text}</blockquote>

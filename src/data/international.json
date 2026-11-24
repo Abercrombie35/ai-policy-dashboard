@@ -11,8 +11,8 @@
       "unit": "candidate",
       "plan": "Pilot (first international case)",
       "euAiAct": true,
-      "dateStatus": "to-verify",
-      "coverage": "not-started"
+      "dateStatus": "verified",
+      "coverage": "in-progress"
     },
     {
       "id": "fi-2027-parliamentary",
@@ -69,12 +69,12 @@
   ],
   "nextSteps": {
     "countryCode": "FR",
-    "title": "Next: France (2027 presidential election)",
+    "title": "France (2027 presidential election): what comes next",
     "steps": [
-      "Build the candidate list once candidacies are confirmed, and code each candidate's statements and proposals on AI and data centers, from the original French with translations noted.",
-      "Set the comparison baseline: the EU AI Act and France's national implementation, since EU member states regulate within that framework rather than deciding whether to regulate.",
-      "Track French data center policy (grid connections, energy and water) alongside AI rules, using the same two policy areas and categories as the U.S. races.",
-      "Record the result for each round (dates to verify: April 18 and May 2, 2027)."
+      "Confirm the candidate list once the Constitutional Council validates sponsorships (early 2027), and add or remove candidates.",
+      "Code each candidate's programme and statements on AI and data centers from the original French, with translations noted.",
+      "Track the data center siting bill in the National Assembly and the government's simplification bill, and the EU AI Act deadlines that fall during the campaign.",
+      "Record the result of each round (April 18 and May 2, 2027) with the separate election-result label."
     ]
   }
 }

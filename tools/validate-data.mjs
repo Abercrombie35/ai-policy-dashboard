@@ -312,6 +312,55 @@ read('international.json').elections.forEach((e, i) => {
   if (!e.country || !e.type) fail(w, 'needs country and type');
 });
 
+// Checks against other published reports (verification.json). Every
+// researched record, bill, result and piece of party-line evidence carries a
+// check; confirmed claims are Medium confidence (never High: the source pages
+// were not read), and claims that could not be confirmed stay Low.
+const verification = read('verification.json');
+const CHECK_RESULTS = new Set(['confirmed', 'corrected', 'partly-confirmed', 'contradicted', 'not-confirmed', 'not-checked', 'not-checkable']);
+// Records that can be edited are corrected rather than left contradicted.
+const RACE_FILE_ONLY = new Set(['contradicted']);
+const checkable = new Map();
+for (const rec of Object.values(raceItemsById)) checkable.set(rec.id, rec);
+for (const b of legislation.bills) checkable.set(b.id, b);
+for (const r of results) checkable.set(r.id, r);
+const extraIds = new Set();
+for (const pos of partyLines.positions) (pos.evidence || []).forEach((_, j) => extraIds.add(`${pos.id}#${j}`));
+for (const item of Object.values(raceItemIndex)) extraIds.add(item.id);
+for (const file of raceFiles) {
+  const race = read(join('races', file));
+  (race.contextNotes || []).forEach((_, j) => extraIds.add(`${race.id}#context${j}`));
+  if (race.country) extraIds.add(`${race.id}#candidates`);
+}
+read('international.json').elections.forEach((e) => extraIds.add(`international#${e.id}`));
+checkDate('verification.json', 'checkedOn', verification.checkedOn, true);
+for (const [id, c] of Object.entries(verification.checks || {})) {
+  const w = `verification.json ${id}`;
+  if (!checkable.has(id) && !extraIds.has(id)) fail(w, 'no record has this id');
+  if (!CHECK_RESULTS.has(c.result)) fail(w, `unknown result "${c.result}"`);
+  if (!c.note) fail(w, 'needs a note saying what was checked and found');
+  checkDate(w, 'checkedOn', c.checkedOn, true);
+  if (['confirmed', 'corrected', 'partly-confirmed'].includes(c.result) && !(c.sources || []).some((s) => s.url)) {
+    fail(w, 'a confirmed, corrected or partly confirmed claim needs the reports that confirm it');
+  }
+  (c.sources || []).forEach((s) => {
+    if (!s.url || !s.title) fail(w, 'each source needs a title and url');
+  });
+  const rec = checkable.get(id);
+  if (rec && RACE_FILE_ONLY.has(c.result)) fail(w, 'correct the record instead of leaving it contradicted');
+  if (rec) {
+    const confirmed = c.result === 'confirmed' || c.result === 'corrected';
+    if (confirmed && !['medium', 'high'].includes(rec.confidence)) fail(w, 'a confirmed claim should be Medium (or High) confidence');
+    if (!confirmed && ['medium', 'high'].includes(rec.confidence) && rec.labelType !== 'election-result') {
+      fail(w, `a claim that is ${c.result} should not be ${rec.confidence} confidence`);
+    }
+    if (c.result !== 'not-checked' && rec.lastVerified && rec.lastVerified < c.checkedOn) fail(w, 'lastVerified on the record is older than the check');
+  }
+}
+for (const id of [...checkable.keys(), ...[...extraIds].filter((x) => x.includes('#') && !x.startsWith('international#'))]) {
+  if (!verification.checks?.[id]) fail(`verification.json`, `no check recorded for ${id}`);
+}
+
 if (errors.length) {
   console.error(`Data validation failed with ${errors.length} problem(s):\n- ${errors.join('\n- ')}`);
   process.exit(1);

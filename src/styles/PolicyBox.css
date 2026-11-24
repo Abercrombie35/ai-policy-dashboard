@@ -59,3 +59,33 @@
 .bloc-swatch.centre { background: rgba(245, 158, 11, 0.25); border-color: #f5a524; }
 .bloc-swatch.right { background: rgba(20, 184, 166, 0.25); border-color: #14b8a6; }
 .bloc-swatch.far-right { background: rgba(146, 102, 64, 0.35); border-color: #a87a4f; }
+
+/* Bottom line of a box: the tiny check note (left) and the date (right). */
+.policy-foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 2px 0 -15px;
+}
+.policy-foot .policy-date { position: static; margin: 0 -4px 0 auto; text-align: right; }
+/* Tiny note on claims that could not be fully confirmed. */
+.policy-check {
+  font-size: 0.62rem;
+  font-style: italic;
+  color: #b9a06a;
+  cursor: help;
+}
+.check-inline { font-size: 0.66rem; font-style: italic; color: #b9a06a; cursor: help; margin-left: 6px; }
+.page-shell .policy-check,
+.page-shell .check-inline { color: var(--research-warning); }
+
+/* Bloc tints on the light research theme. */
+.page-shell .policy-box.tint-bloc-left { background: #fbedf3; border-left-color: #b4386e; }
+.page-shell .policy-box.tint-bloc-centre { background: #fbf3df; border-left-color: #a8741a; }
+.page-shell .policy-box.tint-bloc-right { background: #e6f3f1; border-left-color: #2f7f78; }
+.page-shell .policy-box.tint-bloc-far-right { background: #efe8e1; border-left-color: #6d5038; }
+.page-shell .bloc-swatch.left { background: #fbedf3; border-color: #b4386e; }
+.page-shell .bloc-swatch.centre { background: #fbf3df; border-color: #a8741a; }
+.page-shell .bloc-swatch.right { background: #e6f3f1; border-color: #2f7f78; }
+.page-shell .bloc-swatch.far-right { background: #efe8e1; border-color: #6d5038; }

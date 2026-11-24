@@ -1,19 +1,20 @@
 import React from 'react';
-import { europeGeo, electionsForCountry, internationalNextSteps } from '../lib/data';
+import { europeGeo, electionsForCountry, internationalNextSteps, racesForCountry } from '../lib/data';
 import '../styles/USMap.css';
 
-// Europe map for the international track. France is the next pilot; other
-// countries with 2027 elections listed in the proposal are marked as planned.
+// Europe map for the international track. France (the pilot) has a tracked
+// race; other countries with 2027 elections listed in the proposal are marked
+// as planned.
 const PILOT = internationalNextSteps?.countryCode || 'FR';
 
 function statusOf(code, country) {
-  if (code === PILOT) return 'pilot';
+  if (code === PILOT || racesForCountry(code).length) return 'pilot';
   if (electionsForCountry(code).length) return 'planned';
   return country.eu ? 'eu' : 'other';
 }
 
 const STATUS_TEXT = {
-  pilot: 'next to build (pilot)',
+  pilot: 'tracked race (2027 presidential election)',
   planned: '2027 election listed',
   eu: 'EU member, no data yet',
   other: 'no data yet',
@@ -58,7 +59,7 @@ function EuropeMap({ selectedCountry, onCountryClick }) {
           ))}
       </svg>
       <ul className="map-legend" aria-label="Europe map legend">
-        <li><span className="swatch country-pilot" /> Next to build: France</li>
+        <li><span className="swatch country-pilot" /> Tracked race: France</li>
         <li><span className="swatch country-planned" /> 2027 election listed</li>
         <li><span className="swatch country-eu" /> EU member</li>
         <li><span className="swatch no-data" /> Other</li>

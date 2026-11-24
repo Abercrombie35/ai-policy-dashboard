@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import ErrorBoundary from './ErrorBoundary';
-import { countryName, europeGeo, electionsForCountry, internationalNextSteps, internationalNote } from '../lib/data';
+import { countryName, europeGeo, electionsForCountry, internationalNextSteps, internationalNote, racesForCountry } from '../lib/data';
+import { RaceCard } from './StateView';
+import { CheckNote } from './PolicyBox';
+import { checkOf } from '../lib/data';
 import '../styles/StateModal.css';
 import '../styles/StateView.css';
 
@@ -11,6 +14,7 @@ function CountryView({ code, onClose }) {
   const country = europeGeo.countries[code];
   const elections = electionsForCountry(code);
   const isPilot = internationalNextSteps?.countryCode === code;
+  const tracked = racesForCountry(code);
   return (
     <div className="state-view">
       <button type="button" className="back-button" onClick={onClose}>← Back to map</button>
@@ -19,8 +23,17 @@ function CountryView({ code, onClose }) {
         <p className="race-source">{country?.eu ? 'EU member state: national AI policy sits within the EU AI Act.' : 'Not an EU member state.'}</p>
       </div>
 
+      {tracked.length > 0 && (
+        <section className="state-section">
+          <h3>Tracked race</h3>
+          <div className="races-grid">
+            {tracked.map((race) => <RaceCard key={race.id} race={race} />)}
+          </div>
+        </section>
+      )}
+
       <section className="state-section">
-        <h3>Elections tracked</h3>
+        <h3>Elections listed</h3>
         {elections.length ? (
           <div className="table-wrap">
             <table className="data-table">
@@ -29,7 +42,10 @@ function CountryView({ code, onClose }) {
                 {elections.map((e) => (
                   <tr key={e.id}>
                     <th scope="row">{e.type}</th>
-                    <td>{e.dateText}{e.dateText.includes(String(e.year)) ? '' : `, ${e.year}`} <span className="badge confidence-unverified small">To verify</span></td>
+                    <td>
+                      {e.dateText}{e.dateText.includes(String(e.year)) ? '' : `, ${e.year}`}{' '}
+                      {checkOf(`international#${e.id}`) ? <CheckNote id={`international#${e.id}`} className="check-inline" /> : <span className="badge confidence-unverified small">To verify</span>}
+                    </td>
                     <td>{UNIT[e.unit]}</td>
                     <td>{e.plan}</td>
                   </tr>

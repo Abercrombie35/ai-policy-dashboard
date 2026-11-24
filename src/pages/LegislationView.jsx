@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { PolicyBox, SourceList, makeSourceIndex } from '../components/PolicyBox';
 import { HiddenDraftsNotice } from '../components/ItemCard';
-import { bills, billStatuses, filterDrafts, stateName, legislationNote, domainsOf, domains, DOMAIN_IDS, categoriesInDomain, primaryCategory, categoriesOf, billParty } from '../lib/data';
+import { bills, billStatuses, filterDrafts, jurisdictionKey, jurisdictionLabel, blocOf, legislationNote, domainsOf, domains, DOMAIN_IDS, categoriesInDomain, primaryCategory, categoriesOf, billParty } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 
 function LegislationView() {
@@ -11,10 +11,17 @@ function LegislationView() {
   const [domain, setDomain] = useState('all');
   const [category, setCategory] = useState('all');
 
-  const states = useMemo(() => [...new Set(bills.map((b) => b.state))].sort((a, b) => stateName(a).localeCompare(stateName(b))), []);
+  // U.S. jurisdictions first (federal, then states), then France and the EU.
+  const states = useMemo(
+    () =>
+      [...new Set(bills.map(jurisdictionKey))].sort(
+        (a, b) => Number(a.startsWith('intl-')) - Number(b.startsWith('intl-')) || (a === 'US' ? -1 : b === 'US' ? 1 : jurisdictionLabel(a).localeCompare(jurisdictionLabel(b))),
+      ),
+    [],
+  );
   const inScope = bills.filter(
     (b) =>
-      (state === 'all' || b.state === state) &&
+      (state === 'all' || jurisdictionKey(b) === state) &&
       (status === 'all' || b.status === status) &&
       (domain === 'all' || domainsOf(b).includes(domain)) &&
       (category === 'all' || categoriesOf(b).includes(category)),
@@ -27,7 +34,8 @@ function LegislationView() {
       <header className="page-head">
         <h2>AI legislation and proposed moratoriums</h2>
         <p>
-          Federal and state AI bills, including proposed data center moratoriums, with sponsors, party, topic and status,
+          Federal and state AI bills, including proposed data center moratoriums, plus French and EU laws for the France
+          pilot, with sponsors, party, topic and status,
           so that what legislators do can be compared with what candidates say (research question 3). Every bill links to
           its source; most still need checking.
         </p>
@@ -56,8 +64,8 @@ function LegislationView() {
         <label>
           Jurisdiction
           <select value={state} onChange={(e) => setState(e.target.value)}>
-            <option value="all">Federal and all states</option>
-            {states.map((s) => <option key={s} value={s}>{stateName(s)}</option>)}
+            <option value="all">All (U.S., France and EU)</option>
+            {states.map((s) => <option key={s} value={s}>{jurisdictionLabel(s)}</option>)}
           </select>
         </label>
         <label>
@@ -93,6 +101,7 @@ function LegislationView() {
                         <PolicyBox
                           record={bill}
                           party={billParty(bill)}
+                          bloc={blocOf(bill)}
                           refNum={index.numberOf(bill)}
                           refPrefix={refPrefix}
                           details={[bill.summary, bill.statusNote].filter(Boolean).join(' ')}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { headlineOf, placeOf, billStatuses, confidenceLevels, trackOf } from '../lib/data';
+import { headlineOf, placeOf, billStatuses, trackOf, checkOf, CHECK_RESULTS } from '../lib/data';
 import '../styles/PolicyBox.css';
 
 const tintOf = (party) => {
@@ -39,18 +39,48 @@ function metaOf(record) {
   return record.publishedDate || record.dateNote || '';
 }
 
-// Numbers sources in order of first use; boxes that share a source share its number.
+// The tiny note on a claim that could not be fully confirmed (or was
+// corrected); nothing for confirmed claims.
+export function CheckNote({ id, className = 'policy-check' }) {
+  const check = checkOf(id);
+  const info = check && CHECK_RESULTS[check.result];
+  if (!info?.short) return null;
+  const detail = [check.note, check.unconfirmed?.length ? `Not confirmed: ${check.unconfirmed.join('; ')}.` : '']
+    .filter(Boolean)
+    .join(' ');
+  return (
+    <span className={`${className} check-${check.result}`} title={detail || info.description}>
+      {info.short}
+    </span>
+  );
+}
+
+// Numbers sources in order of first use; boxes that share a source share its
+// number. Each source also lists the other reports that confirmed the claims
+// citing it.
 export function makeSourceIndex(records) {
   const byUrl = new Map();
   const list = [];
   for (const r of records) {
     const url = r.source?.url;
-    if (!url || byUrl.has(url)) continue;
-    byUrl.set(url, list.length + 1);
-    list.push({ n: list.length + 1, source: r.source, confidence: r.confidence });
+    if (!url) continue;
+    if (!byUrl.has(url)) {
+      byUrl.set(url, list.length + 1);
+      list.push({ n: list.length + 1, source: r.source, also: [] });
+    }
+    const entry = list[byUrl.get(url) - 1];
+    const check = checkOf(r.id);
+    if (check && ['confirmed', 'corrected', 'partly-confirmed'].includes(check.result)) {
+      for (const s of check.sources || []) {
+        if (s.url !== url && !entry.also.some((a) => a.url === s.url) && entry.also.length < 3) entry.also.push(s);
+      }
+    }
   }
   return { numberOf: (r) => byUrl.get(r.source?.url), list };
 }
+
+// "Outlet: headline" -> "Outlet", for the short confirming-source links.
+const outletOf = (s) => (s.title || s.url).split(':')[0].trim();
 
 // A policy box: the central point in large type, who is behind it (tinted by
 // party in the U.S., by bloc abroad), a numbered source reference, and the
@@ -76,7 +106,10 @@ export function PolicyBox({ record, party, bloc, race, candidate, refNum, refPre
           <p>{details}</p>
         </details>
       )}
-      <p className="policy-date">{metaOf(record)}</p>
+      <div className="policy-foot">
+        <CheckNote id={record.id} />
+        <p className="policy-date">{metaOf(record)}</p>
+      </div>
     </article>
   );
 }
@@ -86,12 +119,20 @@ export function SourceList({ index, refPrefix }) {
   if (index.list.length === 0) return null;
   return (
     <ol className="source-list" aria-label="Sources">
-      {index.list.map(({ n, source, confidence }) => (
+      {index.list.map(({ n, source, also }) => (
         <li key={n} id={`${refPrefix}-${n}`}>
           <span className="src-n">[{n}]</span>{' '}
           <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title || source.url}</a>
-          {confidence !== 'high' && (
-            <span className="src-check"> · {confidenceLevels[confidence]?.label} confidence, to verify</span>
+          {also.length > 0 && (
+            <span className="src-check">
+              {' '}· confirmed by{' '}
+              {also.map((a, i) => (
+                <React.Fragment key={a.url}>
+                  {i > 0 && ', '}
+                  <a href={a.url} target="_blank" rel="noopener noreferrer" title={a.title}>{outletOf(a)}</a>
+                </React.Fragment>
+              ))}
+            </span>
           )}
         </li>
       ))}
