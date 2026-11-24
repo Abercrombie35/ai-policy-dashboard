@@ -10,6 +10,17 @@
 .page-shell .group-head.said { color: var(--research-dem) !important; }
 .page-shell .group-head.proposed { color: #6c4f80 !important; }
 .page-shell .category-breakdown th { overflow-wrap: normal; }
+.race-page .race-view { padding: 12px 0; min-width: 0; }
+.race-page :is(.category-row > h5, .category-group h5) { color: var(--research-ink) !important; }
+.race-page :is(.category-desc, .track-group h6, .proposal-also) { color: var(--research-muted); }
+.race-page .category-chip { color: var(--research-ink); background: var(--research-soft); border-color: var(--research-rule); }
+.race-page .deviation-matrix { min-width: 720px; }
+@media (max-width: 767px) {
+  .race-page :is(.candidate-headers, .comparison-row, .signals-grid) { grid-template-columns: minmax(0, 1fr); }
+  .race-page :is(.candidate-headers, .tabs-content, .race-deviation, .context-signals, .election-result) { padding: 16px; }
+  .race-page .tabs-header { padding: 0 8px; }
+  .race-page .tab-button { flex: 1 1 42%; padding: 12px 8px; font-size: .8rem; }
+}
 .page-shell {
   color: var(--research-ink);
 }
@@ -239,13 +250,13 @@
   padding: clamp(18px, 3vw, 32px);
   overflow-wrap: anywhere;
 }
-.state-modal-content .back-button {
+:is(.state-modal-content, .race-page) .back-button {
   color: var(--research-dem);
   min-height: 44px;
   padding-right: 48px;
 }
-.state-modal-content .back-button:hover { color: var(--research-ink); }
-.state-modal-content :is(.state-section h3, .section-title, .race-type) {
+:is(.state-modal-content, .race-page) .back-button:hover { color: var(--research-ink); }
+:is(.state-modal-content, .race-page) :is(.state-section h3, .section-title, .race-type) {
   color: var(--research-muted);
 }
 .state-modal-content .races-grid {
@@ -260,19 +271,19 @@
 }
 .state-modal-content .race-card:hover { border-color: #6b8e87; }
 .state-modal-content .race-title { color: var(--research-ink); }
-.state-modal-content :is(.candidate-headers, .tabs-header) {
+:is(.state-modal-content, .race-page) :is(.candidate-headers, .tabs-header) {
   border-color: var(--research-rule);
 }
-.state-modal-content .candidate-headers { background: var(--research-soft); }
-.state-modal-content :is(.avatar, .party-badge, .candidate-previews .preview) {
+:is(.state-modal-content, .race-page) .candidate-headers { background: var(--research-soft); }
+:is(.state-modal-content, .race-page) :is(.avatar, .party-badge, .candidate-previews .preview) {
   background: #e9ece6;
   color: #4c5c55;
 }
-.state-modal-content :is(.avatar, .party-badge, .preview).democratic {
+:is(.state-modal-content, .race-page) :is(.avatar, .party-badge, .preview).democratic {
   background: var(--research-dem-tint);
   color: var(--research-dem);
 }
-.state-modal-content :is(.avatar, .party-badge, .preview).republican {
+:is(.state-modal-content, .race-page) :is(.avatar, .party-badge, .preview).republican {
   background: var(--research-rep-tint);
   color: var(--research-rep);
 }
@@ -282,48 +293,48 @@
 .page-shell :is(.party-tag, .cand-party).republican {
   color: var(--research-rep);
 }
-.state-modal-content .tab-button {
+:is(.state-modal-content, .race-page) .tab-button {
   color: var(--research-muted);
   min-height: 44px;
 }
-.state-modal-content .tab-button:hover {
+:is(.state-modal-content, .race-page) .tab-button:hover {
   color: var(--research-ink);
   background: var(--research-hover);
 }
-.state-modal-content .tab-button.active {
+:is(.state-modal-content, .race-page) .tab-button.active {
   background: var(--research-soft);
   border-bottom-color: var(--research-ink);
   color: var(--research-ink);
 }
-.state-modal-content .tab-button:focus-visible {
+:is(.state-modal-content, .race-page) .tab-button:focus-visible {
   outline-offset: -4px;
 }
-.state-modal-content .research-details {
+:is(.state-modal-content, .race-page) .research-details {
   color: var(--research-ink);
   background: var(--research-soft);
 }
-.state-modal-content .race-deviation .detail-button {
+:is(.state-modal-content, .race-page) .race-deviation .detail-button {
   color: var(--research-ink);
   background: transparent;
   border-color: #aebfba;
 }
-.state-modal-content .race-deviation .detail-button:hover {
+:is(.state-modal-content, .race-page) .race-deviation .detail-button:hover {
   background: var(--research-hover);
 }
-.state-modal-content .race-deviation .detail-button[aria-expanded="true"] {
+:is(.state-modal-content, .race-page) .race-deviation .detail-button[aria-expanded="true"] {
   color: var(--research-paper);
   background: var(--research-ink);
   border-color: var(--research-ink);
 }
-.state-modal-content .race-deviation .publication-date {
+:is(.state-modal-content, .race-page) .race-deviation .publication-date {
   color: var(--research-muted);
 }
-.state-modal-content .domain-heading {
+:is(.state-modal-content, .race-page) .domain-heading {
   color: var(--research-ink);
   border-color: #6b8e87;
 }
-.state-modal-content .domain-heading.ai-general { border-color: #94819a; }
-.state-modal-content .deviation-timeline > li {
+:is(.state-modal-content, .race-page) .domain-heading.ai-general { border-color: #94819a; }
+:is(.state-modal-content, .race-page) .deviation-timeline > li {
   display: block;
   background: var(--research-card);
   border-color: var(--research-rule);
@@ -333,17 +344,17 @@
 .page-shell .deviation-timeline > li.tl-deviates { border-left-color: #aa8248; }
 .page-shell .deviation-timeline > li.tl-aligned { border-left-color: #66886b; }
 .page-shell .deviation-matrix td.cell-deviates { background: #f7eee1; }
-.state-modal-content .race-data-notice {
+:is(.state-modal-content, .race-page) .race-data-notice {
   background: var(--research-soft);
   line-height: 1.65;
 }
-.state-modal-content .race-data-notice p { color: var(--research-ink); }
-.state-modal-content .race-data-notice strong { color: #35666a; }
-.state-modal-content :is(.polling-notice.stale, .polling-notice.unavailable) {
+:is(.state-modal-content, .race-page) .race-data-notice p { color: var(--research-ink); }
+:is(.state-modal-content, .race-page) .race-data-notice strong { color: #35666a; }
+:is(.state-modal-content, .race-page) :is(.polling-notice.stale, .polling-notice.unavailable) {
   background: var(--research-warning-tint);
   border-color: var(--research-warning-rule);
 }
-.state-modal-content :is(.polling-notice.stale, .polling-notice.unavailable) strong {
+:is(.state-modal-content, .race-page) :is(.polling-notice.stale, .polling-notice.unavailable) strong {
   color: var(--research-warning);
 }
 .page-shell .election-result.empty {
@@ -352,29 +363,29 @@
 }
 .page-shell :is(.winner-mark, .result-summary) { color: var(--research-success); }
 .page-shell .result-summary.pending { color: var(--research-muted); }
-.state-modal-content .meter-track {
+:is(.state-modal-content, .race-page) .meter-track {
   background: #d6dfdf;
   border-radius: 2px;
 }
-.state-modal-content .meter-fill { border-radius: 2px; }
-.state-modal-content .meter-fill.democratic { background: var(--research-dem); }
-.state-modal-content .meter-fill.republican { background: var(--research-rep); }
-.state-modal-content .meter-fill.other { background: #738780; }
-.state-modal-content .meter-figure { color: var(--research-muted); }
+:is(.state-modal-content, .race-page) .meter-fill { border-radius: 2px; }
+:is(.state-modal-content, .race-page) .meter-fill.democratic { background: var(--research-dem); }
+:is(.state-modal-content, .race-page) .meter-fill.republican { background: var(--research-rep); }
+:is(.state-modal-content, .race-page) .meter-fill.other { background: #738780; }
+:is(.state-modal-content, .race-page) .meter-figure { color: var(--research-muted); }
 
 /* Match the existing homepage proposal cards without a second dark wrapper. */
-.state-modal-content .proposals-panel {
+:is(.state-modal-content, .race-page) .proposals-panel {
   padding: 0;
   background: transparent;
   border: 0;
   margin-top: 32px;
 }
-.state-modal-content .proposals-panel > h3 {
+:is(.state-modal-content, .race-page) .proposals-panel > h3 {
   font-family: 'Instrument Serif', Georgia, serif;
   font-weight: 400;
   font-size: 2rem;
 }
-.state-modal-content .research-proposals .proposal {
+:is(.state-modal-content, .race-page) .research-proposals .proposal {
   background: transparent;
   border: 0;
   border-top: 1px solid var(--research-rule);
@@ -405,14 +416,14 @@
   color: var(--research-muted);
   background: var(--research-soft);
 }
-.state-modal-content :is(.result-table, .deviation-matrix) :is(th, td) {
+:is(.state-modal-content, .race-page) :is(.result-table, .deviation-matrix) :is(th, td) {
   padding: 12px;
 }
-.state-modal-content .deviation-matrix tbody th {
+:is(.state-modal-content, .race-page) .deviation-matrix tbody th {
   display: table-cell;
   min-width: 170px;
 }
-.state-modal-content .deviation-matrix tbody th > span {
+:is(.state-modal-content, .race-page) .deviation-matrix tbody th > span {
   display: block;
   margin-bottom: 5px;
 }
@@ -705,7 +716,7 @@
 }
 .research-home .category-group h5 { color: var(--research-ink) !important; }
 .research-home .category-desc { color: var(--research-muted); line-height: 1.55; }
-.page-shell :is(.research-home, .state-modal-content) .policy-box {
+.page-shell .policy-box {
   padding: 14px 14px 22px;
   border: 1px solid var(--research-rule);
   border-left-width: 4px;
@@ -713,34 +724,34 @@
   background: var(--research-card);
   color: var(--research-ink);
 }
-.page-shell :is(.research-home, .state-modal-content) .policy-box.tint-democratic {
+.page-shell .policy-box.tint-democratic {
   background: var(--research-dem-tint);
   border-left-color: var(--research-dem);
 }
-.page-shell :is(.research-home, .state-modal-content) .policy-box.tint-republican {
+.page-shell .policy-box.tint-republican {
   background: var(--research-rep-tint);
   border-left-color: var(--research-rep);
 }
-.page-shell :is(.research-home, .state-modal-content) .policy-box.tint-bipartisan {
+.page-shell .policy-box.tint-bipartisan {
   background: #f0ebf2;
   border-left-color: #75617b;
 }
-.page-shell :is(.research-home, .state-modal-content) .policy-box.tint-other { border-left-color: #71847b; }
-.page-shell :is(.research-home, .state-modal-content) .policy-headline { color: var(--research-ink); line-height: 1.5; overflow-wrap: anywhere; }
-.page-shell :is(.research-home, .state-modal-content) .policy-ref a { color: var(--research-dem); }
-.page-shell :is(.research-home, .state-modal-content) .policy-who { color: #465e62; font-size: .8rem; overflow-wrap: anywhere; }
-.page-shell :is(.research-home, .state-modal-content) .policy-date { color: var(--research-muted); }
-.page-shell :is(.research-home, .state-modal-content) .policy-details summary { color: #405e61; }
-.page-shell :is(.research-home, .state-modal-content) .policy-details p { color: var(--research-ink); line-height: 1.6; }
-.page-shell :is(.research-home, .state-modal-content) .source-list {
+.page-shell .policy-box.tint-other { border-left-color: #71847b; }
+.page-shell .policy-headline { color: var(--research-ink); line-height: 1.5; overflow-wrap: anywhere; }
+.page-shell .policy-ref a { color: var(--research-dem); }
+.page-shell .policy-who { color: #465e62; font-size: .8rem; overflow-wrap: anywhere; }
+.page-shell .policy-date { color: var(--research-muted); }
+.page-shell .policy-details summary { color: #405e61; }
+.page-shell .policy-details p { color: var(--research-ink); line-height: 1.6; }
+.page-shell .source-list {
   border-color: var(--research-rule);
   color: var(--research-muted);
   overflow-wrap: anywhere;
 }
-.page-shell :is(.research-home, .state-modal-content) .source-list a { color: var(--research-dem); }
-.page-shell :is(.research-home, .state-modal-content) .source-list .src-n { color: var(--research-ink); }
-.page-shell :is(.research-home, .state-modal-content) .source-list .src-check { color: var(--research-muted); }
-.page-shell :is(.research-home, .state-modal-content) .source-list li:target { background: var(--research-warning-tint); }
+.page-shell .source-list a { color: var(--research-dem); }
+.page-shell .source-list .src-n { color: var(--research-ink); }
+.page-shell .source-list .src-check { color: var(--research-muted); }
+.page-shell .source-list li:target { background: var(--research-warning-tint); }
 .research-home .empty-note { color: var(--research-muted); }
 
 /* Keep party comparisons identifiable without changing party semantics. */
