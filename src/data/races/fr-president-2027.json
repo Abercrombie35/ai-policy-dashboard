@@ -10,14 +10,26 @@
     "type": "open",
     "note": "President Emmanuel Macron cannot run for a third consecutive term."
   },
-  "nomineesSource": "Candidacies are not final: the official list follows the Constitutional Council's validation of 500 sponsorships in early 2027. Listed here: names leading the polls and in coverage of AI policy, as of Nov. 2026.",
+  "nomineesSource": "Candidacies are not final: the official list follows the Constitutional Council's validation of 500 sponsorships in early 2027. Listed here: declared candidates leading the polls and in coverage of AI policy, as of Nov. 2026, plus Jordan Bardella as the RN's alternate.",
   "candidates": [
+    {
+      "id": "marine-le-pen",
+      "name": "Marine Le Pen",
+      "party": "Rassemblement National (RN)",
+      "bloc": "far-right",
+      "note": "Declared RN candidate (July 7, 2026). Her appeal to the Court of Cassation is pending: hearing Dec. 16, 2026, ruling expected by early April 2027. If she is barred, Jordan Bardella runs.",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
     {
       "id": "jordan-bardella",
       "name": "Jordan Bardella",
       "party": "Rassemblement National (RN)",
       "bloc": "far-right",
-      "note": "RN candidate not settled: Marine Le Pen became eligible again after a July 2026 appeal ruling, with a cassation appeal pending.",
+      "note": "RN president; the party's candidate only if the Court of Cassation bars Marine Le Pen. Slated to be her prime minister.",
       "questionnaire": {
         "status": "not-sent",
         "deadline": null,
@@ -102,7 +114,7 @@
       "publishedDate": null
     },
     {
-      "text": "On July 7, 2026 the Paris appeals court cut Marine Le Pen's ineligibility to a period that lets her run in 2027; a further appeal to the Court of Cassation is pending. Jordan Bardella, RN president, is the party's candidate if she cannot run.",
+      "text": "On July 7, 2026 the Paris appeals court cut Marine Le Pen's ineligibility to a period that lets her run in 2027, and she declared her candidacy the same day. Her appeal to the Court of Cassation is pending (hearing Dec. 16, 2026; ruling expected by early April 2027). Jordan Bardella, RN president, would run if she cannot.",
       "source": {
         "title": "Eunews: Le Pen convicted on appeal, 45-month ineligibility, but she can still run in 2027",
         "url": "https://www.eunews.it/en/2026/07/07/le-pen-convicted-on-appeal-45-month-ineligibility-but-she-can-still-run-in-2027/"

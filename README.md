@@ -128,10 +128,10 @@ Not built yet / needs people:
   found so far: there is no issue area for copyright or creator compensation.
 - Real legislation data. The one Texas bill (HB 149, TRAIGA) is an unverified
   example.
-- Finishing the claim checks: 43 claims were not yet searched when the web
-  search limit for the 2026-11-24 round ran out (listed as "not yet checked"
-  in verification.json), and nothing is High confidence until primary
-  sources are read.
+- Raising claims to High confidence: every claim has been searched (two
+  rounds on 2026-11-24), but nothing is High until someone reads the primary
+  source. The 36 partly confirmed and 18 not confirmed claims are the place
+  to start (filter verification.json by "result").
 - Manifesto coding for parliamentary elections abroad, and live polling or
   prediction-market data through a backend proxy.
 - The mock Kalshi odds, the made-up polling header, the numeric party-alignment
@@ -183,7 +183,8 @@ Checking claims (verification.json):
 - Confirmed or corrected: the record is Medium confidence, with a new version
   and history note. Partly confirmed, not confirmed or not yet checked: Low
   confidence, and the site shows a small note. "Not yet checked" means the
-  web search limit for that round ran out; re-run those first.
+  web search limit for that round ran out (none are left after the second
+  round of 2026-11-24).
 - To raise a claim to High: open the primary source, confirm wording and
   date, then set "confidence": "high" and follow the steps below.
 

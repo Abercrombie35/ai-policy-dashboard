@@ -24,7 +24,7 @@
       "unit": "party-manifesto",
       "plan": "Optional extension",
       "euAiAct": true,
-      "dateStatus": "to-verify",
+      "dateStatus": "verified",
       "coverage": "not-started"
     },
     {
@@ -37,7 +37,7 @@
       "unit": "party-manifesto",
       "plan": "Optional extension",
       "euAiAct": true,
-      "dateStatus": "to-verify",
+      "dateStatus": "verified",
       "coverage": "not-started"
     },
     {
@@ -50,7 +50,7 @@
       "unit": "party-manifesto",
       "plan": "Optional extension",
       "euAiAct": true,
-      "dateStatus": "to-verify",
+      "dateStatus": "verified",
       "coverage": "not-started"
     },
     {
@@ -63,7 +63,7 @@
       "unit": "party-manifesto",
       "plan": "Listed in proposal",
       "euAiAct": true,
-      "dateStatus": "to-verify",
+      "dateStatus": "verified",
       "coverage": "not-started"
     }
   ],

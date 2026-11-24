@@ -258,7 +258,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -274,6 +274,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (Quiver Quantitative, FastDemocracy, Common Dreams). Not confirmed: A bill record that names Wyden as the sponsor of S. 5658 (the bill trackers in the results don't name the sponsor). Stays Low confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (Quiver Quantitative, Common Dreams, Salt Lake Tribune). S. 5658 and Wyden's Oct. 1 announcement of a public-lands data center ban match in timing and substance, but no result explicitly names Wyden on the S. 5658 record. Not confirmed: A bill record naming Wyden as the sponsor of S. 5658 (trackers in the results don't name the sponsor, and Wyden coverage doesn't give the bill number)."
         }
       ]
     },
@@ -342,7 +347,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -358,6 +363,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (OPB, CRS (EveryCRSReport), NACo). Not confirmed: That Heinrich and Trump say the bill codifies the White House Ratepayer Protection Pledge; Critics' wording of a 'giveaway to the industry' as applied to the data center provisions; Current status after Nov. 9: one tracker reports a 70-27 cloture vote on the bill text on Nov. 16 and no final passage vote yet; no source found for Nov. 18-24. Stays Low confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (OPB, Axios, CRS (EveryCRSReport)). S. 5653 has cleared procedural votes but awaits final Senate passage; no source shows Heinrich or Trump saying it codifies the Ratepayer Protection Pledge, which coverage links instead to the separate Ratepayer Protection Act. Not confirmed: That Heinrich and Trump say the bill codifies the White House Ratepayer Protection Pledge (results tie the pledge to the separate Ratepayer Protection Act, which Heinrich opposed in Sept. 2026); Critics' 'giveaway to the industry' wording for the data center provisions."
         }
       ]
     },
@@ -506,13 +516,31 @@
       "id": "mi-2026-house-moratorium",
       "state": "MI",
       "session": "2025-2026 session",
-      "billNumber": "House package (numbers to verify)",
+      "billNumber": "HB 5594-5596",
       "title": "Statewide data center moratorium (bipartisan House package)",
-      "sponsors": [],
-      "sponsorsNote": "Bipartisan sponsors; names to verify.",
+      "sponsors": [
+        {
+          "name": "Jennifer Wortz",
+          "party": "Republican",
+          "role": "lead sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Joseph Fox",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Dylan Wegela",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "introduced",
-      "statusDate": "2026-02",
-      "statusNote": "Introduced Feb. 2026; not enacted as of Sept. 2026 reports.",
+      "statusDate": "2026-02-26",
+      "statusNote": "Introduced Feb. 26, 2026; still in committee. Gov. Whitmer has said she will not sign a statewide moratorium.",
       "tags": [
         "moratorium"
       ],
@@ -528,7 +556,7 @@
       },
       "publishedDate": null,
       "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -545,7 +573,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -561,6 +589,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (Route Fifty, NCSL, E&E News). Not confirmed: Bill numbers (NCSL's tracker lists HB 5594-5595, a six-month moratorium on approvals, construction or tax incentives, status introduced; not confirmed to be this package, and six months may conflict with a one-year pause); Bipartisan sponsorship and sponsor names; February 2026 introduction; Pause until April 1, 2027; Directive to the Michigan Public Service Commission to halt approval of data center utility contracts or rates; Whitmer saying she will not sign a statewide moratorium; Current status as of Nov. 2026. Stays Low confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (WKAR, Michigan Advance, LegiScan). The package is HB 5594-5596 (Wortz, Fox, Wegela), introduced Feb. 26, 2026, pausing permits and PSC approvals until April 1, 2027; it remains in committee, and Whitmer opposes a moratorium. NCSL's 'six-month' description conflicts with the bills' April 2027 end date. Bill numbers, sponsors and date added: HB 5594-5596, introduced Feb. 26, 2026 by Reps. Jennifer Wortz and Joseph Fox (R) and Dylan Wegela (D). Medium confidence."
         }
       ]
     },
@@ -570,11 +603,23 @@
       "session": "2025-2026 session",
       "billNumber": "SB 1018-1020",
       "title": "Moratorium on certain approvals for and operation of new data centers",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "Jim Runestad",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Ruth Johnson",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "introduced",
-      "statusDate": null,
-      "statusNote": "Status to verify.",
+      "statusDate": "2026-06-04",
+      "statusNote": "Introduced June 4, 2026; in the Senate Government Operations Committee with no later action found.",
       "tags": [
         "moratorium"
       ],
@@ -589,7 +634,7 @@
       },
       "publishedDate": null,
       "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -606,7 +651,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -622,6 +667,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: not confirmed. No result named SB 1018-1020; Republican Sen. Jim Runestad announced a Senate bill package for a 365-day statewide data center moratorium, which may be this package, but the bill numbers, sponsors and status could not be checked before the search budget ran out. Stays Low confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (MichiganVotes, Michigan Advance, Sen. Jim Runestad). Republican Sens. Runestad and Johnson introduced SB 1018-1020 on June 4, 2026 for a moratorium on approvals and operation of new data centers until Apr. 1, 2027; the bills sit in Senate Government Operations with no later action found (statusDate can be set to 2026-06-04). Sponsors and date added: Sens. Jim Runestad (R) and Ruth Johnson (R), introduced June 4, 2026. Medium confidence."
         }
       ]
     },
@@ -640,8 +690,8 @@
         }
       ],
       "status": "introduced",
-      "statusDate": null,
-      "statusNote": "Under consideration; not enacted as of Sept. 2026 reports.",
+      "statusDate": "2025-12-17",
+      "statusNote": "Introduced Dec. 17, 2025; still in committee (HB 5398, by Rep. Erin Byrnes, covers property tax).",
       "categories": [
         "dc-tax-incentives"
       ],
@@ -652,8 +702,8 @@
         "url": "https://bridgemi.com/michigan-environment-watch/michigan-lawmakers-unveil-plan-to-repeal-data-center-tax-breaks/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -670,7 +720,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -681,6 +731,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (MichiganVotes, MichiganVotes, Bridge Michigan). Wegela's bipartisan HB 5396-5398, introduced Dec. 17, 2025, would repeal the data center sales and use tax exemptions (HB 5398 covers property tax) and remain in committee with no recorded action since introduction. Introduction date added: Dec. 17, 2025. Medium confidence."
         }
       ]
     },
@@ -715,7 +770,7 @@
         "url": "https://thetexasdispatch.com/sb-296-data-center-moratorium-local-vote-resident-payments/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -734,7 +789,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -745,6 +800,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (FastDemocracy, GovTech). The bill tracker and GovTech confirm Gutierrez's SB 296, filed Nov. 9, 2026, with a two-year pause, then local voter approval, plus annual payments to county residents in the caption; the quoted bill wording itself was not found. Not confirmed: Exact quoted wording \"a utility may not energize a new or expanded electric service connection for a project\"; How the yearly payments to county residents work."
         }
       ]
     },
@@ -754,8 +814,20 @@
       "session": "90th Legislature (2027), prefiled",
       "billNumber": "SB 293 (also HB 167)",
       "title": "Repeal of the data center sales tax exemption",
-      "sponsors": [],
-      "sponsorsNote": "Authors to verify.",
+      "sponsors": [
+        {
+          "name": "Joan Huffman",
+          "party": "Republican",
+          "role": "lead author, SB 293 (23 Senate authors)",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Trey Martinez Fischer",
+          "party": "Democratic",
+          "role": "author, HB 167",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "introduced",
       "statusDate": "2026-11-09",
       "statusNote": "Filed Nov. 9, 2026.",
@@ -769,8 +841,8 @@
         "url": "https://natlawreview.com/article/texas-lawmakers-file-repeal-data-center-sales-tax-exemption"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -787,7 +859,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -798,6 +870,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (Fox 4, Texas Scorecard, Foley & Lardner). Sen. Joan Huffman (R) filed SB 293 on Nov. 9, 2026 with 23 Senate authors (sources differ on whether that is out of 30 or 31 members) to repeal the data center sales tax exemption; HB 167 by Rep. Trey Martinez Fischer (D) is the House bill with the same aim. Sponsors added: Sen. Joan Huffman (R) leads SB 293 with 23 Senate authors; Rep. Trey Martinez Fischer (D) filed HB 167. Medium confidence."
         }
       ]
     },
@@ -830,8 +907,8 @@
         "url": "https://www.chron.com/politics/article/texas-legislature-bills-prefiling-2027-22521040.php"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -849,7 +926,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -860,6 +937,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (Foley & Lardner, GovTech, LegiScan). Zaffirini filed SB 33 (electricity cost allocation for large computing loads), SB 35 (water-use reporting to the Water Development Board) and SB 36 (curbs on tax and local incentives) on Nov. 9, 2026; one outlet says SB 36 also covers state tax exemptions, not only local incentives. Medium confidence."
         }
       ]
     },
@@ -897,7 +979,7 @@
       },
       "publishedDate": null,
       "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -915,7 +997,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -931,6 +1013,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (Orrick, Boston Globe, Latham & Watkins). Not confirmed: That threatening to publish such images is also a crime (the search summaries don't mention the threat provision). Stays Low confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (CRS (EveryCRSReport), Orrick, Skadden). CRS confirms the Act also criminalizes threats to publish authentic or AI-forged intimate images, completing the check of this claim. Medium confidence."
         }
       ]
     },
@@ -1196,7 +1283,7 @@
         }
       ],
       "status": "passed-one-chamber",
-      "statusDate": "2026-04-30",
+      "statusDate": "2026-04-29",
       "statusNote": "Passed the Senate Apr. 2026; not voted on in the House as of Oct. 2026.",
       "categories": [
         "ai-child-safety"
@@ -1208,7 +1295,7 @@
         "url": "https://www.michiganpublic.org/politics-government/2026-04-30/kids-over-clicks-passes-in-state-legislature"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -1227,7 +1314,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1238,6 +1325,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (MichiganVotes, Michigan Public, Route Fifty). The package and Polehanki's SB 760 chatbot bill are confirmed, passing the Senate 20-17 on Apr. 29, 2026 with no House vote as of Oct. 16, 2026; sources name self-harm, suicidal ideation and disordered eating but not violence or drug use. Senate passage date corrected to Apr. 29, 2026 (20-17). Not confirmed: That SB 760 lists violence and drug use among the barred harms; House status after mid-October 2026."
         }
       ]
     },
@@ -1245,10 +1337,22 @@
       "id": "mi-hb4047-4048",
       "state": "MI",
       "session": "2025-2026 session",
-      "billNumber": "HB 4047-4048 (PA 11 of 2025)",
+      "billNumber": "HB 4047-4048 (PA 11 and PA 12 of 2025)",
       "title": "Intimate deepfake acts",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "Matt Bierlein",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Penelope Tsernoglou",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "enacted",
       "statusDate": "2025-08-26",
       "statusNote": "Effective date from a secondary tracker; verify.",
@@ -1262,8 +1366,8 @@
         "url": "https://imiel.dev/explore/us-ai-legislation-2026/michigan/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1282,7 +1386,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1293,6 +1397,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: corrected (MichiganVotes, MichiganVotes, Governor Whitmer). Corrected: only HB 4047 is Public Act 11 of 2025; HB 4048 is Public Act 12. Both were signed and took effect Aug. 26, 2025, with civil and criminal remedies for intimate deepfakes. Sponsors added: Reps. Matt Bierlein (R) and Penelope Tsernoglou (D). Medium confidence."
         }
       ]
     },
@@ -1302,10 +1411,22 @@
       "session": "2023-2024 session",
       "billNumber": "HB 5141, 5143, 5144",
       "title": "Election deepfake disclosure laws",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "Penelope Tsernoglou",
+          "party": "Democratic",
+          "role": "HB 5141, HB 5144",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Matt Bierlein",
+          "party": "Republican",
+          "role": "HB 5143",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "enacted",
-      "statusDate": "2023",
+      "statusDate": "2023-11-30",
       "statusNote": "Enacted 2023, per a secondary tracker; verify.",
       "categories": [
         "ai-deepfakes"
@@ -1317,8 +1438,8 @@
         "url": "https://imiel.dev/explore/us-ai-legislation-2026/michigan/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1335,7 +1456,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1346,6 +1467,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (Michigan Public, Michigan House Fiscal Agency, Miller Canfield). HB 5141, 5143 and 5144 were signed Nov. 30, 2023, requiring AI disclaimers on political ads and criminalizing deceptive election deepfakes; HB 5145 (Rep. Noah Arbit) was part of the same package. Sponsors and signing date added: Reps. Penelope Tsernoglou (D) and Matt Bierlein (R); signed Nov. 30, 2023. Medium confidence."
         }
       ]
     },
@@ -1355,8 +1481,33 @@
       "session": "2026 session",
       "billNumber": "SB 5 (Public Act 26-15)",
       "title": "Connecticut AI Responsibility and Transparency (CART) Act",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "James Maroney",
+          "party": "Democratic",
+          "role": "led the bill",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Martin Looney",
+          "party": "Democratic",
+          "role": "listed sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Bob Duff",
+          "party": "Democratic",
+          "role": "listed sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Saud Anwar",
+          "party": "Democratic",
+          "role": "listed sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "sponsorsNote": "Raised by the General Law Committee.",
       "status": "enacted",
       "statusDate": "2026-05-27",
       "statusNote": "Passed the Senate 32-4 and the House 131-17; signed May 27, 2026 (some sources give June 2).",
@@ -1373,7 +1524,7 @@
       },
       "publishedDate": null,
       "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1393,7 +1544,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1409,6 +1560,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (CT Mirror, Ropes & Gray, Connecticut General Assembly). Not confirmed: That use of an automated employment decision tool is no defense to a discrimination claim; Whistleblower protections and reporting channels at frontier developers; AI content provenance provisions; Phase-in from Oct. 1, 2026 to 2028 (results show only employer notice duties starting Jan. 1, 2027); Formal sponsor list. Stays Low confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (Faegre Drinker, Future of Privacy Forum, Connecticut General Assembly). Law-firm and FPF summaries confirm the no-defense rule for automated hiring tools, frontier-developer whistleblower protections, provenance rules and an Oct. 2026 to Jan. 2028 phase-in; the committee report lists Looney, Duff and Anwar, with Maroney leading. Most sources give a May 27, 2026 signing, with a ceremony on June 2. Sponsors added: led by Sen. James Maroney (D); the committee report lists Sens. Looney, Duff and Anwar (D). Medium confidence."
         }
       ]
     },
@@ -1551,10 +1707,10 @@
       "billNumber": "SB 245",
       "title": "End new applications to the data center tax-incentive program",
       "sponsors": [],
-      "sponsorsNote": "Raised by the Energy and Technology Committee (to verify).",
+      "sponsorsNote": "Raised by the Energy and Technology Committee.",
       "status": "failed",
       "statusDate": "2026-05-06",
-      "statusNote": "Introduced Feb. 19, 2026; died in committee.",
+      "statusNote": "Introduced in Feb. 2026; died in the Finance Committee.",
       "categories": [
         "dc-tax-incentives"
       ],
@@ -1583,7 +1739,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1594,6 +1750,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (Connecticut General Assembly, Connecticut General Assembly, CT Hospital Association). Not confirmed: Introduction date of Feb. 19, 2026; Final outcome: no action after the March 23 referral was found, consistent with dying in committee when the session ended May 6, 2026, but not stated directly. Stays Low confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (Connecticut General Assembly, CBIA, Connecticut General Assembly). CBIA's bill tracker lists SB 245 as died in the Finance Committee, matching the official history that ends at the March 23 referral; the Feb. 19 introduction date was not shown. Status note updated: it died in the Finance Committee. Not confirmed: Introduction date of Feb. 19, 2026."
         }
       ]
     },
@@ -1659,26 +1820,26 @@
     {
       "id": "ct-sb1292",
       "state": "CT",
-      "session": "Session to verify (2025 or 2026)",
+      "session": "2025 session",
       "billNumber": "SB 1292",
       "title": "Study of energy efficiency for AI data centers",
       "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
-      "status": "introduced",
-      "statusDate": null,
-      "statusNote": "Not enacted; session and status to verify.",
+      "sponsorsNote": "Raised by the Energy and Technology Committee.",
+      "status": "failed",
+      "statusDate": "2025-04-07",
+      "statusNote": "Turned into a study of energy efficiency standards for AI data centers and approved by the Energy and Technology Committee 24-0 on Mar. 18, 2025; given a file number Apr. 7, 2025, with no floor vote, so it died.",
       "categories": [
         "dc-transparency"
       ],
       "summary": "Would study energy efficiency for AI data centers.",
       "labelType": "source-summary",
       "source": {
-        "title": "Quorum: 486 data center measures tracked in 2025-2026",
-        "url": "https://www.quorum.us/policy-pulse/quorum-tracked-486-data-center-measures-in-2025-2026-only-42-became-law/"
+        "title": "Connecticut General Assembly: SB 1292 (2025) bill status",
+        "url": "https://prdext3.cga.ct.gov/2025/cbs/S/pdf/SB-1292.pdf"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1695,12 +1856,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: corrected (Connecticut General Assembly, BillTrack50, The Day). Corrected: SB 1292 is a 2025 Energy and Technology Committee bill, turned into a study bill and approved 24-0 on Mar. 18, 2025, then left without a floor vote, so it died; it was listed as a bill of unknown session still introduced. Medium confidence."
         }
       ]
     },
@@ -1732,7 +1898,7 @@
       },
       "publishedDate": null,
       "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1749,7 +1915,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1760,6 +1926,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (Connecticut Public, NBC Connecticut). Not confirmed: Oct. 22, 2026 announcement date; That it will be filed when the 2027 session begins; His stated reasons (water and electricity use, utility rates); Local bans such as East Lyme's; His title as Senate Majority Leader (not stated in the results). Stays Low confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (WFSB, Connecticut Public, CT Mirror). WFSB (Oct. 22, 2026) and other outlets report that Senate Majority Leader Duff will propose a statewide data center pause next session, citing electricity, water and rate impacts, after East Lyme adopted a local ban. Medium confidence."
         }
       ]
     },
@@ -1816,7 +1987,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1827,6 +1998,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (Sen. Hawley, E&E News, Sen. Hawley). Not confirmed: That companies would publish five-year utility-use estimates (results only show the ban covers firms that run or plan a data center within five years). Stays Low confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (Sen. Hawley, E&E News, NBC News). Hawley's office confirms a public electricity-usage reporting requirement, but no result describes five-year utility-use estimates; Blumenthal has said the bill text changed after introduction. Not confirmed: That the disclosure takes the form of five-year utility-use estimates."
         }
       ]
     },
@@ -2336,8 +2512,8 @@
         }
       ],
       "status": "enacted",
-      "statusDate": "2025",
-      "statusNote": "Chaptered in 2025 as a reporting bill.",
+      "statusDate": "2025-10-11",
+      "statusNote": "Chaptered Oct. 11, 2025 (Chapter 647) after being narrowed from a data center tariff to a Public Utilities Commission study of cost shifts, due by 2027.",
       "categories": [
         "dc-ratepayer",
         "dc-transparency"
@@ -2350,7 +2526,7 @@
       },
       "publishedDate": null,
       "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -2367,7 +2543,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2378,6 +2554,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (LAist, CalMatters). Not confirmed: Bill number SB 57 (not named in the results seen); That it began as a special electricity rate for data centers; That the remaining study is a Public Utilities Commission cost-shift assessment; Chaptered status in 2025. Stays Low confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (LegiScan, CalMatters Digital Democracy, LAist). Bill trackers and committee analyses show Padilla's SB 57 began as a data center tariff bill and was chaptered in Oct. 2025 (Ch. 647) as a PUC study of data center cost shifts due by 2027. Chaptering date added: Oct. 11, 2025 (Chapter 647). Medium confidence."
         }
       ]
     },
@@ -2395,7 +2576,6 @@
           "linkedCandidateId": null
         }
       ],
-      "sponsorsNote": "Author to verify.",
       "status": "enacted",
       "statusDate": "2026-09-21",
       "statusNote": "Signed Sept. 21, 2026.",
@@ -2427,7 +2607,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2438,6 +2618,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (Governor's office, Sen. Steve Padilla (SD18), DatacenterDynamics). Not confirmed: That SB 886 is explicitly one of the seven signed bills; Jan. 1, 2028 deadline for the tariffs; Short title 'California Technology Innovation and Ratepayer Protection Act'. Stays Low confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (Governor's office, Digital Policy Alert, Foley & Lardner). SB 886 was signed Sept. 21, 2026 as Chapter 438 in the seven-bill package and requires PUC transmission-level data center tariffs, with a legal alert giving a Jan. 1, 2028 deadline; the bill's short title was not found. Author confirmed: Sen. Steve Padilla (D). Not confirmed: Short title 'California Technology Innovation and Ratepayer Protection Act' (not shown in any result)."
         }
       ]
     },
@@ -2447,8 +2632,14 @@
       "session": "2025-2026 session",
       "billNumber": "AB 2383",
       "title": "Data center tariffs for wildfire and societal program costs",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "Rick Chavez Zbur",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "enacted",
       "statusDate": "2026-09-21",
       "statusNote": "Signed Sept. 21, 2026.",
@@ -2463,7 +2654,7 @@
       },
       "publishedDate": null,
       "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2480,7 +2671,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2491,6 +2682,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (CalMatters, Governor's office). Not confirmed: That AB 2383's tariffs must cover wildfire mitigation and liability, electrification, environmental programs and other distribution-level costs (the only description found says it incentivizes data centers to use onsite clean energy). Stays Low confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (CalMatters Digital Democracy, Foley & Lardner, Asm. Zbur). Bill records and law-firm summaries confirm AB 2383 (Zbur, Ch. 435) requires data center tariffs to carry a share of wildfire mitigation and liability and other public-program costs normally paid by distribution customers; summaries word the program list as climate mandates and equity programs, the claim as electrification and environmental programs. Author added: Asm. Rick Chavez Zbur (D). Medium confidence."
         }
       ]
     },
@@ -2500,8 +2696,14 @@
       "session": "2025-2026 session",
       "billNumber": "SB 1168",
       "title": "Data center rates during demand spikes",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "Jerry McNerney",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "enacted",
       "statusDate": "2026-09-21",
       "statusNote": "Signed Sept. 21, 2026.",
@@ -2533,7 +2735,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2544,6 +2746,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (CalMatters, Governor's office). Not confirmed: Description as making data centers pay the higher cost of electricity when demand spikes. Stays Low confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (Governor's office, Utility Dive, CalMatters Digital Democracy). SB 1168 (McNerney) was signed Sept. 21, 2026 as a rate-structure assessment so data centers bear their own energy and upgrade costs; no source describes it as charging data centers the higher price of power during demand spikes. Author added: Sen. Jerry McNerney (D). Not confirmed: Description as making data centers pay the higher cost of electricity when demand spikes (not found; coverage speaks of load increases and upgrade costs, and an earlier version was a per-kWh wildfire surcharge)."
         }
       ]
     },
@@ -2553,8 +2760,14 @@
       "session": "2025-2026 session",
       "billNumber": "AB 1577",
       "title": "Data center energy demand and local impact reporting",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "Rebecca Bauer-Kahan",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "enacted",
       "statusDate": "2026-09-21",
       "statusNote": "Signed Sept. 21, 2026.",
@@ -2569,8 +2782,8 @@
         "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -2587,12 +2800,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (Governor's office, Utility Dive, Mayer Brown). The governor's office lists AB 1577 (Bauer-Kahan) among the bills signed Sept. 21, 2026; it requires data centers to report energy use to the Energy Commission and estimated energy use to local agencies at permitting (sources differ on monthly vs. annual reporting). Author added: Asm. Rebecca Bauer-Kahan (D). Medium confidence."
         }
       ]
     },
@@ -2624,8 +2842,8 @@
         "url": "https://www.kqed.org/news/12100746/newsom-signs-new-restrictions-on-data-center-development"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2642,12 +2860,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (Governor's office, KPBS, KQED). Padilla's SB 887, signed Sept. 21, 2026, removes the CEQA exemption option for data centers; the water-use disclosure and payment for water upgrades come from AB 2469 in the same package, as the claim says. Medium confidence."
         }
       ]
     },
@@ -2673,8 +2896,8 @@
         "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-17",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -2694,12 +2917,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-17",
           "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (European Commission, Kennedys, CMS). Confirmed: the AI Act (Regulation 2024/1689) entered into force Aug. 1, 2024 with bans, GPAI and high-risk duties applying in phases; its original high-risk dates were later pushed back by the Digital Omnibus on AI (Regulation 2026/1744). Medium confidence."
         }
       ]
     },
@@ -2725,7 +2953,7 @@
         "url": "https://www.regulation-ai.eu/en/omnibus/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
@@ -2744,12 +2972,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-17",
           "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (White & Case, Lewis Silkin, Orrick). Law-firm analyses confirm the number, the June 29 Council approval, July 27, 2026 entry into force, the new high-risk dates, the two new bans and the SME/small mid-cap simplifications; one nuance is a Dec. 2, 2026 cut-off for Article 50(2) labelling of some existing systems, and GPAI timing was not addressed in the results. Not confirmed: That general-purpose AI rules keep their original dates (no source in the results addressed GPAI timing, though none reported a delay)."
         }
       ]
     },
@@ -2770,7 +3003,7 @@
       ],
       "status": "passed-one-chamber",
       "statusDate": "2026-03-25",
-      "statusNote": "Adopted by the Senate Mar. 25, 2026; sent to the National Assembly Mar. 26.",
+      "statusNote": "Adopted by the Senate Mar. 25, 2026; sent to the National Assembly Mar. 26 (text no. 2584), where no action was found. Its \"major national interest\" article mirrors the May 26, 2026 simplification law, so that part is largely in force already.",
       "categories": [
         "dc-permitting",
         "dc-local-control"
@@ -2782,7 +3015,7 @@
         "url": "https://www.banquedesterritoires.fr/datacenters-le-senat-adopte-une-proposition-de-loi-allegee-renvoyant-lessentiel-aux-textes-en-cours"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -2798,12 +3031,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-17",
           "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (Banque des Territoires, Assemblée nationale, Vie-publique). Confirmed sponsor, Mar. 25 Senate adoption, Mar. 26 transmission and content; the Senate copied in the data-center PINM article (art. 15) of the simplification bill, which itself became law on May 26, 2026, so this provision is now largely already in force; no later Assembly action was found. Status note updated: no National Assembly action found; the fast-track article is largely in force through the May 26, 2026 simplification law. Not confirmed: Current status as of Nov. 2026: no Assembly committee or floor examination was found after March 2026, so 'passed one chamber' appears current but could not be confirmed."
         }
       ]
     },
@@ -2811,25 +3049,25 @@
       "id": "fr-pjl-simplification",
       "country": "FR",
       "session": "Parliament, 2024-2026",
-      "billNumber": "Projet de loi (government bill)",
-      "title": "Bill to simplify economic life (includes fast-track for data centers)",
+      "billNumber": "Law of May 26, 2026 (government bill)",
+      "title": "Law simplifying economic life (includes fast-track for data centers)",
       "sponsors": [],
       "sponsorsNote": "Government bill.",
-      "status": "introduced",
-      "statusDate": null,
-      "statusNote": "Under examination; not definitively adopted as of March 2026 reports (to verify).",
+      "status": "enacted",
+      "statusDate": "2026-05-26",
+      "statusNote": "Promulgated May 26, 2026 and published in the Journal officiel May 27, after the Constitutional Council struck out about 25 unrelated articles on May 21.",
       "categories": [
         "dc-permitting"
       ],
-      "summary": "Government bill that, among many simplification measures, would let large data centers be classed as projects of major national interest to speed up approvals.",
+      "summary": "Among many simplification measures, lets industrial-scale data centers that meet set conditions (including on water) be designated projects of major national interest by decree, which speeds up siting and grid connection.",
       "labelType": "source-summary",
       "source": {
-        "title": "Senate report: Projet de loi de simplification de la vie économique",
-        "url": "https://www.senat.fr/rap/l23-634/l23-63413.html"
+        "title": "Vie-publique: Projet de loi de simplification de la vie économique",
+        "url": "https://www.vie-publique.fr/loi/293913-entreprises-projet-de-loi-de-simplification-de-la-vie-economique"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-17",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -2844,12 +3082,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-17",
           "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: corrected (Lextenso, Ministère de la Transition écologique, Vie-publique). Corrected: the simplification bill became law on May 26, 2026 (published May 27); it was listed as still under examination. It lets data centers meeting set conditions, including on water, be designated projects of major national interest by decree. Medium confidence."
         }
       ]
     },
@@ -2881,8 +3124,8 @@
         "url": "https://www.techradar.com/pro/france-plans-to-pledge-one-gigawatt-of-nuclear-power-for-ai"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-17",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -2899,12 +3142,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-17",
           "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (Élysée, TechRadar, Global Banking & Finance (Reuters)). Confirmed: the 1 GW nuclear-for-AI pledge dates from the February 2025 AI Action Summit, and Macron's Mar. 10, 2026 nuclear summit speech said France's reactors let it open data centers and grow computing capacity. Medium confidence."
         }
       ]
     }

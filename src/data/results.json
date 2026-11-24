@@ -55,7 +55,7 @@
       "publishedDate": "2026-11-03",
       "lastVerified": "2026-11-24",
       "confidence": "medium",
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -66,6 +66,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: partly confirmed (Michigan Advance, ClickOnDetroit, Protect Democracy). Not confirmed: Exact shares 52.5% / 45.5% / 1.0% as of 2:30 p.m. Nov. 4 (Detroit News); Decision Desk HQ call; That the seat was open because Sen. Gary Peters retired (not in the search results); Certification: Michigan's Board of State Canvassers had a Nov. 23, 2026 deadline to certify, but no report that it did was found; no certified figures found. Stays Low confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (Michigan Advance, ClickOnDetroit, FOX 32 Chicago). El-Sayed's win, the AP (2:27 a.m.) and Fox calls, shares within about a point (51.9% to 46.1% at 85% counted) and Peters's retirement are confirmed; the Decision Desk HQ call, the Libertarian share and certification (deadline Nov. 23) were not found. Not confirmed: Exact Detroit News figures as of 2:30 p.m. Nov. 4, including Lydia Christensen's 1.0%; Decision Desk HQ call; Certification: Michigan's Board of State Canvassers had a Nov. 23, 2026 deadline, but no report that it certified was found; no certified figures found."
         }
       ]
     },
@@ -118,14 +123,19 @@
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "medium",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (Click2Houston, KSAT, Kalshi News). Talarico's win, the election-night AP call, Paxton's same-night concession and Paxton's runoff win over Cornyn are confirmed, and a ~12.1-point margin at ~99% counted matches the listed shares, but the individual shares and any certification were not found. Not confirmed: Exact shares 55.1% / 43.0% / 1.9% (only the ~12.1-point margin was found, not individual shares); Ted Brown's 1.9%; Certification: no report found that the Texas state canvass has certified the result as of Nov. 24, 2026; no certified figures found."
         }
       ]
     },
@@ -181,14 +191,19 @@
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "medium",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (ClickOnDetroit, Axios Detroit, Bridge Michigan). Benson's win (AP call at 1:45 a.m., 53.7% to 44.6%, within a point of the listed shares), Whitmer's term limit and Duggan's May 21 exit are confirmed; the other outlets' calls, the Libertarian share and any certification (deadline Nov. 23) were not found. Not confirmed: Specific calls by NBC News, The Washington Post, Decision Desk HQ and MultiState (the AP call was found instead); Anthony Hudson's 0.93%; That Duggan's name was not on the November ballot (only that he ended his campaign in May); Certification: the Board of State Canvassers' deadline was Nov. 23, 2026, but no report that it certified was found; no certified figures found."
         }
       ]
     },
@@ -240,14 +255,19 @@
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "medium",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-12",
           "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (KUTV, FOX 4, KATU). Hinojosa's win, Abbott's election-night concession and his bid for a fourth term are confirmed; the listed shares (only early returns of ~57% to 41.7% were found) and certification were not found. Not confirmed: Vote shares 52.8% / 45.7% / 1.5% (only early returns of about 57% to 41.7% were found, too early in the count to compare); Pat Dixon's 1.5%; Certification: no report of the Texas state canvass for the governor's race found as of Nov. 24, 2026; no certified figures found."
         }
       ]
     },
@@ -295,14 +315,19 @@
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "medium",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (CT Mirror, WFSB). Lamont's third-term win over Fazio and the AP call around 9:20 p.m. are confirmed, as is his 2018 win over Stefanowski; the vote shares, the 2022 opponent and certification were not found. Not confirmed: Vote shares 59.6% / 40.4% (MultiState) and the earlier NBC count of 58.8% / 41.2%: no general-election percentages appeared in the results; That Lamont's 2022 win was also over Stefanowski (no 2022 race details in the results); Certification: no report of the Connecticut state canvass found as of Nov. 24, 2026; no certified figures found."
         }
       ]
     },
@@ -357,14 +382,19 @@
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "medium",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Winner checked across several news reports found by web search. Vote shares are unofficial figures quoted from the cited outlet; the results pages themselves could not be opened from the build environment. Replace with the certified canvass when available."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (Patch, Connecticut Public, CT Mirror). Himes's reelection over Goldstein is confirmed, but the Nov. 4 AP call date, the vote shares, the 10th-term count, the expected Intelligence chairmanship and certification were not found. Not confirmed: AP call on Nov. 4, 2026 (an AP race-call item was found but it is undated and describes a ninth term, so it may be from 2024); Vote shares 65.58% / 32.51% / 1.91%: no 2026 percentages found; That this is his 10th term (consistent with first election in 2008, but not stated in the results); That Democrats won the House majority and that Himes is expected to chair the Intelligence Committee; Certification: no report found as of Nov. 24, 2026; no certified figures found."
         }
       ]
     },
@@ -412,14 +442,19 @@
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "medium",
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Winner checked across several reports found by web search. Vote counts are unofficial figures from the Secretary of State as quoted in search results; the results page could not be opened from the build environment. Replace with the certified canvass when available."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: partly confirmed (FOX 11 LA, SF Standard, KTVU). Becerra's win (AP call at 8 p.m.) in the race to succeed Newsom is confirmed; the listed 65.6%/34.4% was not found (earlier partial counts showed about 64%/36%, and one KTVU box 60%/38%), and no certification report was found. Not confirmed: Vote shares 65.6% / 34.4%: figures found were earlier partial counts, 64% / 36% at the AP call (about 59% counted, FOX 11 LA), 64.1% / 35.9% (SF Standard, about 7.1 million votes counted), and a KTVU results box showing 60% / 38%; none is within one point of the listed figures; Calls by MultiState, Decision Desk HQ and NBC Bay Area specifically (the AP call was found instead); That Newsom was term-limited (results say only that Becerra succeeds him); Certification: no certified totals found; the Dec. 11, 2026 certification date was not confirmed in the results, and the race is presumably not yet certified as of Nov. 24."
         }
       ]
     }
