@@ -17,7 +17,7 @@ function MethodsView() {
       <section>
         <h3>Labels on every record</h3>
         <p>Each record has exactly one of these six types, and also carries a source, publication date, last-verified date and confidence level.</p>
-        <div className="table-wrap">
+        <div className="table-wrap" role="region" aria-label="Record type definitions" tabIndex={0}>
           <table className="data-table">
             <thead><tr><th scope="col">Type</th><th scope="col">Meaning</th></tr></thead>
             <tbody>
@@ -31,7 +31,7 @@ function MethodsView() {
 
       <section>
         <h3>Confidence and verification</h3>
-        <div className="table-wrap">
+        <div className="table-wrap" role="region" aria-label="Confidence level definitions" tabIndex={0}>
           <table className="data-table">
             <thead><tr><th scope="col">Level</th><th scope="col">Meaning</th></tr></thead>
             <tbody>
@@ -111,7 +111,7 @@ function MethodsView() {
             model-generated analysis, not findings.
           </li>
         </ul>
-        <div className="table-wrap">
+        <div className="table-wrap" role="region" aria-label="Policy question stances" tabIndex={0}>
           <table className="data-table">
             <thead><tr><th scope="col">Policy question</th><th scope="col">Stances (ordered)</th></tr></thead>
             <tbody>
@@ -132,7 +132,7 @@ function MethodsView() {
           Results carry their own label, "{resultLabel.label}", and are stored apart from candidate statements, so a
           vote count is never confused with a position. {resultLabel.description}
         </p>
-        <div className="table-wrap">
+        <div className="table-wrap" role="region" aria-label="Election result status definitions" tabIndex={0}>
           <table className="data-table">
             <thead><tr><th scope="col">Result status</th><th scope="col">Meaning</th></tr></thead>
             <tbody>
@@ -152,7 +152,7 @@ function MethodsView() {
       <section>
         <h3>Codebook ({codebook.version})</h3>
         <p>{codebook.status}</p>
-        <div className="table-wrap">
+        <div className="table-wrap" role="region" aria-label="Codebook dimensions and categories" tabIndex={0}>
           <table className="data-table">
             <thead><tr><th scope="col">Dimension</th><th scope="col">Categories</th></tr></thead>
             <tbody>

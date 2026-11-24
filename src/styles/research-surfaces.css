@@ -1,0 +1,772 @@
+/*
+ * Theme continuation, loaded after the original component styles.
+ * research.css remains the visual source of truth. No route, data, or
+ * verification state is inferred here; party and confidence classes retain
+ * their separate semantic treatments.
+ */
+.page-shell .where-table { min-width: 820px; }
+.page-shell .where-table .track-said { color: var(--research-dem); }
+.page-shell .where-table .track-proposed { color: #6c4f80; }
+.page-shell .group-head.said { color: var(--research-dem) !important; }
+.page-shell .group-head.proposed { color: #6c4f80 !important; }
+.page-shell .category-breakdown th { overflow-wrap: normal; }
+.race-page .race-view { padding: 12px 0; min-width: 0; }
+.race-page :is(.category-row > h5, .category-group h5) { color: var(--research-ink) !important; }
+.race-page :is(.category-desc, .track-group h6, .proposal-also) { color: var(--research-muted); }
+.race-page .category-chip { color: var(--research-ink); background: var(--research-soft); border-color: var(--research-rule); }
+.race-page .deviation-matrix { min-width: 720px; }
+@media (max-width: 767px) {
+  .race-page :is(.candidate-headers, .comparison-row, .signals-grid) { grid-template-columns: minmax(0, 1fr); }
+  .race-page :is(.candidate-headers, .tabs-content, .race-deviation, .context-signals, .election-result) { padding: 16px; }
+  .race-page .tabs-header { padding: 0 8px; }
+  .race-page .tab-button { flex: 1 1 42%; padding: 12px 8px; font-size: .8rem; }
+}
+.page-shell {
+  color: var(--research-ink);
+}
+.page-shell main,
+.page-shell .page,
+.state-modal-content,
+.state-modal-content :is(.state-view, .race-view),
+.page-shell :is(.table-wrap, .france-table-wrap),
+.page-shell :is(.candidate-column, .candidate-header, .candidate-header > div, .tl-body) {
+  min-width: 0;
+}
+.page-shell :is(button, input, select, summary, a, [tabindex]):focus-visible {
+  outline: 3px solid var(--research-focus);
+  outline-offset: 3px;
+}
+.page-shell :is(button, select, input) {
+  font-family: inherit;
+}
+.page-shell input[type="checkbox"] {
+  accent-color: var(--research-ink);
+  flex-shrink: 0;
+}
+.page-shell :is(.page, .state-modal-content) a {
+  color: var(--research-dem);
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.page-shell :is(.page, .state-modal-content) a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* The approved homepage and party composition are not changed. */
+.page:not(.analysis-page):not(.party-page) {
+  background: transparent;
+  color: var(--research-ink);
+  border: 0;
+  border-radius: 0;
+  padding: 12px 0;
+  gap: 28px;
+}
+.page:not(.analysis-page):not(.party-page) .page-head h2,
+.state-header h2,
+.race-header h1 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -.015em;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  color: var(--research-ink);
+}
+.page .page-head p,
+.page section :is(p, li) {
+  color: var(--research-muted);
+  line-height: 1.65;
+}
+.page-shell .fine-print {
+  /* Overrides the legacy important declaration on dark-theme fine print. */
+  color: var(--research-muted) !important;
+}
+.page-shell :is(.panel-note, .section-note, .dimension-note, .empty-note,
+  .source-links, .quote-meta, .q-text, .missing, .date-note, .record-publication,
+  .race-meta, .race-source, .race-counts, .questionnaire, .column-name,
+  .signal-candidate, .result-call, .result-asof, .result-context, .party-note,
+  .proposal-meta, .proposal-source, .ev-date, .ev-source, .cand-race,
+  .cell-date, .cell-line, .tl-date, .tl-meta, .tl-source, .coding-note) {
+  color: var(--research-muted);
+}
+.page-shell :is(.filter-row label, .checkbox-row, .legend) {
+  color: var(--research-muted);
+  line-height: 1.5;
+}
+.page-shell :is(.filter-row select, .country-switch) {
+  color: var(--research-ink);
+  background: var(--research-card);
+  border: 1px solid var(--research-control);
+  border-radius: 5px;
+  max-width: 100%;
+  padding: 9px 12px;
+}
+.page-shell .filter-row label { min-width: 0; }
+.page-shell :is(.error-actions, .download-card, .empty-panel, .hidden-drafts) .chip {
+  border: 1px solid var(--research-control);
+  background: var(--research-card);
+  color: var(--research-ink);
+  border-radius: 5px;
+  line-height: 1.5;
+}
+.page-shell :is(.download-card, .error-actions) .chip.active {
+  color: var(--research-paper);
+  background: var(--research-ink);
+  border-color: var(--research-ink);
+}
+.page-shell :is(.download-card, .error-actions, .empty-panel) .chip:hover {
+  background: var(--research-hover);
+  color: var(--research-ink);
+}
+
+/* Reusable evidence surfaces: quiet paper, legible metadata, explicit caution. */
+.page-shell :is(.download-card, .item-card, .context-signals, .race-deviation,
+  .candidate-comparison, .election-result, .race-data-notice) {
+  background: var(--research-card);
+  color: var(--research-ink);
+  border: 1px solid var(--research-rule);
+  border-radius: 8px;
+}
+.page-shell :is(.item-text, .result-winner, .line-summary, .tl-stance, .tl-text,
+  .track-line, .cell-stance, .proposal-title, .proposal-summary) {
+  color: var(--research-ink);
+}
+.page-shell .download-card {
+  padding: 22px;
+  gap: 14px;
+}
+.page-shell .download-card p {
+  color: var(--research-muted);
+  line-height: 1.65;
+}
+.page-shell .download-card .chip {
+  white-space: normal;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.page-shell :is(.warning-panel, .hidden-drafts) {
+  background: var(--research-warning-tint);
+  color: var(--research-warning);
+  border-color: var(--research-warning-rule);
+  border-radius: 6px;
+  line-height: 1.6;
+}
+.page-shell :is(.draft-note, .proposal-draft, .shift-note) {
+  color: var(--research-warning);
+}
+.page-shell .link-button {
+  color: var(--research-dem);
+  text-underline-offset: 3px;
+}
+.page-shell .item-card.draft {
+  border-style: dashed;
+  border-color: var(--research-warning-rule);
+}
+.page-shell .item-card blockquote {
+  background: var(--research-soft);
+  border-left-color: #6b8e87;
+  color: var(--research-ink);
+}
+.page-shell .record-meta dt { color: var(--research-muted); }
+.page-shell .record-meta dd { color: var(--research-ink); }
+.page-shell :is(.coding summary, .candidate-evidence > summary,
+  .result-sources summary, .race-timeline summary, .race-timeline h5,
+  .line-evidence summary, .track-group h5, .proposal-column h5) {
+  color: var(--research-muted);
+}
+.page-shell :is(.candidate-evidence, .track-group + .track-group, .cell-line) {
+  border-color: var(--research-rule);
+}
+.page-shell .coding li {
+  color: var(--research-ink);
+  background: var(--research-soft);
+}
+.page-shell .coding .dim { color: var(--research-muted); }
+.page-shell .stance-list li {
+  color: var(--research-warning);
+  background: var(--research-warning-tint);
+}
+.page-shell .stance-list .dim { color: var(--research-warning); }
+.page-shell :is(.badge, .ptag, .domain-tag, .status-tag) {
+  color: #48615d;
+  background: #e8ece5;
+  white-space: normal;
+  line-height: 1.5;
+}
+.page-shell :is(.badge.type-projection, .badge.type-model-analysis,
+  .badge.type-editorial-judgment, .domain-tag.ai-general) {
+  background: #ece8ee;
+  color: #65516c;
+}
+.page-shell :is(.badge.confidence-high, .badge.result-certified,
+  .status-tag.status-aligned) {
+  background: var(--research-success-tint);
+  color: var(--research-success);
+}
+.page-shell :is(.badge.confidence-medium, .badge.type-election-result,
+  .domain-tag.data-centers) {
+  background: #e3eeed;
+  color: #35666a;
+}
+.page-shell :is(.badge.confidence-low, .badge.confidence-unverified,
+  .badge.result-unofficial, .ptag.verify, .ptag.moratorium-tag,
+  .status-tag.status-deviates) {
+  background: var(--research-warning-tint);
+  color: var(--research-warning);
+}
+.page-shell .track-tag {
+  color: #48666b;
+  border-color: #b1c4bf;
+}
+.page-shell .track-tag.track-proposed {
+  color: #65516c;
+  border-color: #c8bdcd;
+}
+
+/* State dialog and every race tab share the same reading environment. */
+.state-modal-overlay {
+  background: rgb(25 47 53 / .55);
+  backdrop-filter: blur(4px);
+}
+.state-modal-content {
+  background: var(--research-paper);
+  color: var(--research-ink);
+  border: 1px solid var(--research-control);
+  border-radius: 12px;
+  max-height: 90dvh;
+  overscroll-behavior: contain;
+  box-shadow: 0 20px 60px rgb(25 47 53 / .22);
+  scrollbar-color: #9aafa5 var(--research-paper);
+}
+.state-modal-content .modal-close {
+  background: var(--research-card);
+  color: var(--research-ink);
+  border-color: var(--research-control);
+  width: 44px;
+  height: 44px;
+}
+.state-modal-content .modal-close:hover {
+  background: var(--research-hover);
+}
+.state-modal-content :is(.state-view, .race-view) {
+  padding: clamp(18px, 3vw, 32px);
+  overflow-wrap: anywhere;
+}
+:is(.state-modal-content, .race-page) .back-button {
+  color: var(--research-dem);
+  min-height: 44px;
+  padding-right: 48px;
+}
+:is(.state-modal-content, .race-page) .back-button:hover { color: var(--research-ink); }
+:is(.state-modal-content, .race-page) :is(.state-section h3, .section-title, .race-type) {
+  color: var(--research-muted);
+}
+.state-modal-content .races-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+.state-modal-content .race-card {
+  background: var(--research-card);
+  border-color: var(--research-rule);
+  color: var(--research-ink);
+  border-radius: 8px;
+  transition: transform .2s ease;
+}
+.state-modal-content .race-card:hover { border-color: #6b8e87; }
+.state-modal-content .race-title { color: var(--research-ink); }
+:is(.state-modal-content, .race-page) :is(.candidate-headers, .tabs-header) {
+  border-color: var(--research-rule);
+}
+:is(.state-modal-content, .race-page) .candidate-headers { background: var(--research-soft); }
+:is(.state-modal-content, .race-page) :is(.avatar, .party-badge, .candidate-previews .preview) {
+  background: #e9ece6;
+  color: #4c5c55;
+}
+:is(.state-modal-content, .race-page) :is(.avatar, .party-badge, .preview).democratic {
+  background: var(--research-dem-tint);
+  color: var(--research-dem);
+}
+:is(.state-modal-content, .race-page) :is(.avatar, .party-badge, .preview).republican {
+  background: var(--research-rep-tint);
+  color: var(--research-rep);
+}
+.page-shell :is(.party-tag, .cand-party).democratic {
+  color: var(--research-dem);
+}
+.page-shell :is(.party-tag, .cand-party).republican {
+  color: var(--research-rep);
+}
+:is(.state-modal-content, .race-page) .tab-button {
+  color: var(--research-muted);
+  min-height: 44px;
+}
+:is(.state-modal-content, .race-page) .tab-button:hover {
+  color: var(--research-ink);
+  background: var(--research-hover);
+}
+:is(.state-modal-content, .race-page) .tab-button.active {
+  background: var(--research-soft);
+  border-bottom-color: var(--research-ink);
+  color: var(--research-ink);
+}
+:is(.state-modal-content, .race-page) .tab-button:focus-visible {
+  outline-offset: -4px;
+}
+:is(.state-modal-content, .race-page) .research-details {
+  color: var(--research-ink);
+  background: var(--research-soft);
+}
+:is(.state-modal-content, .race-page) .race-deviation .detail-button {
+  color: var(--research-ink);
+  background: transparent;
+  border-color: #aebfba;
+}
+:is(.state-modal-content, .race-page) .race-deviation .detail-button:hover {
+  background: var(--research-hover);
+}
+:is(.state-modal-content, .race-page) .race-deviation .detail-button[aria-expanded="true"] {
+  color: var(--research-paper);
+  background: var(--research-ink);
+  border-color: var(--research-ink);
+}
+:is(.state-modal-content, .race-page) .race-deviation .publication-date {
+  color: var(--research-muted);
+}
+:is(.state-modal-content, .race-page) .domain-heading {
+  color: var(--research-ink);
+  border-color: #6b8e87;
+}
+:is(.state-modal-content, .race-page) .domain-heading.ai-general { border-color: #94819a; }
+:is(.state-modal-content, .race-page) .deviation-timeline > li {
+  display: block;
+  background: var(--research-card);
+  border-color: var(--research-rule);
+  border-left-color: #a5b8ac;
+  padding: 18px;
+}
+.page-shell .deviation-timeline > li.tl-deviates { border-left-color: #aa8248; }
+.page-shell .deviation-timeline > li.tl-aligned { border-left-color: #66886b; }
+.page-shell .deviation-matrix td.cell-deviates { background: #f7eee1; }
+:is(.state-modal-content, .race-page) .race-data-notice {
+  background: var(--research-soft);
+  line-height: 1.65;
+}
+:is(.state-modal-content, .race-page) .race-data-notice p { color: var(--research-ink); }
+:is(.state-modal-content, .race-page) .race-data-notice strong { color: #35666a; }
+:is(.state-modal-content, .race-page) :is(.polling-notice.stale, .polling-notice.unavailable) {
+  background: var(--research-warning-tint);
+  border-color: var(--research-warning-rule);
+}
+:is(.state-modal-content, .race-page) :is(.polling-notice.stale, .polling-notice.unavailable) strong {
+  color: var(--research-warning);
+}
+.page-shell .election-result.empty {
+  border-color: var(--research-control);
+  background: var(--research-soft);
+}
+.page-shell :is(.winner-mark, .result-summary) { color: var(--research-success); }
+.page-shell .result-summary.pending { color: var(--research-muted); }
+:is(.state-modal-content, .race-page) .meter-track {
+  background: #d6dfdf;
+  border-radius: 2px;
+}
+:is(.state-modal-content, .race-page) .meter-fill { border-radius: 2px; }
+:is(.state-modal-content, .race-page) .meter-fill.democratic { background: var(--research-dem); }
+:is(.state-modal-content, .race-page) .meter-fill.republican { background: var(--research-rep); }
+:is(.state-modal-content, .race-page) .meter-fill.other { background: #738780; }
+:is(.state-modal-content, .race-page) .meter-figure { color: var(--research-muted); }
+
+/* Match the existing homepage proposal cards without a second dark wrapper. */
+:is(.state-modal-content, .race-page) .proposals-panel {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  margin-top: 32px;
+}
+:is(.state-modal-content, .race-page) .proposals-panel > h3 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+:is(.state-modal-content, .race-page) .research-proposals .proposal {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--research-rule);
+  border-radius: 0;
+}
+
+/* Shared table treatment. Overflow belongs to the table, never the page. */
+.page-shell :is(.table-wrap, .france-table-wrap) {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: #9aafa5 var(--research-paper);
+}
+.page:not(.analysis-page):not(.party-page) .table-wrap,
+.state-modal-content .table-wrap {
+  border: 1px solid var(--research-rule);
+  border-radius: 7px;
+  background: var(--research-card);
+}
+.page-shell :is(.data-table, .result-table, .deviation-matrix) :is(th, td) {
+  color: var(--research-ink);
+  border-color: var(--research-rule);
+  line-height: 1.6;
+}
+.page-shell :is(.data-table, .result-table, .deviation-matrix) thead th {
+  color: var(--research-muted);
+  background: var(--research-soft);
+}
+:is(.state-modal-content, .race-page) :is(.result-table, .deviation-matrix) :is(th, td) {
+  padding: 12px;
+}
+:is(.state-modal-content, .race-page) .deviation-matrix tbody th {
+  display: table-cell;
+  min-width: 170px;
+}
+:is(.state-modal-content, .race-page) .deviation-matrix tbody th > span {
+  display: block;
+  margin-bottom: 5px;
+}
+.page-shell .result-table tbody tr.winner th { color: var(--research-ink); }
+.page-shell .result-table { min-width: 520px; }
+.page:not(.analysis-page):not(.party-page) .data-table { min-width: 560px; }
+.page-shell .methods .data-table { min-width: 460px; }
+.page-shell .methods section + section {
+  border-top: 1px solid var(--research-rule);
+  padding-top: 24px;
+}
+.page-shell .methods section > :is(p, ul) { max-width: 88ch; }
+.page-shell .methods li + li { margin-top: 8px; }
+.page-shell .methods .table-wrap + :is(p, ul) { margin-top: 18px; }
+
+/* Retained bill and France components use the same tokens, not a new variant. */
+.page-shell .bill-reader {
+  background: var(--research-card);
+  color: var(--research-ink);
+  border-color: var(--research-rule);
+  border-radius: 8px;
+}
+.page-shell .bill-reader h3 {
+  color: var(--research-ink);
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+}
+.page-shell :is(.bill-idline, .bill-original-title, .bill-sponsor-note,
+  .bill-reader .reader-published) { color: var(--research-muted); }
+.page-shell .reader-sponsor.democratic {
+  color: var(--research-dem);
+  background: var(--research-dem-tint);
+}
+.page-shell .reader-sponsor.republican {
+  color: var(--research-rep);
+  background: var(--research-rep-tint);
+}
+.page-shell .bill-disclosure {
+  color: var(--research-ink);
+  border-color: var(--research-rule);
+}
+.page-shell .france-dashboard {
+  --fr-ink: var(--research-ink);
+  --fr-muted: var(--research-muted);
+  --fr-line: var(--research-rule);
+  --fr-paper: var(--research-paper);
+  --fr-card: var(--research-card);
+  --fr-blue: var(--research-dem);
+  --fr-red: var(--research-rep);
+  --fr-soft-blue: var(--research-dem-tint);
+  --fr-soft-red: var(--research-rep-tint);
+  --fr-soft-green: var(--research-soft);
+  background: var(--research-paper);
+  border-color: var(--research-rule);
+  border-radius: 8px;
+  box-shadow: none;
+}
+.page-shell .france-dashboard :is(.france-search, .france-select, .france-candidate) {
+  background: var(--research-card);
+  border-color: var(--research-control);
+  transition: transform .16s ease;
+}
+.page-shell .france-candidate[aria-pressed="true"] {
+  background: var(--fr-soft-blue);
+  border-color: var(--fr-blue);
+}
+.page-shell .france-candidate:hover { border-color: #6b8e87; }
+.page-shell .france-empty-evidence {
+  background: var(--research-soft);
+  color: var(--research-muted);
+  border-color: var(--research-control);
+}
+.page-shell .france-not-tested { color: var(--research-muted); }
+.page-shell .france-select { max-width: 100%; }
+.page-shell .france-scenario-head > div { min-width: 0; max-width: 100%; }
+.page-shell .france-table th { background: var(--research-soft); }
+.page-shell .france-table td { color: var(--research-ink); }
+
+/* Absence and failure are readable research states, not dark leftovers. */
+.page-shell .empty-panel {
+  color: var(--research-ink);
+  background: var(--research-soft);
+  border-color: var(--research-control);
+  border-radius: 8px;
+  line-height: 1.65;
+}
+.state-modal-content .empty-note {
+  border-left: 2px solid var(--research-rule);
+  padding: 10px 14px;
+  background: var(--research-soft);
+  border-radius: 0 5px 5px 0;
+  line-height: 1.6;
+}
+.page-shell .error-panel {
+  color: var(--research-ink);
+  background: var(--research-warning-tint);
+  border: 1px solid var(--research-warning-rule);
+  border-radius: 8px;
+  margin: 24px 0;
+}
+.state-modal-content .error-panel { margin: 24px; }
+.page-shell .error-panel h2 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+}
+.page-shell .error-panel p { color: var(--research-ink); line-height: 1.65; }
+.page-shell .error-detail code { color: var(--research-warning); }
+
+@media (max-width: 767px) {
+  .state-modal-overlay { padding: 0; }
+  .state-modal-content {
+    max-height: 95dvh;
+    border-radius: 12px 12px 0 0;
+  }
+  .state-modal-content :is(.state-view, .race-view) { padding: 18px 16px; }
+  .state-modal-content :is(.candidate-headers, .comparison-row, .signals-grid) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .state-modal-content :is(.candidate-headers, .tabs-content, .race-deviation,
+    .context-signals, .election-result, .race-data-notice) {
+    padding: 16px;
+  }
+  .state-modal-content .tabs-header { padding: 0 8px; }
+  .state-modal-content .tab-button {
+    flex: 1 1 42%;
+    padding: 12px 8px;
+    font-size: .8rem;
+  }
+  .state-modal-content .research-details { padding: 12px; }
+  .state-modal-content .candidate-header { gap: 12px; }
+  .state-modal-content .race-deviation .table-wrap { margin-top: 12px; }
+  .page-shell .filter-row { align-items: stretch; gap: 14px; }
+  .page-shell .filter-row label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    max-width: 100%;
+  }
+  .page-shell .download-grid { grid-template-columns: minmax(0, 1fr); }
+  .page-shell .download-card { padding: 18px; }
+  .page-shell .checkbox-row { align-items: flex-start; }
+  .page-shell .checkbox-row input { margin-top: 4px; }
+  .page-shell .france-dashboard {
+    padding: 16px;
+    overflow-wrap: anywhere;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-shell *,
+  .page-shell *::before,
+  .page-shell *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .page-shell :is(.race-card, .france-candidate):hover { transform: none; }
+}
+
+/* Release-worktree homepage surfaces: keep the current map and data layout,
+   while bringing its newer summaries and Europe coverage into the paper theme. */
+.research-home {
+  color: var(--research-ink);
+}
+.research-home .summary-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0;
+}
+.research-home .stat-box {
+  min-width: 0;
+  padding: 18px 20px;
+  gap: 7px;
+  background: var(--research-card);
+  color: var(--research-ink);
+  border: 1px solid var(--research-rule);
+  border-radius: 8px;
+  box-shadow: 0 5px 18px rgb(37 62 70 / .035);
+}
+.research-home .stat-box .label {
+  color: #40666a;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+.research-home .stat-box strong {
+  color: var(--research-ink);
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.research-home .stat-sub { color: var(--research-muted); line-height: 1.55; }
+.research-home .maps-row { gap: 16px; }
+.research-home .map-panel {
+  min-width: 0;
+  background: #e7eeea;
+  border: 1px solid #cbd8cf;
+  border-radius: 9px;
+  padding: clamp(14px, 2vw, 22px);
+}
+.research-home .map-block h2 {
+  color: var(--research-ink);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.research-home .panel-note { color: var(--research-muted); line-height: 1.55; }
+.research-home .us-map-container {
+  padding: 12px;
+  background: rgb(252 250 245 / .68);
+  border: 1px solid #d3ddd5;
+  border-radius: 6px;
+}
+.research-home .state-path {
+  stroke: var(--research-paper);
+  stroke-width: 1;
+}
+.research-home .state-path.no-data,
+.research-home .state-path.country-other { fill: #d7e0db; }
+.research-home .state-path.has-bills { fill: #9abbb5; }
+.research-home .state-path.has-races { fill: #356f73; }
+.research-home .state-path.country-eu { fill: #a9c5bb; }
+.research-home .state-path.country-planned { fill: #a8793e; }
+.research-home .state-path.country-pilot { fill: #b79351; }
+.research-home .state-path:hover,
+.research-home .state-path:focus-visible,
+.research-home .state-path.selected {
+  fill: #b79351;
+  stroke: #735f36;
+  stroke-width: 1.7;
+  filter: none;
+}
+.research-home .state-label { fill: #344d52; }
+.research-home .state-label.has-races { fill: var(--research-card); }
+.research-home .land-background { fill: #dce5df; stroke: #c2d0c8; }
+.research-home .map-legend { color: var(--research-muted); }
+.research-home .swatch.has-races { background: #356f73; }
+.research-home .swatch.has-bills { background: #9abbb5; }
+.research-home .swatch.no-data,
+.research-home .swatch.country-other { background: #d7e0db; border: 1px solid #b7c9bd; }
+.research-home .swatch.country-eu { background: #a9c5bb; }
+.research-home .swatch.country-planned { background: #a8793e; }
+.research-home .swatch.country-pilot { background: #b79351; }
+.research-home .front {
+  min-width: 0;
+  background: var(--research-card);
+  border: 1px solid var(--research-rule);
+  border-top: 3px solid #6b8e87;
+  border-radius: 8px;
+  color: var(--research-ink);
+}
+.research-home .front.data-centers { border-top-color: #6b8e87; }
+.research-home .front.ai-general { border-top-color: #94819a; }
+.research-home .front h3 {
+  color: var(--research-ink);
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+}
+.research-home .front-stat { border-color: var(--research-rule); border-radius: 5px; }
+.research-home .front-stat strong {
+  color: var(--research-ink);
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+.research-home .front-stat span { color: var(--research-muted); line-height: 1.5; }
+.research-home .front p { color: var(--research-muted); }
+.research-home .proposals-panel {
+  margin-top: 36px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+.research-home .proposals-panel > h3 {
+  color: var(--research-ink);
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.research-home .proposal-columns { gap: 28px; }
+.research-home .domain-heading { color: var(--research-ink); border-color: #6b8e87; }
+.research-home .domain-heading.ai-general { border-color: #94819a; }
+.research-home .category-chip {
+  color: #48615d;
+  background: var(--research-soft);
+  border-color: var(--research-rule);
+}
+.research-home .category-group h5 { color: var(--research-ink) !important; }
+.research-home .category-desc { color: var(--research-muted); line-height: 1.55; }
+.page-shell .policy-box {
+  padding: 14px 14px 22px;
+  border: 1px solid var(--research-rule);
+  border-left-width: 4px;
+  border-radius: 6px;
+  background: var(--research-card);
+  color: var(--research-ink);
+}
+.page-shell .policy-box.tint-democratic {
+  background: var(--research-dem-tint);
+  border-left-color: var(--research-dem);
+}
+.page-shell .policy-box.tint-republican {
+  background: var(--research-rep-tint);
+  border-left-color: var(--research-rep);
+}
+.page-shell .policy-box.tint-bipartisan {
+  background: #f0ebf2;
+  border-left-color: #75617b;
+}
+.page-shell .policy-box.tint-other { border-left-color: #71847b; }
+.page-shell .policy-headline { color: var(--research-ink); line-height: 1.5; overflow-wrap: anywhere; }
+.page-shell .policy-ref a { color: var(--research-dem); }
+.page-shell .policy-who { color: #465e62; font-size: .8rem; overflow-wrap: anywhere; }
+.page-shell .policy-date { color: var(--research-muted); }
+.page-shell .policy-details summary { color: #405e61; }
+.page-shell .policy-details p { color: var(--research-ink); line-height: 1.6; }
+.page-shell .source-list {
+  border-color: var(--research-rule);
+  color: var(--research-muted);
+  overflow-wrap: anywhere;
+}
+.page-shell .source-list a { color: var(--research-dem); }
+.page-shell .source-list .src-n { color: var(--research-ink); }
+.page-shell .source-list .src-check { color: var(--research-muted); }
+.page-shell .source-list li:target { background: var(--research-warning-tint); }
+.research-home .empty-note { color: var(--research-muted); }
+
+/* Keep party comparisons identifiable without changing party semantics. */
+.party-page .page-head h2 { color: var(--research-ink); }
+.party-page .meter-table .legend-swatch.democratic { background: var(--research-dem); }
+.party-page .meter-table .legend-swatch.republican { background: var(--research-rep); }
+
+@media (max-width: 767px) {
+  .research-home .summary-row { grid-template-columns: 1fr; gap: 10px; }
+  .research-home .stat-box { padding: 15px 16px; }
+  .research-home .maps-row,
+  .research-home .fronts,
+  .research-home .proposal-columns { grid-template-columns: minmax(0, 1fr); }
+  .research-home .front-stats { grid-template-columns: 1fr; }
+  .research-home .map-panel { padding: 14px; }
+  .research-home .us-map-container { padding: 7px; }
+  .research-home .map-legend { gap: 8px 14px; font-size: .74rem; }
+}

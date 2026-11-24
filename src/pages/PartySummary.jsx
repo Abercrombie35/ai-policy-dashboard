@@ -33,38 +33,40 @@ function DimensionBlock({ dim, records }) {
           ? 'Share of each party’s coded records that mention the category. A record can mention several, so shares need not sum to 100%.'
           : 'Share of each party’s coded records in each category.'}
       </p>
-      <table className="meter-table">
-        <thead>
-          <tr>
-            <th scope="col">Category</th>
-            {PARTIES.map((p) => (
-              <th scope="col" key={p}>{p} (n = {totals[p]})</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map(({ cat, counts }) => (
-            <tr key={cat.id}>
-              <th scope="row">{cat.label}</th>
-              {PARTIES.map((p) => {
-                const share = pct(counts[p], totals[p]);
-                return (
-                  <td key={p}>
-                    <div className="meter" title={`${p}: ${counts[p]} of ${totals[p]} records (${share}%)`}>
-                      <div className="meter-track">
-                        <div className={`meter-fill ${p.toLowerCase()}`} style={{ width: `${share}%` }} />
-                      </div>
-                      <span className="meter-figure">
-                        {counts[p]}/{totals[p]} · {share}%
-                      </span>
-                    </div>
-                  </td>
-                );
-              })}
+      <div className="table-wrap" role="region" aria-label={`${dim.label} party comparison`} tabIndex={0}>
+        <table className="meter-table">
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              {PARTIES.map((p) => (
+                <th scope="col" key={p}>{p} (n = {totals[p]})</th>
+              ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {rows.map(({ cat, counts }) => (
+              <tr key={cat.id}>
+                <th scope="row">{cat.label}</th>
+                {PARTIES.map((p) => {
+                  const share = pct(counts[p], totals[p]);
+                  return (
+                    <td key={p}>
+                      <div className="meter" title={`${p}: ${counts[p]} of ${totals[p]} records (${share}%)`}>
+                        <div className="meter-track">
+                          <div className={`meter-fill ${p.toLowerCase()}`} style={{ width: `${share}%` }} />
+                        </div>
+                        <span className="meter-figure">
+                          {counts[p]}/{totals[p]} · {share}%
+                        </span>
+                      </div>
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }
@@ -81,7 +83,7 @@ function PartySummary() {
   const anyUnreviewed = records.some((r) => !r.record.coding.reviewed);
 
   return (
-    <div className="page">
+    <div className="page party-page">
       <header className="page-head">
         <h2>Party comparison</h2>
         <p>

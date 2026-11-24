@@ -17,7 +17,7 @@ function InternationalView() {
         <p className="fine-print">{internationalNote}</p>
       </header>
 
-      <div className="table-wrap">
+      <div className="table-wrap" role="region" aria-label="International election coverage" tabIndex={0}>
         <table className="data-table">
           <thead>
             <tr>
