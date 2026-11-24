@@ -67,6 +67,7 @@ function ElectionResult({ race }) {
         {result.call && <span className="result-call">{result.call}</span>}
       </p>
 
+      <div className="table-wrap" role="region" aria-label="Election result vote shares" tabIndex={0}>
       <table className="result-table">
         <thead>
           <tr>
@@ -102,6 +103,7 @@ function ElectionResult({ race }) {
           ))}
         </tbody>
       </table>
+      </div>
 
       <p className="result-asof">{result.figuresAsOf}</p>
       {result.context && <p className="result-context">{result.context}</p>}
