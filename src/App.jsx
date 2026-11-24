@@ -19,6 +19,8 @@ import { useDrafts } from './lib/drafts';
 import { useHashRoute, navigate } from './lib/router';
 import './styles.css';
 import './styles/pages.css';
+import './styles/research.css';
+import './styles/research-surfaces.css';
 
 const NAV = [
   { id: 'map', label: 'Map', path: '/' },
@@ -105,7 +107,7 @@ function MapPage({ selectedState, selectedCountry }) {
   const { sourced, drafts } = countRecords();
 
   return (
-    <>
+    <div className="research-home">
       <section className="summary-row">
         <div className="stat-box">
           <span className="label">Tracked races</span>
@@ -153,7 +155,7 @@ function MapPage({ selectedState, selectedCountry }) {
 
       {selectedState && <StateModal stateAbbr={selectedState} onClose={close} />}
       {selectedCountry && <CountryModal code={selectedCountry} onClose={close} />}
-    </>
+    </div>
   );
 }
 
