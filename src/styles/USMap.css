@@ -74,3 +74,10 @@
 .swatch.country-pilot { background: #f59e0b; }
 .swatch.country-planned { background: #b45309; }
 .swatch.country-eu { background: #2a3d55; }
+
+/* A tracked race abroad uses the same colour as a tracked race in the U.S.;
+   countries with an election only listed stay in the lighter amber. */
+.research-home .europe-map-container .state-path.country-pilot { fill: #356f73; }
+.research-home .europe-map-container .swatch.country-pilot { background: #356f73; }
+.research-home .europe-map-container .state-path.country-planned { fill: #c9a46a; }
+.research-home .europe-map-container .swatch.country-planned { background: #c9a46a; }
