@@ -19,6 +19,11 @@ const TABS = [
 
 // A policy-area tab: one row per category, with the candidates side by side
 // and each candidate's records split into what they said and proposed.
+// Races with many candidates (France) show, in each category, only the
+// candidates with records there, and name the others underneath, so every
+// candidate is still accounted for.
+const MAX_COLS = 3;
+
 function DomainByCategory({ domainId, candidates, shown, race }) {
   const rows = categoriesInDomain(domainId)
     .map((cat) => ({ cat, items: shown.filter((i) => primaryCategory(i, domainId) === cat.id) }))
@@ -36,12 +41,16 @@ function DomainByCategory({ domainId, candidates, shown, race }) {
       {rows.map(({ cat, items }) => {
         const index = makeSourceIndex(items);
         const refPrefix = `src-${race.id}-${cat.id}`;
+        const many = candidates.length > MAX_COLS;
+        const withRecords = candidates.filter((c) => items.some((i) => i.candidateId === c.id));
+        const columns = many ? withRecords : candidates;
+        const without = many ? candidates.filter((c) => !withRecords.includes(c)) : [];
         return (
         <section key={cat.id} className="category-row">
           <h5 title={cat.description}>{cat.label}</h5>
           {cat.description && <p className="category-desc">{cat.description}</p>}
-          <div className="comparison-row" style={{ '--cols': candidates.length }}>
-            {candidates.map((c) => {
+          <div className="comparison-row" style={{ '--cols': Math.min(columns.length, MAX_COLS) }}>
+            {columns.map((c) => {
               const mine = items.filter((i) => i.candidateId === c.id);
               return (
                 <div key={c.id} className="candidate-column" aria-label={`${c.name}: ${cat.label}`}>
@@ -58,6 +67,7 @@ function DomainByCategory({ domainId, candidates, shown, race }) {
                             record={item}
                             party={c.party}
                             candidate={c}
+                            race={race.country ? race : undefined}
                             refNum={index.numberOf(item)}
                             refPrefix={refPrefix}
                           />
@@ -70,6 +80,9 @@ function DomainByCategory({ domainId, candidates, shown, race }) {
               );
             })}
           </div>
+          {without.length > 0 && (
+            <p className="no-record-note">Nothing recorded in this category: {without.map((c) => c.name).join(', ')}.</p>
+          )}
           <SourceList index={index} refPrefix={refPrefix} />
         </section>
         );
@@ -98,9 +111,11 @@ function QuestionnaireStatus({ q }) {
 }
 
 function CandidateComparison({ race }) {
-  const [activeTab, setActiveTab] = useState('overview');
+  // Abroad only the two policy-area tabs are used so far.
+  const tabs = race.country ? TABS.filter((t) => t.domain) : TABS;
+  const [activeTab, setActiveTab] = useState(tabs[0].id);
   const { includeDrafts } = useDrafts();
-  const tab = TABS.find((t) => t.id === activeTab);
+  const tab = tabs.find((t) => t.id === activeTab) || tabs[0];
   const candidates = race.candidates || [];
 
   const tabItems = itemsForRace(race).filter((i) => inTab(tab, i));
@@ -108,13 +123,14 @@ function CandidateComparison({ race }) {
 
   return (
     <div className="candidate-comparison">
-      <div className="candidate-headers" style={{ '--cols': candidates.length }}>
+      <div className="candidate-headers" style={{ '--cols': Math.min(candidates.length, 4) }}>
         {candidates.map((c) => (
           <div key={c.id} className="candidate-header">
-            <div className={`avatar ${(c.party || '').toLowerCase()}`} aria-hidden="true">{initials(c.name)}</div>
+            <div className={`avatar ${(c.party || '').toLowerCase()} ${c.bloc ? `bloc-${c.bloc}` : ''}`} aria-hidden="true">{initials(c.name)}</div>
             <div>
               <h3>{c.name}</h3>
-              <span className={`party-badge ${(c.party || '').toLowerCase()}`}>{c.party}</span>
+              <span className={`party-badge ${(c.party || '').toLowerCase()} ${c.bloc ? `bloc-${c.bloc}` : ''}`}>{c.party}</span>
+              {c.note && <p className="candidate-note">{c.note}</p>}
               <div className="questionnaire"><QuestionnaireStatus q={c.questionnaire} /></div>
             </div>
           </div>
@@ -122,7 +138,7 @@ function CandidateComparison({ race }) {
       </div>
 
       <div className="tabs-header" role="tablist">
-        {TABS.map((t) => (
+        {tabs.map((t) => (
           <button
             key={t.id}
             type="button"

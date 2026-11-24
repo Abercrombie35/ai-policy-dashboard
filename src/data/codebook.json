@@ -349,7 +349,8 @@
           "label": "Opposes preemption",
           "description": "States should keep the power to regulate AI."
         }
-      ]
+      ],
+      "scope": "us"
     },
     {
       "id": "data-centers",
@@ -388,7 +389,8 @@
           "label": "Restrict sales",
           "description": "Tighten export controls on advanced chips."
         }
-      ]
+      ],
+      "scope": "us"
     },
     {
       "id": "safety-rules",
@@ -599,6 +601,12 @@
       "description": "Training-data disclosure, copyright compliance and compensation for creators."
     },
     {
+      "id": "ai-sovereignty",
+      "domain": "ai-general",
+      "label": "Digital sovereignty and European champions",
+      "description": "Control over AI and cloud infrastructure, support for European AI companies, public AI investment for sovereignty."
+    },
+    {
       "id": "ai-chips-china",
       "domain": "ai-general",
       "label": "Chips and China",
@@ -633,6 +641,24 @@
       "domain": "ai-general",
       "label": "Innovation and public investment",
       "description": "Public funding and support for AI development."
+    }
+  ],
+  "blocs": [
+    {
+      "id": "left",
+      "label": "Left"
+    },
+    {
+      "id": "centre",
+      "label": "Centre"
+    },
+    {
+      "id": "right",
+      "label": "Right"
+    },
+    {
+      "id": "far-right",
+      "label": "Far right"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { RecordMeta } from './ItemCard';
+import { CheckNote } from './PolicyBox';
 import { resultForRace, hasHiddenResult, resultLabel, resultStatuses, confidenceLevels } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/ElectionResult.css';
@@ -44,9 +45,11 @@ function ElectionResult({ race }) {
       <section className="election-result empty">
         <h3>Election result</h3>
         <p className="empty-note">
-          {hasHiddenResult(race.id, includeDrafts)
-            ? 'An unverified draft result is hidden until it is checked.'
-            : 'Result not yet recorded.'}
+          {race.status === 'upcoming'
+            ? `Not yet held. ${race.runoffDate ? 'First round' : 'Election day'}: ${race.electionDate}${race.runoffDate ? `; runoff: ${race.runoffDate}` : ''}.`
+            : hasHiddenResult(race.id, includeDrafts)
+              ? 'An unverified draft result is hidden until it is checked.'
+              : 'Result not yet recorded.'}
         </p>
       </section>
     );
@@ -65,6 +68,7 @@ function ElectionResult({ race }) {
       <p className="result-winner">
         <strong>{result.winner.name}</strong> ({result.winner.party}) won.{' '}
         {result.call && <span className="result-call">{result.call}</span>}
+        <CheckNote id={result.id} className="check-inline" />
       </p>
 
       <div className="table-wrap" role="region" aria-label="Election result vote shares" tabIndex={0}>

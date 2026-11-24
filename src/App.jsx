@@ -13,7 +13,7 @@ import AnalysisPage from './pages/AnalysisPage';
 import ProposalsPanel from './components/ProposalsPanel';
 import ErrorBoundary from './components/ErrorBoundary';
 import { APP_VERSION } from './version';
-import { races, bills, results, geo, europeGeo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains, raceById, officeType } from './lib/data';
+import { usRaces, usBills, results, geo, europeGeo, countRecords, datasetUpdated, allCodedRecords, domainsOf, trackOf, proposals, domains, raceById, officeType, racesForCountry, countryName, checkSummary } from './lib/data';
 import { allCandidates, questionsInDomain, deviationCell } from './lib/analysis';
 import { useDrafts } from './lib/drafts';
 import { useHashRoute, navigate } from './lib/router';
@@ -89,7 +89,7 @@ function RacePage({ race }) {
   }, [race.id]);
   return (
     <div className="page race-page">
-      <RaceView race={race} onBack={() => navigate(`/state/${race.state}`)} />
+      <RaceView race={race} onBack={() => navigate(race.country ? `/country/${race.country}` : `/state/${race.state}`)} />
     </div>
   );
 }
@@ -97,34 +97,40 @@ function RacePage({ race }) {
 function MapPage({ selectedState, selectedCountry }) {
   const [filter, setFilter] = useState('all');
   const close = useCallback(() => navigate('/'), []);
-  const statesWithRaces = new Set(races.map((r) => r.state)).size;
+  const statesWithRaces = new Set(usRaces.map((r) => r.state)).size;
+  const abroad = racesForCountry('FR');
   const OFFICE_LABELS = { 'U.S. Senate': 'Senate', 'U.S. House': 'House', Governor: 'governor' };
   const officeCounts = Object.entries(OFFICE_LABELS)
-    .map(([type, label]) => [label, races.filter((r) => officeType(r.office) === type).length])
+    .map(([type, label]) => [label, usRaces.filter((r) => officeType(r.office) === type).length])
     .filter(([, n]) => n > 0)
     .map(([label, n]) => `${n} ${label}`)
     .join(' · ');
   const { sourced, drafts } = countRecords();
+  const checks = checkSummary();
 
   return (
     <div className="research-home">
       <section className="summary-row">
         <div className="stat-box">
           <span className="label">Tracked races</span>
-          <strong>{races.length}</strong>
+          <strong>{usRaces.length + abroad.length}</strong>
           <span className="stat-sub">
             {officeCounts} in {statesWithRaces} state{statesWithRaces === 1 ? '' : 's'} ·{' '}
             {results.length} result{results.length === 1 ? '' : 's'} recorded
+            {abroad.length > 0 && <> · {countryName('FR')}'s 2027 presidential election</>}
           </span>
         </div>
         <div className="stat-box">
           <span className="label">Sourced records</span>
           <strong>{sourced}</strong>
-          <span className="stat-sub">Each cites its source; most are Low confidence until checked · {drafts} hidden draft{drafts === 1 ? '' : 's'}</span>
+          <span className="stat-sub">
+            Each cites its source.{checks.total > 0 && <> {checks.confirmed} of {checks.total} claims confirmed by other reports;</>}{' '}
+            the rest are marked · {drafts} hidden draft{drafts === 1 ? '' : 's'}
+          </span>
         </div>
         <div className="stat-box">
-          <span className="label">AI bills tracked</span>
-          <strong>{bills.length}</strong>
+          <span className="label">U.S. AI bills tracked</span>
+          <strong>{usBills.length}</strong>
           <span className="stat-sub">Dataset last edited {datasetUpdated || 'never'}</span>
         </div>
       </section>
@@ -145,7 +151,10 @@ function MapPage({ selectedState, selectedCountry }) {
           <div className="panel-head">
             <h2>Europe</h2>
           </div>
-          <p className="panel-note">Next: France's 2027 presidential election. Select a country for its tracked elections.</p>
+          <p className="panel-note">
+            France's 2027 presidential election is tracked: <a href="#/country/FR/fr-president-2027">open the race</a>. Select a
+            country for its elections.
+          </p>
           <EuropeMap selectedCountry={selectedCountry} onCountryClick={(code) => navigate(`/country/${code}`)} />
         </div>
       </div>
@@ -175,8 +184,10 @@ function App() {
     case 'methods': content = <MethodsView />; break;
     case 'data': content = <DataView />; break;
     default: {
-      const race = page === 'state' && params[1] ? raceById(params[1]) : null;
-      content = race && race.state === selectedState ? <RacePage race={race} /> : <MapPage selectedState={selectedState} selectedCountry={selectedCountry} />;
+      // Race pages: #/state/MI/<race-id> in the U.S., #/country/FR/<race-id> abroad.
+      const race = ['state', 'country'].includes(page) && params[1] ? raceById(params[1]) : null;
+      const matches = race && (page === 'state' ? race.state === selectedState : race.country === selectedCountry);
+      content = matches ? <RacePage race={race} /> : <MapPage selectedState={selectedState} selectedCountry={selectedCountry} />;
     }
   }
 

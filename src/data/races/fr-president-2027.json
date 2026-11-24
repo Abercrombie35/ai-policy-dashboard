@@ -1,0 +1,115 @@
+{
+  "id": "fr-president-2027",
+  "country": "FR",
+  "office": "President",
+  "cycle": 2027,
+  "status": "upcoming",
+  "electionDate": "2027-04-18",
+  "runoffDate": "2027-05-02",
+  "seat": {
+    "type": "open",
+    "note": "President Emmanuel Macron cannot run for a third consecutive term."
+  },
+  "nomineesSource": "Candidacies are not final: the official list follows the Constitutional Council's validation of 500 sponsorships in early 2027. Listed here: names leading the polls and in coverage of AI policy, as of Nov. 2026.",
+  "candidates": [
+    {
+      "id": "jordan-bardella",
+      "name": "Jordan Bardella",
+      "party": "Rassemblement National (RN)",
+      "bloc": "far-right",
+      "note": "RN candidate not settled: Marine Le Pen became eligible again after a July 2026 appeal ruling, with a cassation appeal pending.",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "edouard-philippe",
+      "name": "Édouard Philippe",
+      "party": "Horizons",
+      "bloc": "centre",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "gabriel-attal",
+      "name": "Gabriel Attal",
+      "party": "Renaissance",
+      "bloc": "centre",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "bruno-retailleau",
+      "name": "Bruno Retailleau",
+      "party": "Les Républicains (LR)",
+      "bloc": "right",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "jean-luc-melenchon",
+      "name": "Jean-Luc Mélenchon",
+      "party": "La France Insoumise (LFI)",
+      "bloc": "left",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "marine-tondelier",
+      "name": "Marine Tondelier",
+      "party": "Les Écologistes",
+      "bloc": "left",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "francois-ruffin",
+      "name": "François Ruffin",
+      "party": "Independent left",
+      "bloc": "left",
+      "note": "Party label to verify.",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "contextNotes": [
+    {
+      "text": "First round Sunday, April 18, 2027; second round (runoff between the top two) Sunday, May 2, 2027. The official campaign opens April 5, 2027.",
+      "source": {
+        "title": "info.gouv.fr: Presidential election 2027",
+        "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2027"
+      },
+      "publishedDate": null
+    },
+    {
+      "text": "On July 7, 2026 the Paris appeals court cut Marine Le Pen's ineligibility to a period that lets her run in 2027; a further appeal to the Court of Cassation is pending. Jordan Bardella, RN president, is the party's candidate if she cannot run.",
+      "source": {
+        "title": "Eunews: Le Pen convicted on appeal, 45-month ineligibility, but she can still run in 2027",
+        "url": "https://www.eunews.it/en/2026/07/07/le-pen-convicted-on-appeal-45-month-ineligibility-but-she-can-still-run-in-2027/"
+      },
+      "publishedDate": "2026-07-07"
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

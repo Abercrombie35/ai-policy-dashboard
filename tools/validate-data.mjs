@@ -26,6 +26,11 @@ const PARTIES = new Set(['Republican', 'Democratic']);
 const EUROPE = new Set(Object.keys(read('europe-geo.json').countries));
 // "US" marks federal bills.
 const JURISDICTIONS = new Set([...Object.keys(read('us-states-geo.json').states), 'US']);
+// Outside the U.S., records name a country on the Europe map, or "EU" for
+// European Union law.
+const COUNTRIES = new Set([...EUROPE, 'EU']);
+const BLOCS = ids(codebook.blocs || []);
+const QUESTION_SCOPE = Object.fromEntries(codebook.policyQuestions.map((q) => [q.id, q.scope || 'all']));
 
 const errors = [];
 const seenIds = new Set();
@@ -123,13 +128,24 @@ function checkLabeledRecord(where, rec, allowedLabels = LABEL_TYPES) {
 const raceFiles = readdirSync(join(root, 'races')).filter((f) => f.endsWith('.json'));
 const raceIds = new Set();
 const raceCandidates = {};
+const raceCountry = {};
 for (const file of raceFiles) {
   const race = read(join('races', file));
   const where = `races/${file}`;
   if (`${race.id}.json` !== file) fail(where, `file name must match race id "${race.id}"`);
   if (raceIds.has(race.id)) fail(where, 'duplicate race id');
   raceIds.add(race.id);
-  if (!STATES.has(race.state)) fail(where, `unknown state "${race.state}"`);
+  // A race is in a U.S. state or, outside the U.S., in a country.
+  if (race.country != null) {
+    if (race.state != null) fail(where, 'give a state or a country, not both');
+    if (!EUROPE.has(race.country)) fail(where, `country "${race.country}" is not on the Europe map`);
+    checkDate(where, 'runoffDate', race.runoffDate);
+    if (race.status !== 'upcoming' && race.status !== 'held') fail(where, 'international races need status "upcoming" or "held"');
+    (race.contextNotes || []).forEach((n, i) => {
+      if (!n.text || !n.source?.url) fail(`${where} contextNotes[${i}]`, 'needs text and a source URL');
+      checkDate(`${where} contextNotes[${i}]`, 'publishedDate', n.publishedDate, false, true);
+    });
+  } else if (!STATES.has(race.state)) fail(where, `unknown state "${race.state}"`);
   ['office', 'cycle', 'electionDate', 'candidates', 'items', 'contextSignals'].forEach((k) => {
     if (race[k] == null) fail(where, `missing ${k}`);
   });
@@ -140,8 +156,12 @@ for (const file of raceFiles) {
     if (candidateIds.has(c.id)) fail(where, `duplicate candidate id "${c.id}"`);
     candidateIds.add(c.id);
     if (!c.questionnaire?.status) fail(where, `candidate ${c.id} needs questionnaire.status`);
+    // Outside the U.S., candidates are placed on a left-right bloc for comparison.
+    if (race.country != null && !BLOCS.has(c.bloc)) fail(where, `candidate ${c.id} needs a bloc from the codebook`);
+    if (c.bloc != null && !BLOCS.has(c.bloc)) fail(where, `candidate ${c.id}: unknown bloc "${c.bloc}"`);
   }
   raceCandidates[race.id] = candidateIds;
+  raceCountry[race.id] = race.country || null;
   // Results are separately labeled records in results.json. The old
   // per-race "result" field is only a placeholder.
   if (race.result && race.result.status !== 'not-recorded') {
@@ -164,13 +184,17 @@ for (const file of raceFiles) {
 const legislation = read('legislation.json');
 legislation.bills.forEach((bill, i) => {
   const w = `legislation.json bills[${i}] (${bill.id})`;
-  if (!JURISDICTIONS.has(bill.state)) fail(w, `unknown jurisdiction "${bill.state}" (use a state code or US)`);
+  if (bill.country != null) {
+    if (bill.state != null) fail(w, 'give a state or a country, not both');
+    if (!COUNTRIES.has(bill.country)) fail(w, `unknown country "${bill.country}" (use a code on the Europe map, or EU)`);
+  } else if (!JURISDICTIONS.has(bill.state)) fail(w, `unknown jurisdiction "${bill.state}" (use a state code or US)`);
   if (!bill.billNumber || !bill.title || !bill.session) fail(w, 'needs billNumber, title and session');
   if (!BILL_STATUSES.has(bill.status)) fail(w, `status "${bill.status}" is not in the codebook`);
   checkDate(w, 'statusDate', bill.statusDate, false, true);
   if (!bill.coding?.specificity) fail(w, 'bills need coding.specificity so they can be sorted into said / proposed');
   (bill.sponsors || []).forEach((s) => {
     if (!s.name || !s.party) fail(w, 'each sponsor needs name and party');
+    if (s.bloc != null && !BLOCS.has(s.bloc)) fail(w, `unknown bloc "${s.bloc}"`);
   });
   checkLabeledRecord(w, bill);
   checkCategories(w, bill, true);
@@ -186,6 +210,10 @@ read('candidate-research.json').records.forEach((rec, i) => {
   if (!rec.text) fail(w, 'missing text');
   if (!rec.coding?.specificity) fail(w, 'research records need coding.specificity so they can be sorted into said / proposed');
   if (!rec.publishedDate && !rec.dateNote) fail(w, 'give publishedDate or a dateNote explaining when');
+  // U.S.-only questions (such as federal preemption) do not apply abroad.
+  for (const q of Object.keys(rec.stances || {})) {
+    if (raceCountry[rec.raceId] && QUESTION_SCOPE[q] === 'us') fail(w, `policy question "${q}" applies only to U.S. races`);
+  }
   if (!rec.publishedDate && !rec.sortDate) fail(w, 'undated records need an approximate sortDate for the timeline');
   checkDate(w, 'sortDate', rec.sortDate, false, true);
   checkLabeledRecord(w, rec);
@@ -283,6 +311,55 @@ read('international.json').elections.forEach((e, i) => {
   if (!EUROPE.has(e.countryCode)) fail(w, `countryCode "${e.countryCode}" is not on the Europe map`);
   if (!e.country || !e.type) fail(w, 'needs country and type');
 });
+
+// Checks against other published reports (verification.json). Every
+// researched record, bill, result and piece of party-line evidence carries a
+// check; confirmed claims are Medium confidence (never High: the source pages
+// were not read), and claims that could not be confirmed stay Low.
+const verification = read('verification.json');
+const CHECK_RESULTS = new Set(['confirmed', 'corrected', 'partly-confirmed', 'contradicted', 'not-confirmed', 'not-checked', 'not-checkable']);
+// Records that can be edited are corrected rather than left contradicted.
+const RACE_FILE_ONLY = new Set(['contradicted']);
+const checkable = new Map();
+for (const rec of Object.values(raceItemsById)) checkable.set(rec.id, rec);
+for (const b of legislation.bills) checkable.set(b.id, b);
+for (const r of results) checkable.set(r.id, r);
+const extraIds = new Set();
+for (const pos of partyLines.positions) (pos.evidence || []).forEach((_, j) => extraIds.add(`${pos.id}#${j}`));
+for (const item of Object.values(raceItemIndex)) extraIds.add(item.id);
+for (const file of raceFiles) {
+  const race = read(join('races', file));
+  (race.contextNotes || []).forEach((_, j) => extraIds.add(`${race.id}#context${j}`));
+  if (race.country) extraIds.add(`${race.id}#candidates`);
+}
+read('international.json').elections.forEach((e) => extraIds.add(`international#${e.id}`));
+checkDate('verification.json', 'checkedOn', verification.checkedOn, true);
+for (const [id, c] of Object.entries(verification.checks || {})) {
+  const w = `verification.json ${id}`;
+  if (!checkable.has(id) && !extraIds.has(id)) fail(w, 'no record has this id');
+  if (!CHECK_RESULTS.has(c.result)) fail(w, `unknown result "${c.result}"`);
+  if (!c.note) fail(w, 'needs a note saying what was checked and found');
+  checkDate(w, 'checkedOn', c.checkedOn, true);
+  if (['confirmed', 'corrected', 'partly-confirmed'].includes(c.result) && !(c.sources || []).some((s) => s.url)) {
+    fail(w, 'a confirmed, corrected or partly confirmed claim needs the reports that confirm it');
+  }
+  (c.sources || []).forEach((s) => {
+    if (!s.url || !s.title) fail(w, 'each source needs a title and url');
+  });
+  const rec = checkable.get(id);
+  if (rec && RACE_FILE_ONLY.has(c.result)) fail(w, 'correct the record instead of leaving it contradicted');
+  if (rec) {
+    const confirmed = c.result === 'confirmed' || c.result === 'corrected';
+    if (confirmed && !['medium', 'high'].includes(rec.confidence)) fail(w, 'a confirmed claim should be Medium (or High) confidence');
+    if (!confirmed && ['medium', 'high'].includes(rec.confidence) && rec.labelType !== 'election-result') {
+      fail(w, `a claim that is ${c.result} should not be ${rec.confidence} confidence`);
+    }
+    if (c.result !== 'not-checked' && rec.lastVerified && rec.lastVerified < c.checkedOn) fail(w, 'lastVerified on the record is older than the check');
+  }
+}
+for (const id of [...checkable.keys(), ...[...extraIds].filter((x) => x.includes('#') && !x.startsWith('international#'))]) {
+  if (!verification.checks?.[id]) fail(`verification.json`, `no check recorded for ${id}`);
+}
 
 if (errors.length) {
   console.error(`Data validation failed with ${errors.length} problem(s):\n- ${errors.join('\n- ')}`);

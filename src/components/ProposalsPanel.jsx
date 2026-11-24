@@ -1,6 +1,6 @@
 import React from 'react';
 import { PolicyBox, SourceList, makeSourceIndex } from './PolicyBox';
-import { proposals, stateName, domains, categoriesInDomain, primaryCategory } from '../lib/data';
+import { proposals, stateName, countryName, domains, categoriesInDomain, primaryCategory } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/Analysis.css';
 
@@ -17,6 +17,7 @@ function CategoryGroup({ cat, list, refPrefix }) {
             <PolicyBox
               record={p.record}
               party={p.party}
+              bloc={p.bloc}
               race={p.race}
               candidate={p.candidate}
               refNum={index.numberOf(p.record)}
@@ -56,20 +57,30 @@ function Column({ domainId, items, scope }) {
 
 // Proposed bills, moratoriums and candidates' concrete proposals and official
 // actions, split into the two policy areas and grouped by category. With a
-// state, shows that state's items plus federal bills.
-function ProposalsPanel({ state, title = 'Proposed bills and moratoriums' }) {
+// state, shows that state's items plus federal bills; with a country, that
+// country's items plus EU law.
+function ProposalsPanel({ state, country, title = 'Proposed bills and moratoriums' }) {
   const { includeDrafts } = useDrafts();
-  const items = proposals(includeDrafts, { state });
+  const items = proposals(includeDrafts, { state, country });
   const forDomain = (d) => items.filter((p) => p.domains.includes(d));
-  const scope = state || 'all';
+  const scope = state || (country ? `intl-${country}` : 'all');
   return (
     <section className="proposals-panel">
       <h3>{title}</h3>
-      <p className="section-note">
-        What is being proposed, as distinct from what is said: bills (federal{state ? ` and ${stateName(state)}` : ' and state'}),
-        proposed moratoriums, candidates' plans and official actions, grouped by category. Blue boxes are Democratic,
-        red Republican, purple bipartisan. Numbers point to the sources listed under each category.
-      </p>
+      {country ? (
+        <p className="section-note">
+          What is being proposed, as distinct from what is said: {countryName(country)}'s bills and government plans, the
+          EU laws that apply there, and candidates' concrete plans, grouped by category. Boxes are tinted by political
+          bloc: pink left, amber centre, teal right, brown far right; gray where no bloc applies (EU law). Numbers point
+          to the sources listed under each category.
+        </p>
+      ) : (
+        <p className="section-note">
+          What is being proposed, as distinct from what is said: bills (federal{state ? ` and ${stateName(state)}` : ' and state'}),
+          proposed moratoriums, candidates' plans and official actions, grouped by category. Blue boxes are Democratic,
+          red Republican, purple bipartisan. Numbers point to the sources listed under each category.
+        </p>
+      )}
       <div className="proposal-columns">
         <Column domainId="data-centers" items={forDomain('data-centers')} scope={scope} />
         <Column domainId="ai-general" items={forDomain('ai-general')} scope={scope} />

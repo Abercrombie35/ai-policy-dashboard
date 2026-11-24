@@ -203,3 +203,7 @@
 /* The timeline already shows each date in its left column. */
 .deviation-timeline .policy-date { display: none; }
 .deviation-timeline .policy-box { padding-bottom: 14px; }
+
+/* Stance table abroad: party names in plain text (no U.S. party colours). */
+.stance-matrix .cand-party,
+.page-shell .stance-matrix .cand-party { color: inherit; opacity: 0.8; background: none; text-transform: none; letter-spacing: 0; font-weight: 500; }

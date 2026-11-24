@@ -1,5 +1,5 @@
 import React from 'react';
-import { codebook, races, bills, results, elections, filterDrafts, stateName, datasetUpdated, countRecords, raceById, itemsForRace, trackOf, domainsOf, partyLines, researchRecords, policyQuestions, categoriesOf } from '../lib/data';
+import { codebook, races, bills, results, elections, filterDrafts, jurisdictionKey, placeOf, checkOf, verification, datasetUpdated, countRecords, raceById, itemsForRace, trackOf, domainsOf, partyLines, researchRecords, policyQuestions, categoriesOf } from '../lib/data';
 import { allCandidates, deviationCell } from '../lib/analysis';
 import { useDrafts } from '../lib/drafts';
 
@@ -19,19 +19,20 @@ function itemRows(includeDrafts) {
     for (const item of filterDrafts([...itemsForRace(race), ...race.contextSignals], includeDrafts)) {
       const c = race.candidates.find((x) => x.id === item.candidateId);
       rows.push([
-        item.id, race.id, race.state, race.office, race.cycle, item.candidateId, c?.name, c?.party,
+        item.id, race.id, race.state || race.country, race.office, race.cycle, item.candidateId, c?.name, c?.party,
         item.kind, item.labelType, item.confidence, item.text, item.source?.title, item.source?.url,
         item.publishedDate, item.lastVerified, item.version,
         ...CODING_COLUMNS.map((k) => item.coding?.[k]), item.coding ? item.coding.reviewed : '',
         trackOf(item), domainsOf(item), Object.entries(item.stances || {}).map(([q, s]) => `${q}=${s}`), item.dateNote,
-        categoriesOf(item),
+        categoriesOf(item), checkOf(item.id)?.result, checkOf(item.id)?.note, (checkOf(item.id)?.sources || []).map((x) => x.url),
       ]);
     }
   }
   return toCsv(
-    ['id', 'race_id', 'state', 'office', 'cycle', 'candidate_id', 'candidate_name', 'party', 'kind', 'label_type',
+    ['id', 'race_id', 'state_or_country', 'office', 'cycle', 'candidate_id', 'candidate_name', 'party', 'kind', 'label_type',
       'confidence', 'text', 'source_title', 'source_url', 'published_date', 'last_verified', 'version',
-      ...CODING_COLUMNS, 'coding_reviewed', 'track', 'policy_areas', 'stances', 'date_note', 'categories'],
+      ...CODING_COLUMNS, 'coding_reviewed', 'track', 'policy_areas', 'stances', 'date_note', 'categories',
+      'check_result', 'check_note', 'check_sources'],
     rows,
   );
 }
@@ -61,15 +62,16 @@ function deviationRows(includeDrafts) {
 
 function billRows(includeDrafts) {
   const rows = filterDrafts(bills, includeDrafts).map((b) => [
-    b.id, b.state, stateName(b.state), b.session, b.billNumber, b.title, b.status, b.statusDate,
+    b.id, jurisdictionKey(b).replace('intl-', ''), placeOf(b), b.session, b.billNumber, b.title, b.status, b.statusDate,
     b.sponsors.map((s) => `${s.name} (${s.party})`), b.labelType, b.confidence, b.summary, b.source?.title,
     b.source?.url, b.lastVerified, b.version, ...CODING_COLUMNS.map((k) => b.coding?.[k]), b.coding ? b.coding.reviewed : '',
     domainsOf(b), categoriesOf(b), b.tags, b.statusNote, b.sponsorsNote,
+    checkOf(b.id)?.result, checkOf(b.id)?.note, (checkOf(b.id)?.sources || []).map((x) => x.url),
   ]);
   return toCsv(
-    ['id', 'state', 'state_name', 'session', 'bill_number', 'title', 'status', 'status_date', 'sponsors', 'label_type',
+    ['id', 'jurisdiction', 'jurisdiction_name', 'session', 'bill_number', 'title', 'status', 'status_date', 'sponsors', 'label_type',
       'confidence', 'summary', 'source_title', 'source_url', 'last_verified', 'version', ...CODING_COLUMNS, 'coding_reviewed',
-      'policy_areas', 'categories', 'tags', 'status_note', 'sponsors_note'],
+      'policy_areas', 'categories', 'tags', 'status_note', 'sponsors_note', 'check_result', 'check_note', 'check_sources'],
     rows,
   );
 }
@@ -112,6 +114,8 @@ function fullJson(includeDrafts) {
       partyLines,
       bills: filterDrafts(bills, includeDrafts),
       internationalElections: elections,
+      // How each claim was checked against other published reports.
+      verification,
     },
     null,
     2,

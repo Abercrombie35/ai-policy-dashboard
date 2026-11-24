@@ -1,8 +1,8 @@
 import React from 'react';
-import { stanceLabel, tracks, confidenceLevels, stateName } from '../lib/data';
+import { stanceLabel, tracks, confidenceLevels, stateName, blocs, BLOC_IDS } from '../lib/data';
 import { STATUS, deviationCell, questionsInDomain, partyLine, timeline } from '../lib/analysis';
 import { useDrafts } from '../lib/drafts';
-import { PolicyBox, SourceList, makeSourceIndex } from './PolicyBox';
+import { PolicyBox, SourceList, makeSourceIndex, CheckNote } from './PolicyBox';
 import '../styles/Analysis.css';
 
 const fmtDate = (record) => record.publishedDate || record.dateNote || 'Date unknown';
@@ -46,6 +46,7 @@ export function PartyLineCell({ party, questionId, showEvidence = true }) {
               <li key={i}>
                 <TrackTag track={e.track} /> <span className="ev-date">{e.date || 'Undated'}</span> {e.summary}{' '}
                 <span className="ev-source">(<SourceLink source={e.source} />)</span>
+                <CheckNote id={`${line.id}#${i}`} className="check-inline" />
               </li>
             ))}
           </ul>
@@ -123,9 +124,12 @@ export function DeviationMatrix({ domainId, rows }) {
 }
 
 // When stances were taken, in date order, with their status against the line.
-export function DeviationTimeline({ domainId, raceId }) {
+export function DeviationTimeline({ domainId, raceId, race }) {
   const { includeDrafts } = useDrafts();
-  const entries = timeline(domainId, includeDrafts).filter((e) => !raceId || e.race.id === raceId);
+  // Abroad there is no party line: the timeline shows stances only.
+  const abroad = Boolean(race?.country);
+  const candidates = race ? (race.candidates || []).map((candidate) => ({ race, candidate })) : undefined;
+  const entries = timeline(domainId, includeDrafts, candidates).filter((e) => !raceId || e.race.id === raceId);
   if (entries.length === 0) return <p className="empty-note">No stances recorded in this area yet.</p>;
   const index = makeSourceIndex(entries.map((e) => e.record));
   const refPrefix = `src-tl-${domainId}-${raceId || 'all'}`;
@@ -145,7 +149,7 @@ export function DeviationTimeline({ domainId, raceId }) {
                 refPrefix={refPrefix}
               />
               <div className="tl-stance">
-                <StatusTag status={e.status} small /> {questionsInDomain(domainId).find((q) => q.id === e.questionId)?.label}:{' '}
+                {!abroad && <StatusTag status={e.status} small />} {questionsInDomain(domainId).find((q) => q.id === e.questionId)?.label}:{' '}
                 <strong>{stanceLabel(e.questionId, e.stance)}</strong>
               </div>
             </div>
@@ -177,6 +181,85 @@ export function RaceDeviation({ race }) {
         <DeviationTimeline domainId="data-centers" raceId={race.id} />
         <h5>Everything else in AI</h5>
         <DeviationTimeline domainId="ai-general" raceId={race.id} />
+      </details>
+    </section>
+  );
+}
+
+// Abroad: where each candidate stands on the policy questions, ordered from
+// left to far right. There is no U.S.-style party line to deviate from, so
+// candidates are compared with each other.
+function StanceMatrix({ domainId, race }) {
+  const { includeDrafts } = useDrafts();
+  const questions = questionsInDomain(domainId, 'intl');
+  const rows = [...(race.candidates || [])].sort((a, b) => BLOC_IDS.indexOf(a.bloc) - BLOC_IDS.indexOf(b.bloc));
+  return (
+    <div className="table-wrap" role="region" aria-label={`Stances: ${domainId}`} tabIndex={0}>
+      <table className="deviation-matrix stance-matrix">
+        <thead>
+          <tr>
+            <th scope="col">Candidate</th>
+            {questions.map((q) => <th scope="col" key={q.id} title={q.question}>{q.label}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((candidate) => (
+            <tr key={candidate.id}>
+              <th scope="row">
+                <span className="cand-name">{candidate.name}</span>
+                <span className="cand-party"><span className={`bloc-swatch ${candidate.bloc}`} aria-hidden="true" />{candidate.party}</span>
+                <span className="cand-race">{blocs[candidate.bloc]?.label}</span>
+              </th>
+              {questions.map((q) => {
+                const cell = deviationCell(race, candidate, q.id, includeDrafts);
+                return (
+                  <td key={q.id} className={cell.entries.length ? 'cell-stance-known' : 'cell-no-evidence'}>
+                    {cell.entries.length === 0 ? (
+                      <span className="missing">No stance recorded</span>
+                    ) : (
+                      ['said', 'proposed'].map((t) => {
+                        const entry = cell.byTrack[t];
+                        if (!entry) return null;
+                        return (
+                          <div key={t} className="track-line">
+                            <TrackTag track={t} /> <span className="cell-stance">{stanceLabel(q.id, entry.stance)}</span>{' '}
+                            <span className="cell-date">({fmtDate(entry.record)})</span>
+                          </div>
+                        );
+                      })
+                    )}
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function RaceStances({ race }) {
+  return (
+    <section className="race-deviation">
+      <h3>Where the candidates stand</h3>
+      <p className="section-note">
+        Each candidate's stance on the policy questions, from the left to the far right, split into what they said and
+        what they proposed. Outside the U.S. there is no party line to measure deviation against, so candidates are
+        compared with each other. Model-generated analysis: stances were coded by an AI model from sourced records and
+        have not been reviewed. Questions that only apply in the U.S. (federal preemption, chip sales to China) are left
+        out.
+      </p>
+      <h4 className="domain-heading data-centers">Data centers</h4>
+      <StanceMatrix domainId="data-centers" race={race} />
+      <h4 className="domain-heading ai-general">Everything else in AI</h4>
+      <StanceMatrix domainId="ai-general" race={race} />
+      <details className="race-timeline">
+        <summary>When: timeline of stances in this race</summary>
+        <h5>Data centers</h5>
+        <DeviationTimeline domainId="data-centers" raceId={race.id} race={race} />
+        <h5>Everything else in AI</h5>
+        <DeviationTimeline domainId="ai-general" raceId={race.id} race={race} />
       </details>
     </section>
   );

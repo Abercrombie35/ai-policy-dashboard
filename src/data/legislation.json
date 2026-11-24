@@ -28,8 +28,8 @@
         "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -48,7 +48,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -64,6 +64,11 @@
           "version": 3,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Texas Legislature Online, IAPP, Texas Tribune). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ],
       "statusNote": "Signed June 22, 2025; effective Jan. 1, 2026."
@@ -98,8 +103,8 @@
         "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4214"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -117,7 +122,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -128,6 +133,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Sen. Sanders, LegiScan, Axios). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -161,8 +171,8 @@
         "url": "https://www.congress.gov/bill/119th-congress/house-bill/9442/all-info"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -180,7 +190,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -191,6 +201,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (LegiScan, Rep. Ocasio-Cortez, PolicySoup). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -225,7 +240,7 @@
         "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5658"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -243,7 +258,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -254,6 +269,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Quiver Quantitative, FastDemocracy, Common Dreams). Not confirmed: A bill record that names Wyden as the sponsor of S. 5658 (the bill trackers in the results don't name the sponsor). Stays Low confidence."
         }
       ]
     },
@@ -304,7 +324,7 @@
         "url": "https://www.opb.org/article/2026/11/09/senate-advances-sweeping-energy-legislation-in-first-major-action-since-midterm-elections/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
@@ -322,7 +342,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -333,6 +353,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (OPB, CRS (EveryCRSReport), NACo). Not confirmed: That Heinrich and Trump say the bill codifies the White House Ratepayer Protection Pledge; Critics' wording of a 'giveaway to the industry' as applied to the data center provisions; Current status after Nov. 9: one tracker reports a 70-27 cloture vote on the bill text on Nov. 16 and no final passage vote yet; no source found for Nov. 18-24. Stays Low confidence."
         }
       ]
     },
@@ -340,31 +365,43 @@
       "id": "us-ratepayer-protection-act",
       "state": "US",
       "session": "119th Congress (2025-2026)",
-      "billNumber": "Number to verify",
+      "billNumber": "H.R. 9340 (Senate companion S. 5028)",
       "title": "Ratepayer Protection Act",
       "sponsors": [
         {
+          "name": "Gabe Evans",
+          "party": "Republican",
+          "role": "House sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Kathy Castor",
+          "party": "Democratic",
+          "role": "House cosponsor",
+          "linkedCandidateId": null
+        },
+        {
           "name": "Jon Husted",
           "party": "Republican",
-          "role": "sponsor",
+          "role": "Senate companion sponsor (S. 5028)",
           "linkedCandidateId": null
         }
       ],
       "status": "passed-one-chamber",
-      "statusDate": "2026-09",
-      "statusNote": "Passed the House; blocked in the Senate, Sept. 2026.",
+      "statusDate": "2026-09-16",
+      "statusNote": "Passed the House 417-3 on Sept. 16, 2026; blocked in the Senate (unanimous consent failed Sept. 17; cloture failed 57-43 in late Sept.).",
       "categories": [
         "dc-ratepayer"
       ],
-      "summary": "Would have states consider making data centers pay for grid upgrades. Passed the House with bipartisan support; Senate Democrats blocked it as \"toothless\".",
+      "summary": "Would have state utility regulators consider making data centers pay for new generation and grid upgrades. Passed the House with bipartisan support; Senate Democrats blocked it as a \"toothless messaging bill\".",
       "labelType": "source-summary",
       "source": {
         "title": "NBC News: Senate Democrats block Husted-led bill on data centers",
         "url": "https://www.nbcnews.com/politics/congress/senate-democrats-block-sen-husted-led-bill-data-centers-calling-toothl-rcna600269"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -382,7 +419,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -393,6 +430,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports and corrected: Corrected: the bill that passed the House 417-3 on Sept. 16, 2026 is H.R. 9340 by Reps. Gabe Evans (R) and Kathy Castor (D); Sen. Jon Husted (R) sponsors the Senate companion S. 5028. It was listed as Husted's bill. Its content and the Senate block are confirmed. Raised to Medium confidence."
         }
       ]
     },
@@ -423,8 +465,8 @@
         "url": "https://thehill.com/policy/energy-environment/6119834-senate-data-center-bill-ratepayer-protection-act/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -441,7 +483,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -452,6 +494,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Senate Energy and Natural Resources Committee, PolicyRisk, NACo). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -480,7 +527,7 @@
         "url": "https://www.themidwesterner.news/2026/02/bipartisan-house-bills-put-1-year-statewide-moratorium-on-data-centers/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -498,7 +545,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -509,6 +556,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Route Fifty, NCSL, E&E News). Not confirmed: Bill numbers (NCSL's tracker lists HB 5594-5595, a six-month moratorium on approvals, construction or tax incentives, status introduced; not confirmed to be this package, and six months may conflict with a one-year pause); Bipartisan sponsorship and sponsor names; February 2026 introduction; Pause until April 1, 2027; Directive to the Michigan Public Service Commission to halt approval of data center utility contracts or rates; Whitmer saying she will not sign a statewide moratorium; Current status as of Nov. 2026. Stays Low confidence."
         }
       ]
     },
@@ -536,7 +588,7 @@
         "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1018"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -554,7 +606,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -565,6 +617,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: not confirmed. No result named SB 1018-1020; Republican Sen. Jim Runestad announced a Senate bill package for a 365-day statewide data center moratorium, which may be this package, but the bill numbers, sponsors and status could not be checked before the search budget ran out. Stays Low confidence."
         }
       ]
     },
@@ -839,7 +896,7 @@
         "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -858,7 +915,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -869,6 +926,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Orrick, Boston Globe, Latham & Watkins). Not confirmed: That threatening to publish such images is also a crime (the search summaries don't mention the threat provision). Stays Low confidence."
         }
       ]
     },
@@ -898,8 +960,8 @@
         "url": "https://www.axios.com/2025/12/19/trump-democrats-fight-back-ai-order"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -915,7 +977,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -926,6 +988,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Sen. Markey, Axios, Legisletter). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -962,8 +1029,8 @@
         "url": "https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -981,7 +1048,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -992,6 +1059,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (House Foreign Affairs Committee, FastDemocracy, ARI). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1016,8 +1088,8 @@
         "url": "https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1033,7 +1105,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1044,6 +1116,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (House Foreign Affairs Committee, Axios, Sen. Banks). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1068,8 +1145,8 @@
         "url": "https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1085,7 +1162,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1096,6 +1173,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (House Foreign Affairs Committee, Rep. Baumgartner, ARI). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1290,7 +1372,7 @@
         "url": "https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -1311,7 +1393,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1322,6 +1404,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (CT Mirror, Ropes & Gray, Connecticut General Assembly). Not confirmed: That use of an automated employment decision tool is no defense to a discrimination claim; Whistleblower protections and reporting channels at frontier developers; AI content provenance provisions; Phase-in from Oct. 1, 2026 to 2028 (results show only employer notice duties starting Jan. 1, 2027); Formal sponsor list. Stays Low confidence."
         }
       ]
     },
@@ -1352,8 +1439,8 @@
         "url": "https://pluribusnews.com/news-and-events/connecticut-ai-regulation-bill-crumbles-amid-govs-veto-threat/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1372,7 +1459,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1383,6 +1470,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (CT Mirror, CBIA, CT Senate Democrats). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1413,8 +1505,8 @@
         "url": "https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1433,7 +1525,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1444,6 +1536,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (CT Mirror, Connecticut Public, CT Senate Democrats). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1468,7 +1565,7 @@
         "url": "https://legiscan.com/CT/bill/SB00245/2026"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -1486,38 +1583,49 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Connecticut General Assembly, Connecticut General Assembly, CT Hospital Association). Not confirmed: Introduction date of Feb. 19, 2026; Final outcome: no action after the March 23 referral was found, consistent with dying in committee when the session ended May 6, 2026, but not stated directly. Stays Low confidence."
         }
       ]
     },
     {
       "id": "ct-2026-hb5926",
       "state": "CT",
-      "session": "2026 session",
+      "session": "2025 session",
       "billNumber": "HB 5926",
       "title": "Surcharge on electricity used by data centers",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
-      "status": "introduced",
-      "statusDate": "2026",
-      "statusNote": "Not enacted.",
+      "sponsors": [
+        {
+          "name": "Brandon Chafee",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "failed",
+      "statusDate": "2025-06-04",
+      "statusNote": "Referred to the Energy and Technology Committee in Jan. 2025; no further action, so it died when the 2025 session ended.",
       "categories": [
         "dc-ratepayer"
       ],
       "summary": "Would add a surcharge on electricity used by data centers.",
       "labelType": "source-summary",
       "source": {
-        "title": "Quorum: 486 data center measures tracked in 2025-2026",
-        "url": "https://www.quorum.us/policy-pulse/quorum-tracked-486-data-center-measures-in-2025-2026-only-42-became-law/"
+        "title": "Connecticut General Assembly: HB 5926 (2025) bill status",
+        "url": "https://prdext3.cga.ct.gov/2025/cbs/H/pdf/HB-5926.pdf"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1534,12 +1642,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports and corrected: Corrected: HB 5926 is a 2025 bill by Rep. Brandon Chafee (D), referred to committee with no further action, so it died when the 2025 session ended; it was listed as a 2026 bill still introduced. What it would do is confirmed. Raised to Medium confidence."
         }
       ]
     },
@@ -1618,7 +1731,7 @@
         "url": "https://www.wfsb.com/2026/10/22/senate-leader-proposes-bill-pause-new-data-centers-connecticut/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -1636,12 +1749,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Connecticut Public, NBC Connecticut). Not confirmed: Oct. 22, 2026 announcement date; That it will be filed when the 2027 session begins; His stated reasons (water and electricity use, utility rates); Local bans such as East Lyme's; His title as Senate Majority Leader (not stated in the results). Stays Low confidence."
         }
       ]
     },
@@ -1679,7 +1797,7 @@
         "url": "https://www.eenews.net/articles/bipartisan-bill-would-force-data-centers-to-find-own-power-sources/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -1698,12 +1816,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Sen. Hawley, E&E News, Sen. Hawley). Not confirmed: That companies would publish five-year utility-use estimates (results only show the ban covers firms that run or plan a data center within five years). Stays Low confidence."
         }
       ]
     },
@@ -1733,8 +1856,8 @@
         "url": "https://techcrunch.com/2025/09/29/california-governor-newsom-signs-landmark-ai-safety-bill-sb-53/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1752,12 +1875,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (TechCrunch, PBS NewsHour, TechCrunch). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1788,8 +1916,8 @@
         "url": "https://techcrunch.com/2025/09/29/california-governor-newsom-signs-landmark-ai-safety-bill-sb-53/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1806,12 +1934,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Governor's office, Sen. Scott Wiener (SD11), Fortune). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1835,8 +1968,8 @@
         "url": "https://www.nbcnews.com/tech/tech-news/ai-law-california-ca-companies-regulation-newsom-rcna234562"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1853,12 +1986,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Sen. Steve Padilla (SD18), TechCrunch, LegiScan). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1882,8 +2020,8 @@
         "url": "https://www.ashurstperkinscoie.com/en/insights/california-governor-newsom-signs-several-ai-bills-but-vetoes-three/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1900,12 +2038,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (StateScoop, Tech Policy Press, CalMatters Digital Democracy). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1929,8 +2072,8 @@
         "url": "https://www.ashurstperkinscoie.com/en/insights/california-governor-newsom-signs-several-ai-bills-but-vetoes-three/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1948,12 +2091,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Bloomberg Law, Fisher Phillips, Akin Gump). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1978,8 +2126,8 @@
         "url": "https://calmatters.org/economy/technology/2026/09/on-ai-newsom-gives-labor-only-some-of-what-it-demanded/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1996,12 +2144,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Akin Gump, CalMatters, KQED). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -2027,8 +2180,8 @@
         "url": "https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2046,12 +2199,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Governor's office, Transparency Coalition, CalMatters). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -2077,8 +2235,8 @@
         "url": "https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2096,12 +2254,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Hunton, Bloomberg Government, CalMatters). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -2126,8 +2289,8 @@
         "url": "https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -2144,12 +2307,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Morrison Foerster, Latham & Watkins, Eversheds Sutherland). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -2181,7 +2349,7 @@
         "url": "https://calmatters.org/environment/2025/09/data-centers-california-electricity-rates/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -2199,12 +2367,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (LAist, CalMatters). Not confirmed: Bill number SB 57 (not named in the results seen); That it began as a special electricity rate for data centers; That the remaining study is a Public Utilities Commission cost-shift assessment; Chaptered status in 2025. Stays Low confidence."
         }
       ]
     },
@@ -2236,7 +2409,7 @@
         "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -2254,12 +2427,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Governor's office, Sen. Steve Padilla (SD18), DatacenterDynamics). Not confirmed: That SB 886 is explicitly one of the seven signed bills; Jan. 1, 2028 deadline for the tariffs; Short title 'California Technology Innovation and Ratepayer Protection Act'. Stays Low confidence."
         }
       ]
     },
@@ -2284,7 +2462,7 @@
         "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -2302,12 +2480,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (CalMatters, Governor's office). Not confirmed: That AB 2383's tariffs must cover wildfire mitigation and liability, electrification, environmental programs and other distribution-level costs (the only description found says it incentivizes data centers to use onsite clean energy). Stays Low confidence."
         }
       ]
     },
@@ -2332,7 +2515,7 @@
         "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -2350,12 +2533,17 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (CalMatters, Governor's office). Not confirmed: Description as making data centers pay the higher cost of electricity when demand spikes. Stays Low confidence."
         }
       ]
     },
@@ -2460,6 +2648,263 @@
           "version": 1,
           "date": "2026-11-16",
           "note": "Entered from web search results on 2026-11-16; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "eu-ai-act",
+      "country": "EU",
+      "session": "European Union",
+      "billNumber": "Regulation (EU) 2024/1689",
+      "title": "EU Artificial Intelligence Act",
+      "sponsors": [],
+      "sponsorsNote": "Adopted by the European Parliament and the Council.",
+      "status": "enacted",
+      "statusDate": "2024-08-01",
+      "statusNote": "In force since Aug. 1, 2024; obligations apply in phases.",
+      "categories": [
+        "ai-comprehensive",
+        "ai-frontier-safety"
+      ],
+      "summary": "Risk-based rules for AI across the EU: bans on certain uses, duties for high-risk systems and for general-purpose AI models, applied in phases. Member states such as France implement and enforce it rather than deciding whether to regulate.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "EUR-Lex: Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+        "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "bans",
+          "disclosure",
+          "audits"
+        ],
+        "issueAreas": [
+          "safety",
+          "discrimination"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "eu-digital-omnibus-ai",
+      "country": "EU",
+      "session": "European Union",
+      "billNumber": "Regulation (EU) 2026/1744",
+      "title": "Digital Omnibus on AI",
+      "sponsors": [],
+      "sponsorsNote": "Adopted by the European Parliament and the Council.",
+      "status": "enacted",
+      "statusDate": "2026-07-27",
+      "statusNote": "Final Council approval June 29, 2026; in force July 27, 2026.",
+      "categories": [
+        "ai-comprehensive",
+        "ai-child-safety"
+      ],
+      "summary": "Delays high-risk AI Act duties (stand-alone systems to Dec. 2, 2027; AI in regulated products to Aug. 2, 2028), bans AI systems generating non-consensual intimate images and child sexual abuse material, and simplifies documentation for smaller firms. Transparency duties and general-purpose AI rules keep their original dates.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Regulation-AI.eu: Digital Omnibus on AI, Regulation (EU) 2026/1744",
+        "url": "https://www.regulation-ai.eu/en/omnibus/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "safety",
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fr-ppl-centres-donnees",
+      "country": "FR",
+      "session": "Senate, 2025-2026",
+      "billNumber": "Proposition de loi (Senate)",
+      "title": "Bill to regulate where data centers are built",
+      "sponsors": [
+        {
+          "name": "David Ros",
+          "party": "Socialist (PS)",
+          "bloc": "left",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "passed-one-chamber",
+      "statusDate": "2026-03-25",
+      "statusNote": "Adopted by the Senate Mar. 25, 2026; sent to the National Assembly Mar. 26.",
+      "categories": [
+        "dc-permitting",
+        "dc-local-control"
+      ],
+      "summary": "Lets large data centers be designated \"projects of major national interest\" by decree, which speeds up their approval, and strengthens local elected officials' role through territorial planning (SCoT). A lighter version was adopted after redundant articles were cut.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Banque des Territoires: Datacenters, the Senate adopts a lighter bill",
+        "url": "https://www.banquedesterritoires.fr/datacenters-le-senat-adopte-une-proposition-de-loi-allegee-renvoyant-lessentiel-aux-textes-en-cours"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fr-pjl-simplification",
+      "country": "FR",
+      "session": "Parliament, 2024-2026",
+      "billNumber": "Projet de loi (government bill)",
+      "title": "Bill to simplify economic life (includes fast-track for data centers)",
+      "sponsors": [],
+      "sponsorsNote": "Government bill.",
+      "status": "introduced",
+      "statusDate": null,
+      "statusNote": "Under examination; not definitively adopted as of March 2026 reports (to verify).",
+      "categories": [
+        "dc-permitting"
+      ],
+      "summary": "Government bill that, among many simplification measures, would let large data centers be classed as projects of major national interest to speed up approvals.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Senate report: Projet de loi de simplification de la vie économique",
+        "url": "https://www.senat.fr/rap/l23-634/l23-63413.html"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fr-nuclear-ai-pledge",
+      "country": "FR",
+      "session": "Government",
+      "billNumber": "Government announcement",
+      "title": "Nuclear power for AI data centers",
+      "sponsors": [
+        {
+          "name": "Emmanuel Macron",
+          "party": "Renaissance",
+          "bloc": "centre",
+          "role": "President",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "announced",
+      "statusDate": "2025-02",
+      "statusNote": "Government policy, not a bill.",
+      "categories": [
+        "dc-economy-jobs"
+      ],
+      "summary": "France pledged a gigawatt of nuclear power for AI computing; in March 2026 President Macron said France's nuclear plants let it open data centers and grow its computing capacity.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "TechRadar: France set to pledge one gigawatt of nuclear power for AI",
+        "url": "https://www.techradar.com/pro/france-plans-to-pledge-one-gigawatt-of-nuclear-power-for-ai"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Entered from web search results on 2026-11-17; the source page itself could not be opened from the build environment. Status, sponsors and summary need checking against the official record. Coding and categories by an AI model, not reviewed."
         }
       ]
     }

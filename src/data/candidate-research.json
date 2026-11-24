@@ -13,7 +13,7 @@
         "url": "https://michiganadvance.com/2026/01/08/el-sayed-lays-out-policy-terms-of-engagement-with-ai-data-centers-in-u-s-senate-hunt/"
       },
       "publishedDate": "2026-01-08",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -42,7 +42,7 @@
         "dc-water-environment",
         "dc-economy-jobs"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -58,6 +58,11 @@
           "version": 3,
           "date": "2026-11-16",
           "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Michigan Advance, Quartz, E&E News). Not confirmed: Closed-loop cooling requirement (no source ties it to El-Sayed); A union-jobs 'guarantee': Michigan Advance said his plan does not specifically call for union-only labor, while E&E News says it covered union jobs. Stays Low confidence."
         }
       ]
     },
@@ -73,8 +78,8 @@
         "url": "https://abdulforsenate.com/2026/06/dr-abdul-el-sayed-announces-ai-policy-platform-ai-under-democracy/"
       },
       "publishedDate": "2026-06",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -98,7 +103,7 @@
         "ai-comprehensive",
         "ai-workers"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -109,6 +114,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (El-Sayed campaign, Detroit Metro Times, Puck). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -124,8 +134,8 @@
         "url": "https://www.washingtonpost.com/politics/2026/10/13/michigan-senate-candidate-el-sayed-issues-ai-policy/"
       },
       "publishedDate": "2026-10-13",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -151,7 +161,7 @@
         "dc-moratorium",
         "ai-frontier-safety"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -167,6 +177,11 @@
           "version": 3,
           "date": "2026-11-16",
           "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (The Washington Post (via DNYUZ), El-Sayed campaign, Crypto Briefing). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -184,7 +199,7 @@
       "publishedDate": null,
       "dateNote": "Before Aug. 20, 2026 (exact dates not recorded)",
       "sortDate": "2026-08",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
@@ -211,7 +226,7 @@
         "dc-economy-jobs",
         "ai-preemption"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -222,6 +237,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Detroit Metro Times, Rogers for Senate, The Lever). Not confirmed: Second half of the quote: 'while setting a responsible framework for safety and data privacy'; Exact dates of the statements. Stays Low confidence."
         }
       ]
     },
@@ -237,8 +257,8 @@
         "url": "https://thehill.com/policy/technology/6042582-ai-infrastructure-political-toxicity-midterms/"
       },
       "publishedDate": "2026-08-20",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -262,7 +282,7 @@
         "dc-moratorium",
         "dc-local-control"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -273,6 +293,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (E&E News, Michigan Advance, WJLA). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -290,7 +315,7 @@
       "publishedDate": null,
       "dateNote": "Campaign platform, 2026",
       "sortDate": "2026",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -318,7 +343,7 @@
         "ai-copyright",
         "ai-privacy-surveillance"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -329,6 +354,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Talarico campaign, Fisher Phillips). Not confirmed: The exact framing 'regulations that hold AI companies accountable while protecting workers' did not appear in the search results. Stays Low confidence."
         }
       ]
     },
@@ -346,8 +376,8 @@
       "publishedDate": null,
       "dateNote": "During the 2026 campaign",
       "sortDate": "2026",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -370,7 +400,7 @@
       "categories": [
         "ai-workers"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -381,6 +411,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Austin American-Statesman, Texas Tribune, Tyler Paper). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -392,14 +427,12 @@
       "labelType": "source-summary",
       "text": "Called for tighter regulation of data centers, describing his approach as a balance between welcoming the investment and protecting working people.",
       "source": {
-        "title": "Tom's Guide: What Talarico, El-Sayed and other midterm winners say about AI data centers",
-        "url": "https://www.tomsguide.com/ai/heres-what-james-talarico-abdul-el-sayed-and-other-us-midterm-election-winners-have-to-say-about-ai-data-centers"
+        "title": "Texas Tribune: Talarico calls for tighter regulation of data centers",
+        "url": "https://www.texastribune.org/2026/07/22/texas-james-talarico-data-centers-regulation-senate-2026/"
       },
-      "publishedDate": null,
-      "dateNote": "Reported after the Nov. 3, 2026 election",
-      "sortDate": "2026-11",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "publishedDate": "2026-07-22",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [],
@@ -419,7 +452,7 @@
       "categories": [
         "dc-economy-jobs"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -430,6 +463,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports and corrected: Date corrected: Talarico said this when he released his data center plan on July 22, 2026 (Texas Tribune, Texas Public Radio), not after the election; Tom's Guide repeated it in November. The original report is now the source. Raised to Medium confidence."
         }
       ]
     },
@@ -445,8 +483,8 @@
         "url": "https://www.jdsupra.com/topics/state-attorneys-general/artificial-intelligence/technology-sector"
       },
       "publishedDate": "2025-08-18",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -469,7 +507,7 @@
       "categories": [
         "ai-consumer-protection"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -480,6 +518,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Texas Attorney General, JURIST, Healthcare Dive). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -495,7 +538,7 @@
         "url": "https://www.breitbart.com/tech/2026/08/25/ken-paxton-unveils-plan-to-prevent-negative-impact-of-ai-data-centers-on-texas/"
       },
       "publishedDate": "2026-08-25",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -525,7 +568,7 @@
         "dc-security",
         "ai-child-safety"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -536,6 +579,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (FOX 4, Daily Signal, Dallas Express). Not confirmed: That the plan 'stopped short of a moratorium' was not stated in any search result. Stays Low confidence."
         }
       ]
     },
@@ -550,9 +598,9 @@
         "title": "U.S. Senate Rules Committee: Benson testimony",
         "url": "https://www.rules.senate.gov/download/06/11/2024/testimony_benson1"
       },
-      "publishedDate": "2024-06-11",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "publishedDate": "2024-03-12",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -576,7 +624,7 @@
       "categories": [
         "ai-deepfakes"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -587,6 +635,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports and corrected: Date corrected from June 11 to March 12, 2024: the Michigan Department of State and Michigan Advance date the Senate Rules Committee hearing to March 12 (June 11 appears only in the testimony file's address). The testimony and its \"exponentially\" wording are confirmed. Raised to Medium confidence."
         }
       ]
     },
@@ -602,7 +655,7 @@
         "url": "https://www.yahoo.com/news/politics/articles/jocelyn-bensons-ad-calls-ending-100559557.html"
       },
       "publishedDate": "2026-09-13",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -629,7 +682,7 @@
         "dc-tax-incentives",
         "dc-ratepayer"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -640,6 +693,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Yahoo News (The Detroit News), Benson campaign, EUP News). Not confirmed: Exact launch date of Sept. 13, 2026 (only September 2026 found). Stays Low confidence."
         }
       ]
     },
@@ -656,8 +714,8 @@
       },
       "publishedDate": "2025-05",
       "dateNote": "House vote in May 2025; the vote was on a broad budget bill, not a standalone AI measure",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -679,7 +737,7 @@
       "categories": [
         "ai-preemption"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -690,6 +748,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Michigan Advance, Tech Policy Press, Route Fifty). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -705,7 +768,7 @@
         "url": "https://www.detroitnews.com/story/news/politics/2026/08/01/john-james-data-center-moratorium-michigan-governor-race-perry-johnson/91134570007/"
       },
       "publishedDate": "2026-08-01",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -730,7 +793,7 @@
         "dc-moratorium",
         "dc-local-control"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -741,6 +804,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Blue Water Healthy Living (reprint of The Detroit News), Michigan Advance). Not confirmed: Date of Aug. 1, 2026 (the Detroit News article's date was not shown in results). Stays Low confidence."
         }
       ]
     },
@@ -756,7 +824,7 @@
         "url": "https://www.michiganpublic.org/politics-government/2026-10-07/james-distances-himself-from-trump-as-benson-tries-to-connect-them-in-gubernatorial-debate"
       },
       "publishedDate": "2026-10-06",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -778,7 +846,7 @@
       "categories": [
         "dc-local-control"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -789,6 +857,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Michigan Public, Bridge Michigan, ClickOnDetroit). Not confirmed: Quote 'a moratorium on Lansing and not the people'. Stays Low confidence."
         }
       ]
     },
@@ -804,7 +877,7 @@
         "url": "https://www.wnem.com/2026/10/30/john-james-says-no-new-data-centers-until-plan-protect-communities/"
       },
       "publishedDate": "2026-10-30",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -829,7 +902,7 @@
         "dc-moratorium",
         "dc-local-control"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -840,6 +913,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Michigan Public, Michigan Advance). Not confirmed: The phrase 'five-part moratorium'; Date of Oct. 30, 2026 (the WNEM story itself was not found; the quote may date from an earlier Grand Rapids event). Stays Low confidence."
         }
       ]
     },
@@ -857,7 +935,7 @@
       "publishedDate": null,
       "dateNote": "During the 2026 campaign",
       "sortDate": "2026",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -887,7 +965,7 @@
         "dc-local-control",
         "dc-economy-jobs"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -903,6 +981,11 @@
           "version": 3,
           "date": "2026-11-16",
           "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (FOX 4, Hinojosa campaign, Texarkana Gazette). Not confirmed: An explicit pledge to end data center tax breaks (sources show her attacking Abbott's tax breaks, not a stated repeal pledge). Stays Low confidence."
         }
       ]
     },
@@ -918,8 +1001,8 @@
         "url": "https://www.usnews.com/news/us/articles/2026-11-05/texas-governor-elect-says-state-will-have-laws-to-shield-citizens-from-data-centers"
       },
       "publishedDate": "2026-11-05",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -940,7 +1023,7 @@
       "categories": [
         "dc-moratorium"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -951,6 +1034,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Korea Times (wire), TechRadar, ABC13). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -966,8 +1054,8 @@
         "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149"
       },
       "publishedDate": "2025-06-22",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -994,7 +1082,7 @@
         "ai-comprehensive",
         "ai-child-safety"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1005,6 +1093,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (IAPP, Haynes Boone, Littler). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1020,7 +1113,7 @@
         "url": "https://www.eenews.net/articles/texas-governor-talks-tough-on-data-centers-calls-for-clampdown/"
       },
       "publishedDate": "2026-08",
-      "lastVerified": "2026-11-12",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -1045,7 +1138,7 @@
         "dc-moratorium",
         "dc-ratepayer"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1056,6 +1149,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Texas Public Radio, E&E News, TechCrunch). Not confirmed: That the pause was later set out in an executive order (sources describe a letter/directive); That critics said it did not cover most mid-size projects. Stays Low confidence."
         }
       ]
     },
@@ -1071,8 +1169,8 @@
         "url": "https://www.texarkanagazette.com/news/2026/oct/14/election-2026-abbott-wants-texas-lawmakers-to/"
       },
       "publishedDate": "2026-10-14",
-      "lastVerified": "2026-11-12",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1093,7 +1191,7 @@
       "categories": [
         "dc-local-control"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1104,6 +1202,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Texarkana Gazette, Dallas Morning News, Longview News-Journal). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1119,8 +1222,8 @@
         "url": "https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/"
       },
       "publishedDate": "2024-04-24",
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -1139,12 +1242,17 @@
       "categories": [
         "ai-comprehensive"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (CT Mirror, Connecticut Public, Fortune). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1160,7 +1268,7 @@
         "url": "https://ctnewsjunkie.com/2025/05/14/appropriations-committee-advances-ai-regulation-bill-as-federal-preemption-looms/"
       },
       "publishedDate": "2025-05-14",
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
@@ -1183,12 +1291,17 @@
       "categories": [
         "ai-preemption"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (CT Mirror, News From The States, News 12). Not confirmed: That in 2025 he named Congress and the Federal Trade Commission specifically as the proper regulators; The May 14, 2025 date and the cited CT News Junkie article (not found in search results). Stays Low confidence."
         }
       ]
     },
@@ -1204,8 +1317,8 @@
         "url": "https://www.wshu.org/connecticut-news/2026-02-27/ct-ai-data-centers-regulations"
       },
       "publishedDate": "2026-02",
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1226,12 +1339,17 @@
       "categories": [
         "dc-ratepayer"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Hartford Business Journal, WSHU, CT Hospital Association). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1247,7 +1365,7 @@
         "url": "https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
       },
       "publishedDate": "2026-05-27",
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -1277,7 +1395,7 @@
         "ai-frontier-safety",
         "ai-child-safety"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1288,6 +1406,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Category assignment refined with the finer category list. Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Ropes & Gray, Connecticut General Assembly, CT Senate Democrats). Not confirmed: Whistleblower protections at frontier-model developers (not stated in the results); AI content provenance provisions (not stated in the results). Stays Low confidence."
         }
       ]
     },
@@ -1303,8 +1426,8 @@
         "url": "https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont"
       },
       "publishedDate": "2026-09-07",
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1328,12 +1451,17 @@
         "dc-moratorium",
         "dc-ratepayer"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (WSHU, Hartford Business Journal, News 12). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1348,9 +1476,9 @@
         "title": "CT News Junkie: AI regulation takes center stage as campaign issue",
         "url": "https://ctnewsjunkie.com/2026/09/24/ai-regulation-takes-center-stage-as-campaign-issue/"
       },
-      "publishedDate": "2026-05",
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "publishedDate": "2026-04-21",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -1374,12 +1502,17 @@
         "ai-comprehensive",
         "ai-preemption"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports and corrected: Date corrected from May to April 21, 2026, the day the Senate passed SB 5 by 32-4 (CT Mirror). The vote and his federal-level reasoning are confirmed. Raised to Medium confidence."
         }
       ]
     },
@@ -1395,8 +1528,8 @@
         "url": "https://www.wfsb.com/2026/09/03/fazio-calls-end-tax-breaks-large-data-centers/"
       },
       "publishedDate": "2026-09-03",
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1420,12 +1553,17 @@
         "dc-tax-incentives",
         "dc-ratepayer"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (WFSB, CT Mirror, CT News Junkie). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1440,9 +1578,9 @@
         "title": "South China Morning Post (via The Star): Top Democrat says chip restrictions are \"key lever\" for US AI edge over China",
         "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/26/top-democrat-says-chip-restrictions-are-key-lever-for-us-ai-edge-over-china"
       },
-      "publishedDate": "2026-10-26",
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "publishedDate": "2026-10-21",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1464,7 +1602,7 @@
       "categories": [
         "ai-chips-china"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1475,8 +1613,14 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports and corrected: Date corrected to Oct. 21, 2026, the day of the Brookings \"AI on the Ballot\" event (Oct. 26 is the date of the news report). The statement is confirmed. Raised to Medium confidence."
         }
-      ]
+      ],
+      "dateNote": "Said at a Brookings event on Oct. 21, 2026; reported by the South China Morning Post on Oct. 26."
     },
     {
       "id": "cr-ct-house04-himes-2",
@@ -1489,8 +1633,8 @@
         "title": "South China Morning Post (via The Star): Top Democrat says chip restrictions are \"key lever\" for US AI edge over China",
         "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/26/top-democrat-says-chip-restrictions-are-key-lever-for-us-ai-edge-over-china"
       },
-      "publishedDate": "2026-10-26",
-      "lastVerified": "2026-11-16",
+      "publishedDate": "2026-10-21",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "unclear",
@@ -1511,7 +1655,7 @@
       "categories": [
         "dc-security"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1522,8 +1666,14 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports (The Star (SCMP), Brookings). Date corrected to Oct. 21, 2026 (Brookings event). Reports confirm he addressed claims that foreign actors were amplifying opposition to data centers; his answer that he did not know if they were true was not visible in the results. Stays Low confidence."
         }
-      ]
+      ],
+      "dateNote": "Said at a Brookings event on Oct. 21, 2026; reported by the South China Morning Post on Oct. 26."
     },
     {
       "id": "cr-ct-house04-himes-3",
@@ -1537,7 +1687,7 @@
         "url": "https://www.cbsnews.com/news/jim-himes-connecticut-democrat-face-the-nation-transcript-11-15-2026/"
       },
       "publishedDate": "2026-11-15",
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -1560,7 +1710,7 @@
       "categories": [
         "ai-chips-china"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1571,6 +1721,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Christian Science Monitor). Not confirmed: The exact Nov. 15, 2026 broadcast date (the CS Monitor report is dated Nov. 18, consistent with it); His specific remark about chips reaching China through intermediaries. Stays Low confidence."
         }
       ]
     },
@@ -1586,8 +1741,8 @@
         "url": "https://politicalemails.org/messages/2125190"
       },
       "publishedDate": "2026-02-07",
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "unclear",
         "levelOfGovernment": [
@@ -1606,7 +1761,7 @@
       "categories": [
         "dc-ratepayer"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1617,6 +1772,11 @@
           "version": 2,
           "date": "2026-11-16",
           "note": "Added policy categories (statements as well as proposals are now categorized). Assigned by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Political Emails archive, Political Emails archive). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1634,8 +1794,8 @@
       "publishedDate": null,
       "dateNote": "During the 2026 campaign",
       "sortDate": "2026-10",
-      "lastVerified": "2026-11-16",
-      "confidence": "low",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1658,12 +1818,17 @@
       "categories": [
         "ai-workers"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding and stance were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (CT Mirror, Connecticut Public, Greenwich Free Press). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
         }
       ]
     },
@@ -1679,7 +1844,7 @@
         "url": "https://www.xavierbecerra2026.com/priorities/ai/"
       },
       "publishedDate": "2026-05",
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -1713,12 +1878,17 @@
         "ai-child-safety",
         "ai-workers"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Becerra campaign, StateScoop, CalMatters). Not confirmed: Release date of May 2026 (no dated release of the AI plan found; only a May 22, 2026 Hollywood jobs plan with AI protections). Stays Low confidence."
         }
       ]
     },
@@ -1734,7 +1904,7 @@
         "url": "https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm"
       },
       "publishedDate": "2026-08-15",
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -1757,12 +1927,17 @@
         "dc-ratepayer",
         "dc-water-environment"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Becerra campaign, StateScoop, San Francisco Examiner). Not confirmed: Date 2026-08-15 (the cited Tech Times article did not appear in search results). Stays Low confidence."
         }
       ]
     },
@@ -1778,7 +1953,7 @@
         "url": "https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm"
       },
       "publishedDate": "2026-08-15",
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
@@ -1804,12 +1979,17 @@
         "ai-child-safety",
         "ai-copyright"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Steve Hilton for Governor). Not confirmed: Exact quoted wording \"sweeping, preemptive regulation on evolving technologies\" (search summary paraphrased it); Date 2026-08-15 (cited Tech Times article not found). Stays Low confidence."
         }
       ]
     },
@@ -1827,7 +2007,7 @@
       "publishedDate": null,
       "dateNote": "During the 2026 campaign",
       "sortDate": "2026-08",
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
@@ -1851,12 +2031,17 @@
         "dc-permitting",
         "dc-local-control"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (IVN, StateScoop, PBS). Not confirmed: That he would let localities decide whether and where data centers are built (he said they should not sit next to homes and should benefit host communities, but no statement on local authority was found). Stays Low confidence."
         }
       ]
     },
@@ -1874,7 +2059,7 @@
       "publishedDate": null,
       "dateNote": "During the 2026 campaign",
       "sortDate": "2026-09",
-      "lastVerified": "2026-11-16",
+      "lastVerified": "2026-11-24",
       "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -1898,12 +2083,501 @@
       "categories": [
         "ai-child-safety"
       ],
-      "version": 1,
+      "version": 2,
       "history": [
         {
           "version": 1,
           "date": "2026-11-16",
           "note": "Summarized from web search results citing this source on 2026-11-16; the page itself could not be opened from the build environment. Wording, date and context need checking against the source. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (CalMatters, Contra Costa News, Chalkbeat). Not confirmed: That the pause was framed as opposing a push for state AI tools in education. Stays Low confidence."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-bardella-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "jordan-bardella",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Calls AI a major question of national sovereignty. Coverage finds the RN has few detailed AI measures so far, focusing mainly on taxing Big Tech and on public procurement.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-24",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "unclear",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty"
+      ],
+      "version": 2,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Fortuneo (AFP), Le Big Data). Not confirmed: Taxing Big Tech as a main RN AI measure; Coverage finding the RN has few detailed AI measures; Date 2026-10-05 (this is the date of the Maddyness coverage; the date of the AFP-reported X post was not shown). Stays Low confidence."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-philippe-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "edouard-philippe",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "AI plan: double France's AI computing capacity within five years, raise engineers trained each year from 40,000 to 100,000, create a \"right to retraining\" for workers threatened by AI, and use state and local purchasing to back European champions such as Mistral.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-24",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "funding",
+          "procurement"
+        ],
+        "issueAreas": [
+          "innovation-competitiveness",
+          "labor",
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "accelerate",
+        "workers": "retraining-led"
+      },
+      "categories": [
+        "dc-permitting",
+        "ai-sovereignty",
+        "ai-innovation",
+        "ai-workers"
+      ],
+      "version": 2,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (75secondes, Ecostylia, PitchBook). Not confirmed: 'Right to retraining' for workers threatened by AI (found only on a low-reliability aggregator page); Use of state AND local purchasing specifically; Whether the 100,000 figure is French or European (votons-2027 says 100,000 European engineers). Stays Low confidence."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-philippe-2",
+      "raceId": "fr-president-2027",
+      "candidateId": "edouard-philippe",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "At VivaTech, made AI sovereignty a central theme and an early credibility test of his campaign.",
+      "source": {
+        "title": "Ecostylia: At VivaTech, Edouard Philippe turns AI sovereignty into an early credibility test",
+        "url": "https://www.ecostylia.com/en/edouard-philippe-ai-2027/"
+      },
+      "publishedDate": "2026-06",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty"
+      ],
+      "version": 2,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (Ecostylia, Ground News (Le Monde), PitchBook). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-attal-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "gabriel-attal",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Wants France to control the entire AI value chain, treats AI training as a basic skill, and lists AI among his four \"major projects\" alongside schools, wages and borders.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-24",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness",
+          "labor"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty",
+        "ai-workers"
+      ],
+      "version": 2,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: partly confirmed (Sud Radio, Boursedirect (AFP), ÉlyséeScope). Not confirmed: Wants France to control the entire AI value chain (not found for Attal); Exact 'basic skill' framing. Stays Low confidence."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-retailleau-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "bruno-retailleau",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Published a 56-page AI plan in July 2026 to bring AI into every level of public administration (a single AI assistant for the state) and redeploy civil servants, part of a leaner state. Reported costs differ: about €23 billion over the five-year term (Next.ink) or €5 billion (Acteurs Publics). Also backs a sovereign AI powered by decarbonized electricity.",
+      "source": {
+        "title": "Next.ink: Pour Bruno Retailleau, l'IA n'attend pas notre consentement",
+        "url": "https://next.ink/247354/pour-bruno-retailleau-lia-nattend-pas-notre-consentement/"
+      },
+      "publishedDate": "2026-07",
+      "lastVerified": "2026-11-24",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty",
+        "ai-innovation"
+      ],
+      "version": 2,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports (Next.ink, Acteurs Publics). Corrected: no source gives €25 billion; Next.ink reports about €23 billion over the term for his July 2026 AI plan and Acteurs Publics €5 billion, so both are now given. The plan for AI across the administration is confirmed; the link to decarbonized electricity was not found. Stays Low confidence."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-melenchon-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "jean-luc-melenchon",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Backs a moratorium on \"non-sovereign\" data centers built for foreign private companies subject to U.S. law. Asked whether he favours a moratorium and a slowdown of AI, he said yes, with safeguards written into a bill his movement is preparing.",
+      "source": {
+        "title": "L'insoumission: Mélenchon interview with Reporterre",
+        "url": "https://linsoumission.fr/2026/07/22/melenchon-entretien-reporterre/"
+      },
+      "publishedDate": "2026-07-22",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers",
+          "national-security-china"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "categories": [
+        "dc-moratorium",
+        "dc-security"
+      ],
+      "version": 2,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: confirmed (L'insoumission, Poliscope, Next.ink). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-melenchon-2",
+      "raceId": "fr-president-2027",
+      "candidateId": "jean-luc-melenchon",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Treats data centers, computing and cloud as sovereignty infrastructure as important as energy, transport or telecoms, and proposes a public digital and AI hub.",
+      "source": {
+        "title": "WYP.agency: Jean-Luc Mélenchon on AI, 2027 proposals and statements",
+        "url": "https://wyp.agency/en/france-2027-election-ai/candidates/jean-luc-melenchon/"
+      },
+      "publishedDate": null,
+      "dateNote": "During the 2026 campaign",
+      "sortDate": "2026-07",
+      "lastVerified": "2026-11-24",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty",
+        "ai-innovation"
+      ],
+      "version": 2,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: not confirmed. Related only: Next.ink reports the LFI programme calls for a moratorium on non-sovereign data centers and a network of public data centers. The comparison with energy, transport or telecoms and the 'public digital and AI hub' were not found, and the shared search limit ran out before a targeted search. Stays Low confidence."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-tondelier-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "marine-tondelier",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Criticizes the environmental cost of data centers.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "dc-water-environment"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-tondelier-2",
+      "raceId": "fr-president-2027",
+      "candidateId": "marine-tondelier",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Prefers smaller, specialized, open-source AI models over ever-larger systems.",
+      "source": {
+        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
+        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+      },
+      "publishedDate": "2026-10-05",
+      "lastVerified": "2026-11-17",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-sovereignty"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fr-ruffin-1",
+      "raceId": "fr-president-2027",
+      "candidateId": "francois-ruffin",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Filed a resolution in the National Assembly calling for a five-year moratorium on non-European (\"non-sovereign\") data center projects, backed by the Ecologist and Communist groups. Its explanatory statement also attacks the reduced electricity tax that data centers pay.",
+      "source": {
+        "title": "Assemblée nationale: Proposition de résolution n° 3293 (Ruffin, data centers)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3293_proposition-resolution.pdf"
+      },
+      "publishedDate": "2026-10-08",
+      "lastVerified": "2026-11-24",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "international"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "categories": [
+        "dc-moratorium",
+        "dc-tax-incentives"
+      ],
+      "version": 2,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-17",
+          "note": "Summarized from web search results citing this source on 2026-11-17; the page itself could not be opened from the build environment. Wording, date and context need checking against the source (and the original French where relevant). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports and corrected: Corrected: the resolution Ruffin filed on Oct. 8, 2026 centres on a five-year moratorium on non-European (\"non-sovereign\") data center projects (National Assembly text no. 3293; franceinfo), which the record left out; it also attacks the reduced electricity tax for data centers. The earlier points (brownfields first, public debate commission) were not found and are removed. Stance changed from \"conditional\" to \"pause\". Raised to Medium confidence."
         }
       ]
     }

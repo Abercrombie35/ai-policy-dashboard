@@ -1,5 +1,6 @@
 import React from 'react';
-import { elections, internationalNote } from '../lib/data';
+import { elections, internationalNote, checkOf, racesForCountry } from '../lib/data';
+import { CheckNote } from '../components/PolicyBox';
 
 const UNIT = { candidate: 'Candidates', 'party-manifesto': 'Party manifestos' };
 const COVERAGE = { 'not-started': 'Not started', 'in-progress': 'In progress', complete: 'Complete' };
@@ -36,17 +37,26 @@ function InternationalView() {
                 <td>{e.type}</td>
                 <td>
                   {e.dateText}{e.year && !e.dateText.includes(String(e.year)) ? `, ${e.year}` : ''}
-                  {e.dateStatus === 'to-verify' && <span className="badge confidence-unverified small">To verify</span>}
+                  {checkOf(`international#${e.id}`) ? (
+                    <CheckNote id={`international#${e.id}`} className="check-inline" />
+                  ) : (
+                    e.dateStatus === 'to-verify' && <span className="badge confidence-unverified small">To verify</span>
+                  )}
                 </td>
                 <td>{UNIT[e.unit]}</td>
-                <td>{e.plan}</td>
+                <td>
+                  {e.plan}
+                  {racesForCountry(e.countryCode).map((r) => (
+                    <div key={r.id}><a href={`#/country/${e.countryCode}/${r.id}`}>Open the tracked race</a></div>
+                  ))}
+                </td>
                 <td>{COVERAGE[e.coverage] || e.coverage}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-      <p className="fine-print">Dates come from the project proposal and must be checked closer to each election.</p>
+      <p className="fine-print">Dates come from the project proposal and were checked against published reports; check them again closer to each election.</p>
     </div>
   );
 }

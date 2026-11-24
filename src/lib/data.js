@@ -10,6 +10,7 @@ import partyLinesData from '../data/party-lines.json';
 import itemCategoriesData from '../data/item-categories.json';
 import europeGeoData from '../data/europe-geo.json';
 import headlinesData from '../data/headlines.json';
+import verificationData from '../data/verification.json';
 
 const raceModules = import.meta.glob('../data/races/*.json', { eager: true, import: 'default' });
 
@@ -25,6 +26,19 @@ export const partyLines = partyLinesData;
 
 export const stateName = (abbr) => (abbr === 'US' ? 'Federal' : geo.states[abbr]?.name || abbr);
 
+// Where a record or race belongs. U.S. records carry a state code ("US" for
+// federal); records outside the U.S. carry a country code ("EU" for European
+// Union law). Country keys get a prefix because some codes are also state
+// codes (DE is Delaware and Germany).
+export const isInternational = (rec) => rec?.country != null;
+export const jurisdictionKey = (rec) => (isInternational(rec) ? `intl-${rec.country}` : rec.state);
+export function jurisdictionLabel(key) {
+  if (!key?.startsWith('intl-')) return stateName(key);
+  const code = key.slice(5);
+  return code === 'EU' ? 'European Union' : countryName(code);
+}
+export const placeOf = (rec) => jurisdictionLabel(jurisdictionKey(rec));
+
 // Within a state: U.S. Senate, then U.S. House (e.g. "U.S. House (CT-4)"), then governor.
 const OFFICE_ORDER = ['U.S. Senate', 'U.S. House', 'Governor'];
 export const officeType = (office) => OFFICE_ORDER.find((o) => office.startsWith(o)) || office;
@@ -32,13 +46,23 @@ const officeRank = (office) => {
   const i = OFFICE_ORDER.indexOf(officeType(office));
   return i === -1 ? OFFICE_ORDER.length : i;
 };
+// U.S. races first, then races abroad.
 export const races = Object.values(raceModules).sort(
   (a, b) =>
-    stateName(a.state).localeCompare(stateName(b.state)) ||
+    Number(isInternational(a)) - Number(isInternational(b)) ||
+    placeOf(a).localeCompare(placeOf(b)) ||
     officeRank(a.office) - officeRank(b.office) ||
     a.office.localeCompare(b.office),
 );
 export const bills = legislation.bills;
+// The U.S. party analysis (party lines, party comparison, breakdowns by
+// Democratic and Republican) covers U.S. races and bills only.
+export const usRaces = races.filter((r) => !isInternational(r));
+export const usBills = bills.filter((b) => !isInternational(b));
+export const racesForCountry = (code) => races.filter((r) => r.country === code);
+// Laws that apply in a country: its own, plus EU law for EU member states.
+export const billsForCountry = (code) =>
+  bills.filter((b) => b.country === code || (b.country === 'EU' && europeGeoData.countries[code]?.eu));
 export const researchRecords = researchData.records;
 
 const byId = (list) => Object.fromEntries(list.map((x) => [x.id, x]));
@@ -55,6 +79,10 @@ export const tracks = byId(codebook.tracks);
 export const domains = byId(codebook.domains);
 export const DOMAIN_IDS = codebook.domains.map((d) => d.id);
 export const proposalCategories = codebook.proposalCategories;
+// Outside the U.S., candidates are compared by political bloc (left to far
+// right) instead of against a U.S. party line.
+export const blocs = byId(codebook.blocs || []);
+export const BLOC_IDS = (codebook.blocs || []).map((b) => b.id);
 export const categoryById = byId(codebook.proposalCategories);
 export const categoriesInDomain = (domainId) => codebook.proposalCategories.filter((c) => c.domain === domainId);
 // A record's categories: its own, or (for items stored in the race files,
@@ -85,6 +113,25 @@ export const stanceLabel = (questionId, optionId) =>
 export const headlineOf = (record) => headlinesData.headlines[record.id] || record.title || record.text;
 
 export const isVerified = (record) => record.confidence !== 'unverified';
+
+// Checks of each claim against other published reports (verification.json).
+// Keys are record ids; party-line evidence uses "<position id>#<index>".
+export const verification = verificationData;
+export const CHECK_RESULTS = {
+  confirmed: { label: 'Confirmed', short: null, description: 'Confirmed by other published reports.' },
+  corrected: { label: 'Corrected', short: 'Corrected after checking', description: 'A detail was wrong and has been corrected from other published reports.' },
+  'partly-confirmed': { label: 'Partly confirmed', short: 'Partly verified', description: 'The main point is confirmed by other reports; some details are not.' },
+  'not-confirmed': { label: 'Not confirmed', short: 'Not independently verified', description: 'No other published report confirming this was found. Treat with caution.' },
+  contradicted: { label: 'Contradicted', short: 'Contradicted by other reports', description: 'Other published reports contradict this. It is an early draft that is kept unchanged; see the note for what they say.' },
+  'not-checked': { label: 'Not yet checked', short: 'Not independently verified', description: 'Not yet checked against other published reports (the search limit for this round of checks was reached).' },
+  'not-checkable': { label: 'Not a checkable fact', short: 'Opinion or projection, not verifiable', description: 'An opinion, judgment or projection rather than a fact, so it cannot be verified.' },
+};
+export const checkOf = (id) => verificationData.checks[id] || null;
+// Counts of factual claims checked and confirmed (or corrected), for the home page.
+export function checkSummary() {
+  const all = Object.values(verificationData.checks).filter((c) => c.result !== 'not-checkable');
+  return { total: all.length, confirmed: all.filter((c) => c.result === 'confirmed' || c.result === 'corrected').length };
+}
 export const filterDrafts = (records, includeDrafts) => (includeDrafts ? records : records.filter(isVerified));
 
 // "Said" (rhetoric, stated principles) vs "proposed" (concrete proposals and
@@ -131,6 +178,14 @@ export function resultForRace(raceId, includeDrafts) {
 export const hasHiddenResult = (raceId, includeDrafts) =>
   !includeDrafts && results.some((r) => r.raceId === raceId && !isVerified(r));
 
+// The bloc behind a record abroad: the candidate's, or the bill sponsors' if
+// they share one. Used to tint policy boxes.
+export function blocOf(record, candidate) {
+  if (candidate) return candidate.bloc || null;
+  const set = new Set((record.sponsors || []).map((s) => s.bloc).filter(Boolean));
+  return set.size === 1 ? [...set][0] : null;
+}
+
 // Party of the candidate (race items) or of the first sponsor (bills).
 export function recordParty(record, race) {
   if (race) return race.candidates.find((c) => c.id === record.candidateId)?.party || 'Other';
@@ -140,12 +195,12 @@ export function recordParty(record, race) {
 // Every coded record in the dataset, flattened with its context.
 export function allCodedRecords(includeDrafts) {
   const out = [];
-  for (const race of races) {
+  for (const race of usRaces) {
     for (const item of filterDrafts(itemsForRace(race), includeDrafts)) {
       if (item.coding) out.push({ record: item, party: recordParty(item, race), source: 'campaign', race });
     }
   }
-  for (const bill of filterDrafts(bills, includeDrafts)) {
+  for (const bill of filterDrafts(usBills, includeDrafts)) {
     if (bill.coding) out.push({ record: bill, party: recordParty(bill), source: 'legislation' });
   }
   return out;
@@ -160,25 +215,30 @@ export function billParty(bill) {
 }
 
 // Proposed policies: bills (including proposed moratoriums) and candidates'
-// concrete proposals and official actions, each with its source.
-export function proposals(includeDrafts, { state } = {}) {
+// concrete proposals and official actions, each with its source. By default
+// U.S. only; with a state, that state plus federal; with a country, that
+// country plus EU law where it applies.
+export function proposals(includeDrafts, { state, country } = {}) {
   const out = [];
-  for (const bill of filterDrafts(bills, includeDrafts)) {
+  const billList = country ? billsForCountry(country) : usBills;
+  const raceList = country ? racesForCountry(country) : usRaces;
+  for (const bill of filterDrafts(billList, includeDrafts)) {
     if (state && bill.state !== state && bill.state !== 'US') continue;
     out.push({
       id: bill.id,
       type: 'bill',
       record: bill,
-      jurisdiction: bill.state,
+      jurisdiction: jurisdictionKey(bill),
       title: `${bill.billNumber}: ${bill.title}`,
       who: bill.sponsors.map((s) => `${s.name} (${s.party[0]})`).join(', ') || bill.sponsorsNote || 'Sponsors to verify',
       date: bill.statusDate,
       domains: domainsOf(bill),
       party: billParty(bill),
+      bloc: blocOf(bill),
       isMoratorium: categoriesOf(bill).includes('dc-moratorium'),
     });
   }
-  for (const race of races) {
+  for (const race of raceList) {
     if (state && race.state !== state) continue;
     for (const rec of filterDrafts(itemsForRace(race), includeDrafts)) {
       if (trackOf(rec) !== 'proposed') continue;
@@ -189,12 +249,13 @@ export function proposals(includeDrafts, { state } = {}) {
         record: rec,
         race,
         candidate,
-        jurisdiction: race.state,
+        jurisdiction: jurisdictionKey(race),
         title: rec.text,
         who: `${candidate?.name} (${candidate?.party[0]}), ${race.office} candidate`,
         date: rec.publishedDate,
         domains: domainsOf(rec),
         party: candidate?.party || 'Other',
+        bloc: candidate?.bloc || null,
         isMoratorium: categoriesOf(rec).includes('dc-moratorium'),
       });
     }
@@ -207,13 +268,13 @@ export function proposals(includeDrafts, { state } = {}) {
 // category breakdowns.
 export function categorizedRecords(includeDrafts) {
   const out = [];
-  for (const race of races) {
+  for (const race of usRaces) {
     for (const rec of filterDrafts(itemsForRace(race), includeDrafts)) {
       if (!rec.coding || categoriesOf(rec).length === 0) continue;
       out.push({ record: rec, party: recordParty(rec, race), jurisdiction: race.state, track: trackOf(rec), domains: domainsOf(rec), kind: 'candidate' });
     }
   }
-  for (const bill of filterDrafts(bills, includeDrafts)) {
+  for (const bill of filterDrafts(usBills, includeDrafts)) {
     out.push({ record: bill, party: billParty(bill), jurisdiction: bill.state, track: 'proposed', domains: domainsOf(bill), kind: 'bill' });
   }
   return out;
