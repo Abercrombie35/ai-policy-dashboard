@@ -1,7 +1,7 @@
 {
   "note": "Results of checking each claim against other published reports. Kept apart from the records so the race files are never edited. Each check names the reports that confirm (or correct) the claim.",
   "checkedOn": "2026-11-24",
-  "method": "Each claim was searched on the web and compared with what reliable sources (official legislature and government sites, established news outlets, law-firm and policy analyses) report. The source pages themselves could not be opened from the build environment, so checks rest on search results and their summaries: confirmed claims are raised to Medium confidence, never High, which needs the primary source to be read.",
+  "method": "Each claim was searched on the web and compared with what reliable sources (official legislature and government sites, established news outlets, law-firm and policy analyses) report, in two rounds on 2026-11-24: a first pass over every claim, then a second pass over every claim not yet searched or only partly confirmed. The source pages themselves could not be opened from the build environment, so checks rest on search results and their summaries: confirmed claims are raised to Medium confidence, never High, which needs the primary source to be read.",
   "checks": {
     "ca-2024-sb1047": {
       "result": "confirmed",
@@ -80,24 +80,22 @@
       ]
     },
     "ca-2025-sb57": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "LAist and CalMatters coverage confirms Padilla's 2025 data center energy-cost bill was cut back to a study requirement, but the bill number, its original rate design and the PUC role were not shown (search budget ran out before a targeted check).",
+      "note": "Bill trackers and committee analyses show Padilla's SB 57 began as a data center tariff bill and was chaptered in Oct. 2025 (Ch. 647) as a PUC study of data center cost shifts due by 2027. Chaptering date added: Oct. 11, 2025 (Chapter 647).",
       "sources": [
+        {
+          "title": "LegiScan: Bill Text CA SB57, 2025-2026 Regular Session, Chaptered",
+          "url": "https://legiscan.com/CA/text/SB57/2025"
+        },
+        {
+          "title": "CalMatters Digital Democracy: SB 57",
+          "url": "https://calmatters.digitaldemocracy.org/bills/ca_202520260sb57"
+        },
         {
           "title": "LAist: Big Tech blocks California data center rules, leaving only a study requirement",
           "url": "https://laist.com/news/climate-environment/big-tech-blocks-california-data-center-rules-leaving-only-a-study-requirement"
-        },
-        {
-          "title": "CalMatters: Data center energy study, California",
-          "url": "https://calmatters.org/environment/2025/12/data-center-energy-study-california/"
         }
-      ],
-      "unconfirmed": [
-        "Bill number SB 57 (not named in the results seen)",
-        "That it began as a special electricity rate for data centers",
-        "That the remaining study is a Public Utilities Commission cost-shift assessment",
-        "Chaptered status in 2025"
       ]
     },
     "ca-2025-sb7": {
@@ -139,19 +137,22 @@
       ]
     },
     "ca-2026-ab1577": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: The Sept. 21, 2026 data center package is confirmed, but no result named AB 1577.",
+      "note": "The governor's office lists AB 1577 (Bauer-Kahan) among the bills signed Sept. 21, 2026; it requires data centers to report energy use to the Energy Commission and estimated energy use to local agencies at permitting (sources differ on monthly vs. annual reporting). Author added: Asm. Rebecca Bauer-Kahan (D).",
       "sources": [
         {
           "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
           "url": "https://gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use"
+        },
+        {
+          "title": "Utility Dive: California tightens oversight of data center energy use, grid costs",
+          "url": "https://www.utilitydive.com/news/california-tightens-oversight-of-data-center-energy-use-grid-costs/831037/"
+        },
+        {
+          "title": "Mayer Brown: California's governor signs nation's most comprehensive data center laws",
+          "url": "https://www.mayerbrown.com/en/insights/publications/2026/09/californias-governor-signs-nations-most-comprehensive-data-center-laws-reshaping-regulation-of-energy-water-and-land-use"
         }
-      ],
-      "unconfirmed": [
-        "That AB 1577 is in the package",
-        "That AB 1577 requires reporting on data center energy demand and local impacts",
-        "Signing date for AB 1577"
       ]
     },
     "ca-2026-ab1883": {
@@ -174,21 +175,22 @@
       ]
     },
     "ca-2026-ab2383": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "AB 2383 appears among the data center laws signed Sept. 21, 2026, but the only description found says it incentivizes onsite clean energy; its wildfire and societal-cost tariff provisions were not confirmed (search budget ran out before a targeted check).",
+      "note": "Bill records and law-firm summaries confirm AB 2383 (Zbur, Ch. 435) requires data center tariffs to carry a share of wildfire mitigation and liability and other public-program costs normally paid by distribution customers; summaries word the program list as climate mandates and equity programs, the claim as electrification and environmental programs. Author added: Asm. Rick Chavez Zbur (D).",
       "sources": [
         {
-          "title": "CalMatters: New California laws on data centers",
-          "url": "https://calmatters.org/economy/technology/2026/09/new-california-laws-data-centers/"
+          "title": "CalMatters Digital Democracy: AB 2383",
+          "url": "https://calmatters.digitaldemocracy.org/bills/ca_202520260ab2383"
         },
         {
-          "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
-          "url": "https://gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use"
+          "title": "Foley & Lardner: California enacts seven data center bills effective January 1, 2027",
+          "url": "https://www.foley.com/insights/publications/2026/09/california-enacts-seven-data-center-bills-effective-january-1-2027-new-tariff-entitlement-and-disclosure-rules-for-hyperscalers-developers-and-power-producers/"
+        },
+        {
+          "title": "Asm. Zbur: Bill protecting ratepayers from data center energy costs passes Assembly",
+          "url": "https://zbur.asmdc.org/press-releases/20260528-zbur-bill-protecting-ratepayers-data-center-energy-costs-passes-assembly"
         }
-      ],
-      "unconfirmed": [
-        "That AB 2383's tariffs must cover wildfire mitigation and liability, electrification, environmental programs and other distribution-level costs (the only description found says it incentivizes data centers to use onsite clean energy)"
       ]
     },
     "ca-2026-sb1000": {
@@ -213,63 +215,64 @@
     "ca-2026-sb1168": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "SB 1168 was signed in the Sept. 21, 2026 package and is described as making data centers pay for grid upgrades and load increases; the specific demand-spike pricing description was not found.",
+      "note": "SB 1168 (McNerney) was signed Sept. 21, 2026 as a rate-structure assessment so data centers bear their own energy and upgrade costs; no source describes it as charging data centers the higher price of power during demand spikes. Author added: Sen. Jerry McNerney (D).",
       "sources": [
-        {
-          "title": "CalMatters: New California laws on data centers",
-          "url": "https://calmatters.org/economy/technology/2026/09/new-california-laws-data-centers/"
-        },
         {
           "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
           "url": "https://gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use"
+        },
+        {
+          "title": "Utility Dive: California tightens oversight of data center energy use, grid costs",
+          "url": "https://www.utilitydive.com/news/california-tightens-oversight-of-data-center-energy-use-grid-costs/831037/"
+        },
+        {
+          "title": "CalMatters Digital Democracy: SB 1168",
+          "url": "https://calmatters.digitaldemocracy.org/bills/ca_202520260sb1168"
         }
       ],
       "unconfirmed": [
-        "Description as making data centers pay the higher cost of electricity when demand spikes"
+        "Description as making data centers pay the higher cost of electricity when demand spikes (not found; coverage speaks of load increases and upgrade costs, and an earlier version was a per-kWh wildfire surcharge)"
       ]
     },
     "ca-2026-sb886": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Results confirm Padilla's SB 886 data center transmission tariff and the Sept. 21, 2026 signing of a seven-bill data center package, but did not explicitly list SB 886 among the signed bills or show the 2028 deadline (search budget ran out before a targeted check).",
+      "note": "SB 886 was signed Sept. 21, 2026 as Chapter 438 in the seven-bill package and requires PUC transmission-level data center tariffs, with a legal alert giving a Jan. 1, 2028 deadline; the bill's short title was not found. Author confirmed: Sen. Steve Padilla (D).",
+      "sources": [
+        {
+          "title": "Governor's office: Governor Newsom signs most comprehensive data center laws in the nation",
+          "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation/"
+        },
+        {
+          "title": "Digital Policy Alert: California governor signed bill on electricity tariffs for data centres (SB 886) into law as Chapter 438",
+          "url": "https://digitalpolicyalert.org/event/44716-california-governor-signed-bill-on-electricity-tariffs-for-data-centres-sb-886-into-law-as-chapter-438-of-the-statutes-of-2026"
+        },
+        {
+          "title": "Foley & Lardner: California enacts seven data center bills effective January 1, 2027",
+          "url": "https://www.foley.com/insights/publications/2026/09/california-enacts-seven-data-center-bills-effective-january-1-2027-new-tariff-entitlement-and-disclosure-rules-for-hyperscalers-developers-and-power-producers/"
+        }
+      ],
+      "unconfirmed": [
+        "Short title 'California Technology Innovation and Ratepayer Protection Act' (not shown in any result)"
+      ]
+    },
+    "ca-2026-sb887": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-24",
+      "note": "Padilla's SB 887, signed Sept. 21, 2026, removes the CEQA exemption option for data centers; the water-use disclosure and payment for water upgrades come from AB 2469 in the same package, as the claim says.",
       "sources": [
         {
           "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
           "url": "https://gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use"
         },
         {
-          "title": "Sen. Steve Padilla (SD18): Press release",
-          "url": "https://sd18.senate.ca.gov/node/383"
+          "title": "KPBS: New California law requires environmental analysis before data centers can be built",
+          "url": "https://www.kpbs.org/news/environment/2026/09/22/new-california-law-requires-environmental-analysis-before-data-centers-can-be-built"
         },
         {
-          "title": "DatacenterDynamics: California governor signs seven-bill package targeting data center energy and water use",
-          "url": "https://datacenterdynamics.com/en/news/california-governor-signs-seven-bill-package-targeting-data-center-energy-and-water-use"
+          "title": "KQED: Newsom signs new restrictions on data center development",
+          "url": "https://www.kqed.org/news/12100746/newsom-signs-new-restrictions-on-data-center-development"
         }
-      ],
-      "unconfirmed": [
-        "That SB 886 is explicitly one of the seven signed bills",
-        "Jan. 1, 2028 deadline for the tariffs",
-        "Short title 'California Technology Innovation and Ratepayer Protection Act'"
-      ]
-    },
-    "ca-2026-sb887": {
-      "result": "not-checked",
-      "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: Reports confirm the Sept. 21, 2026 data center package (water, energy and land use), but no result named SB 887.",
-      "sources": [
-        {
-          "title": "DatacenterDynamics: California governor signs seven-bill package targeting data center energy and water use",
-          "url": "https://datacenterdynamics.com/en/news/california-governor-signs-seven-bill-package-targeting-data-center-energy-and-water-use"
-        },
-        {
-          "title": "Facilities Dive: Cities get more say in data center development under new California laws",
-          "url": "https://www.facilitiesdive.com/news/cities-get-more-say-in-data-center-development-under-new-california-laws/831095/"
-        }
-      ],
-      "unconfirmed": [
-        "That SB 887 (Padilla) is in the package",
-        "That SB 887 bars data centers from skipping CEQA environmental review",
-        "That the package requires disclosure of projected water use and payment for water supply upgrades"
       ]
     },
     "ca-2026-sb947": {
@@ -292,68 +295,65 @@
       ]
     },
     "cr-ca-gov-becerra-1": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Becerra's campaign AI page and StateScoop confirm the CalCompute, state-agency audit, enforcement, jobs-tracking and child-safety planks of his numbered AI plan, but no source dated its release to May 2026.",
+      "note": "Becerra's campaign page and StateScoop confirm the plan's content, and Tech Times (Aug. 15, 2026) describes it as an 11-point plan from May 2026, which confirms the release date.",
       "sources": [
         {
           "title": "Becerra campaign: Artificial Intelligence",
           "url": "https://www.xavierbecerra2026.com/priorities/ai/"
         },
         {
-          "title": "StateScoop: How do California's gubernatorial candidates stack up on AI & tech policy?",
-          "url": "https://statescoop.com/california-gubernatorial-candidates-ai-tech-policy/"
+          "title": "Tech Times: California Governor Race 2026: Becerra and Hilton Split Sharply on AI Regulation",
+          "url": "https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm"
         },
         {
-          "title": "CalMatters: Newsom touts an AI kill switch (refers to Governor-elect Becerra's CalCompute support)",
-          "url": "https://calmatters.org/economy/technology/2026/11/newsom-touts-ai-kill-switch/"
+          "title": "StateScoop: How do California's gubernatorial candidates stack up on AI & tech policy?",
+          "url": "https://statescoop.com/california-gubernatorial-candidates-ai-tech-policy/"
         }
-      ],
-      "unconfirmed": [
-        "Release date of May 2026 (no dated release of the AI plan found; only a May 22, 2026 Hollywood jobs plan with AI protections)"
       ]
     },
     "cr-ca-gov-becerra-2": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Becerra's campaign platform and press coverage confirm he wants data centers to pay their own energy costs and use clean power in exchange for faster permitting and policy certainty; the Aug. 15, 2026 date could not be tied to a source.",
+      "note": "Becerra's data-center position is confirmed on his campaign page, and the cited Tech Times article dated Aug. 15, 2026 was found, but the search results did not show its data-center passage.",
       "sources": [
         {
           "title": "Becerra campaign: Artificial Intelligence (Data Centers, Clean Energy, and Ratepayer Protection)",
           "url": "https://www.xavierbecerra2026.com/priorities/ai/"
         },
         {
-          "title": "StateScoop: How do California's gubernatorial candidates stack up on AI & tech policy?",
-          "url": "https://statescoop.com/california-gubernatorial-candidates-ai-tech-policy/"
+          "title": "Tech Times: California Governor Race 2026: Becerra and Hilton Split Sharply on AI Regulation",
+          "url": "https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm"
         },
         {
-          "title": "San Francisco Examiner: California gubernatorial candidates talk tech policy",
-          "url": "https://www.sfexaminer.com/news/politics/california-gubernatorial-candidates-talk-tech-policy/article_fbb021fb-d56d-4a47-a9a2-bbd025d0ee32.html"
+          "title": "StateScoop: How do California's gubernatorial candidates stack up on AI & tech policy?",
+          "url": "https://statescoop.com/california-gubernatorial-candidates-ai-tech-policy/"
         }
       ],
       "unconfirmed": [
-        "Date 2026-08-15 (the cited Tech Times article did not appear in search results)"
+        "That the Aug. 15, 2026 Tech Times article itself carries the data-center energy-cost and clean-energy statement (the article was found, but its data-center passage was not shown; the position comes from his campaign platform)"
       ]
     },
     "cr-ca-gov-hilton-1": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Hilton's campaign AI page confirms he opposes broad preemptive AI regulation and limits new guardrails to child protection, fraud/impersonation and IP/identity; the exact quote and the date were not confirmed.",
+      "note": "The quoted wording appears on Hilton's campaign AI page, and the cited Tech Times article (Aug. 15, 2026) describes his plan as limiting new AI rules to children's safety, fraud and intellectual property.",
       "sources": [
         {
           "title": "Steve Hilton for Governor: Keep California the AI Capital of the World",
           "url": "https://stevehiltonforgovernor.com/policy/keep-california-the-ai-capital-of-the-world/"
+        },
+        {
+          "title": "Tech Times: California Governor Race 2026: Becerra and Hilton Split Sharply on AI Regulation",
+          "url": "https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm"
         }
-      ],
-      "unconfirmed": [
-        "Exact quoted wording \"sweeping, preemptive regulation on evolving technologies\" (search summary paraphrased it)",
-        "Date 2026-08-15 (cited Tech Times article not found)"
       ]
     },
     "cr-ca-gov-hilton-2": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Coverage confirms Hilton favors easier data center permitting and more energy supply, but no source showed him saying localities should decide whether and where data centers are built.",
+      "note": "Hilton's support for easier data center permitting and more energy supply is confirmed, but no source shows him saying localities should decide whether and where data centers are built.",
       "sources": [
         {
           "title": "IVN: Steve Hilton blames Sam Altman and Dario Amodei for making America fear AI",
@@ -369,13 +369,13 @@
         }
       ],
       "unconfirmed": [
-        "That he would let localities decide whether and where data centers are built (he said they should not sit next to homes and should benefit host communities, but no statement on local authority was found)"
+        "That he would let localities decide whether and where data centers are built (no statement on local authority found in two more searches)"
       ]
     },
     "cr-ca-gov-hilton-3": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "CalMatters and Hilton's own plan coverage confirm he called for an immediate pause on AI in classrooms pending an independent review; the framing as opposition to a state AI-tools push was not found.",
+      "note": "Hilton's call for an immediate pause on AI in classrooms is confirmed; coverage frames it as getting Big Tech out of classrooms, and no source frames it as opposing a state AI-tools push.",
       "sources": [
         {
           "title": "CalMatters: California governor race and AI safety",
@@ -391,7 +391,7 @@
         }
       ],
       "unconfirmed": [
-        "That the pause was framed as opposing a push for state AI tools in education"
+        "That the pause was framed as opposing a push for state AI tools in education (coverage frames it as curbing Big Tech's influence over curricula and school policy)"
       ]
     },
     "cr-ct-gov-fazio-1": {
@@ -452,10 +452,14 @@
       ]
     },
     "cr-ct-gov-lamont-2": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Coverage confirms Lamont opposed state AI rules and favored federal guardrails, but no result shows him naming the FTC or Congress in May 2025, and the cited CT News Junkie article did not appear.",
+      "note": "The cited May 14, 2025 CT News Junkie article reports Lamont's view that AI regulation belongs with Congress and the FTC; it ties that view to his 2024 veto threat and says he had not yet taken a position on the amended 2025 bill.",
       "sources": [
+        {
+          "title": "CT News Junkie: Appropriations Committee Advances AI Regulation Bill As Federal Preemption Looms",
+          "url": "https://ctnewsjunkie.com/2025/05/14/appropriations-committee-advances-ai-regulation-bill-as-federal-preemption-looms/"
+        },
         {
           "title": "CT Mirror: CT AI bill passes Senate (May 2025)",
           "url": "https://ctmirror.org/2025/05/15/ct-ai-artificial-intelligence-bill-passes-senate/"
@@ -463,15 +467,7 @@
         {
           "title": "News From The States: CT AI bill would set standards, but Lamont remains wary",
           "url": "https://www.newsfromthestates.com/node/243320"
-        },
-        {
-          "title": "News 12: AI leader warns it 'could kill us all.' Should CT do more to regulate it?",
-          "url": "https://hudsonvalley.news12.com/ai-leader-warns-it-could-kill-us-all-should-ct-do-more-to-regulate-it"
         }
-      ],
-      "unconfirmed": [
-        "That in 2025 he named Congress and the Federal Trade Commission specifically as the proper regulators",
-        "The May 14, 2025 date and the cited CT News Junkie article (not found in search results)"
       ]
     },
     "cr-ct-gov-lamont-3": {
@@ -494,26 +490,22 @@
       ]
     },
     "cr-ct-gov-lamont-4": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Lamont signed SB 5 (PA 26-15) on May 27, 2026 per the legislative record, and law-firm summaries confirm its chatbot, frontier-model, employment and youth-safety parts; whistleblower and content-provenance provisions were not visible in the results.",
+      "note": "Law-firm summaries confirm that SB 5 (PA 26-15), signed May 27, 2026, protects whistleblowers at frontier developers and sets generative AI provenance requirements, alongside its hiring, chatbot and youth-safety parts.",
       "sources": [
         {
-          "title": "Ropes & Gray: Connecticut enacts sweeping AI law covering employment, healthcare and online safety",
-          "url": "https://ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
+          "title": "Faegre Drinker: Connecticut enacts comprehensive AI regulation: what businesses need to know",
+          "url": "https://www.faegredrinker.com/en/insights/publications/2026/6/connecticut-enacts-comprehensive-ai-regulation-what-businesses-need-to-know"
         },
         {
           "title": "Connecticut General Assembly: SB 5 (2026) bill status",
           "url": "https://www.cga.ct.gov/2026/cbs/S/pdf/SB-0005.pdf"
         },
         {
-          "title": "CT Senate Democrats: Happening today, AI bill signing ceremony (June 2, 2026)",
-          "url": "https://www.senatedems.ct.gov/happening-today-ai-bill-signing-ceremony"
+          "title": "Morrison Foerster: Connecticut enacts sweeping AI law",
+          "url": "https://www.mofo.com/resources/insights/260608-connecticut-enacts-sweeping-ai-law"
         }
-      ],
-      "unconfirmed": [
-        "Whistleblower protections at frontier-model developers (not stated in the results)",
-        "AI content provenance provisions (not stated in the results)"
       ]
     },
     "cr-ct-gov-lamont-5": {
@@ -591,7 +583,7 @@
     "cr-ct-house04-himes-2": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Date corrected to Oct. 21, 2026 (Brookings event). Reports confirm he addressed claims that foreign actors were amplifying opposition to data centers; his answer that he did not know if they were true was not visible in the results.",
+      "note": "Reports confirm Himes addressed claims of foreign-amplified data center opposition at the Brookings event (Oct. 21, 2026, as corrected in the first round), but his answer that he did not know if they were true was not shown.",
       "sources": [
         {
           "title": "The Star (SCMP): Top Democrat says chip restrictions are 'key lever' for US AI edge over China",
@@ -603,51 +595,51 @@
         }
       ],
       "unconfirmed": [
-        "That he said he did not know whether those claims were true (his answer was not shown in the results)"
+        "That he said he did not know whether those claims were true (his answer was not shown in two more searches)"
       ]
     },
     "cr-ct-house04-himes-3": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "CS Monitor quotes Himes on Face the Nation calling Lutnick the barrier to stopping Nvidia chips reaching China; the exact air date and the intermediaries remark were not shown.",
+      "note": "The CBS transcript of Nov. 15, 2026 shows Himes saying the intermediary company Megaspeed may be a way of getting Nvidia chips to China, and CS Monitor reports him asking why Commerce (Lutnick) was a barrier to stopping the flow.",
       "sources": [
+        {
+          "title": "CBS News: Transcript: Rep. Jim Himes on Face the Nation with Margaret Brennan, Nov. 15, 2026",
+          "url": "https://www.cbsnews.com/news/jim-himes-connecticut-democrat-face-the-nation-transcript-11-15-2026/"
+        },
         {
           "title": "Christian Science Monitor: Nvidia chips export, Bessent and Lutnick",
           "url": "https://www.csmonitor.com/USA/Politics/2026/1118/nvidia-chips-export-bessent-lutnick?icid=rss"
         }
-      ],
-      "unconfirmed": [
-        "The exact Nov. 15, 2026 broadcast date (the CS Monitor report is dated Nov. 18, consistent with it)",
-        "His specific remark about chips reaching China through intermediaries"
       ]
     },
     "cr-fr-attal-1": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Sud Radio confirms AI is one of Attal's four 'chantiers capitaux' alongside school, wages and borders, and he proposes mass AI training. No source found for his wanting France to control the entire AI value chain.",
+      "note": "French and English searches again confirmed AI as one of Attal's four priorities and his mass AI-training pledge, but found nothing on controlling the whole AI value chain or a 'basic skill' framing.",
       "sources": [
         {
           "title": "Sud Radio: École, salaires, frontières et IA, les quatre chantiers capitaux présidentiels de Gabriel Attal",
           "url": "https://www.sudradio.fr/societe/ecole-salaires-frontieres-et-ia-les-quatre-chantiers-capitaux-presidentiels-de-gabriel-attal"
         },
         {
-          "title": "Boursedirect (AFP): Attal juge sidérant le peu de place de l'IA dans la présidentielle",
-          "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/attal-juge-siderant-le-peu-de-place-de-l-ia-dans-la-presidentielle-cle-pour-faire-monter-les-salaires-afp-2629254b9b20fa5b36464b7edd0d78a3e56c4689"
+          "title": "Europe 1: IA, Gabriel Attal estime que la France peut faire partie des gagnants de la guerre technologique",
+          "url": "https://www.europe1.fr/politique/ia-gabriel-attal-estime-que-la-france-peut-faire-partie-des-gagnants-de-la-guerre-technologique-954047"
         },
         {
-          "title": "ÉlyséeScope: Former 20 millions de salariés à l'IA en cinq ans, le plan Attal décrypté",
-          "url": "https://www.elyseescope.com/questions/gabriel-attal-former-20-millions-de-salaries-a-l-ia-en-cinq-ans"
+          "title": "Boursedirect (AFP): Attal juge sidérant le peu de place de l'IA dans la présidentielle",
+          "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/attal-juge-siderant-le-peu-de-place-de-l-ia-dans-la-presidentielle-cle-pour-faire-monter-les-salaires-afp-2629254b9b20fa5b36464b7edd0d78a3e56c4689"
         }
       ],
       "unconfirmed": [
-        "Wants France to control the entire AI value chain (not found for Attal)",
-        "Exact 'basic skill' framing"
+        "Wants France to control the entire AI value chain (no source ties the 'value chain' framing to Attal)",
+        "Exact 'basic skill' framing of AI training"
       ]
     },
     "cr-fr-bardella-1": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "AFP reports Bardella calling AI a major national sovereignty issue, and an older RN digital programme backs public procurement for European champions. No source found for a Big Tech tax or for the 'few detailed measures' finding, and the Maddyness article did not appear in the results.",
+      "note": "The sovereignty statement and the RN's procurement stance are confirmed, but no source mentions an RN Big Tech tax or a 'few detailed measures' finding; note that Le Pen, not Bardella, is the declared RN candidate since July 2026.",
       "sources": [
         {
           "title": "Fortuneo (AFP): Guerre de l'IA, souveraineté: la suspension d'Anthropic s'invite dans la présidentielle française",
@@ -656,12 +648,17 @@
         {
           "title": "Le Big Data: IA, Cloud… Le RN au pouvoir, bon ou mauvais pour le numérique ?",
           "url": "https://www.lebigdata.fr/ia-cloud-le-rn-au-pouvoir-bon-ou-mauvais-pour-le-numerique"
+        },
+        {
+          "title": "Next.ink: Présidentielle 2027, un débat sur l'IA entre souveraineté et clivages rejoués",
+          "url": "https://next.ink/258927/presidentielle-2027-un-debat-sur-lia-entre-souverainete-et-clivages-rejoues/"
         }
       ],
       "unconfirmed": [
-        "Taxing Big Tech as a main RN AI measure",
+        "Taxing Big Tech as a main RN AI measure (RN tax proposals found concern wealth and dividends, not tech firms)",
         "Coverage finding the RN has few detailed AI measures",
-        "Date 2026-10-05 (this is the date of the Maddyness coverage; the date of the AFP-reported X post was not shown)"
+        "Date 2026-10-05 (date of the Maddyness coverage; the date of the AFP-reported statement was not found)",
+        "Bardella's label as RN presidential candidate: Marine Le Pen declared her own candidacy on July 7, 2026, with Bardella as her intended prime minister"
       ]
     },
     "cr-fr-melenchon-1": {
@@ -684,42 +681,50 @@
       ]
     },
     "cr-fr-melenchon-2": {
-      "result": "not-confirmed",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Related only: Next.ink reports the LFI programme calls for a moratorium on non-sovereign data centers and a network of public data centers. The comparison with energy, transport or telecoms and the 'public digital and AI hub' were not found, and the shared search limit ran out before a targeted search.",
+      "note": "The programme does treat digital and telecom infrastructure as sovereignty assets to be brought under public control and calls for a public cloud of public data centers, but the energy/transport comparison and a 'public digital and AI hub' were not found.",
       "sources": [
+        {
+          "title": "Mélenchon 2027: L'Avenir en commun",
+          "url": "https://melenchon2027.fr/?p=26657"
+        },
         {
           "title": "Next.ink: Présidentielle 2027, LFI détaille son programme pour démocratiser la révolution numérique",
           "url": "https://next.ink/267269/presidentielle-2027-lfi-detaille-son-programme-pour-democratiser-la-revolution-numerique/"
+        },
+        {
+          "title": "FrenchWeb: Jean-Luc Mélenchon fustige la vassalisation numérique de la France",
+          "url": "https://www.frenchweb.fr/jean-luc-melenchon-fustige-la-vassalisation-numerique-de-la-france/451259"
         }
       ],
       "unconfirmed": [
-        "Treats data centers, computing and cloud as sovereignty infrastructure as important as energy, transport or telecoms",
-        "Proposes a public digital and AI hub"
+        "An explicit comparison of data centers, computing and cloud with energy or transport infrastructure",
+        "A proposed 'public digital and AI hub' (pôle public) by that name"
       ]
     },
     "cr-fr-philippe-1": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Sources confirm Philippe's pledges to double computing capacity in five years, raise engineer training from 40,000 to 100,000 a year, and back Mistral and a 'Buy European Tech Act'. The 'right to retraining' appeared only on a low-reliability page, and state-and-local purchasing was not found as stated.",
+      "note": "Two further searches (French and English) found no reliable source for Philippe's 'right to retraining', for state-and-local purchasing, or for whether the 100,000 engineers are French or European; the core pledges confirmed in round 1 stand.",
       "sources": [
         {
           "title": "75secondes: Plan à 200 milliards, 100 000 ingénieurs : la surenchère des candidats sur l'IA",
           "url": "https://www.75secondes.fr/tech/plan-a-200-milliards-100-000-ingenieurs-la-surenchere-des-candidats-sur-lia"
         },
         {
-          "title": "Ecostylia: What France's 2027 candidates say and omit about cybersecurity",
-          "url": "https://www.ecostylia.com/en/presidential-2027-cybersecurity/"
-        },
-        {
           "title": "PitchBook: France's 2027 campaign starts as pessimism deepens and AI divides emerge",
           "url": "https://pitchbook.com/news/articles/frances-2027-campaign-starts-as-pessimism-deepens-and-ai-divides-emerge"
+        },
+        {
+          "title": "Ecostylia: What France's 2027 candidates say and omit about cybersecurity",
+          "url": "https://www.ecostylia.com/en/presidential-2027-cybersecurity/"
         }
       ],
       "unconfirmed": [
-        "'Right to retraining' for workers threatened by AI (found only on a low-reliability aggregator page)",
+        "'Right to retraining' for workers threatened by AI (found only on a low-reliability aggregator page in round 1; not found this round)",
         "Use of state AND local purchasing specifically",
-        "Whether the 100,000 figure is French or European (votons-2027 says 100,000 European engineers)"
+        "Whether the 100,000 figure is French or European engineers"
       ]
     },
     "cr-fr-philippe-2": {
@@ -744,7 +749,7 @@
     "cr-fr-retailleau-1": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Corrected: no source gives €25 billion; Next.ink reports about €23 billion over the term for his July 2026 AI plan and Acteurs Publics €5 billion, so both are now given. The plan for AI across the administration is confirmed; the link to decarbonized electricity was not found.",
+      "note": "A French search found Retailleau's pro-nuclear, decarbonised-power stance and his AI-in-administration plan, but no source links the two into a 'sovereign AI powered by decarbonized electricity' position.",
       "sources": [
         {
           "title": "Next.ink: Pour Bruno Retailleau, l'IA n'attend pas notre consentement",
@@ -756,7 +761,8 @@
         }
       ],
       "unconfirmed": [
-        "Link between the AI plan and decarbonized electricity"
+        "Link between his AI plan and decarbonized electricity",
+        "€25 billion over five years (round 1 found about €23 billion over the term in Next.ink and €5 billion in Acteurs Publics)"
       ]
     },
     "cr-fr-ruffin-1": {
@@ -775,19 +781,33 @@
       ]
     },
     "cr-fr-tondelier-1": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "Four searches (English and French) found no source quoting Tondelier on data centers' environmental cost; the only related item is Next.ink's paywalled report that Les Écologistes published a 'carnet de doctrine numérique' (a 'technodiversité' model) in July as a framework for Tondelier.",
+      "sources": [
+        {
+          "title": "Next.ink: Techno-diversités, ce que les écologistes envisagent pour le secteur du numérique (related only)",
+          "url": "https://next.ink/252262/techno-diversites-ce-que-les-ecologistes-envisagent-pour-le-secteur-du-numerique/"
+        }
+      ],
       "unconfirmed": [
-        "Tondelier criticizes the environmental cost of data centers"
+        "Tondelier criticizes the environmental cost of data centers",
+        "The Maddyness article of Oct. 5, 2026 (did not appear in any search result)"
       ]
     },
     "cr-fr-tondelier-2": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "The same four searches found no statement by Tondelier on small, specialized or open-source AI models; the Ecologists' 'technodiversité' digital doctrine (Next.ink, paywalled) is the closest lead but its content could not be seen.",
+      "sources": [
+        {
+          "title": "Next.ink: Techno-diversités, ce que les écologistes envisagent pour le secteur du numérique (related only)",
+          "url": "https://next.ink/252262/techno-diversites-ce-que-les-ecologistes-envisagent-pour-le-secteur-du-numerique/"
+        }
+      ],
       "unconfirmed": [
-        "Tondelier prefers smaller, specialized, open-source AI models over ever-larger systems"
+        "Tondelier prefers smaller, specialized, open-source AI models over ever-larger systems",
+        "The Maddyness article of Oct. 5, 2026 (did not appear in any search result)"
       ]
     },
     "cr-mi-gov-benson-1": {
@@ -810,9 +830,9 @@
       ]
     },
     "cr-mi-gov-benson-2": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "The ad's content (moratorium, ending tax breaks, protecting electric bills, no stated length) is confirmed by The Detroit News and the campaign; it ran in September 2026, but the exact Sept. 13 date was not found.",
+      "note": "The Detroit News report of Sept. 13, 2026 confirms the ad's launch that day and its call for a data center moratorium, an end to tax breaks and protection of electric bills.",
       "sources": [
         {
           "title": "Yahoo News (The Detroit News): Jocelyn Benson's new ad calls for ending data center tax breaks",
@@ -826,9 +846,6 @@
           "title": "EUP News: Benson and James call for data center pause as back-to-back ads question their commitment",
           "url": "https://www.eupnews.com/2026/09/benson-and-james-call-for-data-center-pause-as-back-to-back-ads-question-their-commitment/"
         }
-      ],
-      "unconfirmed": [
-        "Exact launch date of Sept. 13, 2026 (only September 2026 found)"
       ]
     },
     "cr-mi-gov-james-1": {
@@ -851,10 +868,14 @@
       ]
     },
     "cr-mi-gov-james-2": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "The campaign's statement backing a moratorium until a local-control standard and environment and electricity-bill protections are in place is confirmed; the Aug. 1 date was not found.",
+      "note": "The Detroit News story dated Aug. 1, 2026 confirms the James campaign's statement backing a data center moratorium until a local-control standard and environment and electricity-bill protections are in place.",
       "sources": [
+        {
+          "title": "The Detroit News: John James favors moratorium on data centers, more local control",
+          "url": "https://www.detroitnews.com/story/news/politics/2026/08/01/john-james-data-center-moratorium-michigan-governor-race-perry-johnson/91134570007/"
+        },
         {
           "title": "Blue Water Healthy Living (reprint of The Detroit News): John James says he would let local leaders set data center policy",
           "url": "https://bluewaterhealthyliving.com/news/local-news/michigan/john-james-says-he-would-let-local-leaders-set-data-center-policy/"
@@ -863,15 +884,12 @@
           "title": "Michigan Advance: As James pushes local control on data centers, past congressional votes sought to limit just that",
           "url": "https://michiganadvance.com/2026/09/02/as-james-pushes-local-control-on-data-centers-past-congressional-votes-sought-to-limit-just-that/"
         }
-      ],
-      "unconfirmed": [
-        "Date of Aug. 1, 2026 (the Detroit News article's date was not shown in results)"
       ]
     },
     "cr-mi-gov-james-3": {
-      "result": "partly-confirmed",
+      "result": "corrected",
       "checkedOn": "2026-11-24",
-      "note": "Coverage confirms that in the Oct. 6, 2026 debate James stressed local control and that afterwards a statewide moratorium was off the table for him; the 'moratorium on Lansing' quote could not be checked because the search budget ran out.",
+      "note": "Corrected the quote to the wording reported by Michigan Public and Bridge Michigan (\"The moratorium should be imposed on Lansing, not the people\"). His local-control stance and ruling out a statewide moratorium are confirmed.",
       "sources": [
         {
           "title": "Michigan Public: James distances himself from Trump as Benson tries to connect them in gubernatorial debate",
@@ -885,51 +903,47 @@
           "title": "ClickOnDetroit: Benson, James offer contrasting visions in first Michigan governor debate",
           "url": "https://www.clickondetroit.com/news/local/2026/10/07/benson-james-offer-contrasting-visions-in-first-michigan-governor-debate/"
         }
-      ],
-      "unconfirmed": [
-        "Quote 'a moratorium on Lansing and not the people'"
       ]
     },
     "cr-mi-gov-james-4": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Search summaries report James saying 'no new data centers until we have a plan to protect our communities' in Grand Rapids, but they did not name the outlet, so these sources may not hold the exact line; the 'five-part moratorium' wording and the Oct. 30 WNEM date were not found.",
+      "note": "The cited WNEM story (Oct. 30, 2026) confirms James's 'no new data centers until a plan to protect communities' line and lists five priorities, but the phrase 'five-part moratorium' was not shown.",
       "sources": [
         {
-          "title": "Michigan Public: Governor's race hits Saline Township, site of massive data center project",
-          "url": "https://www.michiganpublic.org/politics-government/2026-10-02/governors-race-hits-saline-township-site-of-massive-data-center-project"
+          "title": "WNEM: John James says no new data centers until plan to protect communities",
+          "url": "https://www.wnem.com/2026/10/30/john-james-says-no-new-data-centers-until-plan-protect-communities/"
         },
         {
           "title": "Michigan Advance: As James pushes local control on data centers, past congressional votes sought to limit just that",
           "url": "https://michiganadvance.com/2026/09/02/as-james-pushes-local-control-on-data-centers-past-congressional-votes-sought-to-limit-just-that/"
+        },
+        {
+          "title": "Michigan Public: Governor's race hits Saline Township, site of massive data center project",
+          "url": "https://www.michiganpublic.org/politics-government/2026-10-02/governors-race-hits-saline-township-site-of-massive-data-center-project"
         }
       ],
       "unconfirmed": [
-        "The phrase 'five-part moratorium'",
-        "Date of Oct. 30, 2026 (the WNEM story itself was not found; the quote may date from an earlier Grand Rapids event)"
+        "The phrase 'five-part moratorium' itself"
       ]
     },
     "cr-mi-sen-elsayed-1": {
-      "result": "partly-confirmed",
+      "result": "corrected",
       "checkedOn": "2026-11-24",
-      "note": "The Jan. 8, 2026 data center plan (no rate hikes, data centers pay for their own power, federal standards, support for local and state pauses) is confirmed; no source mentions closed-loop cooling, and sources disagree on how firmly it requires union labor.",
+      "note": "Corrected \"union-jobs guarantee\" to \"local-jobs guarantee\": Michigan Advance says the plan does not call for union-only labor. The rest, including closed-loop cooling, is confirmed.",
       "sources": [
         {
           "title": "Michigan Advance: El-Sayed lays out policy 'terms of engagement' with AI data centers in U.S. Senate hunt",
           "url": "https://michiganadvance.com/2026/01/08/el-sayed-lays-out-policy-terms-of-engagement-with-ai-data-centers-in-u-s-senate-hunt/"
         },
         {
-          "title": "Quartz: 15 positions Abdul El-Sayed sets out in his Michigan Senate campaign",
-          "url": "https://qz.com/abdul-el-sayed-senate-platform-positions"
+          "title": "Gander Newsroom: Abdul El-Sayed releases plan to rein in data center expansion in Michigan",
+          "url": "https://gandernewsroom.com/2026/01/08/abdul-el-sayed-releases-plan-to-rein-in-data-center-expansion-in-michigan/"
         },
         {
-          "title": "E&E News: Sunrise co-founder, data center critic nabs big primary",
-          "url": "https://www.eenews.net/articles/sunrise-co-founder-data-center-critic-nabs-big-primary/"
+          "title": "Detroit Metro Times: Senate candidate El-Sayed says data centers must protect communities or stay out of Michigan",
+          "url": "https://www.metrotimes.com/news/politics-elections/senate-candidate-el-sayed-says-data-centers-must-protect-communities-or-stay-out-of-michigan/"
         }
-      ],
-      "unconfirmed": [
-        "Closed-loop cooling requirement (no source ties it to El-Sayed)",
-        "A union-jobs 'guarantee': Michigan Advance said his plan does not specifically call for union-only labor, while E&E News says it covered union jobs"
       ]
     },
     "cr-mi-sen-elsayed-2": {
@@ -973,7 +987,7 @@
     "cr-mi-sen-rogers-1": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Rogers' earlier pro-investment stance, easier permitting, his praise of the White House AI framework and the 'competitive for new AI-supported jobs and investments' line are confirmed; the 'responsible framework for safety and data privacy' wording was not found.",
+      "note": "Rogers' earlier pro-data-center stance and his praise of the White House AI framework are confirmed; the 'responsible framework for safety and data privacy' wording and the statement dates were still not found.",
       "sources": [
         {
           "title": "Detroit Metro Times: Mike Rogers loved data centers until voters didn't",
@@ -989,7 +1003,7 @@
         }
       ],
       "unconfirmed": [
-        "Second half of the quote: 'while setting a responsible framework for safety and data privacy'",
+        "Second half of the quote: 'while setting a responsible framework for safety and data privacy' (not found in two more searches)",
         "Exact dates of the statements"
       ]
     },
@@ -1032,26 +1046,22 @@
       ]
     },
     "cr-tx-gov-abbott-2": {
-      "result": "partly-confirmed",
+      "result": "corrected",
       "checkedOn": "2026-11-24",
-      "note": "News reports confirm Abbott's Aug. 3, 2026 directive pausing data center grid approvals pending an audit with no set end date; no source mentioned a later executive order or a mid-size-project gap.",
+      "note": "Corrected: the pause was ordered by letter on Aug. 3, 2026; no later executive order was found, so that claim is removed. The pause and the criticism that it leaves out many mid-size projects are confirmed.",
       "sources": [
         {
           "title": "Texas Public Radio: Gov. Greg Abbott pauses new data centers until energy, water usage audit is completed",
           "url": "https://www.tpr.org/text/environment/2026-08-03/gov-greg-abbott-pauses-new-data-centers-until-energy-water-usage-audit-is-completed"
         },
         {
-          "title": "E&E News: Texas governor puts data center grid approvals on hold",
-          "url": "https://www.eenews.net/articles/texas-governor-puts-data-center-grid-approvals-on-hold/"
+          "title": "Texas Public Radio (Texas Standard): Gov. Abbott has ordered a pause on data center approvals. Will it make a difference?",
+          "url": "https://www.tpr.org/technology-entrepreneurship/2026-08-27/gov-abbott-has-ordered-a-pause-on-data-center-approvals-will-it-make-a-difference"
         },
         {
-          "title": "TechCrunch: Texas halts new data centers as governor calls for audits",
-          "url": "https://techcrunch.com/2026/08/04/texas-halts-new-data-centers-as-governor-calls-for-audits/"
+          "title": "E&E News: Texas governor puts data center grid approvals on hold",
+          "url": "https://www.eenews.net/articles/texas-governor-puts-data-center-grid-approvals-on-hold/"
         }
-      ],
-      "unconfirmed": [
-        "That the pause was later set out in an executive order (sources describe a letter/directive)",
-        "That critics said it did not cover most mid-size projects"
       ]
     },
     "cr-tx-gov-abbott-3": {
@@ -1074,25 +1084,22 @@
       ]
     },
     "cr-tx-gov-hinojosa-1": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "FOX 4, her campaign and October coverage confirm Hinojosa's moratorium, local-say and other goals and her 'just words' jab at Abbott; an explicit pledge to end data center tax breaks was not found.",
+      "note": "FOX 4 and her campaign confirm Hinojosa's moratorium and other goals, and the Texas Tribune and CBS Austin report her promise to end data center tax breaks.",
       "sources": [
         {
           "title": "FOX 4: 'People are big mad in Texas': Hinojosa challenges Abbott's data center policies",
           "url": "https://www.fox4news.com/news/hinojosa-challenges-abbott-data-center-policies-during-campaign-stop"
         },
         {
-          "title": "Hinojosa campaign: Hinojosa calls on Greg Abbott to put moratorium on data centers until a legislative session that puts Texans first",
-          "url": "https://ginafortexas.com/2026/07/new-hinojosa-calls-on-greg-abbott-to-put-moratorium-on-data-centers-until-a-legislative-session-that-puts-texans-first/"
+          "title": "Texas Tribune: Gina Hinojosa's data center pause and governor policies (Nov. 4, 2026)",
+          "url": "https://texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
         },
         {
-          "title": "Texarkana Gazette: Abbott wants Texas lawmakers to turn data center restrictions into law",
-          "url": "https://www.texarkanagazette.com/news/2026/oct/14/election-2026-abbott-wants-texas-lawmakers-to/"
+          "title": "CBS Austin: Could Democrats' election wins reshape Texas data center tax policy?",
+          "url": "https://cbsaustin.com/news/local/story/could-democrats-election-wins-reshape-texas-data-center-tax-policy"
         }
-      ],
-      "unconfirmed": [
-        "An explicit pledge to end data center tax breaks (sources show her attacking Abbott's tax breaks, not a stated repeal pledge)"
       ]
     },
     "cr-tx-gov-hinojosa-2": {
@@ -1134,9 +1141,9 @@
       ]
     },
     "cr-tx-sen-paxton-2": {
-      "result": "partly-confirmed",
+      "result": "corrected",
       "checkedOn": "2026-11-24",
-      "note": "Several outlets confirm Paxton's four-point data center plan with the Chinese-technology ban and criminal liability for chatbots that harm children; no source said whether it stopped short of a moratorium.",
+      "note": "Corrected: no source says the plan \"stopped short of a moratorium\", so that is removed; coverage says it backs Gov. Abbott's state plan. The four-point plan is confirmed.",
       "sources": [
         {
           "title": "FOX 4: Paxton rolls out data center plan; Talarico questions his motives",
@@ -1150,27 +1157,21 @@
           "title": "Dallas Express: AG Ken Paxton unveils four-point Texas data center plan",
           "url": "https://dallasexpress.com/state/ag-ken-paxton-unveils-four-point-texas-data-center-plan/"
         }
-      ],
-      "unconfirmed": [
-        "That the plan 'stopped short of a moratorium' was not stated in any search result"
       ]
     },
     "cr-tx-sen-talarico-1": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Talarico's campaign issue page backs the copyright and workplace-surveillance planks; the 'hold AI companies accountable while protecting workers' wording itself was not found.",
+      "note": "Talarico's campaign site backs all three points: holding powerful corporations accountable, making AI work for working people (including limits on workplace AI surveillance), and applying copyright law to AI companies; the dataset's wording is a paraphrase, not a quote.",
       "sources": [
         {
           "title": "Talarico campaign: Social media, artificial intelligence and tech",
           "url": "https://jamestalarico.com/issue/social-media-artificial-intelligence-tech/"
         },
         {
-          "title": "Fisher Phillips: Texas AG candidate wants to reshape workplace AI rules",
-          "url": "https://www.fisherphillips.com/print/v2/content/50335/texas-ag-candidate-wants-to-reshape-workplace-ai-rules.pdf"
+          "title": "Talarico campaign site (jamestalarico.com)",
+          "url": "https://jamestalarico.com/?p=429"
         }
-      ],
-      "unconfirmed": [
-        "The exact framing 'regulations that hold AI companies accountable while protecting workers' did not appear in the search results"
       ]
     },
     "cr-tx-sen-talarico-2": {
@@ -1271,154 +1272,203 @@
     "ct-2026-sb245": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "SB 245 existed as described and cleared the Energy and Technology Committee in March 2026 before referral to Finance; no later action was found, but its death in committee was not directly confirmed.",
+      "note": "CBIA's bill tracker lists SB 245 as died in the Finance Committee, matching the official history that ends at the March 23 referral; the Feb. 19 introduction date was not shown. Status note updated: it died in the Finance Committee.",
       "sources": [
         {
           "title": "Connecticut General Assembly: SB 245 (2026) bill status",
           "url": "https://www.cga.ct.gov/2026/cbs/S/pdf/SB-0245.pdf"
         },
         {
-          "title": "Connecticut General Assembly: SB 245 Energy and Technology Committee joint favorable report",
-          "url": "https://prdext3.cga.ct.gov/2026/JFR/S/PDF/2026SB-00245-R00ET-JFR.PDF"
+          "title": "CBIA: Bill Tracker",
+          "url": "https://www.cbia.com/bill-tracker/page/6/"
         },
         {
-          "title": "CT Hospital Association: Daily News Clip, Feb. 25, 2026",
-          "url": "https://cthosp.org/?p=19154"
+          "title": "Connecticut General Assembly: SB 245 Energy and Technology Committee joint favorable report",
+          "url": "https://prdext3.cga.ct.gov/2026/JFR/S/PDF/2026SB-00245-R00ET-JFR.PDF"
         }
       ],
       "unconfirmed": [
-        "Introduction date of Feb. 19, 2026",
-        "Final outcome: no action after the March 23 referral was found, consistent with dying in committee when the session ended May 6, 2026, but not stated directly"
+        "Introduction date of Feb. 19, 2026"
       ]
     },
     "ct-2026-sb5": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "SB 5 (PA 26-15) passed 32-4 and 131-17 and was signed May 27, 2026; its broad coverage is confirmed, but several specific provisions and the phase-in dates were not visible in the results.",
+      "note": "Law-firm and FPF summaries confirm the no-defense rule for automated hiring tools, frontier-developer whistleblower protections, provenance rules and an Oct. 2026 to Jan. 2028 phase-in; the committee report lists Looney, Duff and Anwar, with Maroney leading. Most sources give a May 27, 2026 signing, with a ceremony on June 2. Sponsors added: led by Sen. James Maroney (D); the committee report lists Sens. Looney, Duff and Anwar (D).",
       "sources": [
         {
-          "title": "CT Mirror: House passes AI regulation bill (May 1, 2026)",
-          "url": "https://ctmirror.org/2026/05/01/artificial-intelligence-house-regulation-passage-ct/"
+          "title": "Faegre Drinker: Connecticut enacts comprehensive AI regulation, what businesses need to know",
+          "url": "https://www.faegredrinker.com/en/insights/publications/2026/6/connecticut-enacts-comprehensive-ai-regulation-what-businesses-need-to-know"
         },
         {
-          "title": "Ropes & Gray: Connecticut enacts sweeping AI law covering employment, healthcare and online safety",
-          "url": "https://ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
+          "title": "Future of Privacy Forum: SB 5 in Five, what to know about Connecticut's new AI law",
+          "url": "https://fpf.org/blog/sb-5-in-five-what-to-know-about-connecticuts-new-ai-law/"
         },
         {
-          "title": "Connecticut General Assembly: SB 5 (2026) bill status",
-          "url": "https://www.cga.ct.gov/2026/cbs/S/pdf/SB-0005.pdf"
+          "title": "Connecticut General Assembly: SB 5 General Law Committee joint favorable report",
+          "url": "https://prdext3.cga.ct.gov/2026/JFR/S/PDF/2026SB-00005-R00GL-JFR.PDF"
         }
-      ],
-      "unconfirmed": [
-        "That use of an automated employment decision tool is no defense to a discrimination claim",
-        "Whistleblower protections and reporting channels at frontier developers",
-        "AI content provenance provisions",
-        "Phase-in from Oct. 1, 2026 to 2028 (results show only employer notice duties starting Jan. 1, 2027)",
-        "Formal sponsor list"
       ]
     },
     "ct-2027-duff-moratorium": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Connecticut Public (Oct. 26, 2026) reports Duff will propose a statewide data center moratorium, but the Oct. 22 date, his reasons, the 2027 timing and the East Lyme ban were not visible in the results.",
+      "note": "WFSB (Oct. 22, 2026) and other outlets report that Senate Majority Leader Duff will propose a statewide data center pause next session, citing electricity, water and rate impacts, after East Lyme adopted a local ban.",
       "sources": [
+        {
+          "title": "WFSB: Senate leader proposes bill to pause new data centers in Connecticut",
+          "url": "https://www.wfsb.com/2026/10/22/senate-leader-proposes-bill-pause-new-data-centers-connecticut/"
+        },
         {
           "title": "Connecticut Public: Connecticut mulls over statewide moratorium on AI data centers",
           "url": "https://www.ctpublic.org/2026-10-26/connecticut-mulls-over-statewide-moratorium-on-ai-data-centers-nenc"
         },
         {
-          "title": "NBC Connecticut: Bipartisan calls grow for temporary statewide ban on new data centers",
-          "url": "https://www.nbcconnecticut.com/news/local/bipartisan-calls-grow-for-temporary-statewide-ban-on-new-data-centers/3787983/"
+          "title": "CT Mirror: Data centers and artificial intelligence in Connecticut (Oct. 25, 2026)",
+          "url": "https://ctmirror.org/2026/10/25/data-centers-artificial-intelligence-ct/"
         }
-      ],
-      "unconfirmed": [
-        "Oct. 22, 2026 announcement date",
-        "That it will be filed when the 2027 session begins",
-        "His stated reasons (water and electricity use, utility rates)",
-        "Local bans such as East Lyme's",
-        "His title as Senate Majority Leader (not stated in the results)"
       ]
     },
     "ct-sb1292": {
-      "result": "not-checked",
+      "result": "corrected",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "Existence, session, sponsors and status of a Connecticut SB 1292 on AI data center energy efficiency"
+      "note": "Corrected: SB 1292 is a 2025 Energy and Technology Committee bill, turned into a study bill and approved 24-0 on Mar. 18, 2025, then left without a floor vote, so it died; it was listed as a bill of unknown session still introduced.",
+      "sources": [
+        {
+          "title": "Connecticut General Assembly: SB 1292 (2025) bill summary",
+          "url": "https://prdext3.cga.ct.gov/2025/cbs/S/pdf/SB-1292.pdf"
+        },
+        {
+          "title": "BillTrack50: Connecticut SB 1292 (2025)",
+          "url": "https://www.billtrack50.com/billdetail/1828289"
+        },
+        {
+          "title": "The Day: Legislature seeks data center study; concerns raised over delays",
+          "url": "https://www.theday.com/?p=470866"
+        }
       ]
     },
     "eu-ai-act": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "Regulation (EU) 2024/1689 number, title, Aug. 1, 2024 entry into force, phased obligations and content"
+      "note": "Confirmed: the AI Act (Regulation 2024/1689) entered into force Aug. 1, 2024 with bans, GPAI and high-risk duties applying in phases; its original high-risk dates were later pushed back by the Digital Omnibus on AI (Regulation 2026/1744).",
+      "sources": [
+        {
+          "title": "European Commission: Regulatory framework on AI (AI Act)",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        },
+        {
+          "title": "Kennedys: The EU AI Act implementation timeline",
+          "url": "https://kennedyslaw.com/en/thought-leadership/article/2026/the-eu-ai-act-implementation-timeline-understanding-the-next-deadline-for-compliance"
+        },
+        {
+          "title": "CMS: EU's AI Act published in Official Journal, transition periods now known",
+          "url": "https://cms.law/en/int/legal-updates/eu-s-ai-act-published-in-official-journal-transition-periods-now-known"
+        }
       ]
     },
     "eu-digital-omnibus-ai": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "Regulation (EU) 2026/1744 number, June 29, 2026 Council approval, July 27, 2026 entry into force",
-        "New high-risk dates (Dec. 2, 2027 and Aug. 2, 2028), new bans, and simplifications for smaller firms"
-      ]
-    },
-    "fr-nuclear-ai-pledge": {
-      "result": "not-checked",
-      "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: Unrelated results showed only general coverage of France promoting its nuclear electricity to AI firms, with nothing on the 1 GW pledge or the March 2026 statement.",
-      "unconfirmed": [
-        "France pledged one gigawatt of nuclear power for AI (Feb. 2025)",
-        "Macron's March 2026 statement on nuclear plants and data centers"
-      ]
-    },
-    "fr-pjl-simplification": {
-      "result": "not-checked",
-      "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: Ruffin's campaign page says a law of May 26, 2026 gave data centers \"major national interest\" status; if so, this bill's status is out of date.",
+      "note": "Law-firm analyses confirm the number, the June 29 Council approval, July 27, 2026 entry into force, the new high-risk dates, the two new bans and the SME/small mid-cap simplifications; one nuance is a Dec. 2, 2026 cut-off for Article 50(2) labelling of some existing systems, and GPAI timing was not addressed in the results.",
       "sources": [
         {
-          "title": "Ruffin 2027: Plan DATA CENTERS",
-          "url": "https://nouspresident.fr/plan-data-centers/"
+          "title": "White & Case: EU AI Omnibus enters into force, amending the AI Act",
+          "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act"
+        },
+        {
+          "title": "Lewis Silkin: Council of the EU gives AI Omnibus final green light",
+          "url": "https://lewissilkin.com/insights/2026/07/09/council-of-the-eu-gives-ai-omnibus-final-green-light-102nbb1"
+        },
+        {
+          "title": "Orrick: EU AI Act Update, Digital Omnibus Finalizes 8 Compliance Changes",
+          "url": "https://www.orrick.com/en/Insights/2026/07/EU-AI-Act-Update-Digital-Omnibus-Finalizes-8-Compliance-Changes"
         }
       ],
       "unconfirmed": [
-        "Current status of the simplification bill (listed as 'introduced')",
-        "That it lets large data centers be classed as projects of major national interest"
+        "That general-purpose AI rules keep their original dates (no source in the results addressed GPAI timing, though none reported a delay)"
+      ]
+    },
+    "fr-nuclear-ai-pledge": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-24",
+      "note": "Confirmed: the 1 GW nuclear-for-AI pledge dates from the February 2025 AI Action Summit, and Macron's Mar. 10, 2026 nuclear summit speech said France's reactors let it open data centers and grow computing capacity.",
+      "sources": [
+        {
+          "title": "Élysée: Sommet sur le nucléaire civil (Mar. 10, 2026)",
+          "url": "https://www.elysee.fr/en/emmanuel-macron/2026/03/10/sommet-sur-le-nucleaire-civil"
+        },
+        {
+          "title": "TechRadar: France set to pledge one gigawatt of nuclear power for AI",
+          "url": "https://www.techradar.com/pro/france-plans-to-pledge-one-gigawatt-of-nuclear-power-for-ai"
+        },
+        {
+          "title": "Global Banking & Finance (Reuters): France to harness nuclear power for AI data centres, says Macron",
+          "url": "https://www.globalbankingandfinance.com/france-harness-nuclear-power-ai-data-centres-macron/"
+        }
+      ]
+    },
+    "fr-pjl-simplification": {
+      "result": "corrected",
+      "checkedOn": "2026-11-24",
+      "note": "Corrected: the simplification bill became law on May 26, 2026 (published May 27); it was listed as still under examination. It lets data centers meeting set conditions, including on water, be designated projects of major national interest by decree.",
+      "sources": [
+        {
+          "title": "Lextenso: JO, publication de la loi sur la simplification de la vie économique",
+          "url": "https://www.labase-lextenso.fr/breves/jo-publication-de-la-loi-sur-la-simplification-de-la-vie-economique-BREVEBO425"
+        },
+        {
+          "title": "Ministère de la Transition écologique: Loi de simplification de la vie économique (SVE), mesures urbanisme et construction",
+          "url": "https://www.ecologie.gouv.fr/politiques-publiques/loi-simplification-vie-economique-sve-mesures-urbanisme-construction"
+        },
+        {
+          "title": "Vie-publique: Projet de loi de simplification de la vie économique",
+          "url": "https://www.vie-publique.fr/loi/293913-entreprises-projet-de-loi-de-simplification-de-la-vie-economique"
+        }
       ]
     },
     "fr-ppl-centres-donnees": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "Confirmed sponsor, Mar. 25 Senate adoption, Mar. 26 transmission and content; the Senate copied in the data-center PINM article (art. 15) of the simplification bill, which itself became law on May 26, 2026, so this provision is now largely already in force; no later Assembly action was found. Status note updated: no National Assembly action found; the fast-track article is largely in force through the May 26, 2026 simplification law.",
+      "sources": [
+        {
+          "title": "Banque des Territoires: Datacenters, le Sénat adopte une proposition de loi allégée, renvoyant l'essentiel aux textes en cours",
+          "url": "https://www.banquedesterritoires.fr/datacenters-le-senat-adopte-une-proposition-de-loi-allegee-renvoyant-lessentiel-aux-textes-en-cours"
+        },
+        {
+          "title": "Assemblée nationale: Proposition de loi n° 2584 (transmitted by the Senate)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b2584_proposition-loi.pdf"
+        },
+        {
+          "title": "Vie-publique: Implantation des data centers en France, proposition de loi",
+          "url": "https://www.vie-publique.fr/loi/302597-implatation-des-data-centers-en-france-proposition-de-loi"
+        }
+      ],
       "unconfirmed": [
-        "Senate bill sponsored by David Ros, adopted Mar. 25, 2026 and sent to the Assembly Mar. 26",
-        "Its content and current status as of Nov. 2026"
+        "Current status as of Nov. 2026: no Assembly committee or floor examination was found after March 2026, so 'passed one chamber' appears current but could not be confirmed"
       ]
     },
     "fr-president-2027#candidates": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "All seven appear in coverage as declared or likely 2027 candidates, and the Horizons and LFI labels are confirmed. Ruffin's 'Independent left' label and the Renaissance and Les Écologistes labels were not explicitly confirmed, and Bardella is the RN candidate only if Le Pen does not run.",
+      "note": "Corrected: Marine Le Pen, not Jordan Bardella, is the declared RN candidate (announced July 7, 2026, after her appeal ruling). Bardella, RN president, would run only if the Court of Cassation bars her; both are now listed. The other six are declared candidates.",
       "sources": [
         {
-          "title": "Fortuneo (AFP): Guerre de l'IA, souveraineté: la suspension d'Anthropic s'invite dans la présidentielle française",
-          "url": "https://bourse.fortuneo.fr/actualites-amp/-guerre-de-l-ia-souverainete-la-suspension-d-anthropic-s-invite-dans-la-presidentielle-francaise-5175598"
+          "title": "Public Sénat: Présidentielle, Marine Le Pen est candidate et se pourvoit en cassation",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-marine-le-pen-est-candidate-et-se-pourvoit-en-cassation"
         },
         {
-          "title": "75secondes: Plan à 200 milliards, 100 000 ingénieurs : la surenchère des candidats sur l'IA",
-          "url": "https://www.75secondes.fr/tech/plan-a-200-milliards-100-000-ingenieurs-la-surenchere-des-candidats-sur-lia"
+          "title": "Courthouse News: France's Le Pen will run for president despite embezzlement conviction",
+          "url": "https://courthousenews.com/frances-le-pen-will-run-for-president-despite-embezzlement-conviction/"
         },
         {
-          "title": "Ruffin 2027: Plan DATA CENTERS",
-          "url": "https://nouspresident.fr/plan-data-centers/"
+          "title": "LCP: Présidentielle 2027, la liste des candidats déclarés et potentiels",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932"
         }
       ],
       "unconfirmed": [
-        "Ruffin's label 'Independent left' (franceinfo calls him only 'député de la Somme')",
-        "Attal's Renaissance and Tondelier's Les Écologistes labels not shown explicitly in results",
-        "Bardella as the RN candidate (depends on whether Marine Le Pen runs; see context1)"
+        "François Ruffin's party label (he left LFI in 2024; one low-reliability profile names his own 'Debout' label)"
       ]
     },
     "fr-president-2027#context0": {
@@ -1441,29 +1491,56 @@
       ]
     },
     "fr-president-2027#context1": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "July 7, 2026 Paris appeals court ruling cutting Le Pen's ineligibility so she can run in 2027",
-        "Pending Court of Cassation appeal",
-        "Bardella as RN candidate if Le Pen cannot run"
+      "note": "Confirmed: the July 7, 2026 appeal ruling left Le Pen eligible for 2027, her Cassation appeal is still pending (hearing Dec. 16, 2026; ruling expected by early April 2027), and Bardella is the fallback; some jurists dispute whether the appeal affects her eligibility.",
+      "sources": [
+        {
+          "title": "Le Club des juristes: Marine Le Pen candidate à la présidentielle de 2027 malgré sa condamnation en appel",
+          "url": "https://www.leclubdesjuristes.com/en-bref/marine-le-pen-candidate-a-la-presidentielle-de-2027-malgre-sa-condamnation-en-appel-16843/"
+        },
+        {
+          "title": "Public Sénat: Condamnation de Marine Le Pen, la Cour de cassation pourrait se prononcer au plus tard début avril 2027",
+          "url": "https://www.publicsenat.fr/actualites/politique/condamnation-de-marine-le-pen-la-cour-de-cassation-pourrait-se-prononcer-au-plus-tard-debut-avril-2027"
+        },
+        {
+          "title": "AAP: Le Pen's French presidency bid at stake in court ruling",
+          "url": "https://aapnews.aap.com.au/news/le-pen-s-french-presidency-bid-at-stake-in-court-ruling"
+        }
       ]
     },
     "international#es-2026-snap": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "Spain snap general election on November 29, 2026"
+      "note": "Confirmed: Spain's snap general election is on Nov. 29, 2026 (the claim text repeats '2026' by mistake).",
+      "sources": [
+        {
+          "title": "La Moncloa: Pedro Sánchez announces the calling of general elections for November 29th",
+          "url": "https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2026/20261005-institutional-statement.aspx"
+        },
+        {
+          "title": "Al Jazeera: Spain's Pedro Sanchez announces snap election amid housing crisis",
+          "url": "https://aljazeera.com/news/2026/10/5/spanish-prime-minister-pedro-sanchez-announces-snap-election"
+        },
+        {
+          "title": "Catalan News: Pedro Sánchez announces elections for November 29",
+          "url": "https://www.catalannews.com/politics/item/pedro-sanchez-calls-general-election-for-november-29"
+        }
       ]
     },
     "international#fi-2027-parliamentary": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "Finland parliamentary election on April 18, 2027"
+      "note": "Confirmed: Finland's next parliamentary election is on Sunday, April 18, 2027.",
+      "sources": [
+        {
+          "title": "Wikipedia: 2027 Finnish parliamentary election",
+          "url": "https://en.wikipedia.org/wiki/2027_Finnish_parliamentary_election"
+        },
+        {
+          "title": "City of Vaasa: Elections",
+          "url": "https://www.vaasa.fi/en/living/get-involved-and-be-influential/elections/"
+        }
       ]
     },
     "international#fr-2027-presidential": {
@@ -1482,104 +1559,155 @@
       ]
     },
     "international#it-2027-general": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "Italy general election due by December 22, 2027"
+      "note": "Confirmed as the legal deadline: the election must be held by Dec. 22, 2027, though an earlier vote (e.g. spring 2027) is being discussed and no date has been called.",
+      "sources": [
+        {
+          "title": "Wikipedia: Next Italian general election",
+          "url": "https://en.wikipedia.org/wiki/Next_Italian_general_election"
+        },
+        {
+          "title": "Il Sole 24 Ore: Early elections, 43.8 per cent of MPs face pension risks if the vote takes place before April 2027",
+          "url": "https://en.ilsole24ore.com/art/early-elections-438-per-cent-of-mps-face-pension-risks-if-the-vote-takes-place-before-april-2027-AIAmGBuD"
+        },
+        {
+          "title": "Il Foglio: So when is the vote?",
+          "url": "https://www.ilfoglio.it/en/politics/2026/09/08/news/so-when-is-the-vote--406901"
+        }
       ]
     },
     "international#pl-2027-parliamentary": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "Poland parliamentary election due by November 11, 2027"
+      "note": "Confirmed as a legal deadline (by Nov. 11, 2027) from Wikipedia and the Electoral Code's timing rule; no news or official source with an announced date was found, since the President has not yet called the election.",
+      "sources": [
+        {
+          "title": "Wikipedia: Next Polish parliamentary election",
+          "url": "https://en.wikipedia.org/wiki/Next_Polish_parliamentary_election"
+        },
+        {
+          "title": "Lexlege: Kodeks wyborczy (Electoral Code), general rules",
+          "url": "https://lexlege.pl/kodeks-wyborczy/rozdzial-1-zasady-ogolne/5183"
+        }
       ]
     },
     "mi-2023-election-deepfakes": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "HB 5141, 5143, 5144 enacted in 2023",
-        "Requirement to disclose AI-generated content in political communications",
-        "Sponsors"
+      "note": "HB 5141, 5143 and 5144 were signed Nov. 30, 2023, requiring AI disclaimers on political ads and criminalizing deceptive election deepfakes; HB 5145 (Rep. Noah Arbit) was part of the same package. Sponsors and signing date added: Reps. Penelope Tsernoglou (D) and Matt Bierlein (R); signed Nov. 30, 2023.",
+      "sources": [
+        {
+          "title": "Michigan Public: Whitmer signs bills to require notice on AI-generated political ads",
+          "url": "https://www.michiganpublic.org/politics-government/2023-11-30/whitmer-signs-bills-to-require-notice-on-ai-generated-political-ads"
+        },
+        {
+          "title": "Michigan House Fiscal Agency: analysis of HB 5141-5145 (2023)",
+          "url": "https://ombudsman.legislature.mi.gov/documents/2023-2024/billanalysis/House/pdf/2023-HLA-5141-2E29B1B1.pdf"
+        },
+        {
+          "title": "Miller Canfield: Sweeping changes to Michigan election law enacted in advance of the 2024 contests",
+          "url": "https://www.millercanfield.com/resources-Sweeping-Changes-to-MI-Election-Law-Enacted-Before-2024-Contests.html"
+        }
       ]
     },
     "mi-2026-house-moratorium": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Michigan House moratorium bills exist and had not passed as of June 2026, and Whitmer favored a pledge over a moratorium, but the bill numbers, sponsors, April 1, 2027 end date, MPSC provision and current status were not confirmed before the search budget ran out.",
+      "note": "The package is HB 5594-5596 (Wortz, Fox, Wegela), introduced Feb. 26, 2026, pausing permits and PSC approvals until April 1, 2027; it remains in committee, and Whitmer opposes a moratorium. NCSL's 'six-month' description conflicts with the bills' April 2027 end date. Bill numbers, sponsors and date added: HB 5594-5596, introduced Feb. 26, 2026 by Reps. Jennifer Wortz and Joseph Fox (R) and Dylan Wegela (D).",
       "sources": [
         {
-          "title": "Route Fifty: Michigan lawmakers, local officials and residents renew push for statewide data center moratorium",
-          "url": "https://www.route-fifty.com/infrastructure/2026/06/michigan-lawmakers-local-officials-and-residents-renew-push-statewide-data-center-moratorium/414379/"
+          "title": "WKAR: Michigan House reps call for moratorium on data centers",
+          "url": "https://www.wkar.org/wkar-news/2026-02-26/michigan-house-reps-call-for-moratorium-on-data-centers"
         },
         {
-          "title": "NCSL: Which states are banning data centers",
-          "url": "https://www.ncsl.org/fiscal/which-states-are-banning-data-centers/utm"
+          "title": "Michigan Advance: Wortz spearheads bipartisan effort to halt data center construction in Michigan",
+          "url": "https://michiganadvance.com/briefs/wortz-spearheads-bipartisan-effort-to-halt-data-center-construction-in-michigan/"
         },
         {
-          "title": "E&E News: Whitmer pushes data center pledge — not a moratorium",
-          "url": "https://www.eenews.net/articles/whitmer-pushes-data-center-pledge-not-a-moratorium/"
+          "title": "LegiScan: MI HB5594, 2025-2026, 103rd Legislature",
+          "url": "https://legiscan.com/MI/drafts/HB5594/2025"
         }
-      ],
-      "unconfirmed": [
-        "Bill numbers (NCSL's tracker lists HB 5594-5595, a six-month moratorium on approvals, construction or tax incentives, status introduced; not confirmed to be this package, and six months may conflict with a one-year pause)",
-        "Bipartisan sponsorship and sponsor names",
-        "February 2026 introduction",
-        "Pause until April 1, 2027",
-        "Directive to the Michigan Public Service Commission to halt approval of data center utility contracts or rates",
-        "Whitmer saying she will not sign a statewide moratorium",
-        "Current status as of Nov. 2026"
       ]
     },
     "mi-2026-sb1018": {
-      "result": "not-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "No result named SB 1018-1020; Republican Sen. Jim Runestad announced a Senate bill package for a 365-day statewide data center moratorium, which may be this package, but the bill numbers, sponsors and status could not be checked before the search budget ran out.",
+      "note": "Republican Sens. Runestad and Johnson introduced SB 1018-1020 on June 4, 2026 for a moratorium on approvals and operation of new data centers until Apr. 1, 2027; the bills sit in Senate Government Operations with no later action found (statusDate can be set to 2026-06-04). Sponsors and date added: Sens. Jim Runestad (R) and Ruth Johnson (R), introduced June 4, 2026.",
       "sources": [
+        {
+          "title": "MichiganVotes: 2026 Senate Bill 1018",
+          "url": "https://www.michiganvotes.org/legislation/2026/senate/bill-1018"
+        },
+        {
+          "title": "Michigan Advance: Runestad proposes one-year moratorium on data centers, urging caution and scrutiny",
+          "url": "https://michiganadvance.com/2026/06/04/runestad-proposes-one-year-moratorium-on-data-centers-urging-caution-and-scrutiny/"
+        },
         {
           "title": "Sen. Jim Runestad: Runestad introduces legislation to create a 365-day moratorium on all data center projects in Michigan",
           "url": "https://www.senatorjimrunestad.com/runestad-introduces-legislation-to-create-a-365-day-moratorium-on-all-data-center-projects-in-michigan/"
         }
-      ],
-      "unconfirmed": [
-        "Existence of SB 1018-1020 with this title",
-        "Sponsors",
-        "Status"
       ]
     },
     "mi-hb4047-4048": {
-      "result": "not-checked",
+      "result": "corrected",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "HB 4047-4048 enacted as PA 11 of 2025",
-        "Civil cause of action and criminal penalties for intimate deepfakes",
-        "Effective date of Aug. 26, 2025",
-        "Sponsors"
+      "note": "Corrected: only HB 4047 is Public Act 11 of 2025; HB 4048 is Public Act 12. Both were signed and took effect Aug. 26, 2025, with civil and criminal remedies for intimate deepfakes. Sponsors added: Reps. Matt Bierlein (R) and Penelope Tsernoglou (D).",
+      "sources": [
+        {
+          "title": "MichiganVotes: 2025 House Bill 4047 / Public Act 11",
+          "url": "https://michiganvotes.org/legislation/2025/house/bill-4047"
+        },
+        {
+          "title": "MichiganVotes: 2025 House Bill 4048 / Public Act 12",
+          "url": "https://michiganvotes.org/legislation/2025/house/bill-4048"
+        },
+        {
+          "title": "Governor Whitmer: Whitmer signs bills to protect Michiganders from sexual exploitation",
+          "url": "https://www.michigan.gov/whitmer/news/press-releases/2025/08/26/whitmer-signs-bills-to-protect-michiganders-from-sexual-exploitation"
+        }
       ]
     },
     "mi-hb5396": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No result seen so far mentions HB 5396 or Rep. Wegela.",
-      "unconfirmed": [
-        "HB 5396-5398 bill numbers and content",
-        "Rep. Dylan Wegela as sponsor",
-        "Status"
+      "note": "Wegela's bipartisan HB 5396-5398, introduced Dec. 17, 2025, would repeal the data center sales and use tax exemptions (HB 5398 covers property tax) and remain in committee with no recorded action since introduction. Introduction date added: Dec. 17, 2025.",
+      "sources": [
+        {
+          "title": "MichiganVotes: 2025 House Bill 5396",
+          "url": "https://www.michiganvotes.org/legislation/2025/house/bill-5396"
+        },
+        {
+          "title": "MichiganVotes: 2025 House Bill 5398",
+          "url": "https://www.michiganvotes.org/legislation/2025/house/bill-5398"
+        },
+        {
+          "title": "Bridge Michigan: Michigan lawmakers unveil plan to repeal data center tax breaks",
+          "url": "https://bridgemi.com/michigan-environment-watch/michigan-lawmakers-unveil-plan-to-repeal-data-center-tax-breaks/"
+        }
       ]
     },
     "mi-sb757-760": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "The package and Polehanki's SB 760 chatbot bill are confirmed, passing the Senate 20-17 on Apr. 29, 2026 with no House vote as of Oct. 16, 2026; sources name self-harm, suicidal ideation and disordered eating but not violence or drug use. Senate passage date corrected to Apr. 29, 2026 (20-17).",
+      "sources": [
+        {
+          "title": "MichiganVotes: 2025 Senate Bill 760",
+          "url": "https://www.michiganvotes.org/legislation/2025/senate/bill-760"
+        },
+        {
+          "title": "Michigan Public: Kids Over Clicks bills (Oct. 16, 2026)",
+          "url": "https://www.michiganpublic.org/community/2026-10-16/kids-over-clicks-bills-michigan"
+        },
+        {
+          "title": "Route Fifty: Michigan Senate passes 'Kids Over Clicks' bill targeting social media addiction, online exploitation",
+          "url": "https://www.route-fifty.com/management/2026/05/michigan-senate-passes-kids-over-clicks-bill-targeting-social-media-addiction-online-exploitation/413254/"
+        }
+      ],
       "unconfirmed": [
-        "SB 757-760 'Kids Over Clicks' package and its content",
-        "Sen. Dayna Polehanki as SB 760 sponsor",
-        "Senate passage on Apr. 30, 2026 and House status as of Nov. 2026"
+        "That SB 760 lists violence and drug use among the barred harms",
+        "House status after mid-October 2026"
       ]
     },
     "mi-senate-2026-abdul-el-sayed-alignment-11": {
@@ -1655,7 +1783,7 @@
     "mi-senate-2026-abdul-el-sayed-position-6": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "His platform calls for FDA-style pre-deployment safety approval of AI models, which is close to licensing, but no source describes it as a licensing framework for high-risk systems.",
+      "note": "El-Sayed's platform calls for pre-deployment approval of frontier AI and a regulator with shutdown powers, which is close to licensing, but no source describes a licensing framework for high-risk systems.",
       "sources": [
         {
           "title": "Abdul for Senate: Dr. Abdul El-Sayed Announces AI Policy Platform: AI Under Democracy",
@@ -1664,11 +1792,15 @@
         {
           "title": "tools4abdul (campaign-run site): Abdul El-Sayed on Artificial intelligence",
           "url": "https://tools4abdul.com/ai/"
+        },
+        {
+          "title": "Detroit Metro Times: Abdul El-Sayed wants to put AI under public control",
+          "url": "https://www.metrotimes.com/news/abdul-el-sayed-wants-to-put-ai-under-public-control-as-jobs-and-democracy-face-new-risks/"
         }
       ],
       "unconfirmed": [
-        "the term 'licensing'",
-        "limitation to 'high-risk systems' (his plan targets frontier models and the largest AI companies)"
+        "The term 'licensing'",
+        "Limitation to 'high-risk systems' (his plan targets frontier models and the largest AI companies)"
       ]
     },
     "mi-senate-2026-abdul-el-sayed-position-7": {
@@ -1826,19 +1958,32 @@
       "note": "This is an editorial judgment from the early prototype, not a factual claim, so it cannot be verified. No source was ever recorded for it."
     },
     "mi-senate-2026-mike-rogers-endorsement-34": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: The record does not say which Chamber of Commerce is meant, and no endorsement appeared in results.",
+      "note": "Several Michigan chambers of commerce did endorse Rogers, but the record does not say which one, and none was found endorsing him on Aug. 10, 2026 (the statewide Michigan Chamber's endorsement came on Sept. 23), so the record should name the chamber and its date.",
+      "sources": [
+        {
+          "title": "Michigan Chamber of Commerce: In the News (endorsement of Mike Rogers for U.S. Senate)",
+          "url": "https://www.michamber.com/inthenews/"
+        },
+        {
+          "title": "Michigan Advance: Mike Rogers gets big boost from business community with new slate of endorsements",
+          "url": "https://michiganadvance.com/2026/09/17/mike-rogers-gets-big-boost-from-business-community-with-new-slate-of-endorsements/"
+        },
+        {
+          "title": "Rogers for Senate: Southeast Michigan Chamber of Commerce Endorses Mike Rogers for U.S. Senate",
+          "url": "https://rogersforsenate.com/news/southeast-michigan-chamber-of-commerce-endorses-mike-rogers-for-us-senate"
+        }
+      ],
       "unconfirmed": [
-        "endorsement by a Chamber of Commerce",
-        "which chamber is meant (U.S., Michigan or a regional chamber)",
-        "date 2026-08-10"
+        "which chamber the record means (no U.S. Chamber of Commerce endorsement was found)",
+        "date 2026-08-10 (no chamber endorsement found on that date; the Michigan Chamber's came Sept. 23 and the Detroit Regional Chamber's around Sept. 17; the Southeast Michigan Chamber's date was not found)"
       ]
     },
     "mi-senate-2026-mike-rogers-endorsement-35": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No organisation called 'Michigan Tech Alliance' appeared in any results, so it may not exist.",
+      "note": "No organisation called 'Michigan Tech Alliance' turned up in an exact-name search (only unrelated Michigan Technological University bodies appeared), so it does not seem to exist, and no such endorsement appears among Rogers's reported endorsements.",
       "unconfirmed": [
         "existence of an organisation called 'Michigan Tech Alliance'",
         "any endorsement of Rogers by it",
@@ -1846,71 +1991,93 @@
       ]
     },
     "mi-senate-2026-mike-rogers-endorsement-36": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: The National Defense Industrial Association is a real trade group but is not known to endorse candidates, and no endorsement of Rogers appeared.",
+      "note": "No result shows the National Defense Industrial Association endorsing Rogers; his reported trade-group endorsements come from other groups (e.g. AGC PAC, NAW-PAC, NFIB, Associated Builders and Contractors, Michigan Retailers Association).",
       "unconfirmed": [
         "any endorsement of Rogers by the National Defense Industrial Association",
         "date 2026-06-20"
       ]
     },
     "mi-senate-2026-mike-rogers-position-27": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No source in results shows Rogers taking this position.",
+      "note": "No source shows Rogers backing sector-specific or self-regulatory AI governance; he praised the White House framework's single national standard (March 2026) and in Sept. 2026 called for slowing AI development and stricter protocols and guardrails, neither of which fits this summary.",
       "unconfirmed": [
         "support for sector-specific, self-regulatory AI governance"
       ]
     },
     "mi-senate-2026-mike-rogers-position-28": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No source in results describes Rogers's AI policy as security-focused.",
+      "note": "Rogers's campaign does frame AI as a race against China, and an aggregator says he pledged a 'national security framework for AI', but no reliable source shows a cybersecurity focus in his AI policy.",
+      "sources": [
+        {
+          "title": "Rogers for Senate: Rogers Applauds White House AI Framework That Establishes Global Leadership and Protects Kids Online",
+          "url": "https://rogersforsenate.com/news/rogers-applauds-white-house-ai-framework-that-establishes-global-leadership-and-protects-kids-online"
+        },
+        {
+          "title": "ClickOnDetroit: Michigan lawmakers raise concerns about AI risks as Senate candidates call for safeguards",
+          "url": "https://www.clickondetroit.com/news/local/2026/09/14/michigan-lawmakers-raise-concerns-about-ai-risks-as-senate-candidates-call-for-safeguards/"
+        }
+      ],
       "unconfirmed": [
-        "national security and cybersecurity focus in his AI policy"
+        "a cybersecurity focus in his AI policy",
+        "his reported Sept. 2026 pledge to make a 'national security framework for AI' a Senate priority (found only in an aggregator summary)"
       ]
     },
     "mi-senate-2026-mike-rogers-position-29": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No source in results shows Rogers taking this position.",
+      "note": "No source shows Rogers opposing prescriptive federal AI standards; he backed the White House framework's call for one national standard and later urged stricter protocols and guardrails.",
       "unconfirmed": [
         "opposition to prescriptive federal AI standards"
       ]
     },
     "mi-senate-2026-mike-rogers-position-30": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No source in results shows Rogers taking this position.",
+      "note": "Rogers's March 2026 campaign statement backs AI innovation, but no source has him stating support for 'private-sector innovation' as such, and his later calls for a slowdown and a data-center moratorium cut against it.",
+      "sources": [
+        {
+          "title": "Rogers for Senate: Rogers Applauds White House AI Framework That Establishes Global Leadership and Protects Kids Online",
+          "url": "https://rogersforsenate.com/news/rogers-applauds-white-house-ai-framework-that-establishes-global-leadership-and-protects-kids-online"
+        },
+        {
+          "title": "Washington Examiner: Mike Rogers backs data center moratorium as some GOP candidates shift against AI",
+          "url": "https://washingtonexaminer.com/news/campaigns/congressional/4695391/mike-rogers-data-center-moratorium"
+        }
+      ],
       "unconfirmed": [
-        "support for private-sector AI innovation as a stated position"
+        "support for private-sector innovation as an explicitly stated position",
+        "that this is still his position (in Aug.-Sept. 2026 he backed a one-year Michigan data-center moratorium and called for slowing AI development)"
       ]
     },
     "mi-senate-2026-mike-rogers-position-31": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No source in results shows Rogers taking this position.",
+      "note": "No source shows Rogers calling for international coordination on AI standards; his statements speak only of U.S. global leadership over China.",
       "unconfirmed": [
         "support for international, security-focused coordination on AI standards"
       ]
     },
     "mi-senate-2026-mike-rogers-profile-22": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Results confirm Rogers was the Republican nominee (he lost on Nov. 3, 2026); his former House service and cybersecurity background were not checked because the shared search limit ran out.",
+      "note": "Rogers was the 2026 Republican Senate nominee, is a former U.S. Representative who chaired the House Intelligence Committee, and worked in the cybersecurity industry after leaving Congress.",
       "sources": [
         {
           "title": "Michigan Public: Democrat Abdul El-Sayed defeats Republican Mike Rogers in key Michigan Senate race",
           "url": "https://www.michiganpublic.org/2026-11-04/democrat-abdul-el-sayed-defeats-republican-mike-rogers-in-key-michigan-senate-race"
         },
         {
-          "title": "KTVU: Abdul El-Sayed wins Michigan's Senate seat, beating Mike Rogers",
-          "url": "https://www.ktvu.com/news/abdul-el-sayed-mike-rogers-us-senate-michigan-2026-midterm"
+          "title": "NBC News: Former GOP Rep. Mike Rogers launches another Michigan Senate run",
+          "url": "https://www.nbcnews.com/politics/congress/former-gop-rep-mike-rogers-launches-another-michigan-senate-run-rcna201072"
+        },
+        {
+          "title": "Roll Call: Former House Intel chairman Mike Rogers running for Senate in Michigan",
+          "url": "https://rollcall.com/2023/09/06/former-house-intel-chairman-mike-rogers-running-for-senate-in-michigan/"
         }
-      ],
-      "unconfirmed": [
-        "former U.S. Representative",
-        "cybersecurity expert"
       ]
     },
     "mi-senate-2026-mike-rogers-projection-37": {
@@ -1939,57 +2106,105 @@
       "note": "This is a projection from the early prototype, not a factual claim, so it cannot be verified. No source was ever recorded for it."
     },
     "mi-senate-2026-mike-rogers-stance-23": {
-      "result": "not-checked",
+      "result": "contradicted",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: The only related item in results was a search summary of Oct. 2026 coverage saying Rogers had not released an AI platform and had endorsed President Trump's AI policy framework, so no source shows a 'light-touch, innovation-first' stance.",
+      "note": "Contradicted: Rogers praised the White House's innovation-focused AI framework in March 2026, but by September 2026 he called for slowing AI development with stricter guardrails and backed a one-year Michigan data center moratorium (ClickOnDetroit, Washington Examiner).",
+      "sources": [
+        {
+          "title": "ClickOnDetroit: Michigan lawmakers raise concerns about AI risks as Senate candidates call for safeguards",
+          "url": "https://www.clickondetroit.com/news/local/2026/09/14/michigan-lawmakers-raise-concerns-about-ai-risks-as-senate-candidates-call-for-safeguards/"
+        },
+        {
+          "title": "Washington Examiner: Mike Rogers backs data center moratorium as some GOP candidates shift against AI",
+          "url": "https://washingtonexaminer.com/news/campaigns/congressional/4695391/mike-rogers-data-center-moratorium"
+        },
+        {
+          "title": "Rogers for Senate: Rogers Applauds White House AI Framework That Establishes Global Leadership and Protects Kids Online",
+          "url": "https://rogersforsenate.com/news/rogers-applauds-white-house-ai-framework-that-establishes-global-leadership-and-protects-kids-online"
+        }
+      ],
       "unconfirmed": [
-        "a light-touch, innovation-first AI stance"
+        "a call by Rogers for 'light-touch' AI regulation"
       ]
     },
     "mi-senate-2026-mike-rogers-statement-24": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No source for this quote appeared in any results.",
+      "note": "Exact-phrase searches found no source for this quote; six days before its supposed date, Rogers was reported calling for slowing AI development and stricter guardrails, which runs against its 'light-touch rules' message.",
+      "sources": [
+        {
+          "title": "ClickOnDetroit: Michigan lawmakers raise concerns about AI risks as Senate candidates call for safeguards",
+          "url": "https://www.clickondetroit.com/news/local/2026/09/14/michigan-lawmakers-raise-concerns-about-ai-risks-as-senate-candidates-call-for-safeguards/"
+        }
+      ],
       "unconfirmed": [
         "the quoted wording",
         "date 2026-09-20"
       ]
     },
     "mi-senate-2026-mike-rogers-statement-25": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No source for this quote appeared, and a search summary of Oct. 2026 coverage said Rogers had vowed to make regulation a priority, which sits uneasily with 'the best regulation is no regulation'.",
+      "note": "An exact-phrase search found no source for 'the best regulation is no regulation' from Rogers, and it conflicts with his reported positions around that date (backing a data-center moratorium in August 2026 and calling for stricter AI guardrails in September).",
+      "sources": [
+        {
+          "title": "Washington Examiner: Mike Rogers backs data center moratorium as some GOP candidates shift against AI",
+          "url": "https://washingtonexaminer.com/news/campaigns/congressional/4695391/mike-rogers-data-center-moratorium"
+        }
+      ],
       "unconfirmed": [
         "the quoted wording",
         "date 2026-08-30"
       ]
     },
     "mi-senate-2026-mike-rogers-statement-26": {
-      "result": "not-checked",
+      "result": "not-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: No source for this quote appeared in any results.",
+      "note": "An exact-phrase search found no source for this quote; similar AI-security remarks in results came from Adm. Michael S. Rogers, the former NSA director, a different person from the Michigan candidate, so the draft may conflate the two.",
       "unconfirmed": [
         "the quoted wording",
         "date 2026-07-25"
       ]
     },
     "pl-d-chips#0": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "Schumer's Sept. 23, 2026 push with fellow Democrats for the three bipartisan chip bills is confirmed, but the cited Washington Times article did not surface and no result shows him saying the Senate could pass them immediately.",
+      "sources": [
+        {
+          "title": "Senate Banking Committee (minority): Ahead of Xi State Visit, Warren, Schumer, Kim, and Slotkin Call for AI Safety Regulations, Export Controls",
+          "url": "https://www.banking.senate.gov/newsroom/minority/ahead-of-xi-state-visit-warren-schumer-kim-and-slotkin-call-for-ai-safety-regulations-export-controls"
+        },
+        {
+          "title": "The Hill: Senate Democrats push AI chip bills",
+          "url": "https://thehill.com/policy/technology/6106883-senate-democrats-ai-chip-bills/amp/"
+        },
+        {
+          "title": "Roll Call: AI export controls debate rages as Trump, Xi meet",
+          "url": "https://rollcall.com/2026/09/23/ai-export-controls-debate-rages-as-trump-xi-meet/"
+        }
+      ],
       "unconfirmed": [
-        "Schumer backed the MATCH Act, AI OVERWATCH Act and Chip Security Act",
-        "Schumer said the Senate could pass them immediately",
-        "date Sept. 23, 2026"
+        "that Schumer said the Senate could pass the bills immediately (results show Democrats urging GOP leaders to pass them, and Schumer saying the president 'could take action today', but not that wording)"
       ]
     },
     "pl-d-chips#1": {
-      "result": "not-checked",
+      "result": "corrected",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched. Seen in passing: The cited CNBC URL slug refers to Moolenaar and Huang rather than Schumer, so it deserves a careful re-check.",
-      "unconfirmed": [
-        "Schumer accused Trump of defending Nvidia CEO Jensen Huang at the cost of national security",
-        "date Nov. 10, 2026"
+      "note": "Confirmed by Reuters (Nov. 10, 2026) and a CNBC-licensed report. The source was replaced: the CNBC address first cited could not be shown to be this story.",
+      "sources": [
+        {
+          "title": "The Daily Guardian (Reuters): Schumer says Congress must have answers on Trump defense of Nvidia CEO",
+          "url": "https://thedailyguardian.com/business/schumer-says-congress-must-have-answers-on-trump-defense-of-nvidia-ceo-773542/"
+        },
+        {
+          "title": "Times Brasil (CNBC licensee): Senador acusa Trump de defender o CEO da Nvidia, Jensen Huang, em detrimento da segurança nacional",
+          "url": "https://timesbrasil.com.br/mundo/senador-acusa-trump-de-defender-o-ceo-da-nvidia-jensen-huang-em-detrimento-da-seguranca-nacional/"
+        },
+        {
+          "title": "Roic.ai: Schumer calls Trump's defense of Nvidia's Huang troubling, demands full accounting on espionage response (11-10-2026)",
+          "url": "https://www.roic.ai/news/schumer-calls-trumps-defense-of-nvidias-huang-troubling-demands-full-accounting-on-espionage-response-11-10-2026"
+        }
       ]
     },
     "pl-d-data-centers#0": {
@@ -2033,8 +2248,12 @@
     "pl-d-data-centers#2": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Reposts of Reuters confirm the planned data-center cost bills and Schumer's early-November priority. The 'no binding limits' point was not found.",
+      "note": "Syndicated Reuters text confirms the planned data-center power-cost bills and Schumer's priority; nothing says the plans stop short of binding limits on AI deployment or energy use.",
       "sources": [
+        {
+          "title": "The Star (Reuters): Democrats planning flood of AI bills when they take control of Congress",
+          "url": "https://thestar.com.my/tech/tech-news/2026/11/06/democrats-planning-flood-of-ai-bills-when-they-take-control-of-congress"
+        },
         {
           "title": "Crypto Briefing (citing Reuters): Democrats plan AI legislation in Congress in January",
           "url": "https://cryptobriefing.com/democrats-plan-ai-legislation-congress-january/"
@@ -2042,15 +2261,10 @@
         {
           "title": "IBTimes: A Bill to Make Data Centers Pay for Grid Upgrades is Dividing Democrats as They Gear to Control Congress",
           "url": "https://www.ibtimes.com/senate-data-center-power-infrastructure-bill-vote-3809557"
-        },
-        {
-          "title": "The Standard (Reuters): US Congress gets first post-Blue Wave crack at data centers with permitting bill",
-          "url": "https://www.thestandard.com.hk/world/article/347975/US-Congress-gets-first-post-Blue-Wave-crack-at-data-centers-with-permitting-bill"
         }
       ],
       "unconfirmed": [
-        "that the plans stop short of binding limits on AI deployment or energy use",
-        "original Reuters text (seen only via reposts)"
+        "That the plans stop short of binding limits on AI deployment or energy use (not stated; Reuters lists independent testing of advanced AI and clearer corporate liability as the other pillars, and Schumer has said Democrats want data-center rules to be mandatory)"
       ]
     },
     "pl-d-harmful#0": {
@@ -2073,21 +2287,22 @@
       ]
     },
     "pl-d-preemption#0": {
-      "result": "partly-confirmed",
+      "result": "corrected",
       "checkedOn": "2026-11-24",
-      "note": "The Prospect quotes Jeffries avoiding a stance with these words. The context it gives is the state AI preemption bill push, not clearly the executive order.",
+      "note": "Corrected: Jeffries made the remark in early December 2025 (reported Dec. 5) about the Republican push in Congress to preempt state AI laws, not about Trump's proposed executive order. The quote is confirmed.",
       "sources": [
+        {
+          "title": "Demand Progress: Poll: voters want Jeffries, Schumer to fight AI deregulation",
+          "url": "https://www.demandprogress.org/poll-voters-want-jeffries-schumer-to-fight-ai-deregulation"
+        },
         {
           "title": "The American Prospect: Democratic Voters Are Clamoring for AI Regulation. Their Leaders Aren't Interested.",
           "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
         },
         {
-          "title": "Demand Progress: Poll: voters want Jeffries, Schumer to fight AI deregulation",
-          "url": "https://www.demandprogress.org/poll-voters-want-jeffries-schumer-to-fight-ai-deregulation"
+          "title": "Common Dreams: Jeffries avoids stance on Republican push to ban state AI guardrails",
+          "url": "https://www.commondreams.org/news/artificial-intelligence-regulation"
         }
-      ],
-      "unconfirmed": [
-        "that the remark was about Trump's proposed executive order specifically; the coverage ties it to the push for a congressional state-AI preemption bill"
       ]
     },
     "pl-d-preemption#1": {
@@ -2110,37 +2325,41 @@
       ]
     },
     "pl-d-safety#0": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Coverage from Dec. 12, 2025 confirms Jeffries created the commission. The exact Dec. 9 date and the two quoted phrases were not shown in results.",
+      "note": "The Dec. 9, 2025 launch, the 'continue to thrive' language in the leadership release and Jeffries' 'aggressive framework' remark are all confirmed.",
       "sources": [
         {
-          "title": "The American Prospect: Democratic Voters Are Clamoring for AI Regulation. Their Leaders Aren't Interested.",
-          "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
+          "title": "Rep. Zoe Lofgren: Leader Jeffries announces new House Democratic Commission on AI and the Innovation Economy",
+          "url": "https://lofgren.house.gov/media/press-releases/leader-jeffries-announces-new-house-democratic-commission-ai-and-innovation"
         },
         {
-          "title": "The Nation: Democrats and AI regulation (Dec. 12, 2025)",
-          "url": "https://www.thenation.com/article/politics/democrats-ai-regulation/"
+          "title": "Truthout: Democrats backed by industry super PACs are writing the party's AI plan",
+          "url": "https://truthout.org/articles/democrats-backed-by-industry-super-pacs-are-writing-the-partys-ai-plan/"
         },
         {
-          "title": "The Pavlovic Today: Jeffries on Trump's AI order and new AI commission",
-          "url": "https://thepavlovictoday.com/?p=51651"
+          "title": "Nextgov: New House commission to scrutinize AI's impact on the economy",
+          "url": "https://www.nextgov.com/artificial-intelligence/2025/12/new-house-commission-scrutinize-ai-impact-economy/410047"
         }
-      ],
-      "unconfirmed": [
-        "exact announcement date Dec. 9, 2025",
-        "quote 'an aggressive framework'",
-        "quote that AI companies should 'continue to thrive' while preventing harm"
       ]
     },
     "pl-d-safety#1": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "Schumer demanded a classified all-senators briefing on frontier AI risks",
-        "Schumer urged guardrails for AI risks",
-        "date Sept. 2026"
+      "note": "Reports from Sept. 14-15, 2026 confirm Schumer's demand for a classified all-senators briefing on frontier AI risks and his call for 'serious guardrails'; the cited Senate Democrats release itself did not surface in results, and these are distinct from his 2023 all-senators AI briefings.",
+      "sources": [
+        {
+          "title": "Bloomberg Government: Schumer Calls for Senate AI Briefing From Trump Administration",
+          "url": "https://news.bgov.com/artificial-intelligence/schumer-calls-for-senate-ai-briefing-from-trump-administration"
+        },
+        {
+          "title": "FingerLakes1: Schumer seeks classified Senate briefing on AI risks and security",
+          "url": "https://www.fingerlakes1.com/2026/09/15/schumer-seeks-classified-senate-briefing-on-ai-risks-and-security/"
+        },
+        {
+          "title": "Crypto Briefing: Chuck Schumer calls for classified AI danger briefing from Trump administration",
+          "url": "https://cryptobriefing.com/schumer-classified-ai-danger-briefing/"
+        }
       ]
     },
     "pl-d-safety#2": {
@@ -2159,21 +2378,22 @@
       ]
     },
     "pl-d-workers#0": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "The commission's name and framing are confirmed. Whether its framework has been released by Nov. 2026 is unclear, because post-election coverage quotes a Democratic 'blueprint'.",
+      "note": "Two searches found no release of the commission's framework (Lieu said in June 2026 it would come by year's end), so 'not confirmed as released' still holds; the Democratic 'blueprint' KATU quoted in November could not be tied to the commission.",
       "sources": [
+        {
+          "title": "Roll Call: Rush to regulate AI divides Democrats in Congress",
+          "url": "https://rollcall.com/2026/06/10/rush-to-regulate-ai-divides-democrats-in-congress/"
+        },
+        {
+          "title": "Rep. Zoe Lofgren: Leader Jeffries announces new House Democratic Commission on AI and the Innovation Economy",
+          "url": "https://lofgren.house.gov/media/press-releases/leader-jeffries-announces-new-house-democratic-commission-ai-and-innovation"
+        },
         {
           "title": "The American Prospect: Democratic Voters Are Clamoring for AI Regulation. Their Leaders Aren't Interested.",
           "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
-        },
-        {
-          "title": "KATU: Democrats vow AI guardrails as they prepare to take control of Congress",
-          "url": "https://katu.com/news/nation-world/democrats-vow-ai-guardrails-as-they-prepare-to-take-control-of-congress"
         }
-      ],
-      "unconfirmed": [
-        "current release status: a Nov. 2026 report quotes a Democratic AI 'blueprint', which may be the commission's output, so this should be rechecked"
       ]
     },
     "pl-r-chips#0": {
@@ -2272,26 +2492,22 @@
       ]
     },
     "pl-r-data-centers#3": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "The quote and Trump's call to pass the permitting bill are confirmed. Coverage ties the bill to the pledge, but the results do not show Trump himself saying it codifies the pledge.",
+      "note": "Trump's post saying the permitting bill would codify his Ratepayer Protection Pledge is confirmed; it went up on Sunday, Nov. 8, 2026, one day before the Nov. 9 date in the dataset.",
       "sources": [
+        {
+          "title": "NewKerala (ANI): Trump urges senators to pass permitting bill, calls it a big win for US",
+          "url": "https://www.newkerala.com/news/a/this-bill-big-win-us-trump-urges-senators-547.htm"
+        },
+        {
+          "title": "Boston Globe (AP): Senate weighs sweeping energy legislation in first major action since midterm elections",
+          "url": "https://www.bostonglobe.com/2026/11/09/business/senate-energy-legislation-election/"
+        },
         {
           "title": "TIME: Congress's Permitting Bill Is a 'Massive Giveaway' to the AI Data Center Industry, Critics Warn",
           "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers/"
-        },
-        {
-          "title": "OAN: Trump calls for Senate to pass bipartisan energy permitting bill with regulations for data centers",
-          "url": "https://www.oann.com/newsroom/trump-calls-for-senate-to-pass-bipartisan-energy-permitting-bill-with-regulations-for-data-centers/"
-        },
-        {
-          "title": "Dataconomy: US Senate Advances Energy Permitting Bill Amid AI Data Center Backlash",
-          "url": "https://dataconomy.com/2026/11/12/senate-advances-energy-permitting-bill-amid-ai-data-center/"
         }
-      ],
-      "unconfirmed": [
-        "that Trump himself said the bill codifies his Ratepayer Protection Pledge",
-        "exact date: coverage describes a Sunday post before the Monday Nov. 9 Senate vote, i.e. likely Nov. 8"
       ]
     },
     "pl-r-harmful#0": {
@@ -2390,33 +2606,28 @@
       ]
     },
     "pl-r-safety#1": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "The Sept. 29, 2026 pact is confirmed as voluntary with no penalties or enforcement details. The results did not show the cited Foley text, the disclosure point, or the administration's stance on binding mandates.",
+      "note": "Reports confirm the accord is voluntary, with no consequences for noncompliance and no public reporting duty, and that Trump favors voluntary safeguards over new AI rules; Trump did float a committee of about 10 people to 'watch over' it, without enforcement powers.",
       "sources": [
+        {
+          "title": "Al Jazeera: How does Trump's White House AI accord work?",
+          "url": "https://www.aljazeera.com/news/2026/9/30/how-does-trumps-white-house-ai-accord-work"
+        },
+        {
+          "title": "The Star: As public fears of AI grow, Trump digs in on voluntary safeguards",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/10/03/as-public-fears-of-ai-grow-trump-digs-in-on-voluntary-safeguards"
+        },
         {
           "title": "Al Jazeera: Trump, tech bosses sign voluntary pact pledging 'robust' AI safeguards",
           "url": "https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development"
-        },
-        {
-          "title": "Dark Reading: Trump, Tech Giants Strike Voluntary AI Safety Accord",
-          "url": "https://darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord"
-        },
-        {
-          "title": "WJLA: Trump bets on AI industry to police itself as safety warnings mount",
-          "url": "https://wjla.com/news/nation-world/trump-bets-on-ai-industry-to-police-itself-as-safety-warnings-mount"
         }
-      ],
-      "unconfirmed": [
-        "that it has no disclosure duty",
-        "that there is no enforcement role at all (Trump said he would name someone to oversee it)",
-        "that the administration has opposed binding safety mandates"
       ]
     },
     "pl-r-workers#0": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "DOL and other summaries confirm that the plan's retraining push and the AI Workforce Research Hub fall under the Labor Department. The plan directs DOL to use existing discretionary funds and does not appropriate new money.",
+      "note": "DOL and other summaries confirm the plan's retraining push (using existing discretionary funds) and the AI Workforce Research Hub; the section title was not shown in the results.",
       "sources": [
         {
           "title": "U.S. Department of Labor: News release on the AI Action Plan (July 23, 2025)",
@@ -2432,7 +2643,7 @@
         }
       ],
       "unconfirmed": [
-        "exact section title 'Empower American Workers in the Age of AI' (not shown in results)"
+        "Exact section title 'Empower American Workers in the Age of AI' (not shown in the results)"
       ]
     },
     "pl-r-workers#1": {
@@ -2451,53 +2662,105 @@
       ]
     },
     "result-ca-governor-2026": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "Becerra's win (AP call at 8 p.m.) in the race to succeed Newsom is confirmed; the listed 65.6%/34.4% was not found (earlier partial counts showed about 64%/36%, and one KTVU box 60%/38%), and no certification report was found.",
+      "sources": [
+        {
+          "title": "FOX 11 LA: How did LA County vote in the race for governor",
+          "url": "https://www.foxla.com/news/california-governor-how-did-la-county-vote"
+        },
+        {
+          "title": "SF Standard: Xavier Becerra wins California governor's race",
+          "url": "https://sfstandard.com/2026/11/03/xavier-becerra-wins-california-governor-s-race/"
+        },
+        {
+          "title": "KTVU: Xavier Becerra elected as California's next governor, AP projects",
+          "url": "https://www.ktvu.com/news/xavier-becerra-will-be-californias-next-governor"
+        }
+      ],
       "unconfirmed": [
-        "Winner Xavier Becerra and the reported calls",
-        "Vote shares 65.6% / 34.4%",
-        "Newsom term-limited; open seat",
-        "Certification status (state certifies by Dec. 11, 2026)"
+        "Vote shares 65.6% / 34.4%: figures found were earlier partial counts, 64% / 36% at the AP call (about 59% counted, FOX 11 LA), 64.1% / 35.9% (SF Standard, about 7.1 million votes counted), and a KTVU results box showing 60% / 38%; none is within one point of the listed figures",
+        "Calls by MultiState, Decision Desk HQ and NBC Bay Area specifically (the AP call was found instead)",
+        "That Newsom was term-limited (results say only that Becerra succeeds him)",
+        "Certification: no certified totals found; the Dec. 11, 2026 certification date was not confirmed in the results, and the race is presumably not yet certified as of Nov. 24"
       ]
     },
     "result-ct-governor-2026": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "Lamont's third-term win over Fazio and the AP call around 9:20 p.m. are confirmed, as is his 2018 win over Stefanowski; the vote shares, the 2022 opponent and certification were not found.",
+      "sources": [
+        {
+          "title": "CT Mirror: Gov. Ned Lamont defeats Ryan Fazio, winning 3rd term",
+          "url": "https://ctmirror.org/2026/11/03/gov-ned-lamont-defeats-ryan-fazio-winning-3rd-term/"
+        },
+        {
+          "title": "WFSB: Lamont wins third term as Democrats expand majority in Connecticut legislature",
+          "url": "https://www.wfsb.com/2026/11/04/lamont-wins-historic-third-term-connecticut-governor/"
+        }
+      ],
       "unconfirmed": [
-        "Winner Ned Lamont and the AP call shortly before 9:20 p.m.",
-        "Vote shares 59.6% / 40.4% (and earlier NBC count 58.8% / 41.2%)",
-        "Third term; prior wins over Bob Stefanowski in 2018 and 2022",
-        "Certification status as of Nov. 24, 2026"
+        "Vote shares 59.6% / 40.4% (MultiState) and the earlier NBC count of 58.8% / 41.2%: no general-election percentages appeared in the results",
+        "That Lamont's 2022 win was also over Stefanowski (no 2022 race details in the results)",
+        "Certification: no report of the Connecticut state canvass found as of Nov. 24, 2026; no certified figures found"
       ]
     },
     "result-ct-house-04-2026": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "Himes's reelection over Goldstein is confirmed, but the Nov. 4 AP call date, the vote shares, the 10th-term count, the expected Intelligence chairmanship and certification were not found.",
+      "sources": [
+        {
+          "title": "Patch: CT 4th Congressional District race: Himes wins re-election",
+          "url": "https://patch.com/connecticut/across-ct/ct-4th-congressional-district-race-himes-wins-re-election"
+        },
+        {
+          "title": "Connecticut Public: Jim Himes and Michael Goldstein in CT 4th District race",
+          "url": "https://www.ctpublic.org/news/2026-10-27/jim-himes-ct-4th-distict-congress-michael-goldstein"
+        },
+        {
+          "title": "CT Mirror: Luke Bronin declares victory as CT Democrats anticipate sweep in U.S. House races",
+          "url": "https://ctmirror.org/2026/11/03/luke-bronin-declares-victory-as-ct-democrats-anticipate-sweep-in-u-s-house-races/"
+        }
+      ],
       "unconfirmed": [
-        "Winner Jim Himes and the AP call on Nov. 4",
-        "Vote shares 65.58% / 32.51% / 1.91%",
-        "10th term; expected Intelligence Committee chair",
-        "Certification status as of Nov. 24, 2026"
+        "AP call on Nov. 4, 2026 (an AP race-call item was found but it is undated and describes a ninth term, so it may be from 2024)",
+        "Vote shares 65.58% / 32.51% / 1.91%: no 2026 percentages found",
+        "That this is his 10th term (consistent with first election in 2008, but not stated in the results)",
+        "That Democrats won the House majority and that Himes is expected to chair the Intelligence Committee",
+        "Certification: no report found as of Nov. 24, 2026; no certified figures found"
       ]
     },
     "result-mi-governor-2026": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "Benson's win (AP call at 1:45 a.m., 53.7% to 44.6%, within a point of the listed shares), Whitmer's term limit and Duggan's May 21 exit are confirmed; the other outlets' calls, the Libertarian share and any certification (deadline Nov. 23) were not found.",
+      "sources": [
+        {
+          "title": "ClickOnDetroit: Jocelyn Benson wins Michigan governor race, AP projects",
+          "url": "https://www.clickondetroit.com/decision-2026/2026/11/04/jocelyn-benson-wins-michigan-governor-race-ap-projects/"
+        },
+        {
+          "title": "Axios Detroit: Duggan exits governor race",
+          "url": "https://www.axios.com/local/detroit/2026/05/21/mike-duggan-exits-governor-race"
+        },
+        {
+          "title": "Bridge Michigan: 2026 is a midterm election year, and all of Michigan's top state offices are up for grabs",
+          "url": "https://bridgemi.com/michigan-government/michigan-faces-a-huge-election-year-these-are-the-2026-races-to-watch/"
+        }
+      ],
       "unconfirmed": [
-        "Winner Jocelyn Benson and the reported calls",
-        "Vote shares 54.56% / 43.72% / 0.93%",
-        "Whitmer term-limited; Duggan ended his independent run in May 2026",
-        "Certification status (Michigan's state board deadline was Nov. 23, 2026; no report of certification found)"
+        "Specific calls by NBC News, The Washington Post, Decision Desk HQ and MultiState (the AP call was found instead)",
+        "Anthony Hudson's 0.93%",
+        "That Duggan's name was not on the November ballot (only that he ended his campaign in May)",
+        "Certification: the Board of State Canvassers' deadline was Nov. 23, 2026, but no report that it certified was found; no certified figures found"
       ]
     },
     "result-mi-senate-2026": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "El-Sayed's win and the AP and Fox calls are confirmed with early shares near 52-46; the exact Detroit News figures and certification (deadline Nov. 23, 2026) were not found.",
+      "note": "El-Sayed's win, the AP (2:27 a.m.) and Fox calls, shares within about a point (51.9% to 46.1% at 85% counted) and Peters's retirement are confirmed; the Decision Desk HQ call, the Libertarian share and certification (deadline Nov. 23) were not found.",
       "sources": [
         {
           "title": "Michigan Advance: El-Sayed declares victory and storms into the US Senate",
@@ -2508,38 +2771,62 @@
           "url": "https://www.clickondetroit.com/news/local/2026/11/04/abdul-el-sayed-wins-michigan-us-senate-race-ap-projects/"
         },
         {
-          "title": "Protect Democracy: 2026 Michigan Certification Guide",
-          "url": "https://protectdemocracy.org/wp-content/uploads/2026/08/2026-Michigan-Certification-Guide_Final.pdf"
+          "title": "FOX 32 Chicago: Abdul El-Sayed wins Michigan's Senate seat, beating Mike Rogers",
+          "url": "https://www.fox32chicago.com/news/abdul-el-sayed-mike-rogers-us-senate-michigan-2026-midterm"
         }
       ],
       "unconfirmed": [
-        "Exact shares 52.5% / 45.5% / 1.0% as of 2:30 p.m. Nov. 4 (Detroit News)",
+        "Exact Detroit News figures as of 2:30 p.m. Nov. 4, including Lydia Christensen's 1.0%",
         "Decision Desk HQ call",
-        "That the seat was open because Sen. Gary Peters retired (not in the search results)",
-        "Certification: Michigan's Board of State Canvassers had a Nov. 23, 2026 deadline to certify, but no report that it did was found; no certified figures found"
+        "Certification: Michigan's Board of State Canvassers had a Nov. 23, 2026 deadline, but no report that it certified was found; no certified figures found"
       ]
     },
     "result-tx-governor-2026": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "Hinojosa's win, Abbott's election-night concession and his bid for a fourth term are confirmed; the listed shares (only early returns of ~57% to 41.7% were found) and certification were not found.",
+      "sources": [
+        {
+          "title": "KUTV: Hinojosa defeats Abbott, becomes first Democratic Texas governor since 1995",
+          "url": "https://kutv.com/news/nation-world/gov-greg-abbott-to-watch-election-day-results-in-austin"
+        },
+        {
+          "title": "FOX 4: Texas governor's race 2026: Hinojosa defeats Abbott to become state's first Democratic governor in decades",
+          "url": "https://www.fox4news.com/news/texas-governors-race-2026-hinojosa-defeats-abbott-become-states-first-democratic-governor-decades.amp"
+        },
+        {
+          "title": "KATU: Hinojosa defeats Abbott, becomes first Democratic Texas governor since 1995",
+          "url": "https://katu.com/news/nation-world/gov-greg-abbott-to-watch-election-day-results-in-austin"
+        }
+      ],
       "unconfirmed": [
-        "Winner Gina Hinojosa and Abbott's election-night concession",
-        "Vote shares 52.8% / 45.7% / 1.5%",
-        "Abbott sought a fourth term",
-        "Certification status as of Nov. 24, 2026"
+        "Vote shares 52.8% / 45.7% / 1.5% (only early returns of about 57% to 41.7% were found, too early in the count to compare)",
+        "Pat Dixon's 1.5%",
+        "Certification: no report of the Texas state canvass for the governor's race found as of Nov. 24, 2026; no certified figures found"
       ]
     },
     "result-tx-senate-2026": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "Talarico's win, the election-night AP call, Paxton's same-night concession and Paxton's runoff win over Cornyn are confirmed, and a ~12.1-point margin at ~99% counted matches the listed shares, but the individual shares and any certification were not found.",
+      "sources": [
+        {
+          "title": "Click2Houston: Ken Paxton concedes Texas U.S. Senate race to James Talarico",
+          "url": "https://click2houston.com/decision-2026/2026/11/04/ken-paxton-concedes-texas-us-senate-race-to-james-talarico"
+        },
+        {
+          "title": "KSAT: James Talarico defeats Ken Paxton, giving Democrats their first US Senate win in Texas since 1988",
+          "url": "https://www.ksat.com/news/texas/2026/11/04/james-talarico-defeats-ken-paxton-giving-democrats-their-first-us-senate-win-in-texas-since-1988/"
+        },
+        {
+          "title": "Kalshi News: 2026 Texas Senate results: James Talarico defeats Ken Paxton",
+          "url": "https://news.kalshi.com/p/2026-texas-senate-results-james-talarico-defeats-ken-paxton"
+        }
+      ],
       "unconfirmed": [
-        "Winner James Talarico and AP call on election night",
-        "Paxton concession",
-        "Vote shares 55.1% / 43.0% / 1.9%",
-        "Cornyn lost the runoff to Paxton",
-        "Certification status as of Nov. 24, 2026"
+        "Exact shares 55.1% / 43.0% / 1.9% (only the ~12.1-point margin was found, not individual shares)",
+        "Ted Brown's 1.9%",
+        "Certification: no report found that the Texas state canvass has certified the result as of Nov. 24, 2026; no certified figures found"
       ]
     },
     "tx-89r-hb149": {
@@ -2562,27 +2849,60 @@
       ]
     },
     "tx-90r-sb293": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "SB 293 and HB 167 bill numbers, authors (including the 23 Senate authors), Nov. 9, 2026 filing date and content (repeal of the data center sales tax exemption): not searched because the shared web search budget ran out"
+      "note": "Sen. Joan Huffman (R) filed SB 293 on Nov. 9, 2026 with 23 Senate authors (sources differ on whether that is out of 30 or 31 members) to repeal the data center sales tax exemption; HB 167 by Rep. Trey Martinez Fischer (D) is the House bill with the same aim. Sponsors added: Sen. Joan Huffman (R) leads SB 293 with 23 Senate authors; Rep. Trey Martinez Fischer (D) filed HB 167.",
+      "sources": [
+        {
+          "title": "Fox 4: Texas State Senator Joan Huffman files legislation to repeal data center sales tax exemptions",
+          "url": "https://www.fox4news.com/news/texas-state-senator-joan-huffman-files-legislation-repeal-data-center-sales-tax-exemptions"
+        },
+        {
+          "title": "Texas Scorecard: Lawmakers Move To Repeal Tax Exemptions for Data Centers",
+          "url": "https://texasscorecard.com/state/lawmakers-move-to-repeal-tax-exemptions-for-data-centers/"
+        },
+        {
+          "title": "Foley & Lardner: Texas data center bills filed for the 2027 session",
+          "url": "https://www.foley.com/?p=131063"
+        }
       ]
     },
     "tx-90r-sb296": {
-      "result": "not-checked",
+      "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
+      "note": "The bill tracker and GovTech confirm Gutierrez's SB 296, filed Nov. 9, 2026, with a two-year pause, then local voter approval, plus annual payments to county residents in the caption; the quoted bill wording itself was not found.",
+      "sources": [
+        {
+          "title": "FastDemocracy: TX SB 296 (90th Legislature) bill record",
+          "url": "https://fastdemocracy.com/bill-search/tx/90/bills/TXB00084833/"
+        },
+        {
+          "title": "GovTech: Texas lawmakers will scrutinize data center permitting costs",
+          "url": "https://www.govtech.com/artificial-intelligence/texas-lawmakers-will-scrutinize-data-center-permitting-costs"
+        }
+      ],
       "unconfirmed": [
-        "SB 296 bill number, sponsor (Roland Gutierrez), Nov. 9, 2026 filing date and content (two-year pause, local votes, resident payments): not searched because the shared web search budget ran out"
+        "Exact quoted wording \"a utility may not energize a new or expanded electric service connection for a project\"",
+        "How the yearly payments to county residents work"
       ]
     },
     "tx-90r-sb33": {
-      "result": "not-checked",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "Not yet checked: this round of checks reached its web search limit before this claim was searched.",
-      "unconfirmed": [
-        "SB 33, SB 35 and SB 36 bill numbers, sponsor (Judith Zaffirini), Nov. 9, 2026 filing date and content: not searched because the shared web search budget ran out"
+      "note": "Zaffirini filed SB 33 (electricity cost allocation for large computing loads), SB 35 (water-use reporting to the Water Development Board) and SB 36 (curbs on tax and local incentives) on Nov. 9, 2026; one outlet says SB 36 also covers state tax exemptions, not only local incentives.",
+      "sources": [
+        {
+          "title": "Foley & Lardner: Texas data center bills filed for the 2027 session",
+          "url": "https://www.foley.com/?p=131063"
+        },
+        {
+          "title": "GovTech: Texas lawmakers will scrutinize data center permitting costs",
+          "url": "https://www.govtech.com/artificial-intelligence/texas-lawmakers-will-scrutinize-data-center-permitting-costs"
+        },
+        {
+          "title": "LegiScan: TX SB36, 90th Legislature, introduced text",
+          "url": "https://legiscan.com/TX/text/SB36/2027"
+        }
       ]
     },
     "us-grid-savings-act": {
@@ -2702,7 +3022,7 @@
     "us-s3852-grid-act": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "S. 3852 by Hawley and Blumenthal (Feb. 2026) is confirmed, including the 20 MW off-grid rule, the 10-year window and the Zero Rate Effect Certificate; the five-year usage-estimate requirement was not found.",
+      "note": "Hawley's office confirms a public electricity-usage reporting requirement, but no result describes five-year utility-use estimates; Blumenthal has said the bill text changed after introduction.",
       "sources": [
         {
           "title": "Sen. Hawley: Hawley, Blumenthal Introduce Bill to Prevent Data Centers from Increasing Electricity Costs for Americans",
@@ -2713,12 +3033,12 @@
           "url": "https://www.eenews.net/articles/bipartisan-bill-would-force-data-centers-to-find-own-power-sources"
         },
         {
-          "title": "Sen. Hawley: GRID Act Final Text",
-          "url": "https://www.hawley.senate.gov/wp-content/uploads/2026/02/GRID-Act-Final-Text.pdf"
+          "title": "NBC News: Senators introduce first bipartisan effort to curb utility bill hikes related to data centers",
+          "url": "https://www.nbcnews.com/politics/congress/senators-introduce-first-bipartisan-effort-curb-utility-bill-hikes-rel-rcna258577"
         }
       ],
       "unconfirmed": [
-        "That companies would publish five-year utility-use estimates (results only show the ban covers firms that run or plan a data center within five years)"
+        "That the disclosure takes the form of five-year utility-use estimates"
       ]
     },
     "us-s4214": {
@@ -2743,47 +3063,46 @@
     "us-s5653": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "S. 5653 and the 73-25 vote on Nov. 9 are confirmed, as is the data-center cost provision; the Ratepayer Protection Pledge claim was not found, and the bill may have cleared a second cloture vote on Nov. 16 with final Senate passage still pending.",
+      "note": "S. 5653 has cleared procedural votes but awaits final Senate passage; no source shows Heinrich or Trump saying it codifies the Ratepayer Protection Pledge, which coverage links instead to the separate Ratepayer Protection Act.",
       "sources": [
         {
           "title": "OPB: Senate advances sweeping energy legislation in first major action since midterm elections",
           "url": "https://www.opb.org/article/2026/11/09/senate-advances-sweeping-energy-legislation-in-first-major-action-since-midterm-elections/"
         },
         {
-          "title": "CRS (EveryCRSReport): Bipartisan American Affordability and Jobs Act (BAAJA) of 2026: Summary of All Sections",
-          "url": "https://www.everycrsreport.com/reports/R49506.html"
+          "title": "Axios: The path ahead for the permitting bill",
+          "url": "https://axios.com/2026/11/10/baaja-permitting-bill-senate"
         },
         {
-          "title": "NACo: U.S. Senate advances Bipartisan American Affordability and Jobs Act in initial procedural vote",
-          "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote"
+          "title": "CRS (EveryCRSReport): Bipartisan American Affordability and Jobs Act (BAAJA) of 2026: Summary of All Sections",
+          "url": "https://www.everycrsreport.com/reports/R49506.html"
         }
       ],
       "unconfirmed": [
-        "That Heinrich and Trump say the bill codifies the White House Ratepayer Protection Pledge",
-        "Critics' wording of a 'giveaway to the industry' as applied to the data center provisions",
-        "Current status after Nov. 9: one tracker reports a 70-27 cloture vote on the bill text on Nov. 16 and no final passage vote yet; no source found for Nov. 18-24"
+        "That Heinrich and Trump say the bill codifies the White House Ratepayer Protection Pledge (results tie the pledge to the separate Ratepayer Protection Act, which Heinrich opposed in Sept. 2026)",
+        "Critics' 'giveaway to the industry' wording for the data center provisions"
       ]
     },
     "us-s5658": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
-      "note": "S. 5658 was introduced Sept. 30, 2026 and sent to Energy and Natural Resources, and Wyden announced a bill banning data centers on public lands around then, but no result names him on the bill record itself.",
+      "note": "S. 5658 and Wyden's Oct. 1 announcement of a public-lands data center ban match in timing and substance, but no result explicitly names Wyden on the S. 5658 record.",
       "sources": [
         {
           "title": "Quiver Quantitative: S. 5658",
           "url": "https://www.quiverquant.com/bills/119/s-5658"
         },
         {
-          "title": "FastDemocracy: S. 5658 (Introduced)",
-          "url": "https://fastdemocracy.com/bill-search/us/119/bills/USB00108806/"
-        },
-        {
           "title": "Common Dreams: Wyden data center amendment",
           "url": "https://www.commondreams.org/news/wyden-data-center-amendment"
+        },
+        {
+          "title": "Salt Lake Tribune: Democrats move to ban data centers on public lands (Nov. 19, 2026)",
+          "url": "https://www.sltrib.com/news/politics/2026/11/19/democrats-move-ban-data-centers/"
         }
       ],
       "unconfirmed": [
-        "A bill record that names Wyden as the sponsor of S. 5658 (the bill trackers in the results don't name the sponsor)"
+        "A bill record naming Wyden as the sponsor of S. 5658 (trackers in the results don't name the sponsor, and Wyden coverage doesn't give the bill number)"
       ]
     },
     "us-states-right-to-regulate-ai": {
@@ -2806,25 +3125,22 @@
       ]
     },
     "us-take-it-down-act": {
-      "result": "partly-confirmed",
+      "result": "confirmed",
       "checkedOn": "2026-11-24",
-      "note": "The sponsors, the May 19, 2025 signing, the criminal ban on non-consensual intimate images including deepfakes, and the 48-hour takedown rule are confirmed; the threat provision was not shown in the results.",
+      "note": "CRS confirms the Act also criminalizes threats to publish authentic or AI-forged intimate images, completing the check of this claim.",
       "sources": [
+        {
+          "title": "CRS (EveryCRSReport): The TAKE IT DOWN Act, a federal law prohibiting the nonconsensual publication of intimate images",
+          "url": "https://www.everycrsreport.com/reports/LSB11314.html"
+        },
         {
           "title": "Orrick: TAKE IT DOWN Act Becomes Law, Introducing Landmark Federal Protections to Combat Online Exploitation and Deepfakes",
           "url": "https://www.orrick.com/en/Insights/2025/05/TAKE-IT-DOWN-Act-Becomes-Law"
         },
         {
-          "title": "Boston Globe: Trump Take It Down Act explainer",
-          "url": "https://www.bostonglobe.com/2025/05/19/nation/trump-take-it-down-act-explainer/"
-        },
-        {
-          "title": "Latham & Watkins: President Trump Signs Take It Down Act Into Law",
-          "url": "https://www.lw.com/insights/2025/05/President-Trump-Signs-Take-It-Down-Act-Into-Law"
+          "title": "Skadden: 'Take It Down Act' requires online platforms to remove unauthorized intimate images and deepfakes when notified",
+          "url": "https://www.skadden.com/insights/publications/2025/06/take-it-down-act"
         }
-      ],
-      "unconfirmed": [
-        "That threatening to publish such images is also a crime (the search summaries don't mention the threat provision)"
       ]
     }
   }
