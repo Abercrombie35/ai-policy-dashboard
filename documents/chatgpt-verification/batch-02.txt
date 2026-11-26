@@ -1,0 +1,94 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: cr-fr-retailleau-1
+  type: candidate statement or position
+  claim: Bruno Retailleau (Les Républicains (LR)), presidential candidate in France: Published a 56-page AI plan in July 2026 to bring AI into every level of public administration (a single AI assistant for the state) and redeploy civil servants, part of a leaner state. Reported costs differ: about €23 billion over the five-year term (Next.ink) or €5 billion (Acteurs Publics). Also backs a sovereign AI powered by decarbonized electricity.
+  date given: 2026-07
+  source we cited (may be secondary): https://next.ink/247354/pour-bruno-retailleau-lia-nattend-pas-notre-consentement/
+  not yet confirmed by us: Link between his AI plan and decarbonized electricity; €25 billion over five years (round 1 found about €23 billion over the term in Next.ink and €5 billion in Acteurs Publics)
+
+- id: cr-mi-gov-james-4
+  type: candidate statement or position
+  claim: John James (Republican), Governor candidate in Michigan: Described a "five-part moratorium" and said: "No new data centers until we have a plan to protect our communities."
+  date given: 2026-10-30
+  source we cited (may be secondary): https://www.wnem.com/2026/10/30/john-james-says-no-new-data-centers-until-plan-protect-communities/
+  not yet confirmed by us: The phrase 'five-part moratorium' itself
+
+- id: cr-mi-sen-rogers-1
+  type: candidate statement or position
+  claim: Mike Rogers (Republican), U.S. Senate candidate in Michigan: For months argued that Michigan should compete for AI investment and supported faster permitting. Endorsed the Trump administration's "National Policy Framework for Artificial Intelligence" and said Michigan must be "competitive for new AI-supported jobs and investments ... while setting a responsible framework for safety and data privacy."
+  date given: Before Aug. 20, 2026 (exact dates not recorded)
+  source we cited (may be secondary): https://www.metrotimes.com/news/mike-rogers-loved-data-centers-until-voters-didnt/
+  not yet confirmed by us: Second half of the quote: 'while setting a responsible framework for safety and data privacy' (not found in two more searches); Exact dates of the statements
+
+- id: ct-2026-sb245
+  type: bill, law or official action
+  claim: Connecticut SB 245, "End new applications to the data center tax-incentive program" (2026 session). Sponsors: Raised by the Energy and Technology Committee.. Status: failed on 2026-05-06. Introduced in Feb. 2026; died in the Finance Committee. What it does: Would have stopped new applications for the 2021 program that offers sales, use and property tax exemptions of up to 30 years for data center investments.
+  date given: 2026-05-06
+  source we cited (may be secondary): https://legiscan.com/CT/bill/SB00245/2026
+  not yet confirmed by us: Introduction date of Feb. 19, 2026
+
+- id: eu-digital-omnibus-ai
+  type: bill, law or official action
+  claim: European Union Regulation (EU) 2026/1744, "Digital Omnibus on AI" (European Union). Sponsors: Adopted by the European Parliament and the Council.. Status: enacted on 2026-07-27. Final Council approval June 29, 2026; in force July 27, 2026. What it does: Delays high-risk AI Act duties (stand-alone systems to Dec. 2, 2027; AI in regulated products to Aug. 2, 2028), bans AI systems generating non-consensual intimate images and child sexual abuse material, and simplifies documentation for smaller firms. Transparency duties and general-purpose AI rules keep their original dates.
+  date given: 2026-07-27
+  source we cited (may be secondary): https://www.regulation-ai.eu/en/omnibus/
+  not yet confirmed by us: That general-purpose AI rules keep their original dates (no source in the results addressed GPAI timing, though none reported a delay)
+
+- id: fr-ppl-centres-donnees
+  type: bill, law or official action
+  claim: France Proposition de loi (Senate), "Bill to regulate where data centers are built" (Senate, 2025-2026). Sponsors: David Ros (Socialist (PS)). Status: passed-one-chamber on 2026-03-25. Adopted by the Senate Mar. 25, 2026; sent to the National Assembly Mar. 26 (text no. 2584), where no action was found. Its "major national interest" article mirrors the May 26, 2026 simplification law, so that part is largely in force already. What it does: Lets large data centers be designated "projects of major national interest" by decree, which speeds up their approval, and strengthens local elected officials' role through territorial planning (SCoT). A lighter version was adopted after redundant articles were cut.
+  date given: 2026-03-25
+  source we cited (may be secondary): https://www.banquedesterritoires.fr/datacenters-le-senat-adopte-une-proposition-de-loi-allegee-renvoyant-lessentiel-aux-textes-en-cours
+  not yet confirmed by us: Current status as of Nov. 2026: no Assembly committee or floor examination was found after March 2026, so 'passed one chamber' appears current but could not be confirmed
+
+- id: fr-president-2027#candidates
+  type: France 2027 candidate list
+  claim: Declared or likely candidates and parties: Marine Le Pen (Rassemblement National (RN)); Jordan Bardella (Rassemblement National (RN)); Édouard Philippe (Horizons); Gabriel Attal (Renaissance); Bruno Retailleau (Les Républicains (LR)); Jean-Luc Mélenchon (La France Insoumise (LFI)); Marine Tondelier (Les Écologistes); François Ruffin (Independent left)
+  not yet confirmed by us: François Ruffin's party label (he left LFI in 2024; one low-reliability profile names his own 'Debout' label)
+
+- id: mi-sb757-760
+  type: bill, law or official action
+  claim: Michigan SB 757-760, ""Kids Over Clicks" package (AI chatbots and social media for minors)" (2025-2026 session). Sponsors: Dayna Polehanki (Democratic). Status: passed-one-chamber on 2026-04-29. Passed the Senate Apr. 2026; not voted on in the House as of Oct. 2026. What it does: Would limit minors' access to AI chatbots and addictive social media feeds. SB 760 would bar chatbot products for minors unless they cannot encourage self-harm, violence, drug use or disordered eating, and would hold AI companies responsible if a chatbot leads to a child being hurt.
+  date given: 2026-04-29
+  source we cited (may be secondary): https://www.michiganpublic.org/politics-government/2026-04-30/kids-over-clicks-passes-in-state-legislature
+  not yet confirmed by us: That SB 760 lists violence and drug use among the barred harms; House status after mid-October 2026
+
+- id: pl-d-chips#0
+  type: evidence for the Democratic party line
+  claim: Schumer backed three bipartisan bills (MATCH Act, AI OVERWATCH Act, Chip Security Act) and said the Senate could pass them immediately.
+  date given: 2026-09-23
+  source we cited (may be secondary): https://www.washingtontimes.com/news/2026/sep/23/senate-democrats-push-trio-bills-block-china-access-ai-chips/
+  not yet confirmed by us: that Schumer said the Senate could pass the bills immediately (results show Democrats urging GOP leaders to pass them, and Schumer saying the president 'could take action today', but not that wording)
+
+- id: pl-d-data-centers#2
+  type: evidence for the Democratic party line
+  claim: Democrats plan data-center electricity-cost bills for the new Congress; Schumer named shielding consumers from data-center-driven power costs as a priority. The plans stop short of binding limits on AI deployment or energy use.
+  date given: 2026-11-06
+  source we cited (may be secondary): https://cryptobriefing.com/democrats-plan-ai-legislation-congress-january/
+  not yet confirmed by us: That the plans stop short of binding limits on AI deployment or energy use (not stated; Reuters lists independent testing of advanced AI and clearer corporate liability as the other pillars, and Schumer has said Democrats want data-center rules to be mandatory)
+
+- id: pl-r-workers#0
+  type: evidence for the Republican party line
+  claim: The AI Action Plan's "Empower American Workers in the Age of AI" section funds rapid retraining for workers displaced by AI and creates an AI Workforce Research Hub at the Labor Department.
+  date given: 2025-07-23
+  source we cited (may be secondary): https://www.shrm.org/topics-tools/news/trump-administration-unveils-sweeping-ai-action-plan-
+  not yet confirmed by us: Exact section title 'Empower American Workers in the Age of AI' (not shown in the results)
+
+- id: result-ca-governor-2026
+  type: election result (Nov. 3, 2026)
+  claim: Governor, California: Xavier Becerra won. Reported as a Becerra win by MultiState, Decision Desk HQ and NBC Bay Area. Unofficial shares: Xavier Becerra (Democratic) 65.6%; Steve Hilton (Republican) 34.4%. Also check whether the result has been certified and, if so, the certified shares.
+  date given: 2026-11-03
+  source we cited (may be secondary): https://electionresults.sos.ca.gov/returns/governor
+  not yet confirmed by us: Vote shares 65.6% / 34.4%: figures found were earlier partial counts, 64% / 36% at the AP call (about 59% counted, FOX 11 LA), 64.1% / 35.9% (SF Standard, about 7.1 million votes counted), and a KTVU results box showing 60% / 38%; none is within one point of the listed figures; Calls by MultiState, Decision Desk HQ and NBC Bay Area specifically (the AP call was found instead); That Newsom was term-limited (results say only that Becerra succeeds him); Certification: no certified totals found; the Dec. 11, 2026 certification date was not confirmed in the results, and the race is presumably not yet certified as of Nov. 24

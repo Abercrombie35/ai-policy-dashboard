@@ -2661,6 +2661,154 @@
         }
       ]
     },
+    "po-gallup-4": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Americans Oppose AI Data Centers in Their Area (Gallup)",
+          "url": "https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx"
+        },
+        {
+          "title": "Share who say they favor or oppose local construction of AI data centers (Gallup chart, Datawrapper)",
+          "url": "https://datawrapper.dwcdn.net/LYGCH/1/"
+        },
+        {
+          "title": "Gallup poll: 7 in 10 Americans don't want AI data centers near them (Washington Times, May 13, 2026)",
+          "url": "https://www.washingtontimes.com/news/2026/may/13/gallup-poll-7-10-americans-dont-want-ai-data-centers-near/"
+        }
+      ]
+    },
+    "po-gallup-7": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Americans Prioritize AI Safety and Data Security (Gallup)",
+          "url": "https://news.gallup.com/poll/694685/americans-prioritize-safety-data-security.aspx"
+        },
+        {
+          "title": "Years of polling show overwhelming voter support for a crackdown on AI (Public Citizen)",
+          "url": "https://www.citizen.org/article/years-of-polling-show-overwhelming-voter-support-for-a-crackdown-on-ai/"
+        }
+      ]
+    },
+    "po-pew-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Democrats are now more worried than Republicans about AI and its impact on jobs (Pew Research Center)",
+          "url": "https://www.pewresearch.org/short-reads/2026/09/16/democrats-are-now-more-worried-than-republicans-about-ai-and-its-impact-on-jobs/"
+        },
+        {
+          "title": "Pew topline: SR 09.16.26 AI partisan views",
+          "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/09/SR_09.16_26_ai-partisan-views_topline.pdf"
+        },
+        {
+          "title": "Democrats are now more worried than Republicans about AI and its impact on jobs (Benton Institute)",
+          "url": "https://www.benton.org/headlines/democrats-are-now-more-worried-republicans-about-ai-and-its-impact-jobs"
+        }
+      ]
+    },
+    "po-pew-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Americans' Views on AI Chatbots, Smart Devices and AI's Impact (Pew Research Center)",
+          "url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/"
+        },
+        {
+          "title": "In a shift, Democrats are now more skeptical than the GOP of the U.S. government's ability to regulate AI (Pew chart)",
+          "url": "https://www.pewresearch.org/chart/in-a-shift-democrats-are-now-more-skeptical-than-the-gop-of-the-u-s-governments-ability-to-regulate-ai/"
+        },
+        {
+          "title": "Methodology: Americans and AI (Pew Research Center)",
+          "url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-methodology/"
+        }
+      ]
+    },
+    "po-pew-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "In a shift, Democrats are now more skeptical than the GOP of the U.S. government's ability to regulate AI (Pew chart)",
+          "url": "https://www.pewresearch.org/chart/in-a-shift-democrats-are-now-more-skeptical-than-the-gop-of-the-u-s-governments-ability-to-regulate-ai/"
+        },
+        {
+          "title": "Pew Research: Americans' AI chatbot skepticism and regulation distrust (The Next Web)",
+          "url": "https://thenextweb.com/news/pew-research-americans-ai-chatbot-skepticism-regulation-distrust-2026"
+        },
+        {
+          "title": "Democrats Now Have Lesser Faith Than Republicans In US Govt And US Companies Around AI: Pew Report (OfficeChai)",
+          "url": "https://officechai.com/ai/democrats-now-have-lesser-faith-than-republicans-in-us-govt-and-us-companies-around-ai-pew-report/"
+        }
+      ]
+    },
+    "po-pew-5": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Republicans, Democrats now equally concerned about AI in daily life, but views on regulation differ (Pew Research Center)",
+          "url": "https://www.pewresearch.org/short-reads/2025/11/06/republicans-democrats-now-equally-concerned-about-ai-in-daily-life-but-views-on-regulation-differ/"
+        },
+        {
+          "title": "How Americans View AI and Its Impact on People and Society (Pew Research Center, Sept. 17, 2025)",
+          "url": "https://www.pewresearch.org/science/2025/09/17/how-americans-view-ai-and-its-impact-on-people-and-society/"
+        },
+        {
+          "title": "Republicans and Democrats agree on AI, Pew survey (Tech Brew)",
+          "url": "https://www.techbrew.com/stories/2025/11/10/republicans-democrats-agree-ai-pew-survey"
+        }
+      ]
+    },
+    "po-pew-6": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Republicans, Democrats now equally concerned about AI in daily life, but views on regulation differ (Pew Research Center)",
+          "url": "https://www.pewresearch.org/short-reads/2025/11/06/republicans-democrats-now-equally-concerned-about-ai-in-daily-life-but-views-on-regulation-differ/"
+        },
+        {
+          "title": "Trust in EU, US, China to regulate AI use (Pew Research Center, Oct. 15, 2025)",
+          "url": "https://www.pewresearch.org/2025/10/15/trust-in-the-eu-u-s-and-china-to-regulate-use-of-ai/"
+        },
+        {
+          "title": "Republicans and Democrats agree on AI, Pew survey (Tech Brew)",
+          "url": "https://www.techbrew.com/stories/2025/11/10/republicans-democrats-agree-ai-pew-survey"
+        }
+      ]
+    },
+    "po-pew-8": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "AI risks, opportunities, regulation: Views of US public and AI experts (Pew Research Center)",
+          "url": "https://www.pewresearch.org/internet/2025/04/03/views-of-risks-opportunities-and-regulation-of-ai/"
+        },
+        {
+          "title": "How the US Public and AI Experts View Artificial Intelligence (Pew Research Center)",
+          "url": "https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/"
+        },
+        {
+          "title": "Methodology (Pew Research Center, U.S. public and AI experts)",
+          "url": "https://www.pewresearch.org/internet/2025/04/03/us-public-and-ai-experts-methodology/"
+        }
+      ]
+    },
     "result-ca-governor-2026": {
       "result": "partly-confirmed",
       "checkedOn": "2026-11-24",
@@ -3141,6 +3289,233 @@
           "title": "Skadden: 'Take It Down Act' requires online platforms to remove unauthorized intimate images and deepfakes when notified",
           "url": "https://www.skadden.com/insights/publications/2025/06/take-it-down-act"
         }
+      ]
+    },
+    "vp-ca-carnegie-endowment-for-i-ai-qu-2": {
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Found in one report only; not yet confirmed by the pollster's release or a second report.",
+      "sources": [
+        {
+          "title": "Carnegie Endowment: 2026 Carnegie California AI Survey",
+          "url": "https://carnegieendowment.org/research/2026/09/2026-carnegie-california-ai-survey"
+        }
+      ],
+      "unconfirmed": [
+        "Figures from one search summary; not reconfirmed in a second search"
+      ]
+    },
+    "vp-ca-emerson-college-polling-issue-1": {
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Found in one report only; not yet confirmed by the pollster's release or a second report.",
+      "sources": [
+        {
+          "title": "FOX40: New poll shows Becerra with wide lead over Hilton in California governor race",
+          "url": "https://fox40.com/inside-california-politics/new-poll-shows-becerra-with-wide-lead-over-hilton-in-california-governor-race/amp/"
+        },
+        {
+          "title": "Courthouse News: Poll gives Becerra 27-point lead over Hilton in California governor race",
+          "url": "https://courthousenews.com/articles/poll-gives-becerra-27-point-lead-over-hilton-in-california-governor-race"
+        }
+      ],
+      "unconfirmed": [
+        "Field dates",
+        "The 10% shares for health care and immigration (one summary only)"
+      ]
+    },
+    "vp-ca-public-policy-institute--ai-qu-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "PPIC: PPIC Statewide Survey: Californians and the Environment (July 2026)",
+          "url": "https://www.ppic.org/publication/ppic-statewide-survey-californians-and-the-environment-july-2026/"
+        },
+        {
+          "title": "AI Commission: Californians back Becerra and reject AI data centers by big margins, poll finds",
+          "url": "https://aicommission.org/2026/07/californians-back-becerra-and-reject-ai-data-centers-by-big-margins-poll-finds/"
+        },
+        {
+          "title": "CalMatters: data center PPIC survey (newsletter)",
+          "url": "https://calmatters.org/newsletter/data-center-ppic-survey/"
+        }
+      ]
+    },
+    "vp-ct-emerson-college-polling--ai-qu-1": {
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Found in one report only; not yet confirmed by the pollster's release or a second report.",
+      "sources": [
+        {
+          "title": "Emerson College Polling: Connecticut 2026 Poll: Ned Lamont Holds 13-Point Lead Over Ryan Fazio",
+          "url": "https://emersoncollegepolling.com/connecticut-2026-poll-ned-lamont-holds-13-point-lead-over-ryan-fazio/"
+        },
+        {
+          "title": "Political.org: Connecticut Gov. Ned Lamont holds double-digit lead over Republican Ryan Fazio in reelection bid, Emerson poll finds",
+          "url": "https://political.org/2026/10/15/connecticut-gov-ned-lamont-holds-double-digit-lead-over-republican-ryan-fazio-in-reelection-bid-emerson-poll-finds/"
+        }
+      ],
+      "unconfirmed": [
+        "Figures confirmed by a second report"
+      ]
+    },
+    "vp-ct-quinnipiac-university-po-issue-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Quinnipiac University Poll: 10/14/26 - CT Governor's Race: Lamont 58%, Fazio 38% In The Final Stretch",
+          "url": "https://poll.qu.edu/poll-release?releaseid=3971"
+        },
+        {
+          "title": "CT Mirror: Lamont's lead over Fazio reaches 20 points in Quinnipiac poll",
+          "url": "https://ctmirror.org/2026/10/14/quinnipiac-poll-ned-lamont-ryan-fazio-governor/"
+        },
+        {
+          "title": "FingerLakes1: Quinnipiac poll finds Lamont leading Fazio in Connecticut governor race",
+          "url": "https://www.fingerlakes1.com/2026/10/15/quinnipiac-poll-finds-lamont-leading-fazio-in-connecticut-governor-race/"
+        }
+      ]
+    },
+    "vp-fr-elabe-ai-qu-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Près de deux Français sur trois utilisent l'IA (CB News)",
+          "url": "https://www.cbnews.fr/etudes/pres-deux-francais-trois-utilisent-ia"
+        },
+        {
+          "title": "Europe 1 (AFP) report on the Elabe AI poll",
+          "url": "https://www.europe1.fr/node/952661"
+        },
+        {
+          "title": "Près de deux Français sur trois disent utiliser l'intelligence artificielle selon un nouveau sondage (Siècle Digital)",
+          "url": "https://siecledigital.fr/2026/06/14/pres-de-deux-francais-sur-trois-disent-utiliser-lintelligence-artificielle-selon-un-nouveau-sondage/"
+        }
+      ]
+    },
+    "vp-fr-elabe-issue-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Elabe: Les Français et le/la président(e) idéal(e), for La Tribune Dimanche (April 18, 2026)",
+          "url": "https://elabe.fr/fichier-pdf/13003-20260418_elabe_la-tribune-dimanche_les-francais-et-lela-presidente-ideale/"
+        }
+      ]
+    },
+    "vp-fr-odoxa-ai-qu-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Odoxa Baromètre de l'économie Mars 2026 (PDF hosted by AGIPI)",
+          "url": "https://www.agipi.com/wp-content/uploads/2026/03/Odoxa-Barometre-de-leconomie-Mars-2026.pdf"
+        },
+        {
+          "title": "Innovation : les Français jugent leur pays à la traîne et voient l'IA comme une menace (CB News)",
+          "url": "https://www.cbnews.fr/node/99369"
+        }
+      ]
+    },
+    "vp-mi-the-glengariff-group-inc-ai-qu-1": {
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Found in one report only; not yet confirmed by the pollster's release or a second report.",
+      "sources": [
+        {
+          "title": "ClickOnDetroit (WDIV): Nearly two-thirds of Michigan voters are against construction of data centers, poll finds",
+          "url": "https://www.clickondetroit.com/news/local/2026/09/10/nearly-two-thirds-of-michigan-voters-are-against-construction-of-data-centers-poll-finds/"
+        },
+        {
+          "title": "Michigan Advance: Michigan Data Centers: The Weekly Download",
+          "url": "https://michiganadvance.com/2026/09/14/michigan-data-centers-the-weekly-download-4-2-2-2/"
+        }
+      ],
+      "unconfirmed": [
+        "Field dates and sample size"
+      ]
+    },
+    "vp-mi-the-glengariff-group-inc-issue-1": {
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Found in one report only; not yet confirmed by the pollster's release or a second report.",
+      "sources": [
+        {
+          "title": "ClickOnDetroit (WDIV): What issues do Michigan voters care about most? Here's what a new poll found",
+          "url": "https://www.clickondetroit.com/decision-2026/2026/10/28/what-issues-do-michigan-voters-care-about-most-heres-what-a-new-poll-found/"
+        },
+        {
+          "title": "ClickOnDetroit (WDIV): Poll: 8 issues Michigan voters care most about, and which party they trust to fix them",
+          "url": "https://www.clickondetroit.com/news/local/2026/10/28/poll-8-issues-michigan-voters-care-most-about-and-which-party-they-trust-to-fix-them/"
+        }
+      ],
+      "unconfirmed": [
+        "Which question these figures belong to: the reports also give a closed-list version (economy 29.8%, immigration 11.0%)",
+        "Field dates and sample size"
+      ]
+    },
+    "vp-tx-university-of-houston-ho-ai-qu-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "UH Hobby School: Texas Votes 2026 data centers report (PDF)",
+          "url": "https://uh.edu/hobby/texas2026/centers.pdf"
+        },
+        {
+          "title": "ABC13: University of Houston poll shows likely Texas voters' concerns on data centers",
+          "url": "https://abc13.com/post/university-houston-poll-shows-texas-voters-concerns-data-centers/19986575/"
+        },
+        {
+          "title": "Click2Houston: New UH survey: 79% of Texas voters want limits on data centers amid concerns over electric bills, water supply",
+          "url": "https://click2houston.com/news/local/2026/10/28/new-uh-survey-79-of-texas-voters-want-limits-on-data-centers-amid-concerns-over-electric-bills-water-supply"
+        }
+      ]
+    },
+    "vp-tx-university-of-texas-texa-ai-qu-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "The figures match in the pollster's release or in two reports found by web search.",
+      "sources": [
+        {
+          "title": "Washington Post: Texas poll shows solid bipartisan opposition to data centers",
+          "url": "https://www.washingtonpost.com/nation/2026/08/26/texas-poll-shows-solid-bipartisan-opposition-data-centers/"
+        },
+        {
+          "title": "Texas Politics Project: New UT/Texas Politics Project Poll Finds Talarico Leading Paxton, Abbott Leading Hinojosa, Continued Resistance to Data Centers",
+          "url": "https://texaspolitics.utexas.edu/blog/new-ut-texas-politics-project-poll-finds-talarico-leading-paxton-abbott-leading-hinojosa-continued-resistance-to-data-centers-2"
+        },
+        {
+          "title": "San Angelo Live: New Polls Show Data Centers Issue is Toxic",
+          "url": "https://sanangelolive.com/news/politics/2026-08-25/new-polls-show-data-centers-issue-toxic"
+        }
+      ]
+    },
+    "vp-tx-university-of-texas-texa-issue-1": {
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Found in one report only; not yet confirmed by the pollster's release or a second report.",
+      "sources": [
+        {
+          "title": "Texas Politics Project: What one issue is the most important to your vote in the 2026 Election? (October 2026)",
+          "url": "https://texaspolitics.utexas.edu/set/what-one-issue-is-the-most-important-to-your-vote-in-the-2026-election-october-2026"
+        },
+        {
+          "title": "Texas Politics Project: Latest UT/Texas Politics Poll Finds Historic Levels of Competition in Texas Midterm Elections",
+          "url": "https://texaspolitics.utexas.edu/blog/latest-ut-texas-politics-poll-finds-historic-levels-of-competition-in-texas-midterm-elections"
+        }
+      ],
+      "unconfirmed": [
+        "Whether these figures are from the Sept. 25-Oct. 5 wave or the August wave"
       ]
     }
   }

@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { allCodedRecords, dimensions, countRecords } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
+import { PartyOpinion } from '../components/OpinionCharts';
 
 const PARTIES = ['Democratic', 'Republican'];
 const SOURCES = [
@@ -91,6 +92,8 @@ function PartySummary() {
           Figures are counts of coded records, not people, and say nothing about which approach is better.
         </p>
       </header>
+
+      <PartyOpinion />
 
       <div className="filter-row">
         <label>

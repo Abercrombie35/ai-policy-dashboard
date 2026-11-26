@@ -1,0 +1,73 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: fr-president-2027#context0
+  type: France 2027 election context
+  claim: First round Sunday, April 18, 2027; second round (runoff between the top two) Sunday, May 2, 2027. The official campaign opens April 5, 2027.
+  source we cited (may be secondary): https://www.info.gouv.fr/actualite/election-presidentielle-2027
+
+- id: fr-president-2027#context1
+  type: France 2027 election context
+  claim: On July 7, 2026 the Paris appeals court cut Marine Le Pen's ineligibility to a period that lets her run in 2027, and she declared her candidacy the same day. Her appeal to the Court of Cassation is pending (hearing Dec. 16, 2026; ruling expected by early April 2027). Jordan Bardella, RN president, would run if she cannot.
+  date given: 2026-07-07
+  source we cited (may be secondary): https://www.eunews.it/en/2026/07/07/le-pen-convicted-on-appeal-45-month-ineligibility-but-she-can-still-run-in-2027/
+
+- id: international#es-2026-snap
+  type: election date
+  claim: Spain snap general election: November 29, 2026, 2026
+
+- id: international#fi-2027-parliamentary
+  type: election date
+  claim: Finland parliamentary election: April 18, 2027
+
+- id: international#fr-2027-presidential
+  type: election date
+  claim: France presidential election: April 18 and May 2, 2027
+
+- id: international#it-2027-general
+  type: election date
+  claim: Italy general election: By December 22, 2027
+
+- id: international#pl-2027-parliamentary
+  type: election date
+  claim: Poland parliamentary election: By November 11, 2027
+
+- id: mi-2023-election-deepfakes
+  type: bill, law or official action
+  claim: Michigan HB 5141, 5143, 5144, "Election deepfake disclosure laws" (2023-2024 session). Sponsors: Penelope Tsernoglou (Democratic), Matt Bierlein (Republican). Status: enacted on 2023-11-30. Enacted 2023, per a secondary tracker; verify. What it does: Require disclosure of AI-generated content in political communications.
+  date given: 2023-11-30
+  source we cited (may be secondary): https://imiel.dev/explore/us-ai-legislation-2026/michigan/
+
+- id: mi-2026-house-moratorium
+  type: bill, law or official action
+  claim: Michigan HB 5594-5596, "Statewide data center moratorium (bipartisan House package)" (2025-2026 session). Sponsors: Jennifer Wortz (Republican), Joseph Fox (Republican), Dylan Wegela (Democratic). Status: introduced on 2026-02-26. Introduced Feb. 26, 2026; still in committee. Gov. Whitmer has said she will not sign a statewide moratorium. What it does: Would pause data center approvals until April 1, 2027, including directing the Michigan Public Service Commission to halt approval of utility contracts or rates with data centers. Gov. Whitmer has said she will not sign a statewide moratorium.
+  date given: 2026-02-26
+  source we cited (may be secondary): https://www.themidwesterner.news/2026/02/bipartisan-house-bills-put-1-year-statewide-moratorium-on-data-centers/
+
+- id: mi-2026-sb1018
+  type: bill, law or official action
+  claim: Michigan SB 1018-1020, "Moratorium on certain approvals for and operation of new data centers" (2025-2026 session). Sponsors: Jim Runestad (Republican), Ruth Johnson (Republican). Status: introduced on 2026-06-04. Introduced June 4, 2026; in the Senate Government Operations Committee with no later action found. What it does: Senate package placing a moratorium on certain approvals for, and the operation of, new data centers.
+  date given: 2026-06-04
+  source we cited (may be secondary): https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1018
+
+- id: mi-hb5396
+  type: bill, law or official action
+  claim: Michigan HB 5396 (with HB 5397-5398), "Repeal of data center sales and use tax exemptions" (2025-2026 session). Sponsors: Dylan Wegela (Democratic). Status: introduced on 2025-12-17. Introduced Dec. 17, 2025; still in committee (HB 5398, by Rep. Erin Byrnes, covers property tax). What it does: Would repeal the sales and use tax exemptions for data centers; companion bills address property tax treatment.
+  date given: 2025-12-17
+  source we cited (may be secondary): https://bridgemi.com/michigan-environment-watch/michigan-lawmakers-unveil-plan-to-repeal-data-center-tax-breaks/
+
+- id: pl-d-data-centers#0
+  type: evidence for the Democratic party line
+  claim: Schumer: "Senate Democrats want to make it mandatory for data centers to cover their own costs by law." Democrats blocked the Republican Ratepayer Protection Act as "toothless".
+  date given: 2026-09
+  source we cited (may be secondary): https://www.nbcnews.com/politics/congress/senate-democrats-block-sen-husted-led-bill-data-centers-calling-toothl-rcna600269

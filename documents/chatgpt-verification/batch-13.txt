@@ -1,0 +1,123 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page, or for polls the pollster's own release or topline. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: vp-mi-the-glengariff-group-inc-issue-1
+  type: poll (voters' top issues), MI
+  claim: Glengariff Group for WDIV-TV and The Detroit News; fielded ? to ?; published 2026-10-28; ? likely voters; margin of error None; question: Which issue will most determine your vote in November? (reported wording; the reports also describe a closed list of eight issues, and it is not clear which figures belong to which question); figures: Inflation and cost of living 17.5%; Jobs and the economy 15.2%; Immigration, border control and ICE 7%; Taxes and government spending 5.8%; Health care affordability and accessibility 3.9%
+  source we cited (may be secondary): https://www.clickondetroit.com/decision-2026/2026/10/28/what-issues-do-michigan-voters-care-about-most-heres-what-a-new-poll-found/
+  not yet confirmed by us: Which question these figures belong to: the reports also give a closed-list version (economy 29.8%, immigration 11.0%); Field dates and sample size
+
+- id: vp-mi-the-glengariff-group-inc-ai-qu-1
+  type: poll (question about AI or data centers), MI
+  claim: Glengariff Group for WDIV-TV and The Detroit News; fielded ? to ?; published 2026-09-10; 600 likely voters; margin of error None; question: Do you support or oppose building data centers in Michigan, and a one-year statewide moratorium on building them? (reported wording); figures: Oppose building data centers in Michigan 64.3%; Support building data centers in Michigan 18.9%; Support one-year moratorium on building data centers 54.3%; Oppose one-year moratorium 30.2%
+  source we cited (may be secondary): https://www.clickondetroit.com/news/local/2026/09/10/nearly-two-thirds-of-michigan-voters-are-against-construction-of-data-centers-poll-finds/
+  not yet confirmed by us: Field dates and sample size
+
+- id: vp-tx-university-of-texas-texa-issue-1
+  type: poll (voters' top issues), TX
+  claim: Texas Politics Project (University of Texas at Austin); fielded 2026-09-25 to 2026-10-05; 1200 registered voters; margin of error 2.83; question: What one issue is the most important to your vote in the 2026 Election? (open-ended); figures: Cost of living 21%; The economy 15%; Corruption 8%; Immigration 5%; Negative responses to Donald Trump 5%
+  source we cited (may be secondary): https://texaspolitics.utexas.edu/set/what-one-issue-is-the-most-important-to-your-vote-in-the-2026-election-october-2026
+  not yet confirmed by us: Whether these figures are from the Sept. 25-Oct. 5 wave or the August wave
+
+- id: vp-tx-university-of-houston-ho-ai-qu-1
+  type: poll (question about AI or data centers), TX
+  claim: University of Houston Hobby School of Public Affairs; fielded 2026-10-10 to 2026-10-14; 2000 likely voters; margin of error 2.19; question: Would you support or oppose limiting the number of data centers that can be built in Texas, and how concerned are you about their effect on electricity prices? (reported wording); figures: Support limiting number of data centers in Texas 79%; Oppose limiting number of data centers 21%; Extremely or very concerned about data centers' effect on electricity prices 69%
+  source we cited (may be secondary): https://uh.edu/hobby/texas2026/centers.pdf
+
+- id: vp-tx-university-of-texas-texa-ai-qu-2
+  type: poll (question about AI or data centers), TX
+  claim: Texas Politics Project (University of Texas at Austin); fielded 2026-08-05 to 2026-08-13; 1200 registered voters; margin of error None; question: Do you support or oppose the construction of a data center in your community? (reported wording); figures: Oppose data center in community 57%; Support data center in community 30%
+  source we cited (may be secondary): https://www.washingtonpost.com/nation/2026/08/26/texas-poll-shows-solid-bipartisan-opposition-data-centers/
+
+- id: vp-ct-quinnipiac-university-po-issue-1
+  type: poll (voters' top issues), CT
+  claim: Quinnipiac University; fielded 2026-10-08 to 2026-10-12; 1225 likely voters; margin of error None; question: Which issue is most important to your vote for governor? (reported wording); figures: Cost of living 24%; The economy 21%; Taxes 13%
+  source we cited (may be secondary): https://poll.qu.edu/poll-release?releaseid=3971
+
+- id: vp-ct-emerson-college-polling--ai-qu-1
+  type: poll (question about AI or data centers), CT
+  claim: Emerson College Polling for Nexstar Media; fielded 2026-10-10 to 2026-10-12; 800 likely voters; margin of error None; question: Do you support or oppose data centers being built in your community? (reported wording); figures: Oppose data centers in community 59%; Support 27%; Neutral 15%
+  source we cited (may be secondary): https://emersoncollegepolling.com/connecticut-2026-poll-ned-lamont-holds-13-point-lead-over-ryan-fazio/
+  not yet confirmed by us: Figures confirmed by a second report
+
+- id: vp-ca-emerson-college-polling-issue-1
+  type: poll (voters' top issues), CA
+  claim: Emerson College Polling for Inside California Politics (Nexstar Media); fielded ? to ?; published 2026-10-21; 1000 likely voters; margin of error 3.1; question: What is the most important issue facing California? (reported wording); figures: Economy 45%; Housing affordability 17%; Health care 10%; Immigration 10%
+  source we cited (may be secondary): https://fox40.com/inside-california-politics/new-poll-shows-becerra-with-wide-lead-over-hilton-in-california-governor-race/amp/
+  not yet confirmed by us: Field dates; The 10% shares for health care and immigration (one summary only)
+
+- id: vp-ca-public-policy-institute--ai-qu-1
+  type: poll (question about AI or data centers), CA
+  claim: Public Policy Institute of California; fielded 2026-06-29 to 2026-07-06; 1578 adults (including 1,003 likely voters); margin of error None; question: Do you favor or oppose the construction of a data center in your area to support artificial intelligence technology? (reported wording); figures: Oppose an AI data center in their area (adults) 73%; Oppose an AI data center in their area (likely voters) 77%
+  source we cited (may be secondary): https://www.ppic.org/publication/ppic-statewide-survey-californians-and-the-environment-july-2026/
+
+- id: vp-ca-carnegie-endowment-for-i-ai-qu-2
+  type: poll (question about AI or data centers), CA
+  claim: Carnegie Endowment for International Peace (fielded by YouGov); fielded 2026-04-21 to 2026-05-11; 1500 adults; margin of error None; question: How important are the governor candidates' positions on AI to you? (reported wording); figures: Candidates' positions on AI at least somewhat important 52%; Candidates' positions on AI very important 18%
+  source we cited (may be secondary): https://carnegieendowment.org/research/2026/09/2026-carnegie-california-ai-survey
+  not yet confirmed by us: Figures from one search summary; not reconfirmed in a second search
+
+- id: vp-fr-elabe-issue-1
+  type: poll (voters' top issues), FR
+  claim: Elabe for La Tribune Dimanche; fielded 2026-04 to 2026-04; ? adults; margin of error None; question: Which issues should the next president deal with first? (three answers from 16 issues; reported wording) [« Les Français et le/la président(e) idéal(e) »]; figures: Purchasing power 44%; Security 31%; Health 30%
+  source we cited (may be secondary): https://elabe.fr/fichier-pdf/13003-20260418_elabe_la-tribune-dimanche_les-francais-et-lela-presidente-ideale/
+
+- id: vp-fr-elabe-ai-qu-1
+  type: poll (question about AI or data centers), FR
+  claim: Elabe for Région Hauts-de-France; fielded 2026-06-01 to 2026-06-02; 1503 adults (national sample); margin of error None; question: Attitudes to artificial intelligence: use, opportunity or threat, and how much regulation is wanted (reported wording); figures: Use AI 65%; See AI first as a threat 54%; Want strong regulation of AI development, even if it slows innovation 46%; No regulation needed for now 10%
+  source we cited (may be secondary): https://www.cbnews.fr/etudes/pres-deux-francais-trois-utilisent-ia
+
+- id: vp-fr-odoxa-ai-qu-2
+  type: poll (question about AI or data centers), FR
+  claim: Odoxa for AGIPI, Challenges and BFM Business; fielded 2026-02-18 to 2026-02-19; ? adults; margin of error None; question: Do you see artificial intelligence as an opportunity or a threat? (reported wording); figures: See AI as a threat 59%
+  source we cited (may be secondary): https://www.agipi.com/wp-content/uploads/2026/03/Odoxa-Barometre-de-leconomie-Mars-2026.pdf
+
+- id: po-pew-1
+  type: Pew survey finding by party
+  claim: More concerned than excited about AI in daily life (2026): all adults 52%; Democratic 56%; Republican 49%; report: Democrats are now more worried than Republicans about AI and its impact on jobs; published 2026-09-16; fielded 2026-06-22 to 2026-06-28; question: Overall, would you say the increased use of artificial intelligence in daily life makes you feel more excited than concerned, more concerned than excited, or equally concerned and excited? (wording as reported by Pew; overall: 52% more concerned, 37% equally, 9% more excited)
+  source we cited: https://www.pewresearch.org/short-reads/2026/09/16/democrats-are-now-more-worried-than-republicans-about-ai-and-its-impact-on-jobs/
+
+- id: po-pew-2
+  type: Pew survey finding by party
+  claim: Little or no confidence in U.S. government to regulate AI effectively (2026): all adults 67%; Democratic 74%; Republican 61%; report: Americans and AI 2026: Chatbots, Smart Devices and Views on Impact; published 2026-06-17; fielded 2026-02-17 to 2026-02-23; question: How much confidence, if any, do you have in the U.S. government to regulate AI effectively? (share saying not too much or no confidence; wording as reported)
+  source we cited: https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/
+
+- id: po-pew-3
+  type: Pew survey finding by party
+  claim: Little or no confidence in U.S. companies to develop and use AI responsibly (2026): all adults 59%; Democratic 65%; Republican 53%; report: Americans and AI 2026: Chatbots, Smart Devices and Views on Impact; published 2026-06-17; fielded 2026-02-17 to 2026-02-23; question: How much confidence, if any, do you have in U.S. companies to develop and use AI responsibly? (share saying not too much or no confidence; wording as reported)
+  source we cited: https://www.pewresearch.org/chart/in-a-shift-democrats-are-now-more-skeptical-than-the-gop-of-the-u-s-governments-ability-to-regulate-ai/
+
+- id: po-gallup-4
+  type: Gallup survey finding by party
+  claim: Oppose construction of an AI data center in local area (2026): all adults 71%; Democratic 75%; Republican 63%; Independent 74%; report: Americans Oppose AI Data Centers in Their Area; published 2026-05-12; fielded 2026-03-02 to 2026-03-18; question: Would you favor or oppose the construction of a data center for artificial intelligence in your local area? (paraphrase; exact wording not seen in results)
+  source we cited: https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx
+
+- id: po-pew-5
+  type: Pew survey finding by party
+  claim: More concerned than excited about AI in daily life (2025): all adults 50%; Democratic 51%; Republican 50%; report: Republicans, Democrats now equally concerned about AI in daily life, but views on regulation differ; published 2025-11-06; fielded 2025-06-09 to 2025-06-15; question: Overall, would you say the increased use of artificial intelligence in daily life makes you feel more excited than concerned, more concerned than excited, or equally concerned and excited? (overall: 50% more concerned, 38% equally, 10% more excited)
+  source we cited: https://www.pewresearch.org/short-reads/2025/11/06/republicans-democrats-now-equally-concerned-about-ai-in-daily-life-but-views-on-regulation-differ/
+
+- id: po-pew-6
+  type: Pew survey finding by party
+  claim: Trust the U.S. to regulate AI effectively (2025): all adults 44%; Democratic 36%; Republican 54%; report: Republicans, Democrats now equally concerned about AI in daily life, but views on regulation differ; published 2025-11-06; fielded ? to ?; question: How much do you trust the U.S. to regulate the use of AI effectively? (share saying a lot or some trust; wording as reported; overall 44% trust, 47% do not)
+  source we cited: https://www.pewresearch.org/short-reads/2025/11/06/republicans-democrats-now-equally-concerned-about-ai-in-daily-life-but-views-on-regulation-differ/
+
+- id: po-gallup-7
+  type: Gallup survey finding by party
+  claim: Government should keep AI safety and data-security rules even if it slows AI development: all adults 80%; Democratic 88%; Republican 79%; Independent 79%; report: Americans Prioritize AI Safety and Data Security (Gallup with the Special Competitive Studies Project); published None; fielded ? to ?; question: Should the government prioritize maintaining rules for AI safety and data security, even if it means developing AI capabilities at a slower rate, or prioritize developing AI capabilities as quickly as possible? (paraphrase from Gallup's text; 80% maintain rules, 9% speed, 11% unsure)
+  source we cited: https://news.gallup.com/poll/694685/americans-prioritize-safety-data-security.aspx
+
+- id: po-pew-8
+  type: Pew survey finding by party
+  claim: More worried government will not go far enough in regulating AI (vs. go too far) (2025): all adults None%; Democratic 64%; Republican 55%; report: How the U.S. Public and AI Experts View Artificial Intelligence; published 2025-04-03; fielded 2024-08-12 to 2024-08-18; question: Thinking about government regulation of AI, which concerns you more: that the U.S. government will go too far regulating its use, or not go far enough regulating its use? (wording as reported)
+  source we cited: https://www.pewresearch.org/internet/2025/04/03/views-of-risks-opportunities-and-regulation-of-ai/

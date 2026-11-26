@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiRankSummary } from '../components/OpinionCharts';
 import { PartyLineCell, DeviationMatrix, DeviationTimeline, StatusTag } from '../components/Analysis';
 import CategoryBreakdown from '../components/CategoryBreakdown';
 import { partyLines, domains } from '../lib/data';
@@ -115,7 +116,7 @@ function AnalysisPage() {
         <div className="warning-panel" role="note">
           Party lines are an <strong>editorial judgment</strong> built from the evidence listed. Deviation results are
           <strong> model-generated analysis</strong>: an AI model coded every stance from web search summaries, and no
-          person has reviewed them yet. Every record cites its source with Low confidence until it is checked. As of{' '}
+          person has reviewed them yet. Every record cites its source and shows how far other reports confirm it. As of{' '}
           {partyLines.asOf}.
         </div>
       </header>
@@ -124,6 +125,8 @@ function AnalysisPage() {
         <h3>Where deviation exists</h3>
         <WhereSummary />
       </section>
+
+      <AiRankSummary />
 
       <DomainSection domainId="data-centers" />
       <DomainSection domainId="ai-general" />

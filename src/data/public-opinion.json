@@ -1,0 +1,374 @@
+{
+  "note": "Publicly released Gallup and Pew Research Center findings on Americans' views of AI, by party. Each figure links to the published report.",
+  "asOf": "2026-11-26",
+  "terms": {
+    "Gallup": "All Gallup content is copyrighted and use requires Gallup's permission, but contextual citations in a news article, news segment, book or online post do not need permission. Gallup asks that findings be attributed to Gallup, that the poll's publication date be given, and that online references link back to the original article. Reproducing tables, graphs or substantial editorial content needs permission (reprints are licensed through the Copyright Clearance Center or by asking permissions@gallup.com). Gallup also forbids continuously pulling and republishing its data in a way that replicates its site without explicit permission. For a dashboard: citing a few toplines with attribution, date and link is fine; do not embed Gallup chart images or auto-scrape Gallup data. Sources: https://www.gallup.com/corporate/198173/gallup-permissions.aspx ; https://news.gallup.com/poll/101884/how-should-cite-gallup-my-work.aspx ; https://news.gallup.com/poll/152138/guidelines-referencing-gallup-findings.aspx ; https://news.gallup.com/poll/152135/continuously-post-data-published-gallup-com-own-site.aspx",
+    "Pew": "Pew's Terms of Use grant a limited, nonexclusive, revocable license to cite, link to and adapt its content, provided copyright notices are kept, Pew is credited, and the use does not suggest Pew endorses a policy or viewpoint. Requested citation format: \"Report Title,\" Pew Research Center, Washington, D.C. (publication date) URL. Reproducing content in principal part or in full, or mirroring it, needs Pew's written permission. Dataset reuse is limited to excerpts, with attribution and a disclaimer that Pew is not responsible for the user's analysis. Published toplines can be shown with that citation and a link. Source: https://www.pewresearch.org/about/terms-and-conditions/"
+  },
+  "findings": [
+    {
+      "id": "po-pew-1",
+      "org": "Pew",
+      "report": "Democrats are now more worried than Republicans about AI and its impact on jobs",
+      "fieldStart": "2026-06-22",
+      "fieldEnd": "2026-06-28",
+      "population": "U.S. adults (American Trends Panel)",
+      "sampleSize": 3488,
+      "marginOfError": 1.8,
+      "question": "Overall, would you say the increased use of artificial intelligence in daily life makes you feel more excited than concerned, more concerned than excited, or equally concerned and excited? (wording as reported by Pew; overall: 52% more concerned, 37% equally, 9% more excited)",
+      "measure": "More concerned than excited about AI in daily life (2026)",
+      "overall": 52,
+      "byParty": {
+        "Democratic": 56,
+        "Republican": 49,
+        "Independent": null
+      },
+      "partyNote": "Pew party groups include independents who lean to each party",
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Democrats are now more worried than Republicans about AI and its impact on jobs (Pew Research Center)",
+        "url": "https://www.pewresearch.org/short-reads/2026/09/16/democrats-are-now-more-worried-than-republicans-about-ai-and-its-impact-on-jobs/"
+      },
+      "additionalSources": [
+        {
+          "title": "Pew topline: SR 09.16.26 AI partisan views",
+          "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/09/SR_09.16_26_ai-partisan-views_topline.pdf"
+        },
+        {
+          "title": "Democrats are now more worried than Republicans about AI and its impact on jobs (Benton Institute)",
+          "url": "https://www.benton.org/headlines/democrats-are-now-more-worried-republicans-about-ai-and-its-impact-jobs"
+        }
+      ],
+      "publishedDate": "2026-09-16",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ],
+      "context": "First time Democrats exceed Republicans on this measure (Democrats were 46% in 2023; Republicans down 10 points since 2023). Same survey: 75% of Democrats vs. 68% of Republicans expect AI to mean fewer jobs over the next 20 years."
+    },
+    {
+      "id": "po-pew-2",
+      "org": "Pew",
+      "report": "Americans and AI 2026: Chatbots, Smart Devices and Views on Impact",
+      "fieldStart": "2026-02-17",
+      "fieldEnd": "2026-02-23",
+      "population": "U.S. adults (American Trends Panel, Wave 187)",
+      "sampleSize": 5119,
+      "marginOfError": 1.6,
+      "question": "How much confidence, if any, do you have in the U.S. government to regulate AI effectively? (share saying not too much or no confidence; wording as reported)",
+      "measure": "Little or no confidence in U.S. government to regulate AI effectively (2026)",
+      "overall": 67,
+      "byParty": {
+        "Democratic": 74,
+        "Republican": 61,
+        "Independent": null
+      },
+      "partyNote": "Pew party groups include leaners",
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Americans' Views on AI Chatbots, Smart Devices and AI's Impact (Pew Research Center)",
+        "url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/"
+      },
+      "additionalSources": [
+        {
+          "title": "In a shift, Democrats are now more skeptical than the GOP of the U.S. government's ability to regulate AI (Pew chart)",
+          "url": "https://www.pewresearch.org/chart/in-a-shift-democrats-are-now-more-skeptical-than-the-gop-of-the-u-s-governments-ability-to-regulate-ai/"
+        },
+        {
+          "title": "Methodology: Americans and AI (Pew Research Center)",
+          "url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-methodology/"
+        }
+      ],
+      "publishedDate": "2026-06-17",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ],
+      "context": "Reversal since the 2024 survey, when 70% of Republicans and 54% of Democrats lacked confidence."
+    },
+    {
+      "id": "po-pew-3",
+      "org": "Pew",
+      "report": "Americans and AI 2026: Chatbots, Smart Devices and Views on Impact",
+      "fieldStart": "2026-02-17",
+      "fieldEnd": "2026-02-23",
+      "population": "U.S. adults (American Trends Panel, Wave 187)",
+      "sampleSize": 5119,
+      "marginOfError": 1.6,
+      "question": "How much confidence, if any, do you have in U.S. companies to develop and use AI responsibly? (share saying not too much or no confidence; wording as reported)",
+      "measure": "Little or no confidence in U.S. companies to develop and use AI responsibly (2026)",
+      "overall": 59,
+      "byParty": {
+        "Democratic": 65,
+        "Republican": 53,
+        "Independent": null
+      },
+      "partyNote": "Pew party groups include leaners",
+      "labelType": "reported-fact",
+      "source": {
+        "title": "In a shift, Democrats are now more skeptical than the GOP of the U.S. government's ability to regulate AI (Pew chart)",
+        "url": "https://www.pewresearch.org/chart/in-a-shift-democrats-are-now-more-skeptical-than-the-gop-of-the-u-s-governments-ability-to-regulate-ai/"
+      },
+      "additionalSources": [
+        {
+          "title": "Pew Research: Americans' AI chatbot skepticism and regulation distrust (The Next Web)",
+          "url": "https://thenextweb.com/news/pew-research-americans-ai-chatbot-skepticism-regulation-distrust-2026"
+        },
+        {
+          "title": "Democrats Now Have Lesser Faith Than Republicans In US Govt And US Companies Around AI: Pew Report (OfficeChai)",
+          "url": "https://officechai.com/ai/democrats-now-have-lesser-faith-than-republicans-in-us-govt-and-us-companies-around-ai-pew-report/"
+        }
+      ],
+      "publishedDate": "2026-06-17",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ],
+      "context": "In the 2024 survey the parties were even (60% of Republicans, 59% of Democrats lacked confidence). Party figures come from the data table of Pew's chart page as returned in search results."
+    },
+    {
+      "id": "po-gallup-4",
+      "org": "Gallup",
+      "report": "Americans Oppose AI Data Centers in Their Area",
+      "fieldStart": "2026-03-02",
+      "fieldEnd": "2026-03-18",
+      "population": "U.S. adults (national telephone survey)",
+      "sampleSize": 1000,
+      "marginOfError": 4,
+      "question": "Would you favor or oppose the construction of a data center for artificial intelligence in your local area? (paraphrase; exact wording not seen in results)",
+      "measure": "Oppose construction of an AI data center in local area (2026)",
+      "overall": 71,
+      "byParty": {
+        "Democratic": 75,
+        "Republican": 63,
+        "Independent": 74
+      },
+      "partyNote": "Gallup party ID; independents reported separately",
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Americans Oppose AI Data Centers in Their Area (Gallup)",
+        "url": "https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx"
+      },
+      "additionalSources": [
+        {
+          "title": "Share who say they favor or oppose local construction of AI data centers (Gallup chart, Datawrapper)",
+          "url": "https://datawrapper.dwcdn.net/LYGCH/1/"
+        },
+        {
+          "title": "Gallup poll: 7 in 10 Americans don't want AI data centers near them (Washington Times, May 13, 2026)",
+          "url": "https://www.washingtontimes.com/news/2026/may/13/gallup-poll-7-10-americans-dont-want-ai-data-centers-near/"
+        }
+      ],
+      "publishedDate": "2026-05-12",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ],
+      "context": "Favor: Democrats 23%, independents 24%, Republicans 34%. Strongly oppose: Democrats 56%, independents 48%, Republicans 39% (48% overall). Opponents cite energy use (18%) and utility-bill and cost-of-living worries; no party split found for those reasons. Same survey: 53% oppose a local nuclear plant."
+    },
+    {
+      "id": "po-pew-5",
+      "org": "Pew",
+      "report": "Republicans, Democrats now equally concerned about AI in daily life, but views on regulation differ",
+      "fieldStart": "2025-06-09",
+      "fieldEnd": "2025-06-15",
+      "population": "U.S. adults (American Trends Panel)",
+      "sampleSize": 5023,
+      "marginOfError": null,
+      "question": "Overall, would you say the increased use of artificial intelligence in daily life makes you feel more excited than concerned, more concerned than excited, or equally concerned and excited? (overall: 50% more concerned, 38% equally, 10% more excited)",
+      "measure": "More concerned than excited about AI in daily life (2025)",
+      "overall": 50,
+      "byParty": {
+        "Democratic": 51,
+        "Republican": 50,
+        "Independent": null
+      },
+      "partyNote": "Pew party groups include leaners",
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Republicans, Democrats now equally concerned about AI in daily life, but views on regulation differ (Pew Research Center)",
+        "url": "https://www.pewresearch.org/short-reads/2025/11/06/republicans-democrats-now-equally-concerned-about-ai-in-daily-life-but-views-on-regulation-differ/"
+      },
+      "additionalSources": [
+        {
+          "title": "How Americans View AI and Its Impact on People and Society (Pew Research Center, Sept. 17, 2025)",
+          "url": "https://www.pewresearch.org/science/2025/09/17/how-americans-view-ai-and-its-impact-on-people-and-society/"
+        },
+        {
+          "title": "Republicans and Democrats agree on AI, Pew survey (Tech Brew)",
+          "url": "https://www.techbrew.com/stories/2025/11/10/republicans-democrats-agree-ai-pew-survey"
+        }
+      ],
+      "publishedDate": "2025-11-06",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ],
+      "context": "Democrats up from 31% (2021) and 46% (2023); Republicans down 9 points since 2023."
+    },
+    {
+      "id": "po-pew-6",
+      "org": "Pew",
+      "report": "Republicans, Democrats now equally concerned about AI in daily life, but views on regulation differ",
+      "fieldStart": null,
+      "fieldEnd": null,
+      "population": "U.S. adults (American Trends Panel)",
+      "sampleSize": null,
+      "marginOfError": null,
+      "question": "How much do you trust the U.S. to regulate the use of AI effectively? (share saying a lot or some trust; wording as reported; overall 44% trust, 47% do not)",
+      "measure": "Trust the U.S. to regulate AI effectively (2025)",
+      "overall": 44,
+      "byParty": {
+        "Democratic": 36,
+        "Republican": 54,
+        "Independent": null
+      },
+      "partyNote": "Pew party groups include leaners",
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Republicans, Democrats now equally concerned about AI in daily life, but views on regulation differ (Pew Research Center)",
+        "url": "https://www.pewresearch.org/short-reads/2025/11/06/republicans-democrats-now-equally-concerned-about-ai-in-daily-life-but-views-on-regulation-differ/"
+      },
+      "additionalSources": [
+        {
+          "title": "Trust in EU, US, China to regulate AI use (Pew Research Center, Oct. 15, 2025)",
+          "url": "https://www.pewresearch.org/2025/10/15/trust-in-the-eu-u-s-and-china-to-regulate-use-of-ai/"
+        },
+        {
+          "title": "Republicans and Democrats agree on AI, Pew survey (Tech Brew)",
+          "url": "https://www.techbrew.com/stories/2025/11/10/republicans-democrats-agree-ai-pew-survey"
+        }
+      ],
+      "publishedDate": "2025-11-06",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ],
+      "context": "Mirror image for the EU: 54% of Democrats vs. about a third of Republicans trust the EU to regulate AI. Field dates and sample are those of Pew's March 2025 ATP wave; linking this question to that wave is inferred from search summaries (Pew says the U.S. questions came from a March 2025 wave)."
+    },
+    {
+      "id": "po-gallup-7",
+      "org": "Gallup",
+      "report": "Americans Prioritize AI Safety and Data Security (Gallup with the Special Competitive Studies Project)",
+      "fieldStart": null,
+      "fieldEnd": null,
+      "population": "U.S. adults",
+      "sampleSize": null,
+      "marginOfError": null,
+      "question": "Should the government prioritize maintaining rules for AI safety and data security, even if it means developing AI capabilities at a slower rate, or prioritize developing AI capabilities as quickly as possible? (paraphrase from Gallup's text; 80% maintain rules, 9% speed, 11% unsure)",
+      "measure": "Government should keep AI safety and data-security rules even if it slows AI development",
+      "overall": 80,
+      "byParty": {
+        "Democratic": 88,
+        "Republican": 79,
+        "Independent": 79
+      },
+      "partyNote": "Gallup reports 79% for Republicans and independents alike",
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Americans Prioritize AI Safety and Data Security (Gallup)",
+        "url": "https://news.gallup.com/poll/694685/americans-prioritize-safety-data-security.aspx"
+      },
+      "additionalSources": [
+        {
+          "title": "Years of polling show overwhelming voter support for a crackdown on AI (Public Citizen)",
+          "url": "https://www.citizen.org/article/years-of-polling-show-overwhelming-voter-support-for-a-crackdown-on-ai/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ],
+      "context": "Publication date, field dates and sample size were not visible in search results; a Public Citizen memo dates the poll to September 2025. Same release: 97% say AI safety and security should be subject to rules; 54% favor U.S. government rules for AI companies; 72% want independent experts to run safety tests."
+    },
+    {
+      "id": "po-pew-8",
+      "org": "Pew",
+      "report": "How the U.S. Public and AI Experts View Artificial Intelligence",
+      "fieldStart": "2024-08-12",
+      "fieldEnd": "2024-08-18",
+      "population": "U.S. adults (American Trends Panel, Wave 152)",
+      "sampleSize": 5410,
+      "marginOfError": null,
+      "question": "Thinking about government regulation of AI, which concerns you more: that the U.S. government will go too far regulating its use, or not go far enough regulating its use? (wording as reported)",
+      "measure": "More worried government will not go far enough in regulating AI (vs. go too far) (2025)",
+      "overall": null,
+      "byParty": {
+        "Democratic": 64,
+        "Republican": 55,
+        "Independent": null
+      },
+      "partyNote": "Pew party groups include leaners",
+      "labelType": "reported-fact",
+      "source": {
+        "title": "AI risks, opportunities, regulation: Views of US public and AI experts (Pew Research Center)",
+        "url": "https://www.pewresearch.org/internet/2025/04/03/views-of-risks-opportunities-and-regulation-of-ai/"
+      },
+      "additionalSources": [
+        {
+          "title": "How the US Public and AI Experts View Artificial Intelligence (Pew Research Center)",
+          "url": "https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/"
+        },
+        {
+          "title": "Methodology (Pew Research Center, U.S. public and AI experts)",
+          "url": "https://www.pewresearch.org/internet/2025/04/03/us-public-and-ai-experts-methodology/"
+        }
+      ],
+      "publishedDate": "2025-04-03",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ],
+      "context": "Pew's text gives the overall figure only as 'about six-in-ten' (vs. 56% of AI experts); one non-Pew aggregator (vop.org) cites 58% overall and 65% for Democrats, which does not match Pew's 64%, so overall left blank. Same report: 62% of adults have not too much or no confidence in government to regulate AI (Republicans 70%, Democrats 54%)."
+    }
+  ]
+}

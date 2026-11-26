@@ -3,6 +3,7 @@ import ErrorBoundary from './ErrorBoundary';
 import { countryName, europeGeo, electionsForCountry, internationalNextSteps, internationalNote, racesForCountry } from '../lib/data';
 import { RaceCard } from './StateView';
 import { CheckNote } from './PolicyBox';
+import { PlaceVoterPriorities } from './OpinionCharts';
 import { checkOf } from '../lib/data';
 import '../styles/StateModal.css';
 import '../styles/StateView.css';
@@ -31,6 +32,8 @@ function CountryView({ code, onClose }) {
           </div>
         </section>
       )}
+
+      <PlaceVoterPriorities country={code} />
 
       <section className="state-section">
         <h3>Elections listed</h3>

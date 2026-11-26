@@ -1,0 +1,83 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: pl-r-harmful#0
+  type: evidence for the Republican party line
+  claim: Trump signed the Take It Down Act, making it a federal crime to publish non-consensual intimate images, including AI deepfakes, and requiring platforms to remove them within 48 hours.
+  date given: 2025-05-19
+  source we cited (may be secondary): https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation
+
+- id: pl-r-harmful#1
+  type: evidence for the Republican party line
+  claim: The preemption push carves out child-safety laws.
+  date given: 2025-12-11
+  source we cited (may be secondary): https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws
+
+- id: pl-r-preemption#0
+  type: evidence for the Republican party line
+  claim: Executive order "Ensuring a National Policy Framework for Artificial Intelligence" creates a DOJ AI Litigation Task Force to challenge state AI laws, ties some federal funding to state AI policy, and tasks the White House AI adviser with proposing federal legislation that broadly preempts state AI laws, with carve-outs for child safety.
+  date given: 2025-12-11
+  source we cited (may be secondary): https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws
+
+- id: pl-r-preemption#1
+  type: evidence for the Republican party line
+  claim: Text of the executive order.
+  date given: 2025-12-11
+  source we cited (may be secondary): https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/
+
+- id: pl-r-safety#0
+  type: evidence for the Republican party line
+  claim: "Winning the AI Race: America's AI Action Plan" sets out more than 90 federal actions focused on innovation, infrastructure and international leadership, with a permissive approach to regulation.
+  date given: 2025-07-23
+  source we cited (may be secondary): https://www.fenwick.com/insights/publications/trump-administration-releases-sweeping-ai-action-plan
+
+- id: pl-r-safety#1
+  type: evidence for the Republican party line
+  claim: A White House frontier AI safety pact with developers is voluntary, with no penalties, disclosure duty or enforcement role; the administration has opposed binding safety mandates.
+  date given: 2026-09
+  source we cited (may be secondary): https://www.foley.com/insights/publications/2026/11/blue-wave-new-ai-rules-what-democratic-control-of-congress-means-for-ai-regulation/
+
+- id: pl-r-workers#1
+  type: evidence for the Republican party line
+  claim: Coverage noted the plan keeps a training focus and drops worker protections.
+  date given: 2025-07-23
+  source we cited (may be secondary): https://news.bgov.com/safety/trump-ai-plan-ditches-worker-protections-keeps-training-focus
+
+- id: tx-89r-hb149
+  type: bill, law or official action
+  claim: Texas HB 149, "Texas Responsible Artificial Intelligence Governance Act (TRAIGA)" (89th Legislature, Regular Session (2025)). Sponsors: Giovanni Capriglione (Republican). Status: enacted on 2025-06-22. Signed June 22, 2025; effective Jan. 1, 2026. What it does: Bans a short list of AI uses, including AI-generated child sexual abuse material and government social scoring, and requires Texas state agencies to disclose AI use to consumers. A broader high-risk impact-assessment regime in early drafts was cut from the final bill.
+  date given: 2025-06-22
+  source we cited (may be secondary): https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149
+
+- id: tx-90r-sb293
+  type: bill, law or official action
+  claim: Texas SB 293 (also HB 167), "Repeal of the data center sales tax exemption" (90th Legislature (2027), prefiled). Sponsors: Joan Huffman (Republican), Trey Martinez Fischer (Democratic). Status: introduced on 2026-11-09. Filed Nov. 9, 2026. What it does: Would end existing data center sales tax breaks. SB 293 reportedly has 23 Senate authors; HB 167 is a House bill with the same aim.
+  date given: 2026-11-09
+  source we cited (may be secondary): https://natlawreview.com/article/texas-lawmakers-file-repeal-data-center-sales-tax-exemption
+
+- id: tx-90r-sb33
+  type: bill, law or official action
+  claim: Texas SB 33, SB 35, SB 36, "Data center cost, water-reporting and local-incentive bills" (90th Legislature (2027), prefiled). Sponsors: Judith Zaffirini (Democratic). Status: introduced on 2026-11-09. Filed Nov. 9, 2026. What it does: SB 33: data centers may not raise electricity costs for Texas residents. SB 35: large data centers report water use to the Texas Water Development Board. SB 36: no new local tax incentives for data centers.
+  date given: 2026-11-09
+  source we cited (may be secondary): https://www.chron.com/politics/article/texas-legislature-bills-prefiling-2027-22521040.php
+
+- id: us-grid-savings-act
+  type: bill, law or official action
+  claim: U.S. federal Number to verify, "GRID Savings Act" (119th Congress (2025-2026)). Sponsors: Martin Heinrich (Democratic). Status: introduced. Status to verify. What it does: Would direct federal regulators to require large electricity customers such as data centers to pay for the infrastructure needed to connect them to the grid.
+  source we cited (may be secondary): https://thehill.com/policy/energy-environment/6119834-senate-data-center-bill-ratepayer-protection-act/
+
+- id: us-hr3447
+  type: bill, law or official action
+  claim: U.S. federal H.R. 3447, "Chip Security Act" (119th Congress (2025-2026)). Sponsors: Bill Huizenga (Republican), Bill Foster (Democratic). Status: in-committee on 2026-03-26. Ordered reported 42-0 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA. What it does: Would require advanced AI chips to carry security mechanisms that verify their location.
+  date given: 2026-03-26
+  source we cited (may be secondary): https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/

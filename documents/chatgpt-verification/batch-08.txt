@@ -1,0 +1,84 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: cr-tx-gov-abbott-3
+  type: candidate statement or position
+  claim: Greg Abbott (Republican), Governor candidate in Texas: Said he wants the Legislature to write his data center restrictions into law in 2027 and to give cities, counties and residents more authority over where data centers are built.
+  date given: 2026-10-14
+  source we cited (may be secondary): https://www.texarkanagazette.com/news/2026/oct/14/election-2026-abbott-wants-texas-lawmakers-to/
+
+- id: cr-tx-gov-hinojosa-1
+  type: candidate statement or position
+  claim: Gina Hinojosa (Democratic), Governor candidate in Texas: Pledged an immediate moratorium on new data centers until the Legislature puts protections in place, an end to data center tax breaks and a local say over projects. Goals include American union jobs, transparency, data centers paying for themselves and putting water and power for Texans first. Called Gov. Abbott's pause "just words".
+  date given: During the 2026 campaign
+  source we cited (may be secondary): https://www.fox4news.com/news/hinojosa-challenges-abbott-data-center-policies-during-campaign-stop
+
+- id: cr-tx-gov-hinojosa-2
+  type: candidate statement or position
+  claim: Gina Hinojosa (Democratic), Governor candidate in Texas: As governor-elect, said the state will have laws to shield residents from data centers and that new projects should pause until then: "It is not that I hate data centers. I hate the way they are taking advantage of Texas."
+  date given: 2026-11-05
+  source we cited (may be secondary): https://www.usnews.com/news/us/articles/2026-11-05/texas-governor-elect-says-state-will-have-laws-to-shield-citizens-from-data-centers
+
+- id: cr-tx-sen-paxton-1
+  type: candidate statement or position
+  claim: Ken Paxton (Republican), U.S. Senate candidate in Texas: As Texas attorney general, opened an investigation into two AI developers for possible deceptive trade practices and misleading marketing. Earlier reached a settlement with a generative-AI health care company over deceptive claims.
+  date given: 2025-08-18
+  source we cited (may be secondary): https://www.jdsupra.com/topics/state-attorneys-general/artificial-intelligence/technology-sector
+
+- id: cr-tx-sen-talarico-1
+  type: candidate statement or position
+  claim: James Talarico (Democratic), U.S. Senate candidate in Texas: Campaign platform calls for regulations that hold AI companies accountable while protecting workers, for AI companies to follow the same copyright laws as everyone else, and for limits on invasive workplace AI surveillance.
+  date given: Campaign platform, 2026
+  source we cited (may be secondary): https://jamestalarico.com/issue/social-media-artificial-intelligence-tech/
+
+- id: cr-tx-sen-talarico-2
+  type: candidate statement or position
+  claim: James Talarico (Democratic), U.S. Senate candidate in Texas: Proposed an "AI dividend" to give ordinary people a share of the profits of companies developing AI. No implementation details were given.
+  date given: During the 2026 campaign
+  source we cited (may be secondary): https://www.statesman.com/news/politics/state/article/james-talarico-calls-ai-dividends-help-22377208.php
+
+- id: ct-2024-sb2
+  type: bill, law or official action
+  claim: Connecticut SB 2 (2024), "An Act Concerning Artificial Intelligence" (2024 session). Sponsors: James Maroney (Democratic). Status: failed on 2024-04-24.  What it does: Comprehensive AI standards bill. Passed the Senate 24-12 along party lines; the House Speaker did not call it for a vote after Gov. Lamont said he would veto it.
+  date given: 2024-04-24
+  source we cited (may be secondary): https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/
+
+- id: ct-2025-sb2
+  type: bill, law or official action
+  claim: Connecticut SB 2 (2025), "An Act Concerning Artificial Intelligence (revised)" (2025 session). Sponsors: James Maroney (Democratic). Status: failed on 2025.  What it does: Revised version of the 2024 comprehensive AI bill, including algorithmic-discrimination duties. Passed the Senate but was not taken up in the House after Gov. Lamont threatened a veto.
+  date given: 2025
+  source we cited (may be secondary): https://pluribusnews.com/news-and-events/connecticut-ai-regulation-bill-crumbles-amid-govs-veto-threat/
+
+- id: ct-2026-sb5
+  type: bill, law or official action
+  claim: Connecticut SB 5 (Public Act 26-15), "Connecticut AI Responsibility and Transparency (CART) Act" (2026 session). Sponsors: James Maroney (Democratic), Martin Looney (Democratic), Bob Duff (Democratic), Saud Anwar (Democratic). Status: enacted on 2026-05-27. Passed the Senate 32-4 and the House 131-17; signed May 27, 2026 (some sources give June 2). What it does: Broad AI law: using an automated employment decision tool is no defense to a discrimination claim; rules for consumer chatbots and AI companions; whistleblower protections and reporting channels at frontier-model developers; AI content provenance; protections for minors. Provisions phase in from Oct. 1, 2026 to 2028.
+  date given: 2026-05-27
+  source we cited (may be secondary): https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety
+
+- id: ct-2027-duff-moratorium
+  type: bill, law or official action
+  claim: Connecticut To be filed, "Statewide moratorium on AI data centers" (2027 session (announced)). Sponsors: Bob Duff (Democratic). Status: announced on 2026-10-22. Announced Oct. 22, 2026; not yet filed. What it does: Senate Majority Leader Bob Duff plans to introduce a statewide moratorium on AI data centers when the 2027 session begins, citing their water and electricity use and the effect on utility rates. Some towns, such as East Lyme, have passed local bans.
+  date given: 2026-10-22
+  source we cited (may be secondary): https://www.wfsb.com/2026/10/22/senate-leader-proposes-bill-pause-new-data-centers-connecticut/
+
+- id: eu-ai-act
+  type: bill, law or official action
+  claim: European Union Regulation (EU) 2024/1689, "EU Artificial Intelligence Act" (European Union). Sponsors: Adopted by the European Parliament and the Council.. Status: enacted on 2024-08-01. In force since Aug. 1, 2024; obligations apply in phases. What it does: Risk-based rules for AI across the EU: bans on certain uses, duties for high-risk systems and for general-purpose AI models, applied in phases. Member states such as France implement and enforce it rather than deciding whether to regulate.
+  date given: 2024-08-01
+  source we cited (may be secondary): https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+
+- id: fr-nuclear-ai-pledge
+  type: bill, law or official action
+  claim: France Government announcement, "Nuclear power for AI data centers" (Government). Sponsors: Emmanuel Macron (Renaissance). Status: announced on 2025-02. Government policy, not a bill. What it does: France pledged a gigawatt of nuclear power for AI computing; in March 2026 President Macron said France's nuclear plants let it open data centers and grow its computing capacity.
+  date given: 2025-02
+  source we cited (may be secondary): https://www.techradar.com/pro/france-plans-to-pledge-one-gigawatt-of-nuclear-power-for-ai

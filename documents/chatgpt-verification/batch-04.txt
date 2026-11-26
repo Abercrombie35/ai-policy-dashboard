@@ -1,0 +1,84 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: cr-fr-ruffin-1
+  type: candidate statement or position
+  claim: François Ruffin (Independent left), presidential candidate in France: Filed a resolution in the National Assembly calling for a five-year moratorium on non-European ("non-sovereign") data center projects, backed by the Ecologist and Communist groups. Its explanatory statement also attacks the reduced electricity tax that data centers pay.
+  date given: 2026-10-08
+  source we cited (may be secondary): https://www.assemblee-nationale.fr/dyn/17/textes/l17b3293_proposition-resolution.pdf
+
+- id: cr-mi-gov-benson-1
+  type: candidate statement or position
+  claim: Jocelyn Benson (Democratic), Governor candidate in Michigan: As Michigan secretary of state, testified to the U.S. Senate Rules Committee that 2024 would be the first election cycle in which AI would be used to amplify election disinformation tactics "exponentially".
+  date given: 2024-03-12
+  source we cited (may be secondary): https://www.rules.senate.gov/download/06/11/2024/testimony_benson1
+
+- id: cr-mi-gov-james-3
+  type: candidate statement or position
+  claim: John James (Republican), Governor candidate in Michigan: In the Oct. 6 debate, said communities should decide whether to accept data centers ("The moratorium should be imposed on Lansing, not the people"), and afterwards said he would not push for a statewide moratorium.
+  date given: 2026-10-06
+  source we cited (may be secondary): https://www.michiganpublic.org/politics-government/2026-10-07/james-distances-himself-from-trump-as-benson-tries-to-connect-them-in-gubernatorial-debate
+
+- id: cr-mi-sen-elsayed-1
+  type: candidate statement or position
+  claim: Abdul El-Sayed (Democratic), U.S. Senate candidate in Michigan: Set out "terms of engagement" for AI data centers: no electricity rate increases for residents, data centers paying for their own energy, closed-loop cooling and a local-jobs guarantee. Said the standards should be set federally and, until then, backed local and state moratoriums.
+  date given: 2026-01-08
+  source we cited (may be secondary): https://michiganadvance.com/2026/01/08/el-sayed-lays-out-policy-terms-of-engagement-with-ai-data-centers-in-u-s-senate-hunt/
+
+- id: cr-tx-gov-abbott-2
+  type: candidate statement or position
+  claim: Greg Abbott (Republican), Governor candidate in Texas: Told state regulators and the grid operator ERCOT, in an Aug. 3, 2026 letter, to stop approving new data center grid connections until an energy and water audit is done. Critics said it had no clear timeline and did not cover many mid-size projects.
+  date given: 2026-08
+  source we cited (may be secondary): https://www.eenews.net/articles/texas-governor-talks-tough-on-data-centers-calls-for-clampdown/
+
+- id: cr-tx-sen-paxton-2
+  type: candidate statement or position
+  claim: Ken Paxton (Republican), U.S. Senate candidate in Texas: Released a four-point AI data center plan calling for federal legislation to block Chinese technology in data centers and criminal liability for data centers that power AI chatbots that harm children, and backing Gov. Abbott's state-level plan.
+  date given: 2026-08-25
+  source we cited (may be secondary): https://www.breitbart.com/tech/2026/08/25/ken-paxton-unveils-plan-to-prevent-negative-impact-of-ai-data-centers-on-texas/
+
+- id: cr-tx-sen-talarico-3
+  type: candidate statement or position
+  claim: James Talarico (Democratic), U.S. Senate candidate in Texas: Called for tighter regulation of data centers, describing his approach as a balance between welcoming the investment and protecting working people.
+  date given: 2026-07-22
+  source we cited (may be secondary): https://www.texastribune.org/2026/07/22/texas-james-talarico-data-centers-regulation-senate-2026/
+
+- id: ct-2026-hb5926
+  type: bill, law or official action
+  claim: Connecticut HB 5926, "Surcharge on electricity used by data centers" (2025 session). Sponsors: Brandon Chafee (Democratic). Status: failed on 2025-06-04. Referred to the Energy and Technology Committee in Jan. 2025; no further action, so it died when the 2025 session ended. What it does: Would add a surcharge on electricity used by data centers.
+  date given: 2025-06-04
+  source we cited (may be secondary): https://prdext3.cga.ct.gov/2025/cbs/H/pdf/HB-5926.pdf
+
+- id: ct-sb1292
+  type: bill, law or official action
+  claim: Connecticut SB 1292, "Study of energy efficiency for AI data centers" (2025 session). Sponsors: Raised by the Energy and Technology Committee.. Status: failed on 2025-04-07. Turned into a study of energy efficiency standards for AI data centers and approved by the Energy and Technology Committee 24-0 on Mar. 18, 2025; given a file number Apr. 7, 2025, with no floor vote, so it died. What it does: Would study energy efficiency for AI data centers.
+  date given: 2025-04-07
+  source we cited (may be secondary): https://prdext3.cga.ct.gov/2025/cbs/S/pdf/SB-1292.pdf
+
+- id: fr-pjl-simplification
+  type: bill, law or official action
+  claim: France Law of May 26, 2026 (government bill), "Law simplifying economic life (includes fast-track for data centers)" (Parliament, 2024-2026). Sponsors: Government bill.. Status: enacted on 2026-05-26. Promulgated May 26, 2026 and published in the Journal officiel May 27, after the Constitutional Council struck out about 25 unrelated articles on May 21. What it does: Among many simplification measures, lets industrial-scale data centers that meet set conditions (including on water) be designated projects of major national interest by decree, which speeds up siting and grid connection.
+  date given: 2026-05-26
+  source we cited (may be secondary): https://www.vie-publique.fr/loi/293913-entreprises-projet-de-loi-de-simplification-de-la-vie-economique
+
+- id: mi-hb4047-4048
+  type: bill, law or official action
+  claim: Michigan HB 4047-4048 (PA 11 and PA 12 of 2025), "Intimate deepfake acts" (2025-2026 session). Sponsors: Matt Bierlein (Republican), Penelope Tsernoglou (Democratic). Status: enacted on 2025-08-26. Effective date from a secondary tracker; verify. What it does: Add a civil cause of action and criminal penalties for intimate deepfakes. Effective Aug. 26, 2025.
+  date given: 2025-08-26
+  source we cited (may be secondary): https://imiel.dev/explore/us-ai-legislation-2026/michigan/
+
+- id: pl-d-chips#1
+  type: evidence for the Democratic party line
+  claim: Schumer accused Trump of defending Nvidia's CEO at the cost of national security.
+  date given: 2026-11-10
+  source we cited (may be secondary): https://thedailyguardian.com/business/schumer-says-congress-must-have-answers-on-trump-defense-of-nvidia-ceo-773542/

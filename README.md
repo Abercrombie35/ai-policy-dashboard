@@ -69,6 +69,12 @@ Built:
   Omnibus; election dates and context, sourced. Boxes abroad are tinted by
   bloc (pink left, amber centre, teal right, brown far right), not by the U.S.
   party colours.
+- Voter priorities (src/data/voter-priorities.json): on each race page, a bar
+  chart of the issues that mattered most to voters in that state or country,
+  with AI or data centers highlighted when they were an option, plus polls that
+  asked about AI directly; a cross-race summary on the Policy analysis page.
+- Public opinion by party (src/data/public-opinion.json): Gallup and Pew
+  findings on AI, by party, charted on the Party comparison page.
 - Claim checks (src/data/verification.json): one result per claim (confirmed,
   corrected, partly confirmed, not confirmed, not yet checked, or not a
   checkable fact), with the confirming reports. Shown as a tiny note on boxes
@@ -167,6 +173,11 @@ All data lives in src/data/:
   question, each with dated, sourced evidence.
 - legislation.json: state and federal AI bills, plus French and EU laws
   ("country": "FR" or "EU" instead of "state").
+- voter-priorities.json: published polls on voters' top issues per race
+  ("kind": "issue-priorities", with "aiOffered" true, false or null when only
+  the top issues were published) and polls that asked about AI ("ai-question").
+- public-opinion.json: Gallup and Pew findings by party, with each
+  organisation's terms of use.
 - verification.json: the result of checking each claim against other
   published reports, with those reports (kept apart from the records so the
   race files are never edited).

@@ -180,6 +180,33 @@ function MethodsView() {
       </section>
 
       <section>
+        <h3>Voter priorities and public opinion</h3>
+        <p>
+          Two kinds of poll results sit beside the candidate and legislative records. They describe voters, not
+          candidates, and are shown as context, not as predictions:
+        </p>
+        <ul>
+          <li>
+            <strong>How much AI mattered to voters</strong> (each race page, the state and country pop-ups, and the Policy
+            analysis page): the most recent published poll in the race's state or country on which issues mattered most,
+            with AI or data centers highlighted when they were an option, plus any poll that asked about AI directly. Where
+            no published poll asked, the page says so; nothing is estimated. State polls stand in for the CT-4 House race
+            because no district poll was found.
+          </li>
+          <li>
+            <strong>What each party's voters think about AI</strong> (Party comparison page): Gallup and Pew Research Center
+            findings broken down by party. Figures are cited with the publication date and a link, as both organisations'
+            terms allow; the charts are drawn by this project and no Gallup or Pew chart is reproduced.
+          </li>
+        </ul>
+        <p>
+          Each poll records the pollster, field dates, sample, margin of error and question wording as reported, and is
+          checked like every other claim. Charts highlight one bar (AI) and keep the rest grey, print every value, and have a
+          table view; the party charts use the party colours with a legend.
+        </p>
+      </section>
+
+      <section>
         <h3>Codebook ({codebook.version})</h3>
         <p>{codebook.status}</p>
         <div className="table-wrap" role="region" aria-label="Codebook dimensions and categories" tabIndex={0}>
