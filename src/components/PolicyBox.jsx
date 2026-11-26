@@ -45,7 +45,11 @@ export function CheckNote({ id, className = 'policy-check' }) {
   const check = checkOf(id);
   const info = check && CHECK_RESULTS[check.result];
   if (!info?.short) return null;
-  const detail = [check.note, check.unconfirmed?.length ? `Not confirmed: ${check.unconfirmed.join('; ')}.` : '']
+  const detail = [
+    check.note,
+    check.unconfirmed?.length ? `Not confirmed: ${check.unconfirmed.join('; ')}.` : '',
+    check.method === 'chatgpt-primary-source' ? `Checked against the primary source with ChatGPT web browsing, relayed by the project owner (${check.checkedOn}).` : '',
+  ]
     .filter(Boolean)
     .join(' ');
   return (
@@ -66,9 +70,10 @@ export function makeSourceIndex(records) {
     if (!url) continue;
     if (!byUrl.has(url)) {
       byUrl.set(url, list.length + 1);
-      list.push({ n: list.length + 1, source: r.source, also: [] });
+      list.push({ n: list.length + 1, source: r.source, also: [], primary: false });
     }
     const entry = list[byUrl.get(url) - 1];
+    if (r.confidence === 'high') entry.primary = true;
     const check = checkOf(r.id);
     if (check && ['confirmed', 'corrected', 'partly-confirmed'].includes(check.result)) {
       for (const s of check.sources || []) {
@@ -119,10 +124,11 @@ export function SourceList({ index, refPrefix }) {
   if (index.list.length === 0) return null;
   return (
     <ol className="source-list" aria-label="Sources">
-      {index.list.map(({ n, source, also }) => (
+      {index.list.map(({ n, source, also, primary }) => (
         <li key={n} id={`${refPrefix}-${n}`}>
           <span className="src-n">[{n}]</span>{' '}
           <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title || source.url}</a>
+          {primary && <span className="src-primary" title="Wording and date checked against this primary source (High confidence)"> · primary source checked</span>}
           {also.length > 0 && (
             <span className="src-check">
               {' '}· confirmed by{' '}

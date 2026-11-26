@@ -27,3 +27,11 @@ What Claude does with your results:
 - "partly-verified" or "not-found": stays Low, with the tiny note on the site.
 - Every change records the method: "checked against the primary source with ChatGPT (web browsing), relayed by
   the project owner on [date]", so readers can see how each claim was verified.
+
+## Progress
+
+| Batch | Claims | Relayed | Result |
+|---|---|---|---|
+| 01 | 12 | 2026-11-26 | 8 High (7 corrected to match the primary source, 1 verified), 4 Medium (2 dates unconfirmed, 2 resting partly on news reports) |
+
+ChatGPT's replies are kept in `results/` (one file per batch) as the record of each check.

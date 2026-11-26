@@ -141,7 +141,13 @@ export const checkOf = (id) => verificationData.checks[id] || null;
 // Counts of factual claims checked and confirmed (or corrected), for the home page.
 export function checkSummary() {
   const all = Object.values(verificationData.checks).filter((c) => c.result !== 'not-checkable');
-  return { total: all.length, confirmed: all.filter((c) => c.result === 'confirmed' || c.result === 'corrected').length };
+  const ok = (c) => c.result === 'confirmed' || c.result === 'corrected';
+  return {
+    total: all.length,
+    confirmed: all.filter(ok).length,
+    // High confidence: wording and date checked against the primary source.
+    primary: all.filter((c) => ok(c) && c.level === 'high').length,
+  };
 }
 export const filterDrafts = (records, includeDrafts) => (includeDrafts ? records : records.filter(isVerified));
 

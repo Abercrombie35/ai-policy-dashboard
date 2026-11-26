@@ -198,6 +198,12 @@ Checking claims (verification.json):
   round of 2026-11-24).
 - To raise a claim to High: open the primary source, confirm wording and
   date, then set "confidence": "high" and follow the steps below.
+- Primary-source checks relayed from ChatGPT (web browsing): the prompts are
+  in documents/chatgpt-verification (batch-NN.txt) and the replies in
+  documents/chatgpt-verification/results. Imported checks carry "method":
+  "chatgpt-primary-source", the batch, the source, a verbatim quote and the
+  level given (High with a primary source and confirmed date; otherwise
+  Medium or Low).
 
 To verify a record:
 1. Find the primary source and check the wording, speaker, and date.

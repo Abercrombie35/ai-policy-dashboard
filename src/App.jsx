@@ -124,7 +124,8 @@ function MapPage({ selectedState, selectedCountry }) {
           <span className="label">Sourced records</span>
           <strong>{sourced}</strong>
           <span className="stat-sub">
-            Each cites its source.{checks.total > 0 && <> {checks.confirmed} of {checks.total} claims confirmed by other reports;</>}{' '}
+            Each cites its source.{checks.total > 0 && <> {checks.confirmed} of {checks.total} claims confirmed by other reports
+            {checks.primary > 0 && <>, {checks.primary} at High confidence (primary source)</>};</>}{' '}
             the rest are marked · {drafts} hidden draft{drafts === 1 ? '' : 's'}
           </span>
         </div>

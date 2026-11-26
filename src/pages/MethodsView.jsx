@@ -55,6 +55,13 @@ function MethodsView() {
         </ul>
         <h4>How each claim was checked ({verification.checkedOn})</h4>
         <p>{verification.method}</p>
+        {verification.relays?.length > 0 && (
+          <p>
+            Primary-source checks relayed so far: {verification.relays.map((r) => `batch ${r.batch} (${r.claims} claims, ${r.date})`).join(', ')}.{' '}
+            {Object.values(verification.checks).filter((c) => c.method === 'chatgpt-primary-source').length} claims checked this way; see
+            the files in the project's documents/chatgpt-verification folder for the prompts and replies.
+          </p>
+        )}
         <div className="table-wrap" role="region" aria-label="Check results" tabIndex={0}>
           <table className="data-table">
             <thead><tr><th scope="col">Result</th><th scope="col">Claims</th><th scope="col">Shown as</th><th scope="col">Meaning</th></tr></thead>

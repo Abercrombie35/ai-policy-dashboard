@@ -1688,14 +1688,14 @@
       "candidateId": "jim-himes",
       "kind": "statement",
       "labelType": "source-summary",
-      "text": "At the same event, said he did not know whether claims that China and others were stoking opposition to U.S. data centers were true.",
+      "text": "At the same event, said of claims that China and others were stoking opposition to U.S. data centers: \"I don't know if that's true, but it has a credible feeling to it.\"",
       "source": {
-        "title": "South China Morning Post (via The Star): Top Democrat says chip restrictions are \"key lever\" for US AI edge over China",
-        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/26/top-democrat-says-chip-restrictions-are-key-lever-for-us-ai-edge-over-china"
+        "title": "Brookings: AI on the Ballot, data centers and the 2026 midterms (transcript, Oct. 21, 2026)",
+        "url": "https://www.brookings.edu/wp-content/uploads/2026/10/aiet_20261021_ai_midterms_transcript.pdf"
       },
       "publishedDate": "2026-10-21",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-26",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "unclear",
         "levelOfGovernment": [
@@ -1715,7 +1715,7 @@
       "categories": [
         "dc-security"
       ],
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -1736,9 +1736,14 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (The Star (SCMP), Brookings). Reports confirm Himes addressed claims of foreign-amplified data center opposition at the Brookings event (Oct. 21, 2026, as corrected in the first round), but his answer that he did not know if they were true was not shown. Not confirmed: That he said he did not know whether those claims were true (his answer was not shown in two more searches)."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): confirmed, High confidence. Confirmed in the Brookings transcript of the Oct. 21, 2026 event, which now serves as the source."
         }
       ],
-      "dateNote": "Said at a Brookings event on Oct. 21, 2026; reported by the South China Morning Post on Oct. 26."
+      "dateNote": "Said at a Brookings event on Oct. 21, 2026."
     },
     {
       "id": "cr-ct-house04-himes-3",
@@ -1973,14 +1978,13 @@
       "candidateId": "xavier-becerra",
       "kind": "statement",
       "labelType": "source-summary",
-      "text": "Said data centers should cover their own energy costs and argued for a predictable regulatory policy that supports data centers using clean energy.",
+      "text": "His campaign's AI plan says data centers should be powered with clean energy, cover the costs of their own energy needs and meet environmental disclosure requirements, in return for policy certainty for the industry.",
       "source": {
-        "title": "Tech Times: California governor race 2026, Becerra and Hilton split sharply on AI regulation",
-        "url": "https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm"
+        "title": "Becerra campaign: Artificial Intelligence",
+        "url": "https://www.xavierbecerra2026.com/priorities/ai/"
       },
-      "publishedDate": "2026-08-15",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -2002,7 +2006,7 @@
         "dc-ratepayer",
         "dc-water-environment"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2018,8 +2022,15 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Becerra campaign, Tech Times, StateScoop). Becerra's data-center position is confirmed on his campaign page, and the cited Tech Times article dated Aug. 15, 2026 was found, but the search results did not show its data-center passage. Not confirmed: That the Aug. 15, 2026 Tech Times article itself carries the data-center energy-cost and clean-energy statement (the article was found, but its data-center passage was not shown; the position comes from his campaign platform)."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): confirmed, Medium confidence. Confirmed on his campaign's AI page, which now serves as the source: data centers powered with clean energy, covering their own energy costs and meeting environmental disclosure rules, in return for policy certainty. The page is undated, so the Aug. 15 date is not confirmed."
         }
-      ]
+      ],
+      "dateNote": "Campaign AI plan (page undated; reported Aug. 15, 2026)",
+      "sortDate": "2026-08"
     },
     {
       "id": "cr-ca-gov-hilton-1",
@@ -2084,16 +2095,14 @@
       "candidateId": "steve-hilton",
       "kind": "position",
       "labelType": "source-summary",
-      "text": "Wants permitting for data centers made easier and a pro-development policy, while letting localities decide whether and where facilities are built; would expand energy infrastructure to serve them.",
+      "text": "Wants more electricity generation so that data center demand \"would be less of an issue\", and data centers sited farther from homes to limit noise. A policy analyst describes his plan as easing data center permits.",
       "source": {
-        "title": "StateScoop: How do California's gubernatorial candidates stack up on AI and tech policy?",
-        "url": "https://statescoop.com/california-gubernatorial-candidates-ai-tech-policy/"
+        "title": "PBS (KQED Political Breakdown): Steve Hilton's strategy to win over California",
+        "url": "https://www.pbs.org/video/steve-hiltons-strategy-to-win-over-california-uxhykl/"
       },
-      "publishedDate": null,
-      "dateNote": "During the 2026 campaign",
-      "sortDate": "2026-08",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "publishedDate": "2026-09-04",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -2116,7 +2125,7 @@
         "dc-permitting",
         "dc-local-control"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2132,6 +2141,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (IVN, StateScoop, PBS). Hilton's support for easier data center permitting and more energy supply is confirmed, but no source shows him saying localities should decide whether and where data centers are built. Not confirmed: That he would let localities decide whether and where data centers are built (no statement on local authority found in two more searches)."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): corrected, Medium confidence. Corrected: in interviews (PBS Political Breakdown, Sept. 4, 2026; KQED) Hilton backs more electricity generation so data center demand is \"less of an issue\" and siting data centers farther from homes; no statement giving localities the decision was found, so that is removed. Easier permits are attributed to him only by a policy analyst."
         }
       ]
     },
@@ -2141,16 +2155,14 @@
       "candidateId": "steve-hilton",
       "kind": "position",
       "labelType": "source-summary",
-      "text": "Called for \"an immediate pause\" on AI technology in public school classrooms until a safety review is completed, opposing a push for state AI tools in education.",
+      "text": "In the Sept. 30 debate, called for \"an immediate pause on AI in the classroom\", citing concerns about \"cognitive stunting\" in children's learning, and has called for a thoughtful evaluation.",
       "source": {
-        "title": "San Francisco Examiner: California gubernatorial candidates talk tech policy",
-        "url": "https://www.sfexaminer.com/news/politics/california-gubernatorial-candidates-talk-tech-policy/article_fbb021fb-d56d-4a47-a9a2-bbd025d0ee32.html"
+        "title": "CNN transcript: California governor debate (Sept. 30, 2026)",
+        "url": "https://prod.transcripts.cnn.com/show/skc/date/2026-09-30/segment/01"
       },
-      "publishedDate": null,
-      "dateNote": "During the 2026 campaign",
-      "sortDate": "2026-09",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "publishedDate": "2026-09-30",
+      "lastVerified": "2026-11-26",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2173,7 +2185,7 @@
       "categories": [
         "ai-child-safety"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2189,6 +2201,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (CalMatters, Contra Costa News, Chalkbeat). Hilton's call for an immediate pause on AI in classrooms is confirmed; coverage frames it as getting Big Tech out of classrooms, and no source frames it as opposing a state AI-tools push. Not confirmed: That the pause was framed as opposing a push for state AI tools in education (coverage frames it as curbing Big Tech's influence over curricula and school policy)."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): corrected, High confidence. Corrected to his words in the Sept. 30, 2026 CNN debate: \"an immediate pause on AI in the classroom\", citing \"cognitive stunting\", with a call for a thoughtful evaluation. A formal safety review as the condition, and opposition to a particular state AI tool, were not found and are removed."
         }
       ]
     },
@@ -2198,14 +2215,13 @@
       "candidateId": "jordan-bardella",
       "kind": "statement",
       "labelType": "source-summary",
-      "text": "Calls AI a major question of national sovereignty. Coverage finds the RN has few detailed AI measures so far, focusing mainly on taxing Big Tech and on public procurement.",
+      "text": "Called AI \"a major question of national sovereignty\", as reported by AFP.",
       "source": {
-        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
-        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+        "title": "Fortuneo (AFP): Guerre de l'IA, souveraineté: la suspension d'Anthropic s'invite dans la présidentielle française",
+        "url": "https://bourse.fortuneo.fr/actualites-amp/-guerre-de-l-ia-souverainete-la-suspension-d-anthropic-s-invite-dans-la-presidentielle-francaise-5175598"
       },
-      "publishedDate": "2026-10-05",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "unclear",
         "levelOfGovernment": [
@@ -2226,7 +2242,7 @@
       "categories": [
         "ai-sovereignty"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2242,8 +2258,15 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Fortuneo (AFP), Le Big Data, Next.ink). The sovereignty statement and the RN's procurement stance are confirmed, but no source mentions an RN Big Tech tax or a 'few detailed measures' finding; note that Le Pen, not Bardella, is the declared RN candidate since July 2026. Not confirmed: Taxing Big Tech as a main RN AI measure (RN tax proposals found concern wealth and dividends, not tech firms); Coverage finding the RN has few detailed AI measures; Date 2026-10-05 (date of the Maddyness coverage; the date of the AFP-reported statement was not found); Bardella's label as RN presidential candidate: Marine Le Pen declared her own candidacy on July 7, 2026, with Bardella as her intended prime minister."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): corrected, Medium confidence. Corrected: only his description of AI as a major question of national sovereignty is kept, as reported by AFP; the claim that the RN has few AI measures focused on taxing Big Tech was not confirmed and is removed. Marine Le Pen, not Bardella, is the RN candidate; Bardella is her intended prime minister (RTL, Aug. 29, 2026)."
         }
-      ]
+      ],
+      "dateNote": "Reported by AFP during the 2026 campaign",
+      "sortDate": "2026-10"
     },
     {
       "id": "cr-fr-philippe-1",
@@ -2251,14 +2274,13 @@
       "candidateId": "edouard-philippe",
       "kind": "position",
       "labelType": "source-summary",
-      "text": "AI plan: double France's AI computing capacity within five years, raise engineers trained each year from 40,000 to 100,000, create a \"right to retraining\" for workers threatened by AI, and use state and local purchasing to back European champions such as Mistral.",
+      "text": "AI plan: build a sovereign European AI infrastructure that doubles \"our\" computing capacity in five years, raise the number of engineers trained each year from 40,000 to 100,000, create a right to retraining for threatened occupations, and back European champions such as Mistral through a \"Buy European Tech Act\" and joint purchasing by EU member states.",
       "source": {
-        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
-        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+        "title": "Philippe campaign: Pour une France plus conquérante (archived Sept. 26, 2026)",
+        "url": "https://web.archive.org/web/20260926113413/https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante"
       },
-      "publishedDate": "2026-10-05",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-26",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -2288,7 +2310,7 @@
         "ai-innovation",
         "ai-workers"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2304,8 +2326,15 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (75secondes, PitchBook, Ecostylia). Two further searches (French and English) found no reliable source for Philippe's 'right to retraining', for state-and-local purchasing, or for whether the 100,000 engineers are French or European; the core pledges confirmed in round 1 stand. Not confirmed: 'Right to retraining' for workers threatened by AI (found only on a low-reliability aggregator page in round 1; not found this round); Use of state AND local purchasing specifically; Whether the 100,000 figure is French or European engineers."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): corrected, High confidence. Corrected to his campaign plan (archived Sept. 26, 2026): a sovereign European AI infrastructure doubling \"our\" computing capacity in five years, 40,000 to 100,000 engineers a year, a right to retraining for threatened occupations, and support for champions such as Mistral through a \"Buy European Tech Act\" and joint purchasing by EU member states. Purchasing by French local authorities was not found and is removed."
         }
-      ]
+      ],
+      "dateNote": "In his campaign plan by Sept. 26, 2026 (archived copy)",
+      "sortDate": "2026-09"
     },
     {
       "id": "cr-fr-philippe-2",
@@ -2361,12 +2390,11 @@
       "labelType": "source-summary",
       "text": "Wants France to control the entire AI value chain, treats AI training as a basic skill, and lists AI among his four \"major projects\" alongside schools, wages and borders.",
       "source": {
-        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
-        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+        "title": "Attal campaign: Gabriel Attal et l'IA, souveraineté et formation",
+        "url": "https://attalpresident.fr/programme/intelligence-artificielle"
       },
-      "publishedDate": "2026-10-05",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -2387,7 +2415,7 @@
         "ai-sovereignty",
         "ai-workers"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2403,8 +2431,15 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Sud Radio, Europe 1, Boursedirect (AFP)). French and English searches again confirmed AI as one of Attal's four priorities and his mass AI-training pledge, but found nothing on controlling the whole AI value chain or a 'basic skill' framing. Not confirmed: Wants France to control the entire AI value chain (no source ties the 'value chain' framing to Attal); Exact 'basic skill' framing of AI training."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): confirmed, Medium confidence. Confirmed on his campaign's AI programme page, which now serves as the source: mastery of the whole AI chain, AI training as \"a new form of literacy\", and AI among his four priorities. The page is undated, so the Oct. 5 date is not confirmed."
         }
-      ]
+      ],
+      "dateNote": "Campaign programme page (undated; reported Oct. 5, 2026)",
+      "sortDate": "2026-10"
     },
     {
       "id": "cr-fr-retailleau-1",
@@ -2518,16 +2553,14 @@
       "candidateId": "jean-luc-melenchon",
       "kind": "position",
       "labelType": "source-summary",
-      "text": "Treats data centers, computing and cloud as sovereignty infrastructure as important as energy, transport or telecoms, and proposes a public digital and AI hub.",
+      "text": "His movement's parliamentary groups (June 1, 2026) proposed \"a large public hub for digital technology and AI\" and described data centers, computing and cloud as infrastructure as strategic as energy, transport and telecoms; his own 2027 programme proposes a public cloud of interconnected public data centers.",
       "source": {
-        "title": "WYP.agency: Jean-Luc Mélenchon on AI, 2027 proposals and statements",
-        "url": "https://wyp.agency/en/france-2027-election-ai/candidates/jean-luc-melenchon/"
+        "title": "La France insoumise: Choose France, Macron transforme la France en colonie numérique des géants de l'IA (June 1, 2026)",
+        "url": "https://lafranceinsoumise.fr/2026/06/01/choose-france-macron-transforme-la-france-en-colonie-numerique-des-geants-mondiaux-de-lia/"
       },
-      "publishedDate": null,
-      "dateNote": "During the 2026 campaign",
-      "sortDate": "2026-07",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "publishedDate": "2026-06-01",
+      "lastVerified": "2026-11-26",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2549,7 +2582,7 @@
         "ai-sovereignty",
         "ai-innovation"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2565,6 +2598,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Mélenchon 2027, Next.ink, FrenchWeb). The programme does treat digital and telecom infrastructure as sovereignty assets to be brought under public control and calls for a public cloud of public data centers, but the energy/transport comparison and a 'public digital and AI hub' were not found. Not confirmed: An explicit comparison of data centers, computing and cloud with energy or transport infrastructure; A proposed 'public digital and AI hub' (pôle public) by that name."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): corrected, High confidence. Corrected attribution: the public digital and AI hub and the comparison with energy, transport and telecoms come from LFI's parliamentary groups (June 1, 2026); Mélenchon's own 2027 programme proposes a public cloud of interconnected public data centers."
         }
       ]
     },
@@ -2572,35 +2610,40 @@
       "id": "cr-fr-tondelier-1",
       "raceId": "fr-president-2027",
       "candidateId": "marine-tondelier",
-      "kind": "statement",
+      "kind": "position",
       "labelType": "source-summary",
-      "text": "Criticizes the environmental cost of data centers.",
+      "text": "Her party's 2027 programme (Les Écologistes, July 2026) calls for assessing the impact of data centers and for planning their electricity use nationally and by territory, to anticipate conflicts with other uses, drinking water and land.",
       "source": {
-        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
-        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+        "title": "Les Écologistes: Pour une prospérité écologique, programme 2027 (July 2026)",
+        "url": "https://static1.squarespace.com/static/68b9a0c719c7a969b63b8a1a/t/6a967e020e8d32388db78eec/1788247554101/Programme%2B2027.pdf"
       },
-      "publishedDate": "2026-10-05",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "publishedDate": "2026-07",
+      "lastVerified": "2026-11-26",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
           "international"
         ],
-        "instruments": [],
+        "instruments": [
+          "disclosure"
+        ],
         "issueAreas": [
           "energy-data-centers"
         ],
-        "specificity": "general-rhetoric",
+        "specificity": "concrete-proposal",
         "evidenceType": "reported",
         "coder": "model-draft",
         "reviewed": false
       },
-      "stances": {},
+      "stances": {
+        "data-centers": "conditional"
+      },
       "categories": [
-        "dc-water-environment"
+        "dc-water-environment",
+        "dc-transparency"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2611,6 +2654,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24: not-confirmed. Four searches (English and French) found no source quoting Tondelier on data centers' environmental cost; the only related item is Next.ink's paywalled report that Les Écologistes published a 'carnet de doctrine numérique' (a 'technodiversité' model) in July as a framework for Tondelier."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): corrected, High confidence. Corrected attribution and date: the position comes from her party's 2027 programme (Les Écologistes, July 2026, p. 82), which calls for impact assessments of data centers and for planning their electricity use nationally and by territory, citing competing uses, drinking water and land. No personal statement by Tondelier on Oct. 5 was found."
         }
       ]
     },
@@ -2620,14 +2668,14 @@
       "candidateId": "marine-tondelier",
       "kind": "statement",
       "labelType": "source-summary",
-      "text": "Prefers smaller, specialized, open-source AI models over ever-larger systems.",
+      "text": "Her party's digital policy paper (Les Écologistes, July 2026) favors \"smaller, specialized models open to inspection\" rather than a handful of giant, opaque systems.",
       "source": {
-        "title": "Maddyness: 2027 presidential election, what the candidates are really proposing on AI",
-        "url": "https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/"
+        "title": "Les Écologistes: Technodiversités, reprendre la main sur le numérique (July 2026)",
+        "url": "https://lesecologistes.fr/document/3NmF2env1NMUuFuPynpd5t/livretnumerique.pdf"
       },
-      "publishedDate": "2026-10-05",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "publishedDate": "2026-07",
+      "lastVerified": "2026-11-26",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2646,7 +2694,7 @@
       "categories": [
         "ai-sovereignty"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2657,6 +2705,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24: not-confirmed. The same four searches found no statement by Tondelier on small, specialized or open-source AI models; the Ecologists' 'technodiversité' digital doctrine (Next.ink, paywalled) is the closest lead but its content could not be seen."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): corrected, High confidence. Corrected wording and attribution: her party's digital policy paper (Les Écologistes, July 2026, p. 27) favors \"smaller, specialized models open to inspection\" rather than a handful of giant, opaque systems; it does not say \"open-source\"."
         }
       ]
     },

@@ -2572,13 +2572,19 @@
         {
           "name": "Steve Padilla",
           "party": "Democratic",
-          "role": "sponsor",
+          "role": "author",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Jerry McNerney",
+          "party": "Democratic",
+          "role": "author",
           "linkedCandidateId": null
         }
       ],
       "status": "enacted",
       "statusDate": "2026-09-21",
-      "statusNote": "Signed Sept. 21, 2026.",
+      "statusNote": "Signed Sept. 21, 2026 (Chapter 438); takes effect Jan. 1, 2027; tariffs due by Jan. 1, 2028.",
       "categories": [
         "dc-ratepayer"
       ],
@@ -2589,8 +2595,8 @@
         "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-26",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2607,7 +2613,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2623,6 +2629,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Governor's office, Digital Policy Alert, Foley & Lardner). SB 886 was signed Sept. 21, 2026 as Chapter 438 in the seven-bill package and requires PUC transmission-level data center tariffs, with a legal alert giving a Jan. 1, 2028 deadline; the bill's short title was not found. Author confirmed: Sen. Steve Padilla (D). Not confirmed: Short title 'California Technology Innovation and Ratepayer Protection Act' (not shown in any result)."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): corrected, High confidence. Corrected sponsors: SB 886 is by Sens. Steve Padilla and Jerry McNerney (both D). Signed Sept. 21, 2026 as Chapter 438; takes effect Jan. 1, 2027, with tariffs due by Jan. 1, 2028."
         }
       ]
     },
@@ -2695,7 +2706,7 @@
       "state": "CA",
       "session": "2025-2026 session",
       "billNumber": "SB 1168",
-      "title": "Data center rates during demand spikes",
+      "title": "Data centers: rate structures",
       "sponsors": [
         {
           "name": "Jerry McNerney",
@@ -2706,19 +2717,19 @@
       ],
       "status": "enacted",
       "statusDate": "2026-09-21",
-      "statusNote": "Signed Sept. 21, 2026.",
+      "statusNote": "Signed Sept. 21, 2026 (Chapter 440 of 2026).",
       "categories": [
         "dc-ratepayer"
       ],
-      "summary": "Described as making data centers pay the higher cost of electricity when demand spikes.",
+      "summary": "Requires the Public Utilities Commission to assess options for rate structures that address the rate impacts of data centers (grid costs, buying power to serve added load, pressure on household rates). It does not itself set prices.",
       "labelType": "source-summary",
       "source": {
-        "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
-        "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
+        "title": "California Senate: Summary of chaptered and vetoed legislation, 2026",
+        "url": "https://sfa.senate.ca.gov/system/files/2026-11/sig-leg-2026-final.pdf"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-26",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2735,7 +2746,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2751,6 +2762,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Governor's office, Utility Dive, CalMatters Digital Democracy). SB 1168 (McNerney) was signed Sept. 21, 2026 as a rate-structure assessment so data centers bear their own energy and upgrade costs; no source describes it as charging data centers the higher price of power during demand spikes. Author added: Sen. Jerry McNerney (D). Not confirmed: Description as making data centers pay the higher cost of electricity when demand spikes (not found; coverage speaks of load increases and upgrade costs, and an earlier version was a per-kWh wildfire surcharge)."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-26 (batch 01): corrected, High confidence. Corrected: SB 1168 (\"Data centers: rate structures\", Chapter 440 of 2026) requires the Public Utilities Commission to assess rate structures for the rate impacts of data centers; it does not itself charge data centers more when demand spikes."
         }
       ]
     },
