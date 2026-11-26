@@ -3,7 +3,9 @@ import { trackers, usBills, jurisdictionLabel, filterDrafts, domainsOf } from '.
 import { useDrafts } from '../lib/drafts';
 import { SourceList } from './PolicyBox';
 
-const JURISDICTIONS = ['US', 'CA', 'CT', 'MI', 'TX'];
+// "ALL" holds the trackers' national totals across the states.
+const JURISDICTIONS = ['ALL', 'US', 'CA', 'CT', 'MI', 'TX'];
+const label = (j) => (j === 'ALL' ? 'All states' : jurisdictionLabel(j));
 
 // How this dataset's bill list compares with the three trackers named in the
 // proposal: their published counts per jurisdiction, how many of our bills
@@ -44,11 +46,11 @@ function TrackerCoverage() {
           </thead>
           <tbody>
             {JURISDICTIONS.map((j) => {
-              const mine = ours.filter((b) => b.state === j);
+              const mine = j === 'ALL' ? ours.filter((b) => b.state !== 'US') : ours.filter((b) => b.state === j);
               const dc = mine.filter((b) => domainsOf(b).includes('data-centers')).length;
               return (
                 <tr key={j}>
-                  <th scope="row">{jurisdictionLabel(j)}</th>
+                  <th scope="row">{label(j)}</th>
                   <td>
                     {mine.length} bills ({dc} on data centers)
                     <div className="sub-note">
@@ -64,7 +66,7 @@ function TrackerCoverage() {
                         ) : (
                           counts.map((c) => (
                             <div key={`${c.measure}-${c.year}`} className="tracker-count">
-                              <strong>{c.count.toLocaleString('en-US')}</strong> {c.measure}, {c.year}
+                              {c.prefix ? `${c.prefix} ` : ''}<strong>{c.count.toLocaleString('en-US')}</strong> {c.measure}, {c.year}
                               <sup className="policy-ref"><a href={`#${refPrefix}-${ref(c.source)}`}>[{ref(c.source)}]</a></sup>
                               {c.status === 'single-source' && <span className="check-inline" title="Found in one report only">Partly verified</span>}
                             </div>

@@ -376,7 +376,9 @@ for (const [id, t] of Object.entries(trackerData.trackers || {})) {
 (trackerData.counts || []).forEach((c, i) => {
   const w = `trackers.json counts[${i}]`;
   if (!TRACKERS.has(c.tracker)) fail(w, `unknown tracker "${c.tracker}"`);
-  if (!JURISDICTIONS.has(c.jurisdiction)) fail(w, `unknown jurisdiction "${c.jurisdiction}"`);
+  // "ALL" is a national total across the states.
+  if (c.jurisdiction !== 'ALL' && !JURISDICTIONS.has(c.jurisdiction)) fail(w, `unknown jurisdiction "${c.jurisdiction}"`);
+  if (c.prefix != null && !['more than', 'at least', 'about'].includes(c.prefix)) fail(w, `unknown prefix "${c.prefix}"`);
   if (!Number.isInteger(c.count) || c.count < 0) fail(w, 'count must be a whole number');
   if (!c.measure || !c.year) fail(w, 'needs measure and year');
   if (!c.source?.url) fail(w, 'needs a source URL');
