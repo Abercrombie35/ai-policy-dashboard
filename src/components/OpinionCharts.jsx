@@ -15,7 +15,7 @@ const fmtPct = (v) => (v == null ? 'n/a' : `${Number.isInteger(v) ? v : v.toFixe
 const fmtDates = (p) => {
   const opts = { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' };
   const d = (x) => (!x ? null : /^\d{4}-\d{2}-\d{2}$/.test(x) ? new Date(`${x}T12:00:00Z`).toLocaleDateString('en-US', opts) : x);
-  if (!p.fieldStart && !p.fieldEnd) return 'dates not reported';
+  if (!p.fieldStart && !p.fieldEnd) return p.publishedDate ? `published ${d(p.publishedDate)}` : 'dates not reported';
   if (!p.fieldStart || p.fieldStart === p.fieldEnd) return d(p.fieldEnd || p.fieldStart);
   return `${d(p.fieldStart)} to ${d(p.fieldEnd)}`;
 };
@@ -214,52 +214,72 @@ export function PlaceVoterPriorities({ state, country }) {
   );
 }
 
-// Policy analysis page: where AI ranked in each race's issue poll.
+// Policy analysis page, one row per state or country: whether AI made the
+// voters' top-issue list, then one headline figure from a poll that asked
+// about AI or data centers directly. The headline figures answer different
+// questions, so each is a meter against its own 0-100 track and names its
+// question; they are not ranked against each other.
 export function AiRankSummary() {
   const { includeDrafts } = useDrafts();
-  const rows = races.map((race) => {
-    const polls = visible(pollsForRace(race), includeDrafts);
-    const issuePoll = polls.find((p) => p.kind === 'issue-priorities');
+  const places = [];
+  for (const race of races) {
+    const key = race.state || race.country;
+    let place = places.find((x) => x.key === key);
+    if (!place) {
+      place = { key, name: placeOf(race), offices: [], polls: visible(pollsForRace(race), includeDrafts) };
+      places.push(place);
+    }
+    place.offices.push(race.office.replace('U.S. House (CT-4)', 'CT-4 House'));
+  }
+  const rows = places.map((pl) => {
+    const issuePoll = pl.polls.find((p) => p.kind === 'issue-priorities');
     const ranked = issuePoll ? [...issuePoll.issues].sort((a, b) => b.pct - a.pct) : [];
     const ai = ranked.find((x) => x.ai);
-    const aiAsked = polls.some((p) => p.kind === 'ai-question');
-    return { race, issuePoll, ai, rank: ai ? ranked.indexOf(ai) + 1 : null, of: ranked.length, top: ranked[0], aiAsked };
+    const headlinePoll = pl.polls.find((p) => p.kind === 'ai-question' && p.figures.some((f) => f.headline));
+    const headline = headlinePoll?.figures.find((f) => f.headline);
+    return { ...pl, issuePoll, ranked, ai, headlinePoll, headline };
   });
-  const max = axisMax(rows.filter((r) => r.ai).map((r) => r.ai.pct));
+  const topIssue = (r) => {
+    if (!r.issuePoll) return 'No published issue poll found.';
+    if (r.ai) return `AI ranked ${r.ranked.indexOf(r.ai) + 1} of ${r.ranked.length} (${fmtPct(r.ai.pct)}).`;
+    const why = r.issuePoll.aiOffered === false ? 'AI was not an option' : 'AI was not among the published top issues';
+    return `${why}; top issue: ${r.ranked[0].issue} (${fmtPct(r.ranked[0].pct)}).`;
+  };
   return (
     <section className="voter-priorities summary">
-      <h3>Where AI ranked for voters, race by race</h3>
+      <h3>How much AI mattered to voters, race by race</h3>
       <p className="section-note">
-        From each race's issue poll (details and sources on the race pages). A bar means AI or data centers was an option and
-        shows its share; otherwise the row says what the poll found instead.
+        Did AI or data centers make voters' list of top issues, and what did the same voters say when asked about them
+        directly? Details, question wording and sources are on each race page.
       </p>
-      <div className="bars">
-        {rows.map(({ race, issuePoll, ai, rank, of, top, aiAsked }) => {
-          const label = `${placeOf(race)}: ${race.office}`;
-          if (ai) return <Bar key={race.id} label={label} value={ai.pct} max={max} accent rank={null} />;
-          return (
-            <div key={race.id} className="bar-row no-bar" tabIndex={0}>
-              <span className="bar-label">{label}</span>
-              <span className="bar-none">
-                {issuePoll
-                  ? `${issuePoll.aiOffered === false ? 'AI not an option' : 'AI not among the published top issues'}; top issue: ${top.issue} (${fmtPct(top.pct)})`
-                  : 'No published issue poll found'}
-                {aiAsked ? '; a separate poll asked about AI' : ''}
-              </span>
-            </div>
-          );
-        })}
+      <div className="table-wrap" role="region" aria-label="AI on voters' top-issue lists" tabIndex={0}>
+        <table className="data-table summary-table">
+          <thead><tr><th scope="col">Where</th><th scope="col">Races</th><th scope="col">On the top-issue list?</th></tr></thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={r.key}>
+                <th scope="row">{r.name}</th>
+                <td>{r.offices.join(', ')}</td>
+                <td>{topIssue(r)}<CheckNote id={r.issuePoll?.id} className="check-inline" /></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-      <TableView
-        caption="Where AI ranked for voters in each race"
-        head={['Race', 'AI share', 'AI rank', 'Top issue']}
-        rows={rows.map(({ race, ai, rank, of, top }) => [
-          `${placeOf(race)}: ${race.office}`,
-          ai ? fmtPct(ai.pct) : 'not shown in the poll',
-          ai ? `${rank} of ${of}` : '-',
-          top ? `${top.issue} (${fmtPct(top.pct)})` : 'no poll',
-        ])}
-      />
+      <h4 className="summary-subhead">Asked directly about AI or data centers</h4>
+      <div className="opinion-chart meter-list summary-meters">
+        <div className="bars">
+          {rows.filter((r) => r.headline).map((r) => (
+            <div key={r.key} className="meter-item">
+              <Bar label={`${r.name}: ${r.headline.label}`} value={r.headline.pct} max={100} accent />
+              <p className="meter-source">{r.headlinePoll.pollster}, {fmtDates(r.headlinePoll)}<CheckNote id={r.headlinePoll.id} className="check-inline" /></p>
+            </div>
+          ))}
+        </div>
+        <p className="chart-foot">
+          Each bar answers a different question, so compare them with care. <span className="poll-label">Poll results: context, not predictions.</span>
+        </p>
+      </div>
     </section>
   );
 }
@@ -317,8 +337,9 @@ export function PartyOpinion() {
               <CheckNote id={f.id} className="check-inline" />
             </p>
             <details className="chart-table">
-              <summary>Question wording and table</summary>
+              <summary>Question wording, context and table</summary>
               <p className="chart-question">“{f.question}”</p>
+              {f.context && <p className="chart-context">{f.context}</p>}
               <table className="data-table">
                 <thead><tr><th scope="col">Group</th><th scope="col">Share</th></tr></thead>
                 <tbody>

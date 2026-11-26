@@ -37,11 +37,11 @@ Built from the project proposal and the dashboard as deployed on Nov. 26, 2026 (
 
 | ID | Epic | Story | Pts | Priority | Status | Depends on |
 |---|---|---|---|---|---|---|
-| AIPD-111 | Track A: 2026 Senate candidates | Voter priorities: where AI ranks for voters in each race | 8 | **Must-Must** | To do | AIPD-211 |
-| AIPD-112 | Dashboard experience and context | Bar charts: importance of AI against the top issues, per race | 5 | **Must-Must** | To do | AIPD-111 |
+| AIPD-111 | Track A: 2026 Senate candidates | Voter priorities: where AI ranks for voters in each race | 8 | **Must-Must** | Done (Nov. 26) | AIPD-211 |
+| AIPD-112 | Dashboard experience and context | Bar charts: importance of AI against the top issues, per race | 5 | **Must-Must** | Done (Nov. 26) | AIPD-111 |
 | AIPD-211 | Verification, coding and reliability | Hand-off list and ChatGPT prompt for claims Claude cannot verify | 3 | **Must-Must** | Done (Nov. 26) | - |
 | AIPD-212 | Verification, coding and reliability | Import ChatGPT verification results | 5 | **Must-Must** | To do | AIPD-211 |
-| AIPD-311 | Track B: officeholders and state legislation | Public opinion on AI by party from Gallup and Pew | 5 | **Must-Must** | To do | AIPD-211 |
+| AIPD-311 | Track B: officeholders and state legislation | Public opinion on AI by party from Gallup and Pew | 5 | **Must-Must** | Done (Nov. 26) | AIPD-211 |
 | AIPD-312 | Track B: officeholders and state legislation | Legislation sourced from the IAPP, NCSL and MultiState trackers | 8 | **Must-Must** | To do | AIPD-302 |
 | AIPD-101 | Track A: 2026 Senate candidates | Archive campaign pages before they go offline | 3 | **Must** | To do | - |
 | AIPD-102 | Track A: 2026 Senate candidates | Final race list with published selection criteria | 3 | **Must** | To do | - |
@@ -89,30 +89,32 @@ Built from the project proposal and the dashboard as deployed on Nov. 26, 2026 (
 ### Must-Must (added Nov. 26, 2026)
 
 #### AIPD-111: Voter priorities: where AI ranks for voters in each race
-*Must-Must · 8 points · To do · Proposal: RQ1 (salience), §7 (polling as context) · Depends on: AIPD-211*
+*Must-Must · 8 points · Done (Nov. 26) · Proposal: RQ1 (salience), §7 (polling as context) · Depends on: AIPD-211*
 
 As a researcher, I want published polls showing how voters in each tracked race ranked AI (and data centers) among the issues deciding their vote, so that voter salience can be set beside how much candidates talk about AI.
 
 Acceptance criteria:
-- [ ] For each of the 8 races (7 U.S. and France), published polls found that ask voters their most important issues: state polls, exit polls (e.g. AP VoteCast), and French pollsters for France
-- [ ] Per poll: pollster, field dates, sample and population, margin of error, exact question wording, the share for the top 3-5 issues and for AI or data centers where asked, source link
-- [ ] Stored in a separate file (the Senate race files stay unchanged), with its own poll label: poll results are context, not facts about candidates
-- [ ] Where no published poll asked about AI, the race says "No published poll asked voters about AI as of [date]"; nothing is estimated or imputed
-- [ ] Every poll figure checked (verification.json); sources blocked here go through the ChatGPT hand-off (AIPD-211)
+- [x] For each of the 8 races (7 U.S. and France), published polls found that ask voters their most important issues: state polls, exit polls (e.g. AP VoteCast), and French pollsters for France
+- [x] Per poll: pollster, field dates, sample and population, margin of error, exact question wording, the share for the top 3-5 issues and for AI or data centers where asked, source link
+- [x] Stored in a separate file (the Senate race files stay unchanged), with its own poll label: poll results are context, not facts about candidates
+- [x] Where no published poll asked about AI, the race says "No published poll asked voters about AI as of [date]"; nothing is estimated or imputed
+- [x] Every poll figure checked (verification.json); sources blocked here go through the ChatGPT hand-off (AIPD-211)
 
-Note: Questionnaires skipped (AIPD-105); this replaces them as the voter-side evidence.
+Note: Questionnaires skipped (AIPD-105); this replaces them as the voter-side evidence. Delivered Nov. 26: 5 issue polls (MI, TX, CT, CA, France) and 8 polls asking about AI or data centers. None of the issue polls published AI as an answer choice, so the charts say so; every state had a 2026 data center poll (59-79% opposed or wanted limits).
 
 #### AIPD-112: Bar charts: importance of AI against the top issues, per race
-*Must-Must · 5 points · To do · Proposal: RQ1, §7 · Depends on: AIPD-111*
+*Must-Must · 5 points · Done (Nov. 26) · Proposal: RQ1, §7 · Depends on: AIPD-111*
 
 As a reader, I want a bar chart on each race showing how voters ranked AI against the top 3-5 issues so that I can see at a glance how much AI mattered to their decision.
 
 Acceptance criteria:
-- [ ] A horizontal bar chart on every race page (compact version in the state and country pop-ups): the top 3-5 issues plus AI or data centers, sorted by share, AI highlighted
-- [ ] Each chart shows the poll, field dates, sample size, margin of error and question wording, and the label "Poll result: context, not a prediction"
-- [ ] Values printed on the bars, a table alternative for screen readers, readable on a phone; colours are not the party colours
-- [ ] If AI was not among the options, the chart shows the issues and says so
-- [ ] A summary chart on the Policy analysis page compares where AI ranked in each race
+- [x] A horizontal bar chart on every race page (compact version in the state and country pop-ups): the top 3-5 issues plus AI or data centers, sorted by share, AI highlighted
+- [x] Each chart shows the poll, field dates, sample size, margin of error and question wording, and the label "Poll result: context, not a prediction"
+- [x] Values printed on the bars, a table alternative for screen readers, readable on a phone; colours are not the party colours
+- [x] If AI was not among the options, the chart shows the issues and says so
+- [x] A summary chart on the Policy analysis page compares where AI ranked in each race
+
+Note: Delivered Nov. 26: charts on every race page, the state and France pop-ups, and a race-by-race summary on the Policy analysis page; palette checked with the data-viz validator.
 
 #### AIPD-211: Hand-off list and ChatGPT prompt for claims Claude cannot verify
 *Must-Must · 3 points · Done (Nov. 26) · Proposal: §5, §10 item 4*
@@ -142,17 +144,17 @@ Acceptance criteria:
 Note: Starts when you paste the first batch of results.
 
 #### AIPD-311: Public opinion on AI by party from Gallup and Pew
-*Must-Must · 5 points · To do · Proposal: RQ1, RQ2, §4 Track B · Depends on: AIPD-211*
+*Must-Must · 5 points · Done (Nov. 26) · Proposal: RQ1, RQ2, §4 Track B · Depends on: AIPD-211*
 
 As a researcher, I want publicly available Gallup and Pew findings on Americans' views of AI and data centers, by party, so that each party's line can be compared with what its voters think.
 
 Acceptance criteria:
-- [ ] Only publicly released toplines and crosstabs; each organisation's terms of use checked and recorded
-- [ ] Figures by party (Democrats, Republicans, independents) on AI concern, support for regulation, trust, and data centers where asked
-- [ ] Per figure: report title, field dates, sample, margin of error, question wording, link
-- [ ] Shown as bar charts on the Party comparison page beside the party lines; every figure checked
+- [x] Only publicly released toplines and crosstabs; each organisation's terms of use checked and recorded
+- [x] Figures by party (Democrats, Republicans, independents) on AI concern, support for regulation, trust, and data centers where asked
+- [x] Per figure: report title, field dates, sample, margin of error, question wording, link
+- [x] Shown as bar charts on the Party comparison page beside the party lines; every figure checked
 
-Note: Gallup and Pew sites are blocked here: figures come via web search and are confirmed through the ChatGPT hand-off.
+Note: Delivered Nov. 26: 8 findings (6 Pew, 2 Gallup) charted by party on the Party comparison page, cited with publication dates and links as both terms allow. Figures came via web search; batch 13 of the ChatGPT hand-off confirms them against the releases.
 
 #### AIPD-312: Legislation sourced from the IAPP, NCSL and MultiState trackers
 *Must-Must · 8 points · To do · Proposal: §4 Track B · Depends on: AIPD-302*

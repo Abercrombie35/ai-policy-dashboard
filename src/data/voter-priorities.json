@@ -1,5 +1,728 @@
 {
   "note": "Published polls on which issues mattered most to voters in each tracked race, and any poll that asked about AI or data centers. Poll results are context about voters, not facts about candidates. Kept apart from the race files, which are never edited.",
   "asOf": "2026-11-26",
-  "polls": []
+  "polls": [
+    {
+      "id": "vp-mi-the-glengariff-group-inc-issue-1",
+      "state": "MI",
+      "races": [
+        "mi-senate-2026",
+        "mi-governor-2026"
+      ],
+      "kind": "issue-priorities",
+      "pollster": "Glengariff Group",
+      "sponsor": "WDIV-TV and The Detroit News",
+      "fieldStart": null,
+      "fieldEnd": null,
+      "population": "likely voters",
+      "sampleSize": null,
+      "marginOfError": null,
+      "question": "Which issue will most determine your vote in November? (reported wording; the reports also describe a closed list of eight issues, and it is not clear which figures belong to which question)",
+      "questionType": "single",
+      "issues": [
+        {
+          "issue": "Inflation and cost of living",
+          "pct": 17.5
+        },
+        {
+          "issue": "Jobs and the economy",
+          "pct": 15.2
+        },
+        {
+          "issue": "Immigration, border control and ICE",
+          "pct": 7
+        },
+        {
+          "issue": "Taxes and government spending",
+          "pct": 5.8
+        },
+        {
+          "issue": "Health care affordability and accessibility",
+          "pct": 3.9
+        }
+      ],
+      "aiOffered": null,
+      "labelType": "reported-fact",
+      "source": {
+        "title": "ClickOnDetroit (WDIV): What issues do Michigan voters care about most? Here's what a new poll found",
+        "url": "https://www.clickondetroit.com/decision-2026/2026/10/28/what-issues-do-michigan-voters-care-about-most-heres-what-a-new-poll-found/"
+      },
+      "additionalSources": [
+        {
+          "title": "ClickOnDetroit (WDIV): Poll: 8 issues Michigan voters care most about, and which party they trust to fix them",
+          "url": "https://www.clickondetroit.com/news/local/2026/10/28/poll-8-issues-michigan-voters-care-most-about-and-which-party-they-trust-to-fix-them/"
+        }
+      ],
+      "publishedDate": "2026-10-28",
+      "lastVerified": "2026-11-26",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-mi-the-glengariff-group-inc-ai-qu-1",
+      "state": "MI",
+      "races": [
+        "mi-senate-2026",
+        "mi-governor-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Glengariff Group",
+      "sponsor": "WDIV-TV and The Detroit News",
+      "fieldStart": null,
+      "fieldEnd": null,
+      "population": "likely voters",
+      "sampleSize": 600,
+      "marginOfError": null,
+      "question": "Do you support or oppose building data centers in Michigan, and a one-year statewide moratorium on building them? (reported wording)",
+      "result": "64.3% oppose building data centers in Michigan (18.9% support); 54.3% support a one-year moratorium (30.2% oppose)",
+      "figures": [
+        {
+          "label": "Oppose building data centers in Michigan",
+          "pct": 64.3,
+          "headline": true
+        },
+        {
+          "label": "Support building data centers in Michigan",
+          "pct": 18.9
+        },
+        {
+          "label": "Support one-year moratorium on building data centers",
+          "pct": 54.3
+        },
+        {
+          "label": "Oppose one-year moratorium",
+          "pct": 30.2
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "ClickOnDetroit (WDIV): Nearly two-thirds of Michigan voters are against construction of data centers, poll finds",
+        "url": "https://www.clickondetroit.com/news/local/2026/09/10/nearly-two-thirds-of-michigan-voters-are-against-construction-of-data-centers-poll-finds/"
+      },
+      "additionalSources": [
+        {
+          "title": "Michigan Advance: Michigan Data Centers: The Weekly Download",
+          "url": "https://michiganadvance.com/2026/09/14/michigan-data-centers-the-weekly-download-4-2-2-2/"
+        }
+      ],
+      "publishedDate": "2026-09-10",
+      "lastVerified": "2026-11-26",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-tx-university-of-texas-texa-issue-1",
+      "state": "TX",
+      "races": [
+        "tx-senate-2026",
+        "tx-governor-2026"
+      ],
+      "kind": "issue-priorities",
+      "pollster": "Texas Politics Project (University of Texas at Austin)",
+      "sponsor": null,
+      "fieldStart": "2026-09-25",
+      "fieldEnd": "2026-10-05",
+      "population": "registered voters",
+      "sampleSize": 1200,
+      "marginOfError": 2.83,
+      "question": "What one issue is the most important to your vote in the 2026 Election? (open-ended)",
+      "questionType": "single",
+      "issues": [
+        {
+          "issue": "Cost of living",
+          "pct": 21
+        },
+        {
+          "issue": "The economy",
+          "pct": 15
+        },
+        {
+          "issue": "Corruption",
+          "pct": 8
+        },
+        {
+          "issue": "Immigration",
+          "pct": 5
+        },
+        {
+          "issue": "Negative responses to Donald Trump",
+          "pct": 5
+        }
+      ],
+      "aiOffered": null,
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Texas Politics Project: What one issue is the most important to your vote in the 2026 Election? (October 2026)",
+        "url": "https://texaspolitics.utexas.edu/set/what-one-issue-is-the-most-important-to-your-vote-in-the-2026-election-october-2026"
+      },
+      "additionalSources": [
+        {
+          "title": "Texas Politics Project: Latest UT/Texas Politics Poll Finds Historic Levels of Competition in Texas Midterm Elections",
+          "url": "https://texaspolitics.utexas.edu/blog/latest-ut-texas-politics-poll-finds-historic-levels-of-competition-in-texas-midterm-elections"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-tx-university-of-houston-ho-ai-qu-1",
+      "state": "TX",
+      "races": [
+        "tx-senate-2026",
+        "tx-governor-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "University of Houston Hobby School of Public Affairs",
+      "sponsor": null,
+      "fieldStart": "2026-10-10",
+      "fieldEnd": "2026-10-14",
+      "population": "likely voters",
+      "sampleSize": 2000,
+      "marginOfError": 2.19,
+      "question": "Would you support or oppose limiting the number of data centers that can be built in Texas, and how concerned are you about their effect on electricity prices? (reported wording)",
+      "result": "79% support limiting the number of data centers that can be built in Texas; 69% are extremely or very concerned about data centers' impact on electricity prices",
+      "figures": [
+        {
+          "label": "Support limiting number of data centers in Texas",
+          "pct": 79,
+          "headline": true
+        },
+        {
+          "label": "Oppose limiting number of data centers",
+          "pct": 21
+        },
+        {
+          "label": "Extremely or very concerned about data centers' effect on electricity prices",
+          "pct": 69
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "UH Hobby School: Texas Votes 2026 data centers report (PDF)",
+        "url": "https://uh.edu/hobby/texas2026/centers.pdf"
+      },
+      "additionalSources": [
+        {
+          "title": "ABC13: University of Houston poll shows likely Texas voters' concerns on data centers",
+          "url": "https://abc13.com/post/university-houston-poll-shows-texas-voters-concerns-data-centers/19986575/"
+        },
+        {
+          "title": "Click2Houston: New UH survey: 79% of Texas voters want limits on data centers amid concerns over electric bills, water supply",
+          "url": "https://click2houston.com/news/local/2026/10/28/new-uh-survey-79-of-texas-voters-want-limits-on-data-centers-amid-concerns-over-electric-bills-water-supply"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-tx-university-of-texas-texa-ai-qu-2",
+      "state": "TX",
+      "races": [
+        "tx-senate-2026",
+        "tx-governor-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Texas Politics Project (University of Texas at Austin)",
+      "sponsor": null,
+      "fieldStart": "2026-08-05",
+      "fieldEnd": "2026-08-13",
+      "population": "registered voters",
+      "sampleSize": 1200,
+      "marginOfError": null,
+      "question": "Do you support or oppose the construction of a data center in your community? (reported wording)",
+      "result": "57% oppose a data center being built in their community (41% strongly); about 30% support. Opposition: 43% of Republicans, 54% of independents, 60% of rural voters",
+      "figures": [
+        {
+          "label": "Oppose data center in community",
+          "pct": 57
+        },
+        {
+          "label": "Support data center in community",
+          "pct": 30
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Washington Post: Texas poll shows solid bipartisan opposition to data centers",
+        "url": "https://www.washingtonpost.com/nation/2026/08/26/texas-poll-shows-solid-bipartisan-opposition-data-centers/"
+      },
+      "additionalSources": [
+        {
+          "title": "Texas Politics Project: New UT/Texas Politics Project Poll Finds Talarico Leading Paxton, Abbott Leading Hinojosa, Continued Resistance to Data Centers",
+          "url": "https://texaspolitics.utexas.edu/blog/new-ut-texas-politics-project-poll-finds-talarico-leading-paxton-abbott-leading-hinojosa-continued-resistance-to-data-centers-2"
+        },
+        {
+          "title": "San Angelo Live: New Polls Show Data Centers Issue is Toxic",
+          "url": "https://sanangelolive.com/news/politics/2026-08-25/new-polls-show-data-centers-issue-toxic"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-ct-quinnipiac-university-po-issue-1",
+      "state": "CT",
+      "races": [
+        "ct-governor-2026",
+        "ct-house-04-2026"
+      ],
+      "kind": "issue-priorities",
+      "pollster": "Quinnipiac University",
+      "sponsor": null,
+      "fieldStart": "2026-10-08",
+      "fieldEnd": "2026-10-12",
+      "population": "likely voters",
+      "sampleSize": 1225,
+      "marginOfError": null,
+      "question": "Which issue is most important to your vote for governor? (reported wording)",
+      "questionType": "single",
+      "issues": [
+        {
+          "issue": "Cost of living",
+          "pct": 24
+        },
+        {
+          "issue": "The economy",
+          "pct": 21
+        },
+        {
+          "issue": "Taxes",
+          "pct": 13
+        }
+      ],
+      "aiOffered": null,
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Quinnipiac University Poll: 10/14/26 - CT Governor's Race: Lamont 58%, Fazio 38% In The Final Stretch",
+        "url": "https://poll.qu.edu/poll-release?releaseid=3971"
+      },
+      "additionalSources": [
+        {
+          "title": "CT Mirror: Lamont's lead over Fazio reaches 20 points in Quinnipiac poll",
+          "url": "https://ctmirror.org/2026/10/14/quinnipiac-poll-ned-lamont-ryan-fazio-governor/"
+        },
+        {
+          "title": "FingerLakes1: Quinnipiac poll finds Lamont leading Fazio in Connecticut governor race",
+          "url": "https://www.fingerlakes1.com/2026/10/15/quinnipiac-poll-finds-lamont-leading-fazio-in-connecticut-governor-race/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-ct-emerson-college-polling--ai-qu-1",
+      "state": "CT",
+      "races": [
+        "ct-governor-2026",
+        "ct-house-04-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Emerson College Polling",
+      "sponsor": "Nexstar Media",
+      "fieldStart": "2026-10-10",
+      "fieldEnd": "2026-10-12",
+      "population": "likely voters",
+      "sampleSize": 800,
+      "marginOfError": null,
+      "question": "Do you support or oppose data centers being built in your community? (reported wording)",
+      "result": "59% oppose, 27% support, 15% neutral. Oppose: Democrats 66%, independents 62%; Republicans split 43% support / 41% oppose",
+      "figures": [
+        {
+          "label": "Oppose data centers in community",
+          "pct": 59,
+          "headline": true
+        },
+        {
+          "label": "Support",
+          "pct": 27
+        },
+        {
+          "label": "Neutral",
+          "pct": 15
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Emerson College Polling: Connecticut 2026 Poll: Ned Lamont Holds 13-Point Lead Over Ryan Fazio",
+        "url": "https://emersoncollegepolling.com/connecticut-2026-poll-ned-lamont-holds-13-point-lead-over-ryan-fazio/"
+      },
+      "additionalSources": [
+        {
+          "title": "Political.org: Connecticut Gov. Ned Lamont holds double-digit lead over Republican Ryan Fazio in reelection bid, Emerson poll finds",
+          "url": "https://political.org/2026/10/15/connecticut-gov-ned-lamont-holds-double-digit-lead-over-republican-ryan-fazio-in-reelection-bid-emerson-poll-finds/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-ca-emerson-college-polling-issue-1",
+      "state": "CA",
+      "races": [
+        "ca-governor-2026"
+      ],
+      "kind": "issue-priorities",
+      "pollster": "Emerson College Polling",
+      "sponsor": "Inside California Politics (Nexstar Media)",
+      "fieldStart": null,
+      "fieldEnd": null,
+      "population": "likely voters",
+      "sampleSize": 1000,
+      "marginOfError": 3.1,
+      "question": "What is the most important issue facing California? (reported wording)",
+      "questionType": "single",
+      "issues": [
+        {
+          "issue": "Economy",
+          "pct": 45
+        },
+        {
+          "issue": "Housing affordability",
+          "pct": 17
+        },
+        {
+          "issue": "Health care",
+          "pct": 10
+        },
+        {
+          "issue": "Immigration",
+          "pct": 10
+        }
+      ],
+      "aiOffered": null,
+      "labelType": "reported-fact",
+      "source": {
+        "title": "FOX40: New poll shows Becerra with wide lead over Hilton in California governor race",
+        "url": "https://fox40.com/inside-california-politics/new-poll-shows-becerra-with-wide-lead-over-hilton-in-california-governor-race/amp/"
+      },
+      "additionalSources": [
+        {
+          "title": "Courthouse News: Poll gives Becerra 27-point lead over Hilton in California governor race",
+          "url": "https://courthousenews.com/articles/poll-gives-becerra-27-point-lead-over-hilton-in-california-governor-race"
+        }
+      ],
+      "publishedDate": "2026-10-21",
+      "lastVerified": "2026-11-26",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-ca-public-policy-institute--ai-qu-1",
+      "state": "CA",
+      "races": [
+        "ca-governor-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Public Policy Institute of California",
+      "sponsor": null,
+      "fieldStart": "2026-06-29",
+      "fieldEnd": "2026-07-06",
+      "population": "adults (including 1,003 likely voters)",
+      "sampleSize": 1578,
+      "marginOfError": null,
+      "question": "Do you favor or oppose the construction of a data center in your area to support artificial intelligence technology? (reported wording)",
+      "result": "73% of adults and 77% of likely voters oppose a data center in their area to support AI (adults: 44% strongly, 29% somewhat oppose)",
+      "figures": [
+        {
+          "label": "Oppose an AI data center in their area (adults)",
+          "pct": 73
+        },
+        {
+          "label": "Oppose an AI data center in their area (likely voters)",
+          "pct": 77,
+          "headline": true
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "PPIC: PPIC Statewide Survey: Californians and the Environment (July 2026)",
+        "url": "https://www.ppic.org/publication/ppic-statewide-survey-californians-and-the-environment-july-2026/"
+      },
+      "additionalSources": [
+        {
+          "title": "AI Commission: Californians back Becerra and reject AI data centers by big margins, poll finds",
+          "url": "https://aicommission.org/2026/07/californians-back-becerra-and-reject-ai-data-centers-by-big-margins-poll-finds/"
+        },
+        {
+          "title": "CalMatters: data center PPIC survey (newsletter)",
+          "url": "https://calmatters.org/newsletter/data-center-ppic-survey/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-ca-carnegie-endowment-for-i-ai-qu-2",
+      "state": "CA",
+      "races": [
+        "ca-governor-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Carnegie Endowment for International Peace (fielded by YouGov)",
+      "sponsor": null,
+      "fieldStart": "2026-04-21",
+      "fieldEnd": "2026-05-11",
+      "population": "adults",
+      "sampleSize": 1500,
+      "marginOfError": null,
+      "question": "How important are the governor candidates' positions on AI to you? (reported wording)",
+      "result": "52% said candidates' AI positions are at least somewhat important in the governor's race (18% very important). Californians were more negative than Americans overall on data centers' environmental (47% vs 39%), local quality-of-life (44% vs 30%), and local-jobs (30% vs 15%) impacts. 70% say AI is important to economic growth (22% very, 48% somewhat)",
+      "figures": [
+        {
+          "label": "Candidates' positions on AI at least somewhat important",
+          "pct": 52
+        },
+        {
+          "label": "Candidates' positions on AI very important",
+          "pct": 18
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Carnegie Endowment: 2026 Carnegie California AI Survey",
+        "url": "https://carnegieendowment.org/research/2026/09/2026-carnegie-california-ai-survey"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-fr-elabe-issue-1",
+      "country": "FR",
+      "races": [
+        "fr-president-2027"
+      ],
+      "kind": "issue-priorities",
+      "pollster": "Elabe",
+      "sponsor": "La Tribune Dimanche",
+      "fieldStart": "2026-04",
+      "fieldEnd": "2026-04",
+      "population": "adults",
+      "sampleSize": null,
+      "marginOfError": null,
+      "question": "Which issues should the next president deal with first? (three answers from 16 issues; reported wording) [« Les Français et le/la président(e) idéal(e) »]",
+      "questionType": "up-to-three",
+      "issues": [
+        {
+          "issue": "Purchasing power",
+          "pct": 44
+        },
+        {
+          "issue": "Security",
+          "pct": 31
+        },
+        {
+          "issue": "Health",
+          "pct": 30
+        }
+      ],
+      "aiOffered": null,
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Elabe: Les Français et le/la président(e) idéal(e), for La Tribune Dimanche (April 18, 2026)",
+        "url": "https://elabe.fr/fichier-pdf/13003-20260418_elabe_la-tribune-dimanche_les-francais-et-lela-presidente-ideale/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-fr-elabe-ai-qu-1",
+      "country": "FR",
+      "races": [
+        "fr-president-2027"
+      ],
+      "kind": "ai-question",
+      "pollster": "Elabe",
+      "sponsor": "Région Hauts-de-France",
+      "fieldStart": "2026-06-01",
+      "fieldEnd": "2026-06-02",
+      "population": "adults (national sample)",
+      "sampleSize": 1503,
+      "marginOfError": null,
+      "question": "Attitudes to artificial intelligence: use, opportunity or threat, and how much regulation is wanted (reported wording)",
+      "result": "Most French people use AI, but most see it first as a threat. A plurality want strong regulation even if it slows innovation, and only 10% think no regulation is needed for now.",
+      "figures": [
+        {
+          "label": "Use AI",
+          "pct": 65
+        },
+        {
+          "label": "See AI first as a threat",
+          "pct": 54,
+          "headline": true
+        },
+        {
+          "label": "Want strong regulation of AI development, even if it slows innovation",
+          "pct": 46
+        },
+        {
+          "label": "No regulation needed for now",
+          "pct": 10
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Près de deux Français sur trois utilisent l'IA (CB News)",
+        "url": "https://www.cbnews.fr/etudes/pres-deux-francais-trois-utilisent-ia"
+      },
+      "additionalSources": [
+        {
+          "title": "Europe 1 (AFP) report on the Elabe AI poll",
+          "url": "https://www.europe1.fr/node/952661"
+        },
+        {
+          "title": "Près de deux Français sur trois disent utiliser l'intelligence artificielle selon un nouveau sondage (Siècle Digital)",
+          "url": "https://siecledigital.fr/2026/06/14/pres-de-deux-francais-sur-trois-disent-utiliser-lintelligence-artificielle-selon-un-nouveau-sondage/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    },
+    {
+      "id": "vp-fr-odoxa-ai-qu-2",
+      "country": "FR",
+      "races": [
+        "fr-president-2027"
+      ],
+      "kind": "ai-question",
+      "pollster": "Odoxa",
+      "sponsor": "AGIPI, Challenges and BFM Business",
+      "fieldStart": "2026-02-18",
+      "fieldEnd": "2026-02-19",
+      "population": "adults",
+      "sampleSize": null,
+      "marginOfError": null,
+      "question": "Do you see artificial intelligence as an opportunity or a threat? (reported wording)",
+      "result": "59% see AI as a threat, up 12 points in under ten years. 51% see robotisation as a threat.",
+      "figures": [
+        {
+          "label": "See AI as a threat",
+          "pct": 59
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Odoxa Baromètre de l'économie Mars 2026 (PDF hosted by AGIPI)",
+        "url": "https://www.agipi.com/wp-content/uploads/2026/03/Odoxa-Barometre-de-leconomie-Mars-2026.pdf"
+      },
+      "additionalSources": [
+        {
+          "title": "Innovation : les Français jugent leur pays à la traîne et voient l'IA comme une menace (CB News)",
+          "url": "https://www.cbnews.fr/node/99369"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
+        }
+      ]
+    }
+  ]
 }

@@ -9,6 +9,8 @@ Files (in this folder):
 - batch-01.txt ... batch-12.txt: each is one complete ChatGPT message (instructions plus 12 claims).
   Batches 1-3 hold the claims that are partly confirmed or not confirmed (do these first), batches 4-5 the
   corrected ones, batches 6-12 the confirmed ones (to raise them to High confidence).
+- batch-13.txt: the 21 poll and survey figures added on Nov. 26 (voter priorities per race, polls on AI and
+  data centers, Gallup and Pew by party). For polls, the primary source is the pollster's own release or topline.
 
 Steps:
 1. In ChatGPT, use a model with web search turned on (Search, or Deep research for the hardest batches).

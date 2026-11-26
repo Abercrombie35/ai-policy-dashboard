@@ -127,3 +127,12 @@
   .bar-row { grid-template-columns: minmax(96px, 42%) 1fr; }
   .chart-grid { grid-template-columns: 1fr; }
 }
+
+/* Race-by-race summary (Policy analysis page). */
+.summary-table td { font-size: 0.86rem; }
+.summary-subhead { margin: 20px 0 8px; font-size: 0.95rem; }
+.summary-meters .bars { gap: 10px; }
+.meter-item .meter-source { margin: 2px 0 0 calc(38% + 10px); font-size: 0.72rem; color: var(--viz-ink-2); }
+.summary-meters .bar-row { grid-template-columns: minmax(160px, 38%) 1fr; }
+.chart-context { margin: 6px 0; font-size: 0.78rem; color: var(--viz-ink-2); line-height: 1.5; }
+@media (max-width: 600px) { .meter-item .meter-source { margin-left: 0; } }
