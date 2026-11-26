@@ -110,8 +110,8 @@ export function PolicyBox({ record, party, bloc, race, candidate, refNum, refPre
           <summary>What it does</summary>
           <p>{details}</p>
           {record.trackers?.length > 0 && (
-            <p className="policy-trackers">
-              Listed by:{' '}
+            <p className="policy-trackers" title="Named on the tracker's site or in its reports and updates; the tracker databases themselves could not be opened.">
+              Covered by:{' '}
               {record.trackers.map((t, i) => (
                 <React.Fragment key={t.tracker}>
                   {i > 0 && ' · '}

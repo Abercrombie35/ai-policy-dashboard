@@ -33,7 +33,9 @@ function TrackerCoverage() {
       <h3>Compared with the IAPP, NCSL and MultiState trackers</h3>
       <p className="section-note">
         {trackers.note} The trackers count every AI bill; this dataset keeps the AI and data center bills most relevant to the
-        tracked races, so its counts are smaller by design.
+        tracked races, so its counts are smaller by design. "Covered by" means a bill is named on the tracker's site or in its
+        reports; the tracker databases themselves could not be opened, and for federal bills it means the organisation's news
+        coverage.
       </p>
       <div className="table-wrap" role="region" aria-label="Bill counts compared with the trackers" tabIndex={0}>
         <table className="data-table">
@@ -54,7 +56,7 @@ function TrackerCoverage() {
                   <td>
                     {mine.length} bills ({dc} on data centers)
                     <div className="sub-note">
-                      {ids.map((id) => `${trackers.trackers[id].short}: ${mine.filter((b) => (b.trackers || []).some((t) => t.tracker === id)).length}`).join(' · ')} of them listed
+                      Covered by {ids.map((id) => `${trackers.trackers[id].short} ${mine.filter((b) => (b.trackers || []).some((t) => t.tracker === id)).length}`).join(' · ')}
                     </div>
                   </td>
                   {ids.map((id) => {

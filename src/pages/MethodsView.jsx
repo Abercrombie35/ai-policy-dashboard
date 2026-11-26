@@ -255,10 +255,13 @@ function MethodsView() {
       <section>
         <h3>Sources for legislation</h3>
         <p>
-          Bill data comes from official state legislature websites or open legislative-data services. Trackers such as
-          IAPP's US State AI Governance Legislation Tracker, NCSL's Artificial Intelligence Legislation Database and
-          MultiState's AI legislation tracker are used to check coverage, not as data to copy. Their licensing terms are
-          checked before any reuse.
+          Bills are found through IAPP's US State AI Governance Legislation Tracker, NCSL's Artificial Intelligence
+          Legislation Database and MultiState's AI legislation tracker (or their reports), then confirmed on the official
+          legislature record where possible. Their terms of use were checked on Nov. 26, 2026 (summarised on the
+          Legislation page): none addresses citing bill facts with a link, and all restrict copying their content. So this
+          site cites bill facts with attribution and links, writes its own summaries, and copies no tracker content or
+          database. Each bill shows which trackers cover it, and the Legislation page compares this dataset with the
+          trackers' published counts.
         </p>
       </section>
 

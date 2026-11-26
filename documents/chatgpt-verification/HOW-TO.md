@@ -11,6 +11,8 @@ Files (in this folder):
   corrected ones, batches 6-12 the confirmed ones (to raise them to High confidence).
 - batch-13.txt: the 21 poll and survey figures added on Nov. 26 (voter priorities per race, polls on AI and
   data centers, Gallup and Pew by party). For polls, the primary source is the pollster's own release or topline.
+- batch-14.txt: the 25 bills added on Nov. 26 from the IAPP, NCSL and MultiState trackers (Michigan, Texas,
+  Connecticut, California and federal).
 
 Steps:
 1. In ChatGPT, use a model with web search turned on (Search, or Deep research for the hardest batches).

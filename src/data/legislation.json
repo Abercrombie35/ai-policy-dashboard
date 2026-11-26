@@ -48,7 +48,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -69,9 +69,24 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (Texas Legislature Online, IAPP, Texas Tribune). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (IAPP, NCSL), from search results on 2026-11-26."
         }
       ],
-      "statusNote": "Signed June 22, 2025; effective Jan. 1, 2026."
+      "statusNote": "Signed June 22, 2025; effective Jan. 1, 2026.",
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/resources/article/us-state-ai-governance-legislation-tracker"
+        },
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ]
     },
     {
       "id": "us-s4214",
@@ -997,7 +1012,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -1018,6 +1033,17 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (CRS (EveryCRSReport), Orrick, Skadden). CRS confirms the Act also criminalizes threats to publish authentic or AI-forged intimate images, completing the check of this claim. Medium confidence."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (IAPP), from search results on 2026-11-26."
+        }
+      ],
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/news/a/take-it-down-act-how-to-comply-as-the-ftc-begins-enforcement"
         }
       ]
     },
@@ -1314,7 +1340,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1330,6 +1356,17 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (MichiganVotes, Michigan Public, Route Fifty). The package and Polehanki's SB 760 chatbot bill are confirmed, passing the Senate 20-17 on Apr. 29, 2026 with no House vote as of Oct. 16, 2026; sources name self-harm, suicidal ideation and disordered eating but not violence or drug use. Senate passage date corrected to Apr. 29, 2026 (20-17). Not confirmed: That SB 760 lists violence and drug use among the barred harms; House status after mid-October 2026."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (NCSL), from search results on 2026-11-26."
+        }
+      ],
+      "trackers": [
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/social-media-and-children-2026-legislation"
         }
       ]
     },
@@ -1544,7 +1581,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -1565,6 +1602,25 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Faegre Drinker, Future of Privacy Forum, Connecticut General Assembly). Law-firm and FPF summaries confirm the no-defense rule for automated hiring tools, frontier-developer whistleblower protections, provenance rules and an Oct. 2026 to Jan. 2028 phase-in; the committee report lists Looney, Duff and Anwar, with Maroney leading. Most sources give a May 27, 2026 signing, with a ceremony on June 2. Sponsors added: led by Sen. James Maroney (D); the committee report lists Sens. Looney, Duff and Anwar (D). Medium confidence."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (IAPP, NCSL, MultiState), from search results on 2026-11-26."
+        }
+      ],
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/news/a/notable-ai-privacy-bills-hit-finish-line-in-illinois-connecticut-and-new-york"
+        },
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/social-media-and-children-2026-legislation"
+        },
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws"
         }
       ]
     },
@@ -1615,7 +1671,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1631,6 +1687,17 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (CT Mirror, CBIA, CT Senate Democrats). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (MultiState), from search results on 2026-11-26."
+        }
+      ],
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.ai/updates/vol-50"
         }
       ]
     },
@@ -1681,7 +1748,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1697,6 +1764,17 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (CT Mirror, Connecticut Public, CT Senate Democrats). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (MultiState), from search results on 2026-11-26."
+        }
+      ],
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.ai/updates/vol-24"
         }
       ]
     },
@@ -2051,7 +2129,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2062,6 +2140,17 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (TechCrunch, PBS NewsHour, TechCrunch). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (IAPP), from search results on 2026-11-26."
+        }
+      ],
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/news/a/with-sb-53-california-puts-ai-disclosure-requirements-on-the-map"
         }
       ]
     },
@@ -2110,7 +2199,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2121,6 +2210,21 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (Governor's office, Sen. Scott Wiener (SD11), Fortune). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (IAPP, MultiState), from search results on 2026-11-26."
+        }
+      ],
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/news/a/with-sb-53-california-puts-ai-disclosure-requirements-on-the-map"
+        },
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.us/insider/2025/10/9/california-passes-first-of-its-kind-ai-safety-law"
         }
       ]
     },
@@ -2162,7 +2266,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2173,6 +2277,17 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (Sen. Steve Padilla (SD18), TechCrunch, LegiScan). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (MultiState), from search results on 2026-11-26."
+        }
+      ],
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws"
         }
       ]
     },
@@ -2214,7 +2329,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2225,6 +2340,17 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (StateScoop, Tech Policy Press, CalMatters Digital Democracy). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-26",
+          "note": "Added which trackers list this bill (MultiState), from search results on 2026-11-26."
+        }
+      ],
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.ai/updates/vol-78-california-ai-chatbot-ballot-measure"
         }
       ]
     },
@@ -3169,6 +3295,1573 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Élysée, TechRadar, Global Banking & Finance (Reuters)). Confirmed: the 1 GW nuclear-for-AI pledge dates from the February 2025 AI Action Summit, and Macron's Mar. 10, 2026 nuclear summit speech said France's reactors let it open data centers and grow computing capacity. Medium confidence."
+        }
+      ]
+    },
+    {
+      "id": "tx-89r-sb6",
+      "state": "TX",
+      "session": "89th Legislature, Regular Session (2025)",
+      "billNumber": "SB 6",
+      "title": "Large electricity users (including data centers): grid connection, costs and curtailment",
+      "sponsors": [
+        {
+          "name": "Phil King",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-06-20",
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "summary": "Requires the Public Utility Commission to set interconnection standards and fees for large electricity users of 75 MW or more, such as data centers, and lets ERCOT curtail or disconnect them during grid emergencies.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Texas Legislature: SB 6 enrolled bill analysis",
+        "url": "https://capitol.texas.gov/tlodocs/89R/analysis/html/SB00006F.htm"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.us/insider/2026/10/13/state-lawmakers-look-to-behind-the-meter-policies-for-data-centers"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "tx-89r-sb1964",
+      "state": "TX",
+      "session": "89th Legislature, Regular Session (2025)",
+      "billNumber": "SB 1964",
+      "title": "Use of AI by state agencies and local governments",
+      "sponsors": [
+        {
+          "name": "Tan Parker",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Giovanni Capriglione",
+          "party": "Republican",
+          "role": "House sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-06-20",
+      "categories": [
+        "ai-comprehensive"
+      ],
+      "summary": "Sets an AI code of ethics and minimum standards for state agencies and local governments that use AI in decisions affecting people's rights or benefits, and directs the Department of Information Resources to run a public-sector AI sandbox and write rules for higher-risk government AI.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Texas Legislature: SB 1964 enrolled bill analysis",
+        "url": "https://capitol.texas.gov/tlodocs/89R/analysis/html/SB01964F.htm"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "audits"
+        ],
+        "issueAreas": [
+          "safety",
+          "discrimination"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "tx-89r-sb20",
+      "state": "TX",
+      "session": "89th Legislature, Regular Session (2025)",
+      "billNumber": "SB 20",
+      "title": "Stopping AI-Generated Child Pornography Act",
+      "sponsors": [
+        {
+          "name": "Pete Flores",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-06-20",
+      "categories": [
+        "ai-child-safety"
+      ],
+      "summary": "Creates criminal offenses for possessing, promoting or viewing obscene visual material, including AI-generated or computer-generated images, that appears to depict a child.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Texas Legislature: SB 20 enrolled text",
+        "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00020F.HTM"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "tx-89r-hb581",
+      "state": "TX",
+      "session": "89th Legislature, Regular Session (2025)",
+      "billNumber": "HB 581",
+      "title": "Liability for AI 'nudify' apps that create sexual material of minors",
+      "sponsors": [
+        {
+          "name": "Mary González",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "sponsorsNote": "Senate sponsor not listed: his party was not confirmed in the sources found.",
+      "status": "enacted",
+      "statusDate": "2025-06-20",
+      "categories": [
+        "ai-child-safety",
+        "ai-deepfakes"
+      ],
+      "summary": "Makes operators of websites and apps that use AI to create or alter sexual images liable when their tools are used to produce 'artificial sexual material harmful to minors' (computer-generated sexual material made with AI).",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Texas Legislature: HB 581 enrolled text",
+        "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00581F.htm"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "child-safety",
+          "deepfakes-elections"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "tx-89r-sb441",
+      "state": "TX",
+      "session": "89th Legislature, Regular Session (2025)",
+      "billNumber": "SB 441",
+      "title": "Artificial intimate visual material (sexual deepfakes) liability",
+      "sponsors": [
+        {
+          "name": "Juan \"Chuy\" Hinojosa",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-06-20",
+      "categories": [
+        "ai-deepfakes"
+      ],
+      "summary": "Expands civil and criminal liability for creating or sharing nonconsensual sexually explicit images made with AI (deepfakes).",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Texas Legislature: SB 441 enrolled bill analysis",
+        "url": "https://capitol.texas.gov/tlodocs/89R/analysis/html/SB00441F.htm"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "deepfakes-elections"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "tx-90r-sb338",
+      "state": "TX",
+      "session": "90th Legislature (2027), prefiled",
+      "billNumber": "SB 338",
+      "title": "Data center cooling and water rules, and conditions on data center tax incentives",
+      "sponsors": [
+        {
+          "name": "Charles Perry",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "introduced",
+      "statusDate": "2026-11-12",
+      "statusNote": "Prefiled Nov. 12, 2026 for the session starting Jan. 12, 2027.",
+      "categories": [
+        "dc-water-environment",
+        "dc-tax-incentives"
+      ],
+      "summary": "Would set cooling and water-reporting requirements for large data centers on the ERCOT grid, with disconnection as a penalty, and would attach cooling, environmental cleanup and property-tax-abatement conditions to data center tax incentive agreements.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Texas Legislature: SB 338 introduced text (90R)",
+        "url": "https://capitol.texas.gov/tlodocs/90R/billtext/pdf/SB00338I.pdf"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-hb4668",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "HB 4668",
+      "title": "Artificial Intelligence Safety and Security Transparency Act (frontier AI developers)",
+      "sponsors": [
+        {
+          "name": "Sarah Lightner",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-03-19",
+      "statusNote": "In committee; one record suggests it moved to the Rules committee in May 2026 (to verify).",
+      "categories": [
+        "ai-frontier-safety"
+      ],
+      "summary": "Would require large AI developers to adopt and publish safety protocols, run risk assessments and third-party audits, and protect whistleblowers, with civil penalties for violations.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Michigan Legislature: HB 4668 as introduced",
+        "url": "https://capitol.legislature.mi.gov/documents/2025-2026/billintroduced/House/htm/2025-HIB-4668.htm"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "audits"
+        ],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt4031f52d14548052/us_state_ai_governance_legislation_tracker.pdf"
+        },
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-hb5899",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "HB 5899",
+      "title": "Generative AI pilot program and governing board for state agencies",
+      "sponsors": [
+        {
+          "name": "Jaime Greene",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-05",
+      "statusNote": "In committee; sources differ on how far it has moved.",
+      "categories": [
+        "ai-innovation"
+      ],
+      "summary": "Would have the Department of Technology, Management and Budget run a generative AI pilot program for state agencies, overseen by a three-member board, with limits on entering confidential data and human review of AI outputs.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "MichiganVotes: 2026 House Bill 5899",
+        "url": "https://www.michiganvotes.org/legislation/2026/house/bill-5899"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "procurement"
+        ],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-hb4536-4537",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "HB 4536 (with HB 4537)",
+      "title": "Ban on health insurers using AI to deny, modify or delay claims",
+      "sponsors": [
+        {
+          "name": "Carrie Rheingans",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-03-19",
+      "categories": [
+        "ai-consumer-protection"
+      ],
+      "summary": "Would bar health insurers from denying, modifying or delaying claims based on a review using artificial intelligence; companion HB 4537 applies similar limits to the state health department and its contracted health plans.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Michigan Legislature: HB 4536 as introduced",
+        "url": "https://capitol.legislature.mi.gov/documents/2025-2026/billintroduced/House/htm/2025-HIB-4536.htm"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "safety",
+          "discrimination"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-sb761-763",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "SB 761-763",
+      "title": "Data center water use, reporting and water-cost protection bills",
+      "sponsors": [
+        {
+          "name": "Rosemary Bayer",
+          "party": "Democratic",
+          "role": "SB 761",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Sue Shink",
+          "party": "Democratic",
+          "role": "SB 762",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Erika Geiss",
+          "party": "Democratic",
+          "role": "SB 763",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2025-12-18",
+      "categories": [
+        "dc-water-environment",
+        "dc-ratepayer",
+        "dc-transparency"
+      ],
+      "summary": "Would deny water withdrawal permits to users consuming 2 million gallons a day or more (SB 761), require annual state reports on data center energy and water use (SB 762), and bar water utilities from passing data center infrastructure costs to residential customers (SB 763).",
+      "labelType": "source-summary",
+      "source": {
+        "title": "MichiganVotes: 2025 Senate Bill 761",
+        "url": "https://www.michiganvotes.org/legislation/2025/senate/bill-761"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-sb1046-1051",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "SB 1046-1051",
+      "title": "Senate Democratic data center package: water permits, ratepayer protection, labor, NDAs, community benefits",
+      "sponsors": [
+        {
+          "name": "Rosemary Bayer",
+          "party": "Democratic",
+          "role": "SB 1046",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Mallory McMorrow",
+          "party": "Democratic",
+          "role": "SB 1047",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Kevin Hertel",
+          "party": "Democratic",
+          "role": "SB 1048",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Darrin Camilleri",
+          "party": "Democratic",
+          "role": "SB 1049-1051",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-06-18",
+      "categories": [
+        "dc-water-environment",
+        "dc-ratepayer",
+        "dc-local-control",
+        "dc-transparency",
+        "dc-economy-jobs"
+      ],
+      "summary": "Would require permits and hearings for users of more than 550,000 gallons of water a day, create a separate utility rate class so data centers pay their own power costs, set labor standards, limit officials' nondisclosure agreements with data centers, and require community benefit agreements before approval.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Michigan Senate Democrats: Legislation would shield Michigan workers, consumers, and natural resources from impact of data center projects",
+        "url": "https://senatedems.com/camilleri/?p=2070"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.us/insider/2026/7/15/michigan-data-center-legislation-targets-energy-use-and-community-benefits"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "mi-hb6135-6142",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "HB 6135-6142",
+      "title": "House Democratic 'Data Center Guardrail' package (rate class, closed-loop cooling, community benefits, NDAs, decommissioning)",
+      "sponsors": [
+        {
+          "name": "Joey Andrews",
+          "party": "Democratic",
+          "role": "package lead",
+          "linkedCandidateId": null
+        }
+      ],
+      "sponsorsNote": "Package led by Rep. Joey Andrews; other sponsors to add.",
+      "status": "in-committee",
+      "statusDate": "2026-06-25",
+      "categories": [
+        "dc-ratepayer",
+        "dc-water-environment",
+        "dc-local-control",
+        "dc-transparency",
+        "dc-economy-jobs"
+      ],
+      "summary": "Would create a large-load rate class for data centers (HB 6135), require closed-loop cooling or municipal water (HB 6138, 'Data Center Water Regulation Act'), require community benefit agreements (HB 6137), noise reports (HB 6139), limits on NDAs (HB 6140), labor standards (HB 6141) and decommissioning plans with financial assurance (HB 6142).",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Michigan Advance: Michigan House Democrats pitch transparency, community benefit requirements for data centers (June 26, 2026)",
+        "url": "https://michiganadvance.com/2026/06/26/michigan-house-democrats-pitch-transparency-community-benefit-requirements-for-data-centers/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.us/insider/2026/7/15/michigan-data-center-legislation-targets-energy-use-and-community-benefits"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2025-sb1295",
+      "state": "CT",
+      "session": "2025",
+      "billNumber": "SB 1295 (Public Act 25-113)",
+      "title": "Data privacy amendments: opt-out of automated decisions, profiling impact assessments",
+      "sponsors": [],
+      "sponsorsNote": "Committee bill; Sen. James Maroney (D) is named as sponsor in one source.",
+      "status": "enacted",
+      "statusDate": "2025-06",
+      "statusNote": "Public Act 25-113, signed June 2025; effective July 1, 2026.",
+      "categories": [
+        "ai-privacy-surveillance"
+      ],
+      "summary": "Amends the Connecticut Data Privacy Act to cover more businesses, let consumers opt out of automated decisions and profiling that have significant effects, require impact assessments for profiling (including minors' data) and add AI-related disclosure duties, effective July 1, 2026.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Public Act 25-113 (SB 1295), Connecticut General Assembly",
+        "url": "https://prdext3.cga.ct.gov/2025/act/Pa/pdf/2025PA-00113-R00SB-01295-PA.PDF"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "audits"
+        ],
+        "issueAreas": [
+          "privacy",
+          "discrimination"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/news/a/a-view-from-dc-double-toil-and-trouble-in-connecticut-s-privacy-amendment"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2026-sb4",
+      "state": "CT",
+      "session": "2026",
+      "billNumber": "SB 4 (Public Act 26-64)",
+      "title": "Consumer privacy: data broker registry, facial recognition limits, automated profiling",
+      "sponsors": [
+        {
+          "name": "Martin Looney",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Bob Duff",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Saud Anwar",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "James Maroney",
+          "party": "Democratic",
+          "role": "General Law co-chair; led Senate floor passage",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2026-05-27",
+      "statusNote": "Public Act 26-64; most provisions take effect Oct. 1, 2026.",
+      "categories": [
+        "ai-privacy-surveillance"
+      ],
+      "summary": "Creates a data broker registry with a single state deletion portal, bans sales of precise geolocation data, restricts facial recognition and expands consumer rights over automated profiling and automated decision-making; most provisions take effect Oct. 1, 2026.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "SB 4 bill status/text, Connecticut General Assembly",
+        "url": "https://www.cga.ct.gov/2026/cbs/S/pdf/SB-0004.pdf"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "bans"
+        ],
+        "issueAreas": [
+          "privacy"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/news/a/notable-ai-privacy-bills-hit-finish-line-in-illinois-connecticut-and-new-york"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2026-hb5312",
+      "state": "CT",
+      "session": "2026",
+      "billNumber": "HB 5312 (Public Act 26-55)",
+      "title": "Civil remedies and 48-hour takedown for deepfake intimate images",
+      "sponsors": [],
+      "sponsorsNote": "Reported by the Judiciary Committee; backed by Attorney General William Tong. Sponsors not shown in the sources found.",
+      "status": "enacted",
+      "statusDate": "2026-05-26",
+      "statusNote": "Public Act 26-55; effective Oct. 1, 2026.",
+      "categories": [
+        "ai-deepfakes"
+      ],
+      "summary": "Lets a person harmed by the dissemination of an AI-generated (synthetically created) intimate image sue in Superior Court, requires covered platforms to remove such images within 48 hours of a valid request, and lets the attorney general seek civil penalties from noncompliant platforms; effective Oct. 1, 2026.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Public Act 26-55 (HB 5312), Connecticut General Assembly",
+        "url": "https://prdext3.cga.ct.gov/2026/act/pa/pdf/2026PA-00055-R00HB-05312-PA.pdf"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "deepfakes-elections"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ct-2026-hb5469",
+      "state": "CT",
+      "session": "2026",
+      "billNumber": "HB 5469",
+      "title": "\"Bring your own power\" for data centers and other large electricity users",
+      "sponsors": [],
+      "sponsorsNote": "Energy and Technology Committee bill.",
+      "status": "failed",
+      "statusDate": "2026-05-06",
+      "statusNote": "Cleared the Energy and Technology Committee on Mar. 19, 2026; died when the session ended (BillTrack50, CT Public).",
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "summary": "Would have required new customers of 50 MW or more, such as data centers, to get their power from a colocated or off-grid supplier and required utilities to file large-load tariff proposals with PURA by April 1, 2027; it cleared the Energy and Technology Committee on March 19, 2026 but died when the session ended.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "HB 5469 Joint Favorable Report (Energy and Technology), Connecticut General Assembly",
+        "url": "https://www.cga.ct.gov/2026/JFR/H/PDF/2026HB-05469-R00ET-JFR.PDF"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.us/insider/2026/10/13/state-lawmakers-look-to-behind-the-meter-policies-for-data-centers"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2026-sb1119",
+      "state": "CA",
+      "session": "2025-2026",
+      "billNumber": "SB 1119",
+      "title": "Adam's Law: companion chatbots and children's safety",
+      "sponsors": [
+        {
+          "name": "Steve Padilla",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Buffy Wicks",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Rebecca Bauer-Kahan",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2026-09-10",
+      "statusNote": "Signed Sept. 10, 2026.",
+      "categories": [
+        "ai-child-safety"
+      ],
+      "summary": "Requires companion chatbot operators to assess child-safety risks every year, build in crisis protocols for suicidal ideation, offer parental controls and alerts if a child turns off safety settings, and submit to independent audits, with a private right of action for children harmed by violations.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Governor Newsom signs the strongest child safety chatbot and social media laws in the nation (Sept. 10, 2026)",
+        "url": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "audits",
+          "liability"
+        ],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/social-media-and-children-2026-legislation"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2025-ab316",
+      "state": "CA",
+      "session": "2025-2026",
+      "billNumber": "AB 316",
+      "title": "No \"the AI acted on its own\" defense in civil suits",
+      "sponsors": [
+        {
+          "name": "Maggy Krell",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-10-13",
+      "statusNote": "Signed Oct. 13, 2025; effective Jan. 1, 2026.",
+      "categories": [
+        "ai-consumer-protection"
+      ],
+      "summary": "Bars a defendant that developed, modified or used an AI system from arguing in a civil suit that the AI acted autonomously to cause the plaintiff's harm; effective Jan. 1, 2026.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Asm. Krell: Governor signs bill that will help ensure accountability for AI harm (Oct. 13, 2025)",
+        "url": "https://krell.asmdc.org/press-releases/20251013-governor-signs-bill-will-help-ensure-accountability-ai-harm"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.ai/2025-enacted-ai-laws-report"
+        },
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2025-ab621",
+      "state": "CA",
+      "session": "2025-2026",
+      "billNumber": "AB 621",
+      "title": "Deepfake pornography: wider civil liability",
+      "sponsors": [
+        {
+          "name": "Rebecca Bauer-Kahan",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-10-13",
+      "statusNote": "Signed Oct. 13, 2025.",
+      "categories": [
+        "ai-deepfakes"
+      ],
+      "summary": "Expands California's civil remedies for nonconsensual sexually explicit deepfakes, including claims for depicted minors and against those who knowingly facilitate or recklessly aid the conduct, such as services that keep deepfake pornography sites running.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Governor Newsom signs bills to further strengthen California's leadership in protecting children online (Oct. 13, 2025)",
+        "url": "https://www.gov.ca.gov/2025/10/13/governor-newsom-signs-bills-to-further-strengthen-californias-leadership-in-protecting-children-online"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "deepfakes-elections",
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.ai/nonconsensual-deepfake-laws"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2025-sb524",
+      "state": "CA",
+      "session": "2025-2026",
+      "billNumber": "SB 524",
+      "title": "Police must disclose reports written with AI",
+      "sponsors": [],
+      "sponsorsNote": "Author: Sen. Jesse Arreguín (party not shown in the sources found).",
+      "status": "enacted",
+      "statusDate": "2025-10",
+      "statusNote": "Signed Oct. 2025; effective Jan. 1, 2026.",
+      "categories": [
+        "ai-privacy-surveillance"
+      ],
+      "summary": "Requires law enforcement agencies to disclose on each page of an official report, including drafts, when the report was fully or partly written with AI; effective Jan. 1, 2026.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "California Lawyers Association: Signed and vetoed California AI, privacy and technology-related bills",
+        "url": "https://calawyers.org/privacy-law/signed-and-vetoed-california-ai-privacy-and-technology-related-bills/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "privacy"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.ai/2025-enacted-ai-laws-report"
+        },
+        {
+          "tracker": "ncsl",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ca-2025-ab93",
+      "state": "CA",
+      "session": "2025-2026",
+      "billNumber": "AB 93",
+      "title": "Data center water-use estimates and reporting",
+      "sponsors": [
+        {
+          "name": "Diane Papan",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "vetoed",
+      "statusDate": "2025-10-11",
+      "statusNote": "Vetoed in Oct. 2025 (dates reported: Oct. 11 and Oct. 14); the governor did not want rigid reporting rules without knowing the impact.",
+      "categories": [
+        "dc-water-environment",
+        "dc-transparency"
+      ],
+      "summary": "Would have required data centers to estimate expected water use before applying for a business license and certify actual annual water use at renewal; Newsom vetoed it, saying he did not want to impose rigid reporting rules without knowing the impact on businesses and consumers.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Asm. Papan: Governor vetoes Papan bill to track data center water use",
+        "url": "https://papan.asmdc.org/press-releases/20251014-governor-vetoes-papan-bill-track-data-center-water-use"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "multistate",
+          "url": "https://www.multistate.us/insider/2026/3/3/state-data-center-water-usage-legislation-gains-momentum"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-s3062-guard-act",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "S. 3062",
+      "title": "GUARD Act: AI companion chatbots and minors",
+      "sponsors": [
+        {
+          "name": "Josh Hawley",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Richard Blumenthal",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-04-30",
+      "statusNote": "Reported 22-0 by the Senate Judiciary Committee on Apr. 30, 2026; no floor vote found.",
+      "categories": [
+        "ai-child-safety"
+      ],
+      "summary": "Would bar AI companions for users under 18, require age verification and disclosure that chatbots are not human, and make it a crime to knowingly offer chatbots that engage minors in sexual content or encourage suicide; Senate Judiciary reported it 22-0 on Apr. 30, 2026 and it awaits a Senate floor vote.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Sen. Hawley: GUARD Act to protect kids from AI chatbots passes committee unanimously",
+        "url": "https://www.hawley.senate.gov/senator-hawleys-guard-act-to-protect-kids-from-ai-chatbots-passes-committee-unanimously/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/news/a/us-senate-judiciary-tees-up-ai-chatbot-companion-safety-debate"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-s4591-no-fakes-act",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "S. 4591 / H.R. 8915",
+      "title": "NO FAKES Act of 2026: AI copies of voice and likeness",
+      "sponsors": [
+        {
+          "name": "Marsha Blackburn",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Chris Coons",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Maria Elvira Salazar",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Madeleine Dean",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-06-18",
+      "statusNote": "Reported unanimously by the Senate Judiciary Committee on June 18, 2026; a request to pass it by unanimous consent was blocked in Oct. 2026.",
+      "categories": [
+        "ai-deepfakes",
+        "ai-copyright"
+      ],
+      "summary": "Would create a federal right to sue over unauthorized AI digital replicas of a person's voice or likeness; Senate Judiciary reported the Senate bill unanimously on June 18, 2026, but a unanimous-consent request to pass it was blocked by Sen. Cruz in October 2026.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "GovInfo: S. 4591, reported in Senate (Calendar No. 446)",
+        "url": "https://govinfo.gov/content/pkg/BILLS-119s4591rs/xhtml/BILLS-119s4591rs.html"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "deepfakes-elections"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/news/a/us-sen-blackburn-proposes-ai-framework-to-protect-children-copyrights"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-hr9925-frontier-act",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "H.R. 9925",
+      "title": "FRONTIER Act: transparency and safety rules for frontier AI developers",
+      "sponsors": [
+        {
+          "name": "Jay Obernolte",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Lori Trahan",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-07-23",
+      "statusNote": "Introduced July 23, 2026 (one summary says September); with House Energy and Commerce.",
+      "categories": [
+        "ai-frontier-safety"
+      ],
+      "summary": "Would set tiered federal transparency and safety rules for frontier AI developers, scaled to company size, including model cards, risk-management frameworks, independent audits and incident reporting, as a uniform national standard; it sits with House Energy and Commerce.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "LegiScan: US HB9925, 119th Congress",
+        "url": "https://legiscan.com/US/bill/HB9925/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "disclosure",
+          "audits"
+        ],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [
+        {
+          "tracker": "iapp",
+          "url": "https://iapp.org/news/a/congressional-stalemates-take-wind-out-of-us-digital-policy-sails"
+        }
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-s4213",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "S. 4213",
+      "title": "Data Center Water and Energy Transparency Act of 2026",
+      "sponsors": [
+        {
+          "name": "Dick Durbin",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "in-committee",
+      "statusDate": "2026-03-25",
+      "statusNote": "Introduced Mar. 25, 2026; in committee.",
+      "categories": [
+        "dc-transparency",
+        "dc-water-environment"
+      ],
+      "summary": "Would require data centers to report energy and water use to their states (and planned facilities to estimate five years of use), with states sending aggregated data to EPA, DOE and USDA for regional reports and the agencies able to fine noncompliant operators.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "GovInfo: S. 4213 (IS), Data Center Water and Energy Transparency Act of 2026",
+        "url": "https://www.govinfo.gov/app/details/BILLS-119s4213is"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-26",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "trackers": [],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-26",
+          "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
         }
       ]
     }

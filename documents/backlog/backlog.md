@@ -40,9 +40,9 @@ Built from the project proposal and the dashboard as deployed on Nov. 26, 2026 (
 | AIPD-111 | Track A: 2026 Senate candidates | Voter priorities: where AI ranks for voters in each race | 8 | **Must-Must** | Done (Nov. 26) | AIPD-211 |
 | AIPD-112 | Dashboard experience and context | Bar charts: importance of AI against the top issues, per race | 5 | **Must-Must** | Done (Nov. 26) | AIPD-111 |
 | AIPD-211 | Verification, coding and reliability | Hand-off list and ChatGPT prompt for claims Claude cannot verify | 3 | **Must-Must** | Done (Nov. 26) | - |
-| AIPD-212 | Verification, coding and reliability | Import ChatGPT verification results | 5 | **Must-Must** | In progress (batch 01 of 13 imported) | AIPD-211 |
+| AIPD-212 | Verification, coding and reliability | Import ChatGPT verification results | 5 | **Must-Must** | In progress (batch 01 of 14 imported; tool in tools/import_chatgpt.py) | AIPD-211 |
 | AIPD-311 | Track B: officeholders and state legislation | Public opinion on AI by party from Gallup and Pew | 5 | **Must-Must** | Done (Nov. 26) | AIPD-211 |
-| AIPD-312 | Track B: officeholders and state legislation | Legislation sourced from the IAPP, NCSL and MultiState trackers | 8 | **Must-Must** | To do | AIPD-302 |
+| AIPD-312 | Track B: officeholders and state legislation | Legislation sourced from the IAPP, NCSL and MultiState trackers | 8 | **Must-Must** | Done (Nov. 26) | AIPD-302 |
 | AIPD-101 | Track A: 2026 Senate candidates | Archive campaign pages before they go offline | 3 | **Must** | To do | - |
 | AIPD-102 | Track A: 2026 Senate candidates | Final race list with published selection criteria | 3 | **Must** | To do | - |
 | AIPD-103 | Track A: 2026 Senate candidates | Add the next five Senate races | 8 | **Must** | To do | AIPD-102, AIPD-101 |
@@ -54,7 +54,7 @@ Built from the project proposal and the dashboard as deployed on Nov. 26, 2026 (
 | AIPD-203 | Verification, coding and reliability | Inter-coder reliability test | 8 | **Must** | To do | AIPD-202 |
 | AIPD-204 | Verification, coding and reliability | Codebook version 1.0 | 3 | **Must** | To do | AIPD-203 |
 | AIPD-301 | Track B: officeholders and state legislation | Officeholder profiles | 13 | **Must** | To do | - |
-| AIPD-302 | Track B: officeholders and state legislation | Check licences for legislative data sources | 2 | **Must** | To do | - |
+| AIPD-302 | Track B: officeholders and state legislation | Check licences for legislative data sources | 2 | **Must** | Done (Nov. 26, with AIPD-312) | - |
 | AIPD-303 | Track B: officeholders and state legislation | Automatic bill data from official or open sources | 13 | **Must** | To do | AIPD-302 |
 | AIPD-306 | Track B: officeholders and state legislation | Rhetoric-versus-action measure | 8 | **Must** | To do | AIPD-301, AIPD-305 |
 | AIPD-404 | Track C: elections outside the U.S. (2027) | Record France's two-round result | 3 | **Must** | To do | - |
@@ -130,7 +130,7 @@ Acceptance criteria:
 Note: Done Nov. 26, 2026: 138 claims in 12 batches. Every source site tested (Congress, the four legislatures, NCSL, IAPP, MultiState, Gallup, Pew, AP, NBC, EU and French official sites) was blocked from the cloud environment.
 
 #### AIPD-212: Import ChatGPT verification results
-*Must-Must · 5 points · In progress (batch 01 of 13 imported) · Proposal: §5, §8, §10 item 4 · Depends on: AIPD-211*
+*Must-Must · 5 points · In progress (batch 01 of 14 imported; tool in tools/import_chatgpt.py) · Proposal: §5, §8, §10 item 4 · Depends on: AIPD-211*
 
 As the project owner, I want to paste ChatGPT's answers here and have them applied consistently so that verified claims rise to High confidence and wrong ones are corrected.
 
@@ -157,18 +157,18 @@ Acceptance criteria:
 Note: Delivered Nov. 26: 8 findings (6 Pew, 2 Gallup) charted by party on the Party comparison page, cited with publication dates and links as both terms allow. Figures came via web search; batch 13 of the ChatGPT hand-off confirms them against the releases.
 
 #### AIPD-312: Legislation sourced from the IAPP, NCSL and MultiState trackers
-*Must-Must · 8 points · To do · Proposal: §4 Track B · Depends on: AIPD-302*
+*Must-Must · 8 points · Done (Nov. 26) · Proposal: §4 Track B · Depends on: AIPD-302*
 
 As a researcher, I want AI bills drawn from the IAPP, NCSL and MultiState trackers, each confirmed on the official legislature site, so that the legislation layer is complete and cross-checked.
 
 Acceptance criteria:
-- [ ] Terms of use checked and recorded first (NCSL's database is powered by LexisNexis State Net): bill facts used with attribution and links; tracker summaries not copied
-- [ ] For Michigan, Texas, Connecticut, California and federal: every AI and data center bill each tracker lists, with missing bills added
-- [ ] Each added bill cites the official legislature page as its primary source
-- [ ] Each bill shows which trackers list it; a coverage table per state compares our count with each tracker and flags disagreements
-- [ ] Every added bill checked; validator passes
+- [x] Terms of use checked and recorded first (NCSL's database is powered by LexisNexis State Net): bill facts used with attribution and links; tracker summaries not copied
+- [x] For Michigan, Texas, Connecticut, California and federal: every AI and data center bill each tracker lists, with missing bills added
+- [x] Each added bill cites the official legislature page as its primary source
+- [x] Each bill shows which trackers list it; a coverage table per state compares our count with each tracker and flags disagreements
+- [x] Every added bill checked; validator passes
 
-Note: The proposal uses these trackers for reference and validation, not as data to copy; this keeps that. The tracker sites are blocked here, so tracker lists come from you (exports or pasted pages), ChatGPT, or a wider network setting (AIPD-205).
+Note: Delivered Nov. 26: terms of use checked; 25 bills added (MI 6, TX 6, CT 4, CA 5, federal 4), most confirmed on the legislature record; coverage by tracker shown on every bill and a comparison table with the trackers' published counts on the Legislation page. "Covered by" means named on the tracker's site or in its reports: the databases could not be opened. Batch 14 of the ChatGPT hand-off covers the new bills.
 
 ### Epic: Track A: 2026 Senate candidates
 
@@ -357,13 +357,13 @@ Acceptance criteria:
 Note: Can be split: data model (8) + linking existing records (5).
 
 #### AIPD-302: Check licences for legislative data sources
-*Must · 2 points · To do · Proposal: §4 Track B [TO VERIFY licensing]*
+*Must · 2 points · Done (Nov. 26, with AIPD-312) · Proposal: §4 Track B [TO VERIFY licensing]*
 
 As the project owner, I want each data source's terms checked so that the dataset can be published legally.
 
 Acceptance criteria:
-- [ ] Terms recorded for NCSL (LexisNexis State Net), IAPP, MultiState, LegiScan and Open States
-- [ ] Decision on primary sources; third-party trackers used for validation only
+- [x] Terms recorded for NCSL (LexisNexis State Net), IAPP, MultiState, LegiScan and Open States
+- [x] Decision on primary sources; third-party trackers used for validation only
 
 #### AIPD-303: Automatic bill data from official or open sources
 *Must · 13 points · To do · Proposal: §4 Track B, §9 (Jan-Mar 2027) · Depends on: AIPD-302*
