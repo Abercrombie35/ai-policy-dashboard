@@ -2,6 +2,7 @@ import React from 'react';
 import ProposalsPanel from './ProposalsPanel';
 import CategoryBreakdown from './CategoryBreakdown';
 import { ResultSummary } from './ElectionResult';
+import { PlaceVoterPriorities } from './OpinionCharts';
 import { racesForState, stateName, isVerified, itemsForRace } from '../lib/data';
 import { navigate } from '../lib/router';
 import '../styles/StateView.css';
@@ -48,6 +49,8 @@ function StateView({ stateAbbr, onClose }) {
           <p className="empty-note">No race in {name} is tracked yet.</p>
         )}
       </section>
+
+      <PlaceVoterPriorities state={stateAbbr} />
 
       <section className="state-section">
         <h3>{name} by category: said and proposed</h3>

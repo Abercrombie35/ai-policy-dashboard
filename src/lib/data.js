@@ -11,6 +11,8 @@ import itemCategoriesData from '../data/item-categories.json';
 import europeGeoData from '../data/europe-geo.json';
 import headlinesData from '../data/headlines.json';
 import verificationData from '../data/verification.json';
+import voterPrioritiesData from '../data/voter-priorities.json';
+import publicOpinionData from '../data/public-opinion.json';
 
 const raceModules = import.meta.glob('../data/races/*.json', { eager: true, import: 'default' });
 
@@ -60,6 +62,15 @@ export const bills = legislation.bills;
 export const usRaces = races.filter((r) => !isInternational(r));
 export const usBills = bills.filter((b) => !isInternational(b));
 export const racesForCountry = (code) => races.filter((r) => r.country === code);
+
+// Polls on voters' priorities (voter-priorities.json): which issues mattered
+// most in each race's state or country, and any poll that asked about AI.
+export const voterPriorities = voterPrioritiesData;
+export const pollsForRace = (race) => voterPrioritiesData.polls.filter((p) => (p.races || []).includes(race.id));
+export const pollsForPlace = ({ state, country }) =>
+  voterPrioritiesData.polls.filter((p) => (state && p.state === state) || (country && p.country === country));
+// Gallup and Pew findings on AI by party (public-opinion.json).
+export const publicOpinion = publicOpinionData;
 // Laws that apply in a country: its own, plus EU law for EU member states.
 export const billsForCountry = (code) =>
   bills.filter((b) => b.country === code || (b.country === 'EU' && europeGeoData.countries[code]?.eu));

@@ -1,0 +1,129 @@
+/* Opinion charts (voter priorities, Gallup and Pew by party).
+   Colours were checked with the data-viz palette validator against the card
+   surface #fcfaf5: AI accent violet #6a4ce2 vs. de-emphasis grey #828c87
+   (emphasis form); party blue #245f9f vs. red #a33d38 (all checks pass).
+   The grey sits at the 3:1 contrast floor, so every value is printed and a
+   table view is always available. */
+.voter-priorities,
+.party-opinion {
+  --viz-accent: #6a4ce2;
+  --viz-muted: #828c87;
+  --viz-track: #ebe8f6;
+  --viz-ink: var(--research-ink, #253e46);
+  --viz-ink-2: var(--research-muted, #5b6d72);
+  --viz-rule: var(--research-rule, #d6ddd7);
+  --viz-surface: var(--research-card, #fcfaf5);
+  margin: 28px 0;
+}
+.voter-priorities h3,
+.party-opinion h3 { margin-bottom: 6px; }
+
+.chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-top: 12px; }
+.opinion-chart {
+  margin: 0;
+  padding: 16px 18px 12px;
+  border: 1px solid var(--viz-rule);
+  border-radius: 8px;
+  background: var(--viz-surface);
+  color: var(--viz-ink);
+}
+.opinion-chart figcaption { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+.opinion-chart .chart-title { font-weight: 650; font-size: 1rem; }
+.opinion-chart .chart-question { font-size: 0.82rem; font-style: italic; color: var(--viz-ink-2); line-height: 1.45; }
+.opinion-chart .chart-meta { font-size: 0.74rem; color: var(--viz-ink-2); }
+
+/* One baseline per chart; bars grow from it. */
+.bars { display: flex; flex-direction: column; gap: 6px; padding: 2px 0; }
+.bar-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(120px, 38%) 1fr;
+  align-items: center;
+  column-gap: 10px;
+  min-height: 24px; /* hit area at least 24px */
+  border-radius: 4px;
+  outline-offset: 2px;
+}
+.bar-row .bar-label {
+  font-size: 0.84rem;
+  line-height: 1.3;
+  color: var(--viz-ink);
+  text-align: right;
+  padding-right: 2px;
+}
+.bar-row .bar-track {
+  display: flex;
+  align-items: center;
+  padding-right: 52px; /* room for the value at the bar tip */
+  border-left: 1px solid #c9cfcb; /* the shared baseline */
+  min-height: 24px;
+}
+.bar-row .bar-fill {
+  flex: none;
+  height: 16px;
+  background: var(--viz-muted);
+  border-radius: 0 4px 4px 0; /* rounded data end, square at the baseline */
+}
+.bar-row.is-accent .bar-fill { background: var(--viz-accent); }
+.bar-row .bar-value {
+  flex: none;
+  margin-left: 6px;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--viz-ink);
+  white-space: nowrap;
+}
+.bar-row.is-accent .bar-label,
+.bar-row.is-accent .bar-value { font-weight: 650; }
+.bar-rank { color: var(--viz-ink-2); font-variant-numeric: tabular-nums; }
+.bar-gap { padding-left: 40%; color: var(--viz-ink-2); font-size: 0.8rem; line-height: 1; }
+.bar-row.no-bar .bar-none { font-size: 0.8rem; color: var(--viz-ink-2); border-left: 1px solid #c9cfcb; padding: 3px 0 3px 8px; }
+
+/* Readout on hover and keyboard focus; the same values are printed and in the table. */
+.bar-row .bar-tip {
+  position: absolute;
+  left: 40%;
+  bottom: calc(100% + 4px);
+  z-index: 2;
+  padding: 5px 8px;
+  border: 1px solid var(--viz-rule);
+  border-radius: 6px;
+  background: var(--viz-surface);
+  box-shadow: 0 2px 8px rgba(37, 62, 70, 0.12);
+  font-size: 0.76rem;
+  color: var(--viz-ink);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+.bar-row:hover .bar-tip,
+.bar-row:focus-visible .bar-tip { opacity: 1; }
+.bar-row:hover { background: rgba(37, 62, 70, 0.04); }
+@media (prefers-reduced-motion: reduce) { .bar-row .bar-tip { transition: none; } }
+
+/* Meters (one figure against 0-100): a light track of the accent's own ramp. */
+.meter-list .bar-row .bar-track { background: linear-gradient(to right, var(--viz-track), var(--viz-track)) no-repeat; background-size: calc(100% - 52px) 16px; background-position: left center; }
+
+.chart-foot { margin: 10px 0 0; font-size: 0.76rem; color: var(--viz-ink-2); line-height: 1.5; }
+.poll-label { font-style: italic; }
+.chart-table { margin-top: 8px; font-size: 0.8rem; }
+.chart-table summary { cursor: pointer; color: var(--viz-ink-2); }
+.chart-table table { margin-top: 6px; }
+
+.chart-legend { display: flex; gap: 16px; list-style: none; margin: 6px 0 0; padding: 0; font-size: 0.82rem; color: var(--viz-ink); }
+.chart-legend li { display: flex; align-items: center; gap: 6px; }
+.legend-key { display: inline-block; width: 14px; height: 4px; border-radius: 2px; }
+
+.ai-question-polls { margin-top: 18px; }
+.ai-question-polls h5 { margin: 0 0 8px; font-size: 0.9rem; }
+.ai-question-polls .opinion-chart { margin-bottom: 12px; }
+
+.voter-priorities.compact { margin: 0; }
+.opinion-chart.compact { padding: 12px 14px 10px; }
+.opinion-chart.compact .bar-fill { height: 12px; }
+
+@media (max-width: 600px) {
+  .bar-row { grid-template-columns: minmax(96px, 42%) 1fr; }
+  .chart-grid { grid-template-columns: 1fr; }
+}

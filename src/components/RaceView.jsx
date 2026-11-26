@@ -5,6 +5,7 @@ import ElectionResult from './ElectionResult';
 import ProposalsPanel from './ProposalsPanel';
 import { RaceDeviation, RaceStances } from './Analysis';
 import { CheckNote } from './PolicyBox';
+import { VoterPriorities } from './OpinionCharts';
 import { filterDrafts, placeOf, blocs, BLOC_IDS } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/RaceView.css';
@@ -81,6 +82,8 @@ function RaceView({ race, onBack }) {
         {abroad && <ContextNotes race={race} />}
         {abroad && <BlocLegend />}
       </div>
+
+      <VoterPriorities race={race} />
 
       {/* Pre-election tracking comes first; the election result follows it. */}
       <h2 className="section-title">Pre-election tracking</h2>

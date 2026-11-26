@@ -304,6 +304,66 @@ results.forEach((r, i) => {
   if (r.resultStatus === 'certified' && r.confidence !== 'high') fail(w, 'a certified result should cite the official canvass with high confidence');
 });
 
+// Voter priorities: published polls on which issues mattered most to voters
+// in each tracked race's state or country, and polls that asked about AI.
+const voterPolls = read('voter-priorities.json').polls;
+const POLL_TYPES = new Set(['single', 'up-to-three', 'importance-rating']);
+const pctOk = (v) => typeof v === 'number' && v >= 0 && v <= 100;
+voterPolls.forEach((p, i) => {
+  const w = `voter-priorities.json polls[${i}] (${p.id})`;
+  checkLabeledRecord(w, p, new Set(['reported-fact']));
+  if (p.state != null && p.country != null) fail(w, 'give a state or a country, not both');
+  if (p.state != null && !STATES.has(p.state)) fail(w, `unknown state "${p.state}"`);
+  if (p.country != null && !EUROPE.has(p.country)) fail(w, `country "${p.country}" is not on the Europe map`);
+  if (p.state == null && p.country == null) fail(w, 'needs a state or a country');
+  if (!p.pollster || !p.question) fail(w, 'needs pollster and question wording');
+  checkDate(w, 'fieldStart', p.fieldStart, false, true);
+  checkDate(w, 'fieldEnd', p.fieldEnd, false, true);
+  if (!p.source?.url) fail(w, 'needs a source URL');
+  (p.races || []).forEach((r) => {
+    if (!raceIds.has(r)) fail(w, `race "${r}" has no race file`);
+  });
+  if (!(p.races || []).length) fail(w, 'list the races this poll is shown on');
+  if (p.kind === 'issue-priorities') {
+    if (!POLL_TYPES.has(p.questionType)) fail(w, `questionType must be one of ${[...POLL_TYPES].join(', ')}`);
+    if (!Array.isArray(p.issues) || p.issues.length < 3) fail(w, 'an issue poll needs at least three issues');
+    (p.issues || []).forEach((x) => {
+      if (!x.issue || !pctOk(x.pct)) fail(w, `each issue needs a name and a share from 0 to 100: ${JSON.stringify(x)}`);
+    });
+    if ((p.issues || []).filter((x) => x.ai).length > 1) fail(w, 'mark at most one issue as the AI or data center option');
+    if (![true, false, null].includes(p.aiOffered)) fail(w, 'aiOffered must be true, false or null (unknown)');
+    if ((p.issues || []).some((x) => x.ai) && p.aiOffered !== true) fail(w, 'aiOffered must be true when an issue is marked as AI');
+    const sum = (p.issues || []).reduce((a, x) => a + (x.pct || 0), 0);
+    if (p.questionType === 'single' && sum > 100.5) fail(w, `single-choice shares add up to ${sum.toFixed(1)}%`);
+  } else if (p.kind === 'ai-question') {
+    if (!Array.isArray(p.figures) || p.figures.length === 0) fail(w, 'an AI question needs at least one figure');
+    (p.figures || []).forEach((f) => {
+      if (!f.label || !pctOk(f.pct)) fail(w, `each figure needs a label and a share from 0 to 100: ${JSON.stringify(f)}`);
+    });
+  } else fail(w, 'kind must be issue-priorities or ai-question');
+});
+
+// Gallup and Pew findings by party.
+const opinion = read('public-opinion.json');
+const ORGS = new Set(['Gallup', 'Pew']);
+opinion.findings.forEach((f, i) => {
+  const w = `public-opinion.json findings[${i}] (${f.id})`;
+  checkLabeledRecord(w, f, new Set(['reported-fact']));
+  if (!ORGS.has(f.org)) fail(w, 'org must be Gallup or Pew');
+  if (!f.measure || !f.question) fail(w, 'needs a measure label and question wording');
+  checkDate(w, 'fieldStart', f.fieldStart, false, true);
+  checkDate(w, 'fieldEnd', f.fieldEnd, false, true);
+  if (!f.source?.url) fail(w, 'needs a source URL');
+  if (f.overall != null && !pctOk(f.overall)) fail(w, 'overall must be 0-100');
+  const parties = Object.entries(f.byParty || {});
+  if (!parties.some(([k, v]) => ['Democratic', 'Republican'].includes(k) && v != null)) fail(w, 'needs figures by party');
+  parties.forEach(([k, v]) => {
+    if (!['Democratic', 'Republican', 'Independent'].includes(k)) fail(w, `unknown party "${k}"`);
+    if (v != null && !pctOk(v)) fail(w, `${k} must be 0-100`);
+  });
+});
+if (opinion.findings.length && !Object.keys(opinion.terms || {}).length) fail('public-opinion.json', 'record each organisation\'s terms of use');
+
 // International
 read('international.json').elections.forEach((e, i) => {
   const w = `international.json elections[${i}]`;
@@ -324,6 +384,8 @@ const checkable = new Map();
 for (const rec of Object.values(raceItemsById)) checkable.set(rec.id, rec);
 for (const b of legislation.bills) checkable.set(b.id, b);
 for (const r of results) checkable.set(r.id, r);
+for (const p of voterPolls) checkable.set(p.id, p);
+for (const f of opinion.findings) checkable.set(f.id, f);
 const extraIds = new Set();
 for (const pos of partyLines.positions) (pos.evidence || []).forEach((_, j) => extraIds.add(`${pos.id}#${j}`));
 for (const item of Object.values(raceItemIndex)) extraIds.add(item.id);
