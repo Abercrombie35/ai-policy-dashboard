@@ -1,5 +1,5 @@
 import React from 'react';
-import { headlineOf, placeOf, billStatuses, trackOf, checkOf, CHECK_RESULTS } from '../lib/data';
+import { headlineOf, placeOf, billStatuses, trackOf, checkOf, CHECK_RESULTS, trackerName } from '../lib/data';
 import '../styles/PolicyBox.css';
 
 const tintOf = (party) => {
@@ -109,6 +109,17 @@ export function PolicyBox({ record, party, bloc, race, candidate, refNum, refPre
         <details className="policy-details">
           <summary>What it does</summary>
           <p>{details}</p>
+          {record.trackers?.length > 0 && (
+            <p className="policy-trackers">
+              Listed by:{' '}
+              {record.trackers.map((t, i) => (
+                <React.Fragment key={t.tracker}>
+                  {i > 0 && ' · '}
+                  {t.url ? <a href={t.url} target="_blank" rel="noopener noreferrer">{trackerName(t.tracker)}</a> : trackerName(t.tracker)}
+                </React.Fragment>
+              ))}
+            </p>
+          )}
         </details>
       )}
       <div className="policy-foot">

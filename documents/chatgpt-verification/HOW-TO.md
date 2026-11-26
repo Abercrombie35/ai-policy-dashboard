@@ -34,4 +34,6 @@ What Claude does with your results:
 |---|---|---|---|
 | 01 | 12 | 2026-11-26 | 8 High (7 corrected to match the primary source, 1 verified), 4 Medium (2 dates unconfirmed, 2 resting partly on news reports) |
 
-ChatGPT's replies are kept in `results/` (one file per batch) as the record of each check.
+ChatGPT's replies are kept in `results/` (one file per batch) as the record of each check, and Claude's
+claim-by-claim decisions in `decisions/`. They are applied with `tools/import_chatgpt.py` (usage at the top of
+that file), which bumps each record's version, records the method and level, and updates verification.json.

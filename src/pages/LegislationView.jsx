@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { PolicyBox, SourceList, makeSourceIndex } from '../components/PolicyBox';
 import { HiddenDraftsNotice } from '../components/ItemCard';
+import TrackerCoverage from '../components/TrackerCoverage';
 import { bills, billStatuses, filterDrafts, jurisdictionKey, jurisdictionLabel, blocOf, legislationNote, domainsOf, domains, DOMAIN_IDS, categoriesInDomain, primaryCategory, categoriesOf, billParty } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 
@@ -41,6 +42,8 @@ function LegislationView() {
         </p>
         <p className="fine-print">{legislationNote}</p>
       </header>
+
+      <TrackerCoverage />
 
       <div className="filter-row">
         <label>
