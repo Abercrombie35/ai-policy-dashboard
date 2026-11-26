@@ -1,0 +1,84 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: pl-d-data-centers#1
+  type: evidence for the Democratic party line
+  claim: Jeffries and other House Democratic leaders remain skeptical of a data center ban; Jeffries framed the issue around electricity bills.
+  date given: 2026-09-03
+  source we cited (may be secondary): https://www.notus.org/congress/jeffries-data-centers-progressives-moratorium
+
+- id: pl-d-preemption#0
+  type: evidence for the Democratic party line
+  claim: Asked about the Republican push in Congress to preempt state AI laws, Jeffries declined to take a side: "That conversation hasn't been brought to the leadership level yet."
+  date given: 2025-12-05
+  source we cited (may be secondary): https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/
+
+- id: us-ratepayer-protection-act
+  type: bill, law or official action
+  claim: U.S. federal H.R. 9340 (Senate companion S. 5028), "Ratepayer Protection Act" (119th Congress (2025-2026)). Sponsors: Gabe Evans (Republican), Kathy Castor (Democratic), Jon Husted (Republican). Status: passed-one-chamber on 2026-09-16. Passed the House 417-3 on Sept. 16, 2026; blocked in the Senate (unanimous consent failed Sept. 17; cloture failed 57-43 in late Sept.). What it does: Would have state utility regulators consider making data centers pay for new generation and grid upgrades. Passed the House with bipartisan support; Senate Democrats blocked it as a "toothless messaging bill".
+  date given: 2026-09-16
+  source we cited (may be secondary): https://www.nbcnews.com/politics/congress/senate-democrats-block-sen-husted-led-bill-data-centers-calling-toothl-rcna600269
+
+- id: ca-2024-sb1047
+  type: bill, law or official action
+  claim: California SB 1047, "Safe and Secure Innovation for Frontier Artificial Intelligence Models Act" (2023-2024 session). Sponsors: Scott Wiener (Democratic). Status: vetoed on 2024-09.  What it does: Would have required safety testing and added liability for developers of the largest AI models. Vetoed by Gov. Newsom.
+  date given: 2024-09
+  source we cited (may be secondary): https://techcrunch.com/2025/09/29/california-governor-newsom-signs-landmark-ai-safety-bill-sb-53/
+
+- id: ca-2025-ab1064
+  type: bill, law or official action
+  claim: California AB 1064, "LEAD for Kids Act" (2025-2026 session). Sponsors: Sponsors to verify.. Status: vetoed on 2025-10.  What it does: Would have restricted AI companion chatbots for children. Vetoed by Gov. Newsom.
+  date given: 2025-10
+  source we cited (may be secondary): https://www.ashurstperkinscoie.com/en/insights/california-governor-newsom-signs-several-ai-bills-but-vetoes-three/
+
+- id: ca-2025-sb243
+  type: bill, law or official action
+  claim: California SB 243, "Companion chatbot safeguards" (2025-2026 session). Sponsors: Sponsors to verify.. Status: enacted on 2025-10-13.  What it does: First state law requiring safeguards for AI companion chatbots: reminders that users are talking to AI, protections for minors and protocols for suicidal ideation. In force from Jan. 1, 2026.
+  date given: 2025-10-13
+  source we cited (may be secondary): https://www.nbcnews.com/tech/tech-news/ai-law-california-ca-companies-regulation-newsom-rcna234562
+
+- id: ca-2025-sb53
+  type: bill, law or official action
+  claim: California SB 53, "Transparency in Frontier Artificial Intelligence Act" (2025-2026 session). Sponsors: Scott Wiener (Democratic). Status: enacted on 2025-09-29.  What it does: Transparency duties for the largest AI developers, a channel for reporting critical safety incidents to the Office of Emergency Services, whistleblower protections, and a framework for CalCompute, a public AI computing cluster. In force from Jan. 1, 2026.
+  date given: 2025-09-29
+  source we cited (may be secondary): https://techcrunch.com/2025/09/29/california-governor-newsom-signs-landmark-ai-safety-bill-sb-53/
+
+- id: ca-2025-sb57
+  type: bill, law or official action
+  claim: California SB 57, "Electrical corporations: data centers: report" (2025-2026 session). Sponsors: Steve Padilla (Democratic). Status: enacted on 2025-10-11. Chaptered Oct. 11, 2025 (Chapter 647) after being narrowed from a data center tariff to a Public Utilities Commission study of cost shifts, due by 2027. What it does: Began as a special electricity rate for data centers; narrowed to a Public Utilities Commission assessment of whether data center costs shift to other customers.
+  date given: 2025-10-11
+  source we cited (may be secondary): https://calmatters.org/environment/2025/09/data-centers-california-electricity-rates/
+
+- id: ca-2025-sb7
+  type: bill, law or official action
+  claim: California SB 7, "Automated decision systems in employment ("No Robo Bosses")" (2025-2026 session). Sponsors: Sponsors to verify.. Status: vetoed on 2025-10.  What it does: Would have limited employers' use of automated decision systems in employment decisions. Vetoed by Gov. Newsom; a version was enacted in 2026 as SB 947.
+  date given: 2025-10
+  source we cited (may be secondary): https://www.ashurstperkinscoie.com/en/insights/california-governor-newsom-signs-several-ai-bills-but-vetoes-three/
+
+- id: ca-2026-ab1331
+  type: bill, law or official action
+  claim: California AB 1331, "Limits on workplace surveillance" (2025-2026 session). Sponsors: Sponsors to verify.. Status: enacted on 2026-09-30. Signed Sept. 30, 2026. What it does: Limits employers' use of AI-powered workplace surveillance.
+  date given: 2026-09-30
+  source we cited (may be secondary): https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety
+
+- id: ca-2026-ab1577
+  type: bill, law or official action
+  claim: California AB 1577, "Data center energy demand and local impact reporting" (2025-2026 session). Sponsors: Rebecca Bauer-Kahan (Democratic). Status: enacted on 2026-09-21. Signed Sept. 21, 2026. What it does: Reporting on data centers' energy demand and local impacts.
+  date given: 2026-09-21
+  source we cited (may be secondary): https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/
+
+- id: ca-2026-ab1883
+  type: bill, law or official action
+  claim: California AB 1883, "Limits on collecting workplace data, including neural data" (2025-2026 session). Sponsors: Sponsors to verify.. Status: enacted on 2026-09-30. Signed Sept. 30, 2026. What it does: Limits on collecting workers' data, including brain (neural) data, and on predicting workers' emotional states.
+  date given: 2026-09-30
+  source we cited (may be secondary): https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety

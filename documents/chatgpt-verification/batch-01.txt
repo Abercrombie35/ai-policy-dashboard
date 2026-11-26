@@ -1,0 +1,96 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: cr-fr-tondelier-1
+  type: candidate statement or position
+  claim: Marine Tondelier (Les Écologistes), presidential candidate in France: Criticizes the environmental cost of data centers.
+  date given: 2026-10-05
+  source we cited (may be secondary): https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/
+  not yet confirmed by us: Tondelier criticizes the environmental cost of data centers; The Maddyness article of Oct. 5, 2026 (did not appear in any search result)
+
+- id: cr-fr-tondelier-2
+  type: candidate statement or position
+  claim: Marine Tondelier (Les Écologistes), presidential candidate in France: Prefers smaller, specialized, open-source AI models over ever-larger systems.
+  date given: 2026-10-05
+  source we cited (may be secondary): https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/
+  not yet confirmed by us: Tondelier prefers smaller, specialized, open-source AI models over ever-larger systems; The Maddyness article of Oct. 5, 2026 (did not appear in any search result)
+
+- id: ca-2026-sb1168
+  type: bill, law or official action
+  claim: California SB 1168, "Data center rates during demand spikes" (2025-2026 session). Sponsors: Jerry McNerney (Democratic). Status: enacted on 2026-09-21. Signed Sept. 21, 2026. What it does: Described as making data centers pay the higher cost of electricity when demand spikes.
+  date given: 2026-09-21
+  source we cited (may be secondary): https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/
+  not yet confirmed by us: Description as making data centers pay the higher cost of electricity when demand spikes (not found; coverage speaks of load increases and upgrade costs, and an earlier version was a per-kWh wildfire surcharge)
+
+- id: ca-2026-sb886
+  type: bill, law or official action
+  claim: California SB 886, "California Technology Innovation and Ratepayer Protection Act" (2025-2026 session). Sponsors: Steve Padilla (Democratic). Status: enacted on 2026-09-21. Signed Sept. 21, 2026. What it does: Directs the Public Utilities Commission to set transmission-level tariffs for data centers by Jan. 1, 2028, so they pay to connect to the grid and for their power instead of general ratepayers. Part of a seven-bill data center package.
+  date given: 2026-09-21
+  source we cited (may be secondary): https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/
+  not yet confirmed by us: Short title 'California Technology Innovation and Ratepayer Protection Act' (not shown in any result)
+
+- id: cr-ca-gov-becerra-2
+  type: candidate statement or position
+  claim: Xavier Becerra (Democratic), Governor candidate in California: Said data centers should cover their own energy costs and argued for a predictable regulatory policy that supports data centers using clean energy.
+  date given: 2026-08-15
+  source we cited (may be secondary): https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm
+  not yet confirmed by us: That the Aug. 15, 2026 Tech Times article itself carries the data-center energy-cost and clean-energy statement (the article was found, but its data-center passage was not shown; the position comes from his campaign platform)
+
+- id: cr-ca-gov-hilton-2
+  type: candidate statement or position
+  claim: Steve Hilton (Republican), Governor candidate in California: Wants permitting for data centers made easier and a pro-development policy, while letting localities decide whether and where facilities are built; would expand energy infrastructure to serve them.
+  date given: During the 2026 campaign
+  source we cited (may be secondary): https://statescoop.com/california-gubernatorial-candidates-ai-tech-policy/
+  not yet confirmed by us: That he would let localities decide whether and where data centers are built (no statement on local authority found in two more searches)
+
+- id: cr-ca-gov-hilton-3
+  type: candidate statement or position
+  claim: Steve Hilton (Republican), Governor candidate in California: Called for "an immediate pause" on AI technology in public school classrooms until a safety review is completed, opposing a push for state AI tools in education.
+  date given: During the 2026 campaign
+  source we cited (may be secondary): https://www.sfexaminer.com/news/politics/california-gubernatorial-candidates-talk-tech-policy/article_fbb021fb-d56d-4a47-a9a2-bbd025d0ee32.html
+  not yet confirmed by us: That the pause was framed as opposing a push for state AI tools in education (coverage frames it as curbing Big Tech's influence over curricula and school policy)
+
+- id: cr-ct-house04-himes-2
+  type: candidate statement or position
+  claim: Jim Himes (Democratic), U.S. House (CT-4) candidate in Connecticut: At the same event, said he did not know whether claims that China and others were stoking opposition to U.S. data centers were true.
+  date given: 2026-10-21
+  source we cited (may be secondary): https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/26/top-democrat-says-chip-restrictions-are-key-lever-for-us-ai-edge-over-china
+  not yet confirmed by us: That he said he did not know whether those claims were true (his answer was not shown in two more searches)
+
+- id: cr-fr-attal-1
+  type: candidate statement or position
+  claim: Gabriel Attal (Renaissance), presidential candidate in France: Wants France to control the entire AI value chain, treats AI training as a basic skill, and lists AI among his four "major projects" alongside schools, wages and borders.
+  date given: 2026-10-05
+  source we cited (may be secondary): https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/
+  not yet confirmed by us: Wants France to control the entire AI value chain (no source ties the 'value chain' framing to Attal); Exact 'basic skill' framing of AI training
+
+- id: cr-fr-bardella-1
+  type: candidate statement or position
+  claim: Jordan Bardella (Rassemblement National (RN)), presidential candidate in France: Calls AI a major question of national sovereignty. Coverage finds the RN has few detailed AI measures so far, focusing mainly on taxing Big Tech and on public procurement.
+  date given: 2026-10-05
+  source we cited (may be secondary): https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/
+  not yet confirmed by us: Taxing Big Tech as a main RN AI measure (RN tax proposals found concern wealth and dividends, not tech firms); Coverage finding the RN has few detailed AI measures; Date 2026-10-05 (date of the Maddyness coverage; the date of the AFP-reported statement was not found); Bardella's label as RN presidential candidate: Marine Le Pen declared her own candidacy on July 7, 2026, with Bardella as her intended prime minister
+
+- id: cr-fr-melenchon-2
+  type: candidate statement or position
+  claim: Jean-Luc Mélenchon (La France Insoumise (LFI)), presidential candidate in France: Treats data centers, computing and cloud as sovereignty infrastructure as important as energy, transport or telecoms, and proposes a public digital and AI hub.
+  date given: During the 2026 campaign
+  source we cited (may be secondary): https://wyp.agency/en/france-2027-election-ai/candidates/jean-luc-melenchon/
+  not yet confirmed by us: An explicit comparison of data centers, computing and cloud with energy or transport infrastructure; A proposed 'public digital and AI hub' (pôle public) by that name
+
+- id: cr-fr-philippe-1
+  type: candidate statement or position
+  claim: Édouard Philippe (Horizons), presidential candidate in France: AI plan: double France's AI computing capacity within five years, raise engineers trained each year from 40,000 to 100,000, create a "right to retraining" for workers threatened by AI, and use state and local purchasing to back European champions such as Mistral.
+  date given: 2026-10-05
+  source we cited (may be secondary): https://www.maddyness.com/uk/2026/10/05/2027-presidential-election-what-the-candidates-are-really-proposing-on-ai/
+  not yet confirmed by us: 'Right to retraining' for workers threatened by AI (found only on a low-reliability aggregator page in round 1; not found this round); Use of state AND local purchasing specifically; Whether the 100,000 figure is French or European engineers

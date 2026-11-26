@@ -1,0 +1,84 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: ca-2026-ab2383
+  type: bill, law or official action
+  claim: California AB 2383, "Data center tariffs for wildfire and societal program costs" (2025-2026 session). Sponsors: Rick Chavez Zbur (Democratic). Status: enacted on 2026-09-21. Signed Sept. 21, 2026. What it does: Data center tariffs must also cover wildfire mitigation and liability, electrification, environmental programs and other costs usually paid by distribution-level ratepayers.
+  date given: 2026-09-21
+  source we cited (may be secondary): https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/
+
+- id: ca-2026-sb1000
+  type: bill, law or official action
+  claim: California SB 1000, "Updates to AI disclosure and provenance rules (AI Transparency Act)" (2025-2026 session). Sponsors: Sponsors to verify.. Status: enacted on 2026-09-30. Signed Sept. 30, 2026. What it does: Updates rules on disclosing AI-generated content and its provenance.
+  date given: 2026-09-30
+  source we cited (may be secondary): https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety
+
+- id: ca-2026-sb887
+  type: bill, law or official action
+  claim: California SB 887, "No exemption from environmental review for data centers" (2025-2026 session). Sponsors: Steve Padilla (Democratic). Status: enacted on 2026-09-21. Signed Sept. 21, 2026. What it does: Prevents data centers from skipping the state-mandated environmental review for new projects. The package also requires developers to disclose projected water use and pay for water supply upgrades.
+  date given: 2026-09-21
+  source we cited (may be secondary): https://www.kqed.org/news/12100746/newsom-signs-new-restrictions-on-data-center-development
+
+- id: ca-2026-sb947
+  type: bill, law or official action
+  claim: California SB 947, "Worker protections for AI and automated decision systems" (2025-2026 session). Sponsors: Sponsors to verify.. Status: enacted on 2026-09-30. Signed Sept. 30, 2026. What it does: Limits on employers' use of AI and automated decision systems, including in firing decisions.
+  date given: 2026-09-30
+  source we cited (may be secondary): https://calmatters.org/economy/technology/2026/09/on-ai-newsom-gives-labor-only-some-of-what-it-demanded/
+
+- id: cr-ca-gov-becerra-1
+  type: candidate statement or position
+  claim: Xavier Becerra (Democratic), Governor candidate in California: Released an 11-point AI plan: fully fund and launch CalCompute (the public AI computing cluster called for in SB 53), independent audits of every AI system deployed by a state agency, stronger enforcement of California's AI safety laws, tracking AI's effects on jobs, and protecting children from risky AI products.
+  date given: 2026-05
+  source we cited (may be secondary): https://www.xavierbecerra2026.com/priorities/ai/
+
+- id: cr-ca-gov-hilton-1
+  type: candidate statement or position
+  claim: Steve Hilton (Republican), Governor candidate in California: His AI plan argues against "sweeping, preemptive regulation on evolving technologies" and would limit new AI rules to children's safety, fraud prevention and intellectual property.
+  date given: 2026-08-15
+  source we cited (may be secondary): https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm
+
+- id: cr-ct-gov-fazio-2
+  type: candidate statement or position
+  claim: Ryan Fazio (Republican), Governor candidate in Connecticut: Called for ending tax breaks for large data centers and said such facilities should provide or contract for enough electricity to meet their own needs. Does not want to ban data centers.
+  date given: 2026-09-03
+  source we cited (may be secondary): https://www.wfsb.com/2026/09/03/fazio-calls-end-tax-breaks-large-data-centers/
+
+- id: cr-ct-gov-lamont-1
+  type: candidate statement or position
+  claim: Ned Lamont (Democratic), Governor candidate in Connecticut: Threatened to veto Connecticut's comprehensive AI bill (SB 2), which passed the state Senate 24-12 and then died in the House without a vote.
+  date given: 2024-04-24
+  source we cited (may be secondary): https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/
+
+- id: cr-ct-gov-lamont-2
+  type: candidate statement or position
+  claim: Ned Lamont (Democratic), Governor candidate in Connecticut: As a revised SB 2 advanced in 2025, his position was that AI regulation should fall to federal bodies such as Congress and the Federal Trade Commission rather than the state.
+  date given: 2025-05-14
+  source we cited (may be secondary): https://ctnewsjunkie.com/2025/05/14/appropriations-committee-advances-ai-regulation-bill-as-federal-preemption-looms/
+
+- id: cr-ct-gov-lamont-3
+  type: candidate statement or position
+  claim: Ned Lamont (Democratic), Governor candidate in Connecticut: In his February State of the State address, said Connecticut would "slow down new data centers, unless they add more generation as well."
+  date given: 2026-02
+  source we cited (may be secondary): https://www.wshu.org/connecticut-news/2026-02-27/ct-ai-data-centers-regulations
+
+- id: cr-ct-gov-lamont-4
+  type: candidate statement or position
+  claim: Ned Lamont (Democratic), Governor candidate in Connecticut: Signed SB 5 (Public Act 26-15), a broad AI law covering automated hiring decisions, consumer chatbots, frontier-model developers (including whistleblower protections), AI content provenance and platforms used by minors.
+  date given: 2026-05-27
+  source we cited (may be secondary): https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety
+
+- id: cr-ct-gov-lamont-5
+  type: candidate statement or position
+  claim: Ned Lamont (Democratic), Governor candidate in Connecticut: Said Connecticut is open to IT infrastructure but there is "no place" for massive data centers in the state, because they would raise residents' electric rates; proposals should first be reviewed by the Public Utilities Regulatory Authority.
+  date given: 2026-09-07
+  source we cited (may be secondary): https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont

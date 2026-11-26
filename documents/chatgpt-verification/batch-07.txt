@@ -1,0 +1,84 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: cr-ct-house04-goldstein-1
+  type: candidate statement or position
+  claim: Michael Goldstein (Republican), U.S. House (CT-4) candidate in Connecticut: In a campaign email, argued the country faces an electricity problem driven by data centers, AI computing and electrification mandates.
+  date given: 2026-02-07
+  source we cited (may be secondary): https://politicalemails.org/messages/2125190
+
+- id: cr-ct-house04-goldstein-2
+  type: candidate statement or position
+  claim: Michael Goldstein (Republican), U.S. House (CT-4) candidate in Connecticut: Proposed expanding trade schools to provide "AI-proof" jobs, and requiring universities to disclose graduate salary ranges by degree.
+  date given: During the 2026 campaign
+  source we cited (may be secondary): https://www.ctpublic.org/news/2026-10-27/jim-himes-ct-4th-distict-congress-michael-goldstein
+
+- id: cr-ct-house04-himes-3
+  type: candidate statement or position
+  claim: Jim Himes (Democratic), U.S. House (CT-4) candidate in Connecticut: On Face the Nation, raised concerns that Nvidia chips could reach China through intermediaries and questioned why the Commerce Department had not done more to stop the flow of the chips to China.
+  date given: 2026-11-15
+  source we cited (may be secondary): https://www.cbsnews.com/news/jim-himes-connecticut-democrat-face-the-nation-transcript-11-15-2026/
+
+- id: cr-fr-melenchon-1
+  type: candidate statement or position
+  claim: Jean-Luc Mélenchon (La France Insoumise (LFI)), presidential candidate in France: Backs a moratorium on "non-sovereign" data centers built for foreign private companies subject to U.S. law. Asked whether he favours a moratorium and a slowdown of AI, he said yes, with safeguards written into a bill his movement is preparing.
+  date given: 2026-07-22
+  source we cited (may be secondary): https://linsoumission.fr/2026/07/22/melenchon-entretien-reporterre/
+
+- id: cr-fr-philippe-2
+  type: candidate statement or position
+  claim: Édouard Philippe (Horizons), presidential candidate in France: At VivaTech, made AI sovereignty a central theme and an early credibility test of his campaign.
+  date given: 2026-06
+  source we cited (may be secondary): https://www.ecostylia.com/en/edouard-philippe-ai-2027/
+
+- id: cr-mi-gov-benson-2
+  type: candidate statement or position
+  claim: Jocelyn Benson (Democratic), Governor candidate in Michigan: In a TV ad launched Sept. 13, 2026, called for a moratorium on data centers, an end to their tax breaks and stopping them from raising electric bills. Did not say how long a moratorium should last.
+  date given: 2026-09-13
+  source we cited (may be secondary): https://www.yahoo.com/news/politics/articles/jocelyn-bensons-ad-calls-ending-100559557.html
+
+- id: cr-mi-gov-james-1
+  type: candidate statement or position
+  claim: John James (Republican), Governor candidate in Michigan: As a U.S. representative, voted for legislation that would have prohibited state and local governments from regulating AI systems, including data centers (the House budget bill carrying a 10-year moratorium on state AI laws).
+  date given: 2025-05
+  source we cited (may be secondary): https://michiganadvance.com/2026/09/02/as-james-pushes-local-control-on-data-centers-past-congressional-votes-sought-to-limit-just-that/
+
+- id: cr-mi-gov-james-2
+  type: candidate statement or position
+  claim: John James (Republican), Governor candidate in Michigan: His campaign said he supported a moratorium on new data centers until a local-control standard and protections for the environment and electricity bills were in place.
+  date given: 2026-08-01
+  source we cited (may be secondary): https://www.detroitnews.com/story/news/politics/2026/08/01/john-james-data-center-moratorium-michigan-governor-race-perry-johnson/91134570007/
+
+- id: cr-mi-sen-elsayed-2
+  type: candidate statement or position
+  claim: Abdul El-Sayed (Democratic), U.S. Senate candidate in Michigan: Released "AI Under Democracy", a 22-proposal AI platform built around democratic ownership and governance of AI, including support for public ownership of AI and protecting American jobs.
+  date given: 2026-06
+  source we cited (may be secondary): https://abdulforsenate.com/2026/06/dr-abdul-el-sayed-announces-ai-policy-platform-ai-under-democracy/
+
+- id: cr-mi-sen-elsayed-3
+  type: candidate statement or position
+  claim: Abdul El-Sayed (Democratic), U.S. Senate candidate in Michigan: Reported to propose freezing the development of powerful AI systems and new data centers.
+  date given: 2026-10-13
+  source we cited (may be secondary): https://www.washingtonpost.com/politics/2026/10/13/michigan-senate-candidate-el-sayed-issues-ai-policy/
+
+- id: cr-mi-sen-rogers-2
+  type: candidate statement or position
+  claim: Mike Rogers (Republican), U.S. Senate candidate in Michigan: Called for a one-year moratorium on new data center construction in Michigan until "we establish a fair, transparent approval process that puts local communities first." Continued to oppose a federal ban.
+  date given: 2026-08-20
+  source we cited (may be secondary): https://thehill.com/policy/technology/6042582-ai-infrastructure-political-toxicity-midterms/
+
+- id: cr-tx-gov-abbott-1
+  type: candidate statement or position
+  claim: Greg Abbott (Republican), Governor candidate in Texas: Signed HB 149, the Texas Responsible Artificial Intelligence Governance Act (TRAIGA), effective Jan. 1, 2026. It bans a short list of AI uses, including AI-generated child sexual abuse material and government social scoring, and requires state agencies to disclose AI use to consumers.
+  date given: 2025-06-22
+  source we cited (may be secondary): https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149

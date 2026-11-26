@@ -1,0 +1,48 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: us-hr6875
+  type: bill, law or official action
+  claim: U.S. federal H.R. 6875, "AI OVERWATCH Act" (119th Congress (2025-2026)). Sponsors: Sponsors to verify.. Status: in-committee on 2026-01-21. Ordered reported 42-2 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA. What it does: Would require the administration to notify Congress before approving advanced chip exports and let Congress block them.
+  date given: 2026-01-21
+  source we cited (may be secondary): https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/
+
+- id: us-hr8170
+  type: bill, law or official action
+  claim: U.S. federal H.R. 8170, "MATCH Act" (119th Congress (2025-2026)). Sponsors: Sponsors to verify.. Status: in-committee on 2026-04-22. Ordered reported 36-8 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA. What it does: Would require allied nations to match U.S. controls on exports of advanced chipmaking equipment to China.
+  date given: 2026-04-22
+  source we cited (may be secondary): https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/
+
+- id: us-hr9442
+  type: bill, law or official action
+  claim: U.S. federal H.R. 9442, "Artificial Intelligence Data Center Moratorium Act" (119th Congress (2025-2026)). Sponsors: Alexandria Ocasio-Cortez (Democratic). Status: in-committee on 2026-06-24. Introduced June 24, 2026; referred to committee. What it does: House companion to S. 4214, with about 20 cosponsors. Referred to the Energy and Commerce and Foreign Affairs committees.
+  date given: 2026-06-24
+  source we cited (may be secondary): https://www.congress.gov/bill/119th-congress/house-bill/9442/all-info
+
+- id: us-s4214
+  type: bill, law or official action
+  claim: U.S. federal S. 4214, "Artificial Intelligence Data Center Moratorium Act" (119th Congress (2025-2026)). Sponsors: Bernie Sanders (Independent). Status: in-committee on 2026-03-25. Introduced Mar. 25, 2026; referred to committee. What it does: Would prohibit building or upgrading AI data centers until laws regulating AI and AI data centers are enacted. Referred to the Senate Commerce Committee.
+  date given: 2026-03-25
+  source we cited (may be secondary): https://www.congress.gov/bill/119th-congress/senate-bill/4214
+
+- id: us-states-right-to-regulate-ai
+  type: bill, law or official action
+  claim: U.S. federal Number to verify, "States' Right to Regulate AI Act" (119th Congress (2025-2026)). Sponsors: Ed Markey (Democratic). Status: introduced on 2025-12.  What it does: Would bar the use of federal funds to carry out the December 2025 executive order targeting state AI laws.
+  date given: 2025-12
+  source we cited (may be secondary): https://www.axios.com/2025/12/19/trump-democrats-fight-back-ai-order
+
+- id: us-take-it-down-act
+  type: bill, law or official action
+  claim: U.S. federal Take It Down Act, "Take It Down Act" (119th Congress (2025-2026)). Sponsors: Ted Cruz (Republican), Amy Klobuchar (Democratic). Status: enacted on 2025-05-19.  What it does: Makes it a federal crime to publish or threaten to publish non-consensual intimate images, including AI deepfakes; platforms must remove flagged content within 48 hours.
+  date given: 2025-05-19
+  source we cited (may be secondary): https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation

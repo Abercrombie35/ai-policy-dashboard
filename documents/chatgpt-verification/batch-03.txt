@@ -1,0 +1,94 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: result-ct-governor-2026
+  type: election result (Nov. 3, 2026)
+  claim: Governor, Connecticut: Ned Lamont won. Called for Lamont by the Associated Press shortly before 9:20 p.m. on election night. Unofficial shares: Ned Lamont (Democratic) 59.6%; Ryan Fazio (Republican) 40.4%. Also check whether the result has been certified and, if so, the certified shares.
+  date given: 2026-11-03
+  source we cited (may be secondary): https://www.multistate.us/elections/governor-race/connecticut-2026
+  not yet confirmed by us: Vote shares 59.6% / 40.4% (MultiState) and the earlier NBC count of 58.8% / 41.2%: no general-election percentages appeared in the results; That Lamont's 2022 win was also over Stefanowski (no 2022 race details in the results); Certification: no report of the Connecticut state canvass found as of Nov. 24, 2026; no certified figures found
+
+- id: result-ct-house-04-2026
+  type: election result (Nov. 3, 2026)
+  claim: U.S. House (CT-4), Connecticut: Jim Himes won. Called for Himes by the Associated Press on Nov. 4, 2026. Unofficial shares: Jim Himes (Democratic) 65.58%; Michael Goldstein (Republican) 32.51%; Benjamin Wesley (Independent Party) 1.91%. Also check whether the result has been certified and, if so, the certified shares.
+  date given: 2026-11-03
+  source we cited (may be secondary): https://www.fox61.com/elections
+  not yet confirmed by us: AP call on Nov. 4, 2026 (an AP race-call item was found but it is undated and describes a ninth term, so it may be from 2024); Vote shares 65.58% / 32.51% / 1.91%: no 2026 percentages found; That this is his 10th term (consistent with first election in 2008, but not stated in the results); That Democrats won the House majority and that Himes is expected to chair the Intelligence Committee; Certification: no report found as of Nov. 24, 2026; no certified figures found
+
+- id: result-mi-governor-2026
+  type: election result (Nov. 3, 2026)
+  claim: Governor, Michigan: Jocelyn Benson won. Reported as a Benson win by NBC News, The Washington Post, Decision Desk HQ and MultiState. Unofficial shares: Jocelyn Benson (Democratic) 54.56%; John James (Republican) 43.72%; Anthony Hudson (Libertarian) 0.93%. Also check whether the result has been certified and, if so, the certified shares.
+  date given: 2026-11-03
+  source we cited (may be secondary): https://votes.decisiondeskhq.com/races/2026-11-03/michigan-governor-general-election
+  not yet confirmed by us: Specific calls by NBC News, The Washington Post, Decision Desk HQ and MultiState (the AP call was found instead); Anthony Hudson's 0.93%; That Duggan's name was not on the November ballot (only that he ended his campaign in May); Certification: the Board of State Canvassers' deadline was Nov. 23, 2026, but no report that it certified was found; no certified figures found
+
+- id: result-mi-senate-2026
+  type: election result (Nov. 3, 2026)
+  claim: U.S. Senate, Michigan: Abdul El-Sayed won. Called for El-Sayed by the Associated Press, Decision Desk HQ and Fox News. Unofficial shares: Abdul El-Sayed (Democratic) 52.5%; Mike Rogers (Republican) 45.5%; Lydia Christensen (Libertarian) 1.0%. Also check whether the result has been certified and, if so, the certified shares.
+  date given: 2026-11-03
+  source we cited (may be secondary): https://www.detroitnews.com/story/news/politics/elections/2026/11/03/michigan-senate-election-results-abdul-el-sayed-mike-rogers/92466965007/
+  not yet confirmed by us: Exact Detroit News figures as of 2:30 p.m. Nov. 4, including Lydia Christensen's 1.0%; Decision Desk HQ call; Certification: Michigan's Board of State Canvassers had a Nov. 23, 2026 deadline, but no report that it certified was found; no certified figures found
+
+- id: result-tx-governor-2026
+  type: election result (Nov. 3, 2026)
+  claim: Governor, Texas: Gina Hinojosa won. Gov. Greg Abbott conceded on election night. Unofficial shares: Gina Hinojosa (Democratic) 52.8%; Greg Abbott (Republican) 45.7%; Pat Dixon (Libertarian) 1.5%. Also check whether the result has been certified and, if so, the certified shares.
+  date given: 2026-11-03
+  source we cited (may be secondary): https://votes.decisiondeskhq.com/races/2026-11-03/texas-governor-general-election
+  not yet confirmed by us: Vote shares 52.8% / 45.7% / 1.5% (only early returns of about 57% to 41.7% were found, too early in the count to compare); Pat Dixon's 1.5%; Certification: no report of the Texas state canvass for the governor's race found as of Nov. 24, 2026; no certified figures found
+
+- id: result-tx-senate-2026
+  type: election result (Nov. 3, 2026)
+  claim: U.S. Senate, Texas: James Talarico won. Called for Talarico by the Associated Press on election night. Paxton conceded the same night. Unofficial shares: James Talarico (Democratic) 55.1%; Ken Paxton (Republican) 43.0%; Ted Brown (Other) 1.9%. Also check whether the result has been certified and, if so, the certified shares.
+  date given: 2026-11-03
+  source we cited (may be secondary): https://www.nbcnews.com/politics/2026-elections/texas-senate-results
+  not yet confirmed by us: Exact shares 55.1% / 43.0% / 1.9% (only the ~12.1-point margin was found, not individual shares); Ted Brown's 1.9%; Certification: no report found that the Texas state canvass has certified the result as of Nov. 24, 2026; no certified figures found
+
+- id: tx-90r-sb296
+  type: bill, law or official action
+  claim: Texas SB 296, "Two-year pause on new data centers, local votes and resident payments" (90th Legislature (2027), prefiled). Sponsors: Roland Gutierrez (Democratic). Status: introduced on 2026-11-09. Filed Nov. 9, 2026 for the session starting Jan. 12, 2027. What it does: Would pause new data centers for two years ("a utility may not energize a new or expanded electric service connection for a project"), then require local votes and yearly payments to county residents.
+  date given: 2026-11-09
+  source we cited (may be secondary): https://thetexasdispatch.com/sb-296-data-center-moratorium-local-vote-resident-payments/
+  not yet confirmed by us: Exact quoted wording "a utility may not energize a new or expanded electric service connection for a project"; How the yearly payments to county residents work
+
+- id: us-s3852-grid-act
+  type: bill, law or official action
+  claim: U.S. federal S. 3852 (number to verify), "GRID Act (Guaranteeing Rate Insulation from Data Centers Act)" (119th Congress (2025-2026)). Sponsors: Josh Hawley (Republican), Richard Blumenthal (Democratic). Status: introduced on 2026-02. Introduced Feb. 2026. What it does: Would bar most private data centers drawing 20 megawatts or more from using grid power unless they rely entirely on dedicated off-grid sources; existing sites get up to 10 years or a federal "Zero Rate Effect Certificate". Companies would publish five-year utility-use estimates.
+  date given: 2026-02
+  source we cited (may be secondary): https://www.eenews.net/articles/bipartisan-bill-would-force-data-centers-to-find-own-power-sources/
+  not yet confirmed by us: That the disclosure takes the form of five-year utility-use estimates
+
+- id: us-s5653
+  type: bill, law or official action
+  claim: U.S. federal S. 5653, "Bipartisan American Affordability and Jobs Act (permitting bill)" (119th Congress (2025-2026)). Sponsors: Martin Heinrich (Democratic), Sheldon Whitehouse (Democratic), Shelley Moore Capito (Republican), Mike Lee (Republican). Status: introduced on 2026-11-09. Senate voted 73-25 to advance it on Nov. 9, 2026; floor debate pending. What it does: Energy permitting bill that would have federal regulators make data centers and other large computing users pay for the grid infrastructure built to serve them. Heinrich and Trump both say it codifies the White House Ratepayer Protection Pledge; critics call it a giveaway to the industry.
+  date given: 2026-11-09
+  source we cited (may be secondary): https://www.opb.org/article/2026/11/09/senate-advances-sweeping-energy-legislation-in-first-major-action-since-midterm-elections/
+  not yet confirmed by us: That Heinrich and Trump say the bill codifies the White House Ratepayer Protection Pledge (results tie the pledge to the separate Ratepayer Protection Act, which Heinrich opposed in Sept. 2026); Critics' 'giveaway to the industry' wording for the data center provisions
+
+- id: us-s5658
+  type: bill, law or official action
+  claim: U.S. federal S. 5658, "A bill to prohibit the construction of data centers on Federal land" (119th Congress (2025-2026)). Sponsors: Ron Wyden (Democratic). Status: in-committee on 2026-09-30. Introduced Sept. 30, 2026; referred to committee. What it does: Would prohibit building data centers on federal land. Referred to the Energy and Natural Resources Committee.
+  date given: 2026-09-30
+  source we cited (may be secondary): https://www.congress.gov/bill/119th-congress/senate-bill/5658
+  not yet confirmed by us: A bill record naming Wyden as the sponsor of S. 5658 (trackers in the results don't name the sponsor, and Wyden coverage doesn't give the bill number)
+
+- id: cr-ct-gov-fazio-1
+  type: candidate statement or position
+  claim: Ryan Fazio (Republican), Governor candidate in Connecticut: As a state senator, was one of four senators to vote against SB 5, the 2026 AI law (passed 32-4), saying the issue is more properly handled at the federal level.
+  date given: 2026-04-21
+  source we cited (may be secondary): https://ctnewsjunkie.com/2026/09/24/ai-regulation-takes-center-stage-as-campaign-issue/
+
+- id: cr-ct-house04-himes-1
+  type: candidate statement or position
+  claim: Jim Himes (Democratic), U.S. House (CT-4) candidate in Connecticut: At a Brookings event, called restrictions on advanced chips Washington's main tool for prolonging America's frontier AI lead over China and said the U.S. should slow their spread to China for as long as it can.
+  date given: 2026-10-21
+  source we cited (may be secondary): https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/26/top-democrat-says-chip-restrictions-are-key-lever-for-us-ai-edge-over-china
