@@ -1,0 +1,162 @@
+You are fact-checking claims for a research dashboard on AI policy. Today is November 26, 2026. Use web browsing and open every page you rely on.
+
+For EACH claim below:
+1. Find the PRIMARY source: the official legislature or government page (bill text, bill status, roll call, press release), the politician's or campaign's own page or post, an official transcript or video, or the official election results page. Use a news report only when no primary source exists, and say so.
+2. Open it and check every key fact: who, what, when (date), numbers, and for bills the CURRENT status as of today.
+3. Do not rely on search snippets, aggregators, AI summaries or Wikipedia. Only cite pages you actually opened. If a page is paywalled or will not open, say so. Never guess.
+
+Verdicts: "verified" (every key fact matches the primary source), "partly-verified" (main point matches, some detail does not or is missing), "contradicted" (a key fact is wrong; give the correct value), "not-found" (no source found).
+
+Reply with ONLY one JSON code block: an array with one object per claim, in the same order, exactly in this shape:
+{"id": "...", "verdict": "verified | partly-verified | contradicted | not-found", "source_type": "official | campaign | transcript | election-office | news | other", "source_url": "https://...", "source_title": "...", "source_date": "YYYY-MM-DD or null", "exact_quote": "up to 40 words copied verbatim from the source that support the verdict", "corrections": [{"field": "e.g. date, status, sponsors, text, vote share", "correct": "...", "evidence": "..."}], "not_confirmed": ["details you could not confirm"], "notes": "one sentence"}
+
+Claims:
+- id: tx-89r-sb6
+  type: bill, law or official action
+  claim: Texas SB 6, "Large electricity users (including data centers): grid connection, costs and curtailment" (89th Legislature, Regular Session (2025)). Sponsors: Phil King (Republican). Status: enacted on 2025-06-20.  What it does: Requires the Public Utility Commission to set interconnection standards and fees for large electricity users of 75 MW or more, such as data centers, and lets ERCOT curtail or disconnect them during grid emergencies.
+  date given: 2025-06-20
+  source we cited (may be secondary): https://capitol.texas.gov/tlodocs/89R/analysis/html/SB00006F.htm
+
+- id: tx-89r-sb1964
+  type: bill, law or official action
+  claim: Texas SB 1964, "Use of AI by state agencies and local governments" (89th Legislature, Regular Session (2025)). Sponsors: Tan Parker (Republican), Giovanni Capriglione (Republican). Status: enacted on 2025-06-20.  What it does: Sets an AI code of ethics and minimum standards for state agencies and local governments that use AI in decisions affecting people's rights or benefits, and directs the Department of Information Resources to run a public-sector AI sandbox and write rules for higher-risk government AI.
+  date given: 2025-06-20
+  source we cited (may be secondary): https://capitol.texas.gov/tlodocs/89R/analysis/html/SB01964F.htm
+
+- id: tx-89r-sb20
+  type: bill, law or official action
+  claim: Texas SB 20, "Stopping AI-Generated Child Pornography Act" (89th Legislature, Regular Session (2025)). Sponsors: Pete Flores (Republican). Status: enacted on 2025-06-20.  What it does: Creates criminal offenses for possessing, promoting or viewing obscene visual material, including AI-generated or computer-generated images, that appears to depict a child.
+  date given: 2025-06-20
+  source we cited (may be secondary): https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00020F.HTM
+
+- id: tx-89r-hb581
+  type: bill, law or official action
+  claim: Texas HB 581, "Liability for AI 'nudify' apps that create sexual material of minors" (89th Legislature, Regular Session (2025)). Sponsors: Mary González (Democratic). Status: enacted on 2025-06-20.  What it does: Makes operators of websites and apps that use AI to create or alter sexual images liable when their tools are used to produce 'artificial sexual material harmful to minors' (computer-generated sexual material made with AI).
+  date given: 2025-06-20
+  source we cited (may be secondary): https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00581F.htm
+
+- id: tx-89r-sb441
+  type: bill, law or official action
+  claim: Texas SB 441, "Artificial intimate visual material (sexual deepfakes) liability" (89th Legislature, Regular Session (2025)). Sponsors: Juan "Chuy" Hinojosa (Democratic). Status: enacted on 2025-06-20.  What it does: Expands civil and criminal liability for creating or sharing nonconsensual sexually explicit images made with AI (deepfakes).
+  date given: 2025-06-20
+  source we cited (may be secondary): https://capitol.texas.gov/tlodocs/89R/analysis/html/SB00441F.htm
+
+- id: tx-90r-sb338
+  type: bill, law or official action
+  claim: Texas SB 338, "Data center cooling and water rules, and conditions on data center tax incentives" (90th Legislature (2027), prefiled). Sponsors: Charles Perry (Republican). Status: introduced on 2026-11-12. Prefiled Nov. 12, 2026 for the session starting Jan. 12, 2027. What it does: Would set cooling and water-reporting requirements for large data centers on the ERCOT grid, with disconnection as a penalty, and would attach cooling, environmental cleanup and property-tax-abatement conditions to data center tax incentive agreements.
+  date given: 2026-11-12
+  source we cited (may be secondary): https://capitol.texas.gov/tlodocs/90R/billtext/pdf/SB00338I.pdf
+
+- id: mi-hb4668
+  type: bill, law or official action
+  claim: Michigan HB 4668, "Artificial Intelligence Safety and Security Transparency Act (frontier AI developers)" (2025-2026 session). Sponsors: Sarah Lightner (Republican). Status: in-committee on 2026-03-19. In committee; one record suggests it moved to the Rules committee in May 2026 (to verify). What it does: Would require large AI developers to adopt and publish safety protocols, run risk assessments and third-party audits, and protect whistleblowers, with civil penalties for violations.
+  date given: 2026-03-19
+  source we cited (may be secondary): https://capitol.legislature.mi.gov/documents/2025-2026/billintroduced/House/htm/2025-HIB-4668.htm
+
+- id: mi-hb5899
+  type: bill, law or official action
+  claim: Michigan HB 5899, "Generative AI pilot program and governing board for state agencies" (2025-2026 session). Sponsors: Jaime Greene (Republican). Status: in-committee on 2026-05. In committee; sources differ on how far it has moved. What it does: Would have the Department of Technology, Management and Budget run a generative AI pilot program for state agencies, overseen by a three-member board, with limits on entering confidential data and human review of AI outputs.
+  date given: 2026-05
+  source we cited (may be secondary): https://www.michiganvotes.org/legislation/2026/house/bill-5899
+
+- id: mi-hb4536-4537
+  type: bill, law or official action
+  claim: Michigan HB 4536 (with HB 4537), "Ban on health insurers using AI to deny, modify or delay claims" (2025-2026 session). Sponsors: Carrie Rheingans (Democratic). Status: in-committee on 2026-03-19.  What it does: Would bar health insurers from denying, modifying or delaying claims based on a review using artificial intelligence; companion HB 4537 applies similar limits to the state health department and its contracted health plans.
+  date given: 2026-03-19
+  source we cited (may be secondary): https://capitol.legislature.mi.gov/documents/2025-2026/billintroduced/House/htm/2025-HIB-4536.htm
+
+- id: mi-sb761-763
+  type: bill, law or official action
+  claim: Michigan SB 761-763, "Data center water use, reporting and water-cost protection bills" (2025-2026 session). Sponsors: Rosemary Bayer (Democratic), Sue Shink (Democratic), Erika Geiss (Democratic). Status: in-committee on 2025-12-18.  What it does: Would deny water withdrawal permits to users consuming 2 million gallons a day or more (SB 761), require annual state reports on data center energy and water use (SB 762), and bar water utilities from passing data center infrastructure costs to residential customers (SB 763).
+  date given: 2025-12-18
+  source we cited (may be secondary): https://www.michiganvotes.org/legislation/2025/senate/bill-761
+
+- id: mi-sb1046-1051
+  type: bill, law or official action
+  claim: Michigan SB 1046-1051, "Senate Democratic data center package: water permits, ratepayer protection, labor, NDAs, community benefits" (2025-2026 session). Sponsors: Rosemary Bayer (Democratic), Mallory McMorrow (Democratic), Kevin Hertel (Democratic), Darrin Camilleri (Democratic). Status: in-committee on 2026-06-18.  What it does: Would require permits and hearings for users of more than 550,000 gallons of water a day, create a separate utility rate class so data centers pay their own power costs, set labor standards, limit officials' nondisclosure agreements with data centers, and require community benefit agreements before approval.
+  date given: 2026-06-18
+  source we cited (may be secondary): https://senatedems.com/camilleri/?p=2070
+
+- id: mi-hb6135-6142
+  type: bill, law or official action
+  claim: Michigan HB 6135-6142, "House Democratic 'Data Center Guardrail' package (rate class, closed-loop cooling, community benefits, NDAs, decommissioning)" (2025-2026 session). Sponsors: Joey Andrews (Democratic). Status: in-committee on 2026-06-25.  What it does: Would create a large-load rate class for data centers (HB 6135), require closed-loop cooling or municipal water (HB 6138, 'Data Center Water Regulation Act'), require community benefit agreements (HB 6137), noise reports (HB 6139), limits on NDAs (HB 6140), labor standards (HB 6141) and decommissioning plans with financial assurance (HB 6142).
+  date given: 2026-06-25
+  source we cited (may be secondary): https://michiganadvance.com/2026/06/26/michigan-house-democrats-pitch-transparency-community-benefit-requirements-for-data-centers/
+
+- id: ct-2025-sb1295
+  type: bill, law or official action
+  claim: Connecticut SB 1295 (Public Act 25-113), "Data privacy amendments: opt-out of automated decisions, profiling impact assessments" (2025). Sponsors: Committee bill; Sen. James Maroney (D) is named as sponsor in one source.. Status: enacted on 2025-06. Public Act 25-113, signed June 2025; effective July 1, 2026. What it does: Amends the Connecticut Data Privacy Act to cover more businesses, let consumers opt out of automated decisions and profiling that have significant effects, require impact assessments for profiling (including minors' data) and add AI-related disclosure duties, effective July 1, 2026.
+  date given: 2025-06
+  source we cited (may be secondary): https://prdext3.cga.ct.gov/2025/act/Pa/pdf/2025PA-00113-R00SB-01295-PA.PDF
+
+- id: ct-2026-sb4
+  type: bill, law or official action
+  claim: Connecticut SB 4 (Public Act 26-64), "Consumer privacy: data broker registry, facial recognition limits, automated profiling" (2026). Sponsors: Martin Looney (Democratic), Bob Duff (Democratic), Saud Anwar (Democratic), James Maroney (Democratic). Status: enacted on 2026-05-27. Public Act 26-64; most provisions take effect Oct. 1, 2026. What it does: Creates a data broker registry with a single state deletion portal, bans sales of precise geolocation data, restricts facial recognition and expands consumer rights over automated profiling and automated decision-making; most provisions take effect Oct. 1, 2026.
+  date given: 2026-05-27
+  source we cited (may be secondary): https://www.cga.ct.gov/2026/cbs/S/pdf/SB-0004.pdf
+
+- id: ct-2026-hb5312
+  type: bill, law or official action
+  claim: Connecticut HB 5312 (Public Act 26-55), "Civil remedies and 48-hour takedown for deepfake intimate images" (2026). Sponsors: Reported by the Judiciary Committee; backed by Attorney General William Tong. Sponsors not shown in the sources found.. Status: enacted on 2026-05-26. Public Act 26-55; effective Oct. 1, 2026. What it does: Lets a person harmed by the dissemination of an AI-generated (synthetically created) intimate image sue in Superior Court, requires covered platforms to remove such images within 48 hours of a valid request, and lets the attorney general seek civil penalties from noncompliant platforms; effective Oct. 1, 2026.
+  date given: 2026-05-26
+  source we cited (may be secondary): https://prdext3.cga.ct.gov/2026/act/pa/pdf/2026PA-00055-R00HB-05312-PA.pdf
+
+- id: ct-2026-hb5469
+  type: bill, law or official action
+  claim: Connecticut HB 5469, ""Bring your own power" for data centers and other large electricity users" (2026). Sponsors: Energy and Technology Committee bill.. Status: failed on 2026-05-06. Cleared the Energy and Technology Committee on Mar. 19, 2026; died when the session ended (BillTrack50, CT Public). What it does: Would have required new customers of 50 MW or more, such as data centers, to get their power from a colocated or off-grid supplier and required utilities to file large-load tariff proposals with PURA by April 1, 2027; it cleared the Energy and Technology Committee on March 19, 2026 but died when the session ended.
+  date given: 2026-05-06
+  source we cited (may be secondary): https://www.cga.ct.gov/2026/JFR/H/PDF/2026HB-05469-R00ET-JFR.PDF
+
+- id: ca-2026-sb1119
+  type: bill, law or official action
+  claim: California SB 1119, "Adam's Law: companion chatbots and children's safety" (2025-2026). Sponsors: Steve Padilla (Democratic), Buffy Wicks (Democratic), Rebecca Bauer-Kahan (Democratic). Status: enacted on 2026-09-10. Signed Sept. 10, 2026. What it does: Requires companion chatbot operators to assess child-safety risks every year, build in crisis protocols for suicidal ideation, offer parental controls and alerts if a child turns off safety settings, and submit to independent audits, with a private right of action for children harmed by violations.
+  date given: 2026-09-10
+  source we cited (may be secondary): https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/
+
+- id: ca-2025-ab316
+  type: bill, law or official action
+  claim: California AB 316, "No "the AI acted on its own" defense in civil suits" (2025-2026). Sponsors: Maggy Krell (Democratic). Status: enacted on 2025-10-13. Signed Oct. 13, 2025; effective Jan. 1, 2026. What it does: Bars a defendant that developed, modified or used an AI system from arguing in a civil suit that the AI acted autonomously to cause the plaintiff's harm; effective Jan. 1, 2026.
+  date given: 2025-10-13
+  source we cited (may be secondary): https://krell.asmdc.org/press-releases/20251013-governor-signs-bill-will-help-ensure-accountability-ai-harm
+
+- id: ca-2025-ab621
+  type: bill, law or official action
+  claim: California AB 621, "Deepfake pornography: wider civil liability" (2025-2026). Sponsors: Rebecca Bauer-Kahan (Democratic). Status: enacted on 2025-10-13. Signed Oct. 13, 2025. What it does: Expands California's civil remedies for nonconsensual sexually explicit deepfakes, including claims for depicted minors and against those who knowingly facilitate or recklessly aid the conduct, such as services that keep deepfake pornography sites running.
+  date given: 2025-10-13
+  source we cited (may be secondary): https://www.gov.ca.gov/2025/10/13/governor-newsom-signs-bills-to-further-strengthen-californias-leadership-in-protecting-children-online
+
+- id: ca-2025-sb524
+  type: bill, law or official action
+  claim: California SB 524, "Police must disclose reports written with AI" (2025-2026). Sponsors: Author: Sen. Jesse Arreguín (party not shown in the sources found).. Status: enacted on 2025-10. Signed Oct. 2025; effective Jan. 1, 2026. What it does: Requires law enforcement agencies to disclose on each page of an official report, including drafts, when the report was fully or partly written with AI; effective Jan. 1, 2026.
+  date given: 2025-10
+  source we cited (may be secondary): https://calawyers.org/privacy-law/signed-and-vetoed-california-ai-privacy-and-technology-related-bills/
+
+- id: ca-2025-ab93
+  type: bill, law or official action
+  claim: California AB 93, "Data center water-use estimates and reporting" (2025-2026). Sponsors: Diane Papan (Democratic). Status: vetoed on 2025-10-11. Vetoed in Oct. 2025 (dates reported: Oct. 11 and Oct. 14); the governor did not want rigid reporting rules without knowing the impact. What it does: Would have required data centers to estimate expected water use before applying for a business license and certify actual annual water use at renewal; Newsom vetoed it, saying he did not want to impose rigid reporting rules without knowing the impact on businesses and consumers.
+  date given: 2025-10-11
+  source we cited (may be secondary): https://papan.asmdc.org/press-releases/20251014-governor-vetoes-papan-bill-track-data-center-water-use
+
+- id: us-s3062-guard-act
+  type: bill, law or official action
+  claim: U.S. federal S. 3062, "GUARD Act: AI companion chatbots and minors" (119th Congress (2025-2026)). Sponsors: Josh Hawley (Republican), Richard Blumenthal (Democratic). Status: in-committee on 2026-04-30. Reported 22-0 by the Senate Judiciary Committee on Apr. 30, 2026; no floor vote found. What it does: Would bar AI companions for users under 18, require age verification and disclosure that chatbots are not human, and make it a crime to knowingly offer chatbots that engage minors in sexual content or encourage suicide; Senate Judiciary reported it 22-0 on Apr. 30, 2026 and it awaits a Senate floor vote.
+  date given: 2026-04-30
+  source we cited (may be secondary): https://www.hawley.senate.gov/senator-hawleys-guard-act-to-protect-kids-from-ai-chatbots-passes-committee-unanimously/
+
+- id: us-s4591-no-fakes-act
+  type: bill, law or official action
+  claim: U.S. federal S. 4591 / H.R. 8915, "NO FAKES Act of 2026: AI copies of voice and likeness" (119th Congress (2025-2026)). Sponsors: Marsha Blackburn (Republican), Chris Coons (Democratic), Maria Elvira Salazar (Republican), Madeleine Dean (Democratic). Status: in-committee on 2026-06-18. Reported unanimously by the Senate Judiciary Committee on June 18, 2026; a request to pass it by unanimous consent was blocked in Oct. 2026. What it does: Would create a federal right to sue over unauthorized AI digital replicas of a person's voice or likeness; Senate Judiciary reported the Senate bill unanimously on June 18, 2026, but a unanimous-consent request to pass it was blocked by Sen. Cruz in October 2026.
+  date given: 2026-06-18
+  source we cited (may be secondary): https://govinfo.gov/content/pkg/BILLS-119s4591rs/xhtml/BILLS-119s4591rs.html
+
+- id: us-hr9925-frontier-act
+  type: bill, law or official action
+  claim: U.S. federal H.R. 9925, "FRONTIER Act: transparency and safety rules for frontier AI developers" (119th Congress (2025-2026)). Sponsors: Jay Obernolte (Republican), Lori Trahan (Democratic). Status: in-committee on 2026-07-23. Introduced July 23, 2026 (one summary says September); with House Energy and Commerce. What it does: Would set tiered federal transparency and safety rules for frontier AI developers, scaled to company size, including model cards, risk-management frameworks, independent audits and incident reporting, as a uniform national standard; it sits with House Energy and Commerce.
+  date given: 2026-07-23
+  source we cited (may be secondary): https://legiscan.com/US/bill/HB9925/
+
+- id: us-s4213
+  type: bill, law or official action
+  claim: U.S. federal S. 4213, "Data Center Water and Energy Transparency Act of 2026" (119th Congress (2025-2026)). Sponsors: Dick Durbin (Democratic). Status: in-committee on 2026-03-25. Introduced Mar. 25, 2026; in committee. What it does: Would require data centers to report energy and water use to their states (and planned facilities to estimate five years of use), with states sending aggregated data to EPA, DOE and USDA for regional reports and the agencies able to fine noncompliant operators.
+  date given: 2026-03-25
+  source we cited (may be secondary): https://www.govinfo.gov/app/details/BILLS-119s4213is

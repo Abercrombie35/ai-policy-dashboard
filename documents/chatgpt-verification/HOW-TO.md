@@ -11,6 +11,8 @@ Files (in this folder):
   corrected ones, batches 6-12 the confirmed ones (to raise them to High confidence).
 - batch-13.txt: the 21 poll and survey figures added on Nov. 26 (voter priorities per race, polls on AI and
   data centers, Gallup and Pew by party). For polls, the primary source is the pollster's own release or topline.
+- batch-14.txt: the 25 bills added on Nov. 26 from the IAPP, NCSL and MultiState trackers (Michigan, Texas,
+  Connecticut, California and federal).
 
 Steps:
 1. In ChatGPT, use a model with web search turned on (Search, or Deep research for the hardest batches).
@@ -34,4 +36,6 @@ What Claude does with your results:
 |---|---|---|---|
 | 01 | 12 | 2026-11-26 | 8 High (7 corrected to match the primary source, 1 verified), 4 Medium (2 dates unconfirmed, 2 resting partly on news reports) |
 
-ChatGPT's replies are kept in `results/` (one file per batch) as the record of each check.
+ChatGPT's replies are kept in `results/` (one file per batch) as the record of each check, and Claude's
+claim-by-claim decisions in `decisions/`. They are applied with `tools/import_chatgpt.py` (usage at the top of
+that file), which bumps each record's version, records the method and level, and updates verification.json.

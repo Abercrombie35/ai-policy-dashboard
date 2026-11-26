@@ -41,6 +41,63 @@
         }
       ]
     },
+    "ca-2025-ab316": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Asm. Krell: Governor signs bill that will help ensure accountability for AI harm (Oct. 13, 2025)",
+          "url": "https://krell.asmdc.org/press-releases/20251013-governor-signs-bill-will-help-ensure-accountability-ai-harm"
+        },
+        {
+          "title": "DLA Piper: California AI laws (Oct. 14, 2025)",
+          "url": "https://www.dlapiper.com/en/insights/publications/2025/10/california-ai-laws"
+        },
+        {
+          "title": "Tech Policy Press: What tech bills California Governor Newsom signed or vetoed in 2025",
+          "url": "https://techpolicy.press/what-tech-bills-california-governor-newsom-signed-or-vetoed-in-2025"
+        }
+      ]
+    },
+    "ca-2025-ab621": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Governor Newsom signs bills to further strengthen California's leadership in protecting children online (Oct. 13, 2025)",
+          "url": "https://www.gov.ca.gov/2025/10/13/governor-newsom-signs-bills-to-further-strengthen-californias-leadership-in-protecting-children-online"
+        },
+        {
+          "title": "DLA Piper: California AI laws (Oct. 14, 2025)",
+          "url": "https://www.dlapiper.com/en/insights/publications/2025/10/california-ai-laws"
+        },
+        {
+          "title": "California Lawyers Association: Signed and vetoed California AI, privacy and technology-related bills",
+          "url": "https://calawyers.org/privacy-law/signed-and-vetoed-california-ai-privacy-and-technology-related-bills/"
+        }
+      ]
+    },
+    "ca-2025-ab93": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Asm. Papan: Governor vetoes Papan bill to track data center water use",
+          "url": "https://papan.asmdc.org/press-releases/20251014-governor-vetoes-papan-bill-track-data-center-water-use"
+        },
+        {
+          "title": "Hanson Bridgett: 2025 vetoes, data center law",
+          "url": "https://www.hansonbridgett.com/publications/251201-2021-vetoes_data_center_law"
+        },
+        {
+          "title": "WJLA: Governor Gavin Newsom vetoes bill requiring data centers to report water usage",
+          "url": "https://wjla.com/news/nation-world/gavin-newsom-vetoes-bill-requiring-data-centers-to-report-water-usage"
+        }
+      ]
+    },
     "ca-2025-sb243": {
       "result": "confirmed",
       "checkedOn": "2026-11-24",
@@ -57,6 +114,25 @@
         {
           "title": "LegiScan: CA SB243 chaptered text",
           "url": "https://legiscan.com/CA/text/SB243/"
+        }
+      ]
+    },
+    "ca-2025-sb524": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "California Lawyers Association: Signed and vetoed California AI, privacy and technology-related bills",
+          "url": "https://calawyers.org/privacy-law/signed-and-vetoed-california-ai-privacy-and-technology-related-bills/"
+        },
+        {
+          "title": "Tech Policy Press: What tech bills California Governor Newsom signed or vetoed in 2025",
+          "url": "https://techpolicy.press/what-tech-bills-california-governor-newsom-signed-or-vetoed-in-2025"
+        },
+        {
+          "title": "MultiState: 2025 Enacted AI Laws, developer and deployer mandates",
+          "url": "https://www.multistate.ai/2025-enacted-ai-laws-report"
         }
       ]
     },
@@ -209,6 +285,25 @@
         {
           "title": "Eversheds Sutherland: What SB 1000 changes and why it matters",
           "url": "https://www.eversheds-sutherland.com/en/czech-republic/insights/california-modifies-ai-transparency-law-weeks-after-it-took-effect-what-sb-1000-changes"
+        }
+      ]
+    },
+    "ca-2026-sb1119": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Governor Newsom signs the strongest child safety chatbot and social media laws in the nation (Sept. 10, 2026)",
+          "url": "https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/"
+        },
+        {
+          "title": "Common Sense Media: Governor Newsom signs Adam's Law",
+          "url": "https://www.commonsensemedia.org/press-releases/governor-newsom-signs-adams-law-setting-first-real-safety-standard-for-kids-and-chatbots"
+        },
+        {
+          "title": "Akin Gump: California enacts companion chatbot child safety requirements, SB 1119",
+          "url": "https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/california-enacts-companion-chatbot-child-safety-requirements-sb-1119"
         }
       ]
     },
@@ -1178,6 +1273,25 @@
         }
       ]
     },
+    "ct-2025-sb1295": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Public Act 25-113 (SB 1295), Connecticut General Assembly",
+          "url": "https://prdext3.cga.ct.gov/2025/act/Pa/pdf/2025PA-00113-R00SB-01295-PA.PDF"
+        },
+        {
+          "title": "OLR Public Act summary 25-113",
+          "url": "https://prdext2.cga.ct.gov/2025/sum/pdf/2025SUM00113-R02SB-01295-SUM.pdf"
+        },
+        {
+          "title": "BCLP: Connecticut quietly adds AI disclosure mandate to consumer privacy law",
+          "url": "https://www.bclplaw.com/en-US/events-insights-news/connecticut-quietly-adds-ai-disclosure-mandate-to-consumer-privacy-law.html"
+        }
+      ]
+    },
     "ct-2025-sb2": {
       "result": "confirmed",
       "checkedOn": "2026-11-24",
@@ -1194,6 +1308,44 @@
         {
           "title": "CT Senate Democrats: Maroney responds to Trump's push to ban state-level AI regulation (June 2025)",
           "url": "https://www.senatedems.ct.gov/maroney-responds-to-trumps-push-to-ban-state-level-ai-regulation"
+        }
+      ]
+    },
+    "ct-2026-hb5312": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Public Act 26-55 (HB 5312), Connecticut General Assembly",
+          "url": "https://prdext3.cga.ct.gov/2026/act/pa/pdf/2026PA-00055-R00HB-05312-PA.pdf"
+        },
+        {
+          "title": "OLR Public Act summary 26-55",
+          "url": "https://prdext3.cga.ct.gov/2026/sum/pdf/2026SUM00055-R02HB-05312-SUM.pdf"
+        },
+        {
+          "title": "CT Attorney General: Legislation strengthening enforcement against deepfake digital sexual assault",
+          "url": "https://portal.ct.gov/ag/press-releases/2026-press-releases/legislation-strengthening-enforcement-against-deepfake-digital-sexual-assault"
+        }
+      ]
+    },
+    "ct-2026-hb5469": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "HB 5469 Joint Favorable Report (Energy and Technology), Connecticut General Assembly",
+          "url": "https://www.cga.ct.gov/2026/JFR/H/PDF/2026HB-05469-R00ET-JFR.PDF"
+        },
+        {
+          "title": "Hartford Business Journal: Legislation would codify 'bring your own power' mandate for data centers, large power users",
+          "url": "https://hartfordbusiness.com/article/legislation-would-codify-bring-your-own-power-mandate-for-data-centers-large-power-users/"
+        },
+        {
+          "title": "BillTrack50: HB 5469 (status Dead, 05/06/2026)",
+          "url": "https://www.billtrack50.com/billdetail/1984688"
         }
       ]
     },
@@ -1236,6 +1388,25 @@
       ],
       "unconfirmed": [
         "Introduction date of Feb. 19, 2026"
+      ]
+    },
+    "ct-2026-sb4": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "SB 4 bill status/text, Connecticut General Assembly",
+          "url": "https://www.cga.ct.gov/2026/cbs/S/pdf/SB-0004.pdf"
+        },
+        {
+          "title": "Proskauer: From data brokers to DNA, Connecticut enacts sweeping privacy amendments",
+          "url": "https://privacylaw.proskauer.com/2026/06/articles/data-privacy-laws/from-data-brokers-to-dna-connecticut-enacts-sweeping-privacy-amendments/"
+        },
+        {
+          "title": "WilmerHale: Connecticut amends its Data Privacy Act to increase data protections",
+          "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20260731-connecticut-amends-its-data-privacy-act-to-increase-data-protections"
+        }
       ]
     },
     "ct-2026-sb5": {
@@ -1615,6 +1786,44 @@
         }
       ]
     },
+    "mi-hb4536-4537": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Michigan Legislature: HB 4536 as introduced",
+          "url": "https://capitol.legislature.mi.gov/documents/2025-2026/billintroduced/House/htm/2025-HIB-4536.htm"
+        },
+        {
+          "title": "MichiganVotes: 2025 House Bill 4536",
+          "url": "https://www.michiganvotes.org/legislation/2025/house/bill-4536"
+        },
+        {
+          "title": "Fox 47: Michigan lawmakers push to regulate AI used in health insurance claims and prior authorizations",
+          "url": "https://www.fox47news.com/news/michigan-lawmakers-push-to-regulate-ai-used-in-health-insurance-claims-and-prior-authorizations"
+        }
+      ]
+    },
+    "mi-hb4668": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Michigan Legislature: HB 4668 as introduced",
+          "url": "https://capitol.legislature.mi.gov/documents/2025-2026/billintroduced/House/htm/2025-HIB-4668.htm"
+        },
+        {
+          "title": "Michigan Legislature: Committee bill records, Communications and Technology (2025-2026)",
+          "url": "https://www.legislature.mi.gov/Committees/CBR?committeeID=1966"
+        },
+        {
+          "title": "IAPP: US State AI Governance Legislation Tracker (PDF, updated March 2026)",
+          "url": "https://assets.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt4031f52d14548052/us_state_ai_governance_legislation_tracker.pdf"
+        }
+      ]
+    },
     "mi-hb5396": {
       "result": "confirmed",
       "checkedOn": "2026-11-24",
@@ -1631,6 +1840,63 @@
         {
           "title": "Bridge Michigan: Michigan lawmakers unveil plan to repeal data center tax breaks",
           "url": "https://bridgemi.com/michigan-environment-watch/michigan-lawmakers-unveil-plan-to-repeal-data-center-tax-breaks/"
+        }
+      ]
+    },
+    "mi-hb5899": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "MichiganVotes: 2026 House Bill 5899",
+          "url": "https://www.michiganvotes.org/legislation/2026/house/bill-5899"
+        },
+        {
+          "title": "Michigan Advance: Artificial intelligence creates a brave new world for state agencies in Michigan (May 22, 2026)",
+          "url": "https://michiganadvance.com/2026/05/22/artificial-intelligence-creates-a-brave-new-world-for-state-agencies-in-michigan/"
+        },
+        {
+          "title": "LegiScan: MI HB5899",
+          "url": "https://legiscan.com/MI/bill/HB5899/"
+        }
+      ]
+    },
+    "mi-hb6135-6142": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Michigan Advance: Michigan House Democrats pitch transparency, community benefit requirements for data centers (June 26, 2026)",
+          "url": "https://michiganadvance.com/2026/06/26/michigan-house-democrats-pitch-transparency-community-benefit-requirements-for-data-centers/"
+        },
+        {
+          "title": "Michigan House Democrats release",
+          "url": "https://housedems.com/?p=318372"
+        },
+        {
+          "title": "MultiState Insider: Michigan data center legislation targets energy use and community benefits (July 15, 2026)",
+          "url": "https://www.multistate.us/insider/2026/7/15/michigan-data-center-legislation-targets-energy-use-and-community-benefits"
+        }
+      ]
+    },
+    "mi-sb1046-1051": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Michigan Senate Democrats: Legislation would shield Michigan workers, consumers, and natural resources from impact of data center projects",
+          "url": "https://senatedems.com/camilleri/?p=2070"
+        },
+        {
+          "title": "MultiState Insider: Michigan data center legislation targets energy use and community benefits (July 15, 2026)",
+          "url": "https://www.multistate.us/insider/2026/7/15/michigan-data-center-legislation-targets-energy-use-and-community-benefits"
+        },
+        {
+          "title": "Michigan Advance: Senate Democrats propose tighter regulations on data centers (June 18, 2026)",
+          "url": "https://michiganadvance.com/2026/06/18/senate-democrats-propose-tighter-regulations-on-data-centers-amid-statewide-backlash/"
         }
       ]
     },
@@ -1655,6 +1921,25 @@
       "unconfirmed": [
         "That SB 760 lists violence and drug use among the barred harms",
         "House status after mid-October 2026"
+      ]
+    },
+    "mi-sb761-763": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "MichiganVotes: 2025 Senate Bill 761",
+          "url": "https://www.michiganvotes.org/legislation/2025/senate/bill-761"
+        },
+        {
+          "title": "MichiganVotes: 2025 Senate Bill 762",
+          "url": "https://www.michiganvotes.org/legislation/2025/senate/bill-762"
+        },
+        {
+          "title": "Michigan Senate Democrats (Sen. Bayer) release",
+          "url": "https://senatedems.com/bayer/?p=8195"
+        }
       ]
     },
     "mi-senate-2026-abdul-el-sayed-alignment-11": {
@@ -2943,6 +3228,101 @@
         }
       ]
     },
+    "tx-89r-hb581": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Texas Legislature: HB 581 enrolled text",
+          "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00581F.htm"
+        },
+        {
+          "title": "Texas Legislature: HB 581 Senate committee version (By: González of El Paso)",
+          "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00581S.htm"
+        },
+        {
+          "title": "NCSL: Summary of Artificial Intelligence 2025 Legislation (lists Texas H 581 as enacted)",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ]
+    },
+    "tx-89r-sb1964": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Texas Legislature: SB 1964 enrolled bill analysis",
+          "url": "https://capitol.texas.gov/tlodocs/89R/analysis/html/SB01964F.htm"
+        },
+        {
+          "title": "Texas Legislature: SB 1964 enrolled text",
+          "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB01964F.htm"
+        },
+        {
+          "title": "NCSL: Summary of Artificial Intelligence 2025 Legislation (lists Texas S 1964 as enacted)",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ]
+    },
+    "tx-89r-sb20": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Texas Legislature: SB 20 enrolled text",
+          "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00020F.HTM"
+        },
+        {
+          "title": "Lt. Gov. Dan Patrick: Statement on unanimous Senate passage of SB 20",
+          "url": "https://www.ltgov.texas.gov/?p=7940"
+        },
+        {
+          "title": "NCSL: Summary of Artificial Intelligence 2025 Legislation (lists Texas S 20 as enacted)",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ]
+    },
+    "tx-89r-sb441": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Texas Legislature: SB 441 enrolled bill analysis",
+          "url": "https://capitol.texas.gov/tlodocs/89R/analysis/html/SB00441F.htm"
+        },
+        {
+          "title": "Texas Legislature: SB 441 enrolled text",
+          "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00441F.HTM"
+        },
+        {
+          "title": "NCSL: Summary of Artificial Intelligence 2025 Legislation (lists Texas S 441 as enacted)",
+          "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation"
+        }
+      ]
+    },
+    "tx-89r-sb6": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Texas Legislature: SB 6 enrolled bill analysis",
+          "url": "https://capitol.texas.gov/tlodocs/89R/analysis/html/SB00006F.htm"
+        },
+        {
+          "title": "MultiState Insider: Behind-the-Meter Data Centers: State Power Legislation (Oct. 2026)",
+          "url": "https://www.multistate.us/insider/2026/10/13/state-lawmakers-look-to-behind-the-meter-policies-for-data-centers"
+        },
+        {
+          "title": "Texas Tribune: Texas electric grid energy oversight (May 2025)",
+          "url": "https://www.texastribune.org/2025/05/25/texas-electric-grid-energy-oversight"
+        }
+      ]
+    },
     "tx-90r-sb293": {
       "result": "confirmed",
       "checkedOn": "2026-11-24",
@@ -2997,6 +3377,25 @@
         {
           "title": "LegiScan: TX SB36, 90th Legislature, introduced text",
           "url": "https://legiscan.com/TX/text/SB36/2027"
+        }
+      ]
+    },
+    "tx-90r-sb338": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Texas Legislature: SB 338 introduced text (90R)",
+          "url": "https://capitol.texas.gov/tlodocs/90R/billtext/pdf/SB00338I.pdf"
+        },
+        {
+          "title": "Texas Policy Research: SB 338 and the regulation of Texas data centers",
+          "url": "https://www.texaspolicyresearch.com/sb-338-and-the-regulation-of-texas-data-centers/"
+        },
+        {
+          "title": "GovTech: Texas lawmakers will scrutinize data center permitting costs",
+          "url": "https://www.govtech.com/artificial-intelligence/texas-lawmakers-will-scrutinize-data-center-permitting-costs"
         }
       ]
     },
@@ -3095,6 +3494,25 @@
         }
       ]
     },
+    "us-hr9925-frontier-act": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "LegiScan: US HB9925, 119th Congress",
+          "url": "https://legiscan.com/US/bill/HB9925/"
+        },
+        {
+          "title": "Rep. Obernolte: Obernolte, Trahan introduce bipartisan FRONTIER Act to strengthen oversight",
+          "url": "https://obernolte.house.gov/media/press-releases/obernolte-trahan-introduce-bipartisan-frontier-act-strengthen-oversight"
+        },
+        {
+          "title": "FRONTIER Act final text (Rep. Trahan)",
+          "url": "https://trahan.house.gov/uploadedfiles/oberno_079_xml_-_the_frontier_act_-_final_text.pdf"
+        }
+      ]
+    },
     "us-ratepayer-protection-act": {
       "result": "corrected",
       "checkedOn": "2026-11-24",
@@ -3111,6 +3529,25 @@
         {
           "title": "NACo: U.S. House passes the Ratepayer Protection Act",
           "url": "https://www.naco.org/news/us-house-passes-ratepayer-protection-act"
+        }
+      ]
+    },
+    "us-s3062-guard-act": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "Sen. Hawley: GUARD Act to protect kids from AI chatbots passes committee unanimously",
+          "url": "https://www.hawley.senate.gov/senator-hawleys-guard-act-to-protect-kids-from-ai-chatbots-passes-committee-unanimously/"
+        },
+        {
+          "title": "Sen. Blumenthal: Bipartisan bill protecting children from AI chatbots approved by Senate Judiciary Committee",
+          "url": "https://www.blumenthal.senate.gov/newsroom/press/release/video-blumenthal-authored-bipartisan-bill-protecting-children-from-ai-chatbots-approved-by-senate-judiciary-committee"
+        },
+        {
+          "title": "Global Policy Watch: Senate Judiciary Committee advances GUARD Act",
+          "url": "https://www.globalpolicywatch.com/2026/05/senate-judiciary-committee-advances-guard-act-regulating-minor-use-of-ai/"
         }
       ]
     },
@@ -3136,6 +3573,25 @@
         "That the disclosure takes the form of five-year utility-use estimates"
       ]
     },
+    "us-s4213": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "GovInfo: S. 4213 (IS), Data Center Water and Energy Transparency Act of 2026",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s4213is"
+        },
+        {
+          "title": "Sen. Durbin: Durbin introduces new legislation to bring transparency to energy and water consumption by data centers (Mar. 25, 2026)",
+          "url": "https://www.durbin.senate.gov/newsroom/press-releases/as-utility-costs-rise-durbin-introduces-new-legislation-to-bring-transparency-to-energy-and-water-consumption-by-data-centers"
+        },
+        {
+          "title": "NGWA: Senator introduces legislation to bring transparency to water consumption by data centers",
+          "url": "https://www.ngwa.org/detail/news/2026/03/30/senator-introduces-legislation-to-bring-transparency-to-water-consumption-by-data-centers"
+        }
+      ]
+    },
     "us-s4214": {
       "result": "confirmed",
       "checkedOn": "2026-11-24",
@@ -3152,6 +3608,25 @@
         {
           "title": "Axios: Sanders and AOC unveil data center moratorium bill",
           "url": "https://www.axios.com/2026/03/25/sanders-aoc-data-center-moratorium-bill?stream=top"
+        }
+      ]
+    },
+    "us-s4591-no-fakes-act": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-26",
+      "note": "Bill number, sponsors, status and content found on the legislature's record or in two reports.",
+      "sources": [
+        {
+          "title": "GovInfo: S. 4591, reported in Senate (Calendar No. 446)",
+          "url": "https://govinfo.gov/content/pkg/BILLS-119s4591rs/xhtml/BILLS-119s4591rs.html"
+        },
+        {
+          "title": "Sen. Blackburn: Blackburn, Coons, Salazar, Dean introduce revised version of NO FAKES Act",
+          "url": "https://blackburn.senate.gov/2026/5/technology/blackburn-coons-salazar-dean-colleagues-introduce-revised-version-of-no-fakes-act"
+        },
+        {
+          "title": "Holland & Knight: Senate Judiciary Committee advances legislation to protect name, image, likeness",
+          "url": "https://hklaw.com/en/insights/publications/2026/06/senate-judiciary-committee-advances-legislation-to-protect-name"
         }
       ]
     },

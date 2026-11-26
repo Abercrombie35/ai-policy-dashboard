@@ -13,6 +13,7 @@ import headlinesData from '../data/headlines.json';
 import verificationData from '../data/verification.json';
 import voterPrioritiesData from '../data/voter-priorities.json';
 import publicOpinionData from '../data/public-opinion.json';
+import trackersData from '../data/trackers.json';
 
 const raceModules = import.meta.glob('../data/races/*.json', { eager: true, import: 'default' });
 
@@ -71,6 +72,10 @@ export const pollsForPlace = ({ state, country }) =>
   voterPrioritiesData.polls.filter((p) => (state && p.state === state) || (country && p.country === country));
 // Gallup and Pew findings on AI by party (public-opinion.json).
 export const publicOpinion = publicOpinionData;
+// The IAPP, NCSL and MultiState legislation trackers (trackers.json): their
+// terms of use and the counts they publish, for comparison with this dataset.
+export const trackers = trackersData;
+export const trackerName = (id) => trackersData.trackers[id]?.short || id;
 // Laws that apply in a country: its own, plus EU law for EU member states.
 export const billsForCountry = (code) =>
   bills.filter((b) => b.country === code || (b.country === 'EU' && europeGeoData.countries[code]?.eu));

@@ -178,6 +178,8 @@ All data lives in src/data/:
   the top issues were published) and polls that asked about AI ("ai-question").
 - public-opinion.json: Gallup and Pew findings by party, with each
   organisation's terms of use.
+- trackers.json: the IAPP, NCSL and MultiState trackers: their terms of use
+  and the counts they publish; bills carry "trackers" naming which cover them.
 - verification.json: the result of checking each claim against other
   published reports, with those reports (kept apart from the records so the
   race files are never edited).

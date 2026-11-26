@@ -364,6 +364,31 @@ opinion.findings.forEach((f, i) => {
 });
 if (opinion.findings.length && !Object.keys(opinion.terms || {}).length) fail('public-opinion.json', 'record each organisation\'s terms of use');
 
+// The IAPP, NCSL and MultiState trackers: terms of use, published counts, and
+// which trackers list each bill.
+const trackerData = read('trackers.json');
+const TRACKERS = new Set(Object.keys(trackerData.trackers || {}));
+for (const [id, t] of Object.entries(trackerData.trackers || {})) {
+  const w = `trackers.json trackers.${id}`;
+  if (!t.name || !t.short) fail(w, 'needs name and short name');
+  if (!t.terms?.summary || !t.terms?.url) fail(w, 'record the terms of use (summary and link) before using a tracker');
+}
+(trackerData.counts || []).forEach((c, i) => {
+  const w = `trackers.json counts[${i}]`;
+  if (!TRACKERS.has(c.tracker)) fail(w, `unknown tracker "${c.tracker}"`);
+  // "ALL" is a national total across the states.
+  if (c.jurisdiction !== 'ALL' && !JURISDICTIONS.has(c.jurisdiction)) fail(w, `unknown jurisdiction "${c.jurisdiction}"`);
+  if (c.prefix != null && !['more than', 'at least', 'about'].includes(c.prefix)) fail(w, `unknown prefix "${c.prefix}"`);
+  if (!Number.isInteger(c.count) || c.count < 0) fail(w, 'count must be a whole number');
+  if (!c.measure || !c.year) fail(w, 'needs measure and year');
+  if (!c.source?.url) fail(w, 'needs a source URL');
+});
+legislation.bills.forEach((b) => {
+  (b.trackers || []).forEach((t) => {
+    if (!TRACKERS.has(t.tracker)) fail(`legislation.json ${b.id}`, `unknown tracker "${t.tracker}"`);
+  });
+});
+
 // International
 read('international.json').elections.forEach((e, i) => {
   const w = `international.json elections[${i}]`;

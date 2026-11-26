@@ -1,0 +1,167 @@
+{
+  "note": "The three AI legislation trackers named in the project proposal. Bills are drawn from them and confirmed on official legislature pages; bill facts are cited with attribution and links, and every summary on this site is written by the project, not copied from a tracker.",
+  "asOf": "2026-11-26",
+  "trackers": {
+    "iapp": {
+      "name": "IAPP US State AI Governance Legislation Tracker",
+      "short": "IAPP",
+      "url": "https://iapp.org/resources/article/us-state-ai-governance-legislation-tracker",
+      "terms": {
+        "summary": "Content is IAPP's copyright; copying is allowed for personal use only, and using site content to build AI tools or train models is barred. Citing bill facts with a link is not addressed.",
+        "url": "https://iapp.org/about/conditions-of-use"
+      }
+    },
+    "ncsl": {
+      "name": "NCSL Artificial Intelligence Legislation Database",
+      "short": "NCSL",
+      "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation",
+      "terms": {
+        "summary": "Use of the site is subject to NCSL's terms; materials may carry limits on reproduction, and NCSL publications need permission to reprint. Citing bill facts with a link is not addressed.",
+        "url": "https://www.ncsl.org/terms.aspx"
+      }
+    },
+    "multistate": {
+      "name": "MultiState AI legislation tracker",
+      "short": "MultiState",
+      "url": "https://www.multistate.ai/2025-enacted-ai-laws-report",
+      "terms": {
+        "summary": "All content is the property of MultiState or its suppliers and protected by copyright; the AI tracker is a paid product. Citing bill facts with a link is not addressed.",
+        "url": "https://www.multistate.us/conditions-of-use"
+      }
+    }
+  },
+  "counts": [
+    {
+      "tracker": "ncsl",
+      "jurisdiction": "ALL",
+      "year": "2026",
+      "measure": "AI bills introduced",
+      "count": 1539,
+      "asOf": "2026-10",
+      "source": {
+        "title": "NCSL: As Congress deliberates, states lead the way on AI regulation (Oct. 21, 2026)",
+        "url": "https://www.ncsl.org/news/details/as-congress-deliberates-states-lead-the-way-on-ai-regulation"
+      },
+      "status": "single-source"
+    },
+    {
+      "tracker": "ncsl",
+      "jurisdiction": "ALL",
+      "year": "2026",
+      "measure": "AI bills enacted",
+      "count": 280,
+      "asOf": "2026-10",
+      "source": {
+        "title": "NCSL: As Congress deliberates, states lead the way on AI regulation (Oct. 21, 2026)",
+        "url": "https://www.ncsl.org/news/details/as-congress-deliberates-states-lead-the-way-on-ai-regulation"
+      },
+      "status": "single-source"
+    },
+    {
+      "tracker": "ncsl",
+      "jurisdiction": "ALL",
+      "year": "2025",
+      "measure": "AI bills introduced",
+      "count": 1262,
+      "asOf": "2026-10",
+      "source": {
+        "title": "NCSL: As Congress deliberates, states lead the way on AI regulation (Oct. 21, 2026)",
+        "url": "https://www.ncsl.org/news/details/as-congress-deliberates-states-lead-the-way-on-ai-regulation"
+      },
+      "status": "single-source"
+    },
+    {
+      "tracker": "ncsl",
+      "jurisdiction": "ALL",
+      "year": "2025",
+      "measure": "AI bills enacted or adopted",
+      "count": 227,
+      "asOf": "2026-10",
+      "source": {
+        "title": "NCSL: As Congress deliberates, states lead the way on AI regulation (Oct. 21, 2026)",
+        "url": "https://www.ncsl.org/news/details/as-congress-deliberates-states-lead-the-way-on-ai-regulation"
+      },
+      "status": "single-source"
+    },
+    {
+      "tracker": "multistate",
+      "jurisdiction": "ALL",
+      "year": "2025",
+      "measure": "AI bills introduced",
+      "count": 1208,
+      "asOf": "2025-11",
+      "source": {
+        "title": "MultiState: State AI policy, 2025 legislative review",
+        "url": "https://www.multistate.ai/updates/vol-84-state-ai-policy-2025-legislative-review"
+      },
+      "status": "single-source"
+    },
+    {
+      "tracker": "multistate",
+      "jurisdiction": "ALL",
+      "year": "2025",
+      "measure": "AI bills enacted",
+      "count": 144,
+      "asOf": "2025-11",
+      "source": {
+        "title": "MultiState: State AI policy, 2025 legislative review",
+        "url": "https://www.multistate.ai/updates/vol-84-state-ai-policy-2025-legislative-review"
+      },
+      "status": "single-source"
+    },
+    {
+      "tracker": "multistate",
+      "jurisdiction": "ALL",
+      "year": "2025",
+      "measure": "data center bills introduced",
+      "count": 200,
+      "prefix": "more than",
+      "asOf": "2026-02",
+      "source": {
+        "title": "MultiState: State data center legislation in 2026 tackles energy and tax issues (Feb. 20, 2026)",
+        "url": "https://www.multistate.us/insider/2026/2/20/state-data-center-legislation-in-2026-tackles-energy-and-tax-issues"
+      },
+      "status": "single-source"
+    },
+    {
+      "tracker": "multistate",
+      "jurisdiction": "ALL",
+      "year": "2026 (first six weeks)",
+      "measure": "data center bills introduced",
+      "count": 300,
+      "prefix": "more than",
+      "asOf": "2026-02",
+      "source": {
+        "title": "MultiState: State data center legislation in 2026 tackles energy and tax issues (Feb. 20, 2026)",
+        "url": "https://www.multistate.us/insider/2026/2/20/state-data-center-legislation-in-2026-tackles-energy-and-tax-issues"
+      },
+      "status": "single-source"
+    },
+    {
+      "tracker": "ncsl",
+      "jurisdiction": "CT",
+      "year": "2026",
+      "measure": "comprehensive AI law enacted (SB 5; one of two nationwide)",
+      "count": 1,
+      "asOf": "2026-10",
+      "source": {
+        "title": "NCSL: As Congress deliberates, states lead the way on AI regulation (Oct. 21, 2026)",
+        "url": "https://www.ncsl.org/news/details/as-congress-deliberates-states-lead-the-way-on-ai-regulation"
+      },
+      "status": "confirmed"
+    },
+    {
+      "tracker": "multistate",
+      "jurisdiction": "TX",
+      "year": "2025",
+      "measure": "broad AI law enacted (HB 149), per KPMG citing MultiState data",
+      "count": 1,
+      "asOf": "2025-08",
+      "source": {
+        "title": "KPMG: State series, AI legislation (citing MultiState data)",
+        "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2025/state-series-ai-legislation-reg-alert.pdf"
+      },
+      "status": "single-source"
+    }
+  ]
+}
