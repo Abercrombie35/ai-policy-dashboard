@@ -801,18 +801,18 @@
     },
     "cr-fr-ruffin-1": {
       "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: the resolution Ruffin filed on Oct. 8, 2026 centres on a five-year moratorium on non-European (\"non-sovereign\") data center projects (National Assembly text no. 3293; franceinfo), which the record left out; it also attacks the reduced electricity tax for data centers. The earlier points (brownfields first, public debate commission) were not found and are removed. Stance changed from \"conditional\" to \"pause\".",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Corrected from the Assembly's record: the resolution (no. 3293) was registered on Oct. 13, 2026, not Oct. 8, and is co-signed by individual Ecologist and Communist deputies rather than endorsed by their groups as such. Ruffin withdrew from the presidential race on Nov. 22.",
       "sources": [
         {
-          "title": "franceinfo: Ruffin files a resolution calling for a five-year moratorium on non-European data centers",
-          "url": "https://www.franceinfo.fr/politique/le-depute-de-la-somme-francois-ruffin-a-depose-une-proposition-de-resolution-appelant-a-un-moratoire-de-cinq-ans-sur-les-data-centers-non-europeens_8229637.html"
-        },
-        {
-          "title": "Banque des Territoires: La fronde contre les datacenters trouve des relais à l'Assemblée nationale",
-          "url": "https://www.banquedesterritoires.fr/la-fronde-contre-les-datacenters-trouve-des-relais-lassemblee-nationale"
+          "title": "Proposition de résolution appelant à un moratoire sur les projets de centres de données non souverains, n° 3293",
+          "url": "https://www.assemblee-nationale.fr/dyn/opendata/PNREANR5L17B3293.pdf"
         }
-      ]
+      ],
+      "quote": "Enregistré à la Présidence de l’Assemblée nationale le 13 octobre 2026.",
+      "level": "high"
     },
     "cr-fr-tondelier-1": {
       "result": "corrected",
@@ -845,23 +845,19 @@
       "level": "high"
     },
     "cr-mi-gov-benson-1": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Date corrected from June 11 to March 12, 2024: the Michigan Department of State and Michigan Advance date the Senate Rules Committee hearing to March 12 (June 11 appears only in the testimony file's address). The testimony and its \"exponentially\" wording are confirmed.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Confirmed in her written testimony to the Senate Rules Committee (Mar. 12, 2024): AI would \"amplify and expand exponentially\" election disinformation tactics.",
       "sources": [
         {
-          "title": "Michigan Department of State: Secretary Benson testifies at U.S. Senate Rules Committee hearing",
-          "url": "https://www.michigan.gov/sos/resources/news/2024/03/12/secretary-benson-testifies-at-us-senate-rules-committee-hearing"
-        },
-        {
-          "title": "Issue One: Members of Issue One's Faces of Democracy testify before Congress about challenges facing U.S. elections",
-          "url": "https://issueone.org/press/members-of-issue-ones-faces-of-democracy-testify-before-congress-about-challenges-facing-u-s-elections/"
-        },
-        {
-          "title": "Michigan Advance: AI disinformation, threats to poll workers top U.S. Senate panel list of election worries",
-          "url": "https://michiganadvance.com/2024/03/13/ai-disinformation-threats-to-poll-workers-top-u-s-senate-panel-list-of-election-worries/"
+          "title": "Testimony of Jocelyn Benson, Michigan Secretary of State, Before the U.S. Senate Committee on Rules and Administration",
+          "url": "https://www.rules.senate.gov/download/06/11/2024/testimony_benson1"
         }
-      ]
+      ],
+      "quote": "the first election cycle where Artificial Intelligence will be used to amplify and expand exponentially these tactics and their impact",
+      "level": "high"
     },
     "cr-mi-gov-benson-2": {
       "result": "confirmed",
@@ -922,22 +918,22 @@
     },
     "cr-mi-gov-james-3": {
       "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected the quote to the wording reported by Michigan Public and Bridge Michigan (\"The moratorium should be imposed on Lansing, not the people\"). His local-control stance and ruling out a statewide moratorium are confirmed.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Corrected attribution: in the Oct. 6 debate he said \"My moratorium is local led, not Lansing led\" (WDIV); \"The moratorium should be imposed on Lansing, not the people\" was said to reporters afterwards (Bridge Michigan). Both rest on news reports, so Medium.",
       "sources": [
         {
-          "title": "Michigan Public: James distances himself from Trump as Benson tries to connect them in gubernatorial debate",
-          "url": "https://www.michiganpublic.org/politics-government/2026-10-07/james-distances-himself-from-trump-as-benson-tries-to-connect-them-in-gubernatorial-debate"
+          "title": "Fact check: John James, Jocelyn Benson debate data centers, tariffs, more",
+          "url": "https://bridgemi.com/michigan-politics/fact-check-john-james-jocelyn-benson-debate-data-centers-tariffs-more/"
         },
         {
-          "title": "Bridge Michigan: Fact check of John James and Jocelyn Benson debate on data centers, tariffs and more",
-          "url": "https://www.bridgemi.com/michigan-government/fact-check-john-james-jocelyn-benson-debate-data-centers-tariffs-more/"
-        },
-        {
-          "title": "ClickOnDetroit: Benson, James offer contrasting visions in first Michigan governor debate",
-          "url": "https://www.clickondetroit.com/news/local/2026/10/07/benson-james-offer-contrasting-visions-in-first-michigan-governor-debate/"
+          "title": "WDIV: Benson, James offer contrasting visions in first Michigan governor debate (Oct. 7, 2026)",
+          "url": "https://gmg-wdiv-prod.cdn.arcpublishing.com/news/local/2026/10/07/benson-james-offer-contrasting-visions-in-first-michigan-governor-debate/"
         }
-      ]
+      ],
+      "quote": "The moratorium should be imposed on Lansing, not the people.",
+      "level": "medium"
     },
     "cr-mi-gov-james-4": {
       "result": "corrected",
@@ -956,22 +952,22 @@
     },
     "cr-mi-sen-elsayed-1": {
       "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected \"union-jobs guarantee\" to \"local-jobs guarantee\": Michigan Advance says the plan does not call for union-only labor. The rest, including closed-loop cooling, is confirmed.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Corrected: his Jan. 8, 2026 \"terms of engagement\" (campaign page) require data centers to pay for their own energy, use closed-loop cooling and face penalties if promised local jobs do not appear; the call for federal standards and backing for local and state moratoriums came later (FOX 2 interview, Sept. 15; WCMU, Oct. 1), from news reports, so Medium.",
       "sources": [
         {
-          "title": "Michigan Advance: El-Sayed lays out policy 'terms of engagement' with AI data centers in U.S. Senate hunt",
-          "url": "https://michiganadvance.com/2026/01/08/el-sayed-lays-out-policy-terms-of-engagement-with-ai-data-centers-in-u-s-senate-hunt/"
+          "title": "Terms of Engagement for Data Centers",
+          "url": "https://abdulforsenate.com/2026/01/datacenters/"
         },
         {
-          "title": "Gander Newsroom: Abdul El-Sayed releases plan to rein in data center expansion in Michigan",
-          "url": "https://gandernewsroom.com/2026/01/08/abdul-el-sayed-releases-plan-to-rein-in-data-center-expansion-in-michigan/"
-        },
-        {
-          "title": "Detroit Metro Times: Senate candidate El-Sayed says data centers must protect communities or stay out of Michigan",
-          "url": "https://www.metrotimes.com/news/politics-elections/senate-candidate-el-sayed-says-data-centers-must-protect-communities-or-stay-out-of-michigan/"
+          "title": "WCMU: Rogers and El-Sayed disagree on many issues, except data center moratoriums (Oct. 1, 2026)",
+          "url": "https://www.wcmu.org/local-regional-news/2026-10-01/rogers-and-el-sayed-disagree-on-many-issues-except-data-center-moratoriums"
         }
-      ]
+      ],
+      "quote": "Data centers must pay for their own energy demand — costs cannot be passed onto ratepayers.",
+      "level": "medium"
     },
     "cr-mi-sen-elsayed-2": {
       "result": "confirmed",
@@ -1073,22 +1069,22 @@
     },
     "cr-tx-gov-abbott-2": {
       "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: the pause was ordered by letter on Aug. 3, 2026; no later executive order was found, so that claim is removed. The pause and the criticism that it leaves out many mid-size projects are confirmed.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Confirmed in his Aug. 3, 2026 letter to the Public Utility Commission and ERCOT. Corrected the criticism: Public Citizen said the pause had no deadline and that projects generating their own power could bypass it; no source said it left out mid-size projects.",
       "sources": [
         {
-          "title": "Texas Public Radio: Gov. Greg Abbott pauses new data centers until energy, water usage audit is completed",
-          "url": "https://www.tpr.org/text/environment/2026-08-03/gov-greg-abbott-pauses-new-data-centers-until-energy-water-usage-audit-is-completed"
+          "title": "Governor Greg Abbott’s letter to Chairman Thomas Gleeson and Chief Executive Officer Pablo Vegas",
+          "url": "https://gov.texas.gov/uploads/files/press/Thomas_Gleeson_Pablo_Vegas_Data_Centers_Directive_Letter_to_PUCT_ERCOT_August_2026_.pdf"
         },
         {
-          "title": "Texas Public Radio (Texas Standard): Gov. Abbott has ordered a pause on data center approvals. Will it make a difference?",
-          "url": "https://www.tpr.org/technology-entrepreneurship/2026-08-27/gov-abbott-has-ordered-a-pause-on-data-center-approvals-will-it-make-a-difference"
-        },
-        {
-          "title": "E&E News: Texas governor puts data center grid approvals on hold",
-          "url": "https://www.eenews.net/articles/texas-governor-puts-data-center-grid-approvals-on-hold/"
+          "title": "Public Citizen: Abbott's latest data center declaration is a faux pause (Aug. 3, 2026)",
+          "url": "https://www.citizen.org/news/abbotts-latest-data-center-declaration-is-a-faux-pause/"
         }
-      ]
+      ],
+      "quote": "verification and audit of all data centers advancing through ERCOT’s interconnection process before any additional data centers are approved to move forward.",
+      "level": "high"
     },
     "cr-tx-gov-abbott-3": {
       "result": "confirmed",
@@ -1168,22 +1164,18 @@
     },
     "cr-tx-sen-paxton-2": {
       "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: no source says the plan \"stopped short of a moratorium\", so that is removed; coverage says it backs Gov. Abbott's state plan. The four-point plan is confirmed.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Corrected the date to Aug. 24, 2026, when the Texas Tribune reported the plan (Aug. 25 was a later report). The plan's content is confirmed in contemporaneous reporting; his own post would not open, so Medium.",
       "sources": [
         {
-          "title": "FOX 4: Paxton rolls out data center plan; Talarico questions his motives",
-          "url": "https://www.fox4news.com/election/texas-ken-paxton-data-center-plan-james-talarico-senate-election-2026"
-        },
-        {
-          "title": "Daily Signal: Ken Paxton unveils 'Texas First' data center plan to protect grid, communities",
-          "url": "https://dailysignal.com/2026/08/25/paxton-texas-first-data-center-plan"
-        },
-        {
-          "title": "Dallas Express: AG Ken Paxton unveils four-point Texas data center plan",
-          "url": "https://dallasexpress.com/state/ag-ken-paxton-unveils-four-point-texas-data-center-plan/"
+          "title": "Paxton promises to ban Chinese technology and chatbots that endanger children in data center platform",
+          "url": "https://www.texastribune.org/2026/08/24/ken-paxton-james-talarico-data-centers-senate-texas/?campaign=814407"
         }
-      ]
+      ],
+      "quote": "hold companies criminally liable if their data centers power AI chatbots that endanger children",
+      "level": "medium"
     },
     "cr-tx-sen-talarico-1": {
       "result": "confirmed",
@@ -1220,23 +1212,19 @@
       ]
     },
     "cr-tx-sen-talarico-3": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Date corrected: Talarico said this when he released his data center plan on July 22, 2026 (Texas Tribune, Texas Public Radio), not after the election; Tom's Guide repeated it in November. The original report is now the source.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Confirmed in the Texas Tribune's direct quotation from his July 22, 2026 Austin news conference (federal minimum standards, local approval, developers paying grid costs); the video would not open, so Medium.",
       "sources": [
         {
-          "title": "Texas Tribune: James Talarico calls for tighter regulations on data center development",
+          "title": "James Talarico calls for tighter regulations on data center development",
           "url": "https://www.texastribune.org/2026/07/22/texas-james-talarico-data-centers-regulation-senate-2026/"
-        },
-        {
-          "title": "Texas Public Radio: James Talarico calls for tighter regulations on data center development",
-          "url": "https://www.tpr.org/government-politics/2026-07-22/james-talarico-calls-for-tighter-regulations-on-data-center-development"
-        },
-        {
-          "title": "Tom's Guide: What James Talarico, Abdul El-Sayed and other midterm winners say about AI data centers",
-          "url": "https://tomsguide.com/ai/heres-what-james-talarico-abdul-el-sayed-and-other-us-midterm-election-winners-have-to-say-about-ai-data-centers"
         }
-      ]
+      ],
+      "quote": "strikes a balance between welcoming those investments while also protecting working people.",
+      "level": "medium"
     },
     "ct-2024-sb2": {
       "result": "confirmed",
@@ -1334,23 +1322,19 @@
       ]
     },
     "ct-2026-hb5926": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: HB 5926 is a 2025 bill by Rep. Brandon Chafee (D), referred to committee with no further action, so it died when the 2025 session ended; it was listed as a 2026 bill still introduced. What it would do is confirmed.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Confirmed on the legislature's bill history: Rep. Brandon Chafee's 2025 bill was referred to the Energy and Technology Committee on Jan. 22, 2025 and expired when the session adjourned June 4, 2025.",
       "sources": [
         {
-          "title": "Connecticut General Assembly: HB 5926 (2025) bill status",
-          "url": "https://prdext3.cga.ct.gov/2025/cbs/H/pdf/HB-5926.pdf"
-        },
-        {
-          "title": "Connecticut General Assembly: HB 5926 (2025) bill text",
-          "url": "https://prdext3.cga.ct.gov/2025/TOB/H/PDF/2025HB-05926-R00-HB.PDF"
-        },
-        {
-          "title": "Legiplex: CT HB 5926 (2025 regular session)",
-          "url": "https://app.legiplex.com/ct/legislature/2025/2025-r/bills/hb05926"
+          "title": "Bill History: Proposed H.B. No. 5926 — An Act Implementing a Surcharge on Electricity Consumed by Data Centers",
+          "url": "https://cga.ct.gov/2025/cbs/H/pdf/HB-5926.pdf"
         }
-      ]
+      ],
+      "quote": "01-22-2025 REFERRED TO JOINT COMMITTEE ON Energy and Technology Committee",
+      "level": "high"
     },
     "ct-2026-sb245": {
       "result": "corrected",
@@ -1426,22 +1410,18 @@
     },
     "ct-sb1292": {
       "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: SB 1292 is a 2025 Energy and Technology Committee bill, turned into a study bill and approved 24-0 on Mar. 18, 2025, then left without a floor vote, so it died; it was listed as a bill of unknown session still introduced.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Corrected the end date: after the committee's 24-0 vote (Mar. 18, 2025) the bill reached the Senate calendar on Apr. 7 (Calendar No. 303) and expired without a floor vote when the session adjourned June 4, 2025.",
       "sources": [
         {
-          "title": "Connecticut General Assembly: SB 1292 (2025) bill summary",
-          "url": "https://prdext3.cga.ct.gov/2025/cbs/S/pdf/SB-1292.pdf"
-        },
-        {
-          "title": "BillTrack50: Connecticut SB 1292 (2025)",
-          "url": "https://www.billtrack50.com/billdetail/1828289"
-        },
-        {
-          "title": "The Day: Legislature seeks data center study; concerns raised over delays",
-          "url": "https://www.theday.com/?p=470866"
+          "title": "Bill History: Substitute for Raised S.B. No. 1292 — An Act Requiring a Study Concerning Energy Efficiency Requirements for Artificial Intelligence Data Centers",
+          "url": "https://www.cga.ct.gov/2025/cbs/S/pdf/SB-1292.pdf"
         }
-      ]
+      ],
+      "quote": "04-07-2025 FAVORABLE REPORT, TABLED FOR THE CALENDAR, SENATE",
+      "level": "high"
     },
     "eu-ai-act": {
       "result": "confirmed",
@@ -1497,23 +1477,19 @@
       ]
     },
     "fr-pjl-simplification": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: the simplification bill became law on May 26, 2026 (published May 27); it was listed as still under examination. It lets data centers meeting set conditions, including on water, be designated projects of major national interest by decree.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Confirmed on the Senate's legislative record: Law no. 2026-403 of May 26, 2026 (Journal officiel, May 27), after the Constitutional Council's May 21 ruling; its Article 35 extends fast-track siting and grid connection to qualifying data centers designated by decree and allows permits to be refused in water-stressed areas.",
       "sources": [
         {
-          "title": "Lextenso: JO, publication de la loi sur la simplification de la vie économique",
-          "url": "https://www.labase-lextenso.fr/breves/jo-publication-de-la-loi-sur-la-simplification-de-la-vie-economique-BREVEBO425"
-        },
-        {
-          "title": "Ministère de la Transition écologique: Loi de simplification de la vie économique (SVE), mesures urbanisme et construction",
-          "url": "https://www.ecologie.gouv.fr/politiques-publiques/loi-simplification-vie-economique-sve-mesures-urbanisme-construction"
-        },
-        {
-          "title": "Vie-publique: Projet de loi de simplification de la vie économique",
-          "url": "https://www.vie-publique.fr/loi/293913-entreprises-projet-de-loi-de-simplification-de-la-vie-economique"
+          "title": "Simplification de la vie économique — Dossier législatif",
+          "url": "https://www.senat.fr/dossier-legislatif/pjl23-550.html"
         }
-      ]
+      ],
+      "quote": "Loi n° 2026-403 du 26 mai 2026 parue au JO n°122 du 27 mai 2026",
+      "level": "high"
     },
     "fr-ppl-centres-donnees": {
       "result": "confirmed",
@@ -1724,23 +1700,19 @@
       ]
     },
     "mi-hb4047-4048": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: only HB 4047 is Public Act 11 of 2025; HB 4048 is Public Act 12. Both were signed and took effect Aug. 26, 2025, with civil and criminal remedies for intimate deepfakes. Sponsors added: Reps. Matt Bierlein (R) and Penelope Tsernoglou (D).",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Confirmed on the official public acts: HB 4047 (Rep. Matt Bierlein, R) created civil remedies and criminal penalties for non-consensual intimate deepfakes; HB 4048 (Rep. Penelope Tsernoglou, D) added sentencing guidelines; both took effect Aug. 26, 2025.",
       "sources": [
         {
-          "title": "MichiganVotes: 2025 House Bill 4047 / Public Act 11",
-          "url": "https://michiganvotes.org/legislation/2025/house/bill-4047"
-        },
-        {
-          "title": "MichiganVotes: 2025 House Bill 4048 / Public Act 12",
-          "url": "https://michiganvotes.org/legislation/2025/house/bill-4048"
-        },
-        {
-          "title": "Governor Whitmer: Whitmer signs bills to protect Michiganders from sexual exploitation",
-          "url": "https://www.michigan.gov/whitmer/news/press-releases/2025/08/26/whitmer-signs-bills-to-protect-michiganders-from-sexual-exploitation"
+          "title": "Michigan Public Act 11 of 2025 — House Bill No. 4047",
+          "url": "https://legislature.mi.gov/documents/2025-2026/publicact/pdf/2025-PA-0011.pdf"
         }
-      ]
+      ],
+      "quote": "EFFECTIVE DATE: August 26, 2025",
+      "level": "high"
     },
     "mi-hb4536-4537": {
       "result": "confirmed",
@@ -2362,23 +2334,19 @@
       "level": "high"
     },
     "pl-d-chips#1": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed by Reuters (Nov. 10, 2026) and a CNBC-licensed report. The source was replaced: the CNBC address first cited could not be shown to be this story.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "04",
+      "note": "Confirmed in the Senate Democrats' release of Schumer's Nov. 10, 2026 floor remarks, which now serves as the source.",
       "sources": [
         {
-          "title": "The Daily Guardian (Reuters): Schumer says Congress must have answers on Trump defense of Nvidia CEO",
-          "url": "https://thedailyguardian.com/business/schumer-says-congress-must-have-answers-on-trump-defense-of-nvidia-ceo-773542/"
-        },
-        {
-          "title": "Times Brasil (CNBC licensee): Senador acusa Trump de defender o CEO da Nvidia, Jensen Huang, em detrimento da segurança nacional",
-          "url": "https://timesbrasil.com.br/mundo/senador-acusa-trump-de-defender-o-ceo-da-nvidia-jensen-huang-em-detrimento-da-seguranca-nacional/"
-        },
-        {
-          "title": "Roic.ai: Schumer calls Trump's defense of Nvidia's Huang troubling, demands full accounting on espionage response (11-10-2026)",
-          "url": "https://www.roic.ai/news/schumer-calls-trumps-defense-of-nvidias-huang-troubling-demands-full-accounting-on-espionage-response-11-10-2026"
+          "title": "Leader Schumer Floor Remarks On Trump’s Troubling Defense Of Nvidia CEO Jensen Huang At The Cost Of American National Security",
+          "url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-floor-remarks-on-trumps-troubling-defense-of-nvidia-ceo-jensen-huang-at-the-cost-of-american-national-security"
         }
-      ]
+      ],
+      "quote": "denouncing Trump’s defense of Nvidia’s CEO Jensen Huang at the cost of American national security",
+      "level": "high"
     },
     "pl-d-data-centers#0": {
       "result": "confirmed",
@@ -3823,6 +3791,13 @@
     },
     {
       "batch": "03",
+      "date": "2026-11-27",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "04",
       "date": "2026-11-27",
       "claims": 12,
       "tool": "ChatGPT (web browsing)",

@@ -7,13 +7,13 @@
       "candidateId": "abdul-el-sayed",
       "kind": "position",
       "labelType": "source-summary",
-      "text": "Set out \"terms of engagement\" for AI data centers: no electricity rate increases for residents, data centers paying for their own energy, closed-loop cooling and a local-jobs guarantee. Said the standards should be set federally and, until then, backed local and state moratoriums.",
+      "text": "His Jan. 8, 2026 \"terms of engagement\" for data centers say they \"must pay for their own energy demand\" (costs cannot be passed on to ratepayers), use closed-loop cooling and face penalties if promised local jobs do not appear. By September he was calling for federal standards and backing local and state moratoriums until then.",
       "source": {
-        "title": "Michigan Advance: El-Sayed lays out policy \"terms of engagement\" with AI data centers",
-        "url": "https://michiganadvance.com/2026/01/08/el-sayed-lays-out-policy-terms-of-engagement-with-ai-data-centers-in-u-s-senate-hunt/"
+        "title": "El-Sayed campaign: Terms of engagement for data centers (Jan. 8, 2026)",
+        "url": "https://abdulforsenate.com/2026/01/datacenters/"
       },
       "publishedDate": "2026-01-08",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -42,7 +42,7 @@
         "dc-water-environment",
         "dc-economy-jobs"
       ],
-      "version": 5,
+      "version": 6,
       "history": [
         {
           "version": 1,
@@ -68,8 +68,14 @@
           "version": 5,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: corrected (Michigan Advance, Gander Newsroom, Detroit Metro Times). Corrected \"union-jobs guarantee\" to \"local-jobs guarantee\": Michigan Advance says the plan does not call for union-only labor. The rest, including closed-loop cooling, is confirmed. Medium confidence."
+        },
+        {
+          "version": 6,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): corrected, Medium confidence. Corrected: his Jan. 8, 2026 \"terms of engagement\" (campaign page) require data centers to pay for their own energy, use closed-loop cooling and face penalties if promised local jobs do not appear; the call for federal standards and backing for local and state moratoriums came later (FOX 2 interview, Sept. 15; WCMU, Oct. 1), from news reports, so Medium."
         }
-      ]
+      ],
+      "dateNote": "Platform of Jan. 8, 2026; federal standards and moratoriums from Sept.-Oct. 2026"
     },
     {
       "id": "cr-mi-sen-elsayed-2",
@@ -450,7 +456,7 @@
         "url": "https://www.texastribune.org/2026/07/22/texas-james-talarico-data-centers-regulation-senate-2026/"
       },
       "publishedDate": "2026-07-22",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -471,7 +477,7 @@
       "categories": [
         "dc-economy-jobs"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -487,6 +493,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports and corrected: Date corrected: Talarico said this when he released his data center plan on July 22, 2026 (Texas Tribune, Texas Public Radio), not after the election; Tom's Guide repeated it in November. The original report is now the source. Raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): confirmed, Medium confidence. Confirmed in the Texas Tribune's direct quotation from his July 22, 2026 Austin news conference (federal minimum standards, local approval, developers paying grid costs); the video would not open, so Medium."
         }
       ]
     },
@@ -553,11 +564,11 @@
       "labelType": "source-summary",
       "text": "Released a four-point AI data center plan calling for federal legislation to block Chinese technology in data centers and criminal liability for data centers that power AI chatbots that harm children, and backing Gov. Abbott's state-level plan.",
       "source": {
-        "title": "Breitbart: Ken Paxton unveils plan to prevent \"negative impact\" of AI data centers on Texas",
-        "url": "https://www.breitbart.com/tech/2026/08/25/ken-paxton-unveils-plan-to-prevent-negative-impact-of-ai-data-centers-on-texas/"
+        "title": "Texas Tribune: Paxton promises to ban Chinese technology and chatbots that endanger children in data center platform (Aug. 24, 2026)",
+        "url": "https://www.texastribune.org/2026/08/24/ken-paxton-james-talarico-data-centers-senate-texas/"
       },
-      "publishedDate": "2026-08-25",
-      "lastVerified": "2026-11-24",
+      "publishedDate": "2026-08-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -587,7 +598,7 @@
         "dc-security",
         "ai-child-safety"
       ],
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -608,6 +619,11 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: corrected (FOX 4, Daily Signal, Dallas Express). Corrected: no source says the plan \"stopped short of a moratorium\", so that is removed; coverage says it backs Gov. Abbott's state plan. The four-point plan is confirmed. Medium confidence."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): corrected, Medium confidence. Corrected the date to Aug. 24, 2026, when the Texas Tribune reported the plan (Aug. 25 was a later report). The plan's content is confirmed in contemporaneous reporting; his own post would not open, so Medium."
         }
       ]
     },
@@ -623,8 +639,8 @@
         "url": "https://www.rules.senate.gov/download/06/11/2024/testimony_benson1"
       },
       "publishedDate": "2024-03-12",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -648,7 +664,7 @@
       "categories": [
         "ai-deepfakes"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -664,6 +680,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports and corrected: Date corrected from June 11 to March 12, 2024: the Michigan Department of State and Michigan Advance date the Senate Rules Committee hearing to March 12 (June 11 appears only in the testimony file's address). The testimony and its \"exponentially\" wording are confirmed. Raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): confirmed, High confidence. Confirmed in her written testimony to the Senate Rules Committee (Mar. 12, 2024): AI would \"amplify and expand exponentially\" election disinformation tactics."
         }
       ]
     },
@@ -852,13 +873,13 @@
       "candidateId": "john-james",
       "kind": "statement",
       "labelType": "source-summary",
-      "text": "In the Oct. 6 debate, said communities should decide whether to accept data centers (\"The moratorium should be imposed on Lansing, not the people\"), and afterwards said he would not push for a statewide moratorium.",
+      "text": "In the Oct. 6 debate said communities should decide on data centers (\"My moratorium is local led, not Lansing led\"); afterwards he told reporters \"The moratorium should be imposed on Lansing, not the people\" and ruled out a statewide moratorium.",
       "source": {
-        "title": "Michigan Public: James distances himself from Trump as Benson tries to connect them",
-        "url": "https://www.michiganpublic.org/politics-government/2026-10-07/james-distances-himself-from-trump-as-benson-tries-to-connect-them-in-gubernatorial-debate"
+        "title": "Bridge Michigan: Fact check, John James and Jocelyn Benson debate data centers, tariffs and more",
+        "url": "https://bridgemi.com/michigan-politics/fact-check-john-james-jocelyn-benson-debate-data-centers-tariffs-more/"
       },
       "publishedDate": "2026-10-06",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -880,7 +901,7 @@
       "categories": [
         "dc-local-control"
       ],
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -901,6 +922,11 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: corrected (Michigan Public, Bridge Michigan, ClickOnDetroit). Corrected the quote to the wording reported by Michigan Public and Bridge Michigan (\"The moratorium should be imposed on Lansing, not the people\"). His local-control stance and ruling out a statewide moratorium are confirmed. Medium confidence."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): corrected, Medium confidence. Corrected attribution: in the Oct. 6 debate he said \"My moratorium is local led, not Lansing led\" (WDIV); \"The moratorium should be imposed on Lansing, not the people\" was said to reporters afterwards (Bridge Michigan). Both rest on news reports, so Medium."
         }
       ]
     },
@@ -1161,14 +1187,14 @@
       "candidateId": "greg-abbott",
       "kind": "action",
       "labelType": "source-summary",
-      "text": "Told state regulators and the grid operator ERCOT, in an Aug. 3, 2026 letter, to stop approving new data center grid connections until an energy and water audit is done. Critics said it had no clear timeline and did not cover many mid-size projects.",
+      "text": "Told state regulators and the grid operator ERCOT, in an Aug. 3, 2026 letter, to stop approving new data center grid connections until all data centers in the queue have been verified and audited for electricity and water use. Critics (Public Citizen) said the pause had no deadline and that projects generating their own power could bypass it.",
       "source": {
-        "title": "E&E News: Texas governor talks tough on data centers, calls for clampdown",
-        "url": "https://www.eenews.net/articles/texas-governor-talks-tough-on-data-centers-calls-for-clampdown/"
+        "title": "Office of the Texas Governor: letter to the PUC chairman and ERCOT CEO on data centers (Aug. 3, 2026)",
+        "url": "https://gov.texas.gov/uploads/files/press/Thomas_Gleeson_Pablo_Vegas_Data_Centers_Directive_Letter_to_PUCT_ERCOT_August_2026_.pdf"
       },
-      "publishedDate": "2026-08",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "publishedDate": "2026-08-03",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1192,7 +1218,7 @@
         "dc-moratorium",
         "dc-ratepayer"
       ],
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -1213,6 +1239,11 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: corrected (Texas Public Radio, Texas Public Radio (Texas Standard), E&E News). Corrected: the pause was ordered by letter on Aug. 3, 2026; no later executive order was found, so that claim is removed. The pause and the criticism that it leaves out many mid-size projects are confirmed. Medium confidence."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): corrected, High confidence. Confirmed in his Aug. 3, 2026 letter to the Public Utility Commission and ERCOT. Corrected the criticism: Public Citizen said the pause had no deadline and that projects generating their own power could bypass it; no source said it left out mid-size projects."
         }
       ]
     },
@@ -2743,14 +2774,14 @@
       "candidateId": "francois-ruffin",
       "kind": "position",
       "labelType": "source-summary",
-      "text": "Filed a resolution in the National Assembly calling for a five-year moratorium on non-European (\"non-sovereign\") data center projects, backed by the Ecologist and Communist groups. Its explanatory statement also attacks the reduced electricity tax that data centers pay.",
+      "text": "Filed a resolution in the National Assembly (registered Oct. 13, 2026) calling for a five-year moratorium on \"non-sovereign\" data center projects (foreign developers or end users), co-signed by individual Ecologist and Communist deputies. It also attacks the reduced electricity tax that data centers pay.",
       "source": {
-        "title": "Assemblée nationale: Proposition de résolution n° 3293 (Ruffin, data centers)",
-        "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3293_proposition-resolution.pdf"
+        "title": "Assemblée nationale: Proposition de résolution n° 3293 (moratorium on non-sovereign data centers)",
+        "url": "https://www.assemblee-nationale.fr/dyn/opendata/PNREANR5L17B3293.pdf"
       },
-      "publishedDate": "2026-10-08",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "publishedDate": "2026-10-13",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2774,7 +2805,7 @@
         "dc-moratorium",
         "dc-tax-incentives"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2785,6 +2816,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports and corrected: Corrected: the resolution Ruffin filed on Oct. 8, 2026 centres on a five-year moratorium on non-European (\"non-sovereign\") data center projects (National Assembly text no. 3293; franceinfo), which the record left out; it also attacks the reduced electricity tax for data centers. The earlier points (brownfields first, public debate commission) were not found and are removed. Stance changed from \"conditional\" to \"pause\". Raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): corrected, High confidence. Corrected from the Assembly's record: the resolution (no. 3293) was registered on Oct. 13, 2026, not Oct. 8, and is co-signed by individual Ecologist and Communist deputies rather than endorsed by their groups as such. Ruffin withdrew from the presidential race on Nov. 22."
         }
       ]
     }
