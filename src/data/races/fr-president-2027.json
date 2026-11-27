@@ -94,14 +94,15 @@
     {
       "id": "francois-ruffin",
       "name": "François Ruffin",
-      "party": "Independent left",
+      "party": "Debout!",
       "bloc": "left",
-      "note": "Party label to verify.",
+      "note": "Withdrew his candidacy on Nov. 22, 2026 (his campaign ran under Debout!). His record stays for reference.",
       "questionnaire": {
         "status": "not-sent",
         "deadline": null,
         "asOf": null
-      }
+      },
+      "withdrawn": "2026-11-22"
     }
   ],
   "contextNotes": [

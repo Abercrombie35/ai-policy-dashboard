@@ -789,23 +789,19 @@
       ]
     },
     "cr-fr-retailleau-1": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "A French search found Retailleau's pro-nuclear, decarbonised-power stance and his AI-in-administration plan, but no source links the two into a 'sovereign AI powered by decarbonized electricity' position.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Corrected from his party's 56-page plan (Les Républicains, July 2026): about €23 billion gross over five years in total, including about €11.6 billion of new AI investment; the €5 billion figure is the public-administration programme. He had estimated about €25 billion in a July 7 interview. The plan ties sovereign data center capacity to France's low-carbon nuclear fleet, so that link is now confirmed.",
       "sources": [
         {
-          "title": "Next.ink: Pour Bruno Retailleau, l'IA n'attend pas notre consentement",
-          "url": "https://next.ink/247354/pour-bruno-retailleau-lia-nattend-pas-notre-consentement/"
-        },
-        {
-          "title": "Acteurs Publics: Présidentielle, Bruno Retailleau souhaite redéployer 125 000 fonctionnaires sur le terrain grâce à l'IA",
-          "url": "https://acteurspublics.fr/articles/presidentielle-bruno-retailleau-souhaite-redeployer-125-000-fonctionnaires-sur-le-terrain-grace-a-lia/"
+          "title": "L’IA au service des Français — Progrès, souveraineté, vigilance",
+          "url": "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf"
         }
       ],
-      "unconfirmed": [
-        "Link between his AI plan and decarbonized electricity",
-        "€25 billion over five years (round 1 found about €23 billion over the term in Next.ink and €5 billion in Acteurs Publics)"
-      ]
+      "quote": "Au total, le programme représente un effort brut d’environ 23 milliards d’euros sur le quinquennat.",
+      "level": "high"
     },
     "cr-fr-ruffin-1": {
       "result": "corrected",
@@ -948,26 +944,19 @@
       ]
     },
     "cr-mi-gov-james-4": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The cited WNEM story (Oct. 30, 2026) confirms James's 'no new data centers until a plan to protect communities' line and lists five priorities, but the phrase 'five-part moratorium' was not shown.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Corrected: he spoke on Oct. 29, 2026 in Bay County (WNEM interview), naming five concerns: local control, water, electricity bills, pollution, and building on brownfields rather than farmland. The phrase \"five-part moratorium\" was not found and is removed. The quote is confirmed in a news interview, so Medium.",
       "sources": [
         {
-          "title": "WNEM: John James says no new data centers until plan to protect communities",
+          "title": "John James says no new data centers until plan to protect communities",
           "url": "https://www.wnem.com/2026/10/30/john-james-says-no-new-data-centers-until-plan-protect-communities/"
-        },
-        {
-          "title": "Michigan Advance: As James pushes local control on data centers, past congressional votes sought to limit just that",
-          "url": "https://michiganadvance.com/2026/09/02/as-james-pushes-local-control-on-data-centers-past-congressional-votes-sought-to-limit-just-that/"
-        },
-        {
-          "title": "Michigan Public: Governor's race hits Saline Township, site of massive data center project",
-          "url": "https://www.michiganpublic.org/politics-government/2026-10-02/governors-race-hits-saline-township-site-of-massive-data-center-project"
         }
       ],
-      "unconfirmed": [
-        "The phrase 'five-part moratorium' itself"
-      ]
+      "quote": "No new data centers until we have a plan to protect our communities.",
+      "level": "medium"
     },
     "cr-mi-sen-elsayed-1": {
       "result": "corrected",
@@ -1027,27 +1016,26 @@
       ]
     },
     "cr-mi-sen-rogers-1": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Rogers' earlier pro-data-center stance and his praise of the White House AI framework are confirmed; the 'responsible framework for safety and data privacy' wording and the statement dates were still not found.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Corrected to two documented statements: his campaign's Mar. 20, 2026 endorsement of the White House AI framework, and a Mar. 27 statement to Michigan Advance with the full \"competitive for new AI-supported jobs\" quotation. Faster permits are Michigan Advance's description, not his words, and \"for months\" is removed.",
       "sources": [
         {
-          "title": "Detroit Metro Times: Mike Rogers loved data centers until voters didn't",
-          "url": "https://www.metrotimes.com/news/mike-rogers-loved-data-centers-until-voters-didnt/"
-        },
-        {
-          "title": "Rogers for Senate: Rogers applauds White House AI framework that establishes global leadership and protects kids online",
+          "title": "Rogers Applauds White House AI Framework That Establishes Global Leadership and Protects Kids Online",
           "url": "https://rogersforsenate.com/news/rogers-applauds-white-house-ai-framework-that-establishes-global-leadership-and-protects-kids-online"
         },
         {
-          "title": "The Lever: Days after The Lever revealed his AI investments, Mike Rogers flipped on data centers",
-          "url": "https://www.levernews.com/days-after-the-lever-revealed-his-ai-investments-mike-rogers-flipped-on-data-centers/"
+          "title": "Michigan Advance: McMorrow releases plan for Michigan data centers (Mar. 27, 2026, with Rogers's statement)",
+          "url": "https://michiganadvance.com/2026/03/27/mallory-mcmorrow-releases-plan-for-michigan-data-centers-done-right-with-a-focus-on-green-energy/"
         }
       ],
       "unconfirmed": [
-        "Second half of the quote: 'while setting a responsible framework for safety and data privacy' (not found in two more searches)",
-        "Exact dates of the statements"
-      ]
+        "Faster permits in his own words (Michigan Advance's description)"
+      ],
+      "quote": "by setting a consistent, national framework, which will supercharge innovation, add safeguards to protect kids online, shield communities from higher electric bills",
+      "level": "medium"
     },
     "cr-mi-sen-rogers-2": {
       "result": "confirmed",
@@ -1369,26 +1357,19 @@
       ]
     },
     "ct-2026-sb245": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "CBIA's bill tracker lists SB 245 as died in the Finance Committee, matching the official history that ends at the March 23 referral; the Feb. 19 introduction date was not shown. Status note updated: it died in the Finance Committee.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Confirmed on the legislature's record, with the dates made precise: introduced Feb. 19, 2026; last action Mar. 23 (referred to the Finance, Revenue and Bonding Committee); it died when the session ended May 6.",
       "sources": [
         {
-          "title": "Connecticut General Assembly: SB 245 (2026) bill status",
+          "title": "An Act Eliminating Certain Tax Incentives for Data Centers — SB 245 bill history",
           "url": "https://www.cga.ct.gov/2026/cbs/S/pdf/SB-0245.pdf"
-        },
-        {
-          "title": "CBIA: Bill Tracker",
-          "url": "https://www.cbia.com/bill-tracker/page/6/"
-        },
-        {
-          "title": "Connecticut General Assembly: SB 245 Energy and Technology Committee joint favorable report",
-          "url": "https://prdext3.cga.ct.gov/2026/JFR/S/PDF/2026SB-00245-R00ET-JFR.PDF"
         }
       ],
-      "unconfirmed": [
-        "Introduction date of Feb. 19, 2026"
-      ]
+      "quote": "03-23-2026 FAVORABLE CHANGE OF REFERENCE, SENATE TO COMMITTEE ON Finance, Revenue and Bonding Committee",
+      "level": "high"
     },
     "ct-2026-sb4": {
       "result": "confirmed",
@@ -1486,26 +1467,19 @@
       ]
     },
     "eu-digital-omnibus-ai": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Law-firm analyses confirm the number, the June 29 Council approval, July 27, 2026 entry into force, the new high-risk dates, the two new bans and the SME/small mid-cap simplifications; one nuance is a Dec. 2, 2026 cut-off for Article 50(2) labelling of some existing systems, and GPAI timing was not addressed in the results.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Corrected from the regulation itself: transparency duties did change in part (systems generating synthetic content already on the market before Aug. 2, 2026 have until Dec. 2, 2026 to meet Article 50(2)); the general-purpose AI model timetable is unchanged; the new bans apply from Dec. 2, 2026. Dated July 8, in force July 27, 2026.",
       "sources": [
         {
-          "title": "White & Case: EU AI Omnibus enters into force, amending the AI Act",
-          "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act"
-        },
-        {
-          "title": "Lewis Silkin: Council of the EU gives AI Omnibus final green light",
-          "url": "https://lewissilkin.com/insights/2026/07/09/council-of-the-eu-gives-ai-omnibus-final-green-light-102nbb1"
-        },
-        {
-          "title": "Orrick: EU AI Act Update, Digital Omnibus Finalizes 8 Compliance Changes",
-          "url": "https://www.orrick.com/en/Insights/2026/07/EU-AI-Act-Update-Digital-Omnibus-Finalizes-8-Compliance-Changes"
+          "title": "Regulation (EU) 2026/1744 of the European Parliament and of the Council of 8 July 2026 (Digital Omnibus on AI)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1744"
         }
       ],
-      "unconfirmed": [
-        "That general-purpose AI rules keep their original dates (no source in the results addressed GPAI timing, though none reported a delay)"
-      ]
+      "quote": "placed on the market before 2 August 2026 shall take the necessary steps in order to comply with Article 50(2) by 2 December 2026.",
+      "level": "high"
     },
     "fr-nuclear-ai-pledge": {
       "result": "confirmed",
@@ -1546,48 +1520,34 @@
       ]
     },
     "fr-ppl-centres-donnees": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed sponsor, Mar. 25 Senate adoption, Mar. 26 transmission and content; the Senate copied in the data-center PINM article (art. 15) of the simplification bill, which itself became law on May 26, 2026, so this provision is now largely already in force; no later Assembly action was found. Status note updated: no National Assembly action found; the fast-track article is largely in force through the May 26, 2026 simplification law.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Confirmed on the National Assembly's record: adopted by the Senate Mar. 25, 2026, filed in the Assembly Mar. 26 as text no. 2584 and referred to its Economic Affairs Committee, with no later examination.",
       "sources": [
         {
-          "title": "Banque des Territoires: Datacenters, le Sénat adopte une proposition de loi allégée, renvoyant l'essentiel aux textes en cours",
-          "url": "https://www.banquedesterritoires.fr/datacenters-le-senat-adopte-une-proposition-de-loi-allegee-renvoyant-lessentiel-aux-textes-en-cours"
-        },
-        {
-          "title": "Assemblée nationale: Proposition de loi n° 2584 (transmitted by the Senate)",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b2584_proposition-loi.pdf"
-        },
-        {
-          "title": "Vie-publique: Implantation des data centers en France, proposition de loi",
-          "url": "https://www.vie-publique.fr/loi/302597-implatation-des-data-centers-en-france-proposition-de-loi"
+          "title": "Proposition de loi visant à encadrer l’implantation des centres de données sur le territoire français",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N51569"
         }
       ],
-      "unconfirmed": [
-        "Current status as of Nov. 2026: no Assembly committee or floor examination was found after March 2026, so 'passed one chamber' appears current but could not be confirmed"
-      ]
+      "quote": "Proposition de loi, adoptée par le Sénat, visant à encadrer l’implantation des centres de données sur le territoire français, n° 2584, déposée le jeudi 26 mars 2026.",
+      "level": "high"
     },
     "fr-president-2027#candidates": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: Marine Le Pen, not Jordan Bardella, is the declared RN candidate (announced July 7, 2026, after her appeal ruling). Bardella, RN president, would run only if the Court of Cassation bars her; both are now listed. The other six are declared candidates.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Corrected: François Ruffin withdrew his candidacy on Nov. 22, 2026 (his own announcement); his campaign ran under Debout!. Marine Le Pen is the RN candidate and Jordan Bardella her intended prime minister (Aug. 29). The other parties are confirmed: Philippe (Horizons), Attal (Renaissance), Retailleau (LR), Mélenchon (LFI), Tondelier (Les Écologistes).",
       "sources": [
         {
-          "title": "Public Sénat: Présidentielle, Marine Le Pen est candidate et se pourvoit en cassation",
-          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-marine-le-pen-est-candidate-et-se-pourvoit-en-cassation"
-        },
-        {
-          "title": "Courthouse News: France's Le Pen will run for president despite embezzlement conviction",
-          "url": "https://courthousenews.com/frances-le-pen-will-run-for-president-despite-embezzlement-conviction/"
-        },
-        {
-          "title": "LCP: Présidentielle 2027, la liste des candidats déclarés et potentiels",
-          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932"
+          "title": "Présidentielle 2027 : Face au risque du pire, je retire ma candidature",
+          "url": "https://francoisruffin.fr/presidentielle-2027-face-au-risque-du-pire-je-retire-ma-candidature/"
         }
       ],
-      "unconfirmed": [
-        "François Ruffin's party label (he left LFI in 2024; one low-reliability profile names his own 'Debout' label)"
-      ]
+      "quote": "Face au risque du pire, je retire ma candidature",
+      "level": "high"
     },
     "fr-president-2027#context0": {
       "result": "confirmed",
@@ -1901,27 +1861,19 @@
       ]
     },
     "mi-sb757-760": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The package and Polehanki's SB 760 chatbot bill are confirmed, passing the Senate 20-17 on Apr. 29, 2026 with no House vote as of Oct. 16, 2026; sources name self-harm, suicidal ideation and disordered eating but not violence or drug use. Senate passage date corrected to Apr. 29, 2026 (20-17).",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Corrected from the Senate's analysis: each bill has its own sponsor (SB 757 Camilleri, SB 758 Hertel, SB 759 Chang, SB 760 Polehanki, all Democrats); SB 760 creates a civil action with a presumption of causation when a chatbot encourages a minor's harmful conduct. The listed harms (self-harm, harm to others, disordered eating, drug or alcohol use) are confirmed. All four passed the Senate Apr. 29; no House vote as of Nov. 26.",
       "sources": [
         {
-          "title": "MichiganVotes: 2025 Senate Bill 760",
-          "url": "https://www.michiganvotes.org/legislation/2025/senate/bill-760"
-        },
-        {
-          "title": "Michigan Public: Kids Over Clicks bills (Oct. 16, 2026)",
-          "url": "https://www.michiganpublic.org/community/2026-10-16/kids-over-clicks-bills-michigan"
-        },
-        {
-          "title": "Route Fifty: Michigan Senate passes 'Kids Over Clicks' bill targeting social media addiction, online exploitation",
-          "url": "https://www.route-fifty.com/management/2026/05/michigan-senate-passes-kids-over-clicks-bill-targeting-social-media-addiction-online-exploitation/413254/"
+          "title": "Senate Bills 757 through 760 — Summary as Passed by the Senate",
+          "url": "https://legislature.mi.gov/documents/2025-2026/billanalysis/senate/htm/2025-SFA-0757-C.htm"
         }
       ],
-      "unconfirmed": [
-        "That SB 760 lists violence and drug use among the barred harms",
-        "House status after mid-October 2026"
-      ]
+      "quote": "suicide, self-harm, substantial physical harm to others, disordered eating, unlawful drug or alcohol use, or drug or alcohol abuse.",
+      "level": "high"
     },
     "mi-sb761-763": {
       "result": "confirmed",
@@ -2399,26 +2351,19 @@
       ]
     },
     "pl-d-chips#0": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Schumer's Sept. 23, 2026 push with fellow Democrats for the three bipartisan chip bills is confirmed, but the cited Washington Times article did not surface and no result shows him saying the Senate could pass them immediately.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Confirmed in Schumer's own press conference transcript (Sept. 23, 2026), which now serves as the source.",
       "sources": [
         {
-          "title": "Senate Banking Committee (minority): Ahead of Xi State Visit, Warren, Schumer, Kim, and Slotkin Call for AI Safety Regulations, Export Controls",
-          "url": "https://www.banking.senate.gov/newsroom/minority/ahead-of-xi-state-visit-warren-schumer-kim-and-slotkin-call-for-ai-safety-regulations-export-controls"
-        },
-        {
-          "title": "The Hill: Senate Democrats push AI chip bills",
-          "url": "https://thehill.com/policy/technology/6106883-senate-democrats-ai-chip-bills/amp/"
-        },
-        {
-          "title": "Roll Call: AI export controls debate rages as Trump, Xi meet",
-          "url": "https://rollcall.com/2026/09/23/ai-export-controls-debate-rages-as-trump-xi-meet/"
+          "title": "Transcript: At a Press Conference Ahead of Trump-Xi Meeting, Leader Schumer Demands Trump Block Chinese Access to American AI Chips and Manufacturing",
+          "url": "https://www.democrats.senate.gov/news/press-releases/transcript-at-a-press-conference-ahead-of-trump-xi-meeting-leader-schumer-demands-trump-block-chinese-access-to-american-ai-chips-and-manufacturing"
         }
       ],
-      "unconfirmed": [
-        "that Schumer said the Senate could pass the bills immediately (results show Democrats urging GOP leaders to pass them, and Schumer saying the president 'could take action today', but not that wording)"
-      ]
+      "quote": "The Senate could pass all three bills today and protect our national security and keep U.S. AI tech out of China's hands.",
+      "level": "high"
     },
     "pl-d-chips#1": {
       "result": "corrected",
@@ -2478,26 +2423,26 @@
       ]
     },
     "pl-d-data-centers#2": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Syndicated Reuters text confirms the planned data-center power-cost bills and Schumer's priority; nothing says the plans stop short of binding limits on AI deployment or energy use.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Corrected: in Sept. 30, 2026 floor remarks Schumer said Senate Democrats want to make it \"mandatory for data centers to cover their own costs by law\"; after the election (Nov. 5) he named data center power costs a priority for the next Congress (Reuters, Nov. 6). The claim that Democrats stop short of binding limits was not found and is removed.",
       "sources": [
         {
-          "title": "The Star (Reuters): Democrats planning flood of AI bills when they take control of Congress",
-          "url": "https://thestar.com.my/tech/tech-news/2026/11/06/democrats-planning-flood-of-ai-bills-when-they-take-control-of-congress"
+          "title": "Leader Schumer Floor Remarks Urging Senate Republicans To Join Democrats To Take Real Action On AI",
+          "url": "https://www.democrats.senate.gov/news/press-releases/leader-schumer-floor-remarks-urging-senate-republicans-to-join-democrats-to-take-real-action-on-ai"
         },
         {
-          "title": "Crypto Briefing (citing Reuters): Democrats plan AI legislation in Congress in January",
-          "url": "https://cryptobriefing.com/democrats-plan-ai-legislation-congress-january/"
-        },
-        {
-          "title": "IBTimes: A Bill to Make Data Centers Pay for Grid Upgrades is Dividing Democrats as They Gear to Control Congress",
-          "url": "https://www.ibtimes.com/senate-data-center-power-infrastructure-bill-vote-3809557"
+          "title": "Reuters: Democrats planning flood of AI bills when they take control of Congress (Nov. 6, 2026)",
+          "url": "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/"
         }
       ],
       "unconfirmed": [
-        "That the plans stop short of binding limits on AI deployment or energy use (not stated; Reuters lists independent testing of advanced AI and clearer corporate liability as the other pillars, and Schumer has said Democrats want data-center rules to be mandatory)"
-      ]
+        "A primary transcript of the Nov. 5 remarks (reported by Reuters)"
+      ],
+      "quote": "Senate Democrats want to make it mandatory for data centers to cover their own costs by law",
+      "level": "medium"
     },
     "pl-d-harmful#0": {
       "result": "confirmed",
@@ -2857,26 +2802,19 @@
       ]
     },
     "pl-r-workers#0": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "DOL and other summaries confirm the plan's retraining push (using existing discretionary funds) and the AI Workforce Research Hub; the section title was not shown in the results.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Corrected from the plan itself: under \"Empower American Workers in the Age of AI\" it recommends that the Labor Department use available discretionary funding for rapid retraining and set up an AI Workforce Research Hub; it does not itself fund retraining or open the hub.",
       "sources": [
         {
-          "title": "U.S. Department of Labor: News release on the AI Action Plan (July 23, 2025)",
-          "url": "https://www.dol.gov/newsroom/releases/osec/osec20250723"
-        },
-        {
-          "title": "AI.gov: AI Workforce Research Hub",
-          "url": "https://www.ai.gov/initiatives/ai-workforce-hub"
-        },
-        {
-          "title": "CUPA-HR: Trump administration releases AI Action Plan",
-          "url": "https://www.cupahr.org/resource/trump-administration-releases-ai-action-plan-2025-07-24/"
+          "title": "America’s AI Action Plan",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf"
         }
       ],
-      "unconfirmed": [
-        "Exact section title 'Empower American Workers in the Age of AI' (not shown in the results)"
-      ]
+      "quote": "Led by DOL, leverage available discretionary funding, where appropriate, to fund rapid retraining for individuals impacted by AI-related job displacement.",
+      "level": "high"
     },
     "pl-r-workers#1": {
       "result": "confirmed",
@@ -3042,29 +2980,22 @@
       ]
     },
     "result-ca-governor-2026": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Becerra's win (AP call at 8 p.m.) in the race to succeed Newsom is confirmed; the listed 65.6%/34.4% was not found (earlier partial counts showed about 64%/36%, and one KTVU box 60%/38%), and no certification report was found.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "02",
+      "note": "Updated to the Secretary of State's Nov. 26, 2026 results file: Becerra 8,740,676 votes (65.7%), Hilton 4,571,042 (34.3%). Still unofficial: certified results are due by Dec. 11.",
       "sources": [
         {
-          "title": "FOX 11 LA: How did LA County vote in the race for governor",
-          "url": "https://www.foxla.com/news/california-governor-how-did-la-county-vote"
-        },
-        {
-          "title": "SF Standard: Xavier Becerra wins California governor's race",
-          "url": "https://sfstandard.com/2026/11/03/xavier-becerra-wins-california-governor-s-race/"
-        },
-        {
-          "title": "KTVU: Xavier Becerra elected as California's next governor, AP projects",
-          "url": "https://www.ktvu.com/news/xavier-becerra-will-be-californias-next-governor"
+          "title": "November 3, 2026, California General Election — Secretary of State voting results file V26GG.txt",
+          "url": "https://media.sos.ca.gov/media/V26GG.txt"
         }
       ],
       "unconfirmed": [
-        "Vote shares 65.6% / 34.4%: figures found were earlier partial counts, 64% / 36% at the AP call (about 59% counted, FOX 11 LA), 64.1% / 35.9% (SF Standard, about 7.1 million votes counted), and a KTVU results box showing 60% / 38%; none is within one point of the listed figures",
-        "Calls by MultiState, Decision Desk HQ and NBC Bay Area specifically (the AP call was found instead)",
-        "That Newsom was term-limited (results say only that Becerra succeeds him)",
-        "Certification: no certified totals found; the Dec. 11, 2026 certification date was not confirmed in the results, and the race is presumably not yet certified as of Nov. 24"
-      ]
+        "Certified results (due by Dec. 11, 2026)"
+      ],
+      "quote": "[V|CAS|2|020000000000|59|23860|23860|F|3654|8740676|100.0|65.7|3631|4571042|100.0|34.3]",
+      "level": "medium"
     },
     "result-ct-governor-2026": {
       "result": "partly-confirmed",
@@ -3945,6 +3876,13 @@
     {
       "batch": "01",
       "date": "2026-11-26",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "02",
+      "date": "2026-11-27",
       "claims": 12,
       "tool": "ChatGPT (web browsing)",
       "relayedBy": "project owner"

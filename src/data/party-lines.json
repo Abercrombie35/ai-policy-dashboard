@@ -291,10 +291,10 @@
         {
           "date": "2025-07-23",
           "track": "proposed",
-          "summary": "The AI Action Plan's \"Empower American Workers in the Age of AI\" section funds rapid retraining for workers displaced by AI and creates an AI Workforce Research Hub at the Labor Department.",
+          "summary": "The AI Action Plan's \"Empower American Workers in the Age of AI\" section recommends that the Labor Department use available discretionary funding for rapid retraining of workers displaced by AI and set up an AI Workforce Research Hub; it provides no new money.",
           "source": {
-            "title": "SHRM: Trump administration unveils sweeping AI Action Plan",
-            "url": "https://www.shrm.org/topics-tools/news/trump-administration-unveils-sweeping-ai-action-plan-"
+            "title": "The White House: America's AI Action Plan (July 23, 2025)",
+            "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf"
           }
         },
         {
@@ -312,9 +312,9 @@
         "url": "https://www.shrm.org/topics-tools/news/trump-administration-unveils-sweeping-ai-action-plan-"
       },
       "publishedDate": "2025-07-23",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
-      "version": 3,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -330,6 +330,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Evidence checked a second time 2026-11-24 (1 partly-confirmed, 1 confirmed). Not all evidence confirmed; Low confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -413,12 +418,12 @@
           }
         },
         {
-          "date": "2026-11-06",
+          "date": "2026-09-30",
           "track": "proposed",
-          "summary": "Democrats plan data-center electricity-cost bills for the new Congress; Schumer named shielding consumers from data-center-driven power costs as a priority. The plans stop short of binding limits on AI deployment or energy use.",
+          "summary": "Schumer: Senate Democrats want to make it \"mandatory for data centers to cover their own costs by law\" (Sept. 30 floor remarks); after the election he named data center power costs a priority for the next Congress (Reuters, Nov. 6).",
           "source": {
-            "title": "Crypto Briefing (citing Reuters): Democrats plan a wave of AI and data-center bills",
-            "url": "https://cryptobriefing.com/democrats-plan-ai-legislation-congress-january/"
+            "title": "Senate Democrats: Schumer floor remarks urging Republicans to take real action on AI (Sept. 30, 2026)",
+            "url": "https://www.democrats.senate.gov/news/press-releases/leader-schumer-floor-remarks-urging-senate-republicans-to-join-democrats-to-take-real-action-on-ai"
           }
         }
       ],
@@ -427,9 +432,9 @@
         "url": "https://www.nbcnews.com/politics/congress/senate-democrats-block-sen-husted-led-bill-data-centers-calling-toothl-rcna600269"
       },
       "publishedDate": "2026-11-06",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
-      "version": 3,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -445,6 +450,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Evidence checked a second time 2026-11-24 (1 confirmed, 1 corrected, 1 partly-confirmed). Not all evidence confirmed; Low confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -461,8 +471,8 @@
           "track": "proposed",
           "summary": "Schumer backed three bipartisan bills (MATCH Act, AI OVERWATCH Act, Chip Security Act) and said the Senate could pass them immediately.",
           "source": {
-            "title": "The Washington Times: Senate Democrats push trio of bills to block China from access to AI chips",
-            "url": "https://www.washingtontimes.com/news/2026/sep/23/senate-democrats-push-trio-bills-block-china-access-ai-chips/"
+            "title": "Senate Democrats: Transcript, Schumer press conference ahead of Trump-Xi meeting (Sept. 23, 2026)",
+            "url": "https://www.democrats.senate.gov/news/press-releases/transcript-at-a-press-conference-ahead-of-trump-xi-meeting-leader-schumer-demands-trump-block-chinese-access-to-american-ai-chips-and-manufacturing"
           }
         },
         {
@@ -480,9 +490,9 @@
         "url": "https://www.washingtontimes.com/news/2026/sep/23/senate-democrats-push-trio-bills-block-china-access-ai-chips/"
       },
       "publishedDate": "2026-11-10",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
-      "version": 2,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -493,6 +503,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Evidence checked a second time 2026-11-24 (1 partly-confirmed, 1 corrected). Not all evidence confirmed; Low confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },

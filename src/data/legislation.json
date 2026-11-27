@@ -1302,27 +1302,45 @@
       "title": "\"Kids Over Clicks\" package (AI chatbots and social media for minors)",
       "sponsors": [
         {
+          "name": "Darrin Camilleri",
+          "party": "Democratic",
+          "role": "SB 757",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Kevin Hertel",
+          "party": "Democratic",
+          "role": "SB 758",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Stephanie Chang",
+          "party": "Democratic",
+          "role": "SB 759",
+          "linkedCandidateId": null
+        },
+        {
           "name": "Dayna Polehanki",
           "party": "Democratic",
-          "role": "sponsor of SB 760",
+          "role": "SB 760",
           "linkedCandidateId": null
         }
       ],
       "status": "passed-one-chamber",
       "statusDate": "2026-04-29",
-      "statusNote": "Passed the Senate Apr. 2026; not voted on in the House as of Oct. 2026.",
+      "statusNote": "All four passed the Senate on Apr. 29, 2026 and went to the House Communications and Technology Committee; no House vote as of Nov. 26.",
       "categories": [
         "ai-child-safety"
       ],
-      "summary": "Would limit minors' access to AI chatbots and addictive social media feeds. SB 760 would bar chatbot products for minors unless they cannot encourage self-harm, violence, drug use or disordered eating, and would hold AI companies responsible if a chatbot leads to a child being hurt.",
+      "summary": "Would limit minors' access to AI chatbots and addictive social media feeds. SB 760 would bar chatbot products for minors unless they cannot encourage suicide, self-harm, harm to others, disordered eating or drug or alcohol use, and would let families sue, with a presumption that the chatbot caused the harm.",
       "labelType": "source-summary",
       "source": {
-        "title": "Michigan Public: \"Kids over clicks\" passes in state Legislature",
-        "url": "https://www.michiganpublic.org/politics-government/2026-04-30/kids-over-clicks-passes-in-state-legislature"
+        "title": "Michigan Senate Fiscal Agency: SB 757-760, summary as passed by the Senate",
+        "url": "https://legislature.mi.gov/documents/2025-2026/billanalysis/senate/htm/2025-SFA-0757-C.htm"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1340,7 +1358,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -1361,6 +1379,11 @@
           "version": 4,
           "date": "2026-11-26",
           "note": "Added which trackers list this bill (NCSL), from search results on 2026-11-26."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): corrected, High confidence. Corrected from the Senate's analysis: each bill has its own sponsor (SB 757 Camilleri, SB 758 Hertel, SB 759 Chang, SB 760 Polehanki, all Democrats); SB 760 creates a civil action with a presumption of causation when a chatbot encourages a minor's harmful conduct. The listed harms (self-harm, harm to others, disordered eating, drug or alcohol use) are confirmed. All four passed the Senate Apr. 29; no House vote as of Nov. 26."
         }
       ],
       "trackers": [
@@ -1788,19 +1811,19 @@
       "sponsorsNote": "Raised by the Energy and Technology Committee.",
       "status": "failed",
       "statusDate": "2026-05-06",
-      "statusNote": "Introduced in Feb. 2026; died in the Finance Committee.",
+      "statusNote": "Introduced Feb. 19, 2026; referred to the Finance, Revenue and Bonding Committee on Mar. 23 (last action); died when the session ended May 6.",
       "categories": [
         "dc-tax-incentives"
       ],
-      "summary": "Would have stopped new applications for the 2021 program that offers sales, use and property tax exemptions of up to 30 years for data center investments.",
+      "summary": "Would have stopped new applications from July 1, 2026 to the 2021 program offering sales, use and property tax exemptions of up to 30 years for data center investments, while keeping existing agreements.",
       "labelType": "source-summary",
       "source": {
-        "title": "LegiScan: CT SB 245 (2026)",
-        "url": "https://legiscan.com/CT/bill/SB00245/2026"
+        "title": "Connecticut General Assembly: SB 245 (2026) bill history",
+        "url": "https://www.cga.ct.gov/2026/cbs/S/pdf/SB-0245.pdf"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1817,7 +1840,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1833,6 +1856,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Connecticut General Assembly, CBIA, Connecticut General Assembly). CBIA's bill tracker lists SB 245 as died in the Finance Committee, matching the official history that ends at the March 23 referral; the Feb. 19 introduction date was not shown. Status note updated: it died in the Finance Committee. Not confirmed: Introduction date of Feb. 19, 2026."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): corrected, High confidence. Confirmed on the legislature's record, with the dates made precise: introduced Feb. 19, 2026; last action Mar. 23 (referred to the Finance, Revenue and Bonding Committee); it died when the session ended May 6."
         }
       ]
     },
@@ -3083,20 +3111,20 @@
       "sponsorsNote": "Adopted by the European Parliament and the Council.",
       "status": "enacted",
       "statusDate": "2026-07-27",
-      "statusNote": "Final Council approval June 29, 2026; in force July 27, 2026.",
+      "statusNote": "Final Council approval June 29, 2026; regulation dated July 8; in force July 27, 2026.",
       "categories": [
         "ai-comprehensive",
         "ai-child-safety"
       ],
-      "summary": "Delays high-risk AI Act duties (stand-alone systems to Dec. 2, 2027; AI in regulated products to Aug. 2, 2028), bans AI systems generating non-consensual intimate images and child sexual abuse material, and simplifies documentation for smaller firms. Transparency duties and general-purpose AI rules keep their original dates.",
+      "summary": "Delays high-risk AI Act duties (stand-alone systems to Dec. 2, 2027; AI in regulated products to Aug. 2, 2028), bans AI systems that generate non-consensual intimate images or child sexual abuse material (from Dec. 2, 2026), and simplifies rules for smaller firms. Systems generating synthetic content that were on the market before Aug. 2, 2026 get until Dec. 2, 2026 to meet the labelling duty; the timetable for general-purpose AI models is unchanged.",
       "labelType": "source-summary",
       "source": {
-        "title": "Regulation-AI.eu: Digital Omnibus on AI, Regulation (EU) 2026/1744",
-        "url": "https://www.regulation-ai.eu/en/omnibus/"
+        "title": "EUR-Lex: Regulation (EU) 2026/1744 (Digital Omnibus on AI)",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1744"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -3114,7 +3142,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -3125,6 +3153,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (White & Case, Lewis Silkin, Orrick). Law-firm analyses confirm the number, the June 29 Council approval, July 27, 2026 entry into force, the new high-risk dates, the two new bans and the SME/small mid-cap simplifications; one nuance is a Dec. 2, 2026 cut-off for Article 50(2) labelling of some existing systems, and GPAI timing was not addressed in the results. Not confirmed: That general-purpose AI rules keep their original dates (no source in the results addressed GPAI timing, though none reported a delay)."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): corrected, High confidence. Corrected from the regulation itself: transparency duties did change in part (systems generating synthetic content already on the market before Aug. 2, 2026 have until Dec. 2, 2026 to meet Article 50(2)); the general-purpose AI model timetable is unchanged; the new bans apply from Dec. 2, 2026. Dated July 8, in force July 27, 2026."
         }
       ]
     },
@@ -3145,7 +3178,7 @@
       ],
       "status": "passed-one-chamber",
       "statusDate": "2026-03-25",
-      "statusNote": "Adopted by the Senate Mar. 25, 2026; sent to the National Assembly Mar. 26 (text no. 2584), where no action was found. Its \"major national interest\" article mirrors the May 26, 2026 simplification law, so that part is largely in force already.",
+      "statusNote": "Adopted by the Senate Mar. 25, 2026; filed in the National Assembly Mar. 26 (text no. 2584) and referred to its Economic Affairs Committee, with no later examination. Its \"major national interest\" article mirrors the May 26, 2026 simplification law, which already lets qualifying data centers get that status.",
       "categories": [
         "dc-permitting",
         "dc-local-control"
@@ -3153,12 +3186,12 @@
       "summary": "Lets large data centers be designated \"projects of major national interest\" by decree, which speeds up their approval, and strengthens local elected officials' role through territorial planning (SCoT). A lighter version was adopted after redundant articles were cut.",
       "labelType": "source-summary",
       "source": {
-        "title": "Banque des Territoires: Datacenters, the Senate adopts a lighter bill",
-        "url": "https://www.banquedesterritoires.fr/datacenters-le-senat-adopte-une-proposition-de-loi-allegee-renvoyant-lessentiel-aux-textes-en-cours"
+        "title": "Assemblée nationale: Proposition de loi visant à encadrer l'implantation des centres de données (dossier)",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N51569"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -3173,7 +3206,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -3184,6 +3217,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Banque des Territoires, Assemblée nationale, Vie-publique). Confirmed sponsor, Mar. 25 Senate adoption, Mar. 26 transmission and content; the Senate copied in the data-center PINM article (art. 15) of the simplification bill, which itself became law on May 26, 2026, so this provision is now largely already in force; no later Assembly action was found. Status note updated: no National Assembly action found; the fast-track article is largely in force through the May 26, 2026 simplification law. Not confirmed: Current status as of Nov. 2026: no Assembly committee or floor examination was found after March 2026, so 'passed one chamber' appears current but could not be confirmed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): confirmed, High confidence. Confirmed on the National Assembly's record: adopted by the Senate Mar. 25, 2026, filed in the Assembly Mar. 26 as text no. 2584 and referred to its Economic Affairs Committee, with no later examination."
         }
       ]
     },

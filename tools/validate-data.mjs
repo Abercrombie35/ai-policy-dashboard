@@ -159,6 +159,7 @@ for (const file of raceFiles) {
     // Outside the U.S., candidates are placed on a left-right bloc for comparison.
     if (race.country != null && !BLOCS.has(c.bloc)) fail(where, `candidate ${c.id} needs a bloc from the codebook`);
     if (c.bloc != null && !BLOCS.has(c.bloc)) fail(where, `candidate ${c.id}: unknown bloc "${c.bloc}"`);
+    checkDate(where, `candidate ${c.id} withdrawn`, c.withdrawn);
   }
   raceCandidates[race.id] = candidateIds;
   raceCountry[race.id] = race.country || null;

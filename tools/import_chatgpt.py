@@ -72,6 +72,9 @@ ver = load('verification.json')
 recs = {r['id']: r for r in research['records']}
 recs.update({b['id']: b for b in legislation['bills']})
 recs.update({r['id']: r for r in results_file['results']})
+# Party-line evidence is checked piece by piece ("<position id>#<index>").
+evidence = {f"{p['id']}#{i}": (p, e) for p in partylines['positions'] for i, e in enumerate(p['evidence'])}
+touched_positions = set()
 
 tally = {}
 for v in results:
@@ -114,7 +117,26 @@ for v in results:
         rec['version'] = rec.get('version', 1) + 1
         rec.setdefault('history', []).append({'version': rec['version'], 'date': TODAY,
                                               'note': f'{METHOD}: {result.replace("-", " ")}, {conf.capitalize()} confidence. {note}'})
+    if cid in evidence:
+        pos, ev = evidence[cid]
+        if dec.get('apply'):
+            dec['apply'](ev, headlines['headlines'])
+        touched_positions.add(pos['id'])
     tally[f'{result}/{conf}'] = tally.get(f'{result}/{conf}', 0) + 1
+
+# A party line is Medium when every piece of its evidence is confirmed or
+# corrected, otherwise Low; the stance itself stays an editorial judgment.
+for pos in partylines['positions']:
+    if pos['id'] not in touched_positions:
+        continue
+    pc = [ver['checks'].get(f"{pos['id']}#{i}", {}) for i in range(len(pos['evidence']))]
+    ok = all(c.get('result') in ('confirmed', 'corrected') for c in pc)
+    pos['confidence'] = 'medium' if ok else 'low'
+    pos['lastVerified'] = TODAY
+    pos['version'] = pos.get('version', 1) + 1
+    pos.setdefault('history', []).append({'version': pos['version'], 'date': TODAY,
+        'note': f'{METHOD}: evidence rechecked. ' + ('All evidence confirmed; Medium confidence.' if ok else 'Not all evidence confirmed; Low confidence.')
+                + ' The stance itself remains an editorial judgment.'})
 
 ver.setdefault('relays', []).append({'batch': LABEL, 'date': TODAY, 'claims': len(results), 'tool': 'ChatGPT (web browsing)',
                                     'relayedBy': 'project owner'})

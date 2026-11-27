@@ -196,16 +196,15 @@
       "candidateId": "mike-rogers",
       "kind": "statement",
       "labelType": "source-summary",
-      "text": "For months argued that Michigan should compete for AI investment and supported faster permitting. Endorsed the Trump administration's \"National Policy Framework for Artificial Intelligence\" and said Michigan must be \"competitive for new AI-supported jobs and investments ... while setting a responsible framework for safety and data privacy.\"",
+      "text": "Endorsed the White House AI framework on Mar. 20, 2026, saying a consistent national framework would \"supercharge innovation\" and \"shield communities from higher electric bills\". In a Mar. 27 statement to Michigan Advance, said Michigan must be \"competitive for new AI-supported jobs and investments ... while setting a responsible framework for safety and data privacy\"; the paper described him as backing faster permits.",
       "source": {
-        "title": "Detroit Metro Times: Mike Rogers loved data centers until voters didn't",
-        "url": "https://www.metrotimes.com/news/mike-rogers-loved-data-centers-until-voters-didnt/"
+        "title": "Rogers for Senate: Rogers applauds White House AI framework (Mar. 20, 2026)",
+        "url": "https://rogersforsenate.com/news/rogers-applauds-white-house-ai-framework-that-establishes-global-leadership-and-protects-kids-online"
       },
-      "publishedDate": null,
-      "dateNote": "Before Aug. 20, 2026 (exact dates not recorded)",
-      "sortDate": "2026-08",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "publishedDate": "2026-03-20",
+      "dateNote": "Statements of Mar. 20 and Mar. 27, 2026",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -231,7 +230,7 @@
         "dc-economy-jobs",
         "ai-preemption"
       ],
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -252,6 +251,11 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Detroit Metro Times, Rogers for Senate, The Lever). Rogers' earlier pro-data-center stance and his praise of the White House AI framework are confirmed; the 'responsible framework for safety and data privacy' wording and the statement dates were still not found. Not confirmed: Second half of the quote: 'while setting a responsible framework for safety and data privacy' (not found in two more searches); Exact dates of the statements."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): corrected, Medium confidence. Corrected to two documented statements: his campaign's Mar. 20, 2026 endorsement of the White House AI framework, and a Mar. 27 statement to Michigan Advance with the full \"competitive for new AI-supported jobs\" quotation. Faster permits are Michigan Advance's description, not his words, and \"for months\" is removed."
         }
       ]
     },
@@ -906,14 +910,14 @@
       "candidateId": "john-james",
       "kind": "position",
       "labelType": "source-summary",
-      "text": "Described a \"five-part moratorium\" and said: \"No new data centers until we have a plan to protect our communities.\"",
+      "text": "At an Oct. 29 campaign stop in Bay County, said: \"No new data centers until we have a plan to protect our communities,\" naming five concerns: local control, water, electricity bills, pollution, and building on brownfields rather than farmland.",
       "source": {
         "title": "WNEM: John James says no new data centers until plan to protect communities",
         "url": "https://www.wnem.com/2026/10/30/john-james-says-no-new-data-centers-until-plan-protect-communities/"
       },
-      "publishedDate": "2026-10-30",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "publishedDate": "2026-10-29",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -937,7 +941,7 @@
         "dc-moratorium",
         "dc-local-control"
       ],
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -958,6 +962,11 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (WNEM, Michigan Advance, Michigan Public). The cited WNEM story (Oct. 30, 2026) confirms James's 'no new data centers until a plan to protect communities' line and lists five priorities, but the phrase 'five-part moratorium' was not shown. Not confirmed: The phrase 'five-part moratorium' itself."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): corrected, Medium confidence. Corrected: he spoke on Oct. 29, 2026 in Bay County (WNEM interview), naming five concerns: local control, water, electricity bills, pollution, and building on brownfields rather than farmland. The phrase \"five-part moratorium\" was not found and is removed. The quote is confirmed in a news interview, so Medium."
         }
       ]
     },
@@ -2447,14 +2456,14 @@
       "candidateId": "bruno-retailleau",
       "kind": "position",
       "labelType": "source-summary",
-      "text": "Published a 56-page AI plan in July 2026 to bring AI into every level of public administration (a single AI assistant for the state) and redeploy civil servants, part of a leaner state. Reported costs differ: about €23 billion over the five-year term (Next.ink) or €5 billion (Acteurs Publics). Also backs a sovereign AI powered by decarbonized electricity.",
+      "text": "His 56-page AI plan (July 2026) costs about €23 billion gross over five years, including about €11.6 billion of new AI investment (he had estimated about €25 billion in a July 7 interview). About €5 billion goes to AI in public administration: a single assistant for the public (\"Marianne\"), secure AI assistants for civil servants, 125,000 staff redeployed and 125,000 retirements left unfilled. It ties sovereign data center capacity to France's low-carbon nuclear fleet, favouring sites near existing plants.",
       "source": {
-        "title": "Next.ink: Pour Bruno Retailleau, l'IA n'attend pas notre consentement",
-        "url": "https://next.ink/247354/pour-bruno-retailleau-lia-nattend-pas-notre-consentement/"
+        "title": "Les Républicains: L'IA au service des Français, progrès, souveraineté, vigilance (July 2026)",
+        "url": "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf"
       },
       "publishedDate": "2026-07",
-      "lastVerified": "2026-11-24",
-      "confidence": "low",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -2476,7 +2485,7 @@
         "ai-sovereignty",
         "ai-innovation"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2492,6 +2501,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Next.ink, Acteurs Publics). A French search found Retailleau's pro-nuclear, decarbonised-power stance and his AI-in-administration plan, but no source links the two into a 'sovereign AI powered by decarbonized electricity' position. Not confirmed: Link between his AI plan and decarbonized electricity; €25 billion over five years (round 1 found about €23 billion over the term in Next.ink and €5 billion in Acteurs Publics)."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): corrected, High confidence. Corrected from his party's 56-page plan (Les Républicains, July 2026): about €23 billion gross over five years in total, including about €11.6 billion of new AI investment; the €5 billion figure is the public-administration programme. He had estimated about €25 billion in a July 7 interview. The plan ties sovereign data center capacity to France's low-carbon nuclear fleet, so that link is now confirmed."
         }
       ]
     },
