@@ -414,22 +414,22 @@
           "name": "Xavier Becerra",
           "party": "Democratic",
           "candidateId": "xavier-becerra",
-          "votePct": 65.6,
-          "votes": 8550463
+          "votePct": 65.7,
+          "votes": 8740676
         },
         {
           "name": "Steve Hilton",
           "party": "Republican",
           "candidateId": "steve-hilton",
-          "votePct": 34.4,
-          "votes": 4485454
+          "votePct": 34.3,
+          "votes": 4571042
         }
       ],
-      "figuresAsOf": "Unofficial results from the California Secretary of State, as reported in search results on Nov. 16, 2026. The state certifies results by Dec. 11, 2026.",
+      "figuresAsOf": "Unofficial results from the California Secretary of State's results file, Nov. 26, 2026. Certified results are due by Dec. 11, 2026.",
       "context": "Open seat: Gov. Gavin Newsom (D) was term-limited.",
       "source": {
-        "title": "California Secretary of State: Governor, statewide results",
-        "url": "https://electionresults.sos.ca.gov/returns/governor"
+        "title": "California Secretary of State: Nov. 3, 2026 general election results file (Nov. 26)",
+        "url": "https://media.sos.ca.gov/media/V26GG.txt"
       },
       "additionalSources": [
         {
@@ -442,9 +442,9 @@
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -455,6 +455,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (FOX 11 LA, SF Standard, KTVU). Becerra's win (AP call at 8 p.m.) in the race to succeed Newsom is confirmed; the listed 65.6%/34.4% was not found (earlier partial counts showed about 64%/36%, and one KTVU box 60%/38%), and no certification report was found. Not confirmed: Vote shares 65.6% / 34.4%: figures found were earlier partial counts, 64% / 36% at the AP call (about 59% counted, FOX 11 LA), 64.1% / 35.9% (SF Standard, about 7.1 million votes counted), and a KTVU results box showing 60% / 38%; none is within one point of the listed figures; Calls by MultiState, Decision Desk HQ and NBC Bay Area specifically (the AP call was found instead); That Newsom was term-limited (results say only that Becerra succeeds him); Certification: no certified totals found; the Dec. 11, 2026 certification date was not confirmed in the results, and the race is presumably not yet certified as of Nov. 24."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): corrected, Medium confidence. Updated to the Secretary of State's Nov. 26, 2026 results file: Becerra 8,740,676 votes (65.7%), Hilton 4,571,042 (34.3%). Still unofficial: certified results are due by Dec. 11."
         }
       ]
     }

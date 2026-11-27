@@ -208,7 +208,7 @@ function StanceMatrix({ domainId, race }) {
               <th scope="row">
                 <span className="cand-name">{candidate.name}</span>
                 <span className="cand-party"><span className={`bloc-swatch ${candidate.bloc}`} aria-hidden="true" />{candidate.party}</span>
-                <span className="cand-race">{blocs[candidate.bloc]?.label}</span>
+                <span className="cand-race">{blocs[candidate.bloc]?.label}{candidate.withdrawn ? ` · withdrew ${candidate.withdrawn}` : ''}</span>
               </th>
               {questions.map((q) => {
                 const cell = deviationCell(race, candidate, q.id, includeDrafts);
