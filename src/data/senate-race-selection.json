@@ -356,7 +356,7 @@
       "criteriaMet": [
         "state-activity"
       ],
-      "reason": "No rating found; not rated competitive; no AI or data center exchange between the candidates found; Florida's 2026 races are built out separately (AIPD-109).",
+      "reason": "No rating found; not rated competitive; no AI or data center exchange between the candidates found; Florida is still built out as its own priority (AIPD-109) for its state AI and data center activity and open governor's race, alongside the sample rather than in it.",
       "trackedRaceId": null,
       "status": null
     },

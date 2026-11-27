@@ -13,7 +13,7 @@ import sys
 REPO, FACTS = sys.argv[1:3]
 OUT = f'{REPO}/src/data/senate-race-selection.json'
 TRACKED = {'MI': 'mi-senate-2026', 'TX': 'tx-senate-2026'}
-NOTES = {'FL': 'Florida\'s 2026 races are built out separately (AIPD-109)'}
+NOTES = {'FL': 'Florida is still built out as its own priority (AIPD-109) for its state AI and data center activity and open governor\'s race, alongside the sample rather than in it'}
 MIN_N, MAX_N = 10, 20
 
 CRITERIA = [
