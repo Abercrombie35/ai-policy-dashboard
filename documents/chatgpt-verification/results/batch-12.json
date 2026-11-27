@@ -1,0 +1,120 @@
+[
+  {
+    "id": "us-hr6875",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://foreignaffairs.house.gov/news/press-releases/chairman-mast-introduces-ai-overwatch-act-to-secure-america-s-technological-dominance",
+    "source_title": "Chairman Mast Introduces AI OVERWATCH Act to Secure America’s Technological Dominance",
+    "source_date": null,
+    "exact_quote": "AI OVERWATCH Act",
+    "corrections": [
+      {
+        "field": "lead sponsor",
+        "correct": "Representative Brian Mast, Republican.",
+        "evidence": "The House Foreign Affairs Committee’s announcement identifies Mast as introducer."
+      }
+    ],
+    "not_confirmed": [
+      "The January 21 vote of 42–2.",
+      "Inclusion in the Senate FY2027 NDAA.",
+      "Current status as of November 26."
+    ],
+    "notes": "The official announcement supports congressional oversight of advanced-chip exports, but the Congress.gov status page would not open."
+  },
+  {
+    "id": "us-hr8170",
+    "verdict": "not-found",
+    "source_type": "official",
+    "source_url": "https://www.congress.gov/bill/119th-congress/house-bill/8170",
+    "source_title": "H.R. 8170 — 119th Congress",
+    "source_date": null,
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "Sponsors.",
+      "The April 22 committee vote of 36–8.",
+      "The precise allied-export-control requirements.",
+      "Inclusion in the Senate FY2027 NDAA.",
+      "Current status."
+    ],
+    "notes": "The individual Congress.gov page and attempted introduced-text retrieval did not provide usable primary content."
+  },
+  {
+    "id": "us-hr9442",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-introduces-house-version-ai-data-center-moratorium-act",
+    "source_title": "Ocasio-Cortez Introduces House Version of the AI Data Center Moratorium Act",
+    "source_date": null,
+    "exact_quote": "House Version of the AI Data Center Moratorium Act",
+    "corrections": [],
+    "not_confirmed": [
+      "The June 24 introduction date.",
+      "The exact bill number and current cosponsor count.",
+      "Referral to both named committees.",
+      "Current status as of November 26."
+    ],
+    "notes": "The representative’s official announcement confirms her House proposal, but the supplied Congress.gov all-information page would not open."
+  },
+  {
+    "id": "us-s4214",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.sanders.senate.gov/press-releases/news-sanders-ocasio-cortez-announce-ai-data-center-moratorium-act/?trk=article-ssr-frontend-pulse_little-text-block",
+    "source_title": "Sanders, Ocasio-Cortez Announce AI Data Center Moratorium Act",
+    "source_date": "2026-03-25",
+    "exact_quote": "Artificial Intelligence (AI) Data Center Moratorium Act",
+    "corrections": [],
+    "not_confirmed": [
+      "The bill number S. 4214 from an opened bill record.",
+      "Senate Commerce Committee referral.",
+      "The exact scope of restrictions on upgrading existing facilities.",
+      "Current status as of November 26."
+    ],
+    "notes": "Sanders’s announcement confirms the March 25 moratorium proposal, but the supplied Congress.gov page would not open."
+  },
+  {
+    "id": "us-states-right-to-regulate-ai",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.markey.senate.gov/news/press-releases/senator-markey-introduces-legislation-to-block-trumps-executive-order-blocking-state-ai-regulation",
+    "source_title": "Senator Markey Introduces Legislation to Block Trump’s Executive Order Blocking State AI Regulation",
+    "source_date": "2025-12-17",
+    "exact_quote": "introducing the States’ Right to Regulate AI Act",
+    "corrections": [
+      {
+        "field": "introduction date",
+        "correct": "December 17, 2025.",
+        "evidence": "Markey’s official announcement states the date."
+      }
+    ],
+    "not_confirmed": [
+      "The assigned Senate bill number.",
+      "Current status as of November 26, 2026."
+    ],
+    "notes": "The announcement confirms Markey’s legislation to prevent implementation of the executive order targeting state AI regulation."
+  },
+  {
+    "id": "us-take-it-down-act",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf",
+    "source_title": "Public Law 119–12 — TAKE IT DOWN Act",
+    "source_date": "2025-05-19",
+    "exact_quote": "TAKE IT DOWN Act",
+    "corrections": [
+      {
+        "field": "bill number",
+        "correct": "S. 146, enacted as Public Law 119–12.",
+        "evidence": "The enacted law identifies S. 146 and its public-law number."
+      },
+      {
+        "field": "removal requirement",
+        "correct": "Covered platforms must act within 48 hours after receiving a valid removal request.",
+        "evidence": "Section 3 specifies request requirements and provides one year after enactment to establish the removal process."
+      }
+    ],
+    "not_confirmed": [],
+    "notes": "The criminal provisions cover specified knowing disclosures and threats involving authentic images or digital forgeries, subject to statutory conditions and exceptions."
+  }
+]

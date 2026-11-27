@@ -2632,118 +2632,97 @@
       "level": "medium"
     },
     "pl-r-harmful#0": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Multiple outlets confirm Trump signed the Take It Down Act on May 19, 2025, with criminal penalties and a 48-hour takedown rule.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Confirmed in the enacted law (Public Law 119-12, May 19, 2025). Corrected the detail: the crime covers knowingly publishing non-consensual intimate images, including AI-generated ones, under conditions set in the law; covered platforms must set up a notice-and-removal process within a year and remove such images within 48 hours of a valid request. The law is now the source.",
       "sources": [
         {
-          "title": "TechCrunch: Trump signs bill criminalizing revenge porn and explicit deepfakes",
-          "url": "https://techcrunch.com/2025/05/19/trump-signs-bill-criminalizing-revenge-porn-and-explicit-deepfakes/"
-        },
-        {
-          "title": "Orrick: TAKE IT DOWN Act Becomes Law",
-          "url": "https://www.orrick.com/insights/2025/05/TAKE-IT-DOWN-Act-Becomes-Law"
-        },
-        {
-          "title": "WHYY (AP): President Trump signed the Take It Down Act, addressing nonconsensual deepfakes",
-          "url": "https://whyy.org/articles/trump-take-it-down-act-nonconsensual-deepfakes/"
+          "title": "Public Law 119–12 — TAKE IT DOWN Act",
+          "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf"
         }
-      ]
+      ],
+      "quote": "CRIMINAL PROHIBITION ON INTENTIONAL DISCLOSURE OF NONCONSENSUAL INTIMATE VISUAL DEPICTIONS",
+      "level": "high"
     },
     "pl-r-harmful#1": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Analyses of the order confirm its preemption recommendation carves out state child-safety laws, along with some data center and state procurement laws.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Corrected on the order's text: the child-safety carve-out applies to the federal preemption law the order recommends, not to its separate litigation and funding measures. No line was quoted, so Medium. The order is now the source.",
       "sources": [
         {
-          "title": "Tech Policy Press: Trump signs executive order to combat state AI regulation",
-          "url": "https://techpolicy.press/trump-signs-executive-order-to-combat-state-ai-regulation"
-        },
-        {
-          "title": "ZwillGen: Trump executive order targets state AI laws",
-          "url": "https://www.zwillgen.com/artificial-intelligence/trump-executive-order-targets-state-ai-laws/"
-        },
-        {
-          "title": "Axios: Trump signs executive order targeting state AI laws",
-          "url": "https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws"
+          "title": "Ensuring a National Policy Framework for Artificial Intelligence",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/"
         }
-      ]
+      ],
+      "level": "medium"
     },
     "pl-r-preemption#0": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The White House fact sheet, the Federal Register text and Axios confirm the Dec. 11, 2025 order's litigation task force, BEAD funding lever, and call for a preemptive federal law with a child-safety carve-out.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Confirmed on the order's text (Dec. 11, 2025): \"the Attorney General shall establish an AI Litigation Task Force\", with funding-related measures and a recommended federal preemption law with specified exceptions. The order is now the source.",
       "sources": [
         {
-          "title": "Axios: Trump signs executive order targeting state AI laws",
-          "url": "https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws"
-        },
-        {
-          "title": "The White House: Fact Sheet: President Donald J. Trump Ensures a National Policy Framework for Artificial Intelligence",
-          "url": "https://whitehouse.gov/fact-sheets/2025/12/fact-sheet-president-donald-j-trump-ensures-a-national-policy-framework-for-artificial-intelligence"
-        },
-        {
-          "title": "Federal Register: Ensuring a National Policy Framework for Artificial Intelligence",
-          "url": "https://www.federalregister.gov/documents/2025/12/16/2025-23092/ensuring-a-national-policy-framework-for-artificial-intelligence"
+          "title": "Ensuring a National Policy Framework for Artificial Intelligence",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/"
         }
-      ]
+      ],
+      "quote": "the Attorney General shall establish an AI Litigation Task Force",
+      "level": "high"
     },
     "pl-r-preemption#1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The order's text is on whitehouse.gov at the cited address and in the Federal Register, dated Dec. 11, 2025.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Confirmed: the cited address opens the order's official text on whitehouse.gov, dated Dec. 11, 2025.",
       "sources": [
         {
-          "title": "The White House: Ensuring a National Policy Framework for Artificial Intelligence",
-          "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/?faq=5"
-        },
-        {
-          "title": "Federal Register: Ensuring a National Policy Framework for Artificial Intelligence",
-          "url": "https://www.federalregister.gov/documents/2025/12/16/2025-23092/ensuring-a-national-policy-framework-for-artificial-intelligence"
-        },
-        {
-          "title": "GovInfo: Administration of Donald J. Trump, 2025 (DCPD-202501186)",
-          "url": "https://www.govinfo.gov/content/pkg/DCPD-202501186/html/DCPD-202501186.htm"
+          "title": "Ensuring a National Policy Framework for Artificial Intelligence",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/"
         }
-      ]
+      ],
+      "quote": "Ensuring a National Policy Framework for Artificial Intelligence",
+      "level": "high"
     },
     "pl-r-safety#0": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The White House says the July 23, 2025 plan has over 90 federal actions across three pillars. A Wilson Center review counts 103 recommendations.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Confirmed in the White House announcement of July 23, 2025: \"The Plan identifies over 90 Federal policy actions\" across three pillars (innovation, infrastructure, international leadership), with an emphasis on removing regulatory barriers. The announcement is now the source.",
       "sources": [
         {
-          "title": "The White House: White House Unveils America's AI Action Plan",
-          "url": "https://www.whitehouse.gov/releases/2025/07/white-house-unveils-americas-ai-action-plan"
-        },
-        {
-          "title": "AI.gov: America's AI Action Plan",
-          "url": "https://www.ai.gov/action-plan"
-        },
-        {
-          "title": "Wilson Center: America's AI Action Plan After One Year",
-          "url": "https://www.wilsoncenter.org/node/130352"
+          "title": "White House Unveils America’s AI Action Plan",
+          "url": "https://www.whitehouse.gov/releases/2025/07/white-house-unveils-americas-ai-action-plan/"
         }
-      ]
+      ],
+      "quote": "The Plan identifies over 90 Federal policy actions",
+      "level": "high"
     },
     "pl-r-safety#1": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Reports confirm the accord is voluntary, with no consequences for noncompliance and no public reporting duty, and that Trump favors voluntary safeguards over new AI rules; Trump did float a committee of about 10 people to 'watch over' it, without enforcement powers.",
+      "result": "not-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Not confirmed: the pact's own text was not found, and the Foley analysis that is cited could not establish that it has no penalties, disclosure duty or enforcement role, or the administration's position on every binding safety mandate.",
       "sources": [
         {
-          "title": "Al Jazeera: How does Trump's White House AI accord work?",
-          "url": "https://www.aljazeera.com/news/2026/9/30/how-does-trumps-white-house-ai-accord-work"
-        },
-        {
-          "title": "The Star: As public fears of AI grow, Trump digs in on voluntary safeguards",
-          "url": "https://www.thestar.com.my/tech/tech-news/2026/10/03/as-public-fears-of-ai-grow-trump-digs-in-on-voluntary-safeguards"
-        },
-        {
-          "title": "Al Jazeera: Trump, tech bosses sign voluntary pact pledging 'robust' AI safeguards",
-          "url": "https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development"
+          "title": "Supplied analysis of prospective AI regulation",
+          "url": "https://www.foley.com/insights/publications/2026/11/blue-wave-new-ai-rules-what-democratic-control-of-congress-means-for-ai-regulation/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The September pact’s complete primary text.",
+        "The claimed absence of penalties, disclosure duties and enforcement.",
+        "The administration’s position on every form of binding safety mandate."
+      ],
+      "level": "low"
     },
     "pl-r-workers#0": {
       "result": "corrected",
@@ -2762,18 +2741,18 @@
     },
     "pl-r-workers#1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The Bloomberg Government article exists with this framing. It is dated July 25, 2025, two days after the plan's release.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Confirmed in Bloomberg Law's report of July 23, 2025: the plan \"includes extensive plans for worker retraining and up-skilling, but is silent on worker protections.\" News coverage, so Medium; the report is now the source.",
       "sources": [
         {
-          "title": "Bloomberg Government: Trump AI Plan Ditches Worker Protections, Keeps Training Focus",
-          "url": "https://news.bgov.com/safety/trump-ai-plan-ditches-worker-protections-keeps-training-focus"
-        },
-        {
-          "title": "Holland & Knight (In the Headlines): Trump AI Plan Ditches Worker Protections, Keeps Training Focus",
-          "url": "https://www.hklaw.com/en/news/intheheadlines/2025/07/trump-ai-plan-ditches-worker-protections-keeps-training-focus"
+          "title": "Trump AI Plan Ditches Worker Protections, Keeps Training Focus",
+          "url": "https://news.bloomberglaw.com/financial-accounting/trump-ai-plan-ditches-worker-protections-keeps-training-focus"
         }
-      ]
+      ],
+      "quote": "includes extensive plans for worker retraining and up-skilling, but is silent on worker protections",
+      "level": "medium"
     },
     "po-gallup-4": {
       "result": "confirmed",
@@ -3039,22 +3018,25 @@
     },
     "tx-89r-hb149": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "TLO, IAPP and the Texas Tribune confirm Capriglione's HB 149 was signed June 22, 2025 and took effect Jan. 1, 2026; the broader high-risk regime was in the earlier HB 1709 draft rather than HB 149 itself.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Confirmed on Texas Legislature Online: Capriglione's HB 149 was signed June 22, 2025 and took effect Jan. 1, 2026, with its banned uses and state agencies' disclosure duty. That it narrowed an earlier, broader impact-assessment proposal (HB 1709) rests on news reports, so Medium; the summary now attributes it.",
       "sources": [
         {
-          "title": "Texas Legislature Online: HB 149 introduced text (By: Capriglione)",
-          "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149I.htm"
+          "title": "Texas Legislature Online — HB 149 History",
+          "url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=HB149&LegSess=89R"
         },
         {
-          "title": "IAPP: Governor signs Texas Responsible Artificial Intelligence Governance Act",
-          "url": "https://iapp.org/news/a/governor-signs-texas-responsible-artificial-intelligence-governance-act"
-        },
-        {
-          "title": "Texas Tribune: Texas lawmakers push to regulate AI in government and the tech industry",
-          "url": "https://www.texastribune.org/2025/05/23/texas-ai-bill-legislation-regulation/"
+          "title": "Texas Legislature Online: HB 149 bill summary",
+          "url": "https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=HB149&LegSess=89R"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "That HB 149 replaced an earlier, broader impact-assessment proposal (HB 1709)."
+      ],
+      "quote": "Effective on 1/1/26",
+      "level": "medium"
     },
     "tx-89r-hb581": {
       "result": "confirmed",
@@ -3152,23 +3134,24 @@
       ]
     },
     "tx-90r-sb293": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Sen. Joan Huffman (R) filed SB 293 on Nov. 9, 2026 with 23 Senate authors (sources differ on whether that is out of 30 or 31 members) to repeal the data center sales tax exemption; HB 167 by Rep. Trey Martinez Fischer (D) is the House bill with the same aim. Sponsors added: Sen. Joan Huffman (R) leads SB 293 with 23 Senate authors; Rep. Trey Martinez Fischer (D) filed HB 167.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Partly confirmed: the introduced text confirms Sen. Joan Huffman's bill to repeal the data center sales and use tax exemptions. The 23 Senate authors, the filing date and HB 167's author could not be checked: both bill histories would not open.",
       "sources": [
         {
-          "title": "Fox 4: Texas State Senator Joan Huffman files legislation to repeal data center sales tax exemptions",
-          "url": "https://www.fox4news.com/news/texas-state-senator-joan-huffman-files-legislation-repeal-data-center-sales-tax-exemptions"
-        },
-        {
-          "title": "Texas Scorecard: Lawmakers Move To Repeal Tax Exemptions for Data Centers",
-          "url": "https://texasscorecard.com/state/lawmakers-move-to-repeal-tax-exemptions-for-data-centers/"
-        },
-        {
-          "title": "Foley & Lardner: Texas data center bills filed for the 2027 session",
-          "url": "https://www.foley.com/?p=131063"
+          "title": "90(R) SB 293 — Introduced version",
+          "url": "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00293I.htm"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The claimed total of 23 Senate authors.",
+        "HB 167’s author and filing date.",
+        "SB 293’s filing date and latest action from its individual history."
+      ],
+      "quote": "relating to the repeal of the exemptions from sales and use taxes",
+      "level": "low"
     },
     "tx-90r-sb296": {
       "result": "confirmed",
@@ -3186,23 +3169,22 @@
       "level": "high"
     },
     "tx-90r-sb33": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Zaffirini filed SB 33 (electricity cost allocation for large computing loads), SB 35 (water-use reporting to the Water Development Board) and SB 36 (curbs on tax and local incentives) on Nov. 9, 2026; one outlet says SB 36 also covers state tax exemptions, not only local incentives.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Confirmed on the Senate's author report for Sen. Judith Zaffirini: all three bills were filed Nov. 9, 2026. Corrected from the official captions: SB 35 has ERCOT share information on large-load customers with the Texas Water Development Board (not a reporting duty on data centers), and SB 36 concerns eligibility for certain state and local incentive programs. The bills' full requirements were not checked, so Medium.",
       "sources": [
         {
-          "title": "Foley & Lardner: Texas data center bills filed for the 2027 session",
-          "url": "https://www.foley.com/?p=131063"
-        },
-        {
-          "title": "GovTech: Texas lawmakers will scrutinize data center permitting costs",
-          "url": "https://www.govtech.com/artificial-intelligence/texas-lawmakers-will-scrutinize-data-center-permitting-costs"
-        },
-        {
-          "title": "LegiScan: TX SB36, 90th Legislature, introduced text",
-          "url": "https://legiscan.com/TX/text/SB36/2027"
+          "title": "Bills Authored / Joint Authored — Judith Zaffirini, 90th Legislature",
+          "url": "https://capitol.texas.gov/reports/report.aspx?Code=A1700&ID=author&LegSess=90R"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The full requirements and exceptions in SB 35 and SB 36."
+      ],
+      "quote": "11/09/2026 S Filed",
+      "level": "medium"
     },
     "tx-90r-sb338": {
       "result": "confirmed",
@@ -3224,99 +3206,104 @@
       ]
     },
     "us-grid-savings-act": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The GRID Savings Act is S. 5199, introduced by Heinrich on Aug. 3, 2026; it remains in committee after a failed Sept. 17 unanimous consent request, and reports say much of its language is now in the BAAJA permitting bill.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Confirmed in Sen. Martin Heinrich's release of Sept. 17, 2026: S. 5199, the GRID Savings Act, would make large new loads such as AI data centers pay the cost of connecting them, and Sen. Bernie Moreno blocked his unanimous-consent request. Corrected: the bill number (S. 5199) and its status. No later action was confirmed.",
       "sources": [
         {
-          "title": "Senate Energy and Natural Resources Committee: Heinrich introduces legislation to ensure large users of electricity pay for grid upgrades",
-          "url": "https://www.energy.senate.gov/2026/8/heinrich-introduces-legislation-to-ensure-large-users-of-electricity-pay-for-grid-upgrades-protect-customers-from-costs-of-data-center-expansion"
-        },
-        {
-          "title": "PolicyRisk: S5199, 119th Congress",
-          "url": "https://policyrisk.com/legislation/S5199"
-        },
-        {
-          "title": "NACo: Senate Energy and Natural Resources Ranking Member introduces legislation to protect ratepayers",
-          "url": "https://www.naco.org/news/senate-energy-and-natural-resources-ranking-member-introduces-legislation-protect-ratepayers"
+          "title": "Heinrich Offers His GRID Savings Act to Force AI Data Centers to Pay for Grid Upgrades",
+          "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-offers-his-grid-savings-act-to-force-ai-data-centers-to-pay-for-grid-upgrades-highlights-how-husted-backed-bill-falls-short"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "Any formal action after Sept. 17, 2026."
+      ],
+      "quote": "S.5199, the GRID Savings Act",
+      "level": "high"
     },
     "us-hr3447": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The Chip Security Act was ordered reported 42-0 by House Foreign Affairs on Mar. 26, 2026 and was reported as included in the Senate NDAA manager's amendment in July; whether it survives the final NDAA was not found.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "11",
+      "note": "Partly confirmed: the introduced text confirms the chip security and location-verification requirements. The 42-0 committee vote (Mar. 26, 2026), its inclusion in the Senate's FY2027 NDAA and its current status were not checked on official records.",
       "sources": [
         {
-          "title": "House Foreign Affairs Committee: Chairman Mast: HFAC Advances Chip Security Act",
-          "url": "https://foreignaffairs.house.gov/news/press-releases/chairman-mast-hfac-advances-chip-security-act"
-        },
-        {
-          "title": "FastDemocracy: H.R. 3447",
-          "url": "https://fastdemocracy.com/bill-search/us/119/bills/USB00095409"
-        },
-        {
-          "title": "ARI: Senate NDAA Takes Major Step to Strengthen AI Chip Export Controls",
-          "url": "https://ari.us/senate-ndaa-takes-major-step-to-strengthen-ai-chip-export-controls/"
+          "title": "H.R. 3447 — Chip Security Act, introduced text",
+          "url": "https://www.congress.gov/119/bills/hr3447/BILLS-119hr3447ih.pdf"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The March 26, 2026 committee vote of 42–0.",
+        "Inclusion in the Senate FY2027 NDAA.",
+        "Current legislative status as of November 26."
+      ],
+      "quote": "CHIP SECURITY MECHANISMS",
+      "level": "low"
     },
     "us-hr6875": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Mast's AI OVERWATCH Act cleared House Foreign Affairs 42-2 (one present) on Jan. 21, 2026, and Sen. Banks said it was added to the Senate FY2027 NDAA; no House floor vote was found.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Partly confirmed: the House Foreign Affairs Committee's announcement confirms Chairman Brian Mast (R) introduced the AI OVERWATCH Act, for congressional oversight of advanced-chip exports (sponsor added). The 42-2 committee vote on Jan. 21, 2026, its inclusion in the Senate FY2027 NDAA and its current status were not checked on Congress.gov, which would not open.",
       "sources": [
         {
-          "title": "House Foreign Affairs Committee: Chairman Mast Introduces AI OVERWATCH Act",
+          "title": "Chairman Mast Introduces AI OVERWATCH Act to Secure America’s Technological Dominance",
           "url": "https://foreignaffairs.house.gov/news/press-releases/chairman-mast-introduces-ai-overwatch-act-to-secure-america-s-technological-dominance"
-        },
-        {
-          "title": "Axios: Bill to curb chip sales to China advances out of committee",
-          "url": "https://www.axios.com/2026/01/21/bill-chip-sales-china-advances"
-        },
-        {
-          "title": "Sen. Banks: press release, Tuesday, July 14, 2026",
-          "url": "https://www.banks.senate.gov/?p=11620"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The 42-2 committee vote on Jan. 21, 2026.",
+        "Inclusion in the Senate FY2027 NDAA.",
+        "Current status."
+      ],
+      "quote": "AI OVERWATCH Act",
+      "level": "low"
     },
     "us-hr8170": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Baumgartner's MATCH Act (H.R. 8170) was advanced 36-8 by House Foreign Affairs on Apr. 22, 2026 and was reported as included in the Senate NDAA manager's amendment; no House floor vote was found.",
+      "result": "not-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Not confirmed: the Congress.gov page and bill text gave no usable content, so the sponsors, the 36-8 committee vote, the export-control requirements, NDAA inclusion and status are unchecked against the official record.",
       "sources": [
         {
-          "title": "House Foreign Affairs Committee: Chairman Mast: HFAC Advances MATCH Act",
-          "url": "https://foreignaffairs.house.gov/news/press-releases/chairman-mast-hfac-advances-match-act"
-        },
-        {
-          "title": "Rep. Baumgartner: Baumgartner Introduces Bipartisan Bill to Tighten Controls on Sensitive Chipmaking Equipment",
-          "url": "https://baumgartner.house.gov/2026/04/02/baumgartner-introduces-bipartisan-bill-to-tighten-controls-on-sensitive-chipmaking-equipment"
-        },
-        {
-          "title": "ARI: Senate NDAA Takes Major Step to Strengthen AI Chip Export Controls",
-          "url": "https://ari.us/senate-ndaa-takes-major-step-to-strengthen-ai-chip-export-controls/"
+          "title": "H.R. 8170 — 119th Congress",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/8170"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "Sponsors.",
+        "The April 22 committee vote of 36–8.",
+        "The precise allied-export-control requirements.",
+        "Inclusion in the Senate FY2027 NDAA.",
+        "Current status."
+      ],
+      "level": "low"
     },
     "us-hr9442": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Ocasio-Cortez introduced H.R. 9442 on June 24, 2026; it went to Energy and Commerce and Foreign Affairs, has about 20 Democratic cosponsors, and remains in committee.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Partly confirmed: Rep. Alexandria Ocasio-Cortez's announcement confirms she introduced the House version of the AI Data Center Moratorium Act. The June 24 date, the bill number, the cosponsor count, the committee referrals and its status were not checked: the Congress.gov page would not open.",
       "sources": [
         {
-          "title": "LegiScan: US HB9442 | 2025-2026 | 119th Congress",
-          "url": "https://legiscan.com/US/bill/HB9442/"
-        },
-        {
-          "title": "Rep. Ocasio-Cortez: Ocasio-Cortez Introduces House Version of the AI Data Center Moratorium Act",
+          "title": "Ocasio-Cortez Introduces House Version of the AI Data Center Moratorium Act",
           "url": "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-introduces-house-version-ai-data-center-moratorium-act"
-        },
-        {
-          "title": "PolicySoup: H.R. 9442 (119th) Policy Lenses",
-          "url": "https://policysoup.com/bills/hr9442-119/analysis/lenses"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The June 24 introduction date.",
+        "The exact bill number and current cosponsor count.",
+        "Referral to both named committees.",
+        "Current status as of November 26."
+      ],
+      "quote": "House Version of the AI Data Center Moratorium Act",
+      "level": "low"
     },
     "us-hr9925-frontier-act": {
       "result": "confirmed",
@@ -3418,23 +3405,25 @@
       ]
     },
     "us-s4214": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Sanders introduced S. 4214 on Mar. 25, 2026; it was referred to Senate Commerce and has had no committee action since.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Partly confirmed: Sen. Bernie Sanders's Mar. 25, 2026 release confirms the AI Data Center Moratorium Act, announced with Rep. Ocasio-Cortez. The bill number, the Commerce Committee referral, how far it limits upgrades to existing facilities and its status were not checked: the Congress.gov page would not open.",
       "sources": [
         {
-          "title": "Sen. Sanders: NEWS: Sanders, Ocasio-Cortez Announce AI Data Center Moratorium Act",
-          "url": "https://www.sanders.senate.gov/press-releases/news-sanders-ocasio-cortez-announce-ai-data-center-moratorium-act"
-        },
-        {
-          "title": "LegiScan: US SB4214 | 2025-2026 | 119th Congress",
-          "url": "https://legiscan.com/US/bill/SB4214/"
-        },
-        {
-          "title": "Axios: Sanders and AOC unveil data center moratorium bill",
-          "url": "https://www.axios.com/2026/03/25/sanders-aoc-data-center-moratorium-bill?stream=top"
+          "title": "Sanders, Ocasio-Cortez Announce AI Data Center Moratorium Act",
+          "url": "https://www.sanders.senate.gov/press-releases/news-sanders-ocasio-cortez-announce-ai-data-center-moratorium-act/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The bill number S. 4214 from an opened bill record.",
+        "Senate Commerce Committee referral.",
+        "The exact scope of restrictions on upgrading existing facilities.",
+        "Current status as of November 26."
+      ],
+      "quote": "Artificial Intelligence (AI) Data Center Moratorium Act",
+      "level": "low"
     },
     "us-s4591-no-fakes-act": {
       "result": "confirmed",
@@ -3497,42 +3486,38 @@
       "level": "high"
     },
     "us-states-right-to-regulate-ai": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Markey introduced the States' Right to Regulate AI Act (S. 3557) on Dec. 17, 2025 to defund the Dec. 2025 AI executive order; it has not moved past introduction.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Confirmed in Sen. Ed Markey's release: he introduced the States' Right to Regulate AI Act on Dec. 17, 2025 (date made precise) to stop the December 2025 executive order targeting state AI laws from being carried out. The bill number (reported as S. 3557) and status were not checked on Congress.gov, so Medium; the release is now the source.",
       "sources": [
         {
-          "title": "Sen. Markey: Senator Markey Introduces Legislation to Block Trump's Executive Order Blocking State AI Regulation",
+          "title": "Senator Markey Introduces Legislation to Block Trump’s Executive Order Blocking State AI Regulation",
           "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-introduces-legislation-to-block-trumps-executive-order-blocking-state-ai-regulation"
-        },
-        {
-          "title": "Axios: Senate Dems fight back on Trump's AI order",
-          "url": "https://www.axios.com/2025/12/19/trump-democrats-fight-back-ai-order"
-        },
-        {
-          "title": "Legisletter: S. 3557: States' Right to Regulate AI Act",
-          "url": "https://legisletter.org/bill/s3557-right-regulate-ai-act"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The Senate bill number (reported as S. 3557).",
+        "Current status."
+      ],
+      "quote": "introducing the States’ Right to Regulate AI Act",
+      "level": "medium"
     },
     "us-take-it-down-act": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "CRS confirms the Act also criminalizes threats to publish authentic or AI-forged intimate images, completing the check of this claim.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Confirmed in the enacted law: S. 146, Public Law 119-12, signed May 19, 2025. Corrected the bill number and the detail: the crimes cover specified knowing publication of, or threats to publish, authentic or AI-forged intimate images, with statutory conditions and exceptions; covered platforms must act within 48 hours of a valid removal request, with a year to set up the process. The law is now the source.",
       "sources": [
         {
-          "title": "CRS (EveryCRSReport): The TAKE IT DOWN Act, a federal law prohibiting the nonconsensual publication of intimate images",
-          "url": "https://www.everycrsreport.com/reports/LSB11314.html"
-        },
-        {
-          "title": "Orrick: TAKE IT DOWN Act Becomes Law, Introducing Landmark Federal Protections to Combat Online Exploitation and Deepfakes",
-          "url": "https://www.orrick.com/en/Insights/2025/05/TAKE-IT-DOWN-Act-Becomes-Law"
-        },
-        {
-          "title": "Skadden: 'Take It Down Act' requires online platforms to remove unauthorized intimate images and deepfakes when notified",
-          "url": "https://www.skadden.com/insights/publications/2025/06/take-it-down-act"
+          "title": "Public Law 119–12 — TAKE IT DOWN Act",
+          "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf"
         }
-      ]
+      ],
+      "quote": "TAKE IT DOWN Act",
+      "level": "high"
     },
     "vp-ca-carnegie-endowment-for-i-ai-qu-2": {
       "result": "partly-confirmed",
@@ -3830,6 +3815,20 @@
       "batch": "10",
       "date": "2026-11-27",
       "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "11",
+      "date": "2026-11-27",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "12",
+      "date": "2026-11-27",
+      "claims": 6,
       "tool": "ChatGPT (web browsing)",
       "relayedBy": "project owner"
     }

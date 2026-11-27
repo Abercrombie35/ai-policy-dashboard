@@ -21,14 +21,14 @@
         "ai-comprehensive",
         "ai-child-safety"
       ],
-      "summary": "Bans a short list of AI uses, including AI-generated child sexual abuse material and government social scoring, and requires Texas state agencies to disclose AI use to consumers. A broader high-risk impact-assessment regime in early drafts was cut from the final bill.",
+      "summary": "Bans a short list of AI uses, including AI-generated child sexual abuse material and government social scoring, and requires Texas state agencies to disclose AI use to consumers. News reports describe it as a narrowed successor to an earlier proposal (HB 1709) that would have required impact assessments for high-risk AI.",
       "labelType": "source-summary",
       "source": {
         "title": "Texas Legislature Online: HB 149 history",
         "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -48,7 +48,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 5,
+      "version": 6,
       "history": [
         {
           "version": 1,
@@ -74,6 +74,11 @@
           "version": 5,
           "date": "2026-11-26",
           "note": "Added which trackers list this bill (IAPP, NCSL), from search results on 2026-11-26."
+        },
+        {
+          "version": 6,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 11): confirmed, Medium confidence. Confirmed on Texas Legislature Online: Capriglione's HB 149 was signed June 22, 2025 and took effect Jan. 1, 2026, with its banned uses and state agencies' disclosure duty. That it narrowed an earlier, broader impact-assessment proposal (HB 1709) rests on news reports, so Medium; the summary now attributes it."
         }
       ],
       "statusNote": "Signed June 22, 2025; effective Jan. 1, 2026.",
@@ -118,8 +123,8 @@
         "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4214"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -137,7 +142,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -153,6 +158,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (Sen. Sanders, LegiScan, Axios). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 12): partly confirmed, Low confidence. Partly confirmed: Sen. Bernie Sanders's Mar. 25, 2026 release confirms the AI Data Center Moratorium Act, announced with Rep. Ocasio-Cortez. The bill number, the Commerce Committee referral, how far it limits upgrades to existing facilities and its status were not checked: the Congress.gov page would not open."
         }
       ]
     },
@@ -186,8 +196,8 @@
         "url": "https://www.congress.gov/bill/119th-congress/house-bill/9442/all-info"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -205,7 +215,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -221,6 +231,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (LegiScan, Rep. Ocasio-Cortez, PolicySoup). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 12): partly confirmed, Low confidence. Partly confirmed: Rep. Alexandria Ocasio-Cortez's announcement confirms she introduced the House version of the AI Data Center Moratorium Act. The June 24 date, the bill number, the cosponsor count, the committee referrals and its status were not checked: the Congress.gov page would not open."
         }
       ]
     },
@@ -481,7 +496,7 @@
       "id": "us-grid-savings-act",
       "state": "US",
       "session": "119th Congress (2025-2026)",
-      "billNumber": "Number to verify",
+      "billNumber": "S. 5199",
       "title": "GRID Savings Act",
       "sponsors": [
         {
@@ -492,20 +507,20 @@
         }
       ],
       "status": "introduced",
-      "statusDate": null,
-      "statusNote": "Status to verify.",
+      "statusDate": "2026-09-17",
+      "statusNote": "Heinrich asked for unanimous consent to pass it on Sept. 17, 2026; Sen. Bernie Moreno (R) objected. No later action confirmed.",
       "categories": [
         "dc-ratepayer"
       ],
-      "summary": "Would direct federal regulators to require large electricity customers such as data centers to pay for the infrastructure needed to connect them to the grid.",
+      "summary": "Would require large new electricity users such as AI data centers to pay the cost of the grid upgrades needed to connect them, rather than other ratepayers.",
       "labelType": "source-summary",
       "source": {
-        "title": "The Hill: Democrats block data center electricity bill",
-        "url": "https://thehill.com/policy/energy-environment/6119834-senate-data-center-bill-ratepayer-protection-act/"
+        "title": "Sen. Martin Heinrich: Heinrich offers his GRID Savings Act to force AI data centers to pay for grid upgrades (Sept. 17, 2026)",
+        "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-offers-his-grid-savings-act-to-force-ai-data-centers-to-pay-for-grid-upgrades-highlights-how-husted-backed-bill-falls-short"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -522,7 +537,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -538,6 +553,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (Senate Energy and Natural Resources Committee, PolicyRisk, NACo). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 11): corrected, High confidence. Confirmed in Sen. Martin Heinrich's release of Sept. 17, 2026: S. 5199, the GRID Savings Act, would make large new loads such as AI data centers pay the cost of connecting them, and Sen. Bernie Moreno blocked his unanimous-consent request. Corrected: the bill number (S. 5199) and its status. No later action was confirmed."
         }
       ]
     },
@@ -897,8 +917,8 @@
         "url": "https://natlawreview.com/article/texas-lawmakers-file-repeal-data-center-sales-tax-exemption"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -915,7 +935,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -931,6 +951,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Fox 4, Texas Scorecard, Foley & Lardner). Sen. Joan Huffman (R) filed SB 293 on Nov. 9, 2026 with 23 Senate authors (sources differ on whether that is out of 30 or 31 members) to repeal the data center sales tax exemption; HB 167 by Rep. Trey Martinez Fischer (D) is the House bill with the same aim. Sponsors added: Sen. Joan Huffman (R) leads SB 293 with 23 Senate authors; Rep. Trey Martinez Fischer (D) filed HB 167. Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 11): partly confirmed, Low confidence. Partly confirmed: the introduced text confirms Sen. Joan Huffman's bill to repeal the data center sales and use tax exemptions. The 23 Senate authors, the filing date and HB 167's author could not be checked: both bill histories would not open."
         }
       ]
     },
@@ -939,7 +964,7 @@
       "state": "TX",
       "session": "90th Legislature (2027), prefiled",
       "billNumber": "SB 33, SB 35, SB 36",
-      "title": "Data center cost, water-reporting and local-incentive bills",
+      "title": "Data center electricity costs, large-load information sharing and incentive eligibility",
       "sponsors": [
         {
           "name": "Judith Zaffirini",
@@ -956,14 +981,14 @@
         "dc-water-environment",
         "dc-tax-incentives"
       ],
-      "summary": "SB 33: data centers may not raise electricity costs for Texas residents. SB 35: large data centers report water use to the Texas Water Development Board. SB 36: no new local tax incentives for data centers.",
+      "summary": "SB 33: data centers may not raise electricity costs for Texas residents. SB 35: ERCOT shares information on large-load customers, such as data centers, with the Texas Water Development Board. SB 36: limits data centers' eligibility for certain state and local incentive programs.",
       "labelType": "source-summary",
       "source": {
-        "title": "Houston Chronicle: The first Texas bills of 2027 are in",
-        "url": "https://www.chron.com/politics/article/texas-legislature-bills-prefiling-2027-22521040.php"
+        "title": "Texas Legislature Online: bills authored by Sen. Judith Zaffirini, 90th Legislature",
+        "url": "https://capitol.texas.gov/reports/report.aspx?Code=A1700&ID=author&LegSess=90R"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -982,7 +1007,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -998,6 +1023,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Foley & Lardner, GovTech, LegiScan). Zaffirini filed SB 33 (electricity cost allocation for large computing loads), SB 35 (water-use reporting to the Water Development Board) and SB 36 (curbs on tax and local incentives) on Nov. 9, 2026; one outlet says SB 36 also covers state tax exemptions, not only local incentives. Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 11): corrected, Medium confidence. Confirmed on the Senate's author report for Sen. Judith Zaffirini: all three bills were filed Nov. 9, 2026. Corrected from the official captions: SB 35 has ERCOT share information on large-load customers with the Texas Water Development Board (not a reporting duty on data centers), and SB 36 concerns eligibility for certain state and local incentive programs. The bills' full requirements were not checked, so Medium."
         }
       ]
     },
@@ -1005,7 +1035,7 @@
       "id": "us-take-it-down-act",
       "state": "US",
       "session": "119th Congress (2025-2026)",
-      "billNumber": "Take It Down Act",
+      "billNumber": "S. 146 (Public Law 119-12)",
       "title": "Take It Down Act",
       "sponsors": [
         {
@@ -1027,15 +1057,15 @@
         "ai-deepfakes",
         "ai-child-safety"
       ],
-      "summary": "Makes it a federal crime to publish or threaten to publish non-consensual intimate images, including AI deepfakes; platforms must remove flagged content within 48 hours.",
+      "summary": "Makes it a federal crime to knowingly publish, or threaten to publish, non-consensual intimate images, real or AI-generated, with conditions and exceptions set in the law. Covered platforms must remove such images within 48 hours of a valid request; they had a year to set up the process.",
       "labelType": "source-summary",
       "source": {
-        "title": "Decrypt: Trump signs bipartisan act targeting deepfake abuse",
-        "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
+        "title": "GovInfo: Public Law 119-12, TAKE IT DOWN Act (May 19, 2025)",
+        "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1053,7 +1083,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 5,
+      "version": 6,
       "history": [
         {
           "version": 1,
@@ -1079,6 +1109,11 @@
           "version": 5,
           "date": "2026-11-26",
           "note": "Added which trackers list this bill (IAPP), from search results on 2026-11-26."
+        },
+        {
+          "version": 6,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 12): corrected, High confidence. Confirmed in the enacted law: S. 146, Public Law 119-12, signed May 19, 2025. Corrected the bill number and the detail: the crimes cover specified knowing publication of, or threats to publish, authentic or AI-forged intimate images, with statutory conditions and exceptions; covered platforms must act within 48 hours of a valid removal request, with a year to set up the process. The law is now the source."
         }
       ],
       "trackers": [
@@ -1086,7 +1121,8 @@
           "tracker": "iapp",
           "url": "https://iapp.org/news/a/take-it-down-act-how-to-comply-as-the-ftc-begins-enforcement"
         }
-      ]
+      ],
+      "statusNote": "Signed May 19, 2025 (Public Law 119-12)."
     },
     {
       "id": "us-states-right-to-regulate-ai",
@@ -1103,18 +1139,18 @@
         }
       ],
       "status": "introduced",
-      "statusDate": "2025-12",
+      "statusDate": "2025-12-17",
       "categories": [
         "ai-preemption"
       ],
-      "summary": "Would bar the use of federal funds to carry out the December 2025 executive order targeting state AI laws.",
+      "summary": "Would stop the December 2025 executive order targeting state AI laws from being carried out.",
       "labelType": "source-summary",
       "source": {
-        "title": "Axios: Senate Dems fight back on Trump's AI order",
-        "url": "https://www.axios.com/2025/12/19/trump-democrats-fight-back-ai-order"
+        "title": "Sen. Ed Markey: Legislation to block Trump's executive order blocking state AI regulation (Dec. 17, 2025)",
+        "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-introduces-legislation-to-block-trumps-executive-order-blocking-state-ai-regulation"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -1131,7 +1167,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1147,8 +1183,14 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (Sen. Markey, Axios, Legisletter). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 12): corrected, Medium confidence. Confirmed in Sen. Ed Markey's release: he introduced the States' Right to Regulate AI Act on Dec. 17, 2025 (date made precise) to stop the December 2025 executive order targeting state AI laws from being carried out. The bill number (reported as S. 3557) and status were not checked on Congress.gov, so Medium; the release is now the source."
         }
-      ]
+      ],
+      "statusNote": "Introduced Dec. 17, 2025; reported as S. 3557, a number not yet confirmed on Congress.gov."
     },
     {
       "id": "us-hr3447",
@@ -1183,8 +1225,8 @@
         "url": "https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1202,7 +1244,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1218,6 +1260,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (House Foreign Affairs Committee, FastDemocracy, ARI). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 11): partly confirmed, Low confidence. Partly confirmed: the introduced text confirms the chip security and location-verification requirements. The 42-0 committee vote (Mar. 26, 2026), its inclusion in the Senate's FY2027 NDAA and its current status were not checked on official records."
         }
       ]
     },
@@ -1227,8 +1274,14 @@
       "session": "119th Congress (2025-2026)",
       "billNumber": "H.R. 6875",
       "title": "AI OVERWATCH Act",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "Brian Mast",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "in-committee",
       "statusDate": "2026-01-21",
       "statusNote": "Ordered reported 42-2 by House Foreign Affairs; reportedly included in the Senate FY2027 NDAA.",
@@ -1242,8 +1295,8 @@
         "url": "https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1259,7 +1312,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1275,6 +1328,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (House Foreign Affairs Committee, Axios, Sen. Banks). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 12): partly confirmed, Low confidence. Partly confirmed: the House Foreign Affairs Committee's announcement confirms Chairman Brian Mast (R) introduced the AI OVERWATCH Act, for congressional oversight of advanced-chip exports (sponsor added). The 42-2 committee vote on Jan. 21, 2026, its inclusion in the Senate FY2027 NDAA and its current status were not checked on Congress.gov, which would not open."
         }
       ]
     },
@@ -1299,8 +1357,8 @@
         "url": "https://mlq.ai/news/speaker-johnson-sees-a-developing-consensus-in-congress-on-limiting-chip-exports-to-china-the-bills-and-rules-in-play/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1316,7 +1374,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1332,6 +1390,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (House Foreign Affairs Committee, Rep. Baumgartner, ARI). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 12): not confirmed, Low confidence. Not confirmed: the Congress.gov page and bill text gave no usable content, so the sponsors, the 36-8 committee vote, the export-control requirements, NDAA inclusion and status are unchecked against the official record."
         }
       ]
     },
