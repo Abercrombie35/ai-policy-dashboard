@@ -3244,61 +3244,66 @@
       "level": "low"
     },
     "us-hr6875": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Mast's AI OVERWATCH Act cleared House Foreign Affairs 42-2 (one present) on Jan. 21, 2026, and Sen. Banks said it was added to the Senate FY2027 NDAA; no House floor vote was found.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Partly confirmed: the House Foreign Affairs Committee's announcement confirms Chairman Brian Mast (R) introduced the AI OVERWATCH Act, for congressional oversight of advanced-chip exports (sponsor added). The 42-2 committee vote on Jan. 21, 2026, its inclusion in the Senate FY2027 NDAA and its current status were not checked on Congress.gov, which would not open.",
       "sources": [
         {
-          "title": "House Foreign Affairs Committee: Chairman Mast Introduces AI OVERWATCH Act",
+          "title": "Chairman Mast Introduces AI OVERWATCH Act to Secure America’s Technological Dominance",
           "url": "https://foreignaffairs.house.gov/news/press-releases/chairman-mast-introduces-ai-overwatch-act-to-secure-america-s-technological-dominance"
-        },
-        {
-          "title": "Axios: Bill to curb chip sales to China advances out of committee",
-          "url": "https://www.axios.com/2026/01/21/bill-chip-sales-china-advances"
-        },
-        {
-          "title": "Sen. Banks: press release, Tuesday, July 14, 2026",
-          "url": "https://www.banks.senate.gov/?p=11620"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The 42-2 committee vote on Jan. 21, 2026.",
+        "Inclusion in the Senate FY2027 NDAA.",
+        "Current status."
+      ],
+      "quote": "AI OVERWATCH Act",
+      "level": "low"
     },
     "us-hr8170": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Baumgartner's MATCH Act (H.R. 8170) was advanced 36-8 by House Foreign Affairs on Apr. 22, 2026 and was reported as included in the Senate NDAA manager's amendment; no House floor vote was found.",
+      "result": "not-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Not confirmed: the Congress.gov page and bill text gave no usable content, so the sponsors, the 36-8 committee vote, the export-control requirements, NDAA inclusion and status are unchecked against the official record.",
       "sources": [
         {
-          "title": "House Foreign Affairs Committee: Chairman Mast: HFAC Advances MATCH Act",
-          "url": "https://foreignaffairs.house.gov/news/press-releases/chairman-mast-hfac-advances-match-act"
-        },
-        {
-          "title": "Rep. Baumgartner: Baumgartner Introduces Bipartisan Bill to Tighten Controls on Sensitive Chipmaking Equipment",
-          "url": "https://baumgartner.house.gov/2026/04/02/baumgartner-introduces-bipartisan-bill-to-tighten-controls-on-sensitive-chipmaking-equipment"
-        },
-        {
-          "title": "ARI: Senate NDAA Takes Major Step to Strengthen AI Chip Export Controls",
-          "url": "https://ari.us/senate-ndaa-takes-major-step-to-strengthen-ai-chip-export-controls/"
+          "title": "H.R. 8170 — 119th Congress",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/8170"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "Sponsors.",
+        "The April 22 committee vote of 36–8.",
+        "The precise allied-export-control requirements.",
+        "Inclusion in the Senate FY2027 NDAA.",
+        "Current status."
+      ],
+      "level": "low"
     },
     "us-hr9442": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Ocasio-Cortez introduced H.R. 9442 on June 24, 2026; it went to Energy and Commerce and Foreign Affairs, has about 20 Democratic cosponsors, and remains in committee.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Partly confirmed: Rep. Alexandria Ocasio-Cortez's announcement confirms she introduced the House version of the AI Data Center Moratorium Act. The June 24 date, the bill number, the cosponsor count, the committee referrals and its status were not checked: the Congress.gov page would not open.",
       "sources": [
         {
-          "title": "LegiScan: US HB9442 | 2025-2026 | 119th Congress",
-          "url": "https://legiscan.com/US/bill/HB9442/"
-        },
-        {
-          "title": "Rep. Ocasio-Cortez: Ocasio-Cortez Introduces House Version of the AI Data Center Moratorium Act",
+          "title": "Ocasio-Cortez Introduces House Version of the AI Data Center Moratorium Act",
           "url": "https://ocasio-cortez.house.gov/media/press-releases/ocasio-cortez-introduces-house-version-ai-data-center-moratorium-act"
-        },
-        {
-          "title": "PolicySoup: H.R. 9442 (119th) Policy Lenses",
-          "url": "https://policysoup.com/bills/hr9442-119/analysis/lenses"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The June 24 introduction date.",
+        "The exact bill number and current cosponsor count.",
+        "Referral to both named committees.",
+        "Current status as of November 26."
+      ],
+      "quote": "House Version of the AI Data Center Moratorium Act",
+      "level": "low"
     },
     "us-hr9925-frontier-act": {
       "result": "confirmed",
@@ -3400,23 +3405,25 @@
       ]
     },
     "us-s4214": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Sanders introduced S. 4214 on Mar. 25, 2026; it was referred to Senate Commerce and has had no committee action since.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Partly confirmed: Sen. Bernie Sanders's Mar. 25, 2026 release confirms the AI Data Center Moratorium Act, announced with Rep. Ocasio-Cortez. The bill number, the Commerce Committee referral, how far it limits upgrades to existing facilities and its status were not checked: the Congress.gov page would not open.",
       "sources": [
         {
-          "title": "Sen. Sanders: NEWS: Sanders, Ocasio-Cortez Announce AI Data Center Moratorium Act",
-          "url": "https://www.sanders.senate.gov/press-releases/news-sanders-ocasio-cortez-announce-ai-data-center-moratorium-act"
-        },
-        {
-          "title": "LegiScan: US SB4214 | 2025-2026 | 119th Congress",
-          "url": "https://legiscan.com/US/bill/SB4214/"
-        },
-        {
-          "title": "Axios: Sanders and AOC unveil data center moratorium bill",
-          "url": "https://www.axios.com/2026/03/25/sanders-aoc-data-center-moratorium-bill?stream=top"
+          "title": "Sanders, Ocasio-Cortez Announce AI Data Center Moratorium Act",
+          "url": "https://www.sanders.senate.gov/press-releases/news-sanders-ocasio-cortez-announce-ai-data-center-moratorium-act/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The bill number S. 4214 from an opened bill record.",
+        "Senate Commerce Committee referral.",
+        "The exact scope of restrictions on upgrading existing facilities.",
+        "Current status as of November 26."
+      ],
+      "quote": "Artificial Intelligence (AI) Data Center Moratorium Act",
+      "level": "low"
     },
     "us-s4591-no-fakes-act": {
       "result": "confirmed",
@@ -3479,42 +3486,38 @@
       "level": "high"
     },
     "us-states-right-to-regulate-ai": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Markey introduced the States' Right to Regulate AI Act (S. 3557) on Dec. 17, 2025 to defund the Dec. 2025 AI executive order; it has not moved past introduction.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Confirmed in Sen. Ed Markey's release: he introduced the States' Right to Regulate AI Act on Dec. 17, 2025 (date made precise) to stop the December 2025 executive order targeting state AI laws from being carried out. The bill number (reported as S. 3557) and status were not checked on Congress.gov, so Medium; the release is now the source.",
       "sources": [
         {
-          "title": "Sen. Markey: Senator Markey Introduces Legislation to Block Trump's Executive Order Blocking State AI Regulation",
+          "title": "Senator Markey Introduces Legislation to Block Trump’s Executive Order Blocking State AI Regulation",
           "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-introduces-legislation-to-block-trumps-executive-order-blocking-state-ai-regulation"
-        },
-        {
-          "title": "Axios: Senate Dems fight back on Trump's AI order",
-          "url": "https://www.axios.com/2025/12/19/trump-democrats-fight-back-ai-order"
-        },
-        {
-          "title": "Legisletter: S. 3557: States' Right to Regulate AI Act",
-          "url": "https://legisletter.org/bill/s3557-right-regulate-ai-act"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The Senate bill number (reported as S. 3557).",
+        "Current status."
+      ],
+      "quote": "introducing the States’ Right to Regulate AI Act",
+      "level": "medium"
     },
     "us-take-it-down-act": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "CRS confirms the Act also criminalizes threats to publish authentic or AI-forged intimate images, completing the check of this claim.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "12",
+      "note": "Confirmed in the enacted law: S. 146, Public Law 119-12, signed May 19, 2025. Corrected the bill number and the detail: the crimes cover specified knowing publication of, or threats to publish, authentic or AI-forged intimate images, with statutory conditions and exceptions; covered platforms must act within 48 hours of a valid removal request, with a year to set up the process. The law is now the source.",
       "sources": [
         {
-          "title": "CRS (EveryCRSReport): The TAKE IT DOWN Act, a federal law prohibiting the nonconsensual publication of intimate images",
-          "url": "https://www.everycrsreport.com/reports/LSB11314.html"
-        },
-        {
-          "title": "Orrick: TAKE IT DOWN Act Becomes Law, Introducing Landmark Federal Protections to Combat Online Exploitation and Deepfakes",
-          "url": "https://www.orrick.com/en/Insights/2025/05/TAKE-IT-DOWN-Act-Becomes-Law"
-        },
-        {
-          "title": "Skadden: 'Take It Down Act' requires online platforms to remove unauthorized intimate images and deepfakes when notified",
-          "url": "https://www.skadden.com/insights/publications/2025/06/take-it-down-act"
+          "title": "Public Law 119–12 — TAKE IT DOWN Act",
+          "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf"
         }
-      ]
+      ],
+      "quote": "TAKE IT DOWN Act",
+      "level": "high"
     },
     "vp-ca-carnegie-endowment-for-i-ai-qu-2": {
       "result": "partly-confirmed",
@@ -3819,6 +3822,13 @@
       "batch": "11",
       "date": "2026-11-27",
       "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "12",
+      "date": "2026-11-27",
+      "claims": 6,
       "tool": "ChatGPT (web browsing)",
       "relayedBy": "project owner"
     }

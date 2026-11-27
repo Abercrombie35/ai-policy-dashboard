@@ -80,23 +80,23 @@ Coding status: 48 of 48 candidate records carry AI-drafted coding not yet review
 
 Each claim was searched on the web and compared with what reliable sources (official legislature and government sites, established news outlets, law-firm and policy analyses) report, in two rounds on 2026-11-24: a first pass over every claim, then a second pass over every claim not yet searched or only partly confirmed. The source pages themselves could not be opened from the build environment, so checks rest on search results and their summaries: confirmed claims are raised to Medium confidence, never High, which needs the primary source to be read. Claims are then checked against their primary source by the project owner using ChatGPT with web browsing, batch by batch, and relayed here with the source, a verbatim quote and the date: verified from a primary source with a confirmed date is High confidence; verified without a confirmed date, or only from news reports, is Medium.
 
-Primary-source checks: the build environment cannot open most source sites, so the project owner checks claims against the primary source with ChatGPT (web browsing) and relays the results, which are imported claim by claim with recorded decisions (documents/chatgpt-verification). Relays so far: 01 (12 claims, 2026-11-26); 02 (12 claims, 2026-11-27); 03 (12 claims, 2026-11-27); 04 (12 claims, 2026-11-27); 05 (12 claims, 2026-11-27); 06 (12 claims, 2026-11-27); 07 (12 claims, 2026-11-27); 08 (12 claims, 2026-11-27); 09 (12 claims, 2026-11-27); 10 (12 claims, 2026-11-27); 11 (12 claims, 2026-11-27).
+Primary-source checks: the build environment cannot open most source sites, so the project owner checks claims against the primary source with ChatGPT (web browsing) and relays the results, which are imported claim by claim with recorded decisions (documents/chatgpt-verification). Relays so far: 01 (12 claims, 2026-11-26); 02 (12 claims, 2026-11-27); 03 (12 claims, 2026-11-27); 04 (12 claims, 2026-11-27); 05 (12 claims, 2026-11-27); 06 (12 claims, 2026-11-27); 07 (12 claims, 2026-11-27); 08 (12 claims, 2026-11-27); 09 (12 claims, 2026-11-27); 10 (12 claims, 2026-11-27); 11 (12 claims, 2026-11-27); 12 (6 claims, 2026-11-27).
 
 | Check result | Claims |
 |---|---|
-| confirmed | 112 |
-| corrected | 47 |
-| partly-confirmed | 24 |
-| not-confirmed | 24 |
+| confirmed | 106 |
+| corrected | 49 |
+| partly-confirmed | 27 |
+| not-confirmed | 25 |
 | not-checkable | 14 |
 | contradicted | 3 |
 
 | Method of the latest check | Claims |
 |---|---|
-| primary source (relayed) | 132 |
-| web search, other reports | 92 |
+| primary source (relayed) | 138 |
+| web search, other reports | 86 |
 
-Of 210 checkable claims, 159 (76%) are confirmed or corrected, and 60 (29%) are at High confidence (wording and date checked against the primary source).
+Of 210 checkable claims, 155 (74%) are confirmed or corrected, and 61 (29%) are at High confidence (wording and date checked against the primary source).
 
 ## 5. Election results and certification
 
@@ -136,7 +136,7 @@ Pending (AIPD-202, AIPD-203). Planned design: a person reviews every AI-drafted 
 ## 10. Limitations
 
 - Sample size: 8 races and 22 candidates; findings describe these races, not all 2026 contests.
-- Search-based checks: 92 claims were last checked by comparing other published reports on the web, not the primary source; these are at most Medium confidence.
+- Search-based checks: 86 claims were last checked by comparing other published reports on the web, not the primary source; these are at most Medium confidence.
 - Relayed primary-source checks: primary sources were opened by the project owner through ChatGPT, not directly by the build environment; each relay and decision is kept in documents/chatgpt-verification so it can be audited.
 - Coding: 48 of 48 records have AI-drafted coding not yet reviewed by a person, and inter-coder reliability has not yet been measured.
 - Election results: 7 of 7 results still show unofficial figures until certified figures are entered.
