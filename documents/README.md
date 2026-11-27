@@ -13,6 +13,8 @@ Working documents for the project (not part of the website).
   `archive/README.md` (AIPD-101).
 - `senate-selection/races-2026.json`: sourced facts on all 35 Senate contests of 2026, from which the race list
   on the Methodology page is drawn (AIPD-102).
+- `coding-review/`: the human review of every AI-drafted code and the inter-coder reliability test, with the
+  sheets to fill in and `tools/coding_review.py` to import them and compute Krippendorff's alpha (AIPD-202, AIPD-203).
 - `codebook/CHANGELOG.md`: codebook changes since the pilot draft; version 1.0-rc1 (AIPD-204).
 - `methods-appendix.md`: the methods appendix for reviewers, regenerated with `npm run appendix` (AIPD-504).
 - `backlog/`: the product backlog built from the project proposal, as Scrum stories with acceptance

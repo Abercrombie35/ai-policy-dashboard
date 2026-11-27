@@ -131,7 +131,7 @@ Results carry their own label and are stored apart from statements. Each records
 
 ## 9. Reliability
 
-Pending (AIPD-202, AIPD-203). Planned design: a person reviews every AI-drafted code; then two coders independently code a sample of at least 20% of records, and Krippendorff's alpha is reported for each coding dimension, with codebook rules revised where agreement is low. Results will be reported here, and the codebook frozen as version 1.0.
+Pending (AIPD-202, AIPD-203). A person reviews every AI-drafted code (documents/coding-review/review-sheet.csv); then two coders independently code a 20% sample (reliability-sheet.csv) and Krippendorff's alpha is reported for each coding dimension (`python3 tools/coding_review.py alpha`), with codebook rules revised where agreement is low. Results will be reported here, and the codebook frozen as version 1.0.
 
 ## 10. Limitations
 
