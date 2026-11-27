@@ -1564,7 +1564,7 @@
       "state": "CT",
       "session": "2026 session",
       "billNumber": "SB 5 (Public Act 26-15)",
-      "title": "Connecticut AI Responsibility and Transparency (CART) Act",
+      "title": "An Act Concerning Online Safety (the \"CART Act\")",
       "sponsors": [
         {
           "name": "James Maroney",
@@ -1594,7 +1594,7 @@
       "sponsorsNote": "Raised by the General Law Committee.",
       "status": "enacted",
       "statusDate": "2026-05-27",
-      "statusNote": "Passed the Senate 32-4 and the House 131-17; signed May 27, 2026 (some sources give June 2).",
+      "statusNote": "Passed the Senate 32-4 and the House 131-17; signed May 27, 2026.",
       "categories": [
         "ai-comprehensive",
         "ai-frontier-safety",
@@ -1607,7 +1607,7 @@
         "url": "https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -1628,7 +1628,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 5,
+      "version": 6,
       "history": [
         {
           "version": 1,
@@ -1654,6 +1654,11 @@
           "version": 5,
           "date": "2026-11-26",
           "note": "Added which trackers list this bill (IAPP, NCSL, MultiState), from search results on 2026-11-26."
+        },
+        {
+          "version": 6,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 08): corrected, Medium confidence. Corrected: the governor's official bill notification lists SB 5 as Public Act 26-15, signed May 27, 2026 (the alternative June 2 date was removed). Its formal title is \"An Act Concerning Online Safety\"; \"CART Act\" is the name used by the legislature's AI Caucus (Ropes & Gray). The vote counts, full sponsor list and provisions rest on secondary summaries, so Medium."
         }
       ],
       "trackers": [
@@ -1698,8 +1703,8 @@
         "url": "https://pluribusnews.com/news-and-events/connecticut-ai-regulation-bill-crumbles-amid-govs-veto-threat/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1718,7 +1723,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -1739,6 +1744,11 @@
           "version": 4,
           "date": "2026-11-26",
           "note": "Added which trackers list this bill (MultiState), from search results on 2026-11-26."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 08): not confirmed, Low confidence. Not confirmed: the legislature's bill history would not open on repeated attempts, so the Senate vote, the House outcome, the veto threat and the date the bill died are unchecked against the official record."
         }
       ],
       "trackers": [
@@ -1763,7 +1773,7 @@
         }
       ],
       "status": "failed",
-      "statusDate": "2024-04-24",
+      "statusDate": "2024-05-08",
       "categories": [
         "ai-comprehensive",
         "ai-privacy-surveillance"
@@ -1775,8 +1785,8 @@
         "url": "https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1795,7 +1805,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -1816,6 +1826,11 @@
           "version": 4,
           "date": "2026-11-26",
           "note": "Added which trackers list this bill (MultiState), from search results on 2026-11-26."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 08): partly confirmed, Low confidence. Partly confirmed, with the status date corrected: Apr. 24, 2024 was the Senate's 24-12 vote (CT Mirror), not the day the bill failed; it died when the session ended on May 8, 2024 (the Wednesday after the first Monday in May, as the state constitution sets for even years). Maroney as sponsor and Lamont's objections are confirmed in the report; the House outcome and veto threat could not be checked on the official record, which would not open, so Low."
         }
       ],
       "trackers": [
@@ -1823,7 +1838,8 @@
           "tracker": "multistate",
           "url": "https://www.multistate.ai/updates/vol-24"
         }
-      ]
+      ],
+      "statusNote": "Passed the Senate 24-12 on Apr. 24, 2024; never called for a House vote and died when the session ended May 8."
     },
     {
       "id": "ct-2026-sb245",
@@ -2030,14 +2046,14 @@
       "categories": [
         "dc-moratorium"
       ],
-      "summary": "Senate Majority Leader Bob Duff plans to introduce a statewide moratorium on AI data centers when the 2027 session begins, citing their water and electricity use and the effect on utility rates. Some towns, such as East Lyme, have passed local bans.",
+      "summary": "Senate Majority Leader Bob Duff proposes to pause new data centers until the state sets rules for power use, electricity costs and environmental protections, with a bill planned for the 2027 session. Some towns, such as East Lyme, have passed local bans.",
       "labelType": "source-summary",
       "source": {
         "title": "WFSB: Senate leader proposes bill to pause new data centers in Connecticut",
         "url": "https://www.wfsb.com/2026/10/22/senate-leader-proposes-bill-pause-new-data-centers-connecticut/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -2055,7 +2071,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2071,6 +2087,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (WFSB, Connecticut Public, CT Mirror). WFSB (Oct. 22, 2026) and other outlets report that Senate Majority Leader Duff will propose a statewide data center pause next session, citing electricity, water and rate impacts, after East Lyme adopted a local ban. Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 08): confirmed, Medium confidence. Confirmed in WFSB's Oct. 22, 2026 report: Duff proposes to \"pause new data centers until the state sets rules for power use, electricity costs, and environmental protections\"; it also reports East Lyme's local ban. No statement of his own was found, so Medium."
         }
       ]
     },
@@ -3200,7 +3221,7 @@
       "sponsorsNote": "Adopted by the European Parliament and the Council.",
       "status": "enacted",
       "statusDate": "2024-08-01",
-      "statusNote": "In force since Aug. 1, 2024; obligations apply in phases.",
+      "statusNote": "In force since Aug. 1, 2024; obligations apply in phases, and a 2026 amendment moved the dates for high-risk systems.",
       "categories": [
         "ai-comprehensive",
         "ai-frontier-safety"
@@ -3212,8 +3233,8 @@
         "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -3233,7 +3254,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -3244,6 +3265,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (European Commission, Kennedys, CMS). Confirmed: the AI Act (Regulation 2024/1689) entered into force Aug. 1, 2024 with bans, GPAI and high-risk duties applying in phases; its original high-risk dates were later pushed back by the Digital Omnibus on AI (Regulation 2026/1744). Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 08): confirmed, High confidence. Confirmed on EUR-Lex's official summary of Regulation (EU) 2024/1689: a risk-based framework with requirements for high-risk AI systems, phased application and enforcement by national authorities. The summary reflects the 2026 amendment that moved the high-risk dates (added)."
         }
       ]
     },
@@ -3448,15 +3474,15 @@
       "categories": [
         "dc-economy-jobs"
       ],
-      "summary": "France pledged a gigawatt of nuclear power for AI computing; in March 2026 President Macron said France's nuclear plants let it open data centers and grow its computing capacity.",
+      "summary": "Before the February 2025 AI Action Summit, France was reported to be pledging a gigawatt of nuclear power for AI computing (TechRadar); the Élysée's summit document lists a France-UAE AI campus of up to one gigawatt. In March 2026 President Macron reportedly said France's nuclear plants let it open data centers and grow its computing capacity.",
       "labelType": "source-summary",
       "source": {
         "title": "TechRadar: France set to pledge one gigawatt of nuclear power for AI",
         "url": "https://www.techradar.com/pro/france-plans-to-pledge-one-gigawatt-of-nuclear-power-for-ai"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -3473,7 +3499,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -3484,6 +3510,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Élysée, TechRadar, Global Banking & Finance (Reuters)). Confirmed: the 1 GW nuclear-for-AI pledge dates from the February 2025 AI Action Summit, and Macron's Mar. 10, 2026 nuclear summit speech said France's reactors let it open data centers and grow computing capacity. Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 08): partly confirmed, Low confidence. Partly confirmed: the Élysée's AI Action Summit document (Feb. 2025) describes a France-UAE AI campus of up to one gigawatt, but not a gigawatt of nuclear power set aside for AI; that rests on TechRadar's pre-summit report and is now attributed to it. Macron's March 2026 remark linking nuclear plants to new data centers was not found in an opened source."
         }
       ]
     },

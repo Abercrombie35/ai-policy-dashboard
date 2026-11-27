@@ -1,0 +1,193 @@
+[
+  {
+    "id": "cr-tx-gov-abbott-3",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+    "source_title": "Governor Abbott Directs TCEQ To Halt Data Center Permits",
+    "source_date": "2026-09-21",
+    "exact_quote": "Next session, Governor Abbott will work with the Legislature to eliminate any financial incentives for data centers.",
+    "corrections": [],
+    "not_confirmed": [
+      "The October 14 statement.",
+      "The specific proposal to expand cities’, counties’ and residents’ siting authority.",
+      "A commitment to codify every administrative restriction."
+    ],
+    "notes": "The official release confirms planned legislation in the next session, but the supplied Texarkana Gazette page would not open."
+  },
+  {
+    "id": "cr-tx-gov-hinojosa-1",
+    "verdict": "partly-verified",
+    "source_type": "campaign",
+    "source_url": "https://ginafortexas.com/2026/07/new-hinojosa-calls-on-greg-abbott-to-put-moratorium-on-data-centers-until-a-legislative-session-that-puts-texans-first/",
+    "source_title": "Hinojosa Calls on Greg Abbott to Put Moratorium on Data Centers Until a Legislative Session That Puts Texans First",
+    "source_date": null,
+    "exact_quote": "Creating full transparency by stopping data center companies from using NDAs.",
+    "corrections": [],
+    "not_confirmed": [
+      "The exact characterization of Abbott’s pause as “just words.”"
+    ],
+    "notes": "Her campaign confirms the immediate moratorium, legislative protections, union jobs, local participation, ending subsidies and protecting residents’ water and electricity costs."
+  },
+  {
+    "id": "cr-tx-gov-hinojosa-2",
+    "verdict": "partly-verified",
+    "source_type": "news",
+    "source_url": "https://www.investing.com/news/economy-news/texas-governorelect-says-state-will-have-laws-to-shield-citizens-from-data-centers-5006141",
+    "source_title": "Texas governor-elect says state will have laws to shield citizens from data centers",
+    "source_date": "2026-11-05",
+    "exact_quote": "We will have laws to protect Texans, and we need to stop what we are doing with data centers until we have those protections",
+    "corrections": [],
+    "not_confirmed": [
+      "The exact “It is not that I hate data centers” quotation from an original recording or transcript."
+    ],
+    "notes": "Reuters’ opened syndicated report attributes the protection-and-pause statement to a November 5 CNN interview, but the original interview was not located."
+  },
+  {
+    "id": "cr-tx-sen-paxton-1",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-investigates-meta-and-characterai-misleading-children-deceptive-ai",
+    "source_title": "Attorney General Ken Paxton Investigates Meta and Character.AI for Misleading Children with Deceptive AI-Generated Mental Health Services",
+    "source_date": "2025-08-18",
+    "exact_quote": "potentially engaging in deceptive trade practices and misleadingly marketing themselves as mental health tools.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The investigation concerned Meta AI Studio and Character.AI, and a separate official September 18, 2024 release confirms the earlier Pieces Technologies settlement over allegedly misleading healthcare-AI claims: https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-reaches-settlement-first-its-kind-healthcare-generative-ai-investigation"
+  },
+  {
+    "id": "cr-tx-sen-talarico-1",
+    "verdict": "verified",
+    "source_type": "campaign",
+    "source_url": "https://jamestalarico.com/issue/social-media-artificial-intelligence-tech/",
+    "source_title": "James Talarico on Social Media & Tech",
+    "source_date": null,
+    "exact_quote": "Protect workers from invasive AI surveillance in the workplace",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The campaign platform also calls for corporate accountability, worker participation, human review of consequential employment decisions and applying ordinary copyright law to AI companies."
+  },
+  {
+    "id": "cr-tx-sen-talarico-2",
+    "verdict": "contradicted",
+    "source_type": "campaign",
+    "source_url": "https://jamestalarico.com/issue/social-media-artificial-intelligence-tech/",
+    "source_title": "James Talarico on Social Media & Tech",
+    "source_date": null,
+    "exact_quote": "Institute a tax on the AI-attributable profits",
+    "corrections": [
+      {
+        "field": "implementation details",
+        "correct": "The current campaign platform specifies a tax on AI-attributable profits funding annual dividends to Americans and entrepreneurship grants.",
+        "evidence": "The platform’s “Establish an AI Dividend” proposal identifies the revenue source, payment frequency and two uses of the proceeds."
+      }
+    ],
+    "not_confirmed": [
+      "The tax rate, eligibility rules and administrative mechanism.",
+      "Whether these details appeared in the original statement covered by the supplied Statesman article."
+    ],
+    "notes": "The dividend proposal is confirmed, while the claim that no implementation details were given is inconsistent with the current platform."
+  },
+  {
+    "id": "ct-2024-sb2",
+    "verdict": "contradicted",
+    "source_type": "news",
+    "source_url": "https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/",
+    "source_title": "Senate Democrats pass AI bill over Lamont’s objections",
+    "source_date": "2024-04-24",
+    "exact_quote": "The surprise, 24-12 party-line vote",
+    "corrections": [
+      {
+        "field": "status date",
+        "correct": "April 24 was the Senate passage date.",
+        "evidence": "The contemporaneous report describes Senate approval and the bill’s unresolved prospects in the House, so it does not support labeling April 24 as the failure date."
+      }
+    ],
+    "not_confirmed": [
+      "The final expiration date from an official legislative history.",
+      "The final House disposition and veto threat from primary records."
+    ],
+    "notes": "The report identifies Maroney as sponsor and documents Lamont’s objections, but the official bill-history PDF repeatedly returned HTTP 502."
+  },
+  {
+    "id": "ct-2025-sb2",
+    "verdict": "not-found",
+    "source_type": "official",
+    "source_url": "https://www.cga.ct.gov/2025/cbs/S/pdf/SB-0002.pdf",
+    "source_title": "Connecticut SB 2 — An Act Concerning Artificial Intelligence",
+    "source_date": null,
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "The complete final bill text.",
+      "Senate passage and final House disposition.",
+      "The veto threat and its role in preventing House consideration.",
+      "The final failure date."
+    ],
+    "notes": "The official bill-history PDF failed to open on repeated attempts, leaving the claim’s procedural details unconfirmed."
+  },
+  {
+    "id": "ct-2026-sb5",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://portal.ct.gov/governor/-/media/office-of-the-governor/bill-notifications/2026/bill-notification-2026-11.pdf?rev=ad8315ea7f1a4afda0d85c5c1f828d33",
+    "source_title": "State of Connecticut — Governor’s 2026 bill notification",
+    "source_date": null,
+    "exact_quote": "Governor Lamont signed the following legislation of the 2026 Regular Session on May 27:",
+    "corrections": [
+      {
+        "field": "formal title",
+        "correct": "An Act Concerning Online Safety.",
+        "evidence": "The opened Ropes & Gray analysis identifies that statutory title and explains that “CART Act” is terminology developed by the legislature’s AI Caucus: https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
+      }
+    ],
+    "not_confirmed": [
+      "The complete sponsor list.",
+      "The Senate 32–4 and House 131–17 votes from opened roll calls.",
+      "Every provision and commencement date directly against the enacted statutory text."
+    ],
+    "notes": "The official notification confirms SB 5 became Public Act 26-15 through a May 27 signature, while the enacted-text and Senate roll-call PDFs returned HTTP 502."
+  },
+  {
+    "id": "ct-2027-duff-moratorium",
+    "verdict": "partly-verified",
+    "source_type": "news",
+    "source_url": "https://www.wfsb.com/2026/10/22/senate-leader-proposes-bill-pause-new-data-centers-connecticut/",
+    "source_title": "Senate leader proposes bill to pause new data centers in Connecticut",
+    "source_date": "2026-10-22",
+    "exact_quote": "pause new data centers until the state sets rules for power use, electricity costs, and environmental protections.",
+    "corrections": [],
+    "not_confirmed": [
+      "An original Duff statement explicitly assigning introduction to the 2027 session.",
+      "The proposal’s filing status as of November 26."
+    ],
+    "notes": "No primary announcement was located, but WFSB confirms Duff’s proposed pause and reports that East Lyme had passed a local ban."
+  },
+  {
+    "id": "eu-ai-act",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=LEGISSUM%3A4762484",
+    "source_title": "Rules for trustworthy artificial intelligence in the EU",
+    "source_date": null,
+    "exact_quote": "requirements and obligations around high-risk AI systems",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "EUR-Lex confirms the risk-based framework, phased application and national enforcement responsibilities, and its current summary incorporates the 2026 amendment changing high-risk implementation dates."
+  },
+  {
+    "id": "fr-nuclear-ai-pledge",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.elysee.fr/admin/upload/default/0001/17/373d6bcd8ea7f84a701c050bb9cabccf3ed95c2b.pdf",
+    "source_title": "Les actions de Paris pour l’intelligence artificielle",
+    "source_date": null,
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "A specific pledge reserving one gigawatt of nuclear generation for AI.",
+      "The exact March 2026 statement connecting nuclear plants to opening data centers and expanding computing capacity."
+    ],
+    "notes": "The Élysée’s summit document describes a France–UAE AI campus of up to one gigawatt, which establishes planned campus capacity but does not by itself establish a dedicated one-gigawatt nuclear allocation."
+  }
+]
