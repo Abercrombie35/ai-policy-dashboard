@@ -5,41 +5,40 @@
   "checks": {
     "ca-2024-sb1047": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Multiple outlets confirm Wiener's SB 1047 would have imposed safety testing and AG-enforced liability on the largest AI developers and was vetoed by Newsom on Sept. 29, 2024.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Confirmed in Gov. Newsom's veto message of Sept. 29, 2024 (\"I am returning Senate Bill 1047 without my signature\"); the governor's legislative update of the same day names Sen. Scott Wiener (D) as author.",
       "sources": [
         {
-          "title": "TechCrunch: Gov. Newsom vetoes California's controversial AI bill SB 1047",
-          "url": "https://techcrunch.com/2024/09/29/gov-newsom-vetoes-californias-controversial-ai-bill-sb-1047"
+          "title": "Governor Newsom’s veto message for Senate Bill 1047",
+          "url": "https://www.gov.ca.gov/wp-content/uploads/2024/09/SB-1047-Veto-Message.pdf"
         },
         {
-          "title": "PBS NewsHour: Newsom vetoes bill to create AI safety measures, saying it could hinder innovation",
-          "url": "https://www.pbs.org/newshour/nation/newsom-vetoes-bill-to-create-ai-safety-measures-saying-it-could-hinder-innovation-in-california"
-        },
-        {
-          "title": "TechCrunch: California AI bill SB 1047 aims to prevent AI disasters",
-          "url": "https://techcrunch.com/2024/08/15/california-ai-bill-sb-1047-aims-to-prevent-ai-disasters-but-silicon-valley-warns-it-will-cause-one"
+          "title": "Office of the Governor of California: Legislative update 9.29.24",
+          "url": "https://www.gov.ca.gov/2024/09/29/governor-newsom-issues-legislative-update-9-29-24/"
         }
-      ]
+      ],
+      "quote": "I am returning Senate Bill 1047 without my signature.",
+      "level": "high"
     },
     "ca-2025-ab1064": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "StateScoop and Tech Policy Press confirm Bauer-Kahan's AB 1064, which would have restricted companion chatbots for minors, was vetoed by Newsom on Oct. 13, 2025.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Confirmed in the governor's legislative update of Oct. 13, 2025, which lists AB 1064 by Assemblymember Rebecca Bauer-Kahan (D) among vetoed bills; author added. The bill text and veto message would not open, so the precise restrictions are not confirmed and confidence is Medium.",
       "sources": [
         {
-          "title": "StateScoop: Newsom vetoes AI safety bill aimed at companion chatbots",
-          "url": "https://statescoop.com/newsom-vetoes-ai-safety-bill-aimed-at-companion-chatbots/"
-        },
-        {
-          "title": "Tech Policy Press: Newsom sides with tech lobby in AI companion standoff",
-          "url": "https://techpolicy.press/newsom-sides-with-tech-lobby-in-ai-companion-standoff"
-        },
-        {
-          "title": "CalMatters Digital Democracy: AB 1064",
-          "url": "https://calmatters.digitaldemocracy.org/bills/ca_202520260ab1064"
+          "title": "Governor Newsom issues legislative update 10.13.25",
+          "url": "https://www.gov.ca.gov/2025/10/13/governor-newsom-issues-legislative-update-10-13-25/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The precise restrictions and exceptions in the final bill."
+      ],
+      "quote": "AB 1064 by Assemblymember Rebecca Bauer-Kahan (D-Orinda) – Leading Ethical AI Development (LEAD) for Kids Act.",
+      "level": "medium"
     },
     "ca-2025-ab316": {
       "result": "confirmed",
@@ -99,23 +98,26 @@
       ]
     },
     "ca-2025-sb243": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Padilla's office and TechCrunch confirm SB 243 was signed Oct. 13, 2025 as the first companion-chatbot safeguards law, with AI disclosure, minor protections and suicide-prevention protocols, effective Jan. 1, 2026.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Corrected: New York enacted AI companion safeguards first (signed May 9, 2025), so \"first state law\" was removed. The governor's Oct. 13, 2025 release confirms the signing, the disclosure that interactions are AI-generated and break reminders for minors, and names Sen. Steve Padilla (D) as author. The Jan. 1, 2026 effective date is not in the opened sources, so Medium.",
       "sources": [
         {
-          "title": "Sen. Steve Padilla (SD18): First-in-nation AI chatbot safeguards signed into law",
-          "url": "https://sd18.senate.ca.gov/news/first-nation-ai-chatbot-safeguards-signed-law"
+          "title": "Governor Newsom signs bills to further strengthen California’s leadership in protecting children online",
+          "url": "https://www.gov.ca.gov/2025/10/13/governor-newsom-signs-bills-to-further-strengthen-californias-leadership-in-protecting-children-online/"
         },
         {
-          "title": "TechCrunch: California becomes first state to regulate AI companion chatbots",
-          "url": "https://techcrunch.com/2025/10/13/california-becomes-first-state-to-regulate-ai-companion-chatbots"
-        },
-        {
-          "title": "LegiScan: CA SB243 chaptered text",
-          "url": "https://legiscan.com/CA/text/SB243/"
+          "title": "Governor of New York: Governor Hochul signs legislation establishing AI companion safeguards (May 9, 2025)",
+          "url": "https://www.governor.ny.gov/news/governor-hochul-signs-legislation-expanding-historic-empire-ai-consortium-and-establishing"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The Jan. 1, 2026 effective date and any later implementation deadlines."
+      ],
+      "quote": "Platforms must also disclose that interactions are artificially generated, and minors must be provided break reminders",
+      "level": "medium"
     },
     "ca-2025-sb524": {
       "result": "confirmed",
@@ -138,117 +140,113 @@
     },
     "ca-2025-sb53": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The governor's office and press coverage confirm SB 53 was signed Sept. 29, 2025 with transparency, OES incident reporting, whistleblower and CalCompute provisions, effective Jan. 1, 2026 (CalCompute's cost report is due in early 2027).",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Confirmed in the governor's Sept. 29, 2025 signing release: public frontier safety frameworks, incident reporting to the Office of Emergency Services, whistleblower protections and the CalCompute consortium. The Jan. 1, 2026 effective date is not in the opened sources, so Medium.",
       "sources": [
         {
-          "title": "Governor's office: Governor Newsom signs SB 53",
+          "title": "Governor Newsom signs SB 53, advancing California’s world-leading artificial intelligence industry",
           "url": "https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/"
-        },
-        {
-          "title": "Sen. Scott Wiener (SD11): Press release on SB 53 signing",
-          "url": "https://sd11.senate.ca.gov/node/1398"
-        },
-        {
-          "title": "Fortune: California landmark AI safety law SB 53 signed, protects whistleblowers",
-          "url": "https://fortune.com/2025/09/30/california-landmark-ai-safety-law-sb-53-newsom-signs-silicon-valley-protect-whistleblowers/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The Jan. 1, 2026 effective date and any separate implementation deadlines."
+      ],
+      "quote": "Creates a new mechanism for frontier AI companies and the public to report potential critical safety incidents to California’s Office of Emergency Services.",
+      "level": "medium"
     },
     "ca-2025-sb57": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Bill trackers and committee analyses show Padilla's SB 57 began as a data center tariff bill and was chaptered in Oct. 2025 (Ch. 647) as a PUC study of data center cost shifts due by 2027. Chaptering date added: Oct. 11, 2025 (Chapter 647).",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Confirmed in Sen. Steve Padilla's Oct. 11, 2025 release: signed into law, requiring a study of whether data center load growth shifts costs to other ratepayers, due by 2027. The chapter number (647) and how the bill was narrowed from a tariff rest on CalMatters reporting, so Medium.",
       "sources": [
         {
-          "title": "LegiScan: Bill Text CA SB57, 2025-2026 Regular Session, Chaptered",
-          "url": "https://legiscan.com/CA/text/SB57/2025"
-        },
-        {
-          "title": "CalMatters Digital Democracy: SB 57",
-          "url": "https://calmatters.digitaldemocracy.org/bills/ca_202520260sb57"
-        },
-        {
-          "title": "LAist: Big Tech blocks California data center rules, leaving only a study requirement",
-          "url": "https://laist.com/news/climate-environment/big-tech-blocks-california-data-center-rules-leaving-only-a-study-requirement"
+          "title": "Legislation to Protect California Ratepayers from Paying for Data Centers’ Energy Costs Signed into Law",
+          "url": "https://sd18.senate.ca.gov/news/legislation-protect-california-ratepayers-paying-data-centers-energy-costs-signed-law"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "Chapter number 647.",
+        "The exact statutory reporting deadline.",
+        "The amendment history showing how the original tariff proposal was narrowed."
+      ],
+      "quote": "conduct a study on the extent load growth from data centers results in cost shifts to other ratepayers by 2027.",
+      "level": "medium"
     },
     "ca-2025-sb7": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Law-firm and Bloomberg coverage confirm McNerney's SB 7 was vetoed Oct. 13, 2025 and that a narrowed successor, SB 947, was signed Sept. 30, 2026.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Confirmed in the governor's legislative update of Oct. 13, 2025, which lists SB 7 by Sen. Jerry McNerney (D) among vetoed bills; author added. McNerney's Sept. 30, 2026 release confirms the narrower SB 947 was enacted.",
       "sources": [
         {
-          "title": "Bloomberg Law: California Governor Vetoes Bill on AI Use in Worker Discipline",
-          "url": "https://news.bloomberglaw.com/us-law-week/california-governor-vetoes-bill-on-ai-use-in-worker-discipline"
+          "title": "Governor Newsom issues legislative update 10.13.25",
+          "url": "https://www.gov.ca.gov/2025/10/13/governor-newsom-issues-legislative-update-10-13-25/"
         },
         {
-          "title": "Fisher Phillips: California Governor Vetoes No Robo Bosses Act",
-          "url": "https://www.fisherphillips.com/en/insights/insights/california-governor-vetoes-no-robo-bosses-act"
-        },
-        {
-          "title": "Akin Gump: California Enacts Limits on Automated Decision Systems in Employment Discipline, SB 947",
-          "url": "https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/california-enacts-limits-on-automated-decision-systems-in-employment-discipline-sb-947"
+          "title": "Sen. Jerry McNerney: Newsom signs No Robo Bosses Act of 2026 (Sept. 30, 2026)",
+          "url": "https://sd05.senate.ca.gov/news/newsom-signs-mcnerneys-no-robo-bosses-act-2026-requiring-human-oversight-ai-workplace"
         }
-      ]
+      ],
+      "quote": "SB 7 by Senator Jerry McNerney (D-Pleasanton) – Employment: automated decision systems.",
+      "level": "high"
     },
     "ca-2026-ab1331": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "AB 1331 was signed Sept. 30, 2026, but its scope is narrow: it bars surveillance tools, including AI tools, in bathrooms and similar private spaces rather than limiting AI workplace surveillance generally.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Confirmed in the governor's Sept. 30, 2026 signing release, which names Assemblymember Sade Elhawary (D) as author (added) and describes the workplace surveillance limits, including restrictions on surveillance in workplace bathrooms.",
       "sources": [
         {
-          "title": "Governor's office: California's nation-leading AI framework just got stronger (Sept. 30, 2026)",
+          "title": "California’s nation-leading AI framework just got stronger, Governor Newsom signs more first-in-the-nation worker protections and more",
           "url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/"
-        },
-        {
-          "title": "Transparency Coalition: Gov. Newsom wraps California term by enacting 11 more laws on AI safety",
-          "url": "https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety"
-        },
-        {
-          "title": "CalMatters: On AI, Newsom gives labor only some of what it demanded",
-          "url": "https://calmatters.org/economy/technology/2026/09/on-ai-newsom-gives-labor-only-some-of-what-it-demanded/"
         }
-      ]
+      ],
+      "quote": "AB 1331 by Assemblymember Sade Elhawary (D-South Los Angeles)",
+      "level": "high"
     },
     "ca-2026-ab1577": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The governor's office lists AB 1577 (Bauer-Kahan) among the bills signed Sept. 21, 2026; it requires data centers to report energy use to the Energy Commission and estimated energy use to local agencies at permitting (sources differ on monthly vs. annual reporting). Author added: Asm. Rebecca Bauer-Kahan (D).",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Confirmed in the governor's Sept. 21, 2026 signing release and the Senate's final 2026 legislative summary: Chapter 434 requires data centers to report energy use and operating information to the Energy Commission and permitting agencies.",
       "sources": [
         {
-          "title": "Governor's office: Newsom signs most comprehensive data center laws in the nation",
-          "url": "https://gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use"
+          "title": "Governor Newsom signs most comprehensive data center laws in the nation, providing communities more control on water, electricity, and land use",
+          "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
         },
         {
-          "title": "Utility Dive: California tightens oversight of data center energy use, grid costs",
-          "url": "https://www.utilitydive.com/news/california-tightens-oversight-of-data-center-energy-use-grid-costs/831037/"
-        },
-        {
-          "title": "Mayer Brown: California's governor signs nation's most comprehensive data center laws",
-          "url": "https://www.mayerbrown.com/en/insights/publications/2026/09/californias-governor-signs-nations-most-comprehensive-data-center-laws-reshaping-regulation-of-energy-water-and-land-use"
+          "title": "California Senate: Summary of significant legislation, 2026 (final)",
+          "url": "https://sfa.senate.ca.gov/system/files/2026-11/sig-leg-2026-final.pdf"
         }
-      ]
+      ],
+      "quote": "AB 1577 by Assemblymember Rebecca Bauer-Kahan (D-Orinda). Data centers: reporting",
+      "level": "high"
     },
     "ca-2026-ab1883": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Hunton, Bloomberg and CalMatters confirm Bryan's AB 1883, barring AI tools that infer workers' emotions or collect neural data, was signed Sept. 30, 2026.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Partly confirmed: the governor's Sept. 30, 2026 signing release confirms the law on workplace surveillance tools and names Assemblymember Isaac Bryan (D) as author (added). The limits on neural data and on predicting workers' emotional states could not be checked: the bill text would not open.",
       "sources": [
         {
-          "title": "Hunton: California enacts new restrictions on AI-based employee monitoring",
-          "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-enacts-new-restrictions-on-ai-based-employee-monitoring"
-        },
-        {
-          "title": "Bloomberg Government: California Bans Using AI to Monitor Workers' Brains, Emotions",
-          "url": "https://news.bgov.com/daily-labor-report/newsom-signs-ban-on-using-ai-to-monitor-worker-brain-activity"
-        },
-        {
-          "title": "CalMatters: On AI, Newsom gives labor only some of what it demanded",
-          "url": "https://calmatters.org/economy/technology/2026/09/on-ai-newsom-gives-labor-only-some-of-what-it-demanded/"
+          "title": "California’s nation-leading AI framework just got stronger, Governor Newsom signs more first-in-the-nation worker protections and more",
+          "url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The precise limits on collecting neural data.",
+        "The precise limits on predicting workers' emotional states."
+      ],
+      "quote": "AB 1883 by Assemblymember Isaac Bryan (D-Los Angeles) — Workplace surveillance tools.",
+      "level": "low"
     },
     "ca-2026-ab2383": {
       "result": "confirmed",
@@ -2368,23 +2366,19 @@
       ]
     },
     "pl-d-data-centers#1": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Date corrected from October to about Sept. 3, 2026, when NOTUS published the piece. Its account of Jeffries' skepticism of a ban and his focus on electricity bills is confirmed.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Confirmed in the NOTUS report (Sept. 3, 2026): \"Jeffries and other House Democratic leaders remain skeptical of a ban\", and it quotes Jeffries on rising electricity and water bills. No transcript of his remarks was found, so the evidence rests on news reporting.",
       "sources": [
         {
-          "title": "NOTUS: A Democratic Reckoning on Data Centers Is Coming",
-          "url": "https://notus.org/congress/jeffries-data-centers-progressives-moratorium"
-        },
-        {
-          "title": "Political Wire: A Democratic reckoning on data centers is coming",
-          "url": "https://politicalwire.com/2026/09/03/a-democratic-reckoning-on-data-centers-is-coming/"
-        },
-        {
-          "title": "E&E News: Data center moratorium still has few takers on Capitol Hill",
-          "url": "https://www.eenews.net/articles/data-center-moratorium-still-has-few-takers-on-capitol-hill/"
+          "title": "A Democratic Reckoning on Data Centers Is Coming",
+          "url": "https://www.notus.org/congress/jeffries-data-centers-progressives-moratorium"
         }
-      ]
+      ],
+      "quote": "Jeffries and other House Democratic leaders remain skeptical of a ban.",
+      "level": "medium"
     },
     "pl-d-data-centers#2": {
       "result": "corrected",
@@ -2428,23 +2422,23 @@
       ]
     },
     "pl-d-preemption#0": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: Jeffries made the remark in early December 2025 (reported Dec. 5) about the Republican push in Congress to preempt state AI laws, not about Trump's proposed executive order. The quote is confirmed.",
+      "result": "not-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "ChatGPT opened The American Prospect article this evidence cited and the quote is not in it. Earlier search results attribute the remark to Jeffries in a Dec. 5, 2025 Demand Progress release (also reported by Common Dreams), which is now cited instead, but neither that page nor a transcript or recording has been opened, so the quote is not confirmed.",
       "sources": [
         {
-          "title": "Demand Progress: Poll: voters want Jeffries, Schumer to fight AI deregulation",
-          "url": "https://www.demandprogress.org/poll-voters-want-jeffries-schumer-to-fight-ai-deregulation"
-        },
-        {
-          "title": "The American Prospect: Democratic Voters Are Clamoring for AI Regulation. Their Leaders Aren't Interested.",
+          "title": "Democratic Voters Are Clamoring for AI Regulation. Their Leaders Aren’t Interested.",
           "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
-        },
-        {
-          "title": "Common Dreams: Jeffries avoids stance on Republican push to ban state AI guardrails",
-          "url": "https://www.commondreams.org/news/artificial-intelligence-regulation"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The quotation attributed to Jeffries.",
+        "The Dec. 5, 2025 date.",
+        "The question and context in which he declined to take a position."
+      ],
+      "level": "low"
     },
     "pl-d-preemption#1": {
       "result": "confirmed",
@@ -3359,22 +3353,30 @@
     },
     "us-ratepayer-protection-act": {
       "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Corrected: the bill that passed the House 417-3 on Sept. 16, 2026 is H.R. 9340 by Reps. Gabe Evans (R) and Kathy Castor (D); Sen. Jon Husted (R) sponsors the Senate companion S. 5028. It was listed as Husted's bill. Its content and the Senate block are confirmed.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "05",
+      "note": "Confirmed on official records: the House passed H.R. 9340 417-3 on Sept. 16, 2026 (House Clerk), and Senate cloture on the motion to proceed failed 57-43 on Sept. 30 (Senate roll call 254). Rep. Gabe Evans's release confirms Rep. Kathy Castor's role, Sen. Jon Husted's Senate companion and the cost-recovery standards. Corrected: the Senate companion's number (S. 5028), the Sept. 17 unanimous consent attempt and the \"toothless messaging bill\" quote could not be confirmed and were removed.",
       "sources": [
         {
-          "title": "Legisletter: H.R. 9340: Ratepayer Protection Act",
-          "url": "https://legisletter.org/bill/hr9340-ratepayer-protection-act"
+          "title": "U.S. Senate Roll Call Vote 254, 119th Congress, 2nd Session",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm"
         },
         {
-          "title": "Roll Call: Voluntary ratepayer protection bill blocked in Senate again",
-          "url": "https://rollcall.com/2026/09/30/voluntary-ratepayer-protection-bill-blocked-in-senate-again/"
+          "title": "Office of the Clerk, U.S. House: Roll call 312, H.R. 9340 (Sept. 16, 2026)",
+          "url": "https://clerk.house.gov/Votes/2026312?BillNum=H.R.9340"
         },
         {
-          "title": "NACo: U.S. House passes the Ratepayer Protection Act",
-          "url": "https://www.naco.org/news/us-house-passes-ratepayer-protection-act"
+          "title": "Rep. Gabe Evans: Bipartisan Ratepayer Protection Act passes House",
+          "url": "https://gabeevans.house.gov/media/press-releases/congressman-gabe-evans-bipartisan-ratepayer-protection-act-passes-house"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The Senate companion's bill number (S. 5028).",
+        "Any Senate action after Sept. 30, 2026."
+      ],
+      "quote": "Cloture on the Motion to Proceed Rejected",
+      "level": "high"
     },
     "us-s3062-guard-act": {
       "result": "confirmed",
@@ -3798,6 +3800,13 @@
     },
     {
       "batch": "04",
+      "date": "2026-11-27",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "05",
       "date": "2026-11-27",
       "claims": 12,
       "tool": "ChatGPT (web browsing)",
