@@ -791,3 +791,11 @@
 .people-page .person-party { font-family: inherit; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; vertical-align: middle; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--research-control); background: var(--research-card); }
 .people-page h2 .person-party { margin-left: 8px; }
 .people-page .category-tag { color: var(--research-ink); background: var(--research-soft); border-color: var(--research-rule); }
+
+/* Conditional scenarios (AIPD-503) */
+.scenario-card { margin-bottom: 20px; }
+.scenario-card h3 { margin: 10px 0 6px; }
+.scenario-card h4 { margin: 12px 0 4px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--research-muted); }
+.scenario-projection { font-size: 1.02rem; line-height: 1.55; }
+.scenario-evidence { line-height: 1.6; }
+.scenarios-page .category-tag { color: var(--research-ink); background: var(--research-soft); border-color: var(--research-rule); }

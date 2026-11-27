@@ -1,5 +1,6 @@
 import React from 'react';
 import { people, recordsForPerson } from '../lib/people';
+import { scenarios, senateSelection } from '../lib/data';
 import { codebook, races, bills, results, elections, filterDrafts, jurisdictionKey, placeOf, checkOf, verification, voterPriorities, publicOpinion, datasetUpdated, countRecords, raceById, itemsForRace, trackOf, domainsOf, partyLines, researchRecords, policyQuestions, categoriesOf } from '../lib/data';
 import { allCandidates, deviationCell } from '../lib/analysis';
 import { useDrafts } from '../lib/drafts';
@@ -136,6 +137,9 @@ function fullJson(includeDrafts) {
       publicOpinion,
       // How each claim was checked against other published reports.
       verification,
+      // Conditional scenarios: labelled projections with their assumptions and evidence ids.
+      scenarios: scenarios.scenarios,
+      senateRaceSelection: senateSelection,
     },
     null,
     2,

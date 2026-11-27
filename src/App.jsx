@@ -11,6 +11,7 @@ import MethodsView from './pages/MethodsView';
 import DataView from './pages/DataView';
 import AnalysisPage from './pages/AnalysisPage';
 import PeopleView, { PersonPage } from './pages/PeopleView';
+import ScenariosView from './pages/ScenariosView';
 import ProposalsPanel from './components/ProposalsPanel';
 import ErrorBoundary from './components/ErrorBoundary';
 import { APP_VERSION } from './version';
@@ -169,7 +170,7 @@ function MapPage({ selectedState, selectedCountry, race = null }) {
 function App() {
   const { page, params } = useHashRoute();
   const { includeDrafts, setIncludeDrafts } = useDrafts();
-  const activeNav = ['state', 'country'].includes(page) ? 'map' : page === 'person' ? 'people' : page;
+  const activeNav = ['state', 'country'].includes(page) ? 'map' : page === 'person' ? 'people' : page === 'scenarios' ? 'analysis' : page;
   const selectedState = page === 'state' && geo.states[params[0]?.toUpperCase()] ? params[0].toUpperCase() : null;
   const selectedCountry = page === 'country' && europeGeo.countries[params[0]?.toUpperCase()] ? params[0].toUpperCase() : null;
 
@@ -182,6 +183,7 @@ function App() {
     case 'methods': content = <MethodsView />; break;
     case 'data': content = <DataView />; break;
     case 'people': content = <PeopleView />; break;
+    case 'scenarios': content = <ScenariosView />; break;
     case 'person': content = <PersonPage id={params[0]} />; break;
     default: {
       // Race pages: #/state/MI/<race-id> in the U.S., #/country/FR/<race-id> abroad.
