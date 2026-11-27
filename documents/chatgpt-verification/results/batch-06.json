@@ -1,0 +1,180 @@
+[
+  {
+    "id": "ca-2026-ab2383",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/",
+    "source_title": "Governor Newsom signs most comprehensive data center laws in the nation, providing communities more control on water, electricity, and land use",
+    "source_date": "2026-09-21",
+    "exact_quote": "preventing cost shifts to low-income customers",
+    "corrections": [],
+    "not_confirmed": [
+      "The complete list of wildfire, electrification, environmental and societal costs in the final AB 2383 text."
+    ],
+    "notes": "The signing announcement and Senate’s final legislative summary confirm enactment and Zbur’s authorship, but the CPUC presentation would not open because it exceeded the retrieval size limit: https://sfa.senate.ca.gov/system/files/2026-11/sig-leg-2026-final.pdf"
+  },
+  {
+    "id": "ca-2026-sb1000",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+    "source_title": "California’s nation-leading AI framework just got stronger, Governor Newsom signs more first-in-the-nation worker protections and more",
+    "source_date": "2026-09-30",
+    "exact_quote": "SB 1000 by Senator Josh Becker (D‑Menlo Park) — California AI Transparency Act.",
+    "corrections": [
+      {
+        "field": "author",
+        "correct": "Senator Josh Becker, Democrat.",
+        "evidence": "The Governor’s signing announcement names Becker."
+      }
+    ],
+    "not_confirmed": [
+      "The precise changes to disclosure and provenance requirements in the final statutory text."
+    ],
+    "notes": "The official announcement confirms signing on September 30 and identifies the law as the California AI Transparency Act."
+  },
+  {
+    "id": "ca-2026-sb887",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://sd18.senate.ca.gov/news/nation-leading-data-center-regulations-signed-law",
+    "source_title": "Nation-Leading Data Center Regulations Signed Into Law",
+    "source_date": "2026-09-21",
+    "exact_quote": "SB 887 passed the Senate 30 to 8 and the Assembly 59 to 11.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "Padilla’s announcement and the Governor’s signing release confirm environmental-review protections and the package’s water-use disclosure and developer-funded water infrastructure requirements: https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
+  },
+  {
+    "id": "ca-2026-sb947",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://sd05.senate.ca.gov/news/newsom-signs-mcnerneys-no-robo-bosses-act-2026-requiring-human-oversight-ai-workplace",
+    "source_title": "Newsom Signs McNerney’s No Robo Bosses Act of 2026 Requiring Human Oversight of AI in the Workplace",
+    "source_date": "2026-09-30",
+    "exact_quote": "SB 947 bars California employers from relying solely on AI systems, known as automated decision-making systems (ADS), to fire or discipline workers.",
+    "corrections": [
+      {
+        "field": "author",
+        "correct": "Senator Jerry McNerney, Democrat.",
+        "evidence": "McNerney’s official announcement identifies him as the bill’s author."
+      }
+    ],
+    "not_confirmed": [],
+    "notes": "The law requires human oversight and verification when automated systems assist termination and disciplinary decisions."
+  },
+  {
+    "id": "cr-ca-gov-becerra-1",
+    "verdict": "partly-verified",
+    "source_type": "campaign",
+    "source_url": "https://www.xavierbecerra2026.com/priorities/ai/",
+    "source_title": "Xavier Becerra’s AI priorities",
+    "source_date": null,
+    "exact_quote": "every AI system deployed by a state agency will be subject to an independent audit.",
+    "corrections": [],
+    "not_confirmed": [
+      "The May 2026 release date."
+    ],
+    "notes": "The campaign page contains eleven numbered proposals and confirms full operational funding for CalCompute, independent state-agency audits, enforcement, employment-impact tracking and child protection, but displays no publication date."
+  },
+  {
+    "id": "cr-ca-gov-hilton-1",
+    "verdict": "not-found",
+    "source_type": "campaign",
+    "source_url": "https://stevehiltonforgovernor.com/policies/get-big-tech-out-of-the-classroom",
+    "source_title": "Get Big Tech Out of the Classroom — Steve Hilton for Governor",
+    "source_date": null,
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "A primary AI plan containing the quoted opposition to sweeping, preemptive regulation.",
+      "The claimed restriction of new rules to child safety, fraud and intellectual property.",
+      "The August 15, 2026 date."
+    ],
+    "notes": "The supplied TechTimes article returned HTTP 403, and the campaign page opened without readable text, leaving the specific plan unverified."
+  },
+  {
+    "id": "cr-ct-gov-fazio-2",
+    "verdict": "partly-verified",
+    "source_type": "news",
+    "source_url": "https://www.wfsb.com/2026/09/03/fazio-calls-end-tax-breaks-large-data-centers/",
+    "source_title": "Fazio calls for end to tax breaks for large data centers",
+    "source_date": "2026-09-03",
+    "exact_quote": "We want guardrails on the industry, and to require they bring their own power if they are to plug into the grid.",
+    "corrections": [],
+    "not_confirmed": [
+      "Whether contracting for electricity would satisfy Fazio’s proposed requirement.",
+      "An official campaign statement or transcript containing the complete position."
+    ],
+    "notes": "No primary statement was located, so WFSB’s direct quotation and WSHU’s account of Fazio’s opposition to a ban provide the available evidence: https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont"
+  },
+  {
+    "id": "cr-ct-gov-lamont-1",
+    "verdict": "partly-verified",
+    "source_type": "news",
+    "source_url": "https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/",
+    "source_title": "Senate Democrats pass AI bill over Lamont’s objections",
+    "source_date": "2024-04-24",
+    "exact_quote": "The surprise, 24-12 party-line vote",
+    "corrections": [],
+    "not_confirmed": [
+      "A primary recording or written statement of Lamont’s veto threat.",
+      "The final House disposition from the official bill history."
+    ],
+    "notes": "The contemporaneous report confirms the Senate vote and Lamont’s objections, but the official 2024 bill-history pages failed to open."
+  },
+  {
+    "id": "cr-ct-gov-lamont-2",
+    "verdict": "not-found",
+    "source_type": "news",
+    "source_url": "https://ctnewsjunkie.com/2025/05/14/appropriations-committee-advances-ai-regulation-bill-as-federal-preemption-looms/",
+    "source_title": "Appropriations Committee Advances AI Regulation Bill as Federal Preemption Looms",
+    "source_date": null,
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "The May 14, 2025 statement.",
+      "Lamont’s specific references to Congress and the Federal Trade Commission.",
+      "The complete context of his position on the revised 2025 SB 2."
+    ],
+    "notes": "The supplied article failed to open on repeated attempts, and no primary statement establishing the specific claim was located."
+  },
+  {
+    "id": "cr-ct-gov-lamont-3",
+    "verdict": "verified",
+    "source_type": "transcript",
+    "source_url": "https://portal.ct.gov/governor/news/speeches/governor-lamont-2026-state-of-the-state-address",
+    "source_title": "Governor Lamont’s 2026 State of the State Address",
+    "source_date": null,
+    "exact_quote": "We extended our Millstone nuclear agreement and said slow down new data centers, unless they add more generation as well.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The Governor’s official transcript confirms the quotation in his discussion of electricity supply, demand and rates."
+  },
+  {
+    "id": "cr-ct-gov-lamont-4",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://portal.ct.gov/governor/-/media/office-of-the-governor/bill-notifications/2026/bill-notification-2026-11.pdf?rev=ad8315ea7f1a4afda0d85c5c1f828d33",
+    "source_title": "State of Connecticut — Governor’s 2026 bill notification",
+    "source_date": null,
+    "exact_quote": "Governor Lamont signed the following legislation of the 2026 Regular Session on May 27:",
+    "corrections": [],
+    "not_confirmed": [
+      "The final provisions concerning automated hiring, consumer chatbots, frontier developers, whistleblowers, provenance and minors."
+    ],
+    "notes": "The official notification lists SB 5 as Public Act 26-15 under May 27 signatures, but repeated attempts to open the enacted statutory PDF returned HTTP 502."
+  },
+  {
+    "id": "cr-ct-gov-lamont-5",
+    "verdict": "verified",
+    "source_type": "news",
+    "source_url": "https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont",
+    "source_title": "Lamont says no to big data centers in CT",
+    "source_date": "2026-09-07",
+    "exact_quote": "Governor Ned Lamont said he is open to building IT infrastructure in Connecticut, but there is no place for massive data centers in the state.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "No primary transcript was located, so WSHU’s report supplies the evidence and adds that self-supplied water and electricity proposals could receive case-by-case review, with PURA review and ultimate local decision-making."
+  }
+]

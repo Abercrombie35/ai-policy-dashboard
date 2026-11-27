@@ -351,8 +351,8 @@
           "track": "said",
           "summary": "Asked about the Republican push in Congress to preempt state AI laws, Jeffries declined to take a side: \"That conversation hasn't been brought to the leadership level yet.\"",
           "source": {
-            "title": "The American Prospect: Democratic voters are clamoring for AI regulation. Their leaders aren't interested.",
-            "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
+            "title": "Demand Progress: Poll: voters want Jeffries, Schumer to fight AI deregulation (Dec. 5, 2025)",
+            "url": "https://www.demandprogress.org/poll-voters-want-jeffries-schumer-to-fight-ai-deregulation"
           }
         },
         {
@@ -370,9 +370,9 @@
         "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
       },
       "publishedDate": "2025-12-19",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
-      "version": 3,
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -388,6 +388,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Evidence checked a second time 2026-11-24 (1 corrected, 1 confirmed). All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 05): evidence rechecked. Not all evidence confirmed; Low confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -411,7 +416,7 @@
         {
           "date": "2026-09-03",
           "track": "said",
-          "summary": "Jeffries and other House Democratic leaders remain skeptical of a data center ban; Jeffries framed the issue around electricity bills.",
+          "summary": "Jeffries and other House Democratic leaders remain skeptical of a data center ban (NOTUS); Jeffries framed the issue around rising electricity and water bills.",
           "source": {
             "title": "NOTUS: A Democratic reckoning on data centers is coming",
             "url": "https://www.notus.org/congress/jeffries-data-centers-progressives-moratorium"
@@ -434,7 +439,7 @@
       "publishedDate": "2026-11-06",
       "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -455,6 +460,11 @@
           "version": 4,
           "date": "2026-11-27",
           "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 05): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },

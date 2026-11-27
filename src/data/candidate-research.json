@@ -1312,8 +1312,8 @@
         "url": "https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/"
       },
       "publishedDate": "2024-04-24",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -1332,7 +1332,7 @@
       "categories": [
         "ai-comprehensive"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1343,6 +1343,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (CT Mirror, Connecticut Public, Fortune). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): partly confirmed, Low confidence. Partly confirmed: CT Mirror's report of Apr. 24, 2024 confirms the 24-12 party-line Senate vote and Lamont's objections. His veto threat in his own words and the bill's end in the House could not be checked on the official record (the 2024 bill history would not open)."
         }
       ]
     },
@@ -1358,8 +1363,8 @@
         "url": "https://ctnewsjunkie.com/2025/05/14/appropriations-committee-advances-ai-regulation-bill-as-federal-preemption-looms/"
       },
       "publishedDate": "2025-05-14",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -1381,7 +1386,7 @@
       "categories": [
         "ai-preemption"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1397,6 +1402,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (CT News Junkie, CT Mirror, News From The States). The cited May 14, 2025 CT News Junkie article reports Lamont's view that AI regulation belongs with Congress and the FTC; it ties that view to his 2024 veto threat and says he had not yet taken a position on the amended 2025 bill. Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): not confirmed, Low confidence. Not confirmed: the CT News Junkie article would not open on repeated attempts, and no statement of his was found saying AI regulation belongs to Congress and the Federal Trade Commission."
         }
       ]
     },
@@ -1408,12 +1418,12 @@
       "labelType": "source-summary",
       "text": "In his February State of the State address, said Connecticut would \"slow down new data centers, unless they add more generation as well.\"",
       "source": {
-        "title": "WSHU: CT continues debate over AI data center regulations",
-        "url": "https://www.wshu.org/connecticut-news/2026-02-27/ct-ai-data-centers-regulations"
+        "title": "Office of the Governor of Connecticut: 2026 State of the State address (transcript)",
+        "url": "https://portal.ct.gov/governor/news/speeches/governor-lamont-2026-state-of-the-state-address"
       },
       "publishedDate": "2026-02",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1434,7 +1444,7 @@
       "categories": [
         "dc-ratepayer"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1445,6 +1455,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (Hartford Business Journal, WSHU, CT Hospital Association). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): confirmed, High confidence. Confirmed in the governor's official transcript of his 2026 State of the State address: \"We extended our Millstone nuclear agreement and said slow down new data centers, unless they add more generation as well.\" The address opens the session, which the state constitution convenes in February in even years. The transcript is now the source."
         }
       ]
     },
@@ -1460,7 +1475,7 @@
         "url": "https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
       },
       "publishedDate": "2026-05-27",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -1490,7 +1505,7 @@
         "ai-frontier-safety",
         "ai-child-safety"
       ],
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -1511,6 +1526,11 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Faegre Drinker, Connecticut General Assembly, Morrison Foerster). Law-firm summaries confirm that SB 5 (PA 26-15), signed May 27, 2026, protects whistleblowers at frontier developers and sets generative AI provenance requirements, alongside its hiring, chatbot and youth-safety parts. Medium confidence."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): confirmed, Medium confidence. Confirmed in the governor's official bill notification, which lists SB 5 as Public Act 26-15 among bills signed May 27, 2026. The enacted text would not open, so the law's provisions rest on the Ropes & Gray summary and confidence is Medium."
         }
       ]
     },
@@ -1520,13 +1540,13 @@
       "candidateId": "ned-lamont",
       "kind": "statement",
       "labelType": "source-summary",
-      "text": "Said Connecticut is open to IT infrastructure but there is \"no place\" for massive data centers in the state, because they would raise residents' electric rates; proposals should first be reviewed by the Public Utilities Regulatory Authority.",
+      "text": "Said Connecticut is open to IT infrastructure but there is \"no place\" for massive data centers in the state, because they would raise residents' electric rates; proposals that bring their own water and electricity could be considered case by case, after review by the Public Utilities Regulatory Authority, with towns deciding.",
       "source": {
         "title": "WSHU: Lamont says no to big data centers in CT",
         "url": "https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont"
       },
       "publishedDate": "2026-09-07",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -1551,7 +1571,7 @@
         "dc-moratorium",
         "dc-ratepayer"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1562,6 +1582,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (WSHU, Hartford Business Journal, News 12). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): confirmed, Medium confidence. Confirmed in WSHU's Sept. 7, 2026 report, which adds that proposals bringing their own water and electricity could be considered case by case, with review by the Public Utilities Regulatory Authority and the final decision left to towns. No transcript was found, so Medium."
         }
       ]
     },
@@ -1627,13 +1652,13 @@
       "candidateId": "ryan-fazio",
       "kind": "position",
       "labelType": "source-summary",
-      "text": "Called for ending tax breaks for large data centers and said such facilities should provide or contract for enough electricity to meet their own needs. Does not want to ban data centers.",
+      "text": "Called for ending tax breaks for large data centers and said they should \"bring their own power if they are to plug into the grid,\" with guardrails on the industry. Does not want to ban data centers.",
       "source": {
         "title": "WFSB: Fazio calls for end to tax breaks for large data centers",
         "url": "https://www.wfsb.com/2026/09/03/fazio-calls-end-tax-breaks-large-data-centers/"
       },
       "publishedDate": "2026-09-03",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -1658,7 +1683,7 @@
         "dc-tax-incentives",
         "dc-ratepayer"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1669,6 +1694,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (WFSB, CT Mirror, CT News Junkie). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): corrected, Medium confidence. Corrected to his words as WFSB quoted them on Sept. 3, 2026: data centers should \"bring their own power if they are to plug into the grid\"; \"or contract for\" was not in the report and was removed. WSHU (Sept. 7) reports his opposition to a ban. No campaign statement or transcript was found, so Medium."
         }
       ]
     },
@@ -1969,7 +1999,7 @@
         "url": "https://www.xavierbecerra2026.com/priorities/ai/"
       },
       "publishedDate": "2026-05",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "precautionary",
@@ -2003,7 +2033,7 @@
         "ai-child-safety",
         "ai-workers"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2019,8 +2049,14 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Becerra campaign, Tech Times, StateScoop). Becerra's campaign page and StateScoop confirm the plan's content, and Tech Times (Aug. 15, 2026) describes it as an 11-point plan from May 2026, which confirms the release date. Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): confirmed, Medium confidence. Confirmed on the campaign's AI page: eleven numbered proposals, including full funding for CalCompute, independent audits of every AI system a state agency deploys, enforcement, tracking AI's effects on jobs and protecting children. The page shows no date; the May 2026 release rests on news reports (Tech Times), so Medium."
         }
-      ]
+      ],
+      "dateNote": "Release month from news reports; the campaign page shows no date"
     },
     {
       "id": "cr-ca-gov-becerra-2",
@@ -2094,8 +2130,8 @@
         "url": "https://www.techtimes.com/articles/324610/20260815/california-governor-race-2026-becerra-hilton-split-sharply-ai-regulation.htm"
       },
       "publishedDate": "2026-08-15",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -2120,7 +2156,7 @@
         "ai-child-safety",
         "ai-copyright"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2136,6 +2172,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Steve Hilton for Governor, Tech Times). The quoted wording appears on Hilton's campaign AI page, and the cited Tech Times article (Aug. 15, 2026) describes his plan as limiting new AI rules to children's safety, fraud and intellectual property. Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): not confirmed, Low confidence. Not confirmed: the Tech Times article returned an error (HTTP 403) and the campaign's policy page opened without readable text, so neither the quote nor the limits on new rules could be checked against his own plan."
         }
       ]
     },

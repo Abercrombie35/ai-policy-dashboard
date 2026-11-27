@@ -1,0 +1,212 @@
+[
+  {
+    "id": "pl-d-data-centers#1",
+    "verdict": "partly-verified",
+    "source_type": "news",
+    "source_url": "https://www.notus.org/congress/jeffries-data-centers-progressives-moratorium",
+    "source_title": "A Democratic Reckoning on Data Centers Is Coming",
+    "source_date": "2026-09-03",
+    "exact_quote": "Jeffries and other House Democratic leaders remain skeptical of a ban.",
+    "corrections": [],
+    "not_confirmed": [
+      "An official transcript or recording confirming Jeffries’s quoted remarks.",
+      "A uniform position among House Democratic leaders; the report describes differing views."
+    ],
+    "notes": "The opened report supports the characterization and quotes Jeffries on rising electricity and water bills, but no primary record of that exchange was located."
+  },
+  {
+    "id": "pl-d-preemption#0",
+    "verdict": "not-found",
+    "source_type": "news",
+    "source_url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/",
+    "source_title": "Democratic Voters Are Clamoring for AI Regulation. Their Leaders Aren’t Interested.",
+    "source_date": "2025-12-12",
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "The quotation attributed to Jeffries.",
+      "The December 5 date.",
+      "The question and context in which he allegedly declined to take a position."
+    ],
+    "notes": "The supplied article opened but did not contain the claimed quotation, and no primary transcript or recording establishing it was located."
+  },
+  {
+    "id": "us-ratepayer-protection-act",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm",
+    "source_title": "U.S. Senate Roll Call Vote 254, 119th Congress, 2nd Session",
+    "source_date": "2026-09-30",
+    "exact_quote": "Cloture on the Motion to Proceed Rejected",
+    "corrections": [
+      {
+        "field": "cloture date",
+        "correct": "September 30, 2026.",
+        "evidence": "The Senate records 57 yeas and 43 nays on the motion to proceed to H.R. 9340."
+      }
+    ],
+    "not_confirmed": [
+      "The exact Senate companion number S. 5028.",
+      "The characterization “toothless messaging bill” as a directly verified Democratic quotation.",
+      "Whether any action after September 30 changed the bill’s status by November 26."
+    ],
+    "notes": "The House Clerk confirms passage 417–3 on September 16 and Evans’s official release confirms Castor’s involvement, Husted’s Senate companion and state consideration of cost-recovery standards, but Congress.gov and the supplied NBC page would not open: https://clerk.house.gov/Votes/2026312?BillNum=H.R.9340 and https://gabeevans.house.gov/media/press-releases/congressman-gabe-evans-bipartisan-ratepayer-protection-act-passes-house"
+  },
+  {
+    "id": "ca-2024-sb1047",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/wp-content/uploads/2024/09/SB-1047-Veto-Message.pdf",
+    "source_title": "Governor Newsom’s veto message for Senate Bill 1047",
+    "source_date": "2024-09-29",
+    "exact_quote": "I am returning Senate Bill 1047 without my signature.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "Newsom’s veto message confirms the proposed safeguards for large AI models and responsibility for catastrophic harm, while the official legislative update identifies Democratic Senator Scott Wiener as author: https://www.gov.ca.gov/2024/09/29/governor-newsom-issues-legislative-update-9-29-24/"
+  },
+  {
+    "id": "ca-2025-ab1064",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/2025/10/13/governor-newsom-issues-legislative-update-10-13-25/",
+    "source_title": "Governor Newsom issues legislative update 10.13.25",
+    "source_date": "2025-10-13",
+    "exact_quote": "AB 1064 by Assemblymember Rebecca Bauer-Kahan (D-Orinda) – Leading Ethical AI Development (LEAD) for Kids Act.",
+    "corrections": [
+      {
+        "field": "author",
+        "correct": "Assemblymember Rebecca Bauer-Kahan, Democrat.",
+        "evidence": "The Governor’s official update identifies Bauer-Kahan and lists AB 1064 among vetoed bills."
+      }
+    ],
+    "not_confirmed": [
+      "The final bill’s precise restrictions and exceptions.",
+      "Whether a subsequent veto override was attempted."
+    ],
+    "notes": "The official update confirms the veto, but LegInfo would not open and the linked veto PDF returned no readable text."
+  },
+  {
+    "id": "ca-2025-sb243",
+    "verdict": "contradicted",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/2025/10/13/governor-newsom-signs-bills-to-further-strengthen-californias-leadership-in-protecting-children-online/",
+    "source_title": "Governor Newsom signs bills to further strengthen California’s leadership in protecting children online",
+    "source_date": "2025-10-13",
+    "exact_quote": "Platforms must also disclose that interactions are artificially generated, and minors must be provided break reminders",
+    "corrections": [
+      {
+        "field": "first state law",
+        "correct": "New York enacted AI companion safeguards before California.",
+        "evidence": "Governor Hochul’s May 9, 2025 signing announcement describes required AI identity reminders and suicide/self-harm protocols: https://www.governor.ny.gov/news/governor-hochul-signs-legislation-expanding-historic-empire-ai-consortium-and-establishing"
+      },
+      {
+        "field": "author",
+        "correct": "Senator Steve Padilla, Democrat.",
+        "evidence": "California’s signing announcement identifies SB 243 by Senator Steve Padilla."
+      }
+    ],
+    "not_confirmed": [
+      "The January 1, 2026 effective date and any provision-specific implementation deadlines from the final statutory text."
+    ],
+    "notes": "The California announcement confirms signing and the described safeguards, but the final LegInfo bill page would not open."
+  },
+  {
+    "id": "ca-2025-sb53",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/",
+    "source_title": "Governor Newsom signs SB 53, advancing California’s world-leading artificial intelligence industry",
+    "source_date": "2025-09-29",
+    "exact_quote": "Creates a new mechanism for frontier AI companies and the public to report potential critical safety incidents to California’s Office of Emergency Services.",
+    "corrections": [],
+    "not_confirmed": [
+      "The January 1, 2026 effective date and any separate implementation deadlines from the final statutory text."
+    ],
+    "notes": "The signing announcement confirms Wiener’s law, public frontier safety frameworks, incident reporting, whistleblower protection and the CalCompute consortium, but the final LegInfo page would not open."
+  },
+  {
+    "id": "ca-2025-sb57",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://sd18.senate.ca.gov/news/legislation-protect-california-ratepayers-paying-data-centers-energy-costs-signed-law",
+    "source_title": "Legislation to Protect California Ratepayers from Paying for Data Centers’ Energy Costs Signed into Law",
+    "source_date": "2025-10-11",
+    "exact_quote": "conduct a study on the extent load growth from data centers results in cost shifts to other ratepayers by 2027.",
+    "corrections": [],
+    "not_confirmed": [
+      "Chapter number 647.",
+      "The exact statutory reporting deadline.",
+      "The complete amendment history establishing how the original tariff proposal was narrowed."
+    ],
+    "notes": "Padilla’s official announcement confirms his authorship, October 11 signing and the cost-shift study, but the final LegInfo page would not open."
+  },
+  {
+    "id": "ca-2025-sb7",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/2025/10/13/governor-newsom-issues-legislative-update-10-13-25/",
+    "source_title": "Governor Newsom issues legislative update 10.13.25",
+    "source_date": "2025-10-13",
+    "exact_quote": "SB 7 by Senator Jerry McNerney (D-Pleasanton) – Employment: automated decision systems.",
+    "corrections": [
+      {
+        "field": "author",
+        "correct": "Senator Jerry McNerney, Democrat.",
+        "evidence": "The official veto list names McNerney."
+      }
+    ],
+    "not_confirmed": [],
+    "notes": "The Governor’s update confirms the veto, and McNerney’s September 30, 2026 announcement confirms enactment of the narrower SB 947 requiring human oversight of automated termination and discipline decisions: https://sd05.senate.ca.gov/news/newsom-signs-mcnerneys-no-robo-bosses-act-2026-requiring-human-oversight-ai-workplace"
+  },
+  {
+    "id": "ca-2026-ab1331",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+    "source_title": "California’s nation-leading AI framework just got stronger, Governor Newsom signs more first-in-the-nation worker protections and more",
+    "source_date": "2026-09-30",
+    "exact_quote": "AB 1331 by Assemblymember Sade Elhawary (D-South Los Angeles)",
+    "corrections": [
+      {
+        "field": "author",
+        "correct": "Assemblymember Sade Elhawary, Democrat.",
+        "evidence": "The official signing announcement identifies Elhawary as the author."
+      }
+    ],
+    "not_confirmed": [],
+    "notes": "The Governor’s announcement confirms signing on September 30 and workplace surveillance protections, including restrictions on surveillance in workplace bathrooms."
+  },
+  {
+    "id": "ca-2026-ab1577",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/",
+    "source_title": "Governor Newsom signs most comprehensive data center laws in the nation, providing communities more control on water, electricity, and land use",
+    "source_date": "2026-09-21",
+    "exact_quote": "AB 1577 by Assemblymember Rebecca Bauer-Kahan (D-Orinda). Data centers: reporting",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The signing announcement and Senate’s final legislative summary confirm Chapter 434 requires energy-consumption and operational information for the Energy Commission and permitting agencies, with data-center load impacts covered in the Integrated Energy Policy Report: https://sfa.senate.ca.gov/system/files/2026-11/sig-leg-2026-final.pdf"
+  },
+  {
+    "id": "ca-2026-ab1883",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+    "source_title": "California’s nation-leading AI framework just got stronger, Governor Newsom signs more first-in-the-nation worker protections and more",
+    "source_date": "2026-09-30",
+    "exact_quote": "AB 1883 by Assemblymember Isaac Bryan (D-Los Angeles) — Workplace surveillance tools.",
+    "corrections": [
+      {
+        "field": "author",
+        "correct": "Assemblymember Isaac Bryan, Democrat.",
+        "evidence": "The Governor’s signing announcement identifies Bryan as author."
+      }
+    ],
+    "not_confirmed": [
+      "The final law’s precise neural-data restrictions.",
+      "The final law’s precise restrictions on predicting workers’ emotional states."
+    ],
+    "notes": "The official announcement confirms September 30 enactment of workplace surveillance restrictions, but LegInfo would not open and the signing-message PDF yielded no readable text."
+  }
+]
