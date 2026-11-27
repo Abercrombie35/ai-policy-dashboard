@@ -1081,80 +1081,79 @@
       "level": "high"
     },
     "cr-tx-gov-abbott-3": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Mid-October 2026 coverage of a Dallas Morning News/NBC 5 interview confirms Abbott wants his data center restrictions codified in 2027 with more local authority over siting (his June letter had not included local control).",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Partly confirmed: his Sept. 21, 2026 release directing the TCEQ to halt data center permits says he will work with the Legislature next session to eliminate financial incentives for data centers (added). The Oct. 14 interview, the call to write every restriction into law and more local say over siting rest on the Texarkana Gazette, which would not open.",
       "sources": [
         {
-          "title": "Texarkana Gazette: Election 2026: Abbott wants Texas lawmakers to turn data center restrictions into law",
-          "url": "https://www.texarkanagazette.com/news/2026/oct/14/election-2026-abbott-wants-texas-lawmakers-to/"
-        },
-        {
-          "title": "Dallas Morning News: Abbott wants legislators to turn data center restrictions into law next year",
-          "url": "https://www.dallasnews.com/news/politics/article/abbott-wants-legislators-turn-data-center-22475522.php"
-        },
-        {
-          "title": "Longview News-Journal: Abbott wants Texas lawmakers to turn data center restrictions into law in 2027",
-          "url": "https://news-journal.com/2026/10/15/abbott-wants-texas-lawmakers-to-turn-data-center-restrictions-into-law-in-2027/"
+          "title": "Governor Abbott Directs TCEQ To Halt Data Center Permits",
+          "url": "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The Oct. 14, 2026 statement.",
+        "Giving cities, counties and residents more authority over siting.",
+        "A commitment to write every administrative restriction into law."
+      ],
+      "quote": "Next session, Governor Abbott will work with the Legislature to eliminate any financial incentives for data centers.",
+      "level": "low"
     },
     "cr-tx-gov-hinojosa-1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "FOX 4 and her campaign confirm Hinojosa's moratorium and other goals, and the Texas Tribune and CBS Austin report her promise to end data center tax breaks.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Confirmed on her campaign's July 2026 release: an immediate moratorium until a legislative session puts protections in place, union jobs, local participation, ending subsidies, protecting residents' water and electricity costs and stopping data center companies from using NDAs. \"Just words\" rests on FOX 4's report and is now attributed to it, so Medium.",
       "sources": [
         {
-          "title": "FOX 4: 'People are big mad in Texas': Hinojosa challenges Abbott's data center policies",
-          "url": "https://www.fox4news.com/news/hinojosa-challenges-abbott-data-center-policies-during-campaign-stop"
-        },
-        {
-          "title": "Texas Tribune: Gina Hinojosa's data center pause and governor policies (Nov. 4, 2026)",
-          "url": "https://texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
-        },
-        {
-          "title": "CBS Austin: Could Democrats' election wins reshape Texas data center tax policy?",
-          "url": "https://cbsaustin.com/news/local/story/could-democrats-election-wins-reshape-texas-data-center-tax-policy"
+          "title": "Hinojosa Calls on Greg Abbott to Put Moratorium on Data Centers Until a Legislative Session That Puts Texans First",
+          "url": "https://ginafortexas.com/2026/07/new-hinojosa-calls-on-greg-abbott-to-put-moratorium-on-data-centers-until-a-legislative-session-that-puts-texans-first/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "Her description of Gov. Abbott's pause as \"just words\" (FOX 4)."
+      ],
+      "quote": "Creating full transparency by stopping data center companies from using NDAs.",
+      "level": "medium"
     },
     "cr-tx-gov-hinojosa-2": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Wire copies of the same story and other outlets confirm Hinojosa's post-election CNN remarks and the quoted line, published Nov. 5-6, 2026.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Corrected the quote: Reuters' report of her Nov. 5, 2026 CNN interview has her saying \"We will have laws to protect Texans, and we need to stop what we are doing with data centers until we have those protections.\" The line \"It is not that I hate data centers\" could not be confirmed from the opened report or a recording and was removed. Rests on a news report, so Medium.",
       "sources": [
         {
-          "title": "Korea Times (wire): Texas governor-elect says state will have laws to shield citizens from data centers",
-          "url": "https://koreatimes.co.kr/world/20261106/texas-governor-elect-says-state-will-have-laws-to-shield-citizens-from-data-centers"
-        },
-        {
-          "title": "TechRadar: 'I hate the way they are taking advantage of Texas': incoming Texas governor warns AI firms",
-          "url": "https://techradar.com/ai-platforms-assistants/i-hate-the-way-they-are-taking-advantage-of-texas-incoming-texas-governor-warns-ai-firms-that-the-data-center-free-for-all-is-over"
-        },
-        {
-          "title": "ABC13: Governor-elect Gina Hinojosa vows to ban future data centers in Texas",
-          "url": "https://abc13.com/post/governor-elect-gina-hinojosa-vows-ban-future-data-centers-texas/20021143/"
+          "title": "Texas governor-elect says state will have laws to shield citizens from data centers",
+          "url": "https://www.investing.com/news/economy-news/texas-governorelect-says-state-will-have-laws-to-shield-citizens-from-data-centers-5006141"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "A recording or transcript of the CNN interview."
+      ],
+      "quote": "We will have laws to protect Texans, and we need to stop what we are doing with data centers until we have those protections",
+      "level": "medium"
     },
     "cr-tx-sen-paxton-1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The AG's office and news reports confirm the Aug. 18, 2025 probe of Meta AI Studio and Character.AI and the earlier Sept. 2024 Pieces Technologies settlement over deceptive generative-AI claims.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Confirmed in the attorney general's releases: the Aug. 18, 2025 investigation of Meta AI Studio and Character.AI for possible deceptive trade practices and misleadingly marketing themselves as mental health tools, and the Sept. 18, 2024 settlement with Pieces Technologies over allegedly misleading health care AI claims. The releases are now the source; the companies are named.",
       "sources": [
         {
-          "title": "Texas Attorney General: Paxton investigates Meta and Character.AI (press release, Spanish)",
-          "url": "https://www.texasattorneygeneral.gov/es/news/releases/procurador-general-ken-paxton-investiga-meta-y-characterai-por-enganar-ninos-con-servicios-enganosos"
+          "title": "Attorney General Ken Paxton Investigates Meta and Character.AI for Misleading Children with Deceptive AI-Generated Mental Health Services",
+          "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-investigates-meta-and-characterai-misleading-children-deceptive-ai"
         },
         {
-          "title": "JURIST: Texas launches inquiry into deceptive advertising and privacy risks in AI therapy chatbots",
-          "url": "https://www.jurist.org/news/2025/08/texas-launches-inquiry-into-deceptive-advertising-and-privacy-risks-in-ai-therapy-chatbots/"
-        },
-        {
-          "title": "Healthcare Dive: Texas AG Ken Paxton settles with Pieces Technologies over generative AI accuracy",
-          "url": "https://www.healthcaredive.com/news/texas-attorney-general-ken-paxton-settles-pieces-technologies-generative-ai-accuracy/727699/"
+          "title": "Texas Attorney General: Settlement in first-of-its-kind health care generative AI investigation (Sept. 18, 2024)",
+          "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-reaches-settlement-first-its-kind-healthcare-generative-ai-investigation"
         }
-      ]
+      ],
+      "quote": "potentially engaging in deceptive trade practices and misleadingly marketing themselves as mental health tools.",
+      "level": "high"
     },
     "cr-tx-sen-paxton-2": {
       "result": "corrected",
@@ -1173,37 +1172,40 @@
     },
     "cr-tx-sen-talarico-1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Talarico's campaign site backs all three points: holding powerful corporations accountable, making AI work for working people (including limits on workplace AI surveillance), and applying copyright law to AI companies; the dataset's wording is a paraphrase, not a quote.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Confirmed on his campaign platform (\"Protect workers from invasive AI surveillance in the workplace\"), which also calls for corporate accountability, worker participation, human review of major employment decisions and applying ordinary copyright law to AI companies. The page is undated, so Medium.",
       "sources": [
         {
-          "title": "Talarico campaign: Social media, artificial intelligence and tech",
+          "title": "James Talarico on Social Media & Tech",
           "url": "https://jamestalarico.com/issue/social-media-artificial-intelligence-tech/"
-        },
-        {
-          "title": "Talarico campaign site (jamestalarico.com)",
-          "url": "https://jamestalarico.com/?p=429"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "When the platform was published."
+      ],
+      "quote": "Protect workers from invasive AI surveillance in the workplace",
+      "level": "medium"
     },
     "cr-tx-sen-talarico-2": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The Statesman and Texas Tribune confirm Talarico's AI dividend proposal (Aug. 2026) and that no implementation blueprint was given at launch; a search summary says his campaign site later describes funding it with a tax on AI-attributable profits.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Corrected: his campaign platform (\"Establish an AI Dividend\") does give details: a tax on AI-attributable profits funding annual dividends to Americans and grants for entrepreneurs. The tax rate and eligibility rules are not given, and whether these details were in his first statement is unknown. The platform is undated, so Medium; it is now the source.",
       "sources": [
         {
-          "title": "Austin American-Statesman: James Talarico calls for AI dividends, help for first-time homebuyers",
-          "url": "https://www.statesman.com/news/politics/state/article/james-talarico-calls-ai-dividends-help-22377208.php"
-        },
-        {
-          "title": "Texas Tribune: James Talarico rolls out 'New American Dream' economic plan",
-          "url": "https://www.texastribune.org/2026/08/05/texas-senate-james-talarico-economic-agenda-ken-paxton/"
-        },
-        {
-          "title": "Tyler Paper: Talarico's economic plan calls for AI dividends, help for homebuyers",
-          "url": "https://tylerpaper.com/2026/08/10/talaricos-economic-plan-calls-for-ai-dividends-help-for-homebuyers/"
+          "title": "James Talarico on Social Media & Tech",
+          "url": "https://jamestalarico.com/issue/social-media-artificial-intelligence-tech/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The tax rate, eligibility rules and how it would be administered.",
+        "Whether these details were in his first statement (Austin American-Statesman)."
+      ],
+      "quote": "Institute a tax on the AI-attributable profits",
+      "level": "medium"
     },
     "cr-tx-sen-talarico-3": {
       "result": "confirmed",
@@ -1221,23 +1223,23 @@
       "level": "medium"
     },
     "ct-2024-sb2": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed: SB 2 passed the Senate 24-12 on April 24, 2024 and was never called in the House after Lamont's veto threat (the status date is the Senate vote; the bill formally died at session end).",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Partly confirmed, with the status date corrected: Apr. 24, 2024 was the Senate's 24-12 vote (CT Mirror), not the day the bill failed; it died when the session ended on May 8, 2024 (the Wednesday after the first Monday in May, as the state constitution sets for even years). Maroney as sponsor and Lamont's objections are confirmed in the report; the House outcome and veto threat could not be checked on the official record, which would not open, so Low.",
       "sources": [
         {
-          "title": "CT Mirror: CT AI standards bill passes Senate despite objections from Lamont",
+          "title": "Senate Democrats pass AI bill over Lamont’s objections",
           "url": "https://ctmirror.org/2024/04/24/ct-ai-standards-bill-senate/"
-        },
-        {
-          "title": "Connecticut Public: Senate Democrats pass AI bill over Lamont's objections",
-          "url": "https://www.ctpublic.org/news/2024-04-25/senate-democrats-pass-ai-bill-over-lamonts-objections"
-        },
-        {
-          "title": "CT Senate Democrats: Maroney leads advancement of landmark AI legislation (April 24, 2024)",
-          "url": "https://www.senatedems.ct.gov/senator-maroney-leads-advancement-of-landmark-artificial-intelligence-legislation-encouraging-use-and-developing-guardrails-for-adoption"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The bill's final disposition in the House, from the official record.",
+        "The veto threat, from a primary record."
+      ],
+      "quote": "The surprise, 24-12 party-line vote",
+      "level": "low"
     },
     "ct-2025-sb1295": {
       "result": "confirmed",
@@ -1259,23 +1261,24 @@
       ]
     },
     "ct-2025-sb2": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The 2025 SB 2 passed the Senate 32-4 in May 2025 and died when the House did not take it up before the June 4 deadline, which Maroney attributed to Lamont's veto threat.",
+      "result": "not-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Not confirmed: the legislature's bill history would not open on repeated attempts, so the Senate vote, the House outcome, the veto threat and the date the bill died are unchecked against the official record.",
       "sources": [
         {
-          "title": "CT Mirror: CT AI bill passes Senate (May 2025)",
-          "url": "https://ctmirror.org/2025/05/15/ct-ai-artificial-intelligence-bill-passes-senate/"
-        },
-        {
-          "title": "CBIA: AI regulatory measure fails",
-          "url": "https://www.cbia.com/news/issues-policies/ai-regulatory-measure-fails"
-        },
-        {
-          "title": "CT Senate Democrats: Maroney responds to Trump's push to ban state-level AI regulation (June 2025)",
-          "url": "https://www.senatedems.ct.gov/maroney-responds-to-trumps-push-to-ban-state-level-ai-regulation"
+          "title": "Connecticut SB 2 — An Act Concerning Artificial Intelligence",
+          "url": "https://www.cga.ct.gov/2025/cbs/S/pdf/SB-0002.pdf"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The complete final bill text.",
+        "Senate passage and final House disposition.",
+        "The veto threat and its role in preventing House consideration.",
+        "The final failure date."
+      ],
+      "level": "low"
     },
     "ct-2026-hb5312": {
       "result": "confirmed",
@@ -1365,42 +1368,47 @@
       ]
     },
     "ct-2026-sb5": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Law-firm and FPF summaries confirm the no-defense rule for automated hiring tools, frontier-developer whistleblower protections, provenance rules and an Oct. 2026 to Jan. 2028 phase-in; the committee report lists Looney, Duff and Anwar, with Maroney leading. Most sources give a May 27, 2026 signing, with a ceremony on June 2. Sponsors added: led by Sen. James Maroney (D); the committee report lists Sens. Looney, Duff and Anwar (D).",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Corrected: the governor's official bill notification lists SB 5 as Public Act 26-15, signed May 27, 2026 (the alternative June 2 date was removed). Its formal title is \"An Act Concerning Online Safety\"; \"CART Act\" is the name used by the legislature's AI Caucus (Ropes & Gray). The vote counts, full sponsor list and provisions rest on secondary summaries, so Medium.",
       "sources": [
         {
-          "title": "Faegre Drinker: Connecticut enacts comprehensive AI regulation, what businesses need to know",
-          "url": "https://www.faegredrinker.com/en/insights/publications/2026/6/connecticut-enacts-comprehensive-ai-regulation-what-businesses-need-to-know"
+          "title": "State of Connecticut — Governor’s 2026 bill notification",
+          "url": "https://portal.ct.gov/governor/-/media/office-of-the-governor/bill-notifications/2026/bill-notification-2026-11.pdf?rev=ad8315ea7f1a4afda0d85c5c1f828d33"
         },
         {
-          "title": "Future of Privacy Forum: SB 5 in Five, what to know about Connecticut's new AI law",
-          "url": "https://fpf.org/blog/sb-5-in-five-what-to-know-about-connecticuts-new-ai-law/"
-        },
-        {
-          "title": "Connecticut General Assembly: SB 5 General Law Committee joint favorable report",
-          "url": "https://prdext3.cga.ct.gov/2026/JFR/S/PDF/2026SB-00005-R00GL-JFR.PDF"
+          "title": "Ropes & Gray: Connecticut enacts sweeping AI law covering employment, healthcare and online safety",
+          "url": "https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The complete sponsor list.",
+        "The Senate 32-4 and House 131-17 votes, from the roll calls.",
+        "Every provision and start date, against the enacted text."
+      ],
+      "quote": "Governor Lamont signed the following legislation of the 2026 Regular Session on May 27:",
+      "level": "medium"
     },
     "ct-2027-duff-moratorium": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "WFSB (Oct. 22, 2026) and other outlets report that Senate Majority Leader Duff will propose a statewide data center pause next session, citing electricity, water and rate impacts, after East Lyme adopted a local ban.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Confirmed in WFSB's Oct. 22, 2026 report: Duff proposes to \"pause new data centers until the state sets rules for power use, electricity costs, and environmental protections\"; it also reports East Lyme's local ban. No statement of his own was found, so Medium.",
       "sources": [
         {
-          "title": "WFSB: Senate leader proposes bill to pause new data centers in Connecticut",
+          "title": "Senate leader proposes bill to pause new data centers in Connecticut",
           "url": "https://www.wfsb.com/2026/10/22/senate-leader-proposes-bill-pause-new-data-centers-connecticut/"
-        },
-        {
-          "title": "Connecticut Public: Connecticut mulls over statewide moratorium on AI data centers",
-          "url": "https://www.ctpublic.org/2026-10-26/connecticut-mulls-over-statewide-moratorium-on-ai-data-centers-nenc"
-        },
-        {
-          "title": "CT Mirror: Data centers and artificial intelligence in Connecticut (Oct. 25, 2026)",
-          "url": "https://ctmirror.org/2026/10/25/data-centers-artificial-intelligence-ct/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "A statement of his own placing the bill in the 2027 session.",
+        "Whether the bill has been filed."
+      ],
+      "quote": "pause new data centers until the state sets rules for power use, electricity costs, and environmental protections.",
+      "level": "medium"
     },
     "ct-sb1292": {
       "result": "corrected",
@@ -1419,22 +1427,22 @@
     },
     "eu-ai-act": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed: the AI Act (Regulation 2024/1689) entered into force Aug. 1, 2024 with bans, GPAI and high-risk duties applying in phases; its original high-risk dates were later pushed back by the Digital Omnibus on AI (Regulation 2026/1744).",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Confirmed on EUR-Lex's official summary of Regulation (EU) 2024/1689: a risk-based framework with requirements for high-risk AI systems, phased application and enforcement by national authorities. The summary reflects the 2026 amendment that moved the high-risk dates (added).",
       "sources": [
         {
-          "title": "European Commission: Regulatory framework on AI (AI Act)",
-          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+          "title": "Rules for trustworthy artificial intelligence in the EU",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=LEGISSUM%3A4762484"
         },
         {
-          "title": "Kennedys: The EU AI Act implementation timeline",
-          "url": "https://kennedyslaw.com/en/thought-leadership/article/2026/the-eu-ai-act-implementation-timeline-understanding-the-next-deadline-for-compliance"
-        },
-        {
-          "title": "CMS: EU's AI Act published in Official Journal, transition periods now known",
-          "url": "https://cms.law/en/int/legal-updates/eu-s-ai-act-published-in-official-journal-transition-periods-now-known"
+          "title": "EUR-Lex: Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
         }
-      ]
+      ],
+      "quote": "requirements and obligations around high-risk AI systems",
+      "level": "high"
     },
     "eu-digital-omnibus-ai": {
       "result": "corrected",
@@ -1452,23 +1460,22 @@
       "level": "high"
     },
     "fr-nuclear-ai-pledge": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed: the 1 GW nuclear-for-AI pledge dates from the February 2025 AI Action Summit, and Macron's Mar. 10, 2026 nuclear summit speech said France's reactors let it open data centers and grow computing capacity.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "08",
+      "note": "Partly confirmed: the Élysée's AI Action Summit document (Feb. 2025) describes a France-UAE AI campus of up to one gigawatt, but not a gigawatt of nuclear power set aside for AI; that rests on TechRadar's pre-summit report and is now attributed to it. Macron's March 2026 remark linking nuclear plants to new data centers was not found in an opened source.",
       "sources": [
         {
-          "title": "Élysée: Sommet sur le nucléaire civil (Mar. 10, 2026)",
-          "url": "https://www.elysee.fr/en/emmanuel-macron/2026/03/10/sommet-sur-le-nucleaire-civil"
-        },
-        {
-          "title": "TechRadar: France set to pledge one gigawatt of nuclear power for AI",
-          "url": "https://www.techradar.com/pro/france-plans-to-pledge-one-gigawatt-of-nuclear-power-for-ai"
-        },
-        {
-          "title": "Global Banking & Finance (Reuters): France to harness nuclear power for AI data centres, says Macron",
-          "url": "https://www.globalbankingandfinance.com/france-harness-nuclear-power-ai-data-centres-macron/"
+          "title": "Les actions de Paris pour l’intelligence artificielle",
+          "url": "https://www.elysee.fr/admin/upload/default/0001/17/373d6bcd8ea7f84a701c050bb9cabccf3ed95c2b.pdf"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "A pledge reserving one gigawatt of nuclear power for AI.",
+        "Macron's March 2026 statement linking nuclear plants to opening data centers."
+      ],
+      "level": "low"
     },
     "fr-pjl-simplification": {
       "result": "confirmed",
@@ -3817,6 +3824,13 @@
     },
     {
       "batch": "07",
+      "date": "2026-11-27",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "08",
       "date": "2026-11-27",
       "claims": 12,
       "tool": "ChatGPT (web browsing)",
