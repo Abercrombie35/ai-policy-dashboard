@@ -1,4 +1,5 @@
 import React from 'react';
+import RaceSelection from '../components/RaceSelection';
 import { codebook, dimensions, resultLabel, domains, categoryLabel, partyLines, verification, CHECK_RESULTS, blocs, BLOC_IDS, results, raceById, placeOf, resultStatuses, certificationStatuses, certificationText } from '../lib/data';
 
 // How many checks ended in each result.
@@ -21,6 +22,11 @@ function MethodsView() {
           research dataset: every finding should trace back to its sources.
         </p>
       </header>
+
+      <section id="race-selection">
+        <h3>Which Senate races, and why</h3>
+        <RaceSelection />
+      </section>
 
       <section>
         <h3>Labels on every record</h3>

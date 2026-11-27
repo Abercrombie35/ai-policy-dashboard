@@ -15,6 +15,7 @@ import voterPrioritiesData from '../data/voter-priorities.json';
 import publicOpinionData from '../data/public-opinion.json';
 import trackersData from '../data/trackers.json';
 import archivesData from '../data/archives.json';
+import senateSelectionData from '../data/senate-race-selection.json';
 
 const raceModules = import.meta.glob('../data/races/*.json', { eager: true, import: 'default' });
 
@@ -357,3 +358,6 @@ export function countRecords() {
 const archiveIndex = new Map((archivesData.pages || []).map((a) => [a.url, a]));
 export const archiveOf = (url) => (url ? archiveIndex.get(url) || null : null);
 export const archivedCount = () => archiveIndex.size;
+
+// The 2026 Senate sample and its selection criteria (AIPD-102).
+export const senateSelection = senateSelectionData;

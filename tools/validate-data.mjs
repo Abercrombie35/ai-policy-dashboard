@@ -494,6 +494,25 @@ for (const id of [...checkable.keys(), ...[...extraIds].filter((x) => x.includes
   if (!verification.checks?.[id]) fail(`verification.json`, `no check recorded for ${id}`);
 }
 
+// Senate race selection (AIPD-102): 10-20 races drawn by published criteria.
+const selection = read('senate-race-selection.json');
+const critIds = new Set((selection.criteria || []).map((c) => c.id));
+const chosenRaces = (selection.races || []).filter((r) => r.selected);
+if (chosenRaces.length < 10 || chosenRaces.length > 20) fail('senate-race-selection.json', `the sample must have 10-20 races, not ${chosenRaces.length}`);
+(selection.races || []).forEach((r, i) => {
+  const w = `senate-race-selection.json races[${i}] (${r.state})`;
+  if (!r.reason) fail(w, 'every race needs a reason, selected or not');
+  if (r.selected && !(r.criteriaMet || []).length) fail(w, 'a selected race must meet at least one criterion');
+  (r.criteriaMet || []).forEach((c) => {
+    if (!critIds.has(c)) fail(w, `criterion "${c}" is not defined`);
+  });
+  if (r.rating && !r.rating.source?.url) fail(w, 'the rating needs its source');
+  if (r.result && !r.result.source?.url) fail(w, 'the result needs its source');
+  if (r.aiSignal && !r.aiSignal.source?.url) fail(w, 'the AI or data center signal needs its source');
+  if (r.trackedRaceId && !raceIds.has(r.trackedRaceId)) fail(w, `trackedRaceId "${r.trackedRaceId}" has no race file`);
+  if (r.selected && !['tracked', 'next', 'later'].includes(r.status)) fail(w, 'a selected race needs status tracked, next or later');
+});
+
 // Archived copies (AIPD-101): campaign pages and cited statements, keyed by
 // the original URL. Missing archives are a warning, not a failure: archiving
 // is done by the project owner outside this environment.

@@ -17,7 +17,27 @@ Generated from the dashboard's data on 2026-11-27 (site version 2026-11-27.7, co
 | Governor | TX | 2026-11-03 | 2 | 5 |
 | U.S. Senate | TX | 2026-11-03 | 2 | 5 |
 
-The Senate race list and its selection criteria (AIPD-102) will be added here once published.
+### Senate race selection
+
+The sample is drawn from all 35 Senate contests of 2026 by the criteria below, applied in order to facts gathered before the list was drawn. It has 15 races: every competitive race, plus races where AI or data centers were a campaign issue, kept between 10 and 20 races, each profiling both parties' nominees. Michigan and Texas, the pilot races, are tracked; the five highest-ranked others are added next (AIPD-103). Before the election, 11 of the 15 seats were held by Republicans and 4 by Democrats.
+
+| State | Seat | Rating | Result | Why it is in the sample |
+|---|---|---|---|---|
+| AK | Incumbent | Toss-up | Mary Peltola (D), flip | Rated Toss-up; no AI or data center exchange between the candidates found. |
+| GA | Incumbent | Likely D | Jon Ossoff (D) | Rated Likely D; AI or data centers in the race: Debate: Ossoff tied the 2025 budget bill's tax breaks to data center developers; Collins said he favors local control (Roll Call, Oct 19, 2026). |
+| IA | Open | Toss-up | Josh Turek (D), flip | Rated Toss-up; open seat (incumbent retired); no AI or data center exchange between the candidates found. |
+| KS | Incumbent | Toss-up | Adam Hamilton (D), flip | Rated Toss-up; AI or data centers in the race: Incumbent Marshall 'rails against AI data centers' (Semafor interview, Jul 22, 2026): backs local moratoriums and opposes tax incentives. No Hamilton statement found. |
+| ME | Incumbent | Toss-up | Troy Jackson (D), flip | Rated Toss-up; AI or data centers in the race: NPR's data center ad analysis quotes Jackson calling for 'real guardrails' so data centers don't raise others' power bills or hurt water quality. |
+| MI | Open | Toss-up | Abdul El-Sayed (D) | Rated Toss-up; open seat (incumbent retired); AI or data centers in the race: El-Sayed's campaign held an anti-data-center rally near the OpenAI/Oracle Stargate site in Saline Township ('if the community here opposes this data center, then I do'). That was during the primary; in the general he backed 'terms of engagement' (NPR). |
+| MN | Open | Lean D | Peggy Flanagan (D) | Rated Lean D; open seat (incumbent retired); no AI or data center exchange between the candidates found. |
+| MS | Incumbent | Likely R | Scott Colom (D), flip | Rated Likely R; AI or data centers in the race: Colom called for a temporary statewide pause on new data centers and hit Hyde-Smith for not backing the Ratepayer Protection Act (Mississippi Today, Sept 24, 2026). |
+| MT | Open | Solid R | Kurt Alme (R) | Rated Solid R; open seat (incumbent did not seek reelection, withdrawing at the Mar. 4, 2026 filing deadline); AI or data centers in the race: Candidates laid out data center/AI positions: Bankhead called for a moratorium on large data centers, Bodnar offered a 'Protect Montana' pledge, and Alme backs cost disclosure and the Ratepayer Protection Act. |
+| NC | Open | Likely D | Roy Cooper (D), flip | Rated Likely D; open seat (incumbent retired); AI or data centers in the race: Whatley's campaign attacked Cooper for recruiting and subsidizing data centers as governor; Cooper backed local say and making data centers pay their own energy costs (Fox News). |
+| NE | Incumbent | Lean R | Pete Ricketts (R) | Rated Lean R; AI or data centers in the race: Osborn ads attacked Ricketts' record of data center tax incentives as governor ($519M property-tax exemptions 2021-Jun 2026 per state estimate) and his AI investments; Ricketts called data centers 'a community decision'. |
+| NH | Open | Lean D | Chris Pappas (D) | Rated Lean D; open seat (incumbent retired); AI or data centers in the race: NHPR candidate guide: both Pappas and Sununu said they support a state-level moratorium on data center construction; Pappas called NH 'not the right place for AI data centers'. |
+| OH | Incumbent | Toss-up | Sherrod Brown (D), flip | Rated Toss-up; AI or data centers in the race: Brown ran multiple ads calling Husted 'the face of data centers in Ohio' over tax deals as lieutenant governor; a leaked GOP memo called data centers the 'anchor' around Husted's neck. |
+| SC | Incumbent | Lean R | Annie Andrews (D), flip | Rated Lean R; AI or data centers in the race: Andrews called for a two-year statewide moratorium on new data centers and accused Darline Graham of benefiting from ~$5M in data-center-linked PAC spending. |
+| TX | Open | Toss-up | James Talarico (D), flip | Rated Toss-up; open seat (incumbent lost the May 26, 2026 Republican primary runoff to Ken Paxton); AI or data centers in the race: Talarico ads accused Paxton of 'selling off Texas' to data center firms, tying data centers to cost of living and corruption (NPR/AdImpact analysis). |
 
 ## 2. Records and labels
 
