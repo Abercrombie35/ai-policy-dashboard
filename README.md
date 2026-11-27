@@ -48,6 +48,12 @@ Built:
   proposals, and how many candidates deviate from their party line.
 - Race pages: "Data centers" and "Everything else in AI" tabs, each showing
   what each candidate said and what they proposed, plus a deviation section.
+  A race opens in a pop-up over the map covering 80% of the screen (the full
+  screen on phones), with its own link (#/state/MI/<race-id>). Close it with
+  the close button, Escape, a click outside or the browser back button; focus
+  stays inside while it is open and returns to the race's card afterwards. The
+  pop-up is the only scroll area and has no background blur, which is what
+  caused the blank screen reported on Nov. 16.
 - Accurate map of all 50 states plus D.C., bundled with the app (no runtime
   download). States are colored by data coverage and can be used by keyboard.
 - Multi-race support: each race is one file in src/data/races/. Seven 2026
@@ -255,6 +261,7 @@ Key files:
 - src/components/StateModal.jsx, StateView.jsx: the state pop-up (races and
   bills).
 - src/components/RaceView.jsx, CandidateComparison.jsx: race page and tabs.
+- src/components/RaceModal.jsx: the 80% race pop-up over the map.
 - src/components/ItemCard.jsx: the labeled record card used everywhere.
 - src/components/BillCard.jsx: a bill record.
 - src/components/ElectionResult.jsx: the election-result panel and badges.

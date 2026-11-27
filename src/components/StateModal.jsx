@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import StateView from './StateView';
 import ErrorBoundary from './ErrorBoundary';
 import { stateName } from '../lib/data';
+import { takeLastRace } from '../lib/router';
 import '../styles/StateModal.css';
 
 function StateModal({ stateAbbr, onClose }) {
@@ -10,7 +11,10 @@ function StateModal({ stateAbbr, onClose }) {
   useEffect(() => {
     const previousFocus = document.activeElement;
     document.body.style.overflow = 'hidden';
-    contentRef.current?.focus();
+    // Coming back from a race pop-up, focus returns to that race's card.
+    const lastRace = takeLastRace();
+    const card = lastRace && contentRef.current?.querySelector(`[data-race-id="${lastRace}"]`);
+    (card || contentRef.current)?.focus();
     const onKey = (e) => {
       if (e.key === 'Escape') onClose();
     };

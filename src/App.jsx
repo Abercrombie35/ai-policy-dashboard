@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import USMap from './components/USMap';
 import StateModal from './components/StateModal';
-import RaceView from './components/RaceView';
+import RaceModal from './components/RaceModal';
 import EuropeMap from './components/EuropeMap';
 import CountryModal from './components/CountryModal';
 import PartySummary from './pages/PartySummary';
@@ -80,21 +80,10 @@ function PolicyFronts() {
   );
 }
 
-// A race is a full page rather than content inside the state pop-up: race
-// pages are long, and very tall scrolling content inside a blurred, fixed
-// overlay is fragile in some browsers.
-function RacePage({ race }) {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [race.id]);
-  return (
-    <div className="page race-page">
-      <RaceView race={race} onBack={() => navigate(race.country ? `/country/${race.country}` : `/state/${race.state}`)} />
-    </div>
-  );
-}
-
-function MapPage({ selectedState, selectedCountry }) {
+// The map, with any open state, country or race pop-up over it. A race
+// (#/state/MI/<race-id>, #/country/FR/<race-id>) opens in its own large
+// pop-up; the map stays mounted underneath so closing it keeps the reader's place.
+function MapPage({ selectedState, selectedCountry, race = null }) {
   const [filter, setFilter] = useState('all');
   const close = useCallback(() => navigate('/'), []);
   const statesWithRaces = new Set(usRaces.map((r) => r.state)).size;
@@ -163,8 +152,14 @@ function MapPage({ selectedState, selectedCountry }) {
       <PolicyFronts />
       <ProposalsPanel title="Proposed bills and moratoriums" />
 
-      {selectedState && <StateModal stateAbbr={selectedState} onClose={close} />}
-      {selectedCountry && <CountryModal code={selectedCountry} onClose={close} />}
+      {race ? (
+        <RaceModal race={race} />
+      ) : (
+        <>
+          {selectedState && <StateModal stateAbbr={selectedState} onClose={close} />}
+          {selectedCountry && <CountryModal code={selectedCountry} onClose={close} />}
+        </>
+      )}
     </div>
   );
 }
@@ -188,7 +183,7 @@ function App() {
       // Race pages: #/state/MI/<race-id> in the U.S., #/country/FR/<race-id> abroad.
       const race = ['state', 'country'].includes(page) && params[1] ? raceById(params[1]) : null;
       const matches = race && (page === 'state' ? race.state === selectedState : race.country === selectedCountry);
-      content = matches ? <RacePage race={race} /> : <MapPage selectedState={selectedState} selectedCountry={selectedCountry} />;
+      content = <MapPage selectedState={selectedState} selectedCountry={selectedCountry} race={matches ? race : null} />;
     }
   }
 

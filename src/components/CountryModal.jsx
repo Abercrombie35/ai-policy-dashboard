@@ -5,6 +5,7 @@ import { RaceCard } from './StateView';
 import { CheckNote } from './PolicyBox';
 import { PlaceVoterPriorities } from './OpinionCharts';
 import { checkOf } from '../lib/data';
+import { takeLastRace } from '../lib/router';
 import '../styles/StateModal.css';
 import '../styles/StateView.css';
 
@@ -79,7 +80,10 @@ function CountryModal({ code, onClose }) {
   useEffect(() => {
     const previous = document.activeElement;
     document.body.style.overflow = 'hidden';
-    ref.current?.focus();
+    // Coming back from a race pop-up, focus returns to that race's card.
+    const lastRace = takeLastRace();
+    const card = lastRace && ref.current?.querySelector(`[data-race-id="${lastRace}"]`);
+    (card || ref.current)?.focus();
     const onKey = (e) => {
       if (e.key === 'Escape') onClose();
     };

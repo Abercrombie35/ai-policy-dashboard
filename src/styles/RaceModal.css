@@ -1,0 +1,54 @@
+/*
+ * Race pop-up (AIPD-606): 80% of the screen over the map, the full screen on
+ * phones. The dialog is the only scroll area; the overlay is a plain dim
+ * background with no backdrop blur and no transform animation, which is what
+ * made very tall pop-ups render blank in some browsers (Nov. 16 report).
+ */
+.race-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(25 47 53 / .6);
+}
+
+.race-modal-content {
+  position: relative;
+  box-sizing: border-box;
+  width: 80vw;
+  height: 80vh;
+  height: 80dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  padding: 0 24px 24px;
+  background: var(--research-paper);
+  color: var(--research-ink);
+  border: 1px solid var(--research-control);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgb(25 47 53 / .22);
+  scrollbar-color: #9aafa5 var(--research-paper);
+}
+.race-modal-content:focus { outline: none; }
+
+.race-modal-content .modal-close {
+  background: var(--research-card);
+  color: var(--research-ink);
+  border-color: var(--research-control);
+  width: 44px;
+  height: 44px;
+}
+.race-modal-content .modal-close:hover { background: var(--research-soft); }
+
+@media (max-width: 768px) {
+  .race-modal-content {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    padding: 0 12px 16px;
+    border: 0;
+    border-radius: 0;
+  }
+}
