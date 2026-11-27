@@ -1,6 +1,6 @@
 # Methods appendix
 
-Generated from the dashboard's data on 2026-11-27 (site version 2026-11-27.7, codebook 1.0-rc1) by `npm run appendix`. The Methodology page on the site is the readable version of the same definitions; this appendix adds the current counts, the reliability results (when available) and the limitations.
+Generated from the dashboard's data on 2026-11-27 (site version 2026-11-27.8, codebook 1.0-rc1) by `npm run appendix`. The Methodology page on the site is the readable version of the same definitions; this appendix adds the current counts, the reliability results (when available) and the limitations.
 
 ## 1. Scope and sample
 
