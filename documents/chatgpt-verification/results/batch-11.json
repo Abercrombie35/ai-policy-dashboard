@@ -1,0 +1,193 @@
+[
+  {
+    "id": "pl-r-harmful#0",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf",
+    "source_title": "Public Law 119–12 — TAKE IT DOWN Act",
+    "source_date": "2025-05-19",
+    "exact_quote": "CRIMINAL PROHIBITION ON INTENTIONAL DISCLOSURE OF NONCONSENSUAL INTIMATE VISUAL DEPICTIONS",
+    "corrections": [
+      {
+        "field": "removal requirement",
+        "correct": "Covered platforms must remove qualifying material within 48 hours after receiving a valid removal request.",
+        "evidence": "Section 3 establishes a notice-and-removal process, with a one-year deadline for platforms to implement it."
+      }
+    ],
+    "not_confirmed": [],
+    "notes": "The criminal provisions contain knowledge, intent and other statutory conditions, so the claim’s broad description requires qualification."
+  },
+  {
+    "id": "pl-r-harmful#1",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/",
+    "source_title": "Ensuring a National Policy Framework for Artificial Intelligence",
+    "source_date": "2025-12-11",
+    "exact_quote": "",
+    "corrections": [
+      {
+        "field": "scope of child-safety exception",
+        "correct": "The child-safety exception qualifies the recommended federal legislative framework.",
+        "evidence": "The order’s legislative-recommendation section preserves specified categories of state law, while other sections separately establish litigation and funding measures."
+      }
+    ],
+    "not_confirmed": [],
+    "notes": "The exception should not be presented as a blanket exemption from every mechanism in the executive order."
+  },
+  {
+    "id": "pl-r-preemption#0",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/",
+    "source_title": "Ensuring a National Policy Framework for Artificial Intelligence",
+    "source_date": "2025-12-11",
+    "exact_quote": "the Attorney General shall establish an AI Litigation Task Force",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The order establishes challenges to state AI laws, funding-related measures and recommendations for federal preemption legislation with specified exceptions."
+  },
+  {
+    "id": "pl-r-preemption#1",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/",
+    "source_title": "Ensuring a National Policy Framework for Artificial Intelligence",
+    "source_date": "2025-12-11",
+    "exact_quote": "Ensuring a National Policy Framework for Artificial Intelligence",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The supplied URL opens the executive order’s official text."
+  },
+  {
+    "id": "pl-r-safety#0",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.whitehouse.gov/releases/2025/07/white-house-unveils-americas-ai-action-plan/",
+    "source_title": "White House Unveils America’s AI Action Plan",
+    "source_date": "2025-07-23",
+    "exact_quote": "The Plan identifies over 90 Federal policy actions",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The announcement identifies innovation, infrastructure and international leadership as its three pillars and emphasizes removing regulatory barriers."
+  },
+  {
+    "id": "pl-r-safety#1",
+    "verdict": "not-found",
+    "source_type": "other",
+    "source_url": "https://www.foley.com/insights/publications/2026/11/blue-wave-new-ai-rules-what-democratic-control-of-congress-means-for-ai-regulation/",
+    "source_title": "Supplied analysis of prospective AI regulation",
+    "source_date": null,
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "The September pact’s complete primary text.",
+      "The claimed absence of penalties, disclosure duties and enforcement.",
+      "The administration’s position on every form of binding safety mandate."
+    ],
+    "notes": "No opened primary pact established all of these assertions."
+  },
+  {
+    "id": "pl-r-workers#1",
+    "verdict": "verified",
+    "source_type": "news",
+    "source_url": "https://news.bloomberglaw.com/financial-accounting/trump-ai-plan-ditches-worker-protections-keeps-training-focus",
+    "source_title": "Trump AI Plan Ditches Worker Protections, Keeps Training Focus",
+    "source_date": "2025-07-23",
+    "exact_quote": "includes extensive plans for worker retraining and up-skilling, but is silent on worker protections",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The claim concerns the coverage’s characterization, which the opened Bloomberg report expressly supports."
+  },
+  {
+    "id": "tx-89r-hb149",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://capitol.texas.gov/billlookup/History.aspx?Bill=HB149&LegSess=89R",
+    "source_title": "Texas Legislature Online — HB 149 History",
+    "source_date": "2025-06-22",
+    "exact_quote": "Effective on 1/1/26",
+    "corrections": [],
+    "not_confirmed": [
+      "The complete amendment history establishing removal of the earlier impact-assessment regime."
+    ],
+    "notes": "The official history and summary confirm enactment, Capriglione’s authorship, prohibited uses and government disclosure duties: https://capitol.texas.gov/billlookup/BillSummary.aspx?Bill=HB149&LegSess=89R"
+  },
+  {
+    "id": "tx-90r-sb293",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00293I.htm",
+    "source_title": "90(R) SB 293 — Introduced version",
+    "source_date": null,
+    "exact_quote": "relating to the repeal of the exemptions from sales and use taxes",
+    "corrections": [],
+    "not_confirmed": [
+      "The claimed total of 23 Senate authors.",
+      "HB 167’s author and filing date.",
+      "SB 293’s filing date and latest action from its individual history."
+    ],
+    "notes": "The primary introduced text confirms Huffman’s repeal proposal, but both individual bill-history URLs failed to open."
+  },
+  {
+    "id": "tx-90r-sb33",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://capitol.texas.gov/reports/report.aspx?Code=A1700&ID=author&LegSess=90R",
+    "source_title": "Bills Authored / Joint Authored — Judith Zaffirini, 90th Legislature",
+    "source_date": null,
+    "exact_quote": "11/09/2026 S Filed",
+    "corrections": [
+      {
+        "field": "SB 35 mechanism",
+        "correct": "The official caption concerns ERCOT’s sharing of large-load customer information with the Texas Water Development Board.",
+        "evidence": "The author report describes information-sharing rather than directly stating a new data-center water-reporting duty."
+      },
+      {
+        "field": "SB 36 scope",
+        "correct": "The bill concerns eligibility for certain state and local incentive programs.",
+        "evidence": "Its official caption includes both state and local governments."
+      }
+    ],
+    "not_confirmed": [
+      "The full operative requirements and exceptions in SB 35 and SB 36."
+    ],
+    "notes": "The official author report confirms Zaffirini’s sponsorship and November 9 filing of all three bills."
+  },
+  {
+    "id": "us-grid-savings-act",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-offers-his-grid-savings-act-to-force-ai-data-centers-to-pay-for-grid-upgrades-highlights-how-husted-backed-bill-falls-short",
+    "source_title": "Heinrich Offers His GRID Savings Act to Force AI Data Centers to Pay for Grid Upgrades",
+    "source_date": "2026-09-17",
+    "exact_quote": "S.5199, the GRID Savings Act",
+    "corrections": [
+      {
+        "field": "bill number",
+        "correct": "S. 5199.",
+        "evidence": "Heinrich’s reproduced floor request identifies the bill number."
+      }
+    ],
+    "not_confirmed": [
+      "The latest formal action as of November 26."
+    ],
+    "notes": "Heinrich’s official statement confirms mandatory large-load connection-cost recovery and records that Senator Moreno blocked his unanimous-consent request."
+  },
+  {
+    "id": "us-hr3447",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.congress.gov/119/bills/hr3447/BILLS-119hr3447ih.pdf",
+    "source_title": "H.R. 3447 — Chip Security Act, introduced text",
+    "source_date": null,
+    "exact_quote": "CHIP SECURITY MECHANISMS",
+    "corrections": [],
+    "not_confirmed": [
+      "The March 26, 2026 committee vote of 42–0.",
+      "Inclusion in the Senate FY2027 NDAA.",
+      "Current legislative status as of November 26."
+    ],
+    "notes": "The primary text supports location-verification and chip-security requirements, but the procedural claims were not established from opened records."
+  }
+]

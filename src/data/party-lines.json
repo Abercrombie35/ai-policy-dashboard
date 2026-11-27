@@ -25,8 +25,8 @@
           "track": "proposed",
           "summary": "Executive order \"Ensuring a National Policy Framework for Artificial Intelligence\" creates a DOJ AI Litigation Task Force to challenge state AI laws, ties some federal funding to state AI policy, and tasks the White House AI adviser with proposing federal legislation that broadly preempts state AI laws, with carve-outs for child safety.",
           "source": {
-            "title": "Axios: Trump signs executive order targeting state AI laws",
-            "url": "https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws"
+            "title": "The White House: Ensuring a National Policy Framework for Artificial Intelligence (executive order, Dec. 11, 2025)",
+            "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/"
           }
         },
         {
@@ -44,9 +44,9 @@
         "url": "https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws"
       },
       "publishedDate": "2025-12-11",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -57,6 +57,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Evidence checked 2026-11-24 against other published reports (2 confirmed). All evidence confirmed; raised to Medium confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 11): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -200,10 +205,10 @@
         {
           "date": "2025-07-23",
           "track": "proposed",
-          "summary": "\"Winning the AI Race: America's AI Action Plan\" sets out more than 90 federal actions focused on innovation, infrastructure and international leadership, with a permissive approach to regulation.",
+          "summary": "\"Winning the AI Race: America's AI Action Plan\" sets out more than 90 federal actions focused on innovation, infrastructure and international leadership, with an emphasis on removing regulatory barriers.",
           "source": {
-            "title": "Fenwick: Trump administration releases sweeping AI Action Plan",
-            "url": "https://www.fenwick.com/insights/publications/trump-administration-releases-sweeping-ai-action-plan"
+            "title": "The White House: White House unveils America's AI Action Plan (July 23, 2025)",
+            "url": "https://www.whitehouse.gov/releases/2025/07/white-house-unveils-americas-ai-action-plan/"
           }
         },
         {
@@ -221,9 +226,9 @@
         "url": "https://www.fenwick.com/insights/publications/trump-administration-releases-sweeping-ai-action-plan"
       },
       "publishedDate": "2026-09",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
-      "version": 3,
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -239,6 +244,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Evidence checked a second time 2026-11-24 (2 confirmed). All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 11): evidence rechecked. Not all evidence confirmed; Low confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -253,19 +263,19 @@
         {
           "date": "2025-05-19",
           "track": "proposed",
-          "summary": "Trump signed the Take It Down Act, making it a federal crime to publish non-consensual intimate images, including AI deepfakes, and requiring platforms to remove them within 48 hours.",
+          "summary": "Trump signed the Take It Down Act (Public Law 119-12), making it a federal crime to knowingly publish non-consensual intimate images, including AI-generated ones, and requiring covered platforms to remove them within 48 hours of a valid request (platforms had a year to set up the process).",
           "source": {
-            "title": "Decrypt: Trump signs bipartisan act targeting deepfake abuse",
-            "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
+            "title": "GovInfo: Public Law 119-12, TAKE IT DOWN Act (May 19, 2025)",
+            "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf"
           }
         },
         {
           "date": "2025-12-11",
           "track": "proposed",
-          "summary": "The preemption push carves out child-safety laws.",
+          "summary": "The federal preemption law the order recommends would leave state child-safety laws in place; the carve-out does not apply to the order's litigation and funding measures.",
           "source": {
-            "title": "Axios: Trump signs executive order targeting state AI laws",
-            "url": "https://axios.com/2025/12/11/trump-signs-executive-order-state-ai-laws"
+            "title": "The White House: Ensuring a National Policy Framework for Artificial Intelligence (executive order, Dec. 11, 2025)",
+            "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/"
           }
         }
       ],
@@ -274,9 +284,9 @@
         "url": "https://decrypt.co/320996/trump-signs-bipartisan-act-targeting-deepfake-abuse-online-exploitation"
       },
       "publishedDate": "2025-12-11",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -287,6 +297,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Evidence checked 2026-11-24 against other published reports (2 confirmed). All evidence confirmed; raised to Medium confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 11): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
@@ -310,10 +325,10 @@
         {
           "date": "2025-07-23",
           "track": "said",
-          "summary": "Coverage noted the plan keeps a training focus and drops worker protections.",
+          "summary": "Bloomberg Law noted the plan \"includes extensive plans for worker retraining and up-skilling, but is silent on worker protections.\"",
           "source": {
-            "title": "Bloomberg Government: Trump AI plan ditches worker protections, keeps training focus",
-            "url": "https://news.bgov.com/safety/trump-ai-plan-ditches-worker-protections-keeps-training-focus"
+            "title": "Bloomberg Law: Trump AI plan ditches worker protections, keeps training focus (July 23, 2025)",
+            "url": "https://news.bloomberglaw.com/financial-accounting/trump-ai-plan-ditches-worker-protections-keeps-training-focus"
           }
         }
       ],
@@ -324,7 +339,7 @@
       "publishedDate": "2025-07-23",
       "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -345,6 +360,11 @@
           "version": 4,
           "date": "2026-11-27",
           "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 11): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
