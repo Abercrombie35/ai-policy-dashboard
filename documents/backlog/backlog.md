@@ -40,7 +40,7 @@ Built from the project proposal and the dashboard as deployed on Nov. 26, 2026 (
 | AIPD-111 | Track A: 2026 Senate candidates | Voter priorities: where AI ranks for voters in each race | 8 | **Must-Must** | Done (Nov. 26) | AIPD-211 |
 | AIPD-112 | Dashboard experience and context | Bar charts: importance of AI against the top issues, per race | 5 | **Must-Must** | Done (Nov. 26) | AIPD-111 |
 | AIPD-211 | Verification, coding and reliability | Hand-off list and ChatGPT prompt for claims Claude cannot verify | 3 | **Must-Must** | Done (Nov. 26) | - |
-| AIPD-212 | Verification, coding and reliability | Import ChatGPT verification results | 5 | **Must-Must** | In progress (batches 01-08 of 14 imported; tool in tools/import_chatgpt.py) | AIPD-211 |
+| AIPD-212 | Verification, coding and reliability | Import ChatGPT verification results | 5 | **Must-Must** | In progress (batches 01-09 of 14 imported; tool in tools/import_chatgpt.py) | AIPD-211 |
 | AIPD-311 | Track B: officeholders and state legislation | Public opinion on AI by party from Gallup and Pew | 5 | **Must-Must** | Done (Nov. 26) | AIPD-211 |
 | AIPD-312 | Track B: officeholders and state legislation | Legislation sourced from the IAPP, NCSL and MultiState trackers | 8 | **Must-Must** | Done (Nov. 26) | AIPD-302 |
 | AIPD-101 | Track A: 2026 Senate candidates | Archive campaign pages before they go offline | 3 | **Must** | To do | - |
@@ -130,7 +130,7 @@ Acceptance criteria:
 Note: Done Nov. 26, 2026: 138 claims in 12 batches. Every source site tested (Congress, the four legislatures, NCSL, IAPP, MultiState, Gallup, Pew, AP, NBC, EU and French official sites) was blocked from the cloud environment.
 
 #### AIPD-212: Import ChatGPT verification results
-*Must-Must · 5 points · In progress (batches 01-08 of 14 imported; tool in tools/import_chatgpt.py) · Proposal: §5, §8, §10 item 4 · Depends on: AIPD-211*
+*Must-Must · 5 points · In progress (batches 01-09 of 14 imported; tool in tools/import_chatgpt.py) · Proposal: §5, §8, §10 item 4 · Depends on: AIPD-211*
 
 As the project owner, I want to paste ChatGPT's answers here and have them applied consistently so that verified claims rise to High confidence and wrong ones are corrected.
 
