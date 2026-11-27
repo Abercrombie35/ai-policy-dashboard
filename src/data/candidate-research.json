@@ -3586,6 +3586,1586 @@
           "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
         }
       ]
+    },
+    {
+      "id": "cr-ks-sen-marshall-1",
+      "raceId": "ks-senate-2026",
+      "candidateId": "roger-marshall",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "At a Semafor event, Marshall said he supports the local data center moratoriums adopted by several dozen Kansas counties and that such decisions belong at the local level. He did not endorse a statewide moratorium like New York's but left open congressional action on national-security aspects of AI infrastructure.",
+      "source": {
+        "title": "Semafor: Republican senator rails against AI data centers (July 22, 2026)",
+        "url": "https://semafor.com/article/07/22/2026/republican-senator-roger-marshall-rails-against-ai-data-centers"
+      },
+      "publishedDate": "2026-07-22",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-moratorium",
+        "dc-local-control"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Newsweek). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ks-sen-marshall-2",
+      "raceId": "ks-senate-2026",
+      "candidateId": "roger-marshall",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Marshall said he opposes tax incentives for data centers, citing strain on local water and electricity supplies and the small number of permanent jobs they create.",
+      "source": {
+        "title": "Semafor: Republican senator rails against AI data centers (July 22, 2026)",
+        "url": "https://semafor.com/article/07/22/2026/republican-senator-roger-marshall-rails-against-ai-data-centers"
+      },
+      "publishedDate": "2026-07-22",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-tax-incentives",
+        "dc-water-environment"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ks-sen-marshall-3",
+      "raceId": "ks-senate-2026",
+      "candidateId": "roger-marshall",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Marshall said Kansans are \"on fire\" over data centers and called for keeping the U.S. ahead of China on AI while setting guardrails on the facilities.",
+      "source": {
+        "title": "KCUR/Kansas Reflector: Where Marshall and Hamilton stand on everyday issues (Oct. 16, 2026)",
+        "url": "https://www.kcur.org/politics-elections-and-government/2026-10-16/marshall-hamilton-everyday-issues"
+      },
+      "publishedDate": "2026-10-16",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers",
+          "national-security-china"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-security",
+        "dc-local-control"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (HPPR (same Kansas Reflector report)). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ks-sen-marshall-4",
+      "raceId": "ks-senate-2026",
+      "candidateId": "roger-marshall",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Marshall and Sen. Lisa Blunt Rochester (D-Del.) introduced the RESULTS Act, which would fund state education and workforce data systems so states can track and respond to job shifts from AI and other technologies.",
+      "source": {
+        "title": "Office of Sen. Marshall: Senator Marshall Introduces Bill to Modernize Workforce Data",
+        "url": "https://www.marshall.senate.gov/newsroom/press-releases/senator-marshall-introduces-bill-to-modernize-workforce-data"
+      },
+      "publishedDate": "2026-07-29",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal",
+          "state"
+        ],
+        "instruments": [
+          "funding"
+        ],
+        "issueAreas": [
+          "labor"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "workers": "retraining-led"
+      },
+      "categories": [
+        "ai-workers"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (StateScoop, Office of Sen. Blunt Rochester). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ks-sen-marshall-5",
+      "raceId": "ks-senate-2026",
+      "candidateId": "roger-marshall",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Marshall voted for cloture on the House-passed Ratepayer Protection Act (H.R. 9340), which would have state utility regulators consider standards making data centers and other large users pay for grid upgrades. The motion failed 57-43. His vote is inferred from the tally (all Republicans voted yes) rather than seen by name.",
+      "source": {
+        "title": "Roll Call: Voluntary ratepayer protection bill blocked in Senate again (Sept. 30, 2026)",
+        "url": "https://rollcall.com/2026/09/30/voluntary-ratepayer-protection-bill-blocked-in-senate-again/"
+      },
+      "publishedDate": "2026-09-30",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "voting-record",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Newsweek, DatacenterDynamics). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ks-sen-marshall-6",
+      "raceId": "ks-senate-2026",
+      "candidateId": "roger-marshall",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Marshall voted for the Blackburn-Cantwell amendment that removed a 10-year moratorium on state AI laws from the budget reconciliation bill. The amendment passed 99-1, with Sen. Thom Tillis the only no vote.",
+      "source": {
+        "title": "Senate Commerce Committee: Senate strikes AI moratorium from budget reconciliation bill in 99-1 vote (July 1, 2025)",
+        "url": "https://www.commerce.senate.gov/2025/7/senate-strikes-ai-moratorium-from-budget-reconciliation-bill-in-overwhelming-99-1-vote/"
+      },
+      "publishedDate": "2025-07-01",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "unclear",
+        "levelOfGovernment": [
+          "federal",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "voting-record",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-preemption"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (PBS NewsHour, Route Fifty). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ks-sen-hamilton-1",
+      "raceId": "ks-senate-2026",
+      "candidateId": "adam-hamilton",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Hamilton said local communities, not the state, should decide on data centers: \"the heart of the data center debate is who decides, and that ought to be the local community.\" He said he does not favor a statewide policy on data center siting or permitting in Kansas.",
+      "source": {
+        "title": "KCUR/Kansas Reflector: Where Marshall and Hamilton stand on everyday issues (Oct. 16, 2026)",
+        "url": "https://www.kcur.org/politics-elections-and-government/2026-10-16/marshall-hamilton-everyday-issues"
+      },
+      "publishedDate": "2026-10-16",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-local-control"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (KSHB 41). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ks-sen-hamilton-2",
+      "raceId": "ks-senate-2026",
+      "candidateId": "adam-hamilton",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Hamilton committed to making data centers pay for their own energy. In a voter-guide answer he said a data center's water use cannot come at the expense of drinking water or farm irrigation, or show up as higher bills for neighbors.",
+      "source": {
+        "title": "KCUR/Kansas Reflector: Where Marshall and Hamilton stand on everyday issues (Oct. 16, 2026)",
+        "url": "https://www.kcur.org/politics-elections-and-government/2026-10-16/marshall-hamilton-everyday-issues"
+      },
+      "publishedDate": "2026-10-16",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer",
+        "dc-water-environment"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (KSHB 41). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-collins-1",
+      "raceId": "me-senate-2026",
+      "candidateId": "susan-collins",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Collins cosponsored, with Sens. Marsha Blackburn, Maria Cantwell and Ed Markey, the amendment that removed a 10-year moratorium on state AI laws from the budget reconciliation bill. It passed 99-1.",
+      "source": {
+        "title": "Route Fifty: Senate overwhelmingly passes amendment removing state AI moratorium (July 2025)",
+        "url": "https://www.route-fifty.com/artificial-intelligence/2025/07/senate-overwhelmingly-passes-amendment-removing-state-ai-moratorium/406469"
+      },
+      "publishedDate": "2025-07-01",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal",
+          "preemption",
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "preemption": "opposes-preemption"
+      },
+      "categories": [
+        "ai-preemption"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (EPIC, PBS NewsHour). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-collins-2",
+      "raceId": "me-senate-2026",
+      "candidateId": "susan-collins",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Collins voted for the Ratepayer Protection Act, which would have state utility regulators consider standards making data centers pay for grid upgrades; the Senate motion failed 57-43. The American Prospect reports she also cosponsored the Senate bill.",
+      "source": {
+        "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers amid Maine voters' fears (Oct. 2026)",
+        "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762"
+      },
+      "publishedDate": "2026-09-30",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "voting-record",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (The American Prospect, Roll Call). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-collins-3",
+      "raceId": "me-senate-2026",
+      "candidateId": "susan-collins",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In a debate Collins said Maine families and small businesses \"are already paying some of the highest electricity costs in the nation\" and cited the Ratepayer Protection Act. She has said data centers should be judged case by case, and at a forum she and Jackson agreed the facilities must not affect water use or raise electricity rates, with local agreements key.",
+      "source": {
+        "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers amid Maine voters' fears (Oct. 2026)",
+        "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762"
+      },
+      "publishedDate": "2026-10",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer",
+        "dc-water-environment",
+        "dc-local-control"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Bangor Daily News, The American Prospect). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-collins-4",
+      "raceId": "me-senate-2026",
+      "candidateId": "susan-collins",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Collins backs efforts to keep the U.S. ahead of China on AI and points to bipartisan work on AI scams and deceptive AI in elections; her campaign said it had not used AI in her re-election bid.",
+      "source": {
+        "title": "Bangor Daily News: Maine politicians responding to AI warnings (Sept. 16, 2026)",
+        "url": "https://www.bangordailynews.com/2026/09/16/politics/elections/maine-politicians-responding-to-ai-warnings-joam40zk0w/"
+      },
+      "publishedDate": "2026-09-16",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china",
+          "deepfakes-elections"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-national-security",
+        "ai-deepfakes"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-collins-5",
+      "raceId": "me-senate-2026",
+      "candidateId": "susan-collins",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Collins joined Sens. Amy Klobuchar, Josh Hawley and Chris Coons in introducing the Protect Elections from Deceptive AI Act, which would bar materially deceptive AI-generated content depicting federal candidates in political ads.",
+      "source": {
+        "title": "Office of Sen. Collins: Senator Collins, bipartisan group introduce bill to ban deceptive AI-generated content in elections",
+        "url": "https://www.collins.senate.gov/newsroom/senator-collins-bipartisan-group-introduce-bill-to-ban-deceptive-ai-generated-content-in-elections"
+      },
+      "publishedDate": "2023-09",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "deepfakes-elections"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-deepfakes"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Office of Sen. Klobuchar, Office of Sen. Hawley). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-jackson-1",
+      "raceId": "me-senate-2026",
+      "candidateId": "troy-jackson",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "In an \"Agency over AI\" plan released as a candidate for governor, Jackson proposed requiring AI companies that bring data centers to Maine to build their own power sources and pay for grid upgrades, and pledged to regulate data centers so they don't \"raise power bills, drain the local water supply or make nearby homes unlivable.\" He said he would have signed the vetoed LD 307 moratorium.",
+      "source": {
+        "title": "Spectrum News Maine: Jackson says AI, 'tech billionaires' will face scrutiny in Maine if he's elected governor (June 4, 2026)",
+        "url": "https://spectrumlocalnews.com/me/maine/politics/2026/06/04/jackson-says-ai--tech-billionaires--will-face-scrutiny-in-maine-if-he-s-elected-governor"
+      },
+      "publishedDate": "2026-06-04",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Bangor Daily News, States Newsroom (Maine Morning Star) report on Jackson's AI plan). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-jackson-2",
+      "raceId": "me-senate-2026",
+      "candidateId": "troy-jackson",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "The same plan would strip state contracts and tax breaks from major employers that attribute mass layoffs to AI, and called for safeguards against AI replacing Maine workers and for transparency when state government uses AI.",
+      "source": {
+        "title": "Spectrum News Maine: Jackson says AI, 'tech billionaires' will face scrutiny in Maine if he's elected governor (June 4, 2026)",
+        "url": "https://spectrumlocalnews.com/me/maine/politics/2026/06/04/jackson-says-ai--tech-billionaires--will-face-scrutiny-in-maine-if-he-s-elected-governor"
+      },
+      "publishedDate": "2026-06-04",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "procurement",
+          "disclosure"
+        ],
+        "issueAreas": [
+          "labor"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "workers": "active-protections"
+      },
+      "categories": [
+        "ai-workers"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (States Newsroom (Maine Morning Star) report on Jackson's AI plan). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-jackson-3",
+      "raceId": "me-senate-2026",
+      "candidateId": "troy-jackson",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "At the Oct. 13 debate Jackson said data centers built in Maine cannot raise electricity rates or hurt water quality, stressed union construction and maintenance jobs, and said \"there has to be real parameters, real guidelines to how we're going to do this.\"",
+      "source": {
+        "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers amid Maine voters' fears (Oct. 2026)",
+        "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762"
+      },
+      "publishedDate": "2026-10-13",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer",
+        "dc-water-environment",
+        "dc-economy-jobs"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (The American Prospect). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-jackson-4",
+      "raceId": "me-senate-2026",
+      "candidateId": "troy-jackson",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Jackson said the AI race needs to slow down or stop, and his campaign criticized Collins for backing Energy Secretary Chris Wright, a data center proponent.",
+      "source": {
+        "title": "Bangor Daily News: Maine politicians responding to AI warnings (Sept. 16, 2026)",
+        "url": "https://www.bangordailynews.com/2026/09/16/politics/elections/maine-politicians-responding-to-ai-warnings-joam40zk0w/"
+      },
+      "publishedDate": "2026-09-16",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "safety-rules": "pause-or-public-control"
+      },
+      "categories": [
+        "ai-frontier-safety"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-me-sen-jackson-5",
+      "raceId": "me-senate-2026",
+      "candidateId": "troy-jackson",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Jackson criticized Gov. Janet Mills's April 2026 veto of LD 307, the state's temporary moratorium on large data centers, saying \"She's concerned more about big business than she is about workers.\"",
+      "source": {
+        "title": "The American Prospect: Downvoting data centers in Maine (Oct. 16, 2026)",
+        "url": "https://prospect.org/2026/10/16/downvoting-data-centers-in-maine/"
+      },
+      "publishedDate": "2026-04",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "categories": [
+        "dc-moratorium"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Spectrum News Maine). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-husted-1",
+      "raceId": "oh-senate-2026",
+      "candidateId": "jon-husted",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Husted introduced the Senate Ratepayer Protection Act, which would have state utility regulators consider standards so that data centers and other large electricity users pay for the energy and grid upgrades they require. Reps. Gabe Evans and Kathy Castor led the House companion.",
+      "source": {
+        "title": "Office of Sen. Husted: Ratepayer Protection Act release (July 20, 2026)",
+        "url": "https://www.husted.senate.gov/?p=12816"
+      },
+      "publishedDate": "2026-07-20",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Spectrum News 1, Newsweek). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-husted-2",
+      "raceId": "oh-senate-2026",
+      "candidateId": "jon-husted",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "After the House passed the Ratepayer Protection Act 417-3 on Sept. 16, Husted sought unanimous consent on Sept. 17 to pass it in the Senate and was blocked. A Sept. 30 cloture vote failed 57-43; Husted voted yes and blamed Senate Democrats.",
+      "source": {
+        "title": "Roll Call: Voluntary ratepayer protection bill blocked in Senate again (Sept. 30, 2026)",
+        "url": "https://rollcall.com/2026/09/30/voluntary-ratepayer-protection-bill-blocked-in-senate-again/"
+      },
+      "publishedDate": "2026-09-30",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "voting-record",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Roll Call, Newsweek). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-husted-3",
+      "raceId": "oh-senate-2026",
+      "candidateId": "jon-husted",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Husted said data center siting should be a local decision and that \"What we should do is protect the ratepayers from bearing the burden of the cost of building the electricity those data centers use.\"",
+      "source": {
+        "title": "Ohio Capital Journal via BG Independent Media: Ohio U.S. Senate candidates offer contrasting visions for data centers (Aug. 10, 2026)",
+        "url": "https://bgindependentmedia.org/ohio-u-s-senate-candidates-offer-contrasting-visions-for-data-centers/"
+      },
+      "publishedDate": "2026-08-10",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-local-control",
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WYSU). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-husted-4",
+      "raceId": "oh-senate-2026",
+      "candidateId": "jon-husted",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Husted said Ohio's sales and use tax break for new data center construction, which he once backed, should no longer be awarded.",
+      "source": {
+        "title": "WYSU: Ohio's U.S. Senate candidates recalibrate their stances on data centers (Aug. 17, 2026)",
+        "url": "https://wysu.org/ohio-news/2026-08-17/ohios-u-s-senate-candidates-recalibrate-their-stances-on-data-centers"
+      },
+      "publishedDate": "2026-08-17",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-tax-incentives"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WOUB). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-husted-5",
+      "raceId": "oh-senate-2026",
+      "candidateId": "jon-husted",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Husted introduced the Children Harmed by AI Technology (CHAT) Act (S. 2714), which would require AI companion chatbot operators to verify ages, block minors from sexually explicit content, notify parents about self-harm conversations and show recurring notices that users are talking to AI.",
+      "source": {
+        "title": "Office of Sen. Husted: Husted leads bill to protect children from AI companion chatbots' sexual content (Sept. 8, 2025)",
+        "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-children-from-ai-companion-chatbots-sexual-content/"
+      },
+      "publishedDate": "2025-09-08",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "disclosure",
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-child-safety"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Congress.gov, Akin Gump). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-husted-6",
+      "raceId": "oh-senate-2026",
+      "candidateId": "jon-husted",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Husted and Sen. Andy Kim (D-N.J.) introduced a follow-up chatbot bill setting tiered federal standards for educational, companion and health chatbots used by minors, with age verification, parental controls and notification, crisis-referral rules, and enforcement by the FTC and state attorneys general.",
+      "source": {
+        "title": "Office of Sen. Husted: release dated July 29, 2026",
+        "url": "https://www.husted.senate.gov/?p=12865"
+      },
+      "publishedDate": "2026-07-29",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "disclosure",
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-child-safety"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (News 12, WHIO). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-husted-7",
+      "raceId": "oh-senate-2026",
+      "candidateId": "jon-husted",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Husted voted for the amendment that removed a 10-year moratorium on state AI laws from the budget reconciliation bill; it passed 99-1 with Sen. Thom Tillis the only no vote.",
+      "source": {
+        "title": "Senate Commerce Committee: Senate strikes AI moratorium from budget reconciliation bill in 99-1 vote (July 1, 2025)",
+        "url": "https://www.commerce.senate.gov/2025/7/senate-strikes-ai-moratorium-from-budget-reconciliation-bill-in-overwhelming-99-1-vote/"
+      },
+      "publishedDate": "2025-07-01",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "unclear",
+        "levelOfGovernment": [
+          "federal",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "voting-record",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-preemption"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (PBS NewsHour, TechCrunch). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-husted-8",
+      "raceId": "oh-senate-2026",
+      "candidateId": "jon-husted",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In an interview on his freshman priorities, Husted said he wants Congress to embrace AI and described innovation as a driver of economic growth and jobs.",
+      "source": {
+        "title": "Axios: Freshman wishlist: Husted wants Congress to embrace AI (May 7, 2025)",
+        "url": "https://www.axios.com/2025/05/07/jon-husted-ai-congress-senate"
+      },
+      "publishedDate": "2025-05-07",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-innovation"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-brown-1",
+      "raceId": "oh-senate-2026",
+      "candidateId": "sherrod-brown",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Brown's campaign ads called Husted \"the face of data centers in Ohio,\" saying he \"cut sweetheart tax deals\" and fast-tracked approvals \"while ordinary residents watched their electricity bills explode.\"",
+      "source": {
+        "title": "E&E News: Data centers heat up Ohio Senate race",
+        "url": "https://www.eenews.net/articles/data-centers-heat-up-ohio-senate-race/"
+      },
+      "publishedDate": "2026-09",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-tax-incentives",
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Signal Cleveland, Newsweek). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-brown-2",
+      "raceId": "oh-senate-2026",
+      "candidateId": "sherrod-brown",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Brown called for ending Ohio's data center tax breaks and said local communities should have a say on whether to allow data center construction.",
+      "source": {
+        "title": "Ohio Capital Journal via BG Independent Media: Ohio U.S. Senate candidates offer contrasting visions for data centers (Aug. 10, 2026)",
+        "url": "https://bgindependentmedia.org/ohio-u-s-senate-candidates-offer-contrasting-visions-for-data-centers/"
+      },
+      "publishedDate": "2026-08-10",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-tax-incentives",
+        "dc-local-control"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (ABC6, WYSU). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-oh-sen-brown-3",
+      "raceId": "oh-senate-2026",
+      "candidateId": "sherrod-brown",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In a campaign ad Brown promised to make data centers pay the full cost of their electricity use.",
+      "source": {
+        "title": "Newsweek: Sherrod Brown's AI data center views as Husted's bill blocked by Democrats (Sept. 2026)",
+        "url": "https://newsweek.com/sherrod-browns-ai-data-center-views-as-husteds-bill-blocked-by-democrats-12514153"
+      },
+      "publishedDate": "2026-09",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state",
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Fox News). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ia-sen-hinson-1",
+      "raceId": "ia-senate-2026",
+      "candidateId": "ashley-hinson",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In an op-ed, Hinson argued that Washington's AI decisions will shape the world children grow up in, said AI risks should be scrutinized as carefully as its benefits are celebrated, and questioned whether current export controls go far enough to keep advanced AI chips away from China. She called for smart policy, strong enforcement and a ready workforce.",
+      "source": {
+        "title": "Ashley Hinson campaign: Op-Ed: Congress needs to ensure that the AI future belongs to our kids, not to Beijing (Mar. 20, 2026)",
+        "url": "https://ashleyhinson.com/op-ed-rep-ashley-hinson-congress-needs-to-ensure-that-the-ai-future-belongs-to-our-kids-not-to-beijing"
+      },
+      "publishedDate": "2026-03-20",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china",
+          "safety"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "chip-sales-china": "restrict-sales"
+      },
+      "categories": [
+        "ai-chips-china",
+        "ai-national-security"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Newsweek). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ak-sen-sullivan-1",
+      "raceId": "ak-senate-2026",
+      "candidateId": "dan-sullivan",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Sullivan joined Sen. John Cornyn and 11 other senators in introducing the FIGHT China Act, which would have Treasury prohibit or require notice of certain U.S. investments in Chinese technologies, including artificial intelligence and advanced semiconductors.",
+      "source": {
+        "title": "Sen. Dan Sullivan: Sullivan, Cornyn, and Colleagues Introduce Outbound Investment Legislation to Counter China (Mar. 14, 2025)",
+        "url": "https://www.sullivan.senate.gov/newsroom/press-releases/sullivan-cornyn-and-colleagues-introduce-outbound-investment-legislation-to-counter-china"
+      },
+      "publishedDate": "2025-03-13",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans",
+          "disclosure"
+        ],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-national-security",
+        "ai-chips-china"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Semafor, Steptoe). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ak-sen-sullivan-2",
+      "raceId": "ak-senate-2026",
+      "candidateId": "dan-sullivan",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "At a Senate Commerce Committee hearing titled 'Winning the AI Race,' Sullivan raised concerns that investment by American companies in Chinese AI could help make China's military more lethal.",
+      "source": {
+        "title": "Tiber Creek Group: Senate Commerce hearing summary, 'Winning the AI Race' (May 8, 2025)",
+        "url": "https://www.tibercreekgroup.com/wp-content/uploads/sites/2/2025/07/5.8-Senate-Commerce_AI.pdf"
+      },
+      "publishedDate": "2025-05-08",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "unclear",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "national-security-china"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-national-security"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ak-sen-sullivan-3",
+      "raceId": "ak-senate-2026",
+      "candidateId": "dan-sullivan",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "The Senate voted 99-1 to adopt Sen. Marsha Blackburn's amendment removing a 10-year moratorium on state AI regulation from the reconciliation bill; Sen. Thom Tillis cast the only no vote, so Sullivan voted to remove the moratorium.",
+      "source": {
+        "title": "Route Fifty: Senate overwhelmingly passes amendment removing state AI moratorium (Jul. 1, 2025)",
+        "url": "https://www.route-fifty.com/artificial-intelligence/2025/07/senate-overwhelmingly-passes-amendment-removing-state-ai-moratorium/406469"
+      },
+      "publishedDate": "2025-07-01",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "unclear",
+        "levelOfGovernment": [
+          "federal",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "voting-record",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-preemption"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (TechCrunch, PBS NewsHour). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ak-sen-sullivan-4",
+      "raceId": "ak-senate-2026",
+      "candidateId": "dan-sullivan",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In his annual address to the Alaska Legislature, Sullivan listed Air Force data centers on Alaska bases, which would increase demand for natural gas, among recent progress, according to a Must Read Alaska summary. Newsweek separately reported that Sullivan petitioned to bring data centers onto Air Force and joint military installations and, with Gov. Mike Dunleavy, presented Alaska's cold climate and North Slope gas reserves as advantages for attracting AI data centers.",
+      "source": {
+        "title": "Must Read Alaska: Sullivan Touts 'Alaska Comeback,' Historic Opportunities, in Annual Address to Legislature (Feb. 2026)",
+        "url": "https://mustreadalaska.com/sullivan-touts-alaska-comeback-historic-opportunities-in-annual-address-to-legislature"
+      },
+      "publishedDate": "2026-02-18",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "federal",
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers",
+          "national-security-china"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "accelerate"
+      },
+      "categories": [
+        "dc-economy-jobs",
+        "dc-security"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Newsweek, Newsweek). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ak-sen-sullivan-5",
+      "raceId": "ak-senate-2026",
+      "candidateId": "dan-sullivan",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "Sullivan's office said he authored provisions in the Senate Armed Services Committee's FY2027 defense authorization bill, including one directing the Department of War to set up a strategy and roadmap to reduce local community impacts while private data centers are built on military installations. The committee approved the bill 18-9.",
+      "source": {
+        "title": "Sen. Dan Sullivan: Sullivan Secures 56 Provisions, Historic $26 Billion for Alaska in FY 2027 Defense Authorization (June 2026)",
+        "url": "https://www.sullivan.senate.gov/newsroom/press-releases/sullivan-secures-56-provisions-historic-26-billion-for-alaska-in-fy-2027-defense-authorization"
+      },
+      "publishedDate": "2026-06",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "dc-local-control"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-ak-sen-peltola-1",
+      "raceId": "ak-senate-2026",
+      "candidateId": "mary-peltola",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Newsweek reported that Peltola has emphasized that local communities should have a voice in decisions on data centers and that data centers should pay their own way.",
+      "source": {
+        "title": "Newsweek: Alaska could become more unwelcoming to data centers (Nov. 2026)",
+        "url": "https://newsweek.com/alaska-could-become-more-unwelcoming-data-centers-12741506"
+      },
+      "publishedDate": "2026-11",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer",
+        "dc-local-control"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
     }
   ]
 }

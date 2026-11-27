@@ -163,7 +163,7 @@ for race_r in research.get('races', []):
         date = year_month(st.get('date'))
         rec = {
             'id': rec_id, 'raceId': rid, 'candidateId': st['candidateId'], 'kind': d.get('kind') or st.get('kind', 'statement'),
-            'labelType': 'source-summary', 'text': d.get('text') or st['text'],
+            'labelType': 'source-summary', 'text': (d.get('text') or st['text']) + d.get('append', ''),
             'source': {'title': st['source']['title'], 'url': st['source']['url']},
             'publishedDate': date, 'lastVerified': TODAY, 'confidence': conf,
             'coding': {**d['coding'], 'coder': 'model-draft', 'reviewed': False},

@@ -1,0 +1,1820 @@
+{
+  "asOf": "2026-11-27",
+  "races": [
+    {
+      "raceId": "ks-senate-2026",
+      "state": "KS",
+      "office": "U.S. Senate",
+      "seatType": "regular",
+      "seat": {
+        "type": "incumbent",
+        "note": "Republican Sen. Roger Marshall sought a second term; Hamilton's win makes him the first Democrat elected to the U.S. Senate from Kansas since George McGill in 1932."
+      },
+      "nomineesSource": "Marshall won the Republican primary and Hamilton won a multi-candidate Democratic primary on Aug. 4, 2026 (KCUR: https://www.kcur.org/2026-08-04/kansas-senate-race-set-democrat-adam-hamilton-to-take-on-republican-sen-roger-marshall). Libertarian David Graham was also on the general-election ballot (Ballotpedia).",
+      "candidates": [
+        {
+          "id": "adam-hamilton",
+          "name": "Adam Hamilton",
+          "party": "Democratic",
+          "incumbent": false
+        },
+        {
+          "id": "roger-marshall",
+          "name": "Roger Marshall",
+          "party": "Republican",
+          "incumbent": true
+        },
+        {
+          "id": "david-graham",
+          "name": "David Graham",
+          "party": "Libertarian",
+          "incumbent": false
+        }
+      ],
+      "result": {
+        "winner": "Adam Hamilton",
+        "call": "Called by AP on election night, Nov. 3, 2026; one AP-syndicated account says the call came around 10:25 p.m. with about 90% of the vote counted.",
+        "candidates": [
+          {
+            "name": "Adam Hamilton",
+            "party": "Democratic",
+            "votePct": 51.18,
+            "votes": 571573
+          },
+          {
+            "name": "Roger Marshall",
+            "party": "Republican",
+            "votePct": 45.79,
+            "votes": 511360
+          },
+          {
+            "name": "David Graham",
+            "party": "Libertarian",
+            "votePct": null,
+            "votes": null
+          }
+        ],
+        "figuresAsOf": "Unofficial totals as shown in Wikipedia's results table (seen via search, Nov. 2026); not yet certified. Graham's total not retrieved.",
+        "source": {
+          "title": "KCUR: Hamilton wins: Kansans elect Democratic senator for the first time in nearly a century (Nov. 3, 2026)",
+          "url": "https://www.kcur.org/politics-elections-and-government/2026-11-03/hamilton-wins-kansans-elect-democratic-senator-for-the-first-time-in-nearly-a-century"
+        },
+        "additionalSources": [
+          {
+            "title": "AP via FOX19: Adam Hamilton ousts GOP Sen. Roger Marshall, Democrats' 1st Senate win in Kansas in 94 years (Nov. 4, 2026)",
+            "url": "https://www.fox19.com/2026/11/04/kansas-democrats-hope-adam-hamilton-can-harness-trump-fatigue-oust-republican-sen-roger-marshall/"
+          },
+          {
+            "title": "KCTV5: Hamilton makes Democrat history in Kansas (Nov. 4, 2026)",
+            "url": "https://www.kctv5.com/2026/11/04/hamilton-makes-democrat-history-kansas-winning-us-senate-seat-first-time-nearly-century/"
+          },
+          {
+            "title": "Ballotpedia News: Kansas Senate result",
+            "url": "https://news.ballotpedia.org/?p=52425"
+          },
+          {
+            "title": "Wikipedia: 2026 United States Senate election in Kansas",
+            "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas"
+          }
+        ],
+        "certification": {
+          "status": "pending",
+          "by": "Kansas State Board of Canvassers",
+          "date": null,
+          "expected": "Early December 2026 by precedent (the board certified the 2024 general election on Dec. 3, 2024); no 2026 general-election certification found as of Nov. 27.",
+          "source": {
+            "title": "Kansas Secretary of State: State Board of Canvassers certifies Kansas general election results (Dec. 3, 2024)",
+            "url": "https://kssos.org/media/press-releases/2024/12-03-24-state-board-of-canvassers-certifies-kansas-general-election-results.html"
+          }
+        }
+      },
+      "statements": [
+        {
+          "candidateId": "roger-marshall",
+          "date": "2026-07-22",
+          "kind": "position",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "At a Semafor event, Marshall said he supports the local data center moratoriums adopted by several dozen Kansas counties and that such decisions belong at the local level. He did not endorse a statewide moratorium like New York's but left open congressional action on national-security aspects of AI infrastructure.",
+          "headline": "Backs county-level data center moratoriums",
+          "source": {
+            "title": "Semafor: Republican senator rails against AI data centers (July 22, 2026)",
+            "url": "https://semafor.com/article/07/22/2026/republican-senator-roger-marshall-rails-against-ai-data-centers",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "Newsweek: Josh Hawley's allies on data center bill (notes Marshall has not called for a total moratorium)",
+              "url": "https://newsweek.com/josh-hawleys-allies-on-data-center-bill-before-republicans-lose-majority-12713403"
+            }
+          ],
+          "notes": "Newsweek item confirms only that he has stopped short of a total moratorium; the county-moratorium remarks rest on Semafor."
+        },
+        {
+          "candidateId": "roger-marshall",
+          "date": "2026-07-22",
+          "kind": "position",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "Marshall said he opposes tax incentives for data centers, citing strain on local water and electricity supplies and the small number of permanent jobs they create.",
+          "headline": "Opposes tax incentives for data centers",
+          "source": {
+            "title": "Semafor: Republican senator rails against AI data centers (July 22, 2026)",
+            "url": "https://semafor.com/article/07/22/2026/republican-senator-roger-marshall-rails-against-ai-data-centers",
+            "type": "news"
+          },
+          "confirmedBy": [],
+          "notes": "No independent report of this specific remark found; later coverage cites Semafor."
+        },
+        {
+          "candidateId": "roger-marshall",
+          "date": "2026-10-16",
+          "kind": "statement",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "Marshall said Kansans are \"on fire\" over data centers and called for keeping the U.S. ahead of China on AI while setting guardrails on the facilities.",
+          "headline": "Data centers need guardrails; stay ahead of China",
+          "source": {
+            "title": "KCUR/Kansas Reflector: Where Marshall and Hamilton stand on everyday issues (Oct. 16, 2026)",
+            "url": "https://www.kcur.org/politics-elections-and-government/2026-10-16/marshall-hamilton-everyday-issues"
+          },
+          "confirmedBy": [
+            {
+              "title": "HPPR (same Kansas Reflector report): Marshall, Hamilton on everyday issues (Oct. 16, 2026)",
+              "url": "https://www.hppr.org/2026-10-16/marshall-hamilton-everyday-issues"
+            }
+          ],
+          "notes": "HPPR is a republication of the same report, not an independent confirmation."
+        },
+        {
+          "candidateId": "roger-marshall",
+          "date": "2026-07-29",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "Marshall and Sen. Lisa Blunt Rochester (D-Del.) introduced the RESULTS Act, which would fund state education and workforce data systems so states can track and respond to job shifts from AI and other technologies.",
+          "headline": "Co-introduced bill on AI-driven workforce data",
+          "source": {
+            "title": "Office of Sen. Marshall: Senator Marshall Introduces Bill to Modernize Workforce Data",
+            "url": "https://www.marshall.senate.gov/newsroom/press-releases/senator-marshall-introduces-bill-to-modernize-workforce-data",
+            "type": "official"
+          },
+          "confirmedBy": [
+            {
+              "title": "StateScoop: bill to update state education and workforce data systems (July 31, 2026)",
+              "url": "https://statescoop.com/education-workforce-data-state-longitudinal-systems/"
+            },
+            {
+              "title": "Office of Sen. Blunt Rochester: RESULTS Act one-pager (July 2026)",
+              "url": "https://www.bluntrochester.senate.gov/wp-content/uploads/2026/07/260720_RESULTS-Act-One-Pager_v2.pdf"
+            }
+          ],
+          "notes": "A third-party tracker lists it as S. 5157, introduced July 29, 2026, with Blunt Rochester as sponsor and Marshall as cosponsor; not checked on Congress.gov. Marshall's office also issued a release titled 'AI Will Not Replace Us—It Will Assist Us' (date not found)."
+        },
+        {
+          "candidateId": "roger-marshall",
+          "date": "2026-09-30",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "data-centers",
+          "text": "Marshall voted for cloture on the House-passed Ratepayer Protection Act (H.R. 9340), which would have state utility regulators consider standards making data centers and other large users pay for grid upgrades. The motion failed 57-43.",
+          "headline": "Voted to advance Ratepayer Protection Act",
+          "source": {
+            "title": "Roll Call: Voluntary ratepayer protection bill blocked in Senate again (Sept. 30, 2026)",
+            "url": "https://rollcall.com/2026/09/30/voluntary-ratepayer-protection-bill-blocked-in-senate-again/",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "Newsweek: How senators voted on the AI data center bill",
+              "url": "https://www.newsweek.com/ai-data-center-bill-democrats-voting-republicans-list-12509123"
+            },
+            {
+              "title": "DatacenterDynamics: Senate Democrats block Ratepayer Protection Act in 57-43 vote",
+              "url": "https://datacenterdynamics.com/en/news/senate-democrats-block-ratepayer-protection-act-in-57-43-vote"
+            }
+          ],
+          "notes": "Marshall's individual vote is inferred: all 100 senators voted, the four Democratic yes votes were Hassan, Klobuchar, Ossoff and Warnock, and Newsweek says the rest of the 57 yes votes came from Republicans (53 seats). No source seen names Marshall directly; check the Senate roll call."
+        },
+        {
+          "candidateId": "roger-marshall",
+          "date": "2025-07-01",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "Marshall voted for the Blackburn-Cantwell amendment that removed a 10-year moratorium on state AI laws from the budget reconciliation bill. The amendment passed 99-1, with Sen. Thom Tillis the only no vote.",
+          "headline": "Voted to strip state AI-law moratorium",
+          "source": {
+            "title": "Senate Commerce Committee: Senate strikes AI moratorium from budget reconciliation bill in 99-1 vote (July 1, 2025)",
+            "url": "https://www.commerce.senate.gov/2025/7/senate-strikes-ai-moratorium-from-budget-reconciliation-bill-in-overwhelming-99-1-vote/",
+            "type": "official"
+          },
+          "confirmedBy": [
+            {
+              "title": "PBS NewsHour: Senate pulls AI regulatory ban from GOP bill after complaints from states",
+              "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states"
+            },
+            {
+              "title": "Route Fifty: Senate overwhelmingly passes amendment removing state AI moratorium (July 2025)",
+              "url": "https://www.route-fifty.com/artificial-intelligence/2025/07/senate-overwhelmingly-passes-amendment-removing-state-ai-moratorium/406469"
+            }
+          ],
+          "notes": "Individual vote follows from the 99-1 tally with Tillis as the sole no."
+        },
+        {
+          "candidateId": "adam-hamilton",
+          "date": "2026-10-16",
+          "kind": "position",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "Hamilton said local communities, not the state, should decide on data centers: \"the heart of the data center debate is who decides, and that ought to be the local community.\" He said he does not favor a statewide policy on data center siting or permitting in Kansas.",
+          "headline": "Local communities should decide on data centers",
+          "source": {
+            "title": "KCUR/Kansas Reflector: Where Marshall and Hamilton stand on everyday issues (Oct. 16, 2026)",
+            "url": "https://www.kcur.org/politics-elections-and-government/2026-10-16/marshall-hamilton-everyday-issues",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "KSHB 41: Voters guide: Kansas political candidates' stances on data center development",
+              "url": "https://www.kshb.com/news/local-news/kansas/johnson-county/voters-guide-kansas-political-candidates-stances-on-data-center-development"
+            }
+          ],
+          "notes": "KSHB voter guide publication date not found."
+        },
+        {
+          "candidateId": "adam-hamilton",
+          "date": "2026-10-16",
+          "kind": "position",
+          "track": "proposed",
+          "domain": "data-centers",
+          "text": "Hamilton committed to making data centers pay for their own energy. In a voter-guide answer he said a data center's water use cannot come at the expense of drinking water or farm irrigation, or show up as higher bills for neighbors.",
+          "headline": "Data centers should pay for own power, spare water",
+          "source": {
+            "title": "KCUR/Kansas Reflector: Where Marshall and Hamilton stand on everyday issues (Oct. 16, 2026)",
+            "url": "https://www.kcur.org/politics-elections-and-government/2026-10-16/marshall-hamilton-everyday-issues",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "KSHB 41: Voters guide: Kansas political candidates' stances on data center development",
+              "url": "https://www.kshb.com/news/local-news/kansas/johnson-county/voters-guide-kansas-political-candidates-stances-on-data-center-development"
+            }
+          ],
+          "notes": "Energy-cost pledge from KCUR; water and bills remarks from the KSHB guide (undated)."
+        }
+      ],
+      "polls": [
+        {
+          "kind": "issue-priorities",
+          "pollster": "Emerson College Polling",
+          "sponsor": "Nexstar Media (as reported)",
+          "fieldStart": "2026-10-26",
+          "fieldEnd": "2026-10-28",
+          "published": "2026-10-30",
+          "population": "likely voters",
+          "sampleSize": 800,
+          "marginOfError": 3.5,
+          "question": "Most important issue facing Kansas (exact wording not retrieved)",
+          "issues": [
+            {
+              "issue": "Economy",
+              "pct": 44
+            },
+            {
+              "issue": "Health care",
+              "pct": 15
+            },
+            {
+              "issue": "Threats to democracy",
+              "pct": 13
+            },
+            {
+              "issue": "Immigration",
+              "pct": 7
+            },
+            {
+              "issue": "Education",
+              "pct": 6
+            }
+          ],
+          "aiOffered": null,
+          "figures": [],
+          "source": {
+            "title": "Emerson College Polling: Kansas 2026 - Economy top issue for voters (Oct. 30, 2026)",
+            "url": "https://emersoncollegepolling.com/kansas-2026/"
+          },
+          "additionalSources": [
+            {
+              "title": "Emerson Kansas poll release PDF (Oct. 30, 2026)",
+              "url": "https://fox4kc.com/wp-content/uploads/sites/16/2026/10/ECP-KS-Poll-10.30.26-9AM-ET-EMBARGO-COPY-2.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "raceId": "me-senate-2026",
+      "state": "ME",
+      "office": "U.S. Senate",
+      "seatType": "regular",
+      "seat": {
+        "type": "incumbent",
+        "note": "Republican Sen. Susan Collins sought a sixth term; the original Democratic nominee, Graham Platner, withdrew in July 2026 and Troy Jackson replaced him with about 100 days left."
+      },
+      "nomineesSource": "Collins was unopposed in the June 9, 2026 Republican primary; Graham Platner won the Democratic primary that day but withdrew in July after a Politico report of a sexual assault allegation, and Maine Democratic Party delegates chose Troy Jackson as the replacement nominee (WBUR, July 25, 2026: https://www.wbur.org/news/2026/07/25/maine-democratic-delegates-choose-troy-jackson-as-new-nominee-to-face-us-sen-susan-collins). Only write-in candidates joined them on the ballot.",
+      "candidates": [
+        {
+          "id": "troy-jackson",
+          "name": "Troy Jackson",
+          "party": "Democratic",
+          "incumbent": false
+        },
+        {
+          "id": "susan-collins",
+          "name": "Susan Collins",
+          "party": "Republican",
+          "incumbent": true
+        }
+      ],
+      "result": {
+        "winner": "Troy Jackson",
+        "call": "Called by AP in the early hours of Nov. 4, 2026; Collins conceded later on Nov. 4.",
+        "candidates": [
+          {
+            "name": "Troy Jackson",
+            "party": "Democratic",
+            "votePct": 53.8,
+            "votes": 342661
+          },
+          {
+            "name": "Susan Collins",
+            "party": "Republican",
+            "votePct": 46.1,
+            "votes": 293629
+          }
+        ],
+        "figuresAsOf": "Unofficial first-choice totals as of 4:38 a.m. Nov. 4, 2026, as reported by AP and cited by FairVote; write-ins took the remainder. Final and ranked-choice tabulations not found.",
+        "source": {
+          "title": "FairVote: Initial results from Maine's November 2026 RCV elections",
+          "url": "https://fairvote.org/initial-results-from-maines-november-2026-rcv-elections/"
+        },
+        "additionalSources": [
+          {
+            "title": "NPR (via KUOW): Troy Jackson wins Maine Senate race over Susan Collins (Nov. 3, 2026)",
+            "url": "https://www.kuow.org/npr-news/2026-11-03/troy-jackson-wins-maine-senate-race-over-susan-collins-in-major-coup-for-democrats"
+          },
+          {
+            "title": "AP via FOX19: Troy Jackson wins Maine US Senate race over GOP Sen. Susan Collins (Nov. 4, 2026)",
+            "url": "https://www.fox19.com/2026/11/04/maine-sen-susan-collins-concedes-democrat-troy-jackson-ending-her-run-sixth-term/"
+          },
+          {
+            "title": "Ballotpedia News: Maine Senate result",
+            "url": "https://news.ballotpedia.org/?p=52475"
+          }
+        ],
+        "certification": {
+          "status": "pending",
+          "by": "Maine Secretary of State (tabulation, submitted to the Governor)",
+          "date": null,
+          "expected": "By law the Secretary of State tabulates returns within 20 days of the election (about Nov. 23) and sends a certified tabulation to the Governor; no 2026 announcement found.",
+          "source": {
+            "title": "Maine Revised Statutes, Title 21-A, §722",
+            "url": "https://autodiscover.legislature.maine.gov/statutes/21-A/title21-Asec722.html"
+          }
+        }
+      },
+      "statements": [
+        {
+          "candidateId": "susan-collins",
+          "date": "2025-07-01",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "Collins cosponsored, with Sens. Marsha Blackburn, Maria Cantwell and Ed Markey, the amendment that removed a 10-year moratorium on state AI laws from the budget reconciliation bill. It passed 99-1.",
+          "headline": "Cosponsored amendment striking state AI-law moratorium",
+          "source": {
+            "title": "Route Fifty: Senate overwhelmingly passes amendment removing state AI moratorium (July 2025)",
+            "url": "https://www.route-fifty.com/artificial-intelligence/2025/07/senate-overwhelmingly-passes-amendment-removing-state-ai-moratorium/406469",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "EPIC: Senate overwhelmingly votes to strike AI state law moratorium",
+              "url": "https://epic.org/senate-overwhelmingly-votes-to-strike-ai-state-law-moratorium/"
+            },
+            {
+              "title": "PBS NewsHour: Senate pulls AI regulatory ban from GOP bill after complaints from states",
+              "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states"
+            }
+          ],
+          "notes": "No Collins statement explaining the vote was found."
+        },
+        {
+          "candidateId": "susan-collins",
+          "date": "2026-09-30",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "data-centers",
+          "text": "Collins voted for the Ratepayer Protection Act, which would have state utility regulators consider standards making data centers pay for grid upgrades; the Senate motion failed 57-43. The American Prospect reports she also cosponsored the Senate bill.",
+          "headline": "Voted for Ratepayer Protection Act",
+          "source": {
+            "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers amid Maine voters' fears (Oct. 2026)",
+            "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "The American Prospect: Downvoting data centers in Maine (Oct. 16, 2026)",
+              "url": "https://prospect.org/2026/10/16/downvoting-data-centers-in-maine/"
+            },
+            {
+              "title": "Roll Call: Voluntary ratepayer protection bill blocked in Senate again (Sept. 30, 2026)",
+              "url": "https://rollcall.com/2026/09/30/voluntary-ratepayer-protection-bill-blocked-in-senate-again/"
+            }
+          ],
+          "notes": "Cosponsorship reported only by the Prospect. The vote date is the Sept. 30 cloture vote; Roll Call reports the tally, not individual votes."
+        },
+        {
+          "candidateId": "susan-collins",
+          "date": "2026-10",
+          "kind": "statement",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "In a debate Collins said Maine families and small businesses \"are already paying some of the highest electricity costs in the nation\" and cited the Ratepayer Protection Act. She has said data centers should be judged case by case, and at a forum she and Jackson agreed the facilities must not affect water use or raise electricity rates, with local agreements key.",
+          "headline": "Case-by-case review; protect ratepayers and water",
+          "source": {
+            "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers amid Maine voters' fears (Oct. 2026)",
+            "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "Bangor Daily News: Maine politicians responding to AI warnings (Sept. 16, 2026)",
+              "url": "https://www.bangordailynews.com/2026/09/16/politics/elections/maine-politicians-responding-to-ai-warnings-joam40zk0w/"
+            },
+            {
+              "title": "The American Prospect: Downvoting data centers in Maine (Oct. 16, 2026)",
+              "url": "https://prospect.org/2026/10/16/downvoting-data-centers-in-maine/"
+            }
+          ],
+          "notes": "Exact debate date for the electricity-cost quote not established; the shared-ground remarks came at a forum before Sept. 16."
+        },
+        {
+          "candidateId": "susan-collins",
+          "date": "2026-09-16",
+          "kind": "statement",
+          "track": "said",
+          "domain": "ai-general",
+          "text": "Collins backs efforts to keep the U.S. ahead of China on AI and points to bipartisan work on AI scams and deceptive AI in elections; her campaign said it had not used AI in her re-election bid.",
+          "headline": "Keep U.S. ahead of China on AI",
+          "source": {
+            "title": "Bangor Daily News: Maine politicians responding to AI warnings (Sept. 16, 2026)",
+            "url": "https://www.bangordailynews.com/2026/09/16/politics/elections/maine-politicians-responding-to-ai-warnings-joam40zk0w/",
+            "type": "news"
+          },
+          "confirmedBy": [],
+          "notes": "Seen only in search snippets of the BDN article."
+        },
+        {
+          "candidateId": "susan-collins",
+          "date": "2023-09",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "Collins joined Sens. Amy Klobuchar, Josh Hawley and Chris Coons in introducing the Protect Elections from Deceptive AI Act, which would bar materially deceptive AI-generated content depicting federal candidates in political ads.",
+          "headline": "Cosponsored ban on deceptive AI election ads",
+          "source": {
+            "title": "Office of Sen. Collins: Senator Collins, bipartisan group introduce bill to ban deceptive AI-generated content in elections",
+            "url": "https://www.collins.senate.gov/newsroom/senator-collins-bipartisan-group-introduce-bill-to-ban-deceptive-ai-generated-content-in-elections",
+            "type": "official"
+          },
+          "confirmedBy": [
+            {
+              "title": "Office of Sen. Klobuchar: Klobuchar, Hawley, Coons, Collins introduce bipartisan legislation (Sept. 2023)",
+              "url": "https://www.klobuchar.senate.gov/public/index.cfm/2023/9/klobuchar-hawley-coons-collins-introduce-bipartisan-legislation-to-ban-the-use-of-materially-deceptive-ai-generated-content-in-elections"
+            },
+            {
+              "title": "Office of Sen. Hawley: Hawley, Klobuchar, Coons, Collins introduce bipartisan legislation",
+              "url": "https://www.hawley.senate.gov/hawley-klobuchar-coons-collins-introduce-bipartisan-legislation-ban-use-materially-deceptive-ai"
+            }
+          ],
+          "notes": "Date from the Klobuchar release URL. Collins's release (undated in results) also lists Sen. Michael Bennet, so it may describe a later reintroduction; status not confirmed."
+        },
+        {
+          "candidateId": "troy-jackson",
+          "date": "2026-06-04",
+          "kind": "position",
+          "track": "proposed",
+          "domain": "data-centers",
+          "text": "In an \"Agency over AI\" plan released as a candidate for governor, Jackson proposed requiring AI companies that bring data centers to Maine to build their own power sources and pay for grid upgrades, and pledged to regulate data centers so they don't \"raise power bills, drain the local water supply or make nearby homes unlivable.\" He said he would have signed the vetoed LD 307 moratorium.",
+          "headline": "Data centers should build own power, pay upgrades",
+          "source": {
+            "title": "Spectrum News Maine: Jackson says AI, 'tech billionaires' will face scrutiny in Maine if he's elected governor (June 4, 2026)",
+            "url": "https://spectrumlocalnews.com/me/maine/politics/2026/06/04/jackson-says-ai--tech-billionaires--will-face-scrutiny-in-maine-if-he-s-elected-governor",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "Bangor Daily News: Maine politicians responding to AI warnings (Sept. 16, 2026)",
+              "url": "https://www.bangordailynews.com/2026/09/16/politics/elections/maine-politicians-responding-to-ai-warnings-joam40zk0w/"
+            },
+            {
+              "title": "States Newsroom (Maine Morning Star) report on Jackson's AI plan",
+              "url": "https://www.newsfromthestates.com/node/410453"
+            }
+          ],
+          "notes": "Plan dates from Jackson's gubernatorial campaign, before he became the Senate nominee."
+        },
+        {
+          "candidateId": "troy-jackson",
+          "date": "2026-06-04",
+          "kind": "position",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "The same plan would strip state contracts and tax breaks from major employers that attribute mass layoffs to AI, and called for safeguards against AI replacing Maine workers and for transparency when state government uses AI.",
+          "headline": "Penalize employers that blame layoffs on AI",
+          "source": {
+            "title": "Spectrum News Maine: Jackson says AI, 'tech billionaires' will face scrutiny in Maine if he's elected governor (June 4, 2026)",
+            "url": "https://spectrumlocalnews.com/me/maine/politics/2026/06/04/jackson-says-ai--tech-billionaires--will-face-scrutiny-in-maine-if-he-s-elected-governor",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "States Newsroom (Maine Morning Star) report on Jackson's AI plan",
+              "url": "https://www.newsfromthestates.com/node/410453"
+            }
+          ],
+          "notes": "Gubernatorial-campaign plan; not confirmed whether he carried it into the Senate race."
+        },
+        {
+          "candidateId": "troy-jackson",
+          "date": "2026-10-13",
+          "kind": "statement",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "At the Oct. 13 debate Jackson said data centers built in Maine cannot raise electricity rates or hurt water quality, stressed union construction and maintenance jobs, and said \"there has to be real parameters, real guidelines to how we're going to do this.\"",
+          "headline": "Data centers can't raise rates or harm water",
+          "source": {
+            "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers amid Maine voters' fears (Oct. 2026)",
+            "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "The American Prospect: Downvoting data centers in Maine (Oct. 16, 2026)",
+              "url": "https://prospect.org/2026/10/16/downvoting-data-centers-in-maine/"
+            }
+          ],
+          "notes": "The NPR 'real guardrails' quote from earlier research was not found in this round."
+        },
+        {
+          "candidateId": "troy-jackson",
+          "date": "2026-09-16",
+          "kind": "statement",
+          "track": "said",
+          "domain": "ai-general",
+          "text": "Jackson said the AI race needs to slow down or stop, and his campaign criticized Collins for backing Energy Secretary Chris Wright, a data center proponent.",
+          "headline": "AI race should slow down or stop",
+          "source": {
+            "title": "Bangor Daily News: Maine politicians responding to AI warnings (Sept. 16, 2026)",
+            "url": "https://www.bangordailynews.com/2026/09/16/politics/elections/maine-politicians-responding-to-ai-warnings-joam40zk0w/",
+            "type": "news"
+          },
+          "confirmedBy": [],
+          "notes": "Seen only in search snippets; exact wording and date of the remark not confirmed."
+        },
+        {
+          "candidateId": "troy-jackson",
+          "date": "2026-04",
+          "kind": "statement",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "Jackson criticized Gov. Janet Mills's April 2026 veto of LD 307, the state's temporary moratorium on large data centers, saying \"She's concerned more about big business than she is about workers.\"",
+          "headline": "Criticized veto of state data center moratorium",
+          "source": {
+            "title": "The American Prospect: Downvoting data centers in Maine (Oct. 16, 2026)",
+            "url": "https://prospect.org/2026/10/16/downvoting-data-centers-in-maine/",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "Spectrum News Maine: Jackson says he would have signed the moratorium (June 4, 2026)",
+              "url": "https://spectrumlocalnews.com/me/maine/politics/2026/06/04/jackson-says-ai--tech-billionaires--will-face-scrutiny-in-maine-if-he-s-elected-governor"
+            }
+          ],
+          "notes": "Month inferred from the veto (lawmakers failed to override on April 29, 2026); the date of the quote itself is not established."
+        }
+      ],
+      "polls": [
+        {
+          "kind": "issue-priorities",
+          "pollster": "Fox News Poll",
+          "sponsor": "Fox News",
+          "fieldStart": "2026-08-06",
+          "fieldEnd": "2026-08-10",
+          "published": "2026-08-12",
+          "population": "registered voters",
+          "sampleSize": 1000,
+          "marginOfError": 3,
+          "question": "Most important issue in deciding the Senate vote (exact wording not retrieved)",
+          "issues": [
+            {
+              "issue": "Inflation/high prices",
+              "pct": 32
+            },
+            {
+              "issue": "Immigration/border security",
+              "pct": 18
+            }
+          ],
+          "aiOffered": null,
+          "figures": [],
+          "source": {
+            "title": "Newsweek: Immigration concerns climb as Maine Senate race heats up (Aug. 2026)",
+            "url": "https://www.newsweek.com/immigration-concerns-climb-maine-senate-race-heats-up-12318340"
+          },
+          "additionalSources": [
+            {
+              "title": "Fox News video: Maine poll, inflation top issue at 32 percent",
+              "url": "https://www.foxnews.com/video/6403333031112"
+            },
+            {
+              "title": "Bangor Daily News: New poll of Maine U.S. Senate race (Aug. 12, 2026)",
+              "url": "https://bangordailynews.com/2026/08/12/politics/elections/new-poll-maine-us-senate-race"
+            }
+          ]
+        },
+        {
+          "kind": "ai-question",
+          "pollster": "UMass Lowell Center for Public Opinion / YouGov",
+          "sponsor": null,
+          "fieldStart": "2026-08-28",
+          "fieldEnd": "2026-09-14",
+          "published": "2026-09-24",
+          "population": "likely voters",
+          "sampleSize": 650,
+          "marginOfError": null,
+          "question": "Support or oppose building an AI data center in your community (exact wording not retrieved)",
+          "issues": [],
+          "aiOffered": null,
+          "figures": [
+            {
+              "label": "Oppose an AI data center in their community (total)",
+              "pct": 76
+            },
+            {
+              "label": "Strongly oppose",
+              "pct": 58
+            }
+          ],
+          "source": {
+            "title": "UMass Lowell: Pingree leads governor's race; respondents weigh in on Trump, data centers and license plate readers (Sept. 24, 2026)",
+            "url": "https://www.uml.edu/news/press-releases/2026/09242026-maine-poll.aspx"
+          },
+          "additionalSources": [
+            {
+              "title": "UMass Lowell September 2026 Maine poll topline",
+              "url": "https://www.uml.edu/docs/2026-Sept-Maine-Topline_tcm18-422748.pdf"
+            },
+            {
+              "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers (reports 76% oppose, 58% strongly)",
+              "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762"
+            }
+          ]
+        },
+        {
+          "kind": "ai-question",
+          "pollster": "UMass Lowell Center for Public Opinion / YouGov",
+          "sponsor": null,
+          "fieldStart": "2026-05-13",
+          "fieldEnd": "2026-05-26",
+          "published": "2026-06-04",
+          "population": "likely voters",
+          "sampleSize": null,
+          "marginOfError": null,
+          "question": "Support or oppose an AI data center being built in your community (exact wording not retrieved)",
+          "issues": [],
+          "aiOffered": null,
+          "figures": [
+            {
+              "label": "Oppose an AI data center in their community (total)",
+              "pct": 72
+            },
+            {
+              "label": "Strongly oppose",
+              "pct": 51
+            }
+          ],
+          "source": {
+            "title": "UMass Lowell: Respondents oppose AI data centers and ICE facilities, think Iran war is too costly (June 4, 2026)",
+            "url": "https://www.uml.edu/news/press-releases/2026/06042026-maine-senate-poll.aspx"
+          },
+          "additionalSources": []
+        },
+        {
+          "kind": "ai-question",
+          "pollster": "New York Times/Siena College",
+          "sponsor": "The New York Times",
+          "fieldStart": null,
+          "fieldEnd": null,
+          "published": null,
+          "population": "likely voters",
+          "sampleSize": null,
+          "marginOfError": 5.4,
+          "question": "Support or oppose data center construction; which Senate candidate would do a better job on data centers (wording not retrieved)",
+          "issues": [],
+          "aiOffered": null,
+          "figures": [
+            {
+              "label": "Oppose data center construction",
+              "pct": 66
+            },
+            {
+              "label": "Jackson would do better on data centers",
+              "pct": 41
+            },
+            {
+              "label": "Collins would do better on data centers",
+              "pct": 39
+            }
+          ],
+          "source": {
+            "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers amid Maine voters' fears (Oct. 2026)",
+            "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762"
+          },
+          "additionalSources": [
+            {
+              "title": "Boston Globe: Maine Senate poll takeaways (Sept. 24, 2026)",
+              "url": "https://www.bostonglobe.com/2026/09/24/nation/maine-senate-poll-takeaways/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "raceId": "oh-senate-2026",
+      "state": "OH",
+      "office": "U.S. Senate",
+      "seatType": "special",
+      "seat": {
+        "type": "incumbent",
+        "note": "Republican Jon Husted was appointed in January 2025 to the seat JD Vance vacated to become vice president; the special election filled the rest of the term, so the seat is up again in 2028."
+      },
+      "nomineesSource": "Brown and Husted won their party primaries on May 5, 2026 (CBS News: https://www.cbsnews.com/amp/news/ohio-senate-primary-results-jon-husted-sherrod-brown/). Libertarian Bill Redpath and independent Gregory Levy were also on the ballot (Ballotpedia).",
+      "candidates": [
+        {
+          "id": "sherrod-brown",
+          "name": "Sherrod Brown",
+          "party": "Democratic",
+          "incumbent": false
+        },
+        {
+          "id": "jon-husted",
+          "name": "Jon Husted",
+          "party": "Republican",
+          "incumbent": true
+        },
+        {
+          "id": "bill-redpath",
+          "name": "Bill Redpath",
+          "party": "Libertarian",
+          "incumbent": false
+        },
+        {
+          "id": "gregory-levy",
+          "name": "Gregory Levy",
+          "party": "Independent",
+          "incumbent": false
+        }
+      ],
+      "result": {
+        "winner": "Sherrod Brown",
+        "call": "Called by AP on election night, Nov. 3, 2026; one report puts the projection at 11:11 p.m. ET.",
+        "candidates": [
+          {
+            "name": "Sherrod Brown",
+            "party": "Democratic",
+            "votePct": 50.09,
+            "votes": 2323001
+          },
+          {
+            "name": "Jon Husted",
+            "party": "Republican",
+            "votePct": 45.07,
+            "votes": 2090390
+          },
+          {
+            "name": "Bill Redpath",
+            "party": "Libertarian",
+            "votePct": null,
+            "votes": null
+          },
+          {
+            "name": "Gregory Levy",
+            "party": "Independent",
+            "votePct": null,
+            "votes": null
+          }
+        ],
+        "figuresAsOf": "Unofficial totals as shown in Wikipedia's results table (seen via search, Nov. 2026); Redpath and Levy totals not retrieved.",
+        "source": {
+          "title": "AP via News 5 Cleveland: Democrat Sherrod Brown defeats GOP's Jon Husted in Ohio Senate race (Nov. 3, 2026)",
+          "url": "https://www.news5cleveland.com/politics/america-votes/democrat-sherrod-brown-defeats-gops-jon-husted-in-ohio-senate-race"
+        },
+        "additionalSources": [
+          {
+            "title": "OPB (AP): Sherrod Brown flips Senate seat in Ohio for Democrats by ousting Sen. Jon Husted (Nov. 3, 2026)",
+            "url": "https://www.opb.org/article/2026/11/03/sherrod-brown-flips-senate-seat-in-ohio-for-democrats-by-ousting-sen-jon-husted/"
+          },
+          {
+            "title": "Spectrum News 1: Sherrod Brown flips Senate seat in Ohio for Democrats (Nov. 4, 2026)",
+            "url": "https://spectrumnews1.com/oh/columbus/news/2026/11/04/sherrod-brown-flips-senate-seat-in-ohio-for-democrats"
+          },
+          {
+            "title": "Ballotpedia: United States Senate special election in Ohio, 2026",
+            "url": "https://ballotpedia.org/United_States_Senate_special_election_in_Ohio,_2026"
+          },
+          {
+            "title": "Wikipedia: 2026 United States Senate special election in Ohio",
+            "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio"
+          }
+        ],
+        "certification": {
+          "status": "pending",
+          "by": "Ohio Secretary of State Frank LaRose (after county boards' official canvass)",
+          "date": null,
+          "expected": "County official canvass within 21 days of the election (by Nov. 24, 2026), then statewide certification; the 2024 general election was certified Dec. 2, 2024. No 2026 certification announcement found.",
+          "source": {
+            "title": "Ohio Secretary of State: Week in Review (Nov. 13, 2026)",
+            "url": "https://www.ohiosos.gov/office/media-center/categories/week-in-review/week-in-review-2026-11-13"
+          }
+        }
+      },
+      "statements": [
+        {
+          "candidateId": "jon-husted",
+          "date": "2026-07-20",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "data-centers",
+          "text": "Husted introduced the Senate Ratepayer Protection Act, which would have state utility regulators consider standards so that data centers and other large electricity users pay for the energy and grid upgrades they require. Reps. Gabe Evans and Kathy Castor led the House companion.",
+          "headline": "Introduced Senate Ratepayer Protection Act",
+          "source": {
+            "title": "Office of Sen. Husted: Ratepayer Protection Act release (July 20, 2026)",
+            "url": "https://www.husted.senate.gov/?p=12816",
+            "type": "official"
+          },
+          "confirmedBy": [
+            {
+              "title": "Spectrum News 1: Husted data center bill (July 28, 2026)",
+              "url": "https://spectrumnews1.com/oh/dayton/news/2026/07/28/data-center-husted-ohio"
+            },
+            {
+              "title": "Newsweek: Republican bill aims to stop Americans footing bill for data centers",
+              "url": "https://www.newsweek.com/republican-bill-aims-to-stop-americans-footing-bill-for-data-centers-12222677"
+            }
+          ],
+          "notes": "One search summary gave the Senate bill number as S. 5028; not verified."
+        },
+        {
+          "candidateId": "jon-husted",
+          "date": "2026-09-30",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "data-centers",
+          "text": "After the House passed the Ratepayer Protection Act 417-3 on Sept. 16, Husted sought unanimous consent on Sept. 17 to pass it in the Senate and was blocked. A Sept. 30 cloture vote failed 57-43; Husted voted yes and blamed Senate Democrats.",
+          "headline": "Pushed Senate passage of ratepayer bill",
+          "source": {
+            "title": "Roll Call: Voluntary ratepayer protection bill blocked in Senate again (Sept. 30, 2026)",
+            "url": "https://rollcall.com/2026/09/30/voluntary-ratepayer-protection-bill-blocked-in-senate-again/",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "Roll Call: Ratepayer bill aimed at data center buildout blocked in Senate (Sept. 17, 2026)",
+              "url": "https://rollcall.com/2026/09/17/ratepayer-bill-aimed-at-data-center-buildout-blocked-in-senate/"
+            },
+            {
+              "title": "Newsweek: How senators voted on the AI data center bill (lists Husted as yes)",
+              "url": "https://www.newsweek.com/ai-data-center-bill-democrats-voting-republicans-list-12509123"
+            }
+          ],
+          "notes": "Sources disagree on who objected on Sept. 17 (Sen. Martin Heinrich per most reports; the Daily Signal named Sen. Bernie Moreno)."
+        },
+        {
+          "candidateId": "jon-husted",
+          "date": "2026-08-10",
+          "kind": "position",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "Husted said data center siting should be a local decision and that \"What we should do is protect the ratepayers from bearing the burden of the cost of building the electricity those data centers use.\"",
+          "headline": "Local decision; shield ratepayers from costs",
+          "source": {
+            "title": "Ohio Capital Journal via BG Independent Media: Ohio U.S. Senate candidates offer contrasting visions for data centers (Aug. 10, 2026)",
+            "url": "https://bgindependentmedia.org/ohio-u-s-senate-candidates-offer-contrasting-visions-for-data-centers/",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "WYSU: Ohio's U.S. Senate candidates recalibrate their stances on data centers (Aug. 17, 2026)",
+              "url": "https://wysu.org/ohio-news/2026-08-17/ohios-u-s-senate-candidates-recalibrate-their-stances-on-data-centers"
+            }
+          ],
+          "notes": "Publication date for the Capital Journal piece taken from a search summary."
+        },
+        {
+          "candidateId": "jon-husted",
+          "date": "2026-08-17",
+          "kind": "position",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "Husted said Ohio's sales and use tax break for new data center construction, which he once backed, should no longer be awarded.",
+          "headline": "Says Ohio data center tax break should end",
+          "source": {
+            "title": "WYSU: Ohio's U.S. Senate candidates recalibrate their stances on data centers (Aug. 17, 2026)",
+            "url": "https://wysu.org/ohio-news/2026-08-17/ohios-u-s-senate-candidates-recalibrate-their-stances-on-data-centers",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "WOUB: Ohio's U.S. Senate candidates recalibrate their stances on data centers (Aug. 18, 2026)",
+              "url": "https://woub.org/2026/08/18/ohios-u-s-senate-candidates-recalibrate-their-stances-on-data-centers/"
+            }
+          ],
+          "notes": "WOUB and WYSU appear to carry the same report; independent confirmation not found."
+        },
+        {
+          "candidateId": "jon-husted",
+          "date": "2025-09-08",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "Husted introduced the Children Harmed by AI Technology (CHAT) Act (S. 2714), which would require AI companion chatbot operators to verify ages, block minors from sexually explicit content, notify parents about self-harm conversations and show recurring notices that users are talking to AI.",
+          "headline": "Bill to protect children from AI companion chatbots",
+          "source": {
+            "title": "Office of Sen. Husted: Husted leads bill to protect children from AI companion chatbots' sexual content (Sept. 8, 2025)",
+            "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-children-from-ai-companion-chatbots-sexual-content/",
+            "type": "official"
+          },
+          "confirmedBy": [
+            {
+              "title": "Congress.gov: S. 2714 bill text (119th Congress)",
+              "url": "https://www.congress.gov/119/bills/s2714/BILLS-119s2714is.htm"
+            },
+            {
+              "title": "Akin Gump: Sen. Husted introduces bill requiring age verification for AI chatbots",
+              "url": "https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/sen-husted-introduces-bill-requiring-age-verification-for-ai-chatbots"
+            }
+          ],
+          "notes": "No committee action found."
+        },
+        {
+          "candidateId": "jon-husted",
+          "date": "2026-07-29",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "Husted and Sen. Andy Kim (D-N.J.) introduced a follow-up chatbot bill setting tiered federal standards for educational, companion and health chatbots used by minors, with age verification, parental controls and notification, crisis-referral rules, and enforcement by the FTC and state attorneys general.",
+          "headline": "Bipartisan bill regulating AI chatbots for minors",
+          "source": {
+            "title": "Office of Sen. Husted: release dated July 29, 2026",
+            "url": "https://www.husted.senate.gov/?p=12865",
+            "type": "official"
+          },
+          "confirmedBy": [
+            {
+              "title": "News 12: Sens. Kim, Husted introduce bipartisan bill to regulate AI companion chatbots for minors",
+              "url": "https://newyork.news12.com/sens-kim-husted-introduce-bipartisan-bill-to-regulate-ai-companion-chatbots-for-minors"
+            },
+            {
+              "title": "WHIO: U.S. senator pushes federal law to shield kids from AI dangers",
+              "url": "https://www.whio.com/news/local/us-senator-pushes-federal-law-shield-kids-ai-dangers/2H3INWAGQ5D3NDIL52V5PMY4PM/"
+            }
+          ],
+          "notes": "The match between this release URL and the Kim-Husted bill comes from a search summary; WHIO reports no Judiciary Committee hearing scheduled."
+        },
+        {
+          "candidateId": "jon-husted",
+          "date": "2025-07-01",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "Husted voted for the amendment that removed a 10-year moratorium on state AI laws from the budget reconciliation bill; it passed 99-1 with Sen. Thom Tillis the only no vote.",
+          "headline": "Voted to strip state AI-law moratorium",
+          "source": {
+            "title": "Senate Commerce Committee: Senate strikes AI moratorium from budget reconciliation bill in 99-1 vote (July 1, 2025)",
+            "url": "https://www.commerce.senate.gov/2025/7/senate-strikes-ai-moratorium-from-budget-reconciliation-bill-in-overwhelming-99-1-vote/",
+            "type": "official"
+          },
+          "confirmedBy": [
+            {
+              "title": "PBS NewsHour: Senate pulls AI regulatory ban from GOP bill after complaints from states",
+              "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states"
+            },
+            {
+              "title": "TechCrunch: US Senate removes controversial AI moratorium from budget bill (July 1, 2025)",
+              "url": "https://techcrunch.com/2025/07/01/us-senate-removes-controversial-ai-moratorium-from-budget-bill"
+            }
+          ],
+          "notes": "Individual vote follows from the 99-1 tally with Tillis as the sole no."
+        },
+        {
+          "candidateId": "jon-husted",
+          "date": "2025-05-07",
+          "kind": "statement",
+          "track": "said",
+          "domain": "ai-general",
+          "text": "In an interview on his freshman priorities, Husted said he wants Congress to embrace AI and described innovation as a driver of economic growth and jobs.",
+          "headline": "Wants Congress to embrace AI",
+          "source": {
+            "title": "Axios: Freshman wishlist: Husted wants Congress to embrace AI (May 7, 2025)",
+            "url": "https://www.axios.com/2025/05/07/jon-husted-ai-congress-senate",
+            "type": "news"
+          },
+          "confirmedBy": [],
+          "notes": "Seen only as a search snippet."
+        },
+        {
+          "candidateId": "sherrod-brown",
+          "date": "2026-09",
+          "kind": "statement",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "Brown's campaign ads called Husted \"the face of data centers in Ohio,\" saying he \"cut sweetheart tax deals\" and fast-tracked approvals \"while ordinary residents watched their electricity bills explode.\"",
+          "headline": "Ads tie Husted to data center deals, power bills",
+          "source": {
+            "title": "E&E News: Data centers heat up Ohio Senate race",
+            "url": "https://www.eenews.net/articles/data-centers-heat-up-ohio-senate-race/",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "Signal Cleveland: 'He's trying to win this election': Sherrod Brown attacks Jon Husted support of data centers",
+              "url": "https://signalcleveland.org/hes-trying-to-win-this-election-sherrod-brown-attacks-jon-husted-support-of-data-centers-in-break-with-labor-construction-unions/"
+            },
+            {
+              "title": "Newsweek: Democrats take upper hand on data centers in Ohio Senate race",
+              "url": "https://www.newsweek.com/democrats-take-upper-hand-data-centers-ohio-senate-12487263"
+            }
+          ],
+          "notes": "Ads ran as a series; Fox News dates one to Sept. 4, 2026 and other outlets describe July ads. Husted replied that Brown, as senator, had promoted data centers coming to Ohio."
+        },
+        {
+          "candidateId": "sherrod-brown",
+          "date": "2026-08-10",
+          "kind": "position",
+          "track": "proposed",
+          "domain": "data-centers",
+          "text": "Brown called for ending Ohio's data center tax breaks and said local communities should have a say on whether to allow data center construction.",
+          "headline": "End data center tax breaks; local say on siting",
+          "source": {
+            "title": "Ohio Capital Journal via BG Independent Media: Ohio U.S. Senate candidates offer contrasting visions for data centers (Aug. 10, 2026)",
+            "url": "https://bgindependentmedia.org/ohio-u-s-senate-candidates-offer-contrasting-visions-for-data-centers/",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "ABC6: Brown targets data center tax breaks and rising electric bills in Ohio",
+              "url": "https://abc6onyourside.com/news/local/brown-targets-data-center-tax-breaks-and-rising-electric-bills-in-ohio-husted-politics-election-midterm-senate"
+            },
+            {
+              "title": "WYSU: Ohio's U.S. Senate candidates recalibrate their stances on data centers (Aug. 17, 2026)",
+              "url": "https://wysu.org/ohio-news/2026-08-17/ohios-u-s-senate-candidates-recalibrate-their-stances-on-data-centers"
+            }
+          ],
+          "notes": "The position split Brown from construction unions that back Ohio data center growth (Signal Cleveland). Fox News reported Brown praised a central Ohio data center in a 2015 release."
+        },
+        {
+          "candidateId": "sherrod-brown",
+          "date": "2026-09",
+          "kind": "statement",
+          "track": "proposed",
+          "domain": "data-centers",
+          "text": "In a campaign ad Brown promised to make data centers pay the full cost of their electricity use.",
+          "headline": "Make data centers pay full electricity cost",
+          "source": {
+            "title": "Newsweek: Sherrod Brown's AI data center views as Husted's bill blocked by Democrats (Sept. 2026)",
+            "url": "https://newsweek.com/sherrod-browns-ai-data-center-views-as-husteds-bill-blocked-by-democrats-12514153",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "Fox News: Dem Senate hopeful flip-flops on emerging issue",
+              "url": "https://www.foxnews.com/politics/dem-senate-hopeful-flip-flops-emerging-issue-impacting-communities-across-us"
+            }
+          ],
+          "notes": "Ad air date not confirmed; month inferred from Newsweek coverage after the Sept. 17 Senate block. Fox says it is unclear whether Brown would back steps beyond requiring data centers to pay for their power."
+        }
+      ],
+      "polls": [
+        {
+          "kind": "issue-priorities",
+          "pollster": "Fox News Poll",
+          "sponsor": "Fox News",
+          "fieldStart": "2026-05-28",
+          "fieldEnd": "2026-06-01",
+          "published": "2026-06-03",
+          "population": "registered voters",
+          "sampleSize": 1015,
+          "marginOfError": null,
+          "question": "Most important issue in deciding the Senate vote (exact wording not retrieved)",
+          "issues": [
+            {
+              "issue": "Inflation/high prices",
+              "pct": 43
+            }
+          ],
+          "aiOffered": null,
+          "figures": [],
+          "source": {
+            "title": "Fox News Poll: Ohio topline, May 28-June 1, 2026 (released June 3, 2026)",
+            "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/06/fox_may-28-june-1-2026_complete_ohio_topline_june-3-release.pdf"
+          },
+          "additionalSources": [
+            {
+              "title": "Fox News: Economic anxiety and candidate concerns define Ohio Senate race",
+              "url": "https://www.foxnews.com/politics/fox-news-poll-economic-anxiety-candidate-concerns-define-ohio-senate-race"
+            }
+          ]
+        },
+        {
+          "kind": "ai-question",
+          "pollster": "Fox News Poll",
+          "sponsor": "Fox News",
+          "fieldStart": "2026-05-28",
+          "fieldEnd": "2026-06-01",
+          "published": "2026-06-03",
+          "population": "registered voters",
+          "sampleSize": 1015,
+          "marginOfError": null,
+          "question": "Favor or oppose building an AI data center in your area (exact wording not retrieved)",
+          "issues": [],
+          "aiOffered": null,
+          "figures": [
+            {
+              "label": "Oppose an AI data center in their area",
+              "pct": 65
+            },
+            {
+              "label": "Favor",
+              "pct": 32
+            }
+          ],
+          "source": {
+            "title": "Fox News Poll: Ohio topline, May 28-June 1, 2026 (released June 3, 2026)",
+            "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/06/fox_may-28-june-1-2026_complete_ohio_topline_june-3-release.pdf"
+          },
+          "additionalSources": []
+        },
+        {
+          "kind": "ai-question",
+          "pollster": "Bowling Green State University Democracy and Public Policy Research Network (BGSU Poll)",
+          "sponsor": null,
+          "fieldStart": "2026-09-01",
+          "fieldEnd": "2026-09-10",
+          "published": null,
+          "population": "likely voters",
+          "sampleSize": 1000,
+          "marginOfError": 4,
+          "question": "Support or oppose construction of data centers in your local community / in Ohio / in the United States (exact wording not retrieved)",
+          "issues": [],
+          "aiOffered": null,
+          "figures": [
+            {
+              "label": "Oppose data centers in their local community",
+              "pct": 75
+            },
+            {
+              "label": "Oppose data centers in Ohio generally",
+              "pct": 63
+            },
+            {
+              "label": "Oppose data centers in the U.S. overall",
+              "pct": 55
+            }
+          ],
+          "source": {
+            "title": "BGSU Poll: September 2026 Ohio poll",
+            "url": "https://www.bgsu.edu/arts-and-sciences/democracy-and-public-policy-research-network/bgsu-poll.html"
+          },
+          "additionalSources": []
+        },
+        {
+          "kind": "ai-question",
+          "pollster": "New York Times/Siena College",
+          "sponsor": "The New York Times",
+          "fieldStart": null,
+          "fieldEnd": null,
+          "published": null,
+          "population": null,
+          "sampleSize": null,
+          "marginOfError": null,
+          "question": "Most important issue in deciding your vote (data centers/AI share as reported)",
+          "issues": [],
+          "aiOffered": true,
+          "figures": [
+            {
+              "label": "Named data centers as the most important issue for their vote",
+              "pct": 3
+            }
+          ],
+          "source": {
+            "title": "Newsweek: Where Ohio Republicans stand on data centers amid growing backlash",
+            "url": "https://www.newsweek.com/where-ohio-republicans-stand-on-data-centers-amid-growing-backlash-12531253"
+          },
+          "additionalSources": []
+        }
+      ]
+    },
+    {
+      "raceId": "ia-senate-2026",
+      "state": "IA",
+      "office": "U.S. Senate",
+      "seatType": "regular",
+      "seat": {
+        "type": "open",
+        "note": "Two-term Republican Sen. Joni Ernst did not seek re-election, leaving the seat open; Turek's win flipped it to Democrats."
+      },
+      "nomineesSource": "Party primaries on June 2, 2026: state Rep. Josh Turek defeated state Sen. Zach Wahls for the Democratic nomination (AP call), and U.S. Rep. Ashley Hinson, endorsed by President Trump, defeated former state Sen. Jim Carlin for the Republican nomination. Libertarian Thomas Laehn was also on the general-election ballot (Ballotpedia). Source: CBS News, 'Iowa Senate race set between Democrat Josh Turek, Republican Ashley Hinson after projected primary wins' (https://www.cbsnews.com/news/iowa-senate-primary-results-ashley-hinson-josh-turek-zach-wahls/).",
+      "candidates": [
+        {
+          "id": "josh-turek",
+          "name": "Josh Turek",
+          "party": "Democratic",
+          "incumbent": false
+        },
+        {
+          "id": "ashley-hinson",
+          "name": "Ashley Hinson",
+          "party": "Republican",
+          "incumbent": false
+        },
+        {
+          "id": "thomas-laehn",
+          "name": "Thomas Laehn",
+          "party": "Libertarian",
+          "incumbent": false
+        }
+      ],
+      "result": {
+        "winner": "Josh Turek",
+        "call": "Called by AP on election night, Nov. 3, 2026",
+        "candidates": [
+          {
+            "name": "Josh Turek",
+            "party": "Democratic",
+            "votePct": 50.8,
+            "votes": null
+          },
+          {
+            "name": "Ashley Hinson",
+            "party": "Republican",
+            "votePct": 46.1,
+            "votes": null
+          },
+          {
+            "name": "Thomas Laehn",
+            "party": "Libertarian",
+            "votePct": null,
+            "votes": null
+          }
+        ],
+        "figuresAsOf": "Partial count as of 11:38 p.m. ET on Nov. 3, 2026, as reported by CNN and cited by Newsweek; final unofficial totals from the Iowa Secretary of State were not found in search results.",
+        "source": {
+          "title": "NPR (via NHPR): Democrat Josh Turek wins the Senate seat in Iowa (Nov. 3, 2026)",
+          "url": "https://www.nhpr.org/2026-11-03/democrat-josh-turek-wins-the-senate-seat-in-iowa"
+        },
+        "additionalSources": [
+          {
+            "title": "Newsweek: Iowa Senate results, Josh Turek vs. Ashley Hinson",
+            "url": "https://www.newsweek.com/iowa-senate-results-josh-turek-ashley-hinson-midterm-12630515"
+          },
+          {
+            "title": "AP (via OPB): Democrat Josh Turek wins election to the US Senate from Iowa (Nov. 3, 2026)",
+            "url": "https://www.opb.org/article/2026/11/03/democrat-josh-turek-wins-election-to-the-us-senate-from-iowa-as-democrats-win-us-senate/"
+          },
+          {
+            "title": "Ballotpedia News: Iowa U.S. Senate general election",
+            "url": "https://news.ballotpedia.org/?p=52292"
+          }
+        ],
+        "certification": {
+          "status": "pending",
+          "by": "Iowa State Board of Canvassers",
+          "date": null,
+          "expected": "No 2026 date found; the state board certified the 2022 general election on Dec. 1, 2022 and the 2024 general election on Dec. 2, 2024.",
+          "source": null
+        }
+      },
+      "statements": [
+        {
+          "candidateId": "ashley-hinson",
+          "date": "2026-03-20",
+          "kind": "statement",
+          "track": "said",
+          "domain": "ai-general",
+          "text": "In an op-ed, Hinson argued that Washington's AI decisions will shape the world children grow up in, said AI risks should be scrutinized as carefully as its benefits are celebrated, and questioned whether current export controls go far enough to keep advanced AI chips away from China. She called for smart policy, strong enforcement and a ready workforce.",
+          "headline": "Op-ed: keep AI lead and advanced chips away from China",
+          "source": {
+            "title": "Ashley Hinson campaign: Op-Ed: Congress needs to ensure that the AI future belongs to our kids, not to Beijing (Mar. 20, 2026)",
+            "url": "https://ashleyhinson.com/op-ed-rep-ashley-hinson-congress-needs-to-ensure-that-the-ai-future-belongs-to-our-kids-not-to-beijing",
+            "type": "campaign"
+          },
+          "confirmedBy": [
+            {
+              "title": "Newsweek: AI Data Center War: Where Democrats, Republicans in Key Senate Races Stand",
+              "url": "https://www.newsweek.com/ai-data-center-war-where-democrats-republicans-in-key-senate-races-stand-12354265"
+            }
+          ],
+          "notes": "Originally published in the Washington Reporter on Mar. 20, 2026, and reposted by the NRSC (https://www.nrsc.org/?p=15349). A search summary said the op-ed also stresses workforce investment for data centers; not verified in full text. Newsweek independently characterizes Hinson as stressing U.S. AI leadership against China. A Fox News video (https://www.foxnews.com/video/6396505918112, date not found) shows Hinson saying China's AI growth is about 'economic and political leverage.'"
+        },
+        {
+          "candidateId": "josh-turek",
+          "date": "2026-10-25",
+          "kind": "statement",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "Semafor reported that Turek, running as a centrist, criticized his own party for obstructing farm and data center legislation. The search results did not say which legislation he meant.",
+          "headline": "Faulted own party for blocking data center legislation",
+          "source": {
+            "title": "Semafor: Josh Turek is running a radically centrist campaign (Oct. 25, 2026)",
+            "url": "https://www.semafor.com/article/10/25/2026/josh-turek-is-running-a-radically-centrist-campaign",
+            "type": "news"
+          },
+          "confirmedBy": [],
+          "notes": "Based on a search-result summary only; full article not seen and no independent confirmation found. Separately, Newsweek wrote that Turek's campaign was built around opposing 'billionaires and large corporations' rather than a detailed data center platform, though he embraced the populist mood behind local moratoriums."
+        }
+      ],
+      "polls": [
+        {
+          "kind": "issue-priorities",
+          "pollster": "Emerson College Polling",
+          "sponsor": "Nexstar Media",
+          "fieldStart": "2026-10-05",
+          "fieldEnd": "2026-10-06",
+          "published": "2026-10",
+          "population": "likely voters",
+          "sampleSize": 650,
+          "marginOfError": 3.8,
+          "question": "Most important issue facing Iowa (exact wording not seen in search results)",
+          "issues": [
+            {
+              "issue": "Economy",
+              "pct": 42
+            },
+            {
+              "issue": "Health care",
+              "pct": 18
+            },
+            {
+              "issue": "Threats to democracy",
+              "pct": 10
+            },
+            {
+              "issue": "Education",
+              "pct": 8
+            }
+          ],
+          "aiOffered": null,
+          "figures": [],
+          "source": {
+            "title": "Emerson College Polling: Voters Most Concerned About Economy Break for Sand for Governor, Hinson for Senate",
+            "url": "https://emersoncollegepolling.com/iowa-2026-poll-u-s-senate-race-tightens-sand-maintains-edge-for-governor/"
+          },
+          "additionalSources": [
+            {
+              "title": "Political Wire: Hinson narrowly leads Turek in Iowa (Oct. 9, 2026)",
+              "url": "https://politicalwire.com/2026/10/09/hinson-narrowly-leads-turek-in-iowa/"
+            }
+          ]
+        },
+        {
+          "kind": "issue-priorities",
+          "pollster": "Fox News Poll",
+          "sponsor": "Fox News",
+          "fieldStart": "2026-09-24",
+          "fieldEnd": "2026-09-28",
+          "published": "2026-10-01",
+          "population": "registered voters",
+          "sampleSize": 1204,
+          "marginOfError": null,
+          "question": "How important each issue will be to your vote for Senate (share saying 'extremely important')",
+          "issues": [
+            {
+              "issue": "Cost of living (reported as '6 in 10')",
+              "pct": 60
+            },
+            {
+              "issue": "President Donald Trump",
+              "pct": 43
+            },
+            {
+              "issue": "Immigration",
+              "pct": 39
+            },
+            {
+              "issue": "AI technology",
+              "pct": 27
+            }
+          ],
+          "aiOffered": true,
+          "figures": [],
+          "source": {
+            "title": "Fox News: Fox News Poll: Turek, Hinson in close Iowa Senate race (Oct. 1, 2026)",
+            "url": "https://www.foxnews.com/politics/fox-news-poll-turek-hinson-close-iowa-senate-race"
+          },
+          "additionalSources": [
+            {
+              "title": "Turek campaign: ICYMI: Josh Turek leads Hinson by four points in Fox News poll",
+              "url": "https://turek4iowa.com/news/icymi-josh-turek-leads-hinson-by-four-points-in-fox-news-poll-hits-50"
+            }
+          ]
+        },
+        {
+          "kind": "ai-question",
+          "pollster": "Fox News Poll",
+          "sponsor": "Fox News",
+          "fieldStart": "2026-09-24",
+          "fieldEnd": "2026-09-28",
+          "published": "2026-10-01",
+          "population": "registered voters",
+          "sampleSize": 1204,
+          "marginOfError": null,
+          "question": "How important AI technology will be to your vote for Senate",
+          "issues": [],
+          "aiOffered": true,
+          "figures": [
+            {
+              "label": "AI technology 'extremely important' to Senate vote",
+              "pct": 27
+            }
+          ],
+          "source": {
+            "title": "Fox News: Fox News Poll: Turek, Hinson in close Iowa Senate race (Oct. 1, 2026)",
+            "url": "https://www.foxnews.com/politics/fox-news-poll-turek-hinson-close-iowa-senate-race.amp"
+          },
+          "additionalSources": []
+        },
+        {
+          "kind": "ai-question",
+          "pollster": "Emerson College Polling",
+          "sponsor": "Nexstar Media",
+          "fieldStart": "2026-08-31",
+          "fieldEnd": "2026-09-01",
+          "published": "2026-09",
+          "population": "likely voters",
+          "sampleSize": 750,
+          "marginOfError": 3.6,
+          "question": "Will building data centers have a positive or negative impact on each of the following in Iowa?",
+          "issues": [],
+          "aiOffered": true,
+          "figures": [
+            {
+              "label": "Environment: negative impact",
+              "pct": 60
+            },
+            {
+              "label": "Cost of living: negative impact",
+              "pct": 52
+            },
+            {
+              "label": "Quality of life: negative impact",
+              "pct": 46
+            },
+            {
+              "label": "Jobs: negative impact",
+              "pct": 44
+            },
+            {
+              "label": "Jobs: positive impact",
+              "pct": 41
+            }
+          ],
+          "source": {
+            "title": "Emerson College Polling: Voters Concerned about Tariffs, Impact of Data Centers",
+            "url": "https://emersoncollegepolling.com/iowa-2026-poll-hinson-leads-turek/"
+          },
+          "additionalSources": []
+        },
+        {
+          "kind": "ai-question",
+          "pollster": "Emerson College Polling",
+          "sponsor": "Nexstar Media",
+          "fieldStart": null,
+          "fieldEnd": null,
+          "published": "2026-08",
+          "population": "likely voters",
+          "sampleSize": null,
+          "marginOfError": null,
+          "question": "Do you support or oppose data centers being built near or in your community?",
+          "issues": [],
+          "aiOffered": true,
+          "figures": [
+            {
+              "label": "Oppose data centers built near or in their community",
+              "pct": 62
+            },
+            {
+              "label": "Support",
+              "pct": 24
+            }
+          ],
+          "source": {
+            "title": "Emerson College Polling: Voters Concerned about Tariffs, Impact of Data Centers (cites the prior month's Iowa poll)",
+            "url": "https://emersoncollegepolling.com/iowa-2026-poll-hinson-leads-turek/"
+          },
+          "additionalSources": [
+            {
+              "title": "Newsweek: Where America's Revolt Against Data Centers Could Shape Key Senate Races",
+              "url": "https://www.newsweek.com/where-americas-revolt-against-data-centers-could-shape-key-senate-races-12473147"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "raceId": "ak-senate-2026",
+      "state": "AK",
+      "office": "U.S. Senate",
+      "seatType": "regular",
+      "seat": {
+        "type": "incumbent",
+        "note": "Republican Sen. Dan Sullivan sought re-election and lost to former U.S. Rep. Mary Peltola (D), the first Democrat to win an Alaska Senate race since 2008."
+      },
+      "nomineesSource": "Alaska's top-four nonpartisan primary on Aug. 18, 2026 advanced Mary Peltola (D), Sen. Dan Sullivan (R), Gerald Heikes (R) and Dan J. Sullivan (No Party Affiliation) to the ranked-choice general election; Peltola led Sen. Sullivan by about 8 points in the final unofficial primary tally. Sources: KTOO/Alaska Public Media, 'U.S. Senate race will have two Dan Sullivans and a Mary Peltola' (https://www.ktoo.org/2026/08/18/u-s-senate-race-will-have-two-dan-sullivans-and-a-mary-peltola/); Juneau Independent (https://www.juneauindependent.com/post/peltola-leads-sullivan-by-8-in-final-unofficial-primary-tally-focus-now-on-dropouts-in-governor-s).",
+      "candidates": [
+        {
+          "id": "mary-peltola",
+          "name": "Mary Peltola",
+          "party": "Democratic",
+          "incumbent": false
+        },
+        {
+          "id": "dan-sullivan",
+          "name": "Dan Sullivan",
+          "party": "Republican",
+          "incumbent": true
+        },
+        {
+          "id": "gerald-heikes",
+          "name": "Gerald Heikes",
+          "party": "Republican",
+          "incumbent": false
+        },
+        {
+          "id": "dan-j-sullivan",
+          "name": "Dan J. Sullivan",
+          "party": "No Party Affiliation",
+          "incumbent": false
+        }
+      ],
+      "result": {
+        "winner": "Mary Peltola",
+        "call": "Called by AP on Nov. 17, 2026 (some outlets dated reports Nov. 18), after election officials confirmed Peltola held more than 50% of first-choice votes; no ranked-choice tabulation was needed.",
+        "candidates": [
+          {
+            "name": "Mary Peltola",
+            "party": "Democratic",
+            "votePct": 50.1,
+            "votes": 144302
+          },
+          {
+            "name": "Dan Sullivan",
+            "party": "Republican",
+            "votePct": 45.8,
+            "votes": 131844
+          },
+          {
+            "name": "Gerald Heikes",
+            "party": "Republican",
+            "votePct": 2.1,
+            "votes": 6105
+          },
+          {
+            "name": "Dan J. Sullivan",
+            "party": "No Party Affiliation",
+            "votePct": 1.7,
+            "votes": 4760
+          }
+        ],
+        "figuresAsOf": "First-choice (round one) unofficial results with about 99% counted, as reported in AP coverage at the Nov. 17, 2026 call; one report put Peltola at 50.12%. Percentages and vote counts may come from slightly different snapshots.",
+        "source": {
+          "title": "AP (via Anchorage Daily News): Democrat Mary Peltola wins US Senate race in Alaska, beating incumbent Republican Dan Sullivan (Nov. 17, 2026)",
+          "url": "https://www.adn.com/politics/2026/11/17/democrat-mary-peltola-wins-us-senate-race-in-alaska-beating-incumbent-republican-dan-sullivan/"
+        },
+        "additionalSources": [
+          {
+            "title": "Alaska's News Source: AP calls it: Peltola wins Alaska's US Senate seat over GOP incumbent Sullivan (Nov. 18, 2026)",
+            "url": "https://alaskasnewssource.com/2026/11/18/peltola-is-going-back-dc-after-ap-calls-last-senate-race-democratic-challenger/"
+          },
+          {
+            "title": "Alaska Public Media: Mary Peltola wins U.S. Senate seat in Alaska (Nov. 17, 2026)",
+            "url": "https://alaskapublic.org/news/politics/elections/2026-11-17/mary-peltola-wins-u-s-senate-seat-in-alaska"
+          },
+          {
+            "title": "Alaska Beacon: Peltola elected to fill Alaska US Senate seat, becomes Senate's 56th Democrat nationally",
+            "url": "https://alaskabeacon.com/?p=30829"
+          }
+        ],
+        "certification": {
+          "status": "pending",
+          "by": "Director of the Alaska Division of Elections",
+          "date": null,
+          "expected": "Nov. 25, 2026 target; completion not confirmed in search results as of Nov. 27, 2026.",
+          "source": {
+            "title": "Democracy Docket: Alaska will certify results of U.S. Senate race, election director confirms",
+            "url": "https://www.democracydocket.com/?p=82246"
+          }
+        }
+      },
+      "statements": [
+        {
+          "candidateId": "dan-sullivan",
+          "date": "2025-03-13",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "Sullivan joined Sen. John Cornyn and 11 other senators in introducing the FIGHT China Act, which would have Treasury prohibit or require notice of certain U.S. investments in Chinese technologies, including artificial intelligence and advanced semiconductors.",
+          "headline": "Co-led bill restricting U.S. investment in Chinese AI",
+          "source": {
+            "title": "Sen. Dan Sullivan: Sullivan, Cornyn, and Colleagues Introduce Outbound Investment Legislation to Counter China (Mar. 14, 2025)",
+            "url": "https://www.sullivan.senate.gov/newsroom/press-releases/sullivan-cornyn-and-colleagues-introduce-outbound-investment-legislation-to-counter-china",
+            "type": "official"
+          },
+          "confirmedBy": [
+            {
+              "title": "Semafor: Senate unveils its bid to curb US investment in China as House waits (Mar. 13, 2025)",
+              "url": "https://www.semafor.com/article/03/13/2025/senate-unveils-its-bid-to-curb-us-investment-in-china-as-house-waits"
+            },
+            {
+              "title": "Steptoe: Senate bill prohibiting US investments in covered Chinese technologies garners significant bipartisan support",
+              "url": "https://www.steptoe.com/en/news-publications/stepwise-risk-outlook/senate-bill-prohibiting-us-investments-in-covered-chinese-technologies-garners-significant-bipartisan-support.html"
+            }
+          ],
+          "notes": "Cornyn's office dates the introduction Mar. 13, 2025; Sullivan's release is dated Mar. 14. Cornyn's office reports the outbound investment provisions passed the Senate on Dec. 17, 2025 and were signed into law Dec. 19, 2025 via the defense bill (https://www.cornyn.senate.gov/news/cornyn-cortez-masto-colleagues-outbound-investment-measures-signed-into-law); not checked against congressional records. Whether the confirming reports name Sullivan was not verified."
+        },
+        {
+          "candidateId": "dan-sullivan",
+          "date": "2025-05-08",
+          "kind": "statement",
+          "track": "said",
+          "domain": "ai-general",
+          "text": "At a Senate Commerce Committee hearing titled 'Winning the AI Race,' Sullivan raised concerns that investment by American companies in Chinese AI could help make China's military more lethal.",
+          "headline": "Warned U.S. money in Chinese AI aids China's military",
+          "source": {
+            "title": "Tiber Creek Group: Senate Commerce hearing summary, 'Winning the AI Race' (May 8, 2025)",
+            "url": "https://www.tibercreekgroup.com/wp-content/uploads/sites/2/2025/07/5.8-Senate-Commerce_AI.pdf",
+            "type": "news"
+          },
+          "confirmedBy": [],
+          "notes": "Source is a hearing summary prepared by a consulting firm, not an official transcript; no independent confirmation found."
+        },
+        {
+          "candidateId": "dan-sullivan",
+          "date": "2025-07-01",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "ai-general",
+          "text": "The Senate voted 99-1 to adopt Sen. Marsha Blackburn's amendment removing a 10-year moratorium on state AI regulation from the reconciliation bill; Sen. Thom Tillis cast the only no vote, so Sullivan voted to remove the moratorium.",
+          "headline": "Voted to strip state AI-law moratorium from budget bill",
+          "source": {
+            "title": "Route Fifty: Senate overwhelmingly passes amendment removing state AI moratorium (Jul. 1, 2025)",
+            "url": "https://www.route-fifty.com/artificial-intelligence/2025/07/senate-overwhelmingly-passes-amendment-removing-state-ai-moratorium/406469",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "TechCrunch: US Senate removes controversial AI moratorium from budget bill (Jul. 1, 2025)",
+              "url": "https://techcrunch.com/2025/07/01/us-senate-removes-controversial-ai-moratorium-from-budget-bill"
+            },
+            {
+              "title": "PBS NewsHour: Senate pulls AI regulatory ban from GOP bill after complaints from states",
+              "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states"
+            }
+          ],
+          "notes": "Sullivan's individual vote is inferred from the 99-1 tally with Tillis as the sole no; the sources found do not name Sullivan."
+        },
+        {
+          "candidateId": "dan-sullivan",
+          "date": "2026-02-18",
+          "kind": "statement",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "In his annual address to the Alaska Legislature, Sullivan listed Air Force data centers on Alaska bases, which would increase demand for natural gas, among recent progress, according to a Must Read Alaska summary. Newsweek separately reported that Sullivan petitioned to bring data centers onto Air Force and joint military installations and, with Gov. Mike Dunleavy, presented Alaska's cold climate and North Slope gas reserves as advantages for attracting AI data centers.",
+          "headline": "Promoted AI data centers on Alaska military bases",
+          "source": {
+            "title": "Must Read Alaska: Sullivan Touts 'Alaska Comeback,' Historic Opportunities, in Annual Address to Legislature (Feb. 2026)",
+            "url": "https://mustreadalaska.com/sullivan-touts-alaska-comeback-historic-opportunities-in-annual-address-to-legislature",
+            "type": "news"
+          },
+          "confirmedBy": [
+            {
+              "title": "Newsweek: AI Data Center War: Where Democrats, Republicans in Key Senate Races Stand",
+              "url": "https://www.newsweek.com/ai-data-center-war-where-democrats-republicans-in-key-senate-races-stand-12354265"
+            },
+            {
+              "title": "Newsweek: Alaska could become more unwelcoming to data centers (Nov. 2026)",
+              "url": "https://newsweek.com/alaska-could-become-more-unwelcoming-data-centers-12741506"
+            }
+          ],
+          "notes": "The data center reference in the speech comes from a secondhand summary; the official transcript (https://www.sullivan.senate.gov/newsroom/press-releases/sullivan-touts-alaska-comeback-historic-opportunities-in-annual-address-to-legislature) was not viewed. Neither Newsweek piece gives a date or direct quote for Sullivan's data center advocacy. The Air Force issued its request for lease proposals for AI data centers at JBER, Eielson AFB and Clear SFS on Apr. 10, 2026."
+        },
+        {
+          "candidateId": "dan-sullivan",
+          "date": "2026-06",
+          "kind": "action",
+          "track": "proposed",
+          "domain": "data-centers",
+          "text": "Sullivan's office said he authored provisions in the Senate Armed Services Committee's FY2027 defense authorization bill, including one directing the Department of War to set up a strategy and roadmap to reduce local community impacts while private data centers are built on military installations. The committee approved the bill 18-9.",
+          "headline": "NDAA provision on data center impacts near bases",
+          "source": {
+            "title": "Sen. Dan Sullivan: Sullivan Secures 56 Provisions, Historic $26 Billion for Alaska in FY 2027 Defense Authorization (June 2026)",
+            "url": "https://www.sullivan.senate.gov/newsroom/press-releases/sullivan-secures-56-provisions-historic-26-billion-for-alaska-in-fy-2027-defense-authorization",
+            "type": "official"
+          },
+          "confirmedBy": [],
+          "notes": "Exact markup date not found; Alaska's News Source covered Sullivan's NDAA provisions on June 24, 2026 (https://www.alaskasnewssource.com/2026/06/24/sullivan-touts-alaska-defense-provisions-ndaa-bill-advances/), but it was not confirmed that report mentions the data center provision. Final status in the enacted NDAA not checked."
+        },
+        {
+          "candidateId": "mary-peltola",
+          "date": "2026-11",
+          "kind": "statement",
+          "track": "said",
+          "domain": "data-centers",
+          "text": "Newsweek reported that Peltola has emphasized that local communities should have a voice in decisions on data centers and that data centers should pay their own way.",
+          "headline": "Local voice; data centers should pay their own way",
+          "source": {
+            "title": "Newsweek: Alaska could become more unwelcoming to data centers (Nov. 2026)",
+            "url": "https://newsweek.com/alaska-could-become-more-unwelcoming-data-centers-12741506",
+            "type": "news"
+          },
+          "confirmedBy": [],
+          "notes": "Reported after the election; the original date and venue of Peltola's remarks were not identified, and no direct quotation was seen. A UAF political scientist quoted in the piece described the incoming Democrats' approach as slow and cautious rather than outright opposition. No independent confirmation found."
+        }
+      ],
+      "polls": [
+        {
+          "kind": "issue-priorities",
+          "pollster": "Fabrizio Ward (R) and Impact Research (D)",
+          "sponsor": "AARP",
+          "fieldStart": "2026-09-08",
+          "fieldEnd": "2026-09-11",
+          "published": "2026-09-17",
+          "population": "likely voters",
+          "sampleSize": 800,
+          "marginOfError": 3.5,
+          "question": "Top two issues for your vote (exact wording not seen in search results)",
+          "issues": [
+            {
+              "issue": "Rising prices / affordability (ranked among top two issues)",
+              "pct": 42
+            }
+          ],
+          "aiOffered": null,
+          "figures": [],
+          "source": {
+            "title": "AARP: New AARP Alaska Poll: Older Voters Will be Influential in U.S. Senate, Gubernatorial and Congressional Races (Sept. 17, 2026)",
+            "url": "https://www.aarp.org/press/releases/2026-09-17-new-aarp-alaska-poll-older-voters-will-be-influential-in-u-s-senate-gubernatorial-and-congressional-races/"
+          },
+          "additionalSources": [
+            {
+              "title": "AARP: 2026 midterm election poll, Alaska",
+              "url": "https://www.aarp.org/pri/topics/voter-research/politics/2026-midterm-election-poll-alaska/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bills": [],
+  "gaps": [
+    "KS: No statements by Adam Hamilton on AI beyond data centers (AI safety, children, deepfakes, preemption, jobs, chips) were found.",
+    "KS: A Sept. 12, 2026 debate claim by Hamilton that a bill Marshall voted for gave $30 billion in tax cuts to data centers appears only in a partisan blog fact-check (wichitaliberty.org); left out.",
+    "KS: Marshall co-introduced the Aging with Artificial Intelligence Act of 2026 with Sens. Mark Kelly and Rick Scott (Senate Aging Committee release), and chaired a HELP subcommittee hearing on AI in health care; dates not confirmed, so not entered as statements.",
+    "KS/ME: Marshall's and Collins's individual votes on the Sept. 30, 2026 Ratepayer Protection Act cloture motion are inferred from the 57-43 tally and Newsweek's list (Collins's yes vote is also reported by Newsweek). Not checked against the Senate roll call.",
+    "KS: Kansas State Board of Canvassers certification not yet found (2024 precedent: Dec. 3). Libertarian David Graham's vote total not retrieved.",
+    "KS: No Kansas-only poll figures on AI or data centers found. The 2026 Kansas Speaks survey (FHSU Docking Institute) asked about data centers, but its percentages were not retrieved. Newsweek reports fewer than 1% of Kansas respondents in a NYT/Siena poll named data centers their top issue; dates and sample not found.",
+    "KS: An Emerson poll from Sept. 15-16, 2026 reportedly ranked economy 48%, health care 14%, threats to democracy 9%, housing affordability 9%, education 6%. Left out because its source URL could not be pinned down.",
+    "ME: The NPR quote of Jackson calling for 'real guardrails' on data centers was not found in this round; the closest verbatim debate quote is 'real parameters, real guidelines' (Newsweek).",
+    "ME: Only early first-choice AP figures (4:38 a.m. Nov. 4) were found; no final count, ranked-choice tabulation or Secretary of State certification found.",
+    "ME: Collins's cosponsorship of the Senate Ratepayer Protection Act is reported only by The American Prospect. No 2026 Collins statements found on children and AI, federal preemption of state AI laws, or AI and jobs.",
+    "ME: The Protect Elections from Deceptive AI Act item is dated from the Sept. 2023 Klobuchar release; whether the Collins release describes a later reintroduction is not confirmed.",
+    "ME: For the NYT/Siena September Maine poll (66% oppose data centers; 41% Jackson vs. 39% Collins on data centers; MoE 5.4 per Newsweek), the field dates, sample size and release date were not found. Newsweek did not name the pollster; the attribution comes from a search summary citing the Boston Globe.",
+    "ME: Fox News Maine Aug. 6-10 poll: only inflation (32%, from a Fox video description) and immigration (18%, Newsweek) were retrieved; health care and political divisions percentages not found. AARP Maine poll (Sept. 20-22, 982 likely voters) ranked affordability, threats to democracy and immigration as top issues but percentages not retrieved. UNH Pine Tree State Poll (Feb. 2026) lists cost of living and housing as top problems without retrieved percentages.",
+    "OH: No Sherrod Brown statements on AI beyond data centers were found.",
+    "OH: The AP call time (11:11 p.m. ET) comes from a single report. Redpath and Levy vote totals not retrieved. No Ohio certification announcement found (county official canvass was due within 21 days, by Nov. 24).",
+    "OH: Fox News Ohio May 28-June 1 poll: only the inflation share (43%) of the top-issue question was retrieved. A Fox Aug. 6-10 Ohio poll had inflation at 40%. Marist and AARP Ohio polls cited personal finances and affordability without retrieved percentages.",
+    "OH: The Ohio Northern University Northern Poll reportedly found 55% of Ohio adults oppose data center construction in their communities and 57% support legal restrictions or megawatt caps; date and URL not found. The BGSU September poll's publication date and the NYT/Siena Ohio poll's field dates were not found.",
+    "OH: Husted's Senate Ratepayer Protection Act bill number (S. 5028 in one summary) was not verified. Husted's 'hypocrite' reply to Brown's ads (Signal Cleveland) is undated. The air dates of Brown's data center ads are inconsistent across outlets.",
+    "Iowa: final unofficial vote totals and percentages (including Libertarian Thomas Laehn's share) not found; only the Nov. 3 partial count (Turek 50.8%, Hinson 46.1%) was available. The exact time of the AP call was not found.",
+    "Iowa: no 2026 certification date or announcement from the State Board of Canvassers found. A Nov. 13, 2026 report said Secretary of State Paul Pate defended the midterm results (https://www.wowt.com/2026/11/13/iowa-secretary-state-defends-midterm-election-results/); the nature of the challenge was not researched.",
+    "Hinson: no statement on data centers (local moratoriums, electricity rates, water, tax breaks) found. Her individual votes on the House-passed One Big Beautiful Bill Act's 10-year state AI-law moratorium (May 2025) and on the Ratepayer Protection Act (passed 417-3 on Sept. 16, 2026) were not confirmed by name; a CAP Action report says almost every House Republican voted for the moratorium version but the excerpt seen did not name Hinson. No AI bill sponsored by Hinson was found.",
+    "Turek: no direct statement on AI (safety, children, deepfakes, preemption, jobs, chips) found, and no detailed data center position; the only item is a Semafor search snippet. Newsweek characterized his campaign as focused on opposing 'billionaires and large corporations' rather than a detailed data center platform.",
+    "Peltola: no AI-general statements found, and no AI-related votes or bills from her House tenure (2022-2025) found. Newsweek said her campaign focused on affordability and energy costs generally rather than data centers specifically. The date and venue of her 'pay their own way' remarks were not identified.",
+    "Sullivan: no direct quote on data centers found; his data center advocacy is reported secondhand (Must Read Alaska, Newsweek). His 99-1 vote to strip the state AI moratorium is inferred from the tally. No statement on AI and children, deepfakes or jobs found.",
+    "Alaska: certification by the Nov. 25, 2026 target not confirmed. The Justice Department sued on Oct. 22 to block certification if Sullivan lost; Judge Sharon Gleason dismissed the suit Nov. 1, and an appeal and a federal criminal investigation tied to the second Dan Sullivan's candidacy were reported pending. Sullivan's campaign said he would not concede before certification.",
+    "Alaska polls: AARP's other issue percentages (threats to democracy; taxes, spending and debt) not found. An Alaska Current item described a poll (Oct. 17-23, year unclear) in which economy, jobs and inflation ranked highest, without percentages. No Alaska poll asking about AI or data centers was found.",
+    "Iowa polls: publication dates for the Emerson October and September releases were not confirmed (recorded as month only). The Fox News poll's population is listed as registered voters per one summary; the horse-race figures were reported among likely voters, and the margin of error was not found. A July 2026 Fox News Iowa poll found 39% named inflation as most important, but its field dates were not found, so it is omitted."
+  ]
+}

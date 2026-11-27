@@ -5,7 +5,7 @@ dataset defensible.
 
 ## 1. Human review of every code (AIPD-202)
 
-1. Open `review-sheet.csv` in a spreadsheet. There is one row per coded record or bill (122 items).
+1. Open `review-sheet.csv` in a spreadsheet. There is one row per coded record or bill (184 items as of Nov. 27, 2026).
 2. For each item:
    - **To change a code:** read the text and source, then put your code in the matching `reviewed_` column. The AI's
      code is in the `ai_` column beside it. Use the ids in `codebook-reference.md`, and separate several values with
@@ -25,7 +25,7 @@ dataset defensible.
 ## 2. Inter-coder reliability (AIPD-203)
 
 1. Do the review first: the reliability test checks the reviewed scheme.
-2. `reliability-sheet.csv` is the sample: 24 of the 122 items (20%), drawn across every race and the bills, with no
+2. `reliability-sheet.csv` is the sample: 37 of the 184 items (20%), drawn across every race and the bills, with no
    codes shown. Two coders each fill in their own copy, independently.
 3. Run:
 

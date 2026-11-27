@@ -15,6 +15,8 @@ Working documents for the project (not part of the website).
   on the Methodology page is drawn (AIPD-102).
 - `coding-review/`: the human review of every AI-drafted code and the inter-coder reliability test, with the
   sheets to fill in and `tools/coding_review.py` to import them and compute Krippendorff's alpha (AIPD-202, AIPD-203).
+- `research/`: web-search research for new races (Florida; Kansas, Maine, Ohio, Iowa and Alaska) in the format of
+  `research/SCHEMA.md`, with the coding decisions applied by `tools/import_research.py` (AIPD-103, AIPD-109).
 - `codebook/CHANGELOG.md`: codebook changes since the pilot draft; version 1.0-rc1 (AIPD-204).
 - `methods-appendix.md`: the methods appendix for reviewers, regenerated with `npm run appendix` (AIPD-504).
 - `backlog/`: the product backlog built from the project proposal, as Scrum stories with acceptance

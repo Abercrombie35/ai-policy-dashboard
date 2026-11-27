@@ -976,6 +976,564 @@
           "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Tampa Bay 28)."
         }
       ]
+    },
+    {
+      "id": "vp-ks-emerson-college-polling-issue-1",
+      "state": "KS",
+      "races": [
+        "ks-senate-2026"
+      ],
+      "kind": "issue-priorities",
+      "pollster": "Emerson College Polling",
+      "sponsor": "Nexstar Media (as reported)",
+      "fieldStart": "2026-10-26",
+      "fieldEnd": "2026-10-28",
+      "population": "likely voters",
+      "sampleSize": 800,
+      "marginOfError": 3.5,
+      "question": "Most important issue facing Kansas (exact wording not retrieved)",
+      "questionType": "single",
+      "issues": [
+        {
+          "issue": "Economy",
+          "pct": 44
+        },
+        {
+          "issue": "Health care",
+          "pct": 15
+        },
+        {
+          "issue": "Threats to democracy",
+          "pct": 13
+        },
+        {
+          "issue": "Immigration",
+          "pct": 7
+        },
+        {
+          "issue": "Education",
+          "pct": 6
+        }
+      ],
+      "aiOffered": null,
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Emerson College Polling: Kansas 2026 - Economy top issue for voters (Oct. 30, 2026)",
+        "url": "https://emersoncollegepolling.com/kansas-2026/"
+      },
+      "additionalSources": [
+        {
+          "title": "Emerson Kansas poll release PDF (Oct. 30, 2026)",
+          "url": "https://fox4kc.com/wp-content/uploads/sites/16/2026/10/ECP-KS-Poll-10.30.26-9AM-ET-EMBARGO-COPY-2.pdf"
+        }
+      ],
+      "publishedDate": "2026-10-30",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Emerson Kansas poll release PDF (Oct. 30, 2026))."
+        }
+      ]
+    },
+    {
+      "id": "vp-me-umass-lowell-center-for-publ-ai-qu-2",
+      "state": "ME",
+      "races": [
+        "me-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "UMass Lowell Center for Public Opinion / YouGov",
+      "sponsor": null,
+      "fieldStart": "2026-08-28",
+      "fieldEnd": "2026-09-14",
+      "population": "likely voters",
+      "sampleSize": 650,
+      "marginOfError": null,
+      "question": "Support or oppose building an AI data center in your community (exact wording not retrieved)",
+      "figures": [
+        {
+          "label": "Oppose an AI data center in their community (total)",
+          "pct": 76
+        },
+        {
+          "label": "Strongly oppose",
+          "pct": 58
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "UMass Lowell: Pingree leads governor's race; respondents weigh in on Trump, data centers and license plate readers (Sept. 24, 2026)",
+        "url": "https://www.uml.edu/news/press-releases/2026/09242026-maine-poll.aspx"
+      },
+      "additionalSources": [
+        {
+          "title": "UMass Lowell September 2026 Maine poll topline",
+          "url": "https://www.uml.edu/docs/2026-Sept-Maine-Topline_tcm18-422748.pdf"
+        },
+        {
+          "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers (reports 76% oppose, 58% strongly)",
+          "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762"
+        }
+      ],
+      "publishedDate": "2026-09-24",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (UMass Lowell September 2026 Maine poll topline, Newsweek)."
+        }
+      ]
+    },
+    {
+      "id": "vp-me-umass-lowell-center-for-publ-ai-qu-3",
+      "state": "ME",
+      "races": [
+        "me-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "UMass Lowell Center for Public Opinion / YouGov",
+      "sponsor": null,
+      "fieldStart": "2026-05-13",
+      "fieldEnd": "2026-05-26",
+      "population": "likely voters",
+      "sampleSize": null,
+      "marginOfError": null,
+      "question": "Support or oppose an AI data center being built in your community (exact wording not retrieved)",
+      "figures": [
+        {
+          "label": "Oppose an AI data center in their community (total)",
+          "pct": 72
+        },
+        {
+          "label": "Strongly oppose",
+          "pct": 51
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "UMass Lowell: Respondents oppose AI data centers and ICE facilities, think Iran war is too costly (June 4, 2026)",
+        "url": "https://www.uml.edu/news/press-releases/2026/06042026-maine-senate-poll.aspx"
+      },
+      "additionalSources": [],
+      "publishedDate": "2026-06-04",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports."
+        }
+      ]
+    },
+    {
+      "id": "vp-me-new-york-times-siena-college-ai-qu-4",
+      "state": "ME",
+      "races": [
+        "me-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "New York Times/Siena College",
+      "sponsor": "The New York Times",
+      "fieldStart": null,
+      "fieldEnd": null,
+      "population": "likely voters",
+      "sampleSize": null,
+      "marginOfError": 5.4,
+      "question": "Support or oppose data center construction; which Senate candidate would do a better job on data centers (wording not retrieved)",
+      "figures": [
+        {
+          "label": "Oppose data center construction",
+          "pct": 66
+        },
+        {
+          "label": "Jackson would do better on data centers",
+          "pct": 41
+        },
+        {
+          "label": "Collins would do better on data centers",
+          "pct": 39
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers amid Maine voters' fears (Oct. 2026)",
+        "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762"
+      },
+      "additionalSources": [
+        {
+          "title": "Boston Globe: Maine Senate poll takeaways (Sept. 24, 2026)",
+          "url": "https://www.bostonglobe.com/2026/09/24/nation/maine-senate-poll-takeaways/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Boston Globe)."
+        }
+      ]
+    },
+    {
+      "id": "vp-oh-fox-news-poll-ai-qu-2",
+      "state": "OH",
+      "races": [
+        "oh-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Fox News Poll",
+      "sponsor": "Fox News",
+      "fieldStart": "2026-05-28",
+      "fieldEnd": "2026-06-01",
+      "population": "registered voters",
+      "sampleSize": 1015,
+      "marginOfError": null,
+      "question": "Favor or oppose building an AI data center in your area (exact wording not retrieved)",
+      "figures": [
+        {
+          "label": "Oppose an AI data center in their area",
+          "pct": 65
+        },
+        {
+          "label": "Favor",
+          "pct": 32
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Fox News Poll: Ohio topline, May 28-June 1, 2026 (released June 3, 2026)",
+        "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/06/fox_may-28-june-1-2026_complete_ohio_topline_june-3-release.pdf"
+      },
+      "additionalSources": [],
+      "publishedDate": "2026-06-03",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports."
+        }
+      ]
+    },
+    {
+      "id": "vp-oh-bowling-green-state-universi-ai-qu-3",
+      "state": "OH",
+      "races": [
+        "oh-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Bowling Green State University Democracy and Public Policy Research Network (BGSU Poll)",
+      "sponsor": null,
+      "fieldStart": "2026-09-01",
+      "fieldEnd": "2026-09-10",
+      "population": "likely voters",
+      "sampleSize": 1000,
+      "marginOfError": 4,
+      "question": "Support or oppose construction of data centers in your local community / in Ohio / in the United States (exact wording not retrieved)",
+      "figures": [
+        {
+          "label": "Oppose data centers in their local community",
+          "pct": 75
+        },
+        {
+          "label": "Oppose data centers in Ohio generally",
+          "pct": 63
+        },
+        {
+          "label": "Oppose data centers in the U.S. overall",
+          "pct": 55
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "BGSU Poll: September 2026 Ohio poll",
+        "url": "https://www.bgsu.edu/arts-and-sciences/democracy-and-public-policy-research-network/bgsu-poll.html"
+      },
+      "additionalSources": [],
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports."
+        }
+      ]
+    },
+    {
+      "id": "vp-oh-new-york-times-siena-college-ai-qu-4",
+      "state": "OH",
+      "races": [
+        "oh-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "New York Times/Siena College",
+      "sponsor": "The New York Times",
+      "fieldStart": null,
+      "fieldEnd": null,
+      "population": null,
+      "sampleSize": null,
+      "marginOfError": null,
+      "question": "Most important issue in deciding your vote (data centers/AI share as reported)",
+      "figures": [
+        {
+          "label": "Named data centers as the most important issue for their vote",
+          "pct": 3
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Newsweek: Where Ohio Republicans stand on data centers amid growing backlash",
+        "url": "https://www.newsweek.com/where-ohio-republicans-stand-on-data-centers-amid-growing-backlash-12531253"
+      },
+      "additionalSources": [],
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports."
+        }
+      ]
+    },
+    {
+      "id": "vp-ia-emerson-college-polling-issue-1",
+      "state": "IA",
+      "races": [
+        "ia-senate-2026"
+      ],
+      "kind": "issue-priorities",
+      "pollster": "Emerson College Polling",
+      "sponsor": "Nexstar Media",
+      "fieldStart": "2026-10-05",
+      "fieldEnd": "2026-10-06",
+      "population": "likely voters",
+      "sampleSize": 650,
+      "marginOfError": 3.8,
+      "question": "Most important issue facing Iowa (exact wording not seen in search results)",
+      "questionType": "single",
+      "issues": [
+        {
+          "issue": "Economy",
+          "pct": 42
+        },
+        {
+          "issue": "Health care",
+          "pct": 18
+        },
+        {
+          "issue": "Threats to democracy",
+          "pct": 10
+        },
+        {
+          "issue": "Education",
+          "pct": 8
+        }
+      ],
+      "aiOffered": null,
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Emerson College Polling: Voters Most Concerned About Economy Break for Sand for Governor, Hinson for Senate",
+        "url": "https://emersoncollegepolling.com/iowa-2026-poll-u-s-senate-race-tightens-sand-maintains-edge-for-governor/"
+      },
+      "additionalSources": [
+        {
+          "title": "Political Wire: Hinson narrowly leads Turek in Iowa (Oct. 9, 2026)",
+          "url": "https://politicalwire.com/2026/10/09/hinson-narrowly-leads-turek-in-iowa/"
+        }
+      ],
+      "publishedDate": "2026-10",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Political Wire)."
+        }
+      ]
+    },
+    {
+      "id": "vp-ia-fox-news-poll-issue-2",
+      "state": "IA",
+      "races": [
+        "ia-senate-2026"
+      ],
+      "kind": "issue-priorities",
+      "pollster": "Fox News Poll",
+      "sponsor": "Fox News",
+      "fieldStart": "2026-09-24",
+      "fieldEnd": "2026-09-28",
+      "population": "registered voters",
+      "sampleSize": 1204,
+      "marginOfError": null,
+      "question": "How important each issue will be to your vote for Senate (share saying 'extremely important')",
+      "questionType": "importance-rating",
+      "issues": [
+        {
+          "issue": "Cost of living",
+          "pct": 60
+        },
+        {
+          "issue": "President Donald Trump",
+          "pct": 43
+        },
+        {
+          "issue": "Immigration",
+          "pct": 39
+        },
+        {
+          "issue": "AI technology",
+          "pct": 27,
+          "ai": true
+        }
+      ],
+      "aiOffered": true,
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Fox News: Fox News Poll: Turek, Hinson in close Iowa Senate race (Oct. 1, 2026)",
+        "url": "https://www.foxnews.com/politics/fox-news-poll-turek-hinson-close-iowa-senate-race"
+      },
+      "additionalSources": [
+        {
+          "title": "Turek campaign: ICYMI: Josh Turek leads Hinson by four points in Fox News poll",
+          "url": "https://turek4iowa.com/news/icymi-josh-turek-leads-hinson-by-four-points-in-fox-news-poll-hits-50"
+        }
+      ],
+      "publishedDate": "2026-10-01",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Turek campaign)."
+        }
+      ]
+    },
+    {
+      "id": "vp-ia-emerson-college-polling-ai-qu-4",
+      "state": "IA",
+      "races": [
+        "ia-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Emerson College Polling",
+      "sponsor": "Nexstar Media",
+      "fieldStart": "2026-08-31",
+      "fieldEnd": "2026-09-01",
+      "population": "likely voters",
+      "sampleSize": 750,
+      "marginOfError": 3.6,
+      "question": "Will building data centers have a positive or negative impact on each of the following in Iowa?",
+      "figures": [
+        {
+          "label": "Environment: negative impact",
+          "pct": 60
+        },
+        {
+          "label": "Cost of living: negative impact",
+          "pct": 52
+        },
+        {
+          "label": "Quality of life: negative impact",
+          "pct": 46
+        },
+        {
+          "label": "Jobs: negative impact",
+          "pct": 44
+        },
+        {
+          "label": "Jobs: positive impact",
+          "pct": 41
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Emerson College Polling: Voters Concerned about Tariffs, Impact of Data Centers",
+        "url": "https://emersoncollegepolling.com/iowa-2026-poll-hinson-leads-turek/"
+      },
+      "additionalSources": [],
+      "publishedDate": "2026-09",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports."
+        }
+      ]
+    },
+    {
+      "id": "vp-ia-emerson-college-polling-ai-qu-5",
+      "state": "IA",
+      "races": [
+        "ia-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Emerson College Polling",
+      "sponsor": "Nexstar Media",
+      "fieldStart": null,
+      "fieldEnd": null,
+      "population": "likely voters",
+      "sampleSize": null,
+      "marginOfError": null,
+      "question": "Do you support or oppose data centers being built near or in your community?",
+      "figures": [
+        {
+          "label": "Oppose data centers built near or in their community",
+          "pct": 62
+        },
+        {
+          "label": "Support",
+          "pct": 24
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Emerson College Polling: Voters Concerned about Tariffs, Impact of Data Centers (cites the prior month's Iowa poll)",
+        "url": "https://emersoncollegepolling.com/iowa-2026-poll-hinson-leads-turek/"
+      },
+      "additionalSources": [
+        {
+          "title": "Newsweek: Where America's Revolt Against Data Centers Could Shape Key Senate Races",
+          "url": "https://www.newsweek.com/where-americas-revolt-against-data-centers-could-shape-key-senate-races-12473147"
+        }
+      ],
+      "publishedDate": "2026-08",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Newsweek)."
+        }
+      ]
     }
   ]
 }
