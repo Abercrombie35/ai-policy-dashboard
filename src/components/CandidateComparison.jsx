@@ -128,7 +128,7 @@ function CandidateComparison({ race }) {
           <div key={c.id} className="candidate-header">
             <div className={`avatar ${(c.party || '').toLowerCase()} ${c.bloc ? `bloc-${c.bloc}` : ''}`} aria-hidden="true">{initials(c.name)}</div>
             <div>
-              <h3>{c.name}</h3>
+              <h3><a className="person-link" href={`#/person/${c.id}`}>{c.name}</a></h3>
               <span className={`party-badge ${(c.party || '').toLowerCase()} ${c.bloc ? `bloc-${c.bloc}` : ''}`}>{c.party}</span>
               {c.note && <p className="candidate-note">{c.note}</p>}
               <div className="questionnaire"><QuestionnaireStatus q={c.questionnaire} /></div>

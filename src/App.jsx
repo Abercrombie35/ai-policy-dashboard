@@ -10,6 +10,7 @@ import InternationalView from './pages/InternationalView';
 import MethodsView from './pages/MethodsView';
 import DataView from './pages/DataView';
 import AnalysisPage from './pages/AnalysisPage';
+import PeopleView, { PersonPage } from './pages/PeopleView';
 import ProposalsPanel from './components/ProposalsPanel';
 import ErrorBoundary from './components/ErrorBoundary';
 import { APP_VERSION } from './version';
@@ -27,6 +28,7 @@ const NAV = [
   { id: 'analysis', label: 'Policy analysis', path: '/analysis' },
   { id: 'parties', label: 'Party comparison', path: '/parties' },
   { id: 'legislation', label: 'Legislation', path: '/legislation' },
+  { id: 'people', label: 'People', path: '/people' },
   { id: 'international', label: 'International', path: '/international' },
   { id: 'methods', label: 'Methodology', path: '/methods' },
   { id: 'data', label: 'Download data', path: '/data' },
@@ -167,7 +169,7 @@ function MapPage({ selectedState, selectedCountry, race = null }) {
 function App() {
   const { page, params } = useHashRoute();
   const { includeDrafts, setIncludeDrafts } = useDrafts();
-  const activeNav = ['state', 'country'].includes(page) ? 'map' : page;
+  const activeNav = ['state', 'country'].includes(page) ? 'map' : page === 'person' ? 'people' : page;
   const selectedState = page === 'state' && geo.states[params[0]?.toUpperCase()] ? params[0].toUpperCase() : null;
   const selectedCountry = page === 'country' && europeGeo.countries[params[0]?.toUpperCase()] ? params[0].toUpperCase() : null;
 
@@ -179,6 +181,8 @@ function App() {
     case 'international': content = <InternationalView />; break;
     case 'methods': content = <MethodsView />; break;
     case 'data': content = <DataView />; break;
+    case 'people': content = <PeopleView />; break;
+    case 'person': content = <PersonPage id={params[0]} />; break;
     default: {
       // Race pages: #/state/MI/<race-id> in the U.S., #/country/FR/<race-id> abroad.
       const race = ['state', 'country'].includes(page) && params[1] ? raceById(params[1]) : null;

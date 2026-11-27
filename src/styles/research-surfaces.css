@@ -778,3 +778,16 @@
 .selection-table .criteria-met, .selection-table .rating-asof { display: block; font-size: 0.78rem; color: var(--research-muted); }
 .selection-others, .selection-gaps { margin-top: 10px; }
 .selection-gaps li { font-size: 0.85rem; color: var(--research-muted); margin-bottom: 4px; }
+
+/* People pages (AIPD-301) */
+.people-list { list-style: none; padding: 0; columns: 2 320px; column-gap: 32px; }
+.people-list li { break-inside: avoid; padding: 4px 0; }
+.people-meta { color: var(--research-muted); font-size: 0.85rem; }
+.person-roles { padding-left: 18px; line-height: 1.6; }
+.person-domain h4 { margin: 16px 0 8px; }
+.people-search input { padding: 6px 10px; border: 1px solid var(--research-control); border-radius: 6px; min-width: 240px; }
+.candidate-header .person-link { color: inherit; text-decoration: none; }
+.candidate-header .person-link:hover { text-decoration: underline; }
+.people-page .person-party { font-family: inherit; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; vertical-align: middle; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--research-control); background: var(--research-card); }
+.people-page h2 .person-party { margin-left: 8px; }
+.people-page .category-tag { color: var(--research-ink); background: var(--research-soft); border-color: var(--research-rule); }

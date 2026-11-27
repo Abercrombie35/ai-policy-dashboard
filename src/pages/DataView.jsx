@@ -1,4 +1,5 @@
 import React from 'react';
+import { people, recordsForPerson } from '../lib/people';
 import { codebook, races, bills, results, elections, filterDrafts, jurisdictionKey, placeOf, checkOf, verification, voterPriorities, publicOpinion, datasetUpdated, countRecords, raceById, itemsForRace, trackOf, domainsOf, partyLines, researchRecords, policyQuestions, categoriesOf } from '../lib/data';
 import { allCandidates, deviationCell } from '../lib/analysis';
 import { useDrafts } from '../lib/drafts';
@@ -101,6 +102,18 @@ function resultRows(includeDrafts) {
   );
 }
 
+// One row per person (AIPD-301): their races, outcomes, bills and records.
+function peopleRows(includeDrafts) {
+  return toCsv(
+    ['person_id', 'name', 'party', 'races', 'outcomes', 'elected_as', 'bills_sponsored', 'bill_ids', 'record_ids'],
+    people.map((p) => [
+      p.id, p.name, p.party, p.races.map((r) => r.race.id).join(' '), p.races.map((r) => r.outcome.label).join('; '),
+      p.races.map((r) => r.title).filter(Boolean).join('; '), p.bills.length, p.bills.map((b) => b.bill.id).join(' '),
+      filterDrafts(recordsForPerson(p), includeDrafts).map((r) => r.id).join(' '),
+    ]),
+  );
+}
+
 function fullJson(includeDrafts) {
   return JSON.stringify(
     {
@@ -147,6 +160,7 @@ function DataView() {
 
   const files = [
     { name: `ai-policy-dataset${suffix}.json`, label: 'Full dataset (JSON)', desc: 'Races, candidates, labeled records, election results, bills, voter-priority polls, Gallup and Pew findings, international elections, claim checks and the codebook.', make: () => fullJson(includeDrafts), type: 'application/json' },
+    { name: `people${suffix}.csv`, label: 'People (CSV)', desc: 'One row per candidate or bill sponsor: races, outcomes, bills sponsored and record ids.', make: () => peopleRows(includeDrafts), type: 'text/csv' },
     { name: `election-results${suffix}.csv`, label: 'Election results (CSV)', desc: 'One row per candidate per race, with unofficial or certified status and sources.', make: () => resultRows(includeDrafts), type: 'text/csv' },
     { name: `campaign-records${suffix}.csv`, label: 'Campaign records (CSV)', desc: 'One row per candidate record, with labels and coding.', make: () => itemRows(includeDrafts), type: 'text/csv' },
     { name: `party-line-deviation${suffix}.csv`, label: 'Party-line deviation (CSV)', desc: 'One row per candidate per policy question: party line, latest said and proposed stances, status and sources.', make: () => deviationRows(includeDrafts), type: 'text/csv' },

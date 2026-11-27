@@ -1,6 +1,7 @@
 import React from 'react';
 import { LabelBadges, RecordMeta, CodingChips, ScopeTags } from './ItemCard';
 import { billStatuses, isVerified, stateName } from '../lib/data';
+import { personIdFor } from '../lib/people';
 
 function BillCard({ bill, showState = false }) {
   const history = bill.history || [];
@@ -27,7 +28,7 @@ function BillCard({ bill, showState = false }) {
           {bill.sponsors.map((s, i) => (
             <span key={s.name}>
               {i > 0 && ', '}
-              {s.name} <span className={`party-tag ${s.party.toLowerCase()}`}>({s.party[0]})</span>
+              <a href={`#/person/${personIdFor(s.name, s.linkedCandidateId)}`}>{s.name}</a> <span className={`party-tag ${s.party.toLowerCase()}`}>({s.party[0]})</span>
               {s.role ? ` ${s.role}` : ''}
             </span>
           ))}
