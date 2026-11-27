@@ -1417,31 +1417,31 @@
         {
           "name": "Matt Bierlein",
           "party": "Republican",
-          "role": "sponsor",
+          "role": "HB 4047",
           "linkedCandidateId": null
         },
         {
           "name": "Penelope Tsernoglou",
           "party": "Democratic",
-          "role": "sponsor",
+          "role": "HB 4048",
           "linkedCandidateId": null
         }
       ],
       "status": "enacted",
       "statusDate": "2025-08-26",
-      "statusNote": "Effective date from a secondary tracker; verify.",
+      "statusNote": "Signed and effective Aug. 26, 2025 (Public Acts 11 and 12 of 2025).",
       "categories": [
         "ai-deepfakes"
       ],
-      "summary": "Add a civil cause of action and criminal penalties for intimate deepfakes. Effective Aug. 26, 2025.",
+      "summary": "Add a civil cause of action and criminal penalties for non-consensual intimate deepfakes (HB 4047), with sentencing guidelines (HB 4048).",
       "labelType": "source-summary",
       "source": {
-        "title": "iMiel: Michigan AI law 2026 (tracker)",
-        "url": "https://imiel.dev/explore/us-ai-legislation-2026/michigan/"
+        "title": "Michigan Legislature: Public Act 11 of 2025 (HB 4047)",
+        "url": "https://legislature.mi.gov/documents/2025-2026/publicact/pdf/2025-PA-0011.pdf"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1460,7 +1460,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1476,6 +1476,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: corrected (MichiganVotes, MichiganVotes, Governor Whitmer). Corrected: only HB 4047 is Public Act 11 of 2025; HB 4048 is Public Act 12. Both were signed and took effect Aug. 26, 2025, with civil and criminal remedies for intimate deepfakes. Sponsors added: Reps. Matt Bierlein (R) and Penelope Tsernoglou (D). Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): confirmed, High confidence. Confirmed on the official public acts: HB 4047 (Rep. Matt Bierlein, R) created civil remedies and criminal penalties for non-consensual intimate deepfakes; HB 4048 (Rep. Penelope Tsernoglou, D) added sentencing guidelines; both took effect Aug. 26, 2025."
         }
       ]
     },
@@ -1898,15 +1903,15 @@
       "categories": [
         "dc-ratepayer"
       ],
-      "summary": "Would add a surcharge on electricity used by data centers.",
+      "summary": "Would add a surcharge on electricity used by data centers to offset the public-benefits charge on household bills.",
       "labelType": "source-summary",
       "source": {
-        "title": "Connecticut General Assembly: HB 5926 (2025) bill status",
-        "url": "https://prdext3.cga.ct.gov/2025/cbs/H/pdf/HB-5926.pdf"
+        "title": "Connecticut General Assembly: HB 5926 (2025) bill history",
+        "url": "https://cga.ct.gov/2025/cbs/H/pdf/HB-5926.pdf"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -1923,7 +1928,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1934,6 +1939,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports and corrected: Corrected: HB 5926 is a 2025 bill by Rep. Brandon Chafee (D), referred to committee with no further action, so it died when the 2025 session ended; it was listed as a 2026 bill still introduced. What it would do is confirmed. Raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): confirmed, High confidence. Confirmed on the legislature's bill history: Rep. Brandon Chafee's 2025 bill was referred to the Energy and Technology Committee on Jan. 22, 2025 and expired when the session adjourned June 4, 2025."
         }
       ]
     },
@@ -1946,20 +1956,20 @@
       "sponsors": [],
       "sponsorsNote": "Raised by the Energy and Technology Committee.",
       "status": "failed",
-      "statusDate": "2025-04-07",
-      "statusNote": "Turned into a study of energy efficiency standards for AI data centers and approved by the Energy and Technology Committee 24-0 on Mar. 18, 2025; given a file number Apr. 7, 2025, with no floor vote, so it died.",
+      "statusDate": "2025-06-04",
+      "statusNote": "Turned into a study of energy efficiency standards for AI data centers and approved by the Energy and Technology Committee 24-0 on Mar. 18, 2025; placed on the Senate calendar Apr. 7 and expired without a floor vote when the session adjourned June 4, 2025.",
       "categories": [
         "dc-transparency"
       ],
       "summary": "Would study energy efficiency for AI data centers.",
       "labelType": "source-summary",
       "source": {
-        "title": "Connecticut General Assembly: SB 1292 (2025) bill status",
-        "url": "https://prdext3.cga.ct.gov/2025/cbs/S/pdf/SB-1292.pdf"
+        "title": "Connecticut General Assembly: SB 1292 (2025) bill history",
+        "url": "https://www.cga.ct.gov/2025/cbs/S/pdf/SB-1292.pdf"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1976,7 +1986,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1987,6 +1997,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: corrected (Connecticut General Assembly, BillTrack50, The Day). Corrected: SB 1292 is a 2025 Energy and Technology Committee bill, turned into a study bill and approved 24-0 on Mar. 18, 2025, then left without a floor vote, so it died; it was listed as a bill of unknown session still introduced. Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): corrected, High confidence. Corrected the end date: after the committee's 24-0 vote (Mar. 18, 2025) the bill reached the Senate calendar on Apr. 7 (Calendar No. 303) and expired without a floor vote when the session adjourned June 4, 2025."
         }
       ]
     },
@@ -3248,7 +3263,7 @@
       "id": "fr-pjl-simplification",
       "country": "FR",
       "session": "Parliament, 2024-2026",
-      "billNumber": "Law of May 26, 2026 (government bill)",
+      "billNumber": "Law no. 2026-403 of May 26, 2026",
       "title": "Law simplifying economic life (includes fast-track for data centers)",
       "sponsors": [],
       "sponsorsNote": "Government bill.",
@@ -3258,15 +3273,15 @@
       "categories": [
         "dc-permitting"
       ],
-      "summary": "Among many simplification measures, lets industrial-scale data centers that meet set conditions (including on water) be designated projects of major national interest by decree, which speeds up siting and grid connection.",
+      "summary": "Among many simplification measures, lets data centers that meet set conditions be designated projects of major national interest by decree, which speeds up siting and grid connection (Article 35), while allowing permits to be refused in water-stressed areas.",
       "labelType": "source-summary",
       "source": {
-        "title": "Vie-publique: Projet de loi de simplification de la vie économique",
-        "url": "https://www.vie-publique.fr/loi/293913-entreprises-projet-de-loi-de-simplification-de-la-vie-economique"
+        "title": "Sénat: Simplification de la vie économique, dossier législatif",
+        "url": "https://www.senat.fr/dossier-legislatif/pjl23-550.html"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "innovation-first",
         "levelOfGovernment": [
@@ -3281,7 +3296,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -3292,6 +3307,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: corrected (Lextenso, Ministère de la Transition écologique, Vie-publique). Corrected: the simplification bill became law on May 26, 2026 (published May 27); it was listed as still under examination. It lets data centers meeting set conditions, including on water, be designated projects of major national interest by decree. Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): confirmed, High confidence. Confirmed on the Senate's legislative record: Law no. 2026-403 of May 26, 2026 (Journal officiel, May 27), after the Constitutional Council's May 21 ruling; its Article 35 extends fast-track siting and grid connection to qualifying data centers designated by decree and allows permits to be refused in water-stressed areas."
         }
       ]
     },

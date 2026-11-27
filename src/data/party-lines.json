@@ -480,8 +480,8 @@
           "track": "said",
           "summary": "Schumer accused Trump of defending Nvidia's CEO at the cost of national security.",
           "source": {
-            "title": "Reuters (via The Daily Guardian): Schumer says Congress must have answers on Trump defense of Nvidia CEO",
-            "url": "https://thedailyguardian.com/business/schumer-says-congress-must-have-answers-on-trump-defense-of-nvidia-ceo-773542/"
+            "title": "Senate Democrats: Schumer floor remarks on Trump's defense of Nvidia CEO Jensen Huang (Nov. 10, 2026)",
+            "url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-floor-remarks-on-trumps-troubling-defense-of-nvidia-ceo-jensen-huang-at-the-cost-of-american-national-security"
           }
         }
       ],
@@ -492,7 +492,7 @@
       "publishedDate": "2026-11-10",
       "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -508,6 +508,11 @@
           "version": 3,
           "date": "2026-11-27",
           "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 02): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): evidence rechecked. All evidence confirmed; Medium confidence. The stance itself remains an editorial judgment."
         }
       ]
     },
