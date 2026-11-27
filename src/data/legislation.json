@@ -2523,23 +2523,29 @@
       "session": "2025-2026 session",
       "billNumber": "SB 947",
       "title": "Worker protections for AI and automated decision systems",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "Jerry McNerney",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "enacted",
       "statusDate": "2026-09-30",
       "statusNote": "Signed Sept. 30, 2026.",
       "categories": [
         "ai-workers"
       ],
-      "summary": "Limits on employers' use of AI and automated decision systems, including in firing decisions.",
+      "summary": "Bars employers from relying solely on AI or automated decision systems to fire or discipline workers and requires human oversight of those decisions (the \"No Robo Bosses Act of 2026\", a narrower version of the vetoed SB 7).",
       "labelType": "source-summary",
       "source": {
-        "title": "CalMatters: Newsom enacts only some AI regulations sought by unions",
-        "url": "https://calmatters.org/economy/technology/2026/09/on-ai-newsom-gives-labor-only-some-of-what-it-demanded/"
+        "title": "Sen. Jerry McNerney: Newsom signs No Robo Bosses Act of 2026 (Sept. 30, 2026)",
+        "url": "https://sd05.senate.ca.gov/news/newsom-signs-mcnerneys-no-robo-bosses-act-2026-requiring-human-oversight-ai-workplace"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2556,7 +2562,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2567,6 +2573,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (Akin Gump, CalMatters, KQED). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): confirmed, High confidence. Confirmed in Sen. Jerry McNerney's Sept. 30, 2026 release: the No Robo Bosses Act of 2026 bars employers from relying solely on automated decision systems to fire or discipline workers and requires human oversight; author added."
         }
       ]
     },
@@ -2708,8 +2719,14 @@
       "session": "2025-2026 session",
       "billNumber": "SB 1000",
       "title": "Updates to AI disclosure and provenance rules (AI Transparency Act)",
-      "sponsors": [],
-      "sponsorsNote": "Sponsors to verify.",
+      "sponsors": [
+        {
+          "name": "Josh Becker",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
       "status": "enacted",
       "statusDate": "2026-09-30",
       "statusNote": "Signed Sept. 30, 2026.",
@@ -2719,11 +2736,11 @@
       "summary": "Updates rules on disclosing AI-generated content and its provenance.",
       "labelType": "source-summary",
       "source": {
-        "title": "Transparency Coalition: Newsom wraps term by enacting 11 more AI safety laws",
-        "url": "https://www.transparencycoalition.ai/news/gov-newsom-wraps-california-term-by-enacting-11-more-laws-on-ai-safety"
+        "title": "Office of the Governor of California: Governor Newsom signs more first-in-the-nation AI worker protections (Sept. 30, 2026)",
+        "url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "balanced",
@@ -2741,7 +2758,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -2752,6 +2769,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports: confirmed (Morrison Foerster, Latham & Watkins, Eversheds Sutherland). The source pages could not be opened from the build environment, so the check rests on search results; raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): confirmed, Medium confidence. Confirmed in the governor's Sept. 30, 2026 signing release, which lists SB 1000 by Sen. Josh Becker (D) as the California AI Transparency Act; author added. The precise changes to the disclosure and provenance rules are not in the opened sources, so Medium."
         }
       ]
     },
@@ -2927,8 +2949,8 @@
         "url": "https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -2945,7 +2967,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -2961,6 +2983,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (CalMatters Digital Democracy, Foley & Lardner, Asm. Zbur). Bill records and law-firm summaries confirm AB 2383 (Zbur, Ch. 435) requires data center tariffs to carry a share of wildfire mitigation and liability and other public-program costs normally paid by distribution customers; summaries word the program list as climate mandates and equity programs, the claim as electrification and environmental programs. Author added: Asm. Rick Chavez Zbur (D). Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): partly confirmed, Low confidence. Partly confirmed: the governor's Sept. 21, 2026 signing release and the Senate's final 2026 summary confirm the law and Assemblymember Rick Chavez Zbur's authorship, and the release cites \"preventing cost shifts to low-income customers\". The full list of costs data center tariffs must cover (wildfire, electrification, environmental and other programs) could not be checked in the bill text."
         }
       ]
     },
@@ -3114,7 +3141,7 @@
       ],
       "status": "enacted",
       "statusDate": "2026-09-21",
-      "statusNote": "Signed Sept. 21, 2026.",
+      "statusNote": "Passed the Senate 30-8 and the Assembly 59-11; signed Sept. 21, 2026.",
       "categories": [
         "dc-water-environment",
         "dc-local-control"
@@ -3122,12 +3149,12 @@
       "summary": "Prevents data centers from skipping the state-mandated environmental review for new projects. The package also requires developers to disclose projected water use and pay for water supply upgrades.",
       "labelType": "source-summary",
       "source": {
-        "title": "KQED: Newsom signs new restrictions on data center development",
-        "url": "https://www.kqed.org/news/12100746/newsom-signs-new-restrictions-on-data-center-development"
+        "title": "Sen. Steve Padilla: Nation-leading data center regulations signed into law (Sept. 21, 2026)",
+        "url": "https://sd18.senate.ca.gov/news/nation-leading-data-center-regulations-signed-law"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -3144,7 +3171,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -3155,6 +3182,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Governor's office, KPBS, KQED). Padilla's SB 887, signed Sept. 21, 2026, removes the CEQA exemption option for data centers; the water-use disclosure and payment for water upgrades come from AB 2469 in the same package, as the claim says. Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 06): confirmed, High confidence. Confirmed in Sen. Steve Padilla's Sept. 21, 2026 release (passed the Senate 30-8 and the Assembly 59-11) and the governor's signing release of the same day, which also covers the package's water-use disclosure and developer-funded water infrastructure."
         }
       ]
     },
