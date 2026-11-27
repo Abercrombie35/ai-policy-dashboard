@@ -262,6 +262,8 @@ Key files:
   bills).
 - src/components/RaceView.jsx, CandidateComparison.jsx: race page and tabs.
 - src/components/RaceModal.jsx: the 80% race pop-up over the map.
+- src/lib/people.js, src/pages/PeopleView.jsx: People (#/people) and a page per person (#/person/<id>) for every
+  candidate and bill sponsor, derived from the race, record, bill and result files (AIPD-301).
 - src/data/senate-race-selection.json, src/components/RaceSelection.jsx: the 2026 Senate sample (AIPD-102), drawn
   by `tools/select_senate_races.py` from the sourced facts in documents/senate-selection/races-2026.json and shown
   on the Methodology page with its criteria.

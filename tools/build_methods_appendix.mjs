@@ -120,8 +120,16 @@ p();
 
 p('## 9. Reliability');
 p();
-p('Pending (AIPD-202, AIPD-203). Planned design: a person reviews every AI-drafted code; then two coders independently code a sample of at least 20% of records, and Krippendorff\'s alpha is reported for each coding dimension, with codebook rules revised where agreement is low. Results will be reported here, and the codebook frozen as version 1.0.');
-p();
+const relPath = new URL('../documents/coding-review/reliability-results.json', import.meta.url).pathname;
+if (existsSync(relPath)) {
+  const rel = JSON.parse(readFileSync(relPath, 'utf8'));
+  p(`Inter-coder reliability, ${rel.date}: ${rel.coders} coders, ${rel.items} items. ${rel.method}`);
+  p();
+  table(['Dimension', "Krippendorff's alpha", 'Items coded by 2+ coders'], Object.values(rel.dimensions).map((d) => [d.label, d.alpha ?? 'n/a', d.units]));
+} else {
+  p('Pending (AIPD-202, AIPD-203). A person reviews every AI-drafted code (documents/coding-review/review-sheet.csv); then two coders independently code a 20% sample (reliability-sheet.csv) and Krippendorff\'s alpha is reported for each coding dimension (`python3 tools/coding_review.py alpha`), with codebook rules revised where agreement is low. Results will be reported here, and the codebook frozen as version 1.0.');
+  p();
+}
 
 p('## 10. Limitations');
 p();

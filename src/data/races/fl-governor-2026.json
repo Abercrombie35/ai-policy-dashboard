@@ -1,0 +1,36 @@
+{
+  "id": "fl-governor-2026",
+  "state": "FL",
+  "office": "Governor",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "open",
+    "note": "Open seat: Republican Gov. Ron DeSantis was term-limited; the winner takes office Jan. 5, 2027."
+  },
+  "nomineesSource": "Chosen in the Aug. 18, 2026 party primaries: U.S. Rep. Byron Donalds won the Republican primary (WEAR/CBS12 report 48.8%, with former Lt. Gov. Jay Collins second at 24.8%; other outlets report 48.7% or 47.8% for Donalds) after Donald Trump endorsed him, and former U.S. Rep. David Jolly won the Democratic primary with 61.6% (WEAR).",
+  "candidates": [
+    {
+      "id": "byron-donalds",
+      "name": "Byron Donalds",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "david-jolly",
+      "name": "David Jolly",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

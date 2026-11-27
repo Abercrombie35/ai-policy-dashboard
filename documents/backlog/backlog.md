@@ -45,15 +45,15 @@ Built from the project proposal and the dashboard as deployed on Nov. 26, 2026 (
 | AIPD-312 | Track B: officeholders and state legislation | Legislation sourced from the IAPP, NCSL and MultiState trackers | 8 | **Must-Must** | Done (Nov. 26) | AIPD-302 |
 | AIPD-101 | Track A: 2026 Senate candidates | Archive campaign pages before they go offline | 3 | **Must** | In progress (143 pages listed and tooling built; run documents/archive/archive_pages.py and send back archived.csv) | - |
 | AIPD-102 | Track A: 2026 Senate candidates | Final race list with published selection criteria | 3 | **Must** | Done (Nov. 27; 15 races; update the proposal text to match) | - |
-| AIPD-103 | Track A: 2026 Senate candidates | Add the next five Senate races | 8 | **Must** | To do | AIPD-102, AIPD-101 |
+| AIPD-103 | Track A: 2026 Senate candidates | Add the next five Senate races | 8 | **Must** | Done for this round (Nov. 27; Kansas, Maine, Ohio, Iowa and Alaska added; next: NH, NE, SC, MN, NC) | AIPD-102, AIPD-101 |
 | AIPD-106 | Track A: 2026 Senate candidates | Measure AI salience per candidate | 8 | **Must** | To do | AIPD-101 |
 | AIPD-108 | Track A: 2026 Senate candidates | Certified election results | 2 | **Must** | In progress (certification tracked; certified figures to be relayed: Michigan now, California after Dec. 11, Texas governor in January) | - |
-| AIPD-109 | Track A: 2026 Senate candidates | Build out Florida | 8 | **Must** | To do | AIPD-111 |
+| AIPD-109 | Track A: 2026 Senate candidates | Build out Florida | 8 | **Must** | Done (Nov. 27; governor and Senate special races, 14 candidate records, 12 bills and actions, 5 polls) | AIPD-111 |
 | AIPD-201 | Verification, coding and reliability | Raise claims to High confidence from primary sources | 13 | **Must** | To do | AIPD-205 |
-| AIPD-202 | Verification, coding and reliability | Human review of AI-drafted coding | 8 | **Must** | To do | - |
-| AIPD-203 | Verification, coding and reliability | Inter-coder reliability test | 8 | **Must** | To do | AIPD-202 |
+| AIPD-202 | Verification, coding and reliability | Human review of AI-drafted coding | 8 | **Must** | In progress (review sheet and import tool built; a person now reviews the 184 coded items) | - |
+| AIPD-203 | Verification, coding and reliability | Inter-coder reliability test | 8 | **Must** | In progress (20% blind sample and Krippendorff alpha tool built; needs two coders after AIPD-202) | AIPD-202 |
 | AIPD-204 | Verification, coding and reliability | Codebook version 1.0 | 3 | **Must** | In progress (1.0-rc1 with changelog; frozen as 1.0 after AIPD-202 and AIPD-203) | AIPD-203 |
-| AIPD-301 | Track B: officeholders and state legislation | Officeholder profiles | 13 | **Must** | To do | - |
+| AIPD-301 | Track B: officeholders and state legislation | Officeholder profiles | 13 | **Must** | Done (Nov. 27; People pages for every candidate and bill sponsor; structured votes wait for AIPD-305) | - |
 | AIPD-302 | Track B: officeholders and state legislation | Check licences for legislative data sources | 2 | **Must** | Done (Nov. 26, with AIPD-312) | - |
 | AIPD-303 | Track B: officeholders and state legislation | Automatic bill data from official or open sources | 13 | **Must** | To do | AIPD-302 |
 | AIPD-306 | Track B: officeholders and state legislation | Rhetoric-versus-action measure | 8 | **Must** | To do | AIPD-301, AIPD-305 |
@@ -195,16 +195,16 @@ Acceptance criteria:
 - [x] The proposal's "Final race list [TO BE VERIFIED]" is resolved
 
 #### AIPD-103: Add the next five Senate races
-*Must · 8 points · To do · Proposal: §4 Track A, §12 · Depends on: AIPD-102, AIPD-101*
+*Must · 8 points · Done for this round (Nov. 27; Kansas, Maine, Ohio, Iowa and Alaska added; next: NH, NE, SC, MN, NC) · Proposal: §4 Track A, §12 · Depends on: AIPD-102, AIPD-101*
 
 As a reader, I want more 2026 Senate races profiled so that the dataset can answer RQ1-RQ4.
 
 Acceptance criteria:
-- [ ] 5 new race files with candidates and results
-- [ ] Each candidate's AI and data center statements sourced, coded, headlined and categorised
-- [ ] Every claim checked; pages pass the navigation tests
+- [x] 5 new race files with candidates and results
+- [x] Each candidate's AI and data center statements sourced, coded, headlined and categorised
+- [x] Every claim checked; pages pass the navigation tests
 
-Note: Repeat until 10-20 races (2-3 sprints). Next five from the published list (AIPD-102): Kansas, Maine, Ohio (special), Iowa, Alaska.
+Note: Repeat until 10-20 races (2-3 sprints). Round 1 (Nov. 27): Kansas, Maine, Ohio (special), Iowa, Alaska; 11 of their claims rest only on their own source (Low, to check). Next five from the published list: New Hampshire, Nebraska, South Carolina, Minnesota, North Carolina.
 
 #### AIPD-104: Decide what happens to the Michigan Senate prototype drafts
 *Should · 2 points · To do · Proposal: §4 (Michigan to full standard)*
@@ -253,16 +253,16 @@ Acceptance criteria:
 - [ ] Included in downloads
 
 #### AIPD-109: Build out Florida
-*Must · 8 points · To do · Proposal: §4 Track A (states with significant AI activity) · Depends on: AIPD-111*
+*Must · 8 points · Done (Nov. 27; governor and Senate special races, 14 candidate records, 12 bills and actions, 5 polls) · Proposal: §4 Track A (states with significant AI activity) · Depends on: AIPD-111*
 
 As a reader, I want Florida's 2026 races and AI legislation in the same format as Michigan, Texas, Connecticut and California so that a large state with heavy data center and AI activity is covered.
 
 Acceptance criteria:
-- [ ] Both 2026 statewide races added: governor (open seat) and the U.S. Senate special election, with candidates and results from official sources
-- [ ] Each candidate's AI and data center statements and plans sourced, coded, headlined and categorised (said vs. proposed; data centers vs. everything else in AI)
-- [ ] Florida AI and data center bills and the governor's AI proposals added, with sponsors, status and categories
-- [ ] Deviation from the party lines shown for both races; Florida appears on the map, pop-up and Policy analysis page
-- [ ] Voter-priority polls and charts for both races (with AIPD-111 and AIPD-112); every claim checked; page tests pass
+- [x] Both 2026 statewide races added: governor (open seat) and the U.S. Senate special election, with candidates and results from official sources
+- [x] Each candidate's AI and data center statements and plans sourced, coded, headlined and categorised (said vs. proposed; data centers vs. everything else in AI)
+- [x] Florida AI and data center bills and the governor's AI proposals added, with sponsors, status and categories
+- [x] Deviation from the party lines shown for both races; Florida appears on the map, pop-up and Policy analysis page
+- [x] Voter-priority polls and charts for both races (with AIPD-111 and AIPD-112); every claim checked; page tests pass
 
 Note: Decision (Nov. 27, 2026): stays a Must. The published criteria (AIPD-102) did not put Florida's Senate special election in the Senate sample (no final rating found, no AI exchange between the candidates found), so Florida is built out on its own merits (state AI and data center activity, the open governor's race) and profiled alongside the sample, not counted in it.
 
@@ -292,7 +292,7 @@ Acceptance criteria:
 Note: Now done mainly through AIPD-211 and AIPD-212 (ChatGPT hand-off), since the cloud environment blocks the source sites.
 
 #### AIPD-202: Human review of AI-drafted coding
-*Must · 8 points · To do · Proposal: §5 (codebook piloted on MI and TX)*
+*Must · 8 points · In progress (review sheet and import tool built; a person now reviews the 184 coded items) · Proposal: §5 (codebook piloted on MI and TX)*
 
 As a researcher, I want a person to review every AI-drafted code so that the dataset is not model output.
 
@@ -303,7 +303,7 @@ Acceptance criteria:
 Note: None of the 158 records has reviewed coding yet.
 
 #### AIPD-203: Inter-coder reliability test
-*Must · 8 points · To do · Proposal: §9 (reliability testing), §11 · Depends on: AIPD-202*
+*Must · 8 points · In progress (20% blind sample and Krippendorff alpha tool built; needs two coders after AIPD-202) · Proposal: §9 (reliability testing), §11 · Depends on: AIPD-202*
 
 As a faculty reviewer, I want reliability statistics so that the coding can be trusted and bias claims answered.
 
@@ -345,14 +345,14 @@ Acceptance criteria:
 ### Epic: Track B: officeholders and state legislation
 
 #### AIPD-301: Officeholder profiles
-*Must · 13 points · To do · Proposal: §1 Stage 2, §4 Track B*
+*Must · 13 points · Done (Nov. 27; People pages for every candidate and bill sponsor; structured votes wait for AIPD-305) · Proposal: §1 Stage 2, §4 Track B*
 
 As a reader, I want a page per politician (candidates, winners, sitting officials) with their statements, bills and votes so that the site is a one-stop shop.
 
 Acceptance criteria:
-- [ ] Person data model linking candidate records, bill sponsorships and votes
-- [ ] A person page (#/person/<id>) for every candidate and sponsor already in the data
-- [ ] Senators-elect and governors-elect from the tracked races included
+- [x] Person data model linking candidate records, bill sponsorships and votes
+- [x] A person page (#/person/<id>) for every candidate and sponsor already in the data
+- [x] Senators-elect and governors-elect from the tracked races included
 
 Note: Can be split: data model (8) + linking existing records (5).
 

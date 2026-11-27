@@ -1,0 +1,36 @@
+{
+  "id": "ia-senate-2026",
+  "state": "IA",
+  "office": "U.S. Senate",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "open",
+    "note": "Two-term Republican Sen. Joni Ernst did not seek re-election, leaving the seat open; Turek's win flipped it to Democrats."
+  },
+  "nomineesSource": "Party primaries on June 2, 2026: state Rep. Josh Turek defeated state Sen. Zach Wahls for the Democratic nomination (AP call), and U.S. Rep. Ashley Hinson, endorsed by President Trump, defeated former state Sen. Jim Carlin for the Republican nomination. Libertarian Thomas Laehn was also on the general-election ballot (Ballotpedia).",
+  "candidates": [
+    {
+      "id": "josh-turek",
+      "name": "Josh Turek",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "ashley-hinson",
+      "name": "Ashley Hinson",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

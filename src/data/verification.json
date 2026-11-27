@@ -3745,6 +3745,1072 @@
       "unconfirmed": [
         "Whether these figures are from the Sept. 25-Oct. 5 wave or the August wave"
       ]
+    },
+    "result-fl-governor-2026": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Florida Phoenix, WPTV (AP), Florida Trend (News Service of Florida)). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Florida Phoenix: Donalds defeats Jolly, becoming Florida's first Black governor (Nov. 3, 2026)",
+          "url": "https://floridaphoenix.com/2026/11/03/donalds-defeats-jolly-becoming-floridas-first-black-governor/"
+        },
+        {
+          "title": "WPTV (AP): Republican Byron Donalds wins election for governor in Florida (Nov. 3, 2026)",
+          "url": "https://www.wptv.com/news/political/elections-local/republican-byron-donalds-wins-election-for-governor-in-florida"
+        },
+        {
+          "title": "Florida Trend (News Service of Florida): Donalds fends off Jolly, Moody hangs on to U.S. Senate seat (Nov. 4, 2026)",
+          "url": "https://www.floridatrend.com/articles/2026/11/04/donalds-fends-off-jolly-moody-hangs-us-senate-seat/"
+        }
+      ]
+    },
+    "cr-fl-gov-donalds-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Latin Times). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Latin Times: Trump's pick for Florida governor Byron Donalds breaks with him on AI as state sues OpenAI",
+          "url": "https://www.latintimes.com/trumps-pick-florida-governor-byron-donalds-breaks-him-ai-state-sues-openai-597693"
+        }
+      ]
+    },
+    "cr-fl-gov-donalds-2": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "cr-fl-gov-donalds-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WPTV). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WPTV: Donalds promises insurance cuts, defends data centers as race pivots to November (2026)",
+          "url": "https://www.wptv.com/news/state/donalds-promises-insurance-cuts-defends-data-centers-as-race-pivots-to-november"
+        }
+      ]
+    },
+    "cr-fl-gov-donalds-4": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WLRN (AP), WPTV). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WLRN (AP): Florida GOP lawmaker and governor candidate says AI data center legislation keeps utility costs down (July 21, 2026)",
+          "url": "https://www.wlrn.org/government-politics/2026-07-21/florida-gop-lawmaker-and-governor-candidate-says-ai-data-center-legislation-keeps-utility-costs-down"
+        },
+        {
+          "title": "WPTV: Florida Rep. Byron Donalds pushes bill requiring AI data centers to supply their own power, water (July 2026)",
+          "url": "https://www.wptv.com/news/local-news/our-community/west-palm-beach/florida-rep-byron-donalds-pushes-bill-requiring-ai-data-centers-to-supply-their-own-power-water"
+        }
+      ]
+    },
+    "cr-fl-gov-donalds-5": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (News4Jax, Florida Phoenix). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "News4Jax: Jolly vs. Donalds: Where Florida's governor candidates stand on AI, data centers and Amendment 3 (Oct. 6, 2026)",
+          "url": "https://www.news4jax.com/news/politics/2026/10/06/jolly-vs-donalds-where-floridas-governor-candidates-stand-on-ai-data-centers-and-amendment-3/"
+        },
+        {
+          "title": "Florida Phoenix: Debate about data centers emerges in Donalds-Jolly gubernatorial race (Sept. 16, 2026)",
+          "url": "https://floridaphoenix.com/2026/09/16/debate-about-data-centers-emerges-in-donalds-jolly-gubernatorial-race/"
+        }
+      ]
+    },
+    "cr-fl-gov-jolly-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (E&E News, Floridian Press). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "E&E News: Dem front-runner in Florida governor race pushes for data center moratorium (2026)",
+          "url": "https://www.eenews.net/articles/dem-front-runner-in-florida-governor-race-pushes-for-data-center-moratorium/"
+        },
+        {
+          "title": "Floridian Press: David Jolly Details Moratorium on Data Centers, Attacks Donalds on Issue (July 2026)",
+          "url": "https://floridianpress.com/2026/07/david-jolly-details-moratorium-on-data-centers-attacks-donalds-on-issue/"
+        }
+      ]
+    },
+    "cr-fl-gov-jolly-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Orlando Weekly). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Orlando Weekly: David Jolly: A complete ban on data centers in Florida should be on the table (Sept. 2026)",
+          "url": "https://www.orlandoweekly.com/news/florida-news/david-jolly-a-complete-ban-on-data-centers-in-florida-should-be-on-the-table/"
+        }
+      ]
+    },
+    "cr-fl-gov-jolly-3": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "cr-fl-gov-jolly-4": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "vp-fl-university-of-north-florida--issue-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WOKV). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WOKV: UNF poll: Affordability is biggest concern facing Florida voters (2026)",
+          "url": "https://www.wokv.com/news/local/unf-poll-affordability-is-biggest-concern-facing-florida-voters-2026/SRQYGJHKM5CI3DMEAF6MY6LIY4"
+        }
+      ]
+    },
+    "vp-fl-university-of-north-florida--ai-qu-2": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this poll has not yet been checked against other reports.",
+      "sources": []
+    },
+    "vp-fl-university-of-north-florida--ai-qu-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (PolitiFact, WPTV, News4Jax). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "PolitiFact: fact-check of David Jolly on AI data centers poll (Sept. 2, 2026)",
+          "url": "https://politifact.com/factchecks/2026/sep/02/david-jolly/ai-data-centers-florida-poll-governor-race/"
+        },
+        {
+          "title": "WPTV: Florida candidates clash over data centers as poll finds local opposition (2026)",
+          "url": "https://www.wptv.com/news/politics/florida-candidates-clash-over-data-centers-as-poll-finds-local-opposition"
+        },
+        {
+          "title": "News4Jax: Florida voters split on phasing out property taxes until budget effects are explained, UNF poll finds (July 20, 2026)",
+          "url": "https://www.news4jax.com/news/politics/2026/07/20/florida-voters-split-on-phasing-out-property-taxes-until-budget-effects-are-explained-unf-poll-finds/"
+        }
+      ]
+    },
+    "vp-fl-university-of-north-florida--ai-qu-4": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WUSF). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WUSF: UNF poll: Republicans Donalds, Moody hold slim leads in tightening governor, U.S. Senate races (Oct. 22, 2026)",
+          "url": "https://wusf.org/politics-issues/2026-10-22/unf-poll-republicans-donalds-moody-hold-slim-leads-tightening-governor-us-senate-races"
+        }
+      ]
+    },
+    "vp-fl-stetson-university-ai-qu-5": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Tampa Bay 28). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Tampa Bay 28: Florida candidates clash over data centers as poll finds local opposition (2026)",
+          "url": "https://www.tampabay28.com/news/state/florida-candidates-clash-over-data-centers-as-poll-finds-local-opposition"
+        }
+      ]
+    },
+    "result-fl-senate-2026": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Scripps News (AP), Florida Phoenix via News From The States, Florida Trend (News Service of Florida)). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Scripps News (AP): Republican Ashley Moody wins reelection to U.S. Senate from Florida (Nov. 3, 2026)",
+          "url": "https://www.scrippsnews.com/politics/america-votes/republican-ashley-moody-wins-reelection-to-us-senate-from-florida"
+        },
+        {
+          "title": "Florida Phoenix via News From The States: Florida U.S. Senate race results (Nov. 2026)",
+          "url": "https://www.newsfromthestates.com/node/436343"
+        },
+        {
+          "title": "Florida Trend (News Service of Florida): Donalds fends off Jolly, Moody hangs on to U.S. Senate seat (Nov. 4, 2026)",
+          "url": "https://www.floridatrend.com/articles/2026/11/04/donalds-fends-off-jolly-moody-hangs-us-senate-seat/"
+        }
+      ]
+    },
+    "cr-fl-sen-moody-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Florida Daily, CBS12). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Florida Daily: Ashley Moody, AGs from across the nation call on Congress to investigate AI and child exploitation (Sept. 2023)",
+          "url": "https://floridadaily.com/ashley-moody-ags-from-across-the-nation-call-on-congress-to-investigate-ai-and-child-exploitation/"
+        },
+        {
+          "title": "CBS12: Attorney General Ashley Moody looks to stop predators from using AI to create child pornography (Sept. 8, 2023)",
+          "url": "https://cbs12.com/news/local/gallery/artificial-intelligence-ai-dangers-sexual-abuse-material-its-extremely-disturbing-attorney-general-ashley-moody-looks-to-stop-predators-from-using-ai-to-create-child-pornography-september-8-2023?photo=1"
+        }
+      ]
+    },
+    "cr-fl-sen-moody-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Route Fifty, PBS NewsHour). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Route Fifty: Senate overwhelmingly passes amendment removing state AI moratorium (July 2025)",
+          "url": "https://www.route-fifty.com/artificial-intelligence/2025/07/senate-overwhelmingly-passes-amendment-removing-state-ai-moratorium/406469"
+        },
+        {
+          "title": "PBS NewsHour: Senate pulls AI regulatory ban from GOP bill after complaints from states (July 2025)",
+          "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states"
+        }
+      ]
+    },
+    "cr-fl-sen-moody-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WPTV). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WPTV: Florida candidates clash over data centers as poll finds local opposition (2026)",
+          "url": "https://www.wptv.com/news/politics/florida-candidates-clash-over-data-centers-as-poll-finds-local-opposition"
+        }
+      ]
+    },
+    "cr-fl-sen-nixon-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Newsweek, Tampa Bay 28). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Newsweek: Angie Nixon, Ashley Moody, Trump, Florida data center, Mar-a-Lago (2026)",
+          "url": "https://www.newsweek.com/angie-nixon-ashley-moody-trump-florida-data-center-mar-a-lago-12490702"
+        },
+        {
+          "title": "Tampa Bay 28: In Fort Meade, data center fight becomes a Senate campaign issue (2026)",
+          "url": "https://www.tampabay28.com/news/region-polk/in-fort-meade-data-center-fight-becomes-a-senate-campaign-issue"
+        }
+      ]
+    },
+    "cr-fl-sen-nixon-2": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "fl-2026-sb484": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Office of the Governor, WUSF, Florida Phoenix). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Office of the Governor: Governor Ron DeSantis signs law to protect Floridians from subsidizing data centers (May 2026)",
+          "url": "https://www.flgov.com/eog/news/press/2026/governor-ron-desantis-signs-law-protect-floridians-subsidizing-data-centers"
+        },
+        {
+          "title": "WUSF: DeSantis signs bill adding regulations for 'hyper-scale' AI data centers (May 7, 2026)",
+          "url": "https://wusf.org/text/politics-issues/2026-05-07/desantis-signs-bill-adding-regulations-for-hyper-scale-ai-data-centers"
+        },
+        {
+          "title": "Florida Phoenix: Florida Senate half-heartedly agrees to final OK for weakened data center bill (March 13, 2026)",
+          "url": "https://floridaphoenix.com/2026/03/13/florida-senate-half-heartedly-agrees-to-final-ok-for-weakened-data-center-bill/"
+        }
+      ]
+    },
+    "fl-2026-sb1118": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (FlaglerLive, Holland & Knight). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "FlaglerLive: Florida bills would give data centers public record exemption for a year and shield ratepayers from energy costs",
+          "url": "https://flaglerlive.com/florida-bills-would-give-data-centers-public-record-exemption-for-a-year-and-shield-ratepayers-from-energy-costs/"
+        },
+        {
+          "title": "Holland & Knight: Proposed Florida legislation creates new regulatory framework (Feb. 5, 2026)",
+          "url": "https://www.hklaw.com/en/insights/publications/2026/02/proposed-florida-legislation-creates-new-regulatory-framework"
+        }
+      ]
+    },
+    "fl-2025-hb7031": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Holland & Knight, Greenberg Traurig). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Holland & Knight: Florida Gov. Ron DeSantis signs 2025 tax bill into law (July 14, 2025)",
+          "url": "https://www.hklaw.com/en/insights/publications/2025/07/florida-gov-ron-desantis-signs-2025-tax-bill-into-law"
+        },
+        {
+          "title": "Greenberg Traurig: Florida Legislature passes bill to end sales tax exemption for sub-100 MW data centers (June 2025)",
+          "url": "https://www.gtlaw.com/en/insights/2025/6/florida-legislature-passes-bill-to-end-sales-tax-exemption-for-sub-100-mw-data-centers"
+        }
+      ]
+    },
+    "fl-2026-sb482": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Central Florida Public Media, Florida Phoenix). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Central Florida Public Media: Senate approves House-obstructed 'AI Bill of Rights' (March 5, 2026)",
+          "url": "https://www.cfpublic.org/politics/2026-03-05/senate-approves-house-obstructed-ai-bill-of-rights"
+        },
+        {
+          "title": "Florida Phoenix: DeSantis-backed AI Bill of Rights advances in Senate amid House silence (Feb. 18, 2026)",
+          "url": "https://floridaphoenix.com/2026/02/18/god-help-you-desantis-backed-ai-bill-of-rights-advances-in-senate-amid-house-silence/"
+        }
+      ]
+    },
+    "fl-2026-proclamation-ai-special-session": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WUSF, Route Fifty). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WUSF: Florida redistricting session delayed as DeSantis adds AI and vaccines (April 16, 2026)",
+          "url": "https://www.wusf.org/politics-issues/2026-04-16/florida-redistricting-session-delayed-desantis-adds-ai-and-vaccines"
+        },
+        {
+          "title": "Route Fifty: Florida Speaker kills DeSantis' AI regulation, vaccine repeal bills on first day of special session (April 2026)",
+          "url": "https://www.route-fifty.com/artificial-intelligence/2026/04/florida-speaker-kills-desantis-ai-regulation-vaccine-repeal-bills-first-day-special-session/413192/"
+        }
+      ]
+    },
+    "fl-2026d-sb2d": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (The Florida Channel, The Floridian). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "The Florida Channel: 4/28/26 Capitol Update Extended - Senate passes 'AI Bill of Rights' during special session",
+          "url": "https://thefloridachannel.org/videos/4-28-26-capitol-update-extended-senate-passes-ai-bill-of-rights-during-special-session/"
+        },
+        {
+          "title": "The Floridian: Florida Senate again passes AI Bill of Rights, House approval dead (April 2026)",
+          "url": "https://floridianpress.com/2026/04/florida-senate-again-passes-ai-bill-of-rights-house-approval-dead/"
+        }
+      ]
+    },
+    "fl-2025-desantis-ai-proposal": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Greenberg Traurig, WUSF). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Greenberg Traurig: Florida Gov. Ron DeSantis announces proposed Citizens Bill of Rights for Artificial Intelligence (Dec. 2025)",
+          "url": "https://www.gtlaw.com/en/insights/2025/12/florida-gov-ron-desantis-announces-proposed-citizens-bill-of-rights-for-artificial-intelligence"
+        },
+        {
+          "title": "WUSF: Gov. Ron DeSantis proposes Florida AI bill of rights (Dec. 4, 2025)",
+          "url": "https://www.wusf.org/politics-issues/2025-12-04/gov-ron-desantis-proposes-florida-ai-bill-of-rights"
+        }
+      ]
+    },
+    "fl-2025-desantis-preemption-statement": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WLRN, Fox Business). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WLRN: DeSantis confident Florida won't run afoul of Trump's AI order (Dec. 15, 2025)",
+          "url": "https://www.wlrn.org/government-politics/2025-12-15/desantis-confident-florida-wont-run-afoul-of-trumps-ai-order"
+        },
+        {
+          "title": "Fox Business: DeSantis says Florida can regulate AI despite Trump's executive order",
+          "url": "https://www.foxbusiness.com/politics/desantis-says-florida-can-regulate-ai-trumps-executive-order-we-have-right-do-this"
+        }
+      ]
+    },
+    "fl-2025-hb1161": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WUSF, News4Jax). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WUSF: Gov. Ron DeSantis signs bills targeting sexual offenders and AI deepfakes (June 11, 2025)",
+          "url": "https://www.wusf.org/politics-issues/2025-06-11/gov-ron-desantis-signs-bills-targeting-sexual-offenders-and-ai-deepfakes"
+        },
+        {
+          "title": "News4Jax: Jacksonville teen thankful after DeSantis signs law inspired by her experience with deepfake (June 10, 2025)",
+          "url": "https://www.news4jax.com/news/local/2025/06/10/its-not-just-about-me-jacksonville-teen-thankful-after-desantis-signs-law-inspired-by-her-experience-with-deepfake"
+        }
+      ]
+    },
+    "fl-2026-hb527": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Repairer Driven News, Insurance Journal). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Repairer Driven News: Florida AI insurance claims handling bills die in committee (April 16, 2026)",
+          "url": "https://www.repairerdrivennews.com/2026/04/16/florida-ai-insurance-claims-handling-bills-die-in-committee/"
+        },
+        {
+          "title": "Insurance Journal: Florida House panel passes bill requiring human touch on claims denials (Dec. 11, 2025)",
+          "url": "https://www.insurancejournal.com/news/southeast/2025/12/11/850778.htm"
+        }
+      ]
+    },
+    "fl-2026-hb281": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Florida's Voice, LegiScan). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Florida's Voice: Bill seeks to ban AI in mental health practices to ensure only humans can diagnose and treat patients",
+          "url": "https://flvoicenews.com/democrat-filed-bill-seeks-to-ban-ai-in-florida-mental-health-and-therapy-practices/"
+        },
+        {
+          "title": "LegiScan: FL S0344, 2026 Regular Session (Senate companion)",
+          "url": "https://legiscan.com/FL/research/S0344"
+        }
+      ]
+    },
+    "us-hr9777": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WLRN (AP), Fortune). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WLRN (AP): Florida GOP lawmaker and governor candidate says AI data center legislation keeps utility costs down (July 21, 2026)",
+          "url": "https://www.wlrn.org/government-politics/2026-07-21/florida-gop-lawmaker-and-governor-candidate-says-ai-data-center-legislation-keeps-utility-costs-down"
+        },
+        {
+          "title": "Fortune: Byron Donalds, AI data centers, Florida and DeSantis (July 21, 2026)",
+          "url": "https://fortune.com/2026/07/21/byron-donalds-ai-data-centers-florida-desantis/"
+        }
+      ]
+    },
+    "result-ks-senate-2026": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (AP via FOX19, KCTV5, Ballotpedia News). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "AP via FOX19: Adam Hamilton ousts GOP Sen. Roger Marshall, Democrats' 1st Senate win in Kansas in 94 years (Nov. 4, 2026)",
+          "url": "https://www.fox19.com/2026/11/04/kansas-democrats-hope-adam-hamilton-can-harness-trump-fatigue-oust-republican-sen-roger-marshall/"
+        },
+        {
+          "title": "KCTV5: Hamilton makes Democrat history in Kansas (Nov. 4, 2026)",
+          "url": "https://www.kctv5.com/2026/11/04/hamilton-makes-democrat-history-kansas-winning-us-senate-seat-first-time-nearly-century/"
+        },
+        {
+          "title": "Ballotpedia News: Kansas Senate result",
+          "url": "https://news.ballotpedia.org/?p=52425"
+        }
+      ]
+    },
+    "cr-ks-sen-marshall-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Newsweek). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Newsweek: Josh Hawley's allies on data center bill (notes Marshall has not called for a total moratorium)",
+          "url": "https://newsweek.com/josh-hawleys-allies-on-data-center-bill-before-republicans-lose-majority-12713403"
+        }
+      ]
+    },
+    "cr-ks-sen-marshall-2": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "cr-ks-sen-marshall-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (HPPR (same Kansas Reflector report)). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "HPPR (same Kansas Reflector report): Marshall, Hamilton on everyday issues (Oct. 16, 2026)",
+          "url": "https://www.hppr.org/2026-10-16/marshall-hamilton-everyday-issues"
+        }
+      ]
+    },
+    "cr-ks-sen-marshall-4": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (StateScoop, Office of Sen. Blunt Rochester). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "StateScoop: bill to update state education and workforce data systems (July 31, 2026)",
+          "url": "https://statescoop.com/education-workforce-data-state-longitudinal-systems/"
+        },
+        {
+          "title": "Office of Sen. Blunt Rochester: RESULTS Act one-pager (July 2026)",
+          "url": "https://www.bluntrochester.senate.gov/wp-content/uploads/2026/07/260720_RESULTS-Act-One-Pager_v2.pdf"
+        }
+      ]
+    },
+    "cr-ks-sen-marshall-5": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Newsweek, DatacenterDynamics). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Newsweek: How senators voted on the AI data center bill",
+          "url": "https://www.newsweek.com/ai-data-center-bill-democrats-voting-republicans-list-12509123"
+        },
+        {
+          "title": "DatacenterDynamics: Senate Democrats block Ratepayer Protection Act in 57-43 vote",
+          "url": "https://datacenterdynamics.com/en/news/senate-democrats-block-ratepayer-protection-act-in-57-43-vote"
+        }
+      ]
+    },
+    "cr-ks-sen-marshall-6": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (PBS NewsHour, Route Fifty). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "PBS NewsHour: Senate pulls AI regulatory ban from GOP bill after complaints from states",
+          "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states"
+        },
+        {
+          "title": "Route Fifty: Senate overwhelmingly passes amendment removing state AI moratorium (July 2025)",
+          "url": "https://www.route-fifty.com/artificial-intelligence/2025/07/senate-overwhelmingly-passes-amendment-removing-state-ai-moratorium/406469"
+        }
+      ]
+    },
+    "cr-ks-sen-hamilton-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (KSHB 41). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "KSHB 41: Voters guide: Kansas political candidates' stances on data center development",
+          "url": "https://www.kshb.com/news/local-news/kansas/johnson-county/voters-guide-kansas-political-candidates-stances-on-data-center-development"
+        }
+      ]
+    },
+    "cr-ks-sen-hamilton-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (KSHB 41). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "KSHB 41: Voters guide: Kansas political candidates' stances on data center development",
+          "url": "https://www.kshb.com/news/local-news/kansas/johnson-county/voters-guide-kansas-political-candidates-stances-on-data-center-development"
+        }
+      ]
+    },
+    "vp-ks-emerson-college-polling-issue-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Emerson Kansas poll release PDF (Oct. 30, 2026)). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Emerson Kansas poll release PDF (Oct. 30, 2026)",
+          "url": "https://fox4kc.com/wp-content/uploads/sites/16/2026/10/ECP-KS-Poll-10.30.26-9AM-ET-EMBARGO-COPY-2.pdf"
+        }
+      ]
+    },
+    "result-me-senate-2026": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (NPR (via KUOW), AP via FOX19, Ballotpedia News). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "NPR (via KUOW): Troy Jackson wins Maine Senate race over Susan Collins (Nov. 3, 2026)",
+          "url": "https://www.kuow.org/npr-news/2026-11-03/troy-jackson-wins-maine-senate-race-over-susan-collins-in-major-coup-for-democrats"
+        },
+        {
+          "title": "AP via FOX19: Troy Jackson wins Maine US Senate race over GOP Sen. Susan Collins (Nov. 4, 2026)",
+          "url": "https://www.fox19.com/2026/11/04/maine-sen-susan-collins-concedes-democrat-troy-jackson-ending-her-run-sixth-term/"
+        },
+        {
+          "title": "Ballotpedia News: Maine Senate result",
+          "url": "https://news.ballotpedia.org/?p=52475"
+        }
+      ]
+    },
+    "cr-me-sen-collins-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (EPIC, PBS NewsHour). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "EPIC: Senate overwhelmingly votes to strike AI state law moratorium",
+          "url": "https://epic.org/senate-overwhelmingly-votes-to-strike-ai-state-law-moratorium/"
+        },
+        {
+          "title": "PBS NewsHour: Senate pulls AI regulatory ban from GOP bill after complaints from states",
+          "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states"
+        }
+      ]
+    },
+    "cr-me-sen-collins-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (The American Prospect, Roll Call). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "The American Prospect: Downvoting data centers in Maine (Oct. 16, 2026)",
+          "url": "https://prospect.org/2026/10/16/downvoting-data-centers-in-maine/"
+        },
+        {
+          "title": "Roll Call: Voluntary ratepayer protection bill blocked in Senate again (Sept. 30, 2026)",
+          "url": "https://rollcall.com/2026/09/30/voluntary-ratepayer-protection-bill-blocked-in-senate-again/"
+        }
+      ]
+    },
+    "cr-me-sen-collins-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Bangor Daily News, The American Prospect). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Bangor Daily News: Maine politicians responding to AI warnings (Sept. 16, 2026)",
+          "url": "https://www.bangordailynews.com/2026/09/16/politics/elections/maine-politicians-responding-to-ai-warnings-joam40zk0w/"
+        },
+        {
+          "title": "The American Prospect: Downvoting data centers in Maine (Oct. 16, 2026)",
+          "url": "https://prospect.org/2026/10/16/downvoting-data-centers-in-maine/"
+        }
+      ]
+    },
+    "cr-me-sen-collins-4": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "cr-me-sen-collins-5": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Office of Sen. Klobuchar, Office of Sen. Hawley). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Office of Sen. Klobuchar: Klobuchar, Hawley, Coons, Collins introduce bipartisan legislation (Sept. 2023)",
+          "url": "https://www.klobuchar.senate.gov/public/index.cfm/2023/9/klobuchar-hawley-coons-collins-introduce-bipartisan-legislation-to-ban-the-use-of-materially-deceptive-ai-generated-content-in-elections"
+        },
+        {
+          "title": "Office of Sen. Hawley: Hawley, Klobuchar, Coons, Collins introduce bipartisan legislation",
+          "url": "https://www.hawley.senate.gov/hawley-klobuchar-coons-collins-introduce-bipartisan-legislation-ban-use-materially-deceptive-ai"
+        }
+      ]
+    },
+    "cr-me-sen-jackson-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Bangor Daily News, States Newsroom (Maine Morning Star) report on Jackson's AI plan). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Bangor Daily News: Maine politicians responding to AI warnings (Sept. 16, 2026)",
+          "url": "https://www.bangordailynews.com/2026/09/16/politics/elections/maine-politicians-responding-to-ai-warnings-joam40zk0w/"
+        },
+        {
+          "title": "States Newsroom (Maine Morning Star) report on Jackson's AI plan",
+          "url": "https://www.newsfromthestates.com/node/410453"
+        }
+      ]
+    },
+    "cr-me-sen-jackson-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (States Newsroom (Maine Morning Star) report on Jackson's AI plan). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "States Newsroom (Maine Morning Star) report on Jackson's AI plan",
+          "url": "https://www.newsfromthestates.com/node/410453"
+        }
+      ]
+    },
+    "cr-me-sen-jackson-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (The American Prospect). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "The American Prospect: Downvoting data centers in Maine (Oct. 16, 2026)",
+          "url": "https://prospect.org/2026/10/16/downvoting-data-centers-in-maine/"
+        }
+      ]
+    },
+    "cr-me-sen-jackson-4": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "cr-me-sen-jackson-5": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Spectrum News Maine). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Spectrum News Maine: Jackson says he would have signed the moratorium (June 4, 2026)",
+          "url": "https://spectrumlocalnews.com/me/maine/politics/2026/06/04/jackson-says-ai--tech-billionaires--will-face-scrutiny-in-maine-if-he-s-elected-governor"
+        }
+      ]
+    },
+    "vp-me-umass-lowell-center-for-publ-ai-qu-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (UMass Lowell September 2026 Maine poll topline, Newsweek). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "UMass Lowell September 2026 Maine poll topline",
+          "url": "https://www.uml.edu/docs/2026-Sept-Maine-Topline_tcm18-422748.pdf"
+        },
+        {
+          "title": "Newsweek: Susan Collins vs. Troy Jackson on AI data centers (reports 76% oppose, 58% strongly)",
+          "url": "https://newsweek.com/susan-collins-vs-troy-jackson-on-ai-data-centers-amid-maine-voters-fears-12621762"
+        }
+      ]
+    },
+    "vp-me-umass-lowell-center-for-publ-ai-qu-3": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this poll has not yet been checked against other reports.",
+      "sources": []
+    },
+    "vp-me-new-york-times-siena-college-ai-qu-4": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Boston Globe). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Boston Globe: Maine Senate poll takeaways (Sept. 24, 2026)",
+          "url": "https://www.bostonglobe.com/2026/09/24/nation/maine-senate-poll-takeaways/"
+        }
+      ]
+    },
+    "result-oh-senate-2026": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (OPB (AP), Spectrum News 1, Ballotpedia). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "OPB (AP): Sherrod Brown flips Senate seat in Ohio for Democrats by ousting Sen. Jon Husted (Nov. 3, 2026)",
+          "url": "https://www.opb.org/article/2026/11/03/sherrod-brown-flips-senate-seat-in-ohio-for-democrats-by-ousting-sen-jon-husted/"
+        },
+        {
+          "title": "Spectrum News 1: Sherrod Brown flips Senate seat in Ohio for Democrats (Nov. 4, 2026)",
+          "url": "https://spectrumnews1.com/oh/columbus/news/2026/11/04/sherrod-brown-flips-senate-seat-in-ohio-for-democrats"
+        },
+        {
+          "title": "Ballotpedia: United States Senate special election in Ohio, 2026",
+          "url": "https://ballotpedia.org/United_States_Senate_special_election_in_Ohio,_2026"
+        }
+      ]
+    },
+    "cr-oh-sen-husted-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Spectrum News 1, Newsweek). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Spectrum News 1: Husted data center bill (July 28, 2026)",
+          "url": "https://spectrumnews1.com/oh/dayton/news/2026/07/28/data-center-husted-ohio"
+        },
+        {
+          "title": "Newsweek: Republican bill aims to stop Americans footing bill for data centers",
+          "url": "https://www.newsweek.com/republican-bill-aims-to-stop-americans-footing-bill-for-data-centers-12222677"
+        }
+      ]
+    },
+    "cr-oh-sen-husted-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Roll Call, Newsweek). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Roll Call: Ratepayer bill aimed at data center buildout blocked in Senate (Sept. 17, 2026)",
+          "url": "https://rollcall.com/2026/09/17/ratepayer-bill-aimed-at-data-center-buildout-blocked-in-senate/"
+        },
+        {
+          "title": "Newsweek: How senators voted on the AI data center bill (lists Husted as yes)",
+          "url": "https://www.newsweek.com/ai-data-center-bill-democrats-voting-republicans-list-12509123"
+        }
+      ]
+    },
+    "cr-oh-sen-husted-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WYSU). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WYSU: Ohio's U.S. Senate candidates recalibrate their stances on data centers (Aug. 17, 2026)",
+          "url": "https://wysu.org/ohio-news/2026-08-17/ohios-u-s-senate-candidates-recalibrate-their-stances-on-data-centers"
+        }
+      ]
+    },
+    "cr-oh-sen-husted-4": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (WOUB). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "WOUB: Ohio's U.S. Senate candidates recalibrate their stances on data centers (Aug. 18, 2026)",
+          "url": "https://woub.org/2026/08/18/ohios-u-s-senate-candidates-recalibrate-their-stances-on-data-centers/"
+        }
+      ]
+    },
+    "cr-oh-sen-husted-5": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Congress.gov, Akin Gump). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Congress.gov: S. 2714 bill text (119th Congress)",
+          "url": "https://www.congress.gov/119/bills/s2714/BILLS-119s2714is.htm"
+        },
+        {
+          "title": "Akin Gump: Sen. Husted introduces bill requiring age verification for AI chatbots",
+          "url": "https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/sen-husted-introduces-bill-requiring-age-verification-for-ai-chatbots"
+        }
+      ]
+    },
+    "cr-oh-sen-husted-6": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (News 12, WHIO). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "News 12: Sens. Kim, Husted introduce bipartisan bill to regulate AI companion chatbots for minors",
+          "url": "https://newyork.news12.com/sens-kim-husted-introduce-bipartisan-bill-to-regulate-ai-companion-chatbots-for-minors"
+        },
+        {
+          "title": "WHIO: U.S. senator pushes federal law to shield kids from AI dangers",
+          "url": "https://www.whio.com/news/local/us-senator-pushes-federal-law-shield-kids-ai-dangers/2H3INWAGQ5D3NDIL52V5PMY4PM/"
+        }
+      ]
+    },
+    "cr-oh-sen-husted-7": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (PBS NewsHour, TechCrunch). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "PBS NewsHour: Senate pulls AI regulatory ban from GOP bill after complaints from states",
+          "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states"
+        },
+        {
+          "title": "TechCrunch: US Senate removes controversial AI moratorium from budget bill (July 1, 2025)",
+          "url": "https://techcrunch.com/2025/07/01/us-senate-removes-controversial-ai-moratorium-from-budget-bill"
+        }
+      ]
+    },
+    "cr-oh-sen-husted-8": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "cr-oh-sen-brown-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Signal Cleveland, Newsweek). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Signal Cleveland: 'He's trying to win this election': Sherrod Brown attacks Jon Husted support of data centers",
+          "url": "https://signalcleveland.org/hes-trying-to-win-this-election-sherrod-brown-attacks-jon-husted-support-of-data-centers-in-break-with-labor-construction-unions/"
+        },
+        {
+          "title": "Newsweek: Democrats take upper hand on data centers in Ohio Senate race",
+          "url": "https://www.newsweek.com/democrats-take-upper-hand-data-centers-ohio-senate-12487263"
+        }
+      ]
+    },
+    "cr-oh-sen-brown-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (ABC6, WYSU). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "ABC6: Brown targets data center tax breaks and rising electric bills in Ohio",
+          "url": "https://abc6onyourside.com/news/local/brown-targets-data-center-tax-breaks-and-rising-electric-bills-in-ohio-husted-politics-election-midterm-senate"
+        },
+        {
+          "title": "WYSU: Ohio's U.S. Senate candidates recalibrate their stances on data centers (Aug. 17, 2026)",
+          "url": "https://wysu.org/ohio-news/2026-08-17/ohios-u-s-senate-candidates-recalibrate-their-stances-on-data-centers"
+        }
+      ]
+    },
+    "cr-oh-sen-brown-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Fox News). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Fox News: Dem Senate hopeful flip-flops on emerging issue",
+          "url": "https://www.foxnews.com/politics/dem-senate-hopeful-flip-flops-emerging-issue-impacting-communities-across-us"
+        }
+      ]
+    },
+    "vp-oh-fox-news-poll-ai-qu-2": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this poll has not yet been checked against other reports.",
+      "sources": []
+    },
+    "vp-oh-bowling-green-state-universi-ai-qu-3": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this poll has not yet been checked against other reports.",
+      "sources": []
+    },
+    "vp-oh-new-york-times-siena-college-ai-qu-4": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this poll has not yet been checked against other reports.",
+      "sources": []
+    },
+    "result-ia-senate-2026": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Newsweek, AP (via OPB), Ballotpedia News). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Newsweek: Iowa Senate results, Josh Turek vs. Ashley Hinson",
+          "url": "https://www.newsweek.com/iowa-senate-results-josh-turek-ashley-hinson-midterm-12630515"
+        },
+        {
+          "title": "AP (via OPB): Democrat Josh Turek wins election to the US Senate from Iowa (Nov. 3, 2026)",
+          "url": "https://www.opb.org/article/2026/11/03/democrat-josh-turek-wins-election-to-the-us-senate-from-iowa-as-democrats-win-us-senate/"
+        },
+        {
+          "title": "Ballotpedia News: Iowa U.S. Senate general election",
+          "url": "https://news.ballotpedia.org/?p=52292"
+        }
+      ]
+    },
+    "cr-ia-sen-hinson-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Newsweek). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Newsweek: AI Data Center War: Where Democrats, Republicans in Key Senate Races Stand",
+          "url": "https://www.newsweek.com/ai-data-center-war-where-democrats-republicans-in-key-senate-races-stand-12354265"
+        }
+      ]
+    },
+    "vp-ia-emerson-college-polling-issue-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Political Wire). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Political Wire: Hinson narrowly leads Turek in Iowa (Oct. 9, 2026)",
+          "url": "https://politicalwire.com/2026/10/09/hinson-narrowly-leads-turek-in-iowa/"
+        }
+      ]
+    },
+    "vp-ia-fox-news-poll-issue-2": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Turek campaign). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Turek campaign: ICYMI: Josh Turek leads Hinson by four points in Fox News poll",
+          "url": "https://turek4iowa.com/news/icymi-josh-turek-leads-hinson-by-four-points-in-fox-news-poll-hits-50"
+        }
+      ]
+    },
+    "vp-ia-emerson-college-polling-ai-qu-4": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this poll has not yet been checked against other reports.",
+      "sources": []
+    },
+    "vp-ia-emerson-college-polling-ai-qu-5": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Newsweek). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Newsweek: Where America's Revolt Against Data Centers Could Shape Key Senate Races",
+          "url": "https://www.newsweek.com/where-americas-revolt-against-data-centers-could-shape-key-senate-races-12473147"
+        }
+      ]
+    },
+    "result-ak-senate-2026": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Alaska's News Source, Alaska Public Media, Alaska Beacon). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Alaska's News Source: AP calls it: Peltola wins Alaska's US Senate seat over GOP incumbent Sullivan (Nov. 18, 2026)",
+          "url": "https://alaskasnewssource.com/2026/11/18/peltola-is-going-back-dc-after-ap-calls-last-senate-race-democratic-challenger/"
+        },
+        {
+          "title": "Alaska Public Media: Mary Peltola wins U.S. Senate seat in Alaska (Nov. 17, 2026)",
+          "url": "https://alaskapublic.org/news/politics/elections/2026-11-17/mary-peltola-wins-u-s-senate-seat-in-alaska"
+        },
+        {
+          "title": "Alaska Beacon: Peltola elected to fill Alaska US Senate seat, becomes Senate's 56th Democrat nationally",
+          "url": "https://alaskabeacon.com/?p=30829"
+        }
+      ]
+    },
+    "cr-ak-sen-sullivan-1": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Semafor, Steptoe). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Semafor: Senate unveils its bid to curb US investment in China as House waits (Mar. 13, 2025)",
+          "url": "https://www.semafor.com/article/03/13/2025/senate-unveils-its-bid-to-curb-us-investment-in-china-as-house-waits"
+        },
+        {
+          "title": "Steptoe: Senate bill prohibiting US investments in covered Chinese technologies garners significant bipartisan support",
+          "url": "https://www.steptoe.com/en/news-publications/stepwise-risk-outlook/senate-bill-prohibiting-us-investments-in-covered-chinese-technologies-garners-significant-bipartisan-support.html"
+        }
+      ]
+    },
+    "cr-ak-sen-sullivan-2": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "cr-ak-sen-sullivan-3": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (TechCrunch, PBS NewsHour). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "TechCrunch: US Senate removes controversial AI moratorium from budget bill (Jul. 1, 2025)",
+          "url": "https://techcrunch.com/2025/07/01/us-senate-removes-controversial-ai-moratorium-from-budget-bill"
+        },
+        {
+          "title": "PBS NewsHour: Senate pulls AI regulatory ban from GOP bill after complaints from states",
+          "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states"
+        }
+      ]
+    },
+    "cr-ak-sen-sullivan-4": {
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "note": "Confirmed by other published reports found by web search (Newsweek, Newsweek). Not yet checked against the primary source.",
+      "sources": [
+        {
+          "title": "Newsweek: AI Data Center War: Where Democrats, Republicans in Key Senate Races Stand",
+          "url": "https://www.newsweek.com/ai-data-center-war-where-democrats-republicans-in-key-senate-races-stand-12354265"
+        },
+        {
+          "title": "Newsweek: Alaska could become more unwelcoming to data centers (Nov. 2026)",
+          "url": "https://newsweek.com/alaska-could-become-more-unwelcoming-data-centers-12741506"
+        }
+      ]
+    },
+    "cr-ak-sen-sullivan-5": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
+    },
+    "cr-ak-sen-peltola-1": {
+      "result": "not-checked",
+      "checkedOn": "2026-11-27",
+      "note": "Only the cited source was found by web search on 2026-11-27; this claim has not yet been checked against other reports.",
+      "sources": []
     }
   },
   "relays": [

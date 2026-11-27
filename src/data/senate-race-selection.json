@@ -19,7 +19,7 @@
     "All facts come from search-result summaries (page fetching blocked). Several rest on a single secondary source and should be spot-checked before publication."
   ],
   "note": "Senate race selection (AIPD-102), drawn by tools/select_senate_races.py from documents/senate-selection/races-2026.json.",
-  "criteriaSummary": "The sample is drawn from all 35 Senate contests of 2026 by the criteria below, applied in order to facts gathered before the list was drawn. It has 15 races: every competitive race, plus races where AI or data centers were a campaign issue, kept between 10 and 20 races, each profiling both parties' nominees. Michigan and Texas, the pilot races, are tracked; the five highest-ranked others are added next (AIPD-103). Before the election, 11 of the 15 seats were held by Republicans and 4 by Democrats.",
+  "criteriaSummary": "The sample is drawn from all 35 Senate contests of 2026 by the criteria below, applied in order to facts gathered before the list was drawn. It has 15 races: every competitive race, plus races where AI or data centers were a campaign issue, kept between 10 and 20 races, each profiling both parties' nominees. 7 are on the dashboard (Michigan and Texas, the pilot, then the next five by rank); the five highest-ranked of the rest are added next (AIPD-103). Before the election, 11 of the 15 seats were held by Republicans and 4 by Democrats.",
   "criteria": [
     {
       "id": "competitive",
@@ -110,8 +110,8 @@
         "party-balance"
       ],
       "reason": "Rated Toss-up; no AI or data center exchange between the candidates found.",
-      "trackedRaceId": null,
-      "status": "next"
+      "trackedRaceId": "ak-senate-2026",
+      "status": "tracked"
     },
     {
       "state": "AL",
@@ -478,8 +478,8 @@
         "party-balance"
       ],
       "reason": "Rated Toss-up; open seat (incumbent retired); no AI or data center exchange between the candidates found.",
-      "trackedRaceId": null,
-      "status": "next"
+      "trackedRaceId": "ia-senate-2026",
+      "status": "tracked"
     },
     {
       "state": "ID",
@@ -634,8 +634,8 @@
         "party-balance"
       ],
       "reason": "Rated Toss-up; AI or data centers in the race: Incumbent Marshall 'rails against AI data centers' (Semafor interview, Jul 22, 2026): backs local moratoriums and opposes tax incentives. No Hamilton statement found.",
-      "trackedRaceId": null,
-      "status": "next"
+      "trackedRaceId": "ks-senate-2026",
+      "status": "tracked"
     },
     {
       "state": "KY",
@@ -842,8 +842,8 @@
         "party-balance"
       ],
       "reason": "Rated Toss-up; AI or data centers in the race: NPR's data center ad analysis quotes Jackson calling for 'real guardrails' so data centers don't raise others' power bills or hurt water quality.",
-      "trackedRaceId": null,
-      "status": "next"
+      "trackedRaceId": "me-senate-2026",
+      "status": "tracked"
     },
     {
       "state": "MI",
@@ -959,7 +959,7 @@
       ],
       "reason": "Rated Lean D; open seat (incumbent retired); no AI or data center exchange between the candidates found.",
       "trackedRaceId": null,
-      "status": "later"
+      "status": "next"
     },
     {
       "state": "MS",
@@ -1141,7 +1141,7 @@
       ],
       "reason": "Rated Likely D; open seat (incumbent retired); AI or data centers in the race: Whatley's campaign attacked Cooper for recruiting and subsidizing data centers as governor; Cooper backed local say and making data centers pay their own energy costs (Fox News).",
       "trackedRaceId": null,
-      "status": "later"
+      "status": "next"
     },
     {
       "state": "NE",
@@ -1202,7 +1202,7 @@
       ],
       "reason": "Rated Lean R; AI or data centers in the race: Osborn ads attacked Ricketts' record of data center tax incentives as governor ($519M property-tax exemptions 2021-Jun 2026 per state estimate) and his AI investments; Ricketts called data centers 'a community decision'.",
       "trackedRaceId": null,
-      "status": "later"
+      "status": "next"
     },
     {
       "state": "NH",
@@ -1264,7 +1264,7 @@
       ],
       "reason": "Rated Lean D; open seat (incumbent retired); AI or data centers in the race: NHPR candidate guide: both Pappas and Sununu said they support a state-level moratorium on data center construction; Pappas called NH 'not the right place for AI data centers'.",
       "trackedRaceId": null,
-      "status": "later"
+      "status": "next"
     },
     {
       "state": "NJ",
@@ -1426,8 +1426,8 @@
         "party-balance"
       ],
       "reason": "Rated Toss-up; AI or data centers in the race: Brown ran multiple ads calling Husted 'the face of data centers in Ohio' over tax deals as lieutenant governor; a leaked GOP memo called data centers the 'anchor' around Husted's neck.",
-      "trackedRaceId": null,
-      "status": "next"
+      "trackedRaceId": "oh-senate-2026",
+      "status": "tracked"
     },
     {
       "state": "OK",
@@ -1628,7 +1628,7 @@
       ],
       "reason": "Rated Lean R; AI or data centers in the race: Andrews called for a two-year statewide moratorium on new data centers and accused Darline Graham of benefiting from ~$5M in data-center-linked PAC spending.",
       "trackedRaceId": null,
-      "status": "later"
+      "status": "next"
     },
     {
       "state": "SD",

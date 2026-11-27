@@ -4,22 +4,29 @@ Generated from the dashboard's data on 2026-11-27 (site version 2026-11-27.10, c
 
 ## 1. Scope and sample
 
-8 races (7 in the United States, 1 abroad), 22 candidates, 48 candidate records, 74 bills and announced proposals, 12 party-line positions and 7 election results.
+15 races (14 in the United States, 1 abroad), 36 candidates, 98 candidate records, 86 bills and announced proposals, 12 party-line positions and 14 election results.
 
 | Race | Place | Election | Candidates | Records |
 |---|---|---|---|---|
+| U.S. Senate | AK | 2026-11-03 | 2 | 6 |
 | Governor | CA | 2026-11-03 | 2 | 5 |
 | Governor | CT | 2026-11-03 | 2 | 7 |
 | U.S. House (CT-4) | CT | 2026-11-03 | 2 | 5 |
+| Governor | FL | 2026-11-03 | 2 | 9 |
+| U.S. Senate (special) | FL | 2026-11-03 | 2 | 5 |
 | President | FR | 2027-04-18 / runoff 2027-05-02 | 8 | 10 |
+| U.S. Senate | IA | 2026-11-03 | 2 | 1 |
+| U.S. Senate | KS | 2026-11-03 | 2 | 8 |
+| U.S. Senate | ME | 2026-11-03 | 2 | 10 |
 | Governor | MI | 2026-11-03 | 2 | 6 |
 | U.S. Senate | MI | 2026-11-03 | 2 | 5 |
+| U.S. Senate (special) | OH | 2026-11-03 | 2 | 11 |
 | Governor | TX | 2026-11-03 | 2 | 5 |
 | U.S. Senate | TX | 2026-11-03 | 2 | 5 |
 
 ### Senate race selection
 
-The sample is drawn from all 35 Senate contests of 2026 by the criteria below, applied in order to facts gathered before the list was drawn. It has 15 races: every competitive race, plus races where AI or data centers were a campaign issue, kept between 10 and 20 races, each profiling both parties' nominees. Michigan and Texas, the pilot races, are tracked; the five highest-ranked others are added next (AIPD-103). Before the election, 11 of the 15 seats were held by Republicans and 4 by Democrats.
+The sample is drawn from all 35 Senate contests of 2026 by the criteria below, applied in order to facts gathered before the list was drawn. It has 15 races: every competitive race, plus races where AI or data centers were a campaign issue, kept between 10 and 20 races, each profiling both parties' nominees. 7 are on the dashboard (Michigan and Texas, the pilot, then the next five by rank); the five highest-ranked of the rest are added next (AIPD-103). Before the election, 11 of the 15 seats were held by Republicans and 4 by Democrats.
 
 | State | Seat | Rating | Result | Why it is in the sample |
 |---|---|---|---|---|
@@ -47,7 +54,7 @@ Every record has exactly one label type, a source, a publication date, a last-ve
 |---|---|---|
 | Direct quote | The speaker's exact words, from a cited source. | 0 |
 | Reported fact | A factual claim reported by a cited source. | 0 |
-| Source-based summary | A summary written by the project from cited sources. | 48 |
+| Source-based summary | A summary written by the project from cited sources. | 98 |
 | Model-generated analysis | Analysis produced with an AI model; not a statement by the candidate. | 0 |
 | Projection | A conditional, forward-looking estimate. Not a prediction or a fact. | 0 |
 | Editorial judgment | A judgment by the project team, with criteria disclosed in the methodology. | 0 |
@@ -55,8 +62,8 @@ Every record has exactly one label type, a source, a publication date, a last-ve
 | Confidence | Meaning | Records |
 |---|---|---|
 | High | Checked against a primary source; wording and date confirmed. | 17 |
-| Medium | Checked against a reliable secondary source. | 21 |
-| Low | Checked, but the source is weak or the context is incomplete. | 10 |
+| Medium | Checked against a reliable secondary source. | 60 |
+| Low | Checked, but the source is weak or the context is incomplete. | 21 |
 | Unverified draft | Not yet checked against any source. Hidden from the public view by default. | 0 |
 
 Two policy areas (Data centers; Everything else in AI) and two tracks (What is said; What is proposed) split every view; 22 policy categories group statements and proposals.
@@ -74,7 +81,7 @@ Codebook 1.0-rc1. Release candidate for version 1.0 (Nov. 27, 2026): the scheme 
 | Specificity | General rhetoric; Stated principle; Concrete proposal; Legislative action |
 | Evidence type | Direct quote; Reported; Voting record; Bill; Questionnaire response |
 
-Coding status: 48 of 48 candidate records carry AI-drafted coding not yet reviewed by a person (AIPD-202).
+Coding status: 98 of 98 candidate records carry AI-drafted coding not yet reviewed by a person (AIPD-202).
 
 ## 4. Verification
 
@@ -84,19 +91,20 @@ Primary-source checks: the build environment cannot open most source sites, so t
 
 | Check result | Claims |
 |---|---|
-| confirmed | 106 |
+| confirmed | 174 |
 | corrected | 49 |
 | partly-confirmed | 27 |
 | not-confirmed | 25 |
+| not-checked | 17 |
 | not-checkable | 14 |
 | contradicted | 3 |
 
 | Method of the latest check | Claims |
 |---|---|
 | primary source (relayed) | 138 |
-| web search, other reports | 86 |
+| web search, other reports | 171 |
 
-Of 210 checkable claims, 155 (74%) are confirmed or corrected, and 61 (29%) are at High confidence (wording and date checked against the primary source).
+Of 295 checkable claims, 223 (76%) are confirmed or corrected, and 61 (21%) are at High confidence (wording and date checked against the primary source).
 
 ## 5. Election results and certification
 
@@ -111,6 +119,13 @@ Results carry their own label and are stored apart from statements. Each records
 | result-ct-governor-2026 | unofficial | canvass-complete (2026-11-25) | Unofficial shares as listed by MultiState (Nov. 16, 2026). |
 | result-ct-house-04-2026 | unofficial | canvass-complete (2026-11-25) | Unofficial results as listed by Decision Desk HQ. |
 | result-ca-governor-2026 | unofficial | pending (expected 2026-12-11) | Unofficial results from the California Secretary of State's results file, Nov. 26, 2026. |
+| result-fl-governor-2026 | unofficial | pending | Unofficial AP-reported returns with about 99% of the vote counted, as reported by Newsweek on election night (Nov. 3-4, 2026); Florida Phoenix reported the same figures from state Division of Elections returns late on Nov. 3. |
+| result-fl-senate-2026 | unofficial | pending | Unofficial results as reported by Ballotpedia News after the Nov. 3, 2026 election (exact date of the figures not shown in search results). |
+| result-ks-senate-2026 | unofficial | pending | Unofficial totals as shown in Wikipedia's results table (seen via search, Nov. 2026); not yet certified. Graham's total not retrieved. |
+| result-me-senate-2026 | unofficial | pending | Unofficial first-choice totals as of 4:38 a.m. Nov. 4, 2026, as reported by AP and cited by FairVote; write-ins took the remainder. Final and ranked-choice tabulations not found. |
+| result-oh-senate-2026 | unofficial | pending | Unofficial totals as shown in Wikipedia's results table (seen via search, Nov. 2026); Redpath and Levy totals not retrieved. |
+| result-ia-senate-2026 | unofficial | pending | Partial count as of 11:38 p.m. ET on Nov. 3, 2026, as reported by CNN and cited by Newsweek; final unofficial totals from the Iowa Secretary of State were not found in search results. |
+| result-ak-senate-2026 | unofficial | pending | First-choice (round one) unofficial results with about 99% counted, as reported in AP coverage at the Nov. 17, 2026 call; one report put Peltola at 50.12%. Percentages and vote counts may come from slightly different snapshots. |
 
 ## 6. Party lines and deviation
 
@@ -123,23 +138,23 @@ Results carry their own label and are stored apart from statements. Each records
 
 ## 7. Voter priorities, public opinion and trackers
 
-13 published polls on voters' issue priorities or AI (shown as context, not predictions); 8 Gallup and Pew findings by party; legislation found through IAPP US State AI Governance Legislation Tracker, NCSL Artificial Intelligence Legislation Database, MultiState AI legislation tracker and confirmed on official records where possible.
+29 published polls on voters' issue priorities or AI (shown as context, not predictions); 8 Gallup and Pew findings by party; legislation found through IAPP US State AI Governance Legislation Tracker, NCSL Artificial Intelligence Legislation Database, MultiState AI legislation tracker and confirmed on official records where possible.
 
 ## 8. Archived sources
 
-1 of 45 pages cited by candidate records has an archived copy (AIPD-101); 0 campaign pages are archived.
+1 of 83 pages cited by candidate records has an archived copy (AIPD-101); 0 campaign pages are archived.
 
 ## 9. Reliability
 
-Pending (AIPD-202, AIPD-203). Planned design: a person reviews every AI-drafted code; then two coders independently code a sample of at least 20% of records, and Krippendorff's alpha is reported for each coding dimension, with codebook rules revised where agreement is low. Results will be reported here, and the codebook frozen as version 1.0.
+Pending (AIPD-202, AIPD-203). A person reviews every AI-drafted code (documents/coding-review/review-sheet.csv); then two coders independently code a 20% sample (reliability-sheet.csv) and Krippendorff's alpha is reported for each coding dimension (`python3 tools/coding_review.py alpha`), with codebook rules revised where agreement is low. Results will be reported here, and the codebook frozen as version 1.0.
 
 ## 10. Limitations
 
-- Sample size: 8 races and 22 candidates; findings describe these races, not all 2026 contests.
-- Search-based checks: 86 claims were last checked by comparing other published reports on the web, not the primary source; these are at most Medium confidence.
+- Sample size: 15 races and 36 candidates; findings describe these races, not all 2026 contests.
+- Search-based checks: 171 claims were last checked by comparing other published reports on the web, not the primary source; these are at most Medium confidence.
 - Relayed primary-source checks: primary sources were opened by the project owner through ChatGPT, not directly by the build environment; each relay and decision is kept in documents/chatgpt-verification so it can be audited.
-- Coding: 48 of 48 records have AI-drafted coding not yet reviewed by a person, and inter-coder reliability has not yet been measured.
-- Election results: 7 of 7 results still show unofficial figures until certified figures are entered.
+- Coding: 98 of 98 records have AI-drafted coding not yet reviewed by a person, and inter-coder reliability has not yet been measured.
+- Election results: 14 of 14 results still show unofficial figures until certified figures are entered.
 - Sparse coverage: candidates who said little about AI have few records; that sparseness is recorded rather than filled in, and is itself a finding about salience.
 - Party lines: built from leaders' statements and actions (the Trump administration; incoming Democratic congressional leaders), so they simplify parties with internal disagreement.
 - Trackers: a bill counts as covered by a tracker when it is named on the tracker's site or in its reports; the trackers' databases themselves could not be queried.

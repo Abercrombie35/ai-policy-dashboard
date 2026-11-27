@@ -1,0 +1,36 @@
+{
+  "id": "me-senate-2026",
+  "state": "ME",
+  "office": "U.S. Senate",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "incumbent",
+    "note": "Republican Sen. Susan Collins sought a sixth term; the original Democratic nominee, Graham Platner, withdrew in July 2026 and Troy Jackson replaced him with about 100 days left."
+  },
+  "nomineesSource": "Collins was unopposed in the June 9, 2026 Republican primary; Graham Platner won the Democratic primary that day but withdrew in July after a Politico report of a sexual assault allegation, and Maine Democratic Party delegates chose Troy Jackson as the replacement nominee. Only write-in candidates joined them on the ballot.",
+  "candidates": [
+    {
+      "id": "troy-jackson",
+      "name": "Troy Jackson",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "susan-collins",
+      "name": "Susan Collins",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

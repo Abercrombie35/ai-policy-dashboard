@@ -1,0 +1,36 @@
+{
+  "id": "ks-senate-2026",
+  "state": "KS",
+  "office": "U.S. Senate",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "incumbent",
+    "note": "Republican Sen. Roger Marshall sought a second term; Hamilton's win makes him the first Democrat elected to the U.S. Senate from Kansas since George McGill in 1932."
+  },
+  "nomineesSource": "Marshall won the Republican primary and Hamilton won a multi-candidate Democratic primary on Aug. 4, 2026. Libertarian David Graham was also on the general-election ballot (Ballotpedia).",
+  "candidates": [
+    {
+      "id": "adam-hamilton",
+      "name": "Adam Hamilton",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "roger-marshall",
+      "name": "Roger Marshall",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ak-senate-2026",
+  "state": "AK",
+  "office": "U.S. Senate",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "incumbent",
+    "note": "Republican Sen. Dan Sullivan sought re-election and lost to former U.S. Rep. Mary Peltola (D), the first Democrat to win an Alaska Senate race since 2008."
+  },
+  "nomineesSource": "Alaska's top-four nonpartisan primary on Aug. 18, 2026 advanced Mary Peltola (D), Sen. Dan Sullivan (R), Gerald Heikes (R) and Dan J. Sullivan (No Party Affiliation) to the ranked-choice general election; Peltola led Sen. Sullivan by about 8 points in the final unofficial primary tally. Sources: KTOO/Alaska Public Media, 'U.S. Senate race will have two Dan Sullivans and a Mary Peltola'; Juneau Independent.",
+  "candidates": [
+    {
+      "id": "mary-peltola",
+      "name": "Mary Peltola",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "dan-sullivan",
+      "name": "Dan Sullivan",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

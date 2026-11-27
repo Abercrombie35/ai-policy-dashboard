@@ -12,7 +12,16 @@ import sys
 
 REPO, FACTS = sys.argv[1:3]
 OUT = f'{REPO}/src/data/senate-race-selection.json'
-TRACKED = {'MI': 'mi-senate-2026', 'TX': 'tx-senate-2026'}
+# Races with a race file on the dashboard, keyed by (state, seat type). Michigan and Texas were the pilot; Kansas,
+# Maine, Ohio, Iowa and Alaska were added as the next five (AIPD-103).
+TRACKED = {('MI', 'regular'): 'mi-senate-2026', ('TX', 'regular'): 'tx-senate-2026', ('KS', 'regular'): 'ks-senate-2026',
+           ('ME', 'regular'): 'me-senate-2026', ('OH', 'special'): 'oh-senate-2026', ('IA', 'regular'): 'ia-senate-2026',
+           ('AK', 'regular'): 'ak-senate-2026'}
+PILOT = {('MI', 'regular'), ('TX', 'regular')}
+
+
+def key(r):
+    return (r['state'], r.get('seatType', 'regular'))
 NOTES = {'FL': 'Florida is still built out as its own priority (AIPD-109) for its state AI and data center activity and open governor\'s race, alongside the sample rather than in it'}
 MIN_N, MAX_N = 10, 20
 
@@ -74,13 +83,13 @@ for r in races:
     r['_met'], r['_score'], r['_tier'] = met, score(r), t
 
 ranked = sorted(races, key=lambda r: -r['_score'])
-chosen = [r for r in ranked if 'competitive' in r['_met'] or 'ai-salience' in r['_met'] or r['state'] in TRACKED and r.get('seatType') == 'regular']
+chosen = [r for r in ranked if 'competitive' in r['_met'] or 'ai-salience' in r['_met'] or key(r) in PILOT]
 if len(chosen) < MIN_N:
     for r in ranked:
         if r not in chosen and len(chosen) < MIN_N and (r['_tier'] == 'likely' or r.get('openSeat')):
             chosen.append(r)
 if len(chosen) > MAX_N:
-    keep = [r for r in chosen if r['state'] in TRACKED]
+    keep = [r for r in chosen if key(r) in PILOT]
     rest = sorted([r for r in chosen if r not in keep], key=lambda r: -r['_score'])
     chosen = keep + rest[:MAX_N - len(keep)]
 
@@ -90,7 +99,7 @@ def held(r):
 
 
 chosen_ids = {id(r) for r in chosen}
-untracked = sorted([r for r in chosen if r['state'] not in TRACKED], key=lambda r: -r['_score'])
+untracked = sorted([r for r in chosen if key(r) not in TRACKED], key=lambda r: -r['_score'])
 next_five = {id(r) for r in untracked[:5]}
 
 
@@ -131,13 +140,14 @@ for r in sorted(races, key=lambda r: (r['state'], r.get('seatType') != 'regular'
         'aiSignal': r.get('aiSignal'), 'stateSignal': r.get('stateSignal'),
         'selected': sel, 'criteriaMet': r['_met'] + (['party-balance'] if sel else []),
         'reason': describe(r, sel),
-        'trackedRaceId': TRACKED.get(r['state']) if sel and r.get('seatType', 'regular') == 'regular' else None,
-        'status': ('tracked' if r['state'] in TRACKED and r.get('seatType', 'regular') == 'regular' else 'next' if id(r) in next_five else 'later') if sel else None,
+        'trackedRaceId': TRACKED.get(key(r)) if sel else None,
+        'status': ('tracked' if key(r) in TRACKED else 'next' if id(r) in next_five else 'later') if sel else None,
     })
 summary = (f'The sample is drawn from all {len(races)} Senate contests of 2026 by the criteria below, applied in order to facts '
            f'gathered before the list was drawn. It has {len(chosen)} races: every competitive race, plus races where AI or data '
-           'centers were a campaign issue, kept between 10 and 20 races, each profiling both parties\' nominees. Michigan and '
-           'Texas, the pilot races, are tracked; the five highest-ranked others are added next (AIPD-103). '
+           'centers were a campaign issue, kept between 10 and 20 races, each profiling both parties\' nominees. '
+           f'{sum(1 for r in chosen if key(r) in TRACKED)} are on the dashboard (Michigan and Texas, the pilot, then the next five by rank); '
+           'the five highest-ranked of the rest are added next (AIPD-103). '
            f"Before the election, {sum(1 for r in chosen if held(r) == 'R')} of the {len(chosen)} seats were held by Republicans and "
            f"{sum(1 for r in chosen if held(r) == 'D')} by Democrats.")
 json.dump({'asOf': facts.get('asOf'), 'method': facts.get('method'), 'gaps': facts.get('gaps', []), 'note': 'Senate race selection (AIPD-102), drawn by tools/select_senate_races.py from documents/senate-selection/races-2026.json.',
