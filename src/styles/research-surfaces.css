@@ -82,7 +82,7 @@
 .page-shell :is(.panel-note, .section-note, .dimension-note, .empty-note,
   .source-links, .quote-meta, .q-text, .missing, .date-note, .record-publication,
   .race-meta, .race-source, .race-counts, .questionnaire, .column-name,
-  .signal-candidate, .result-call, .result-asof, .result-context, .party-note,
+  .signal-candidate, .result-call, .result-asof, .result-cert, .result-context, .party-note,
   .proposal-meta, .proposal-source, .ev-date, .ev-source, .cand-race,
   .cell-date, .cell-line, .tl-date, .tl-meta, .tl-source, .coding-note) {
   color: var(--research-muted);
@@ -770,3 +770,11 @@
   .research-home .us-map-container { padding: 7px; }
   .research-home .map-legend { gap: 8px 14px; font-size: .74rem; }
 }
+
+/* Senate race selection (Methodology page, AIPD-102) */
+.selection-criteria { margin: 8px 0 12px; padding-left: 20px; line-height: 1.5; }
+.selection-criteria li { margin-bottom: 4px; }
+.selection-table td, .selection-table th { vertical-align: top; }
+.selection-table .criteria-met, .selection-table .rating-asof { display: block; font-size: 0.78rem; color: var(--research-muted); }
+.selection-others, .selection-gaps { margin-top: 10px; }
+.selection-gaps li { font-size: 0.85rem; color: var(--research-muted); margin-bottom: 4px; }

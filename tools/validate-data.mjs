@@ -17,6 +17,7 @@ const BILL_STATUSES = ids(codebook.billStatuses);
 const DIMENSIONS = Object.fromEntries(codebook.dimensions.map((d) => [d.id, d]));
 const RESULT_LABEL = codebook.resultLabel.id;
 const RESULT_STATUSES = ids(codebook.resultStatuses);
+const CERT_STATUSES = ids(codebook.certificationStatuses || []);
 const STATES = new Set(Object.keys(read('us-states-geo.json').states));
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 // Publication, status and evidence dates may be partial (year or year-month).
@@ -129,8 +130,10 @@ const raceFiles = readdirSync(join(root, 'races')).filter((f) => f.endsWith('.js
 const raceIds = new Set();
 const raceCandidates = {};
 const raceCountry = {};
+const raceById = {};
 for (const file of raceFiles) {
   const race = read(join('races', file));
+  raceById[race.id] = race;
   const where = `races/${file}`;
   if (`${race.id}.json` !== file) fail(where, `file name must match race id "${race.id}"`);
   if (raceIds.has(race.id)) fail(where, 'duplicate race id');
@@ -303,6 +306,48 @@ results.forEach((r, i) => {
     if (!s.url) fail(w, 'each additional source needs a url');
   });
   if (r.resultStatus === 'certified' && r.confidence !== 'high') fail(w, 'a certified result should cite the official canvass with high confidence');
+  // Two-round elections (AIPD-404): a table per round; the deciding round is
+  // also the result's main candidate list.
+  const race = raceById[r.raceId];
+  if (r.rounds) {
+    if (!race?.runoffDate) fail(w, 'rounds are only for two-round elections (the race needs a runoffDate)');
+    if (!Array.isArray(r.rounds) || r.rounds.length < 1 || r.rounds.length > 2) fail(w, 'rounds must list the first round and, if held, the runoff');
+    (r.rounds || []).forEach((rd, k) => {
+      const rw = `${w} round ${rd.round}`;
+      if (rd.round !== k + 1) fail(rw, 'rounds must be numbered 1 then 2, in order');
+      const due = k === 0 ? race?.electionDate : race?.runoffDate;
+      if (rd.date !== due) fail(rw, `date ${rd.date} should be the race's ${k === 0 ? 'electionDate' : 'runoffDate'} (${due})`);
+      let sum = 0;
+      (rd.candidates || []).forEach((c) => {
+        if (!c.name || !c.party) fail(rw, 'each candidate needs name and party');
+        if (c.candidateId != null && !known.has(c.candidateId)) fail(rw, `candidateId "${c.candidateId}" is not in the race`);
+        if (c.votePct != null && (typeof c.votePct !== 'number' || c.votePct < 0 || c.votePct > 100)) fail(rw, `votePct for ${c.name} must be 0-100`);
+        sum += c.votePct || 0;
+      });
+      if (sum > 100.5) fail(rw, `vote shares add up to ${sum.toFixed(1)}%`);
+      (rd.advancing || []).forEach((n) => {
+        if (!(rd.candidates || []).some((c) => c.name === n)) fail(rw, `advancing candidate ${n} is not in this round`);
+      });
+    });
+    const last = r.rounds[r.rounds.length - 1];
+    const sameList = JSON.stringify((last?.candidates || []).map((c) => [c.name, c.votePct])) === JSON.stringify((r.candidates || []).map((c) => [c.name, c.votePct]));
+    if (!sameList) fail(w, "the result's candidates must repeat the deciding round's candidates and shares");
+    if (r.rounds.length === 2 && (r.rounds[0].advancing || []).length !== 2) fail(w, 'the first round must name the two candidates who advanced to the runoff');
+  } else if (race?.runoffDate && r.resultStatus) {
+    fail(w, 'a two-round election records its rounds (rounds: [{round: 1, ...}, {round: 2, ...}])');
+  }
+  // Certification tracking (AIPD-108): where each state's canvass stands.
+  const cert = r.certification;
+  if (!cert) fail(w, 'certification is required (status certified, canvass-complete or pending)');
+  else {
+    if (!CERT_STATUSES.has(cert.status)) fail(w, `certification.status "${cert.status}" is not in the codebook`);
+    if (cert.date != null && !DATE.test(cert.date)) fail(w, 'certification.date must be YYYY-MM-DD');
+    if (cert.status !== 'pending' && (!cert.date || !cert.by || !cert.source?.url)) fail(w, 'a certified or completed canvass needs its date, authority (by) and official source');
+    if (cert.status === 'pending' && cert.date) fail(w, 'a pending certification has no date yet; use "expected" for the due date');
+    if (typeof cert.figuresEntered !== 'boolean') fail(w, 'certification.figuresEntered must be true or false');
+    if (r.resultStatus === 'certified' && !(cert.status === 'certified' && cert.figuresEntered)) fail(w, 'status Certified needs a certified canvass with its figures entered');
+    if (cert.figuresEntered && r.resultStatus !== 'certified') fail(w, 'certified figures are entered, so the result status should be Certified');
+  }
 });
 
 // Voter priorities: published polls on which issues mattered most to voters
@@ -449,6 +494,47 @@ for (const id of [...checkable.keys(), ...[...extraIds].filter((x) => x.includes
   if (!verification.checks?.[id]) fail(`verification.json`, `no check recorded for ${id}`);
 }
 
+// Senate race selection (AIPD-102): 10-20 races drawn by published criteria.
+const selection = read('senate-race-selection.json');
+const critIds = new Set((selection.criteria || []).map((c) => c.id));
+const chosenRaces = (selection.races || []).filter((r) => r.selected);
+if (chosenRaces.length < 10 || chosenRaces.length > 20) fail('senate-race-selection.json', `the sample must have 10-20 races, not ${chosenRaces.length}`);
+(selection.races || []).forEach((r, i) => {
+  const w = `senate-race-selection.json races[${i}] (${r.state})`;
+  if (!r.reason) fail(w, 'every race needs a reason, selected or not');
+  if (r.selected && !(r.criteriaMet || []).length) fail(w, 'a selected race must meet at least one criterion');
+  (r.criteriaMet || []).forEach((c) => {
+    if (!critIds.has(c)) fail(w, `criterion "${c}" is not defined`);
+  });
+  if (r.rating && !r.rating.source?.url) fail(w, 'the rating needs its source');
+  if (r.result && !r.result.source?.url) fail(w, 'the result needs its source');
+  if (r.aiSignal && !r.aiSignal.source?.url) fail(w, 'the AI or data center signal needs its source');
+  if (r.trackedRaceId && !raceIds.has(r.trackedRaceId)) fail(w, `trackedRaceId "${r.trackedRaceId}" has no race file`);
+  if (r.selected && !['tracked', 'next', 'later'].includes(r.status)) fail(w, 'a selected race needs status tracked, next or later');
+});
+
+// Archived copies (AIPD-101): campaign pages and cited statements, keyed by
+// the original URL. Missing archives are a warning, not a failure: archiving
+// is done by the project owner outside this environment.
+const warnings = [];
+const archives = read('archives.json').pages || [];
+const ARCHIVE_HOSTS = /^https:\/\/(web\.archive\.org\/web\/\d{8,14}|perma\.cc\/|archive\.(ph|today|is)\/)/;
+const archivedUrls = new Set();
+archives.forEach((a, i) => {
+  const w = `archives.json pages[${i}] (${a.url})`;
+  if (!a.url || !/^https?:\/\//.test(a.url)) fail(w, 'url must be the original http(s) address');
+  if (!ARCHIVE_HOSTS.test(a.archiveUrl || '')) fail(w, 'archiveUrl must be a Wayback Machine snapshot (web.archive.org/web/<timestamp>/...), Perma.cc or archive.today link');
+  if (!DATE.test(a.capturedOn || '')) fail(w, 'capturedOn must be YYYY-MM-DD');
+  if (archivedUrls.has(a.url)) fail(w, 'duplicate url; keep one archived copy per page');
+  archivedUrls.add(a.url);
+});
+const researchRecords = read('candidate-research.json').records;
+const unarchived = researchRecords.filter((r) => r.source?.url && !archivedUrls.has(r.source.url) && !/^https:\/\/web\.archive\.org\/web\//.test(r.source.url));
+if (unarchived.length) {
+  warnings.push(`${unarchived.length} of ${researchRecords.length} candidate records cite a page with no archived copy yet (AIPD-101), e.g. ${unarchived.slice(0, 3).map((r) => r.id).join(', ')}. See documents/archive/README.md.`);
+}
+
+if (warnings.length) console.warn(`Warning:\n- ${warnings.join('\n- ')}`);
 if (errors.length) {
   console.error(`Data validation failed with ${errors.length} problem(s):\n- ${errors.join('\n- ')}`);
   process.exit(1);

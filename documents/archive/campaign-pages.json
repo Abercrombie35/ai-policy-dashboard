@@ -1,0 +1,284 @@
+{
+  "candidates": [
+    {
+      "candidateId": "abdul-el-sayed",
+      "name": "Abdul El-Sayed",
+      "homepage": "https://abdulforsenate.com/",
+      "issuePages": [
+        {"title": "Dr. Abdul El-Sayed Announces AI Policy Platform: AI Under Democracy", "url": "https://abdulforsenate.com/2026/06/dr-abdul-el-sayed-announces-ai-policy-platform-ai-under-democracy/"},
+        {"title": "AI Under Control", "url": "https://abdulforsenate.com/2026/10/ai-under-control/"},
+        {"title": "NEW: Dr. Abdul El-Sayed Calls For Pausing AI Development", "url": "https://abdulforsenate.com/2026/09/new-dr-abdul-el-sayed-calls-for-pausing-ai-development/"},
+        {"title": "New Ad: Electronica Lays Out Dr. Abdul El-Sayed's Plan To Protect Michiganders From AI", "url": "https://abdulforsenate.com/2026/10/new-ad-electronica-lays-out-dr-abdul-el-sayeds-plan-to-protect-michiganders-from-ai/"},
+        {"title": "ICYMI: Corrupt Mike Rogers Looks To Get Rich Off Data Centers", "url": "https://abdulforsenate.com/2026/08/icymi-corrupt-mike-rogers-looks-to-get-rich-off-data-centers/"},
+        {"title": "JD Vance Comes To Michigan To Push Data Centers For Mike Rogers", "url": "https://abdulforsenate.com/2026/09/jd-vance-comes-to-michigan-to-push-data-centers-for-mike-rogers/"},
+        {"title": "Dr. Abdul El-Sayed Announces Policy Agenda to Build a Healthier America", "url": "https://abdulforsenate.com/2026/09/dr-abdul-el-sayed-announces-policy-agenda-to-build-a-healthier-america/"},
+        {"title": "The Latest News on Abdul", "url": "https://abdulforsenate.com/news/"}
+      ],
+      "evidence": "WebSearch restricted to abdulforsenate.com ('Abdul El-Sayed for Senate issues'; 'data centers AI plan').",
+      "notFound": "No general /issues index page surfaced in results; AI/data-center platform is published as news posts."
+    },
+    {
+      "candidateId": "mike-rogers",
+      "name": "Mike Rogers",
+      "homepage": "https://rogersforsenate.com/",
+      "issuePages": [
+        {"title": "Rogers Applauds White House AI Framework That Establishes Global Leadership and Protects Kids Online", "url": "https://rogersforsenate.com/news/rogers-applauds-white-house-ai-framework-that-establishes-global-leadership-and-protects-kids-online"},
+        {"title": "Meet Mike", "url": "https://rogersforsenate.com/meet-mike"}
+      ],
+      "evidence": "WebSearch restricted to rogersforsenate.com ('Mike Rogers Senate issues AI technology'; 'priorities issues data centers energy').",
+      "notFound": "No issues/priorities page or dedicated data-center page surfaced; only news releases and bio."
+    },
+    {
+      "candidateId": "jocelyn-benson",
+      "name": "Jocelyn Benson",
+      "homepage": "https://www.jocelynbenson.com/",
+      "issuePages": [
+        {"title": "Data Centers (issue page)", "url": "https://www.jocelynbenson.com/issues/data-centers"},
+        {"title": "Benson Data Centers One-Pager (PDF)", "url": "https://www.jocelynbenson.com/benson-data-centers-one-pager.pdf"},
+        {"title": "Jocelyn Benson's Environment Agenda (PDF)", "url": "https://www.jocelynbenson.com/jocelyn-benson-s-environment-agenda.pdf"},
+        {"title": "Jocelyn Benson Calls for Moratorium on Data Centers in New Michigan First Ad", "url": "https://www.jocelynbenson.com/news/jocelyn-benson-calls-for-moratorium-on-data-centers-in-new-michigan-first-ad"},
+        {"title": "Setting the Record Straight", "url": "https://www.jocelynbenson.com/settingtherecordstraight"}
+      ],
+      "evidence": "WebSearch restricted to jocelynbenson.com ('governor plan issues data centers AI').",
+      "notFound": null
+    },
+    {
+      "candidateId": "john-james",
+      "name": "John James",
+      "homepage": "https://johnjamesmi.com/",
+      "issuePages": [
+        {"title": "News - John James for Michigan", "url": "https://johnjamesmi.com/news/"},
+        {"title": "Fair Taxes. Real Enforcement. Safer Communities. (PDF)", "url": "https://johnjamesmi.com/wp-content/uploads/2026/08/Fair_Taxes_Real_Enforcement_Safer_Communities.pdf"}
+      ],
+      "evidence": "General search referenced johnjamesmi.com via Michigan Farm Bureau result; confirmed by WebSearch restricted to johnjamesmi.com (titles 'John James for Michigan').",
+      "notFound": "No issues page or dedicated data-center/AI page surfaced; data-center positions appear in numbered press releases (johnjamesmi.com/press-release-2026-NN/) whose individual topics were not identifiable from results."
+    },
+    {
+      "candidateId": "james-talarico",
+      "name": "James Talarico",
+      "homepage": "https://jamestalarico.com/",
+      "issuePages": [
+        {"title": "Issues - Talarico for Texas", "url": "https://jamestalarico.com/issues/"},
+        {"title": "James Talarico on Social Media & Tech (AI)", "url": "https://jamestalarico.com/issue/social-media-artificial-intelligence-tech/"},
+        {"title": "James Talarico on Energy, the Texas Grid & Utility Bills (data centers)", "url": "https://jamestalarico.com/issue/energy-environment/"},
+        {"title": "James Talarico on Rural Texas, Farms & Ranches", "url": "https://jamestalarico.com/issue/rural-investment/"}
+      ],
+      "evidence": "WebSearch restricted to jamestalarico.com ('Senate issues AI technology data centers').",
+      "notFound": null
+    },
+    {
+      "candidateId": "ken-paxton",
+      "name": "Ken Paxton",
+      "homepage": "https://www.kenpaxton.com/",
+      "issuePages": [
+        {"title": "Issues - Ken Paxton for U.S. Senate", "url": "https://www.kenpaxton.com/issues"}
+      ],
+      "evidence": "WebSearch restricted to kenpaxton.com (title 'Ken Paxton for U.S. Senate').",
+      "notFound": "His Aug. 24, 2026 'Texas First' data center/AI plan was covered by news (Texas Tribune, Fox 4, Daily Signal) but no campaign-site page for it surfaced."
+    },
+    {
+      "candidateId": "gina-hinojosa",
+      "name": "Gina Hinojosa",
+      "homepage": "https://ginafortexas.com/",
+      "issuePages": [
+        {"title": "Money in Your Pocket (priority: An Affordable Texas That Works for Everyone)", "url": "https://ginafortexas.com/priority/an-affordable-texas-that-works-for-everyone/"},
+        {"title": "NEW: Hinojosa Calls on Greg Abbott to Put Moratorium on Data Centers", "url": "https://ginafortexas.com/2026/07/new-hinojosa-calls-on-greg-abbott-to-put-moratorium-on-data-centers-until-a-legislative-session-that-puts-texans-first/"},
+        {"title": "Hinojosa on Data Center Tax Giveaway", "url": "https://ginafortexas.com/2026/04/hinojosa-on-data-center-tax-giveaway-abbott-is-putting-billionaire-profits-over-our-power-grid-and-our-water-supply/"},
+        {"title": "RELEASE: Hinojosa Takes the Fight to the Panhandle as Abbott's Data Center Recommendations Deadline Passes", "url": "https://ginafortexas.com/2026/07/release-hinojosa-takes-the-fight-to-the-panhandle-as-abbotts-data-center-recommendations-deadline-passes/"},
+        {"title": "NEW AD: Hinojosa Calls Out Greg Abbott Putting Data Centers Before Texans", "url": "https://ginafortexas.com/2026/10/new-ad-hinojosa-calls-out-greg-abbott-putting-data-centers-before-texans/"}
+      ],
+      "evidence": "WebSearch restricted to ginafortexas.com ('governor issues data centers grid technology').",
+      "notFound": "No dedicated data-center issue page or priorities index surfaced; positions are in releases."
+    },
+    {
+      "candidateId": "greg-abbott",
+      "name": "Greg Abbott",
+      "homepage": "https://www.gregabbott.com/",
+      "issuePages": [
+        {"title": "Data Center Guardrails", "url": "https://www.gregabbott.com/data-centers/"},
+        {"title": "EXPOSED: Hypocrite Hinojosa Voted to Expand the Data Center Tax Incentives She Now Opposes", "url": "https://www.gregabbott.com/exposed-hypocrite-hinojosa-voted-to-expand-the-data-center-tax-incentives-she-now-opposes/"}
+      ],
+      "evidence": "WebSearch restricted to gregabbott.com ('campaign 2026 issues data centers grid').",
+      "notFound": "No general issues index page surfaced."
+    },
+    {
+      "candidateId": "ned-lamont",
+      "name": "Ned Lamont",
+      "homepage": "https://www.nedlamont.com/",
+      "issuePages": [
+        {"title": "On the Issues", "url": "https://www.nedlamont.com/issues"},
+        {"title": "Governor Ned Lamont's Priorities", "url": "https://www.nedlamont.com/priorities/"},
+        {"title": "Governor Ned Lamont's Accomplishments (cites 2026 AI regulations)", "url": "https://www.nedlamont.com/accomplishments/"},
+        {"title": "Ned Lamont Proposes Sweeping Utility Reforms to Lower Energy Costs", "url": "https://www.nedlamont.com/news/ned-lamont-proposes-sweeping-utility-reforms-to-lower-energy-costs-for-connecticut-families/"}
+      ],
+      "evidence": "General search ('Ned Lamont 2026 reelection campaign website issues') and WebSearch restricted to nedlamont.com ('artificial intelligence technology data centers energy').",
+      "notFound": "No dedicated AI/data-center page; a Sept. 2026 data-center headline appears only on the /news/ listing."
+    },
+    {
+      "candidateId": "ryan-fazio",
+      "name": "Ryan Fazio",
+      "homepage": "https://ryanfazio.com/",
+      "issuePages": [
+        {"title": "Issues", "url": "https://ryanfazio.com/issues/"},
+        {"title": "Ryan's Plan to Cut Your Electricity Bills", "url": "https://ryanfazio.com/reduce-electricity-bills-20/"},
+        {"title": "Fazio Campaign Releases New Ad: I'll End Lamont's Handouts for Data Centers", "url": "https://ryanfazio.com/fazio-data-center-tax-incentives-ad/"},
+        {"title": "Unpacking Lamont's Lies on Data Centers", "url": "https://ryanfazio.com/fazio-lamont-connecticut-data-centers/"}
+      ],
+      "evidence": "WebSearch restricted to ryanfazio.com (result titled 'Ryan Fazio for Governor'); general search did not show the domain.",
+      "notFound": null
+    },
+    {
+      "candidateId": "jim-himes",
+      "name": "Jim Himes",
+      "homepage": "https://www.himesforcongress.com/",
+      "issuePages": [
+        {"title": "Priorities - Jim Himes for Congress", "url": "https://www.himesforcongress.com/priorities/"},
+        {"title": "National Security (mentions AI / security technology)", "url": "https://www.himesforcongress.com/priorities/national-security/"},
+        {"title": "Economy & Jobs", "url": "https://www.himesforcongress.com/priorities/economy-jobs/"}
+      ],
+      "evidence": "WebSearch restricted to himesforcongress.com (title 'Jim Himes for Congress'); general search only showed official himes.house.gov.",
+      "notFound": "No dedicated AI/tech priority page; some pages appear years old (search metadata)."
+    },
+    {
+      "candidateId": "michael-goldstein",
+      "name": "Michael Goldstein",
+      "homepage": "https://goldsteinforcongress.com/",
+      "issuePages": [
+        {"title": "The Prescription (platform page, title 'Goldstein For Congress')", "url": "https://goldsteinforcongress.com/the-prescription"}
+      ],
+      "evidence": "Greenwich Free Press nomination article named GoldsteinForCongress.com; confirmed by WebSearch restricted to goldsteinforcongress.com.",
+      "notFound": "No AI/tech/data-center page found; site emphasizes energy costs, healthcare, etc."
+    },
+    {
+      "candidateId": "xavier-becerra",
+      "name": "Xavier Becerra",
+      "homepage": "https://www.xavierbecerra2026.com/",
+      "issuePages": [
+        {"title": "Priorities", "url": "https://www.xavierbecerra2026.com/priorities/"},
+        {"title": "Artificial Intelligence", "url": "https://www.xavierbecerra2026.com/priorities/ai/"},
+        {"title": "Balancing Consumer Protection and Innovation", "url": "https://www.xavierbecerra2026.com/priorities/balancing-consumer-protection-and-innovation/"},
+        {"title": "Film Industry (AI likeness/disclosure)", "url": "https://www.xavierbecerra2026.com/priorities/filmindustry/"},
+        {"title": "Economy and Affordability", "url": "https://www.xavierbecerra2026.com/priorities/economy-and-affordability/"}
+      ],
+      "evidence": "WebSearch restricted to xavierbecerra2026.com ('governor issues AI technology').",
+      "notFound": null
+    },
+    {
+      "candidateId": "steve-hilton",
+      "name": "Steve Hilton",
+      "homepage": "https://stevehiltonforgovernor.com/",
+      "issuePages": [
+        {"title": "The Policies", "url": "https://stevehiltonforgovernor.com/policies"},
+        {"title": "The Plan", "url": "https://stevehiltonforgovernor.com/plan"},
+        {"title": "Keep California the AI Capital of the World", "url": "https://stevehiltonforgovernor.com/policy/keep-california-the-ai-capital-of-the-world"},
+        {"title": "Get Big Tech Out of the Classroom", "url": "https://stevehiltonforgovernor.com/policies/get-big-tech-out-of-the-classroom"},
+        {"title": "People, Not the Machine (ban robo-firing)", "url": "https://stevehiltonforgovernor.com/policies/people-not-the-machine-ban-robo-firing"},
+        {"title": "Cut California's Electricity Bills", "url": "https://stevehiltonforgovernor.com/policies/cut-californias-electricity-bills"},
+        {"title": "Ending the PG&E Nightmare", "url": "https://stevehiltonforgovernor.com/policies/ending-the-pge-nightmare"},
+        {"title": "Operation Zero Waste (AI in government)", "url": "https://stevehiltonforgovernor.com/policies/operation-zero-waste"}
+      ],
+      "evidence": "WebSearch restricted to stevehiltonforgovernor.com ('governor plan issues AI technology data centers energy').",
+      "notFound": null
+    },
+    {
+      "candidateId": "marine-le-pen",
+      "name": "Marine Le Pen",
+      "homepage": "https://mlafrance.fr/",
+      "issuePages": [
+        {"title": "Le Programme de Marine Le Pen (2022 programme page)", "url": "https://mlafrance.fr/programme"},
+        {"title": "Projet de Marine Le Pen - livret entreprise 2022 (PDF on RN site, mentions AI/digital infrastructure)", "url": "https://rassemblementnational.fr/documents/WEB-GRN-LIVRET-ENTREPRISE.pdf"}
+      ],
+      "evidence": "WebSearch restricted to mlafrance.fr/marinelepen.fr etc. returned only mlafrance.fr (her 2022 campaign site); RN-domain search returned the 2022 livret PDF.",
+      "notFound": "No 2027-specific Le Pen campaign site or 2027 AI/tech programme page found; mlafrance.fr content dates from the 2022 campaign."
+    },
+    {
+      "candidateId": "jordan-bardella",
+      "name": "Jordan Bardella",
+      "homepage": "https://rassemblementnational.fr/",
+      "issuePages": [
+        {"title": "XIXe Congres du Rassemblement National - Orleans, 24-25 octobre 2026", "url": "https://rassemblementnational.fr/congres2026"},
+        {"title": "Le rapport RN sur l'intelligence artificielle est definitivement adopte par le Parlement europeen", "url": "https://rassemblementnational.fr/communiques/le-rapport-rn-sur-lintelligence-artificielle-est-definitivement-adopte-par-le-parlement-europeen"},
+        {"title": "Cloud francais : quand souverainete numerique rime avec soumission numerique", "url": "https://rassemblementnational.fr/post/cloud-francais-quand-souverainete-numerique-rime-avec-soumission-numerique"},
+        {"title": "Victoire transpartisane pour la souverainete numerique", "url": "https://rassemblementnational.fr/communiques/victoire-transpartisane-pour-la-souverainete-numerique"}
+      ],
+      "evidence": "WebSearch restricted to rassemblementnational.fr (party he presides). Searches restricted to jordanbardella.fr, bardella.fr, bardella2027.fr, avecbardella.fr, bardellapresident.fr returned nothing.",
+      "notFound": "No personal Bardella campaign site found; homepage is the RN party site. RN 2027 presidential programme/AI page not found. Oct. 2026 congress results indicate Le Pen, not Bardella, is presented as the 2027 candidate (unverified by independent coverage)."
+    },
+    {
+      "candidateId": "edouard-philippe",
+      "name": "Edouard Philippe",
+      "homepage": "https://www.edouardphilippe.fr/",
+      "issuePages": [
+        {"title": "Intelligence artificielle - Le programme - Avec Edouard 2027", "url": "https://www.edouardphilippe.fr/programme/intelligence-artificielle"},
+        {"title": "Energie - Le programme", "url": "https://www.edouardphilippe.fr/programme/energie"},
+        {"title": "Edouard Philippe presente le premier volume de son programme presidentiel", "url": "https://www.edouardphilippe.fr/actualites/edouard-philippe-presente-le-premier-volume-de-son-programme-presidentiel"}
+      ],
+      "evidence": "WebSearch restricted to edouardphilippe.fr / horizonsleparti.fr ('intelligence artificielle numerique propositions projet').",
+      "notFound": "A /programme index URL was not shown in results (only theme pages)."
+    },
+    {
+      "candidateId": "gabriel-attal",
+      "name": "Gabriel Attal",
+      "homepage": "https://attalpresident.fr/",
+      "issuePages": [
+        {"title": "Mes chantiers capitaux (programme)", "url": "https://attalpresident.fr/programme"},
+        {"title": "Intelligence artificielle - Gabriel Attal et l'IA", "url": "https://attalpresident.fr/programme/intelligence-artificielle"},
+        {"title": "Un tuteur numerique souverain et gratuit pour chaque eleve", "url": "https://attalpresident.fr/programme/mesures/tuteur-numerique-souverain"},
+        {"title": "VivaTech: Gabriel Attal place l'IA et la souverainete au coeur de son projet", "url": "https://attalpresident.fr/actualites/vivatech-gabriel-attal-place-l-intelligence-artificielle-et-la-souverainete-au-coeur-de-son-projet"}
+      ],
+      "evidence": "WebSearch restricted to attalpresident.fr ('programme intelligence artificielle numerique propositions').",
+      "notFound": null
+    },
+    {
+      "candidateId": "bruno-retailleau",
+      "name": "Bruno Retailleau",
+      "homepage": "https://www.avecretailleau.fr/",
+      "issuePages": [
+        {"title": "Le projet - Bruno Retailleau 2027", "url": "https://www.avecretailleau.fr/projet"},
+        {"title": "L'IA - Le projet", "url": "https://www.avecretailleau.fr/projet/theme/l-ia"},
+        {"title": "Multiplier par cinq les moyens de l'IA de defense", "url": "https://www.avecretailleau.fr/projet/mesure/multiplier-par-cinq-les-moyens-de-l-ia-de-defense"},
+        {"title": "Sur l'IA, nous avons une fenetre de tir de deux ans (Les Republicains)", "url": "https://republicains.fr/actualites/2026/07/07/sur-lia-nous-avons-une-fenetre-de-tir-de-deux-ans/"}
+      ],
+      "evidence": "General search found no site; WebSearch restricted to avecretailleau.fr / republicains.fr surfaced 'Bruno Retailleau - Presidentielle 2027' site.",
+      "notFound": "The 56-page July 2026 AI PDF reported by Next.ink was not surfaced with a URL."
+    },
+    {
+      "candidateId": "jean-luc-melenchon",
+      "name": "Jean-Luc Melenchon",
+      "homepage": "https://melenchon2027.fr/",
+      "issuePages": [
+        {"title": "Chapitre 7 : Democratiser la revolution numerique (L'Avenir en commun)", "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre7/"},
+        {"title": "Garantir la souverainete numerique de la France", "url": "https://melenchon2027.fr/programme2025/livre/chapitre18/s5/"},
+        {"title": "Plan thematique ESR (incl. generative AI, AI institute)", "url": "https://melenchon2027.fr/programme/plans-thematiques/esr/"},
+        {"title": "Introduction : Vers une nouvelle France (programme)", "url": "https://melenchon2027.fr/programme/livre/introduction/"},
+        {"title": "Lettre au peuple de France (PDF on melenchon.fr)", "url": "https://melenchon.fr/wp-content/uploads/2026/05/LETTRE-AU-PEUPLE-DE-FRANCE-.pdf"}
+      ],
+      "evidence": "WebSearch restricted to melenchon.fr / melenchon2027.fr / laec.fr / lafranceinsoumise.fr; campaign site titled 'Melenchon 2027'. Known personal site melenchon.fr also confirmed.",
+      "notFound": null
+    },
+    {
+      "candidateId": "marine-tondelier",
+      "name": "Marine Tondelier",
+      "homepage": "https://marinetondelier.fr/",
+      "issuePages": [
+        {"title": "Marine Tondelier designee pour representer Les Ecologistes a l'election presidentielle", "url": "https://lesecologistes.fr/posts/4DGpyusxBAU4xQPexfncsx/marine-tondelier-designee-pour-representer-les-ecologistes-a-l-election-presidentielle"},
+        {"title": "Ce que nous vous devons (Les Ecologistes PDF; possibly primary manifesto)", "url": "https://lesecologistes.fr/document/3nGptcdfd0gEVyKUNj3Dhn/cequenousvousdevons.pdf"}
+      ],
+      "evidence": "WebSearch restricted to marinetondelier.fr / lesecologistes.fr ('Technodiversites numerique Marine Tondelier 2027').",
+      "notFound": "Her June 25, 2026 digital text 'Technodiversites : reprendre la main sur le numerique !' exists per results, but its URL was not surfaced. No AI/data-center programme page found. She is Les Ecologistes' entrant in the left primary."
+    },
+    {
+      "candidateId": "francois-ruffin",
+      "name": "Francois Ruffin",
+      "homepage": "https://francoisruffin.fr/",
+      "issuePages": [
+        {"title": "Les teleconseillers en premiere ligne face a l'IA", "url": "https://francoisruffin.fr/les-teleconseillers-en-premiere-ligne-face-a-lia/"},
+        {"title": "Randstad Digital : Les informaticiens vont-ils connaitre le meme sort que les ouvriers ?", "url": "https://francoisruffin.fr/randstad-digital-les-informaticiens-vont-ils-connaitre-le-meme-sort-que-les-ouvriers/"},
+        {"title": "Les robots liberent les travailleurs : que disent les chiffres ?", "url": "https://francoisruffin.fr/les-robots-liberent-les-travailleurs-que-disent-les-chiffres/"},
+        {"title": "L'actualite de Francois Ruffin", "url": "https://francoisruffin.fr/lactu/"}
+      ],
+      "evidence": "WebSearch restricted to francoisruffin.fr ('2027 programme candidature site officiel intelligence artificielle').",
+      "notFound": "No dedicated 2027 programme/AI page found. Results mention a headline 'Presidentielle 2027 : Face au risque du pire, je retire ma candidature' (URL not shown, date unclear) - candidacy status needs checking."
+    }
+  ]
+}

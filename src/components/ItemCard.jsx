@@ -1,7 +1,7 @@
 import React from 'react';
 import { labelInfo, confidenceLevels, dimensions, categoryLabel, isVerified, trackOf, domainsOf, domains, stanceLabel, questionById, categoryById, categoriesOf } from '../lib/data';
 import { TrackTag } from './Analysis';
-import { CheckNote } from './PolicyBox';
+import { CheckNote, ArchivedCopy } from './PolicyBox';
 import { useDrafts } from '../lib/drafts';
 import '../styles/ItemCard.css';
 
@@ -26,7 +26,10 @@ export function RecordMeta({ record }) {
         <dt>Source</dt>
         <dd>
           {src.url ? (
-            <a href={src.url} target="_blank" rel="noopener noreferrer">{src.title || src.url}</a>
+            <>
+              <a href={src.url} target="_blank" rel="noopener noreferrer">{src.title || src.url}</a>
+              <ArchivedCopy url={src.url} />
+            </>
           ) : (
             src.title || <span className="missing">None recorded</span>
           )}

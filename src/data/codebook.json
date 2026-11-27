@@ -1,6 +1,6 @@
 {
-  "version": "0.1-draft",
-  "status": "Draft codebook from the project proposal (section 5). To be piloted on Michigan and Texas and refined before scaling.",
+  "version": "1.0-rc1",
+  "status": "Release candidate for version 1.0 (Nov. 27, 2026): the scheme as used across Michigan, Texas, Connecticut, California and France. It is frozen as 1.0 after human review of the AI-drafted coding (AIPD-202) and the inter-coder reliability test (AIPD-203). Changes since the pilot draft are listed in documents/codebook/CHANGELOG.md.",
   "dimensions": [
     {
       "id": "regulatoryOrientation",
@@ -659,6 +659,50 @@
     {
       "id": "far-right",
       "label": "Far right"
+    }
+  ],
+  "certificationStatuses": [
+    {
+      "id": "certified",
+      "label": "Certified",
+      "description": "The state's canvassing authority has certified the results. Once the certified figures are entered, the result's status becomes Certified."
+    },
+    {
+      "id": "canvass-complete",
+      "label": "Canvass complete",
+      "description": "The official canvass is complete; the formal certified statement of vote is still to come."
+    },
+    {
+      "id": "pending",
+      "label": "Not yet certified",
+      "description": "The results have not been certified; the expected date is shown when an official source gives one."
+    }
+  ],
+  "changelog": [
+    {
+      "version": "0.1-draft",
+      "date": "2026-11-12",
+      "summary": "Pilot draft from the proposal (section 5): six coding dimensions, label types, confidence levels, item kinds and bill statuses."
+    },
+    {
+      "version": "0.1-draft",
+      "date": "2026-11-12",
+      "summary": "Added election results as a separate label (Unofficial, Certified); the said vs. proposed tracks and the \"action\" item kind; six party-line policy questions; the two policy areas."
+    },
+    {
+      "version": "0.1-draft",
+      "date": "2026-11-16",
+      "summary": "Added the \"Announced (not yet filed)\" bill status and policy categories, then finer categories (including copyright and creators) applied to statements as well as proposals."
+    },
+    {
+      "version": "0.1-draft",
+      "date": "2026-11-19",
+      "summary": "Added the digital sovereignty category and the four blocs used for races abroad (France)."
+    },
+    {
+      "version": "1.0-rc1",
+      "date": "2026-11-27",
+      "summary": "Added certification statuses; release candidate for 1.0, to be frozen after AIPD-202 and AIPD-203."
     }
   ]
 }

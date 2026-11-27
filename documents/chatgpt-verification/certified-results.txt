@@ -1,0 +1,43 @@
+CERTIFIED 2026 ELECTION RESULTS — paste everything below into ChatGPT (with web browsing on), then paste its JSON reply back to Claude.
+
+You are checking certified results of the Nov. 3, 2026 U.S. general election for a research dashboard. For each race listed, find the OFFICIAL certified results, or the official canvass results, published by the state election authority:
+- Michigan: Michigan Department of State / Board of State Canvassers (mielections.us, michigan.gov/sos)
+- Texas: Texas Secretary of State (sos.state.tx.us, electionresults.sos.state.tx.us)
+- Connecticut: Connecticut Secretary of the State (portal.ct.gov/sots, electionhistory.ct.gov)
+- California: California Secretary of State (sos.ca.gov, including the Statement of Vote)
+
+Rules:
+1. Use only the state's official source for the vote figures. News reports and AP counts do not count, even if they say "certified".
+2. If a race is not yet certified, say so, and give the expected certification date only if an official source states it.
+3. Copy vote totals exactly as published (whole numbers). Give each candidate's percentage to two decimals as published, or computed from votes divided by the total; say which in "notes".
+4. Include every candidate the official table lists, including write-ins if they are listed separately, and the total.
+5. Quote one short line from the official source that shows the results are certified or official (e.g. the certification statement or the page heading).
+6. Do not guess. If a page will not open, say so in "notes" and leave the figures null.
+
+Races:
+- result-mi-senate-2026: U.S. Senate, MI (2026-11-03). Candidates on our list: Abdul El-Sayed (Democratic), Mike Rogers (Republican), Lydia Christensen (Libertarian). What we know: certified, Michigan Board of State Canvassers, 2026-11-23.
+- result-tx-senate-2026: U.S. Senate, TX (2026-11-03). Candidates on our list: James Talarico (Democratic), Ken Paxton (Republican), Ted Brown (Libertarian). What we know: pending.
+- result-mi-governor-2026: Governor, MI (2026-11-03). Candidates on our list: Jocelyn Benson (Democratic), John James (Republican), Anthony Hudson (Libertarian). What we know: certified, Michigan Board of State Canvassers, 2026-11-23.
+- result-tx-governor-2026: Governor, TX (2026-11-03). Candidates on our list: Gina Hinojosa (Democratic), Greg Abbott (Republican), Pat Dixon (Libertarian). What we know: pending, Texas Legislature, expected January 2027.
+- result-ct-governor-2026: Governor, CT (2026-11-03). Candidates on our list: Ned Lamont (Democratic), Ryan Fazio (Republican). What we know: canvass-complete, Connecticut Secretary of the State, 2026-11-25, expected early 2027.
+- result-ct-house-04-2026: U.S. House (CT-4), CT (2026-11-03). Candidates on our list: Jim Himes (Democratic), Michael Goldstein (Republican), Benjamin Wesley (Independent Party). What we know: canvass-complete, Connecticut Secretary of the State, 2026-11-25, expected early 2027.
+- result-ca-governor-2026: Governor, CA (2026-11-03). Candidates on our list: Xavier Becerra (Democratic), Steve Hilton (Republican). What we know: pending, California Secretary of State, expected 2026-12-11.
+
+Reply with JSON only, one object per race, in this format:
+[
+  {
+    "id": "result-mi-senate-2026",
+    "status": "certified" | "canvass-complete" | "pending",
+    "certified_by": "e.g. Michigan Board of State Canvassers",
+    "certified_on": "YYYY-MM-DD or null",
+    "expected": "YYYY-MM-DD or text, or null",
+    "source_url": "official page or PDF with the figures",
+    "source_title": "its title",
+    "exact_quote": "short line from that source showing the results are certified/official",
+    "total_votes": 0,
+    "candidates": [
+      {"name": "...", "party": "...", "votes": 0, "vote_pct": 0.00}
+    ],
+    "notes": "anything unclear, pages that would not open, how percentages were computed"
+  }
+]

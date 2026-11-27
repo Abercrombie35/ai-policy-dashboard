@@ -48,6 +48,12 @@ Built:
   proposals, and how many candidates deviate from their party line.
 - Race pages: "Data centers" and "Everything else in AI" tabs, each showing
   what each candidate said and what they proposed, plus a deviation section.
+  A race opens in a pop-up over the map covering 80% of the screen (the full
+  screen on phones), with its own link (#/state/MI/<race-id>). Close it with
+  the close button, Escape, a click outside or the browser back button; focus
+  stays inside while it is open and returns to the race's card afterwards. The
+  pop-up is the only scroll area and has no background blur, which is what
+  caused the blank screen reported on Nov. 16.
 - Accurate map of all 50 states plus D.C., bundled with the app (no runtime
   download). States are colored by data coverage and can be used by keyboard.
 - Multi-race support: each race is one file in src/data/races/. Seven 2026
@@ -255,9 +261,17 @@ Key files:
 - src/components/StateModal.jsx, StateView.jsx: the state pop-up (races and
   bills).
 - src/components/RaceView.jsx, CandidateComparison.jsx: race page and tabs.
+- src/components/RaceModal.jsx: the 80% race pop-up over the map.
+- src/data/senate-race-selection.json, src/components/RaceSelection.jsx: the 2026 Senate sample (AIPD-102), drawn
+  by `tools/select_senate_races.py` from the sourced facts in documents/senate-selection/races-2026.json and shown
+  on the Methodology page with its criteria.
+- src/data/archives.json, documents/archive/: archived copies of cited pages and campaign issue pages (AIPD-101).
+  `documents/archive/archive_pages.py` captures them in the Wayback Machine (run on your own computer);
+  `tools/import_archives.py` imports the results and rebuilds the list of pages to archive.
 - src/components/ItemCard.jsx: the labeled record card used everywhere.
 - src/components/BillCard.jsx: a bill record.
-- src/components/ElectionResult.jsx: the election-result panel and badges.
+- src/components/ElectionResult.jsx: the election-result panel and badges, with a table per round for two-round
+  elections (France: `rounds` in results.json, first round with the two who advance, then the runoff).
 - src/lib/analysis.js, src/components/Analysis.jsx, src/pages/AnalysisPage.jsx:
   party-line deviation analysis.
 - src/components/ProposalsPanel.jsx: proposed bills and moratoriums.

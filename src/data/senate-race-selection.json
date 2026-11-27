@@ -1,0 +1,1951 @@
+{
+  "asOf": "2026-11-27",
+  "method": "Facts gathered through web search (search results only; pages could not be opened) on Nov. 27, 2026. Ratings are the latest Cook Political Report rating found; Cook's closing table was paywalled, so seven Toss-ups are inferred from its closing analysis (seven Toss-ups, six held by Republicans) and its Aug. 20, Oct. 6 and Oct. 20 changes.",
+  "gaps": [
+    "Cook final ratings: the closing-analysis table was not retrievable (paywalled; fetching blocked). Toss-ups (AK, IA, KS, ME, MI, OH, TX) are inferred from the closing analysis's count ('seven races in Toss Up, six held by Republicans') plus the Aug 20 ratings page and the Oct 6 and Oct 20 changes. Solid ratings come from Cook's Aug 20, 2026 page and were not individually re-confirmed at close.",
+    "FL: final Cook rating not confirmed (Solid R on race page last updated Feb 2025; a later shift toward the challenger was reported but its category was not shown). rating.rating is null.",
+    "NE: the Lean R move date is unknown; the source is secondary (cryptobriefing), corroborated by Sabato/Inside Lean R as of Oct 27 (Ballotpedia).",
+    "GA Likely D (Sept 23) and MN Lean D (Oct 20) rest on secondary reporting; MN sequence reported inconsistently.",
+    "ID: Democratic nominee (if any) not identified; independent Todd Achilles was the main challenger.",
+    "SD: Democratic candidate's withdrawal not verified; independent Brian Bengs was the challenger.",
+    "OK: Mullin's resignation (Mar 24, 2026) and the Alan Armstrong appointment come from a single source. Not checked whether a separate special election for the remainder of the term was also held. Hern's 57.2% is from an aggregator.",
+    "SC: not checked whether a separate special election for the remainder of Graham's term also took place. The date of Santee Cooper's data center rate action is unconfirmed.",
+    "ME: whether Gov. Mills signed LD 307 (data center moratorium) not confirmed.",
+    "DE: the report that the Project Washington developer dropped its appeal (Aug 2026) comes from a search summary; WHYY source covers the DNREC setback.",
+    "Signals not searched (budget): aiSignal and stateSignal for ID, MA, RI, SD, OK; aiSignal for FL. aiSignal null for AL, AR, CO, DE, IL, KY, LA, MN, NJ, NM, OR, TN, WV, WY means none found in limited searches (often not specifically searched), not proof of absence.",
+    "AK and IA aiSignals are weak (news framing, not direct candidate statements). MI's strongest evidence is from the primary; for the general, NPR cites El-Sayed's 'terms of engagement' stance.",
+    "Most vote shares are unofficial/early counts; certification status not checked. WV result relies on Legis1 citing AP.",
+    "Overall: Democrats flipped 9 R-held seats (AK, IA, KS, ME, MS, NC, OH, SC, TX) with no D losses, which matches Wikipedia's 56-seat Democratic caucus; not cross-checked against an official tally.",
+    "All facts come from search-result summaries (page fetching blocked). Several rest on a single secondary source and should be spot-checked before publication."
+  ],
+  "note": "Senate race selection (AIPD-102), drawn by tools/select_senate_races.py from documents/senate-selection/races-2026.json.",
+  "criteriaSummary": "The sample is drawn from all 35 Senate contests of 2026 by the criteria below, applied in order to facts gathered before the list was drawn. It has 15 races: every competitive race, plus races where AI or data centers were a campaign issue, kept between 10 and 20 races, each profiling both parties' nominees. Michigan and Texas, the pilot races, are tracked; the five highest-ranked others are added next (AIPD-103). Before the election, 11 of the 15 seats were held by Republicans and 4 by Democrats.",
+  "criteria": [
+    {
+      "id": "competitive",
+      "short": "competitive",
+      "label": "Competitive",
+      "description": "Rated Toss-up or Lean (either party) in the final pre-election rating from the Cook Political Report (or, where Cook could not be found, Sabato's Crystal Ball or Inside Elections). Every such race is included."
+    },
+    {
+      "id": "ai-salience",
+      "short": "AI or data centers in the race",
+      "label": "AI or data centers were a campaign issue",
+      "description": "A candidate's own statement, ad or debate exchange, reported by a news outlet, made AI or data centers an issue between the Senate candidates (news framing alone does not count). Included when the race was also rated Likely or closer, or the seat was open."
+    },
+    {
+      "id": "open-seat",
+      "short": "open seat",
+      "label": "Open seat",
+      "description": "No incumbent on the ballot (retired, lost the primary or the seat was vacated). Open seats rank above incumbent races when the list has to be filled or cut."
+    },
+    {
+      "id": "party-balance",
+      "short": "party balance",
+      "label": "Party balance",
+      "description": "Every race in the sample profiles both parties' nominees (in Nebraska, the Republican and the independent Democrats backed), so the sample has as many candidates from one side as the other. Republicans defended most of 2026's competitive seats, so the seats in the sample lean Republican before the election; that share is reported rather than evened out with uncompetitive races."
+    },
+    {
+      "id": "state-activity",
+      "short": "state AI or data center activity",
+      "label": "State AI or data center activity",
+      "description": "A notable 2025-2026 state AI law or data center fight. Used to rank races when the list has to be filled to 10 or cut to 20."
+    }
+  ],
+  "races": [
+    {
+      "state": "AK",
+      "stateName": "Alaska",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Dan Sullivan",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Mary Peltola",
+        "republican": "Dan Sullivan",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Toss-up",
+        "asOf": "2026-08-20 (believed unchanged at close)",
+        "note": "Toss Up on Cook's Aug 20, 2026 ratings page; Cook's pre-election closing analysis says it kept 7 races in Toss Up, 6 of them R-held, which matches AK, IA, KS, ME, OH, TX + MI. Full closing table not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Mary Peltola",
+        "party": "Democratic",
+        "flipped": true,
+        "detail": "AP call Nov 17; Peltola ~50.1% of first-choice votes, so no ranked-choice tabulation was needed. A DOJ suit to block certification was dismissed; DOJ said it would appeal",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.adn.com/politics/2026/11/17/democrat-mary-peltola-wins-us-senate-race-in-alaska-beating-incumbent-republican-dan-sullivan/"
+        }
+      },
+      "aiSignal": {
+        "text": "Weak: Newsweek's survey of key Senate races on data centers includes Alaska (Stak Energy North Slope proposal, failed grid-cost bill). Post-election Newsweek says Sullivan promoted Alaska for AI data centers and Peltola says they should pay their own way. No campaign ad or debate exchange found",
+        "strength": "weak",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://www.newsweek.com/ai-data-center-war-where-democrats-republicans-in-key-senate-races-stand-12354265"
+        }
+      },
+      "stateSignal": {
+        "text": "Stak Energy's proposed gas-powered AI data center on state land on the North Slope drew 500+ public comments, mostly opposed. SB 250 (data centers pay their own grid costs) died in a House committee in May 2026",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.arctictoday.com/data-center-critics-flood-alaska-land-managers-with-opposition-to-north-slope-project/"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Toss-up; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": "next"
+    },
+    {
+      "state": "AL",
+      "stateName": "Alabama",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Tommy Tuberville",
+        "party": "Republican"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent ran for governor instead",
+      "nominees": {
+        "democratic": "Everett Wess",
+        "republican": "Barry Moore",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Barry Moore",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "Unofficial: Moore 54.7%, Wess 45.2% (AL SOS, all counties)",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.alreporter.com/2026/11/04/barry-moore-wins-alabamas-us-senate-race"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "SB 270 (Act 2026-610) enacted: directs the PSC to weigh specified factors when reviewing Alabama Power contracts with 150 MW+ data centers; effective Oct 1, 2026",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.fox10tv.com/2026/10/02/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "open-seat",
+        "state-activity"
+      ],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "AR",
+      "stateName": "Arkansas",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Tom Cotton",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Hallie Shoffner",
+        "republican": "Tom Cotton",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Tom Cotton",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "AP call; about 54.2% to 42.5% per Wikipedia (unofficial)",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.ky3.com/2026/11/04/ap-call-republican-tom-cotton-wins-reelection-us-senate-arkansas-defeating-democrat-hallie-shoffner/"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "Backlash to the 2023/2025 data center tax incentives: five county quorum courts imposed moratoriums, and a bipartisan push sought repeal of the 2025 Generating Arkansas Jobs Act, which critics blame for higher bills",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "CO",
+      "stateName": "Colorado",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "John Hickenlooper",
+        "party": "Democratic"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "John Hickenlooper",
+        "republican": "Mark Baisley",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid D",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "John Hickenlooper",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP call Nov 3",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.coloradopolitics.com/2026/11/03/john-hickenlooper-mark-baisley-colorado-senate-election-results/"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "Colorado repealed and replaced its 2024 AI Act (SB 24-205) with the narrower SB 26-189, signed May 14, 2026 (effective Jan 1, 2027), after xAI sued and enforcement was stayed",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.gtlaw.com/en/insights/2026/5/colorado-repeals-and-replaces-the-colorado-ai-act"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "Rated Solid D; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "DE",
+      "stateName": "Delaware",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Chris Coons",
+        "party": "Democratic"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Chris Coons",
+        "republican": "Michael Katz",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid D",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Chris Coons",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP projection",
+        "source": {
+          "title": "Result report",
+          "url": "https://fox29.com/news/chris-coons-wins-reelection-delaware-senate-race-ap-projects"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "Project Washington, a proposed 1.2 GW data center in Delaware City, was ruled barred from its site under the Coastal Zone Act by DNREC (a report says the developer dropped its appeal in Aug 2026). Large-load bills SB 205/HB 233 were debated",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://whyy.org/articles/delaware-city-data-center-setback-environment/"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "Rated Solid D; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "FL",
+      "stateName": "Florida",
+      "seatType": "special",
+      "incumbent": {
+        "name": "Ashley Moody",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": "Appointed incumbent (Jan. 2025, succeeding Marco Rubio) ran for the remaining two years",
+      "nominees": {
+        "democratic": "Angie Nixon",
+        "republican": "Ashley Moody",
+        "independent": null
+      },
+      "rating": null,
+      "result": {
+        "winner": "Ashley Moody",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "50.9% to 48.0% (Ballotpedia)",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.wptv.com/news/political/elections-local/republican-ashley-moody-wins-reelection-to-u-s-senate-from-florida"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "DeSantis signed SB 484 (May 7, 2026) requiring hyperscale data centers to cover their own utility costs; his broader 'AI Bill of Rights' (SB 482) failed in the House",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://floridaphoenix.com/2026/05/07/florida-has-a-new-law-regulating-ai-data-centers/"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "No rating found; not rated competitive; no AI or data center exchange between the candidates found; Florida's 2026 races are built out separately (AIPD-109).",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "GA",
+      "stateName": "Georgia",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Jon Ossoff",
+        "party": "Democratic"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Jon Ossoff",
+        "republican": "Mike Collins",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Likely D",
+        "asOf": "2026-09-23",
+        "note": "Cook moved GA from Lean D to Likely D on Sept 23 (secondary reporting); no later change found",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://www.newsweek.com/map-shows-senate-seats-most-likely-to-flip-as-forecaster-shifts-3-races-12479721"
+        }
+      },
+      "result": {
+        "winner": "Jon Ossoff",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP call Nov 3; GPB reports 58.4%",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.opb.org/article/2026/11/03/georgia-sen-jon-ossoff-wins-reelection-defeating-rep-mike-collins-to-hold-a-key-democratic-seat/"
+        }
+      },
+      "aiSignal": {
+        "text": "Debate: Ossoff tied the 2025 budget bill's tax breaks to data center developers; Collins said he favors local control (Roll Call, Oct 19, 2026)",
+        "strength": "strong",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://rollcall.com/2026/10/19/data-center-anxiety-plays-out-in-senate-campaign-debates/"
+        }
+      },
+      "stateSignal": {
+        "text": "SB 410 (repeal of the data center sales tax exemption) passed the state Senate but died in the House; the 2026 session left the tax breaks intact",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.ajc.com/business/2026/04/georgia-lawmakers-leave-data-center-tax-breaks-intact-punt-on-energy-costs/"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "ai-salience",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Likely D; AI or data centers in the race: Debate: Ossoff tied the 2025 budget bill's tax breaks to data center developers; Collins said he favors local control (Roll Call, Oct 19, 2026).",
+      "trackedRaceId": null,
+      "status": "later"
+    },
+    {
+      "state": "IA",
+      "stateName": "Iowa",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Joni Ernst",
+        "party": "Republican"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent retired",
+      "nominees": {
+        "democratic": "Josh Turek",
+        "republican": "Ashley Hinson",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Toss-up",
+        "asOf": "2026-08-20 (believed unchanged at close)",
+        "note": "Toss Up on Cook's Aug 20, 2026 ratings page; Cook's pre-election closing analysis says it kept 7 races in Toss Up, 6 of them R-held, which matches AK, IA, KS, ME, OH, TX + MI. Full closing table not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Josh Turek",
+        "party": "Democratic",
+        "flipped": true,
+        "detail": "AP call; early returns 50.8% to 46.1%",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.kuow.org/npr-news/2026-11-03/democrat-josh-turek-wins-the-senate-seat-in-iowa"
+        }
+      },
+      "aiSignal": {
+        "text": "Weak: Newsweek frames Iowa's wave of county data center moratoriums as part of the backlash in the six Cook toss-up Senate races. No direct Turek/Hinson ad or debate exchange found",
+        "strength": "weak",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://www.newsweek.com/where-americas-revolt-against-data-centers-could-shape-key-senate-races-12473147"
+        }
+      },
+      "stateSignal": {
+        "text": "County moratorium wave: Linn County passed an 18-month moratorium on data center rezoning and Woodbury County a one-year moratorium; Newsweek counts more than a dozen counties",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://corridorbusiness.com/?p=134105"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "open-seat",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Toss-up; open seat (incumbent retired); no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": "next"
+    },
+    {
+      "state": "ID",
+      "stateName": "Idaho",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Jim Risch",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": null,
+        "republican": "Jim Risch",
+        "independent": "Todd Achilles"
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved. Idaho not explicitly confirmed in snippet.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Jim Risch",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "Unofficial 401,280 to 238,223 over independent Achilles; Risch's closest Senate general election",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.newsfromthestates.com/article/idaho-republican-us-sen-jim-risch-retains-seat-against-independent-challenger-todd-achilles"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": null,
+      "selected": false,
+      "criteriaMet": [],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "IL",
+      "stateName": "Illinois",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Dick Durbin",
+        "party": "Democratic"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent retired",
+      "nominees": {
+        "democratic": "Juliana Stratton",
+        "republican": "Don Tracy",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid D",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Juliana Stratton",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP call at poll close",
+        "source": {
+          "title": "Result report",
+          "url": "https://news.wttw.com/node/55340"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "Gov. Pritzker ordered a two-year pause on new state data center tax incentives (announced June 5, 2026) after the POWER Act (HB 5513) stalled in the spring session",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.cbsnews.com/chicago/news/gov-jb-pritzker-suspends-data-center-tax-breaks/"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "open-seat",
+        "state-activity"
+      ],
+      "reason": "Rated Solid D; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "KS",
+      "stateName": "Kansas",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Roger Marshall",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Adam Hamilton",
+        "republican": "Roger Marshall",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Toss-up",
+        "asOf": "2026-10-06",
+        "note": "Moved from Lean R to Toss Up on Oct 6; counted among the 7 closing toss-ups",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://www.cookpolitical.com/analysis/senate/senate-overview/senate-majority-squarely-democrats-sights-kansas-moves-toss-two"
+        }
+      },
+      "result": {
+        "winner": "Adam Hamilton",
+        "party": "Democratic",
+        "flipped": true,
+        "detail": "AP call ~10:25 pm; about 51.2% to 45.8% (unofficial); first Democratic Senate win in Kansas since 1932",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.opb.org/article/2026/11/03/pastor-adam-hamilton-ousts-gop-sen-roger-marshall-democrats-1st-senate-win-in-kansas-in-94-years/"
+        }
+      },
+      "aiSignal": {
+        "text": "Incumbent Marshall 'rails against AI data centers' (Semafor interview, Jul 22, 2026): backs local moratoriums and opposes tax incentives. No Hamilton statement found",
+        "strength": "moderate",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://semafor.com/article/07/22/2026/republican-senator-roger-marshall-rails-against-ai-data-centers"
+        }
+      },
+      "stateSignal": {
+        "text": "SB 98 (2025) created a 20-year sales tax exemption for data centers and became a central fight in the 2026 governor's race (Holscher calls for a pause; Masterson defends it)",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.hppr.org/hppr-news/2026-10-12/debate-about-kansas-law-incentivizing-data-center-construction-charges-up-governors-race"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "ai-salience",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Toss-up; AI or data centers in the race: Incumbent Marshall 'rails against AI data centers' (Semafor interview, Jul 22, 2026): backs local moratoriums and opposes tax incentives. No Hamilton statement found.",
+      "trackedRaceId": null,
+      "status": "next"
+    },
+    {
+      "state": "KY",
+      "stateName": "Kentucky",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Mitch McConnell",
+        "party": "Republican"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent retired",
+      "nominees": {
+        "democratic": "Charles Booker",
+        "republican": "Andy Barr",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Andy Barr",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "AP call 9:16 pm EST",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.opb.org/article/2026/11/03/republican-andy-barr-wins-election-to-u-s-senate-from-kentucky/"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "Ratepayer-protection data center rules were stripped from a bill on the last day of the 2026 session. A 2025 law (HB 775) had expanded data center sales tax exemptions for up to 50 years, and lawmakers say they may shorten it in 2027",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.wkyufm.org/2026-04-15/kentucky-data-center-regulations-stripped-from-bill-as-legislative-session-closes"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "open-seat",
+        "state-activity"
+      ],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "LA",
+      "stateName": "Louisiana",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Bill Cassidy",
+        "party": "Republican"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent lost the closed Republican primary (May 16, 2026)",
+      "nominees": {
+        "democratic": "Jamie Davis",
+        "republican": "Julia Letlow",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Julia Letlow",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "AP: 745,963 (50.9%) to 720,106 (49.1%), unofficial; closer than forecast",
+        "source": {
+          "title": "Result report",
+          "url": "https://lailluminator.com/2026/11/03/letlow-senate-5/"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "Meta's $10B AI data center in Richland Parish (up to ~5 GW), with new Entergy gas plants approved by the PSC, drew concern from consumer advocates",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.axios.com/local/new-orleans/2025/04/28/meta-data-center-louisiana-energy-demand"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "open-seat",
+        "state-activity"
+      ],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "MA",
+      "stateName": "Massachusetts",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Ed Markey",
+        "party": "Democratic"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Ed Markey",
+        "republican": "John Deaton",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid D",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Ed Markey",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP projection; Deaton conceded",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.wgbh.org/news/politics/2026-11-03/markey-wins-3rd-senate-term-as-deaton-struggles-to-break-through-in-deep-blue-mass"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": null,
+      "selected": false,
+      "criteriaMet": [],
+      "reason": "Rated Solid D; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "ME",
+      "stateName": "Maine",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Susan Collins",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Troy Jackson",
+        "republican": "Susan Collins",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Toss-up",
+        "asOf": "2026-08-20 (believed unchanged at close)",
+        "note": "Toss Up on Cook's Aug 20, 2026 ratings page; Cook's pre-election closing analysis says it kept 7 races in Toss Up, 6 of them R-held, which matches AK, IA, KS, ME, OH, TX + MI. Full closing table not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Troy Jackson",
+        "party": "Democratic",
+        "flipped": true,
+        "detail": "AP call Nov 4; Collins conceded",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.kuow.org/npr-news/2026-11-03/troy-jackson-wins-maine-senate-race-over-susan-collins-in-major-coup-for-democrats"
+        }
+      },
+      "aiSignal": {
+        "text": "NPR's data center ad analysis quotes Jackson calling for 'real guardrails' so data centers don't raise others' power bills or hurt water quality",
+        "strength": "moderate",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://npr.org/2026/09/05/nx-s1-5913671/ai-data-center-campaign-spending"
+        }
+      },
+      "stateSignal": {
+        "text": "Legislature passed LD 307 (Apr 14, 2026), the nation's first statewide moratorium on data centers of 20 MW+ until Nov 2027. Gov. Mills' final action not confirmed",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.adn.com/nation-world/2026/04/14/maine-lawmakers-pass-the-nations-first-statewide-ban-on-large-data-centers"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "ai-salience",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Toss-up; AI or data centers in the race: NPR's data center ad analysis quotes Jackson calling for 'real guardrails' so data centers don't raise others' power bills or hurt water quality.",
+      "trackedRaceId": null,
+      "status": "next"
+    },
+    {
+      "state": "MI",
+      "stateName": "Michigan",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Gary Peters",
+        "party": "Democratic"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent retired",
+      "nominees": {
+        "democratic": "Abdul El-Sayed",
+        "republican": "Mike Rogers",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Toss-up",
+        "asOf": "2026-08-20 (believed unchanged at close)",
+        "note": "Toss Up on Cook's Aug 20, 2026 ratings page; Cook's pre-election closing analysis says it kept 7 races in Toss Up, 6 of them R-held, which matches AK, IA, KS, ME, OH, TX + MI. Full closing table not retrieved. MI is the only D-held toss-up consistent with that count.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Abdul El-Sayed",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP call 2:27 am Nov 4; 51.9% to 46.1% at 85% counted",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.michiganpublic.org/2026-11-04/democrat-abdul-el-sayed-defeats-republican-mike-rogers-in-key-michigan-senate-race"
+        }
+      },
+      "aiSignal": {
+        "text": "El-Sayed's campaign held an anti-data-center rally near the OpenAI/Oracle Stargate site in Saline Township ('if the community here opposes this data center, then I do'). That was during the primary; in the general he backed 'terms of engagement' (NPR)",
+        "strength": "strong",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://fortune.com/2026/05/06/ai-data-center-michigan-saline-politics-farmland/"
+        }
+      },
+      "stateSignal": {
+        "text": "Saline Township Stargate data center: the township denied rezoning, the developer sued, and the township settled. Gov. Whitmer praised the project",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.route-fifty.com/artificial-intelligence/2025/10/data-center-developer-takes-small-michigan-farming-community-court/409106/"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "ai-salience",
+        "open-seat",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Toss-up; open seat (incumbent retired); AI or data centers in the race: El-Sayed's campaign held an anti-data-center rally near the OpenAI/Oracle Stargate site in Saline Township ('if the community here opposes this data center, then I do'). That was during the primary; in the general he backed 'terms of engagement' (NPR).",
+      "trackedRaceId": "mi-senate-2026",
+      "status": "tracked"
+    },
+    {
+      "state": "MN",
+      "stateName": "Minnesota",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Tina Smith",
+        "party": "Democratic"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent retired",
+      "nominees": {
+        "democratic": "Peggy Flanagan",
+        "republican": "Michele Tafoya",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Lean D",
+        "asOf": "2026-10-20",
+        "note": "Cook moved MN from Likely D to Lean D on Oct 20 (secondary reporting; sequence somewhat conflicting)",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://political.org/2026/10/20/cook-political-report-shifts-minnesota-senate-race-toward-gop-south-carolina-toward-democrats/"
+        }
+      },
+      "result": {
+        "winner": "Peggy Flanagan",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP call 12:07 am EST",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.scrippsnews.com/politics/america-votes/democrat-peggy-flanagan-wins-minnesota-senate-race"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "2025 Legislature passed data center rules, including repeal of the sales-tax exemption on electricity used by data centers. Further 2026 debate on transparency and moratoriums",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.mprnews.org/episode/2025/12/30/the-year-of-data-centers-debate-investment-heated-up-in-minnesota-in-2025"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "open-seat",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Lean D; open seat (incumbent retired); no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": "later"
+    },
+    {
+      "state": "MS",
+      "stateName": "Mississippi",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Cindy Hyde-Smith",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Scott Colom",
+        "republican": "Cindy Hyde-Smith",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Likely R",
+        "asOf": "2026-10-20",
+        "note": "Moved from Solid R to Likely R on Oct 20",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://political.org/2026/10/20/cook-political-report-shifts-minnesota-senate-race-toward-gop-south-carolina-toward-democrats/"
+        }
+      },
+      "result": {
+        "winner": "Scott Colom",
+        "party": "Democratic",
+        "flipped": true,
+        "detail": "AP call Nov 11; 473,336 (49.2%) to 468,667 (48.7%); Hyde-Smith conceded",
+        "source": {
+          "title": "Result report",
+          "url": "https://mississippitoday.org/2026/11/11/scott-colom-wins-senate-mississippi-hyde-smith/"
+        }
+      },
+      "aiSignal": {
+        "text": "Colom called for a temporary statewide pause on new data centers and hit Hyde-Smith for not backing the Ratepayer Protection Act (Mississippi Today, Sept 24, 2026)",
+        "strength": "strong",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://mississippitoday.org/2026/09/24/data-centers-ban-colom-hyde-smith/"
+        }
+      },
+      "stateSignal": {
+        "text": "xAI's $20B Southaven data center (Colossus 2) got state incentives, and its gas turbines face permit opposition and an NAACP Clean Air Act suit",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://wtop.com/national/2026/01/elon-musks-xai-to-build-20-billion-data-center-in-mississippi/"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "ai-salience",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Likely R; AI or data centers in the race: Colom called for a temporary statewide pause on new data centers and hit Hyde-Smith for not backing the Ratepayer Protection Act (Mississippi Today, Sept 24, 2026).",
+      "trackedRaceId": null,
+      "status": "later"
+    },
+    {
+      "state": "MT",
+      "stateName": "Montana",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Steve Daines",
+        "party": "Republican"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent did not seek reelection, withdrawing at the Mar. 4, 2026 filing deadline",
+      "nominees": {
+        "democratic": "Alani Bankhead",
+        "republican": "Kurt Alme",
+        "independent": "Seth Bodnar"
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved. Bodnar's independent bid may have prompted a later shift; not found.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Kurt Alme",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "AP call early Nov 4; vote totals not retrieved",
+        "source": {
+          "title": "Result report",
+          "url": "https://mynorthwest.com/national/republican-kurt-alme-wins-election-to-u-s-senate-from-montana/4294512"
+        }
+      },
+      "aiSignal": {
+        "text": "Candidates laid out data center/AI positions: Bankhead called for a moratorium on large data centers, Bodnar offered a 'Protect Montana' pledge, and Alme backs cost disclosure and the Ratepayer Protection Act",
+        "strength": "moderate",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://www.ktvh.com/news/montana-politics/montana-u-s-senate-candidates-discuss-how-to-manage-data-centers-ai"
+        }
+      },
+      "stateSignal": {
+        "text": "NorthWestern Energy reports talks with 11+ data center developers; Quantica's Big Sky campus requested 7,235 MW of interconnection; voters press the PSC for oversight",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://dailymontanan.com/?p=37508"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "ai-salience",
+        "open-seat",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Solid R; open seat (incumbent did not seek reelection, withdrawing at the Mar. 4, 2026 filing deadline); AI or data centers in the race: Candidates laid out data center/AI positions: Bankhead called for a moratorium on large data centers, Bodnar offered a 'Protect Montana' pledge, and Alme backs cost disclosure and the Ratepayer Protection Act.",
+      "trackedRaceId": null,
+      "status": "later"
+    },
+    {
+      "state": "NC",
+      "stateName": "North Carolina",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Thom Tillis",
+        "party": "Republican"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent retired",
+      "nominees": {
+        "democratic": "Roy Cooper",
+        "republican": "Michael Whatley",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Likely D",
+        "asOf": "2026-10-06",
+        "note": "Lean D since Apr 2026; moved to Likely D Oct 6",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://www.cookpolitical.com/analysis/senate/senate-overview/senate-majority-squarely-democrats-sights-kansas-moves-toss-two"
+        }
+      },
+      "result": {
+        "winner": "Roy Cooper",
+        "party": "Democratic",
+        "flipped": true,
+        "detail": "AP call shortly after polls closed; unofficial ~59% to 39%",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.wunc.org/politics/2026-11-03/democrat-roy-cooper-wins-u-s-senate-race"
+        }
+      },
+      "aiSignal": {
+        "text": "Whatley's campaign attacked Cooper for recruiting and subsidizing data centers as governor; Cooper backed local say and making data centers pay their own energy costs (Fox News)",
+        "strength": "moderate",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://www.foxnews.com/politics/inside-gop-senate-hopefuls-financial-ties-controversial-data-center-boom"
+        }
+      },
+      "stateSignal": {
+        "text": "NC House passed SB 730, the 'Ratepayer Protection Act' (69-44, June 2026), barring local property-tax breaks for data centers and tying Duke plant retirements to nuclear; Senate action not found",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.eenews.net/articles/stringent-data-center-bill-clears-north-carolina-state-house"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "ai-salience",
+        "open-seat",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Likely D; open seat (incumbent retired); AI or data centers in the race: Whatley's campaign attacked Cooper for recruiting and subsidizing data centers as governor; Cooper backed local say and making data centers pay their own energy costs (Fox News).",
+      "trackedRaceId": null,
+      "status": "later"
+    },
+    {
+      "state": "NE",
+      "stateName": "Nebraska",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Pete Ricketts",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": null,
+        "republican": "Pete Ricketts",
+        "independent": "Dan Osborn"
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Lean R",
+        "asOf": "date not confirmed (after Apr 2026 Likely R)",
+        "note": "Cook moved NE Likely R -> Lean R (secondary reporting). Sabato and Inside Elections also had Lean R as of Oct 27 per Ballotpedia: https://news.ballotpedia.org/?p=52333",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cryptobriefing.com/cook-shifts-nebraska-florida-senate-races-toward-challengers-for-2026/"
+        }
+      },
+      "result": {
+        "winner": "Pete Ricketts",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "AP call 2:27 am; 50.2% to 43.9% (unofficial)",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.azfamily.com/2026/11/04/republican-pete-ricketts-wins-reelection-us-senate-over-independent-challenger-nebraska/"
+        }
+      },
+      "aiSignal": {
+        "text": "Osborn ads attacked Ricketts' record of data center tax incentives as governor ($519M property-tax exemptions 2021-Jun 2026 per state estimate) and his AI investments; Ricketts called data centers 'a community decision'",
+        "strength": "strong",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://prospect.org/2026/10/15/in-nebraska-pete-ricketts-was-data-centers-best-friend/"
+        }
+      },
+      "stateSignal": {
+        "text": "Growing number of county moratoriums on data centers in Nebraska (and Iowa)",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.kwit.org/podcast/spm-news/2026-07-03/growing-number-of-county-moratoriums-on-data-centers-in-nebraska-iowa"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "ai-salience",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Lean R; AI or data centers in the race: Osborn ads attacked Ricketts' record of data center tax incentives as governor ($519M property-tax exemptions 2021-Jun 2026 per state estimate) and his AI investments; Ricketts called data centers 'a community decision'.",
+      "trackedRaceId": null,
+      "status": "later"
+    },
+    {
+      "state": "NH",
+      "stateName": "New Hampshire",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Jeanne Shaheen",
+        "party": "Democratic"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent retired",
+      "nominees": {
+        "democratic": "Chris Pappas",
+        "republican": "John E. Sununu",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Lean D",
+        "asOf": "2026-10-06",
+        "note": "Moved from Toss Up back to Lean D on Oct 6",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://www.cookpolitical.com/analysis/senate/senate-overview/senate-majority-squarely-democrats-sights-kansas-moves-toss-two"
+        }
+      },
+      "result": {
+        "winner": "Chris Pappas",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP call; ~57% to 40% early; Sununu conceded",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.nhpr.org/nh-news/2026-11-03/pappas-wins-u-s-senate-race-defeating-sununu-in-marquee-matchup"
+        }
+      },
+      "aiSignal": {
+        "text": "NHPR candidate guide: both Pappas and Sununu said they support a state-level moratorium on data center construction; Pappas called NH 'not the right place for AI data centers'",
+        "strength": "strong",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://www.nhpr.org/politics/2026-10-30/where-do-nh-candidates-stand-on-ai-and-data-centers-election-2026-midterms"
+        }
+      },
+      "stateSignal": {
+        "text": "New batch of proposed data center guardrail/moratorium bills for the 2027 session, pushed by public pressure and the governor",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "ai-salience",
+        "open-seat",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Lean D; open seat (incumbent retired); AI or data centers in the race: NHPR candidate guide: both Pappas and Sununu said they support a state-level moratorium on data center construction; Pappas called NH 'not the right place for AI data centers'.",
+      "trackedRaceId": null,
+      "status": "later"
+    },
+    {
+      "state": "NJ",
+      "stateName": "New Jersey",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Cory Booker",
+        "party": "Democratic"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Cory Booker",
+        "republican": "Justin Murphy",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid D",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Cory Booker",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP call",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.fox5ny.com/news/cory-booker-wins-re-election-new-jersey-senate-race"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "Gov. Sherrill signed the Data Center Fair Share Act (July 7, 2026): separate rate class/tariffs for 50 MW+ data centers, with an 85% take-or-pay for 10 years",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.nj.gov/governor/news/2026/20260707a.shtml"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "Rated Solid D; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "NM",
+      "stateName": "New Mexico",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Ben Ray Luján",
+        "party": "Democratic"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Ben Ray Luján",
+        "republican": "Larry Marker",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid D",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Ben Ray Luján",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "Unofficial 63.2% to 36.8% at 98%",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.abqjournal.com/news/lujan-wins-second-term-in-us-senate/3154396"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "Project Jupiter (Doña Ana County) mega data center: lawsuits over the county's industrial revenue bonds and Open Meetings Act compliance continue in 2026",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.courthousenews.com/nonprofit-sues-to-block-165-billion-openai-data-center-in-rural-new-mexico/"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "Rated Solid D; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "OH",
+      "stateName": "Ohio",
+      "seatType": "special",
+      "incumbent": {
+        "name": "Jon Husted",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": "Appointed incumbent (Jan. 2025, succeeding JD Vance) ran for the remaining two years",
+      "nominees": {
+        "democratic": "Sherrod Brown",
+        "republican": "Jon Husted",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Toss-up",
+        "asOf": "Apr 2026; believed unchanged at close",
+        "note": "Moved Lean R -> Toss Up Apr 2026. Toss Up on Cook's Aug 20, 2026 ratings page; Cook's pre-election closing analysis says it kept 7 races in Toss Up, 6 of them R-held, which matches AK, IA, KS, ME, OH, TX + MI. Full closing table not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://www.dailysignal.com/2026/04/13/can-democrats-take-the-senate-four-key-races-shift-left/"
+        }
+      },
+      "result": {
+        "winner": "Sherrod Brown",
+        "party": "Democratic",
+        "flipped": true,
+        "detail": "AP call Nov 3; $500M+ spent",
+        "source": {
+          "title": "Result report",
+          "url": "https://spectrumnews1.com/oh/columbus/news/2026/11/04/sherrod-brown-flips-senate-seat-in-ohio-for-democrats"
+        }
+      },
+      "aiSignal": {
+        "text": "Brown ran multiple ads calling Husted 'the face of data centers in Ohio' over tax deals as lieutenant governor; a leaked GOP memo called data centers the 'anchor' around Husted's neck",
+        "strength": "strong",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://www.eenews.net/articles/data-centers-heat-up-ohio-senate-race/"
+        }
+      },
+      "stateSignal": {
+        "text": "Gov. DeWine paused new grants of the data center sales tax exemption (May 2026) after vetoing its repeal in 2025; the legislature deadlocked on revamping it",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.ksat.com/tech/2026/05/28/ohio-suspends-data-center-tax-break-as-tech-firms-face-pressure-to-pay-the-cost-to-power-ai/"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "ai-salience",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Toss-up; AI or data centers in the race: Brown ran multiple ads calling Husted 'the face of data centers in Ohio' over tax deals as lieutenant governor; a leaked GOP memo called data centers the 'anchor' around Husted's neck.",
+      "trackedRaceId": null,
+      "status": "next"
+    },
+    {
+      "state": "OK",
+      "stateName": "Oklahoma",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Markwayne Mullin",
+        "party": "Republican"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent resigned (reported Mar. 24, 2026) to become Homeland Security Secretary; the appointee did not run",
+      "nominees": {
+        "democratic": "N'Kiyla Thomas",
+        "republican": "Kevin Hern",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved. OK not explicitly confirmed in snippet.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Kevin Hern",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "Aggregator lists ~57.2%",
+        "source": {
+          "title": "Result report",
+          "url": "https://gvwire.com/2026/11/03/republicans-hagerty-hern-win-senate-races-in-tennessee-oklahoma/"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": null,
+      "selected": false,
+      "criteriaMet": [
+        "open-seat"
+      ],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "OR",
+      "stateName": "Oregon",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Jeff Merkley",
+        "party": "Democratic"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Jeff Merkley",
+        "republican": "David Brock Smith",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid D",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Jeff Merkley",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "AP call Nov 3; ~57% early",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.opb.org/article/2026/11/03/oregon-state-senate-election-results-merkley-brock/"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "POWER Act (HB 3546, 2025) set up a separate rate class for 20 MW+ users. In July 2026 the PUC approved a ~29.7% PGE rate increase for data centers and large users",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://opb.org/article/2026/07/07/oregon-data-center-general-electric-rate-hikes"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "Rated Solid D; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "RI",
+      "stateName": "Rhode Island",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Jack Reed",
+        "party": "Democratic"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Jack Reed",
+        "republican": "Ray McKay",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid D",
+        "asOf": "pre-election",
+        "note": null,
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/senate/race/488666"
+        }
+      },
+      "result": {
+        "winner": "Jack Reed",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "~66.8% to 29.3% per Wikipedia (unofficial)",
+        "source": {
+          "title": "Result report",
+          "url": "https://bostonglobe.com/2026/11/03/metro/ri-election-representatives-amo-magaziner-senator-reed-whitehouse"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": null,
+      "selected": false,
+      "criteriaMet": [],
+      "reason": "Rated Solid D; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "SC",
+      "stateName": "South Carolina",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Darline Graham",
+        "party": "Republican",
+        "note": "Appointed after Sen. Lindsey Graham died on July 11, 2026"
+      },
+      "openSeat": false,
+      "openReason": "Appointed incumbent: Sen. Lindsey Graham died July 11, 2026, and his appointed successor, Darline Graham, ran",
+      "nominees": {
+        "democratic": "Annie Andrews",
+        "republican": "Darline Graham",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Lean R",
+        "asOf": "2026-10-20",
+        "note": "Solid R -> Likely R (Sept 23) -> Lean R (Oct 20)",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://political.org/2026/10/20/cook-political-report-shifts-minnesota-senate-race-toward-gop-south-carolina-toward-democrats/"
+        }
+      },
+      "result": {
+        "winner": "Annie Andrews",
+        "party": "Democratic",
+        "flipped": true,
+        "detail": "AP call 10:40 pm; Andrews 50.6%",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.wbtv.com/2026/11/04/democrat-annie-andrews-wins-us-senate-seat-south-carolina-ap-projects/"
+        }
+      },
+      "aiSignal": {
+        "text": "Andrews called for a two-year statewide moratorium on new data centers and accused Darline Graham of benefiting from ~$5M in data-center-linked PAC spending",
+        "strength": "strong",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://www.live5news.com/2026/09/28/senate-candidate-dr-annie-andrews-calls-moratorium-data-centers/"
+        }
+      },
+      "stateSignal": {
+        "text": "State-owned utility Santee Cooper adopted a special higher rate for data centers and large users, amid a broader energy bill limiting data center power incentives (date of rate action not confirmed)",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.yahoo.com/news/sc-state-owned-utility-enacts-215038682.html"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "ai-salience",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Lean R; AI or data centers in the race: Andrews called for a two-year statewide moratorium on new data centers and accused Darline Graham of benefiting from ~$5M in data-center-linked PAC spending.",
+      "trackedRaceId": null,
+      "status": "later"
+    },
+    {
+      "state": "SD",
+      "stateName": "South Dakota",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Mike Rounds",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": null,
+        "republican": "Mike Rounds",
+        "independent": "Brian Bengs"
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Mike Rounds",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "~60.5% to 39.5% per Wikipedia (unofficial)",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.dakotanewsnow.com/2026/11/04/mike-rounds-wins-re-election-us-senate/"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": null,
+      "selected": false,
+      "criteriaMet": [],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "TN",
+      "stateName": "Tennessee",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Bill Hagerty",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Marquita Bradshaw",
+        "republican": "Bill Hagerty",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "pre-election",
+        "note": "Cook, Sabato, and Inside Elections all Solid R per secondary summary",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/senate/race/488681"
+        }
+      },
+      "result": {
+        "winner": "Bill Hagerty",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "55.1% to 42.9% (unofficial)",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.wsmv.com/2026/11/04/hagerty-serve-second-us-senate-term-after-defeating-democrat-bradshaw/"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "xAI Colossus (Memphis): groups appealed the Shelby County permit for its gas turbines, alleging dozens ran unpermitted",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.datacenterdynamics.com/en/news/campaigners-appeal-decision-to-permit-gas-turbines-at-xais-memphis-data-center/"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "TX",
+      "stateName": "Texas",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "John Cornyn",
+        "party": "Republican"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent lost the May 26, 2026 Republican primary runoff to Ken Paxton",
+      "nominees": {
+        "democratic": "James Talarico",
+        "republican": "Ken Paxton",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Toss-up",
+        "asOf": "2026-08-20 (believed unchanged at close)",
+        "note": "Likely R -> Lean R after the runoff (May 26) -> Toss Up (Aug 20). Toss Up on Cook's Aug 20, 2026 ratings page; Cook's pre-election closing analysis says it kept 7 races in Toss Up, 6 of them R-held, which matches AK, IA, KS, ME, OH, TX + MI. Full closing table not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://axios.com/local/san-antonio/2026/08/20/texas-iowa-senate-election-races-midterms-close"
+        }
+      },
+      "result": {
+        "winner": "James Talarico",
+        "party": "Democratic",
+        "flipped": true,
+        "detail": "AP call; first Democratic statewide win in Texas in 30+ years",
+        "source": {
+          "title": "Result report",
+          "url": "https://www.kunc.org/npr-news/2026-11-03/democrat-james-talarico-wins-texas-senate-seat"
+        }
+      },
+      "aiSignal": {
+        "text": "Talarico ads accused Paxton of 'selling off Texas' to data center firms, tying data centers to cost of living and corruption (NPR/AdImpact analysis)",
+        "strength": "strong",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://npr.org/2026/09/05/nx-s1-5913671/ai-data-center-campaign-spending"
+        }
+      },
+      "stateSignal": {
+        "text": "SB 6 (signed June 2025) lets ERCOT curtail 75 MW+ large loads such as data centers in grid emergencies and adds interconnection cost and fee requirements",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.utilitydive.com/news/texas-law-gives-grid-operator-power-to-disconnect-data-centers-during-crisis/751587"
+        }
+      },
+      "selected": true,
+      "criteriaMet": [
+        "competitive",
+        "ai-salience",
+        "open-seat",
+        "state-activity",
+        "party-balance"
+      ],
+      "reason": "Rated Toss-up; open seat (incumbent lost the May 26, 2026 Republican primary runoff to Ken Paxton); AI or data centers in the race: Talarico ads accused Paxton of 'selling off Texas' to data center firms, tying data centers to cost of living and corruption (NPR/AdImpact analysis).",
+      "trackedRaceId": "tx-senate-2026",
+      "status": "tracked"
+    },
+    {
+      "state": "VA",
+      "stateName": "Virginia",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Mark Warner",
+        "party": "Democratic"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Mark Warner",
+        "republican": "Bert Mizusawa",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid D",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Mark Warner",
+        "party": "Democratic",
+        "flipped": false,
+        "detail": "Unofficial 2,175,916 to 1,384,613 (~22 pts)",
+        "source": {
+          "title": "Result report",
+          "url": "https://virginiamercury.com/2026/11/03/warner-wins-fourth-term-as-three-virginia-house-races-remain-undecided/"
+        }
+      },
+      "aiSignal": {
+        "text": "Data centers emerged as a key issue: Mizusawa wants a local veto and attacks Warner's past industry support; Warner proposed federal standards and disclosure but no moratorium",
+        "strength": "strong",
+        "source": {
+          "title": "AI or data center signal",
+          "url": "https://wset.com/news/local/data-centers-emerge-as-key-issue-in-virginia-us-senate-race"
+        }
+      },
+      "stateSignal": {
+        "text": "The 2026 budget (signed by Gov. Spanberger, June 2026) kept the data center sales tax exemption but created a first-of-its-kind $0.011/kWh electricity consumption tax on data centers",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.kiplinger.com/taxes/virginia-approves-first-data-center-power-tax"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "Rated Solid D; not rated competitive; AI or data centers were an issue, but the race was rated Solid and the seat was not open.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "WV",
+      "stateName": "West Virginia",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Shelley Moore Capito",
+        "party": "Republican"
+      },
+      "openSeat": false,
+      "openReason": null,
+      "nominees": {
+        "democratic": "Rachel Fetty Anderson",
+        "republican": "Shelley Moore Capito",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Shelley Moore Capito",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "~58.3% to 37.9% (unofficial; via Legis1 citing AP)",
+        "source": {
+          "title": "Result report",
+          "url": "https://legis1.com/news/west-virginia-senate-election-decisions"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "HB 2014 (2025) Power Generation and Consumption Act lets data centers run microgrids and exempts certified projects from local zoning; continuing local backlash in 2026",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://www.microgridknowledge.com/policy/article/55305988/west-virginia-microgrid-law-aims-to-attract-and-power-data-centers-then-share-the-wealth-they-generate"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "state-activity"
+      ],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    },
+    {
+      "state": "WY",
+      "stateName": "Wyoming",
+      "seatType": "regular",
+      "incumbent": {
+        "name": "Cynthia Lummis",
+        "party": "Republican"
+      },
+      "openSeat": true,
+      "openReason": "Incumbent retired",
+      "nominees": {
+        "democratic": "James Byrd",
+        "republican": "Harriet Hageman",
+        "independent": null
+      },
+      "rating": {
+        "rater": "Cook Political Report",
+        "rating": "Solid R",
+        "asOf": "2026-08-20",
+        "note": "From Cook's ratings page dated Aug 20, 2026; no later change found, but the closing table was not retrieved.",
+        "source": {
+          "title": "Cook Political Report Senate ratings",
+          "url": "https://cookpolitical.com/print/ratings/races/senate"
+        }
+      },
+      "result": {
+        "winner": "Harriet Hageman",
+        "party": "Republican",
+        "flipped": false,
+        "detail": "~65% (unofficial)",
+        "source": {
+          "title": "Result report",
+          "url": "https://cowboystatedaily.com/2026/11/03/harriet-hageman-wins-wyoming-u-s-senate-seat-over-james-byrd/"
+        }
+      },
+      "aiSignal": null,
+      "stateSignal": {
+        "text": "Cheyenne approved Tallgrass/Crusoe's 'Project Jade' AI data center, expanded to 2.7 GW of self-generated gas power (nearly triple the state's power use)",
+        "source": {
+          "title": "State AI or data center activity",
+          "url": "https://cowboystatedaily.com/2026/01/08/huge-cheyenne-data-center-grows-to-2-7-gigawatts-nearly-triple-state-power-use"
+        }
+      },
+      "selected": false,
+      "criteriaMet": [
+        "open-seat",
+        "state-activity"
+      ],
+      "reason": "Rated Solid R; not rated competitive; no AI or data center exchange between the candidates found.",
+      "trackedRaceId": null,
+      "status": null
+    }
+  ]
+}

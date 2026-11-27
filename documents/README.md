@@ -7,8 +7,16 @@ Working documents for the project (not part of the website).
   message (instructions plus 12 claims); paste ChatGPT's JSON reply back into the Claude session.
   Batches 01-03 first (claims still not or only partly confirmed), then 04-05 (corrected), then 06-12
   (confirmed, to raise to High confidence). `verify-list.csv` lists all 138 claims.
+  `certified-results.txt` asks for the official certified vote counts of each tracked race (AIPD-108).
+- `archive/`: the pages to archive (cited sources and every candidate's campaign pages) and
+  `archive_pages.py`, which you run on your own computer to save them in the Wayback Machine. Start with
+  `archive/README.md` (AIPD-101).
+- `senate-selection/races-2026.json`: sourced facts on all 35 Senate contests of 2026, from which the race list
+  on the Methodology page is drawn (AIPD-102).
+- `codebook/CHANGELOG.md`: codebook changes since the pilot draft; version 1.0-rc1 (AIPD-204).
+- `methods-appendix.md`: the methods appendix for reviewers, regenerated with `npm run appendix` (AIPD-504).
 - `backlog/`: the product backlog built from the project proposal, as Scrum stories with acceptance
   criteria, points and priority (Must-Must, Must, Should, Could, Won't). `backlog.csv` imports into Jira,
   Trello or GitHub Projects.
 
-Generated on 2026-11-26.
+Updated on 2026-11-27.

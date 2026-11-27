@@ -1,5 +1,6 @@
 import React from 'react';
-import { codebook, dimensions, resultLabel, domains, categoryLabel, partyLines, verification, CHECK_RESULTS, blocs, BLOC_IDS } from '../lib/data';
+import RaceSelection from '../components/RaceSelection';
+import { codebook, dimensions, resultLabel, domains, categoryLabel, partyLines, verification, CHECK_RESULTS, blocs, BLOC_IDS, results, raceById, placeOf, resultStatuses, certificationStatuses, certificationText } from '../lib/data';
 
 // How many checks ended in each result.
 const checkCounts = () => {
@@ -9,6 +10,7 @@ const checkCounts = () => {
 };
 
 const REPO_ISSUES = 'https://github.com/Abercrombie35/ai-policy-dashboard/issues';
+const APPENDIX = 'https://github.com/Abercrombie35/ai-policy-dashboard/blob/main/documents/methods-appendix.md';
 
 function MethodsView() {
   return (
@@ -20,6 +22,11 @@ function MethodsView() {
           research dataset: every finding should trace back to its sources.
         </p>
       </header>
+
+      <section id="race-selection">
+        <h3>Which Senate races, and why</h3>
+        <RaceSelection />
+      </section>
 
       <section>
         <h3>Labels on every record</h3>
@@ -184,6 +191,35 @@ function MethodsView() {
           gets a new version with status "Certified" and the official source. Unofficial figures are never silently
           replaced.
         </p>
+        <p>
+          Two-round elections, such as France's presidential election, record both rounds: the first round (with the two
+          candidates who advance) and the runoff, each with its own date and vote shares. The runoff decides the winner.
+        </p>
+        <h4 id="certification">Certification tracker</h4>
+        <p>
+          Where each state's official canvass stands. Certified figures come from the state's own results table and
+          are relayed by the project owner, because this project's build environment cannot open state election sites.
+        </p>
+        <div className="table-wrap" role="region" aria-label="Certification status of each election result" tabIndex={0}>
+          <table className="data-table">
+            <thead>
+              <tr><th scope="col">Race</th><th scope="col">Certification</th><th scope="col">Where it stands</th><th scope="col">Figures shown</th></tr>
+            </thead>
+            <tbody>
+              {results.map((r) => {
+                const race = raceById(r.raceId);
+                return (
+                  <tr key={r.id}>
+                    <th scope="row">{race ? `${race.office}: ${placeOf(race)}` : r.raceId}</th>
+                    <td>{certificationStatuses[r.certification?.status]?.label || 'Not recorded'}</td>
+                    <td>{certificationText(r)}</td>
+                    <td>{resultStatuses[r.resultStatus]?.label}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section>
@@ -216,6 +252,16 @@ function MethodsView() {
       <section>
         <h3>Codebook ({codebook.version})</h3>
         <p>{codebook.status}</p>
+        {(codebook.changelog || []).length > 0 && (
+          <details className="codebook-changelog">
+            <summary>Codebook changes since the pilot draft ({codebook.changelog.length})</summary>
+            <ul>
+              {codebook.changelog.map((c, i) => (
+                <li key={i}><strong>{c.version}</strong>, {c.date}: {c.summary}</li>
+              ))}
+            </ul>
+          </details>
+        )}
         <div className="table-wrap" role="region" aria-label="Codebook dimensions and categories" tabIndex={0}>
           <table className="data-table">
             <thead><tr><th scope="col">Dimension</th><th scope="col">Categories</th></tr></thead>
@@ -229,6 +275,16 @@ function MethodsView() {
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section>
+        <h3>Methods appendix</h3>
+        <p>
+          A <a href={APPENDIX} target="_blank" rel="noopener noreferrer">methods appendix</a> for reviewers is generated
+          from the same data as this page (<code>npm run appendix</code>). It covers the sample, labels, coding scheme,
+          verification counts, certification, party lines, archived sources, reliability results (pending the
+          inter-coder test) and the project's limitations.
+        </p>
       </section>
 
       <section>

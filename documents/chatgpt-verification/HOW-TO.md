@@ -48,3 +48,19 @@ What Claude does with your results:
 ChatGPT's replies are kept in `results/` (one file per batch) as the record of each check, and Claude's
 claim-by-claim decisions in `decisions/`. They are applied with `tools/import_chatgpt.py` (usage at the top of
 that file), which bumps each record's version, records the method and level, and updates verification.json.
+
+## Certified election results (AIPD-108)
+
+`certified-results.txt` asks ChatGPT for the official certified (or official canvass) figures of each tracked race,
+from the state election office only. Paste its JSON reply back to Claude; it is saved as
+`results/certified-NN.json` and applied with `tools/import_certified.py`, which:
+
+- gives a certified race a new version with status Certified, High confidence, the official source and the exact
+  vote counts, keeping the unofficial shares in its history;
+- only updates the certification status (and expected date) for races not yet certified;
+- stops without changing anything if the certified winner differs from the recorded one, a recorded candidate is
+  missing from the official table, or the votes do not add up to the stated total.
+
+Run it again after each state certifies: Michigan certified on Nov. 23, 2026; Connecticut completed its canvass on
+Nov. 25 (statement of vote early 2027); California certifies by Dec. 11; the Texas Legislature canvasses the
+governor's race in January 2027. The Methodology page shows where each race stands.
