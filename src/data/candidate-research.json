@@ -1546,7 +1546,7 @@
         "url": "https://ctnewsjunkie.com/2026/09/24/ai-regulation-takes-center-stage-as-campaign-issue/"
       },
       "publishedDate": "2026-04-21",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
       "coding": {
         "regulatoryOrientation": "innovation-first",
@@ -1571,7 +1571,7 @@
         "ai-comprehensive",
         "ai-preemption"
       ],
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -1582,6 +1582,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports and corrected: Date corrected from May to April 21, 2026, the day the Senate passed SB 5 by 32-4 (CT Mirror). The vote and his federal-level reasoning are confirmed. Raised to Medium confidence."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 03): confirmed, Medium confidence. His no vote on SB 5 on Apr. 21, 2026 (passed 32-4) is confirmed on the Senate roll call; his reason, that AI is better handled federally, is as reported by CT News Junkie, so Medium."
         }
       ]
     },
@@ -1644,12 +1649,12 @@
       "labelType": "source-summary",
       "text": "At a Brookings event, called restrictions on advanced chips Washington's main tool for prolonging America's frontier AI lead over China and said the U.S. should slow their spread to China for as long as it can.",
       "source": {
-        "title": "South China Morning Post (via The Star): Top Democrat says chip restrictions are \"key lever\" for US AI edge over China",
-        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/26/top-democrat-says-chip-restrictions-are-key-lever-for-us-ai-edge-over-china"
+        "title": "Brookings: AI on the Ballot, data centers and the 2026 midterms (transcript, Oct. 21, 2026)",
+        "url": "https://www.brookings.edu/wp-content/uploads/2026/10/aiet_20261021_ai_midterms_transcript.pdf"
       },
       "publishedDate": "2026-10-21",
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1671,7 +1676,7 @@
       "categories": [
         "ai-chips-china"
       ],
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1687,9 +1692,14 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Checked 2026-11-24 against other published reports and corrected: Date corrected to Oct. 21, 2026, the day of the Brookings \"AI on the Ballot\" event (Oct. 26 is the date of the news report). The statement is confirmed. Raised to Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 03): confirmed, High confidence. Confirmed in the Brookings transcript of the Oct. 21, 2026 event (\"the one real lever we have there ... is just slowing the dispersion of advanced chips into China\"), which now serves as the source."
         }
       ],
-      "dateNote": "Said at a Brookings event on Oct. 21, 2026; reported by the South China Morning Post on Oct. 26."
+      "dateNote": "Said at a Brookings event on Oct. 21, 2026."
     },
     {
       "id": "cr-ct-house04-himes-2",
