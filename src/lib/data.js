@@ -16,6 +16,7 @@ import publicOpinionData from '../data/public-opinion.json';
 import trackersData from '../data/trackers.json';
 import archivesData from '../data/archives.json';
 import senateSelectionData from '../data/senate-race-selection.json';
+import scenariosData from '../data/scenarios.json';
 
 const raceModules = import.meta.glob('../data/races/*.json', { eager: true, import: 'default' });
 
@@ -361,3 +362,6 @@ export const archivedCount = () => archiveIndex.size;
 
 // The 2026 Senate sample and its selection criteria (AIPD-102).
 export const senateSelection = senateSelectionData;
+
+// Conditional regulatory scenarios (AIPD-503): labelled projections.
+export const scenarios = scenariosData;

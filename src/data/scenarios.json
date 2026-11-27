@@ -1,0 +1,77 @@
+{
+  "note": "Conditional regulatory scenarios (AIPD-503). Each is a projection by the project, labelled as such: it states its assumptions, the coded evidence it rests on (record, bill and party-line ids) and what would change it. These are not predictions; confidence is never higher than Medium, and the assumptions matter more than the conclusion.",
+  "asOf": "2026-11-27",
+  "scenarios": [
+    {
+      "id": "sc-dc-cost-recovery",
+      "domain": "data-centers",
+      "level": "federal",
+      "title": "A federal law making data centers pay their own grid costs",
+      "projection": "If the new Congress takes up data center electricity costs, the likeliest area of agreement is a law requiring large new loads such as AI data centers to pay for the grid upgrades they need, stronger than the 2026 House bill but short of a moratorium.",
+      "assumptions": [
+        "Democrats hold majorities in both chambers from January 2027, as reported after the 2026 election.",
+        "The president continues to back his voluntary Ratepayer Protection Pledge and signs a bill presented as codifying it.",
+        "No court or regulatory ruling settles cost allocation first."
+      ],
+      "evidence": ["us-ratepayer-protection-act", "us-grid-savings-act", "us-hr9777", "pl-d-data-centers", "pl-r-data-centers", "cr-oh-sen-husted-1", "cr-ks-sen-marshall-5", "cr-me-sen-collins-2", "cr-oh-sen-brown-3"],
+      "reasoning": "Both parties' candidates and leaders in the tracked races say data centers should not raise other customers' bills. The House passed the Ratepayer Protection Act 417-3, and Senate Democrats blocked it only because they wanted the duty to be mandatory (the GRID Savings Act). The president has urged Congress to codify his pledge.",
+      "wouldChangeIf": ["Leaders of either party make a moratorium, not cost recovery, their priority.", "The administration opposes mandatory cost recovery.", "Federal regulators (FERC) adopt large-load interconnection rules that make a law unnecessary."],
+      "labelType": "projection",
+      "confidence": "medium",
+      "lastReviewed": "2026-11-27"
+    },
+    {
+      "id": "sc-preemption-stalls",
+      "domain": "ai-general",
+      "level": "federal",
+      "title": "Federal preemption of state AI laws stalls; states keep legislating",
+      "projection": "If Congress does not pass a preemption law, state AI laws such as California's SB 53, Connecticut's SB 5 and Texas's TRAIGA stay in force unless courts strike them, and more states legislate in 2027.",
+      "assumptions": [
+        "A Democratic Congress does not pass the broad preemption law the December 2025 executive order recommends.",
+        "Courts do not uphold executive-branch preemption of state AI laws in the Justice Department's challenges.",
+        "Federal funding conditions tied to state AI laws are not enforced in a way that makes states repeal them."
+      ],
+      "evidence": ["pl-r-preemption", "pl-d-preemption", "us-states-right-to-regulate-ai", "fl-2025-desantis-preemption-statement", "ca-2025-sb53", "ct-2026-sb5", "tx-89r-hb149", "cr-me-sen-collins-1", "cr-fl-gov-donalds-1"],
+      "reasoning": "The order relies on litigation, funding levers and a recommended law. Senate Democrats introduced a bill to block it, and the 2025 attempt at a 10-year moratorium was stripped 99-1, with Republicans such as Collins co-sponsoring the amendment. Republican governors and candidates (DeSantis, Donalds) also defend state authority.",
+      "wouldChangeIf": ["A bipartisan federal framework passes with preemption as its price.", "An appeals court upholds the order's approach.", "States roll back laws under funding pressure."],
+      "labelType": "projection",
+      "confidence": "medium",
+      "lastReviewed": "2026-11-27"
+    },
+    {
+      "id": "sc-local-control",
+      "domain": "data-centers",
+      "level": "state",
+      "title": "Local control and cost rules spread faster than statewide moratoriums",
+      "projection": "If the 2027 sessions act on data centers, state laws giving localities a veto and making data centers bear their own costs are more likely than statewide moratoriums, which so far have failed or been vetoed.",
+      "assumptions": [
+        "Governors keep their 2026 positions: open to data centers with conditions, rather than bans.",
+        "Local moratoriums (Kansas and Iowa counties, East Lyme) continue without state preemption of local zoning."
+      ],
+      "evidence": ["fl-2026-sb484", "ct-2027-duff-moratorium", "cr-me-sen-jackson-5", "cr-fl-gov-donalds-5", "cr-ks-sen-marshall-1", "cr-ks-sen-hamilton-1", "cr-oh-sen-husted-3", "cr-me-sen-collins-3", "us-s4214"],
+      "reasoning": "Florida enacted cost and local-control rules (SB 484). Maine's statewide moratorium was vetoed, and federal moratorium bills have not moved. Candidates of both parties in Kansas, Ohio, Maine and Florida favour local say and cost protection over statewide bans.",
+      "wouldChangeIf": ["A statewide moratorium is enacted (for example Connecticut's planned 2027 bill).", "Polls showing large local opposition translate into governors backing bans."],
+      "labelType": "projection",
+      "confidence": "low",
+      "lastReviewed": "2026-11-27"
+    },
+    {
+      "id": "sc-binding-safety",
+      "domain": "ai-general",
+      "level": "federal",
+      "title": "Binding rules for frontier AI developers pass one chamber but stall",
+      "projection": "If Democrats bring independent-testing and liability bills for advanced AI to the floor, they may pass with Democratic votes but face a presidential veto or a filibuster, leaving state laws such as SB 53 and SB 5 as the main binding rules.",
+      "assumptions": [
+        "Democrats introduce the independent-testing and liability bills reported after the election.",
+        "The administration keeps favouring voluntary commitments over binding mandates.",
+        "Too few Republicans join to overcome a filibuster or a veto."
+      ],
+      "evidence": ["pl-d-safety", "pl-r-safety", "ca-2025-sb53", "ct-2026-sb5", "cr-me-sen-jackson-4"],
+      "reasoning": "Democratic leaders say they will move testing and liability bills. The Republican safety line is Low confidence (the voluntary pact could not be confirmed), so the administration's response is the least certain part of this scenario.",
+      "wouldChangeIf": ["Republican leaders back a testing requirement.", "A major AI incident shifts positions.", "The administration's voluntary approach is confirmed or reversed."],
+      "labelType": "projection",
+      "confidence": "low",
+      "lastReviewed": "2026-11-27"
+    }
+  ]
+}

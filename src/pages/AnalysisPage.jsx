@@ -101,9 +101,13 @@ function AnalysisPage() {
       <header className="page-head">
         <h2>Policy analysis: deviation from the party line</h2>
         <p>
-          Where and when candidates in the four tracked races depart from their party's line, in the two policy areas
+          Where and when candidates in the tracked U.S. races depart from their party's line, in the two policy areas
           this project studies: <strong>data centers</strong> and <strong>everything else in AI</strong>. Within each
           area, what candidates <strong>say</strong> is kept apart from what they <strong>propose</strong>.
+        </p>
+        <p>
+          Looking ahead: <a href="#/scenarios">conditional scenarios</a> for state and federal AI rules, each labelled as
+          a projection with its assumptions and evidence.
         </p>
         <div className="definition-grid">
           {PARTIES.map((p) => (

@@ -513,6 +513,25 @@ if (chosenRaces.length < 10 || chosenRaces.length > 20) fail('senate-race-select
   if (r.selected && !['tracked', 'next', 'later'].includes(r.status)) fail(w, 'a selected race needs status tracked, next or later');
 });
 
+// Conditional scenarios (AIPD-503): projections, labelled, with assumptions and coded evidence.
+const scenarioIds = new Set();
+const evidenceIds = new Set([...seenIds, ...partyLines.positions.map((p) => p.id)]);
+(read('scenarios.json').scenarios || []).forEach((sc, i) => {
+  const w = `scenarios.json scenarios[${i}] (${sc.id})`;
+  if (!sc.id || scenarioIds.has(sc.id)) fail(w, 'needs a unique id');
+  scenarioIds.add(sc.id);
+  if (sc.labelType !== 'projection') fail(w, 'a scenario must be labelled "projection"');
+  if (!['medium', 'low'].includes(sc.confidence)) fail(w, 'a projection is Medium or Low confidence, never High');
+  if (!sc.title || !sc.projection || !sc.reasoning) fail(w, 'needs title, projection and reasoning');
+  if (!(sc.assumptions || []).length) fail(w, 'state at least one assumption');
+  if (!(sc.wouldChangeIf || []).length) fail(w, 'say what would change it');
+  if (!(sc.evidence || []).length) fail(w, 'link the coded evidence it rests on');
+  (sc.evidence || []).forEach((id) => {
+    if (!evidenceIds.has(id)) fail(w, `evidence "${id}" is not a record, bill or party line`);
+  });
+  checkDate(w, 'lastReviewed', sc.lastReviewed, true);
+});
+
 // Archived copies (AIPD-101): campaign pages and cited statements, keyed by
 // the original URL. Missing archives are a warning, not a failure: archiving
 // is done by the project owner outside this environment.
