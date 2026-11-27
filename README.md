@@ -264,7 +264,8 @@ Key files:
 - src/components/RaceModal.jsx: the 80% race pop-up over the map.
 - src/components/ItemCard.jsx: the labeled record card used everywhere.
 - src/components/BillCard.jsx: a bill record.
-- src/components/ElectionResult.jsx: the election-result panel and badges.
+- src/components/ElectionResult.jsx: the election-result panel and badges, with a table per round for two-round
+  elections (France: `rounds` in results.json, first round with the two who advance, then the runoff).
 - src/lib/analysis.js, src/components/Analysis.jsx, src/pages/AnalysisPage.jsx:
   party-line deviation analysis.
 - src/components/ProposalsPanel.jsx: proposed bills and moratoriums.

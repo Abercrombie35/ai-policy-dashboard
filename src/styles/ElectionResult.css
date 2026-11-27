@@ -44,3 +44,5 @@
 
 .result-summary { font-size: 0.82rem; color: #7eeadb; font-weight: 600; }
 .result-summary.pending { color: #7a8fa3; font-weight: 400; }
+
+.result-round h4 { margin: 12px 0 6px; font-size: 0.95rem; }

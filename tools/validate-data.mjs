@@ -130,8 +130,10 @@ const raceFiles = readdirSync(join(root, 'races')).filter((f) => f.endsWith('.js
 const raceIds = new Set();
 const raceCandidates = {};
 const raceCountry = {};
+const raceById = {};
 for (const file of raceFiles) {
   const race = read(join('races', file));
+  raceById[race.id] = race;
   const where = `races/${file}`;
   if (`${race.id}.json` !== file) fail(where, `file name must match race id "${race.id}"`);
   if (raceIds.has(race.id)) fail(where, 'duplicate race id');
@@ -304,6 +306,36 @@ results.forEach((r, i) => {
     if (!s.url) fail(w, 'each additional source needs a url');
   });
   if (r.resultStatus === 'certified' && r.confidence !== 'high') fail(w, 'a certified result should cite the official canvass with high confidence');
+  // Two-round elections (AIPD-404): a table per round; the deciding round is
+  // also the result's main candidate list.
+  const race = raceById[r.raceId];
+  if (r.rounds) {
+    if (!race?.runoffDate) fail(w, 'rounds are only for two-round elections (the race needs a runoffDate)');
+    if (!Array.isArray(r.rounds) || r.rounds.length < 1 || r.rounds.length > 2) fail(w, 'rounds must list the first round and, if held, the runoff');
+    (r.rounds || []).forEach((rd, k) => {
+      const rw = `${w} round ${rd.round}`;
+      if (rd.round !== k + 1) fail(rw, 'rounds must be numbered 1 then 2, in order');
+      const due = k === 0 ? race?.electionDate : race?.runoffDate;
+      if (rd.date !== due) fail(rw, `date ${rd.date} should be the race's ${k === 0 ? 'electionDate' : 'runoffDate'} (${due})`);
+      let sum = 0;
+      (rd.candidates || []).forEach((c) => {
+        if (!c.name || !c.party) fail(rw, 'each candidate needs name and party');
+        if (c.candidateId != null && !known.has(c.candidateId)) fail(rw, `candidateId "${c.candidateId}" is not in the race`);
+        if (c.votePct != null && (typeof c.votePct !== 'number' || c.votePct < 0 || c.votePct > 100)) fail(rw, `votePct for ${c.name} must be 0-100`);
+        sum += c.votePct || 0;
+      });
+      if (sum > 100.5) fail(rw, `vote shares add up to ${sum.toFixed(1)}%`);
+      (rd.advancing || []).forEach((n) => {
+        if (!(rd.candidates || []).some((c) => c.name === n)) fail(rw, `advancing candidate ${n} is not in this round`);
+      });
+    });
+    const last = r.rounds[r.rounds.length - 1];
+    const sameList = JSON.stringify((last?.candidates || []).map((c) => [c.name, c.votePct])) === JSON.stringify((r.candidates || []).map((c) => [c.name, c.votePct]));
+    if (!sameList) fail(w, "the result's candidates must repeat the deciding round's candidates and shares");
+    if (r.rounds.length === 2 && (r.rounds[0].advancing || []).length !== 2) fail(w, 'the first round must name the two candidates who advanced to the runoff');
+  } else if (race?.runoffDate && r.resultStatus) {
+    fail(w, 'a two-round election records its rounds (rounds: [{round: 1, ...}, {round: 2, ...}])');
+  }
   // Certification tracking (AIPD-108): where each state's canvass stands.
   const cert = r.certification;
   if (!cert) fail(w, 'certification is required (status certified, canvass-complete or pending)');

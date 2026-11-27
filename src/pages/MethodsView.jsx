@@ -184,6 +184,10 @@ function MethodsView() {
           gets a new version with status "Certified" and the official source. Unofficial figures are never silently
           replaced.
         </p>
+        <p>
+          Two-round elections, such as France's presidential election, record both rounds: the first round (with the two
+          candidates who advance) and the runoff, each with its own date and vote shares. The runoff decides the winner.
+        </p>
         <h4 id="certification">Certification tracker</h4>
         <p>
           Where each state's official canvass stands. Certified figures come from the state's own results table and
