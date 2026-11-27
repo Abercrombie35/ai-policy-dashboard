@@ -660,5 +660,22 @@
       "id": "far-right",
       "label": "Far right"
     }
+  ],
+  "certificationStatuses": [
+    {
+      "id": "certified",
+      "label": "Certified",
+      "description": "The state's canvassing authority has certified the results. Once the certified figures are entered, the result's status becomes Certified."
+    },
+    {
+      "id": "canvass-complete",
+      "label": "Canvass complete",
+      "description": "The official canvass is complete; the formal certified statement of vote is still to come."
+    },
+    {
+      "id": "pending",
+      "label": "Not yet certified",
+      "description": "The results have not been certified; the expected date is shown when an official source gives one."
+    }
   ]
 }

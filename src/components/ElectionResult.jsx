@@ -1,7 +1,7 @@
 import React from 'react';
 import { RecordMeta } from './ItemCard';
 import { CheckNote } from './PolicyBox';
-import { resultForRace, hasHiddenResult, resultLabel, resultStatuses, confidenceLevels } from '../lib/data';
+import { resultForRace, hasHiddenResult, resultLabel, resultStatuses, confidenceLevels, certificationText } from '../lib/data';
 import { useDrafts } from '../lib/drafts';
 import '../styles/ElectionResult.css';
 
@@ -110,6 +110,17 @@ function ElectionResult({ race }) {
       </div>
 
       <p className="result-asof">{result.figuresAsOf}</p>
+      {result.certification && (
+        <p className={`result-cert cert-${result.certification.status}`}>
+          {certificationText(result)}
+          {result.certification.source?.url && (
+            <>
+              {' '}
+              <a href={result.certification.source.url} target="_blank" rel="noopener noreferrer">Official notice</a>
+            </>
+          )}
+        </p>
+      )}
       {result.context && <p className="result-context">{result.context}</p>}
 
       <RecordMeta record={result} />

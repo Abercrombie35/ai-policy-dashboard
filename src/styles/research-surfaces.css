@@ -82,7 +82,7 @@
 .page-shell :is(.panel-note, .section-note, .dimension-note, .empty-note,
   .source-links, .quote-meta, .q-text, .missing, .date-note, .record-publication,
   .race-meta, .race-source, .race-counts, .questionnaire, .column-name,
-  .signal-candidate, .result-call, .result-asof, .result-context, .party-note,
+  .signal-candidate, .result-call, .result-asof, .result-cert, .result-context, .party-note,
   .proposal-meta, .proposal-source, .ev-date, .ev-source, .cand-race,
   .cell-date, .cell-line, .tl-date, .tl-meta, .tl-source, .coding-note) {
   color: var(--research-muted);

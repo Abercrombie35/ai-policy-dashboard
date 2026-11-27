@@ -33,7 +33,10 @@
 .meter-fill.other { background: #8a9bb0; }
 
 .result-asof,
+.result-cert,
 .result-context { margin: 0; color: #9eb7d7; font-size: 0.85rem; }
+.result-cert { padding-left: 10px; border-left: 3px solid var(--research-control, #9aafa5); }
+.result-cert.cert-certified { border-left-color: var(--research-ink, #253e46); }
 .result-history { margin: 0; }
 .result-sources summary { cursor: pointer; color: #9eb7d7; font-size: 0.82rem; }
 .result-sources ul { margin: 8px 0 0; padding-left: 18px; font-size: 0.82rem; }

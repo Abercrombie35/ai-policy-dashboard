@@ -89,6 +89,28 @@ export const billStatuses = byId(codebook.billStatuses);
 export const dimensions = codebook.dimensions;
 export const resultLabel = codebook.resultLabel;
 export const resultStatuses = byId(codebook.resultStatuses);
+export const certificationStatuses = byId(codebook.certificationStatuses || []);
+
+// "Nov. 23, 2026" for an ISO date; other text (e.g. "January 2027") as is.
+const MONTHS = ['Jan.', 'Feb.', 'March', 'April', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
+export const shortDate = (s) => {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || '');
+  return m ? `${MONTHS[+m[2] - 1]} ${+m[3]}, ${m[1]}` : s;
+};
+
+// One sentence on where a result's certification stands (AIPD-108).
+export function certificationText(result) {
+  const c = result.certification;
+  if (!c) return null;
+  if (c.status === 'certified') {
+    return `Certified ${shortDate(c.date)} by the ${c.by}.${c.figuresEntered ? '' : ' The certified figures have not been entered yet; the shares shown are unofficial.'}`;
+  }
+  if (c.status === 'canvass-complete') {
+    return `Official canvass completed ${shortDate(c.date)} (${c.by}).${c.expected ? ` The certified statement of vote is expected ${shortDate(c.expected)}.` : ''}`;
+  }
+  const due = c.expected ? ` Expected ${/^\d{4}-/.test(c.expected) ? 'by ' : ''}${shortDate(c.expected)}${c.by ? ` (${c.by})` : ''}.` : '';
+  return `Not yet certified.${c.note ? ` ${c.note}` : due}`;
+}
 export const policyQuestions = codebook.policyQuestions;
 export const questionById = byId(codebook.policyQuestions);
 export const tracks = byId(codebook.tracks);

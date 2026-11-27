@@ -1,5 +1,5 @@
 import React from 'react';
-import { codebook, dimensions, resultLabel, domains, categoryLabel, partyLines, verification, CHECK_RESULTS, blocs, BLOC_IDS } from '../lib/data';
+import { codebook, dimensions, resultLabel, domains, categoryLabel, partyLines, verification, CHECK_RESULTS, blocs, BLOC_IDS, results, raceById, placeOf, resultStatuses, certificationStatuses, certificationText } from '../lib/data';
 
 // How many checks ended in each result.
 const checkCounts = () => {
@@ -184,6 +184,31 @@ function MethodsView() {
           gets a new version with status "Certified" and the official source. Unofficial figures are never silently
           replaced.
         </p>
+        <h4 id="certification">Certification tracker</h4>
+        <p>
+          Where each state's official canvass stands. Certified figures come from the state's own results table and
+          are relayed by the project owner, because this project's build environment cannot open state election sites.
+        </p>
+        <div className="table-wrap" role="region" aria-label="Certification status of each election result" tabIndex={0}>
+          <table className="data-table">
+            <thead>
+              <tr><th scope="col">Race</th><th scope="col">Certification</th><th scope="col">Where it stands</th><th scope="col">Figures shown</th></tr>
+            </thead>
+            <tbody>
+              {results.map((r) => {
+                const race = raceById(r.raceId);
+                return (
+                  <tr key={r.id}>
+                    <th scope="row">{race ? `${race.office}: ${placeOf(race)}` : r.raceId}</th>
+                    <td>{certificationStatuses[r.certification?.status]?.label || 'Not recorded'}</td>
+                    <td>{certificationText(r)}</td>
+                    <td>{resultStatuses[r.resultStatus]?.label}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section>

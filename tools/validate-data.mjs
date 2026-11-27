@@ -17,6 +17,7 @@ const BILL_STATUSES = ids(codebook.billStatuses);
 const DIMENSIONS = Object.fromEntries(codebook.dimensions.map((d) => [d.id, d]));
 const RESULT_LABEL = codebook.resultLabel.id;
 const RESULT_STATUSES = ids(codebook.resultStatuses);
+const CERT_STATUSES = ids(codebook.certificationStatuses || []);
 const STATES = new Set(Object.keys(read('us-states-geo.json').states));
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 // Publication, status and evidence dates may be partial (year or year-month).
@@ -303,6 +304,18 @@ results.forEach((r, i) => {
     if (!s.url) fail(w, 'each additional source needs a url');
   });
   if (r.resultStatus === 'certified' && r.confidence !== 'high') fail(w, 'a certified result should cite the official canvass with high confidence');
+  // Certification tracking (AIPD-108): where each state's canvass stands.
+  const cert = r.certification;
+  if (!cert) fail(w, 'certification is required (status certified, canvass-complete or pending)');
+  else {
+    if (!CERT_STATUSES.has(cert.status)) fail(w, `certification.status "${cert.status}" is not in the codebook`);
+    if (cert.date != null && !DATE.test(cert.date)) fail(w, 'certification.date must be YYYY-MM-DD');
+    if (cert.status !== 'pending' && (!cert.date || !cert.by || !cert.source?.url)) fail(w, 'a certified or completed canvass needs its date, authority (by) and official source');
+    if (cert.status === 'pending' && cert.date) fail(w, 'a pending certification has no date yet; use "expected" for the due date');
+    if (typeof cert.figuresEntered !== 'boolean') fail(w, 'certification.figuresEntered must be true or false');
+    if (r.resultStatus === 'certified' && !(cert.status === 'certified' && cert.figuresEntered)) fail(w, 'status Certified needs a certified canvass with its figures entered');
+    if (cert.figuresEntered && r.resultStatus !== 'certified') fail(w, 'certified figures are entered, so the result status should be Certified');
+  }
 });
 
 // Voter priorities: published polls on which issues mattered most to voters

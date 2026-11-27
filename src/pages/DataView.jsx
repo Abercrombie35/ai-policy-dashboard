@@ -83,14 +83,16 @@ function resultRows(includeDrafts) {
     const race = raceById(r.raceId);
     for (const c of r.candidates) {
       rows.push([
-        r.id, r.raceId, race?.state, race?.office, race?.cycle, r.labelType, r.resultStatus, c.name, c.party,
+        r.id, r.raceId, race?.state, race?.office, race?.cycle, r.labelType, r.resultStatus, r.certification?.status,
+        r.certification?.date ?? r.certification?.expected, c.name, c.party,
         c.candidateId, c.votePct, c.votes, c.name === r.winner.name, r.figuresAsOf, r.source?.title, r.source?.url,
         r.confidence, r.lastVerified, r.version,
       ]);
     }
   }
   return toCsv(
-    ['result_id', 'race_id', 'state', 'office', 'cycle', 'label_type', 'result_status', 'candidate_name', 'party',
+    ['result_id', 'race_id', 'state', 'office', 'cycle', 'label_type', 'result_status', 'certification_status',
+      'certification_date_or_expected', 'candidate_name', 'party',
       'candidate_id', 'vote_pct', 'votes', 'is_winner', 'figures_as_of', 'source_title', 'source_url', 'confidence',
       'last_verified', 'version'],
     rows,
