@@ -494,6 +494,28 @@ for (const id of [...checkable.keys(), ...[...extraIds].filter((x) => x.includes
   if (!verification.checks?.[id]) fail(`verification.json`, `no check recorded for ${id}`);
 }
 
+// Archived copies (AIPD-101): campaign pages and cited statements, keyed by
+// the original URL. Missing archives are a warning, not a failure: archiving
+// is done by the project owner outside this environment.
+const warnings = [];
+const archives = read('archives.json').pages || [];
+const ARCHIVE_HOSTS = /^https:\/\/(web\.archive\.org\/web\/\d{8,14}|perma\.cc\/|archive\.(ph|today|is)\/)/;
+const archivedUrls = new Set();
+archives.forEach((a, i) => {
+  const w = `archives.json pages[${i}] (${a.url})`;
+  if (!a.url || !/^https?:\/\//.test(a.url)) fail(w, 'url must be the original http(s) address');
+  if (!ARCHIVE_HOSTS.test(a.archiveUrl || '')) fail(w, 'archiveUrl must be a Wayback Machine snapshot (web.archive.org/web/<timestamp>/...), Perma.cc or archive.today link');
+  if (!DATE.test(a.capturedOn || '')) fail(w, 'capturedOn must be YYYY-MM-DD');
+  if (archivedUrls.has(a.url)) fail(w, 'duplicate url; keep one archived copy per page');
+  archivedUrls.add(a.url);
+});
+const researchRecords = read('candidate-research.json').records;
+const unarchived = researchRecords.filter((r) => r.source?.url && !archivedUrls.has(r.source.url) && !/^https:\/\/web\.archive\.org\/web\//.test(r.source.url));
+if (unarchived.length) {
+  warnings.push(`${unarchived.length} of ${researchRecords.length} candidate records cite a page with no archived copy yet (AIPD-101), e.g. ${unarchived.slice(0, 3).map((r) => r.id).join(', ')}. See documents/archive/README.md.`);
+}
+
+if (warnings.length) console.warn(`Warning:\n- ${warnings.join('\n- ')}`);
 if (errors.length) {
   console.error(`Data validation failed with ${errors.length} problem(s):\n- ${errors.join('\n- ')}`);
   process.exit(1);

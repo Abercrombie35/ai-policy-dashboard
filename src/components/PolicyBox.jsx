@@ -1,5 +1,5 @@
 import React from 'react';
-import { headlineOf, placeOf, billStatuses, trackOf, checkOf, CHECK_RESULTS, trackerName } from '../lib/data';
+import { headlineOf, placeOf, billStatuses, trackOf, checkOf, CHECK_RESULTS, trackerName, archiveOf } from '../lib/data';
 import '../styles/PolicyBox.css';
 
 const tintOf = (party) => {
@@ -131,6 +131,18 @@ export function PolicyBox({ record, party, bloc, race, candidate, refNum, refPre
 }
 
 // The numbered sources for a group of boxes, listed under the group.
+// Link to the archived copy of a cited page, when one has been captured.
+export function ArchivedCopy({ url }) {
+  const a = archiveOf(url);
+  if (!a) return null;
+  return (
+    <span className="src-archive">
+      {' '}·{' '}
+      <a href={a.archiveUrl} target="_blank" rel="noopener noreferrer" title={`Archived copy captured ${a.capturedOn}`}>archived copy</a>
+    </span>
+  );
+}
+
 export function SourceList({ index, refPrefix }) {
   if (index.list.length === 0) return null;
   return (
@@ -139,6 +151,7 @@ export function SourceList({ index, refPrefix }) {
         <li key={n} id={`${refPrefix}-${n}`}>
           <span className="src-n">[{n}]</span>{' '}
           <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title || source.url}</a>
+          <ArchivedCopy url={source.url} />
           {primary && <span className="src-primary" title="Wording and date checked against this primary source (High confidence)"> · primary source checked</span>}
           {also.length > 0 && (
             <span className="src-check">

@@ -262,6 +262,9 @@ Key files:
   bills).
 - src/components/RaceView.jsx, CandidateComparison.jsx: race page and tabs.
 - src/components/RaceModal.jsx: the 80% race pop-up over the map.
+- src/data/archives.json, documents/archive/: archived copies of cited pages and campaign issue pages (AIPD-101).
+  `documents/archive/archive_pages.py` captures them in the Wayback Machine (run on your own computer);
+  `tools/import_archives.py` imports the results and rebuilds the list of pages to archive.
 - src/components/ItemCard.jsx: the labeled record card used everywhere.
 - src/components/BillCard.jsx: a bill record.
 - src/components/ElectionResult.jsx: the election-result panel and badges, with a table per round for two-round

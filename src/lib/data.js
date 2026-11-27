@@ -14,6 +14,7 @@ import verificationData from '../data/verification.json';
 import voterPrioritiesData from '../data/voter-priorities.json';
 import publicOpinionData from '../data/public-opinion.json';
 import trackersData from '../data/trackers.json';
+import archivesData from '../data/archives.json';
 
 const raceModules = import.meta.glob('../data/races/*.json', { eager: true, import: 'default' });
 
@@ -351,3 +352,8 @@ export function countRecords() {
   const drafts = byConfidence.unverified || 0;
   return { total: all.length, sourced: all.length - drafts, drafts, byConfidence };
 }
+
+// Archived copies of cited pages (AIPD-101), keyed by the original URL.
+const archiveIndex = new Map((archivesData.pages || []).map((a) => [a.url, a]));
+export const archiveOf = (url) => (url ? archiveIndex.get(url) || null : null);
+export const archivedCount = () => archiveIndex.size;
