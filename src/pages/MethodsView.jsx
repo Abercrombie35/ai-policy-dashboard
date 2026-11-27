@@ -9,6 +9,7 @@ const checkCounts = () => {
 };
 
 const REPO_ISSUES = 'https://github.com/Abercrombie35/ai-policy-dashboard/issues';
+const APPENDIX = 'https://github.com/Abercrombie35/ai-policy-dashboard/blob/main/documents/methods-appendix.md';
 
 function MethodsView() {
   return (
@@ -268,6 +269,16 @@ function MethodsView() {
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section>
+        <h3>Methods appendix</h3>
+        <p>
+          A <a href={APPENDIX} target="_blank" rel="noopener noreferrer">methods appendix</a> for reviewers is generated
+          from the same data as this page (<code>npm run appendix</code>). It covers the sample, labels, coding scheme,
+          verification counts, certification, party lines, archived sources, reliability results (pending the
+          inter-coder test) and the project's limitations.
+        </p>
       </section>
 
       <section>
