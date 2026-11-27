@@ -2417,23 +2417,19 @@
       "level": "medium"
     },
     "pl-d-harmful#0": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Multiple sources confirm Cruz and Klobuchar sponsored the Take It Down Act, which was signed May 19, 2025.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Sen. Cruz's release: the Take It Down Act was introduced by Sens. Ted Cruz (R) and Amy Klobuchar (D). Clarified that May 19, 2025 is the date it was signed into law, not introduced.",
       "sources": [
         {
-          "title": "Sen. Klobuchar: Victims of explicit deepfakes will now be able to take legal action against people who create them",
-          "url": "https://www.klobuchar.senate.gov/public/index.cfm/2025/5/victims-of-explicit-deepfakes-will-now-be-able-to-take-legal-action-against-people-who-create-them"
-        },
-        {
-          "title": "WHYY (AP): President Trump signed the Take It Down Act, addressing nonconsensual deepfakes",
-          "url": "https://whyy.org/articles/trump-take-it-down-act-nonconsensual-deepfakes/"
-        },
-        {
-          "title": "Orrick: TAKE IT DOWN Act Becomes Law",
-          "url": "https://www.orrick.com/insights/2025/05/TAKE-IT-DOWN-Act-Becomes-Law"
+          "title": "Cruz-Klobuchar Bill to Protect Teenagers from Deepfake Revenge Porn Unanimously Passes the Senate",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/cruz-klobuchar-bill-to-protect-teenagers-from-deepfake-revenge-porn-unanimously-passes-the-senate"
         }
-      ]
+      ],
+      "quote": "introduced by U.S. Senate Commerce Committee Chairman Ted Cruz (R-Texas) and Senator Amy Klobuchar (D-Minn.)",
+      "level": "high"
     },
     "pl-d-preemption#0": {
       "result": "not-confirmed",
@@ -2455,209 +2451,185 @@
       "level": "low"
     },
     "pl-d-preemption#1": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Markey's office and Axios confirm his Dec. 2025 bill and Schatz's separate effort to block the order. Schatz's GUARDRAILS Act followed in March 2026.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Corrected the date: Sen. Ed Markey's release shows he introduced the States' Right to Regulate AI Act on Dec. 17, 2025, two days before the Axios report, with Democratic cosponsors and Sen. Bernie Sanders. Sen. Schatz's own action against the order could not be confirmed and was removed. Markey's release is now the source.",
       "sources": [
         {
-          "title": "Axios: Senate Dems fight back on Trump's AI order",
-          "url": "https://www.axios.com/2025/12/19/trump-democrats-fight-back-ai-order"
-        },
-        {
-          "title": "Sen. Markey: Senator Markey Introduces Legislation to Block Trump's Executive Order Blocking State AI Regulation",
+          "title": "Senator Markey Introduces Legislation to Block Trump’s Executive Order Blocking State AI Regulation",
           "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-introduces-legislation-to-block-trumps-executive-order-blocking-state-ai-regulation"
-        },
-        {
-          "title": "Broadband Breakfast: New Senate Bill Would Halt Federal Funding for Trump's AI Executive Order",
-          "url": "https://broadbandbreakfast.com/new-senate-bill-would-halt-federal-funding-for-trumps-ai-executive-order/"
         }
-      ]
+      ],
+      "quote": "introducing the States’ Right to Regulate AI Act",
+      "level": "high"
     },
     "pl-d-safety#0": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The Dec. 9, 2025 launch, the 'continue to thrive' language in the leadership release and Jeffries' 'aggressive framework' remark are all confirmed.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Jeffries' Dec. 9, 2025 release: the commission and its twin aims, American companies continuing \"to thrive\" and protection against AI harms. Corrected: \"an aggressive framework\" is not in the release and was removed.",
       "sources": [
         {
-          "title": "Rep. Zoe Lofgren: Leader Jeffries announces new House Democratic Commission on AI and the Innovation Economy",
-          "url": "https://lofgren.house.gov/media/press-releases/leader-jeffries-announces-new-house-democratic-commission-ai-and-innovation"
-        },
-        {
-          "title": "Truthout: Democrats backed by industry super PACs are writing the party's AI plan",
-          "url": "https://truthout.org/articles/democrats-backed-by-industry-super-pacs-are-writing-the-partys-ai-plan/"
-        },
-        {
-          "title": "Nextgov: New House commission to scrutinize AI's impact on the economy",
-          "url": "https://www.nextgov.com/artificial-intelligence/2025/12/new-house-commission-scrutinize-ai-impact-economy/410047"
+          "title": "Leader Jeffries Announces New House Democratic Commission on AI and the Innovation Economy",
+          "url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/"
         }
-      ]
+      ],
+      "quote": "It is important that American companies continue to thrive in this area.",
+      "level": "high"
     },
     "pl-d-safety#1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Reports from Sept. 14-15, 2026 confirm Schumer's demand for a classified all-senators briefing on frontier AI risks and his call for 'serious guardrails'; the cited Senate Democrats release itself did not surface in results, and these are distinct from his 2023 all-senators AI briefings.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in the Senate Democrats' release: Schumer demanded an immediate classified briefing for all senators on frontier-model testing, potentially catastrophic risks and safeguards. The release is undated; the September 2026 date rests on news reports, so Medium.",
       "sources": [
         {
-          "title": "Bloomberg Government: Schumer Calls for Senate AI Briefing From Trump Administration",
-          "url": "https://news.bgov.com/artificial-intelligence/schumer-calls-for-senate-ai-briefing-from-trump-administration"
-        },
-        {
-          "title": "FingerLakes1: Schumer seeks classified Senate briefing on AI risks and security",
-          "url": "https://www.fingerlakes1.com/2026/09/15/schumer-seeks-classified-senate-briefing-on-ai-risks-and-security/"
-        },
-        {
-          "title": "Crypto Briefing: Chuck Schumer calls for classified AI danger briefing from Trump administration",
-          "url": "https://cryptobriefing.com/schumer-classified-ai-danger-briefing/"
+          "title": "As AI Industry Leaders Sound Alarm On AI Risks & Trump Dismisses Warnings, Schumer Demands Immediate Classified All-Senators Briefing",
+          "url": "https://www.democrats.senate.gov/newsroom/press-releases/as-ai-industry-leaders-sound-alarm-on-ai-risks-and-trump-dismisses-warnings-schumer-demands-immediate-classified-all-senators-briefing"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The release date (September 2026, from news reports)."
+      ],
+      "quote": "Schumer Demands Immediate Classified All-Senators Briefing",
+      "level": "medium"
     },
     "pl-d-safety#2": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "IBTimes, drawing on Reuters, reports Democrats plan January bills on independent AI safety testing and AI liability. The original Reuters text was not seen.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Reuters' Nov. 6, 2026 report on Democrats' plans, including \"requiring independent testing of advanced AI systems and clarifying when AI companies can be held liable\". No bill text exists yet, so it rests on the report (Medium). Reuters is now the source.",
       "sources": [
         {
-          "title": "IBTimes: A Bill to Make Data Centers Pay for Grid Upgrades is Dividing Democrats as They Gear to Control Congress",
-          "url": "https://www.ibtimes.com/senate-data-center-power-infrastructure-bill-vote-3809557"
-        },
-        {
-          "title": "Crypto Briefing (citing Reuters): Democrats plan AI legislation in Congress in January",
-          "url": "https://cryptobriefing.com/democrats-plan-ai-legislation-congress-january/"
+          "title": "Democrats planning flood of AI bills when they take control of Congress",
+          "url": "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/"
         }
-      ]
+      ],
+      "quote": "requiring independent testing of advanced AI systems and clarifying when AI companies can be held liable",
+      "level": "medium"
     },
     "pl-d-workers#0": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Two searches found no release of the commission's framework (Lieu said in June 2026 it would come by year's end), so 'not confirmed as released' still holds; the Democratic 'blueprint' KATU quoted in November could not be tied to the commission.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Jeffries' Dec. 9, 2025 release, which sets up the commission and its remit. That no framework had been released by late November 2026 cannot be shown from a single source, so Medium.",
       "sources": [
         {
-          "title": "Roll Call: Rush to regulate AI divides Democrats in Congress",
-          "url": "https://rollcall.com/2026/06/10/rush-to-regulate-ai-divides-democrats-in-congress/"
-        },
-        {
-          "title": "Rep. Zoe Lofgren: Leader Jeffries announces new House Democratic Commission on AI and the Innovation Economy",
-          "url": "https://lofgren.house.gov/media/press-releases/leader-jeffries-announces-new-house-democratic-commission-ai-and-innovation"
-        },
-        {
-          "title": "The American Prospect: Democratic Voters Are Clamoring for AI Regulation. Their Leaders Aren't Interested.",
-          "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
+          "title": "Leader Jeffries Announces New House Democratic Commission on AI and the Innovation Economy",
+          "url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "That the commission had not released a framework by Nov. 26, 2026."
+      ],
+      "quote": "House Democratic Commission on AI and the Innovation Economy",
+      "level": "medium"
     },
     "pl-r-chips#0": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "NBC, Bloomberg and The Register confirm the April 2025 H20 halt and the July 15, 2025 reversal allowing sales to resume.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Corrected: Nvidia's July 2025 announcement says the government assured it that H20 export licenses would be granted and that it hoped to start deliveries soon; it does not show that sales had resumed. The April 2025 halt was not checked on a government record, so Medium. Nvidia's announcement is now the source.",
       "sources": [
         {
-          "title": "NBC News: Nvidia will resume H20 AI chip sales to China soon",
-          "url": "https://www.nbcnews.com/tech/tech-news/nvidia-will-resume-h20-ai-chip-sales-china-soon-rcna218808"
-        },
-        {
-          "title": "Bloomberg: Nvidia, AMD to Resume AI Chip Sales to China in US Reversal",
-          "url": "https://www.bloomberg.com/news/articles/2025-07-15/nvidia-expects-license-to-sell-h20-ai-chip-to-china-again"
-        },
-        {
-          "title": "The Register: Nvidia to resume sales to China - with Trump administration approval",
-          "url": "https://www.theregister.com/2025/07/15/us_allows_nvidia_china_sales/"
+          "title": "NVIDIA CEO Jensen Huang Promotes AI in Washington, DC and China",
+          "url": "https://blogs.nvidia.com/blog/nvidia-ceo-promotes-ai-in-dc-and-china/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The exact date of the April 2025 restriction, from a government record."
+      ],
+      "quote": "The U.S. government has assured NVIDIA that licenses will be granted",
+      "level": "medium"
     },
     "pl-r-chips#1": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "BIS and law-firm analyses confirm the rule took effect Jan. 15, 2026. The 25% share is collected as an import tariff on chips routed through the U.S., not as a license fee.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in the Bureau of Industry and Security's Jan. 13, 2026 release: license applications for the Nvidia H200, AMD MI325X and similar chips are reviewed case by case, following the president's Dec. 8, 2025 announcement. Corrected: the 25% share is collected through a separate semiconductor tariff, not a fee in the licensing rule (per legal analysis, so Medium); the date is now that of the BIS release.",
       "sources": [
         {
-          "title": "Bureau of Industry and Security: Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
-          "url": "https://bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
-        },
-        {
-          "title": "Mayer Brown: Administration Policies on Advanced AI Chips Codified",
-          "url": "https://www.mayerbrown.com/en/insights/publications/2026/01/administration-policies-on-advanced-ai-chips-codified"
-        },
-        {
-          "title": "Pillsbury: Trump administration targets advanced AI semiconductors",
-          "url": "https://pillsburylaw.com/en/news-and-insights/trump-advanced-ai-semiconductors-actions.html"
+          "title": "Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
+          "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The rule's Jan. 15, 2026 publication or effective date, from the Federal Register.",
+        "How the 25% share is collected, from a primary record."
+      ],
+      "quote": "review export license applications for the Nvidia H200, AMD MI325X, and similar chips on a case-by-case basis",
+      "level": "medium"
     },
     "pl-r-data-centers#0": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The White House fact sheet and Federal Register confirm the July 23, 2025 order speeding data center permitting and opening federal, including military, land.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in the White House fact sheet of July 23, 2025: expedited permitting for qualifying data center projects under FAST-41 and federal sites, including Defense Department land, for the infrastructure. The fact sheet is now the source.",
       "sources": [
         {
-          "title": "The White House: Fact Sheet: President Donald J. Trump Accelerates Federal Permitting of Data Center Infrastructure",
-          "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-accelerates-federal-permitting-of-data-center-infrastructure"
-        },
-        {
-          "title": "Federal Register (GovInfo): Executive Order 14318",
-          "url": "https://www.govinfo.gov/content/pkg/FR-2025-07-28/html/2025-14212.htm"
-        },
-        {
-          "title": "Greenberg Traurig: Trump administration seeks to streamline federal permitting for data centers with new executive order and action plan",
-          "url": "https://www.gtlaw.com/en/insights/2025/7/trump-administration-seeks-to-streamline-federal-permitting-for-data-centers-with-new-executive-order-and-action-plan"
+          "title": "Fact Sheet: President Donald J. Trump Accelerates Federal Permitting of Data Center Infrastructure",
+          "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-accelerates-federal-permitting-of-data-center-infrastructure/"
         }
-      ]
+      ],
+      "quote": "designating Qualified Projects for expedited permitting under the FAST-41 framework",
+      "level": "high"
     },
     "pl-r-data-centers#1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The pledge was announced in the Feb. 24, 2026 State of the Union, and seven AI companies signed it on March 4. Its text asks them to build, bring or buy their own power, and coverage calls it nonbinding.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed on the White House's pledge page: companies commit to cover the added power and infrastructure costs of new data centers and \"will voluntarily negotiate new, separate rate structures\"; contemporaneous reports describe it as nonbinding. Its introduction in the Feb. 24 State of the Union was not checked against a transcript, so Medium. The pledge page is now the source.",
       "sources": [
         {
-          "title": "The White House: Ratepayer Protection Pledge",
-          "url": "https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge/"
-        },
-        {
-          "title": "Tom's Hardware: Trump orders Big Tech to generate its own power for AI data centers, reveals new Ratepayer Protection Pledge",
-          "url": "https://www.tomshardware.com/tech-industry/big-tech/trump-orders-big-tech-to-generate-its-own-power-for-ai-data-centers-reveals-new-ratepayer-protection-pledge-to-curb-rising-electricity-prices-in-the-u-s"
-        },
-        {
-          "title": "Tech Policy Press: What Trump did and didn't say about AI in the State of the Union",
-          "url": "https://techpolicy.press/what-trump-did-and-didnt-say-about-ai-in-the-state-of-the-union"
+          "title": "Ratepayer Protection Pledge",
+          "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "Its introduction in the Feb. 24, 2026 State of the Union, from a transcript."
+      ],
+      "quote": "Companies will voluntarily negotiate new, separate rate structures",
+      "level": "medium"
     },
     "pl-r-data-centers#2": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Several outlets quote Trump's Aug. 31, 2026 Truth Social post with both quotes word for word.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in The Spokesman-Review's Aug. 31, 2026 report quoting both lines of his post; the original post could not be read, so Medium.",
       "sources": [
         {
-          "title": "Al Jazeera: 'Let Data Reign': Trump decries opposition to data centres in US",
-          "url": "https://www.aljazeera.com/news/2026/8/31/let-data-reign-trump-decries-opposition-to-data-centres-in-us"
-        },
-        {
-          "title": "Newsweek: Trump on data centers and the AI movement",
-          "url": "https://www.newsweek.com/donald-trump-data-centers-ai-movement-rejection-list-12386732"
-        },
-        {
-          "title": "Philadelphia Inquirer: Trump says communities that don't support data centers will be 'backwards and poor'",
-          "url": "https://www.inquirer.com/news/nation-world/trump-data-centers-support-backwards-poor-elections-20260901.html"
+          "title": "Trump slams opposition to data centers: China could not be happier",
+          "url": "https://www.spokesman.com/stories/2026/aug/31/trump-slams-opposition-to-data-centers-china-could/"
         }
-      ]
+      ],
+      "quote": "China could not be happier with this anti Data Center movement.",
+      "level": "medium"
     },
     "pl-r-data-centers#3": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Trump's post saying the permitting bill would codify his Ratepayer Protection Pledge is confirmed; it went up on Sunday, Nov. 8, 2026, one day before the Nov. 9 date in the dataset.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Reuters' Nov. 9, 2026 report, which quotes his post (\"Remember, China will take any Data Center that we don't want, and pay lots of money for it\") and his backing for the permitting bill; the original post could not be read, so Medium. Reuters is now the source.",
       "sources": [
         {
-          "title": "NewKerala (ANI): Trump urges senators to pass permitting bill, calls it a big win for US",
-          "url": "https://www.newkerala.com/news/a/this-bill-big-win-us-trump-urges-senators-547.htm"
-        },
-        {
-          "title": "Boston Globe (AP): Senate weighs sweeping energy legislation in first major action since midterm elections",
-          "url": "https://www.bostonglobe.com/2026/11/09/business/senate-energy-legislation-election/"
-        },
-        {
-          "title": "TIME: Congress's Permitting Bill Is a 'Massive Giveaway' to the AI Data Center Industry, Critics Warn",
-          "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers/"
+          "title": "US Congress gets first post-Blue Wave crack at data centers with permitting bill",
+          "url": "https://www.reuters.com/legal/litigation/us-congress-gets-first-post-blue-wave-crack-data-centers-with-permitting-bill-2026-11-09/"
         }
-      ]
+      ],
+      "quote": "Remember, China will take any Data Center that we don’t want, and pay lots of money for it",
+      "level": "medium"
     },
     "pl-r-harmful#0": {
       "result": "confirmed",
@@ -3849,6 +3821,13 @@
     },
     {
       "batch": "09",
+      "date": "2026-11-27",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "10",
       "date": "2026-11-27",
       "claims": 12,
       "tool": "ChatGPT (web browsing)",
