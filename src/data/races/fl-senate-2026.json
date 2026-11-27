@@ -1,0 +1,36 @@
+{
+  "id": "fl-senate-2026",
+  "state": "FL",
+  "office": "U.S. Senate (special)",
+  "cycle": 2026,
+  "electionDate": "2026-11-03",
+  "seat": {
+    "type": "incumbent",
+    "note": "Special election for the rest of Marco Rubio's term (expires January 2029); Gov. DeSantis appointed Ashley Moody in January 2025 after Rubio resigned to become secretary of state."
+  },
+  "nomineesSource": "Chosen in the Aug. 18, 2026 party primaries: Sen. Ashley Moody won the Republican primary and state Rep. Angie Nixon of Jacksonville won the Democratic primary in an upset over Alex Vindman, who conceded and endorsed her.",
+  "candidates": [
+    {
+      "id": "ashley-moody",
+      "name": "Ashley Moody",
+      "party": "Republican",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    },
+    {
+      "id": "angie-nixon",
+      "name": "Angie Nixon",
+      "party": "Democratic",
+      "questionnaire": {
+        "status": "not-sent",
+        "deadline": null,
+        "asOf": null
+      }
+    }
+  ],
+  "items": [],
+  "contextSignals": []
+}

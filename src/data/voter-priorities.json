@@ -723,6 +723,259 @@
           "note": "Entered from web search results on 2026-11-26; the pollster's page could not be opened from the build environment. Figures need checking against the pollster's release."
         }
       ]
+    },
+    {
+      "id": "vp-fl-university-of-north-florida--issue-1",
+      "state": "FL",
+      "races": [
+        "fl-governor-2026",
+        "fl-senate-2026"
+      ],
+      "kind": "issue-priorities",
+      "pollster": "University of North Florida Public Opinion Research Lab",
+      "sponsor": null,
+      "fieldStart": "2026-02-21",
+      "fieldEnd": "2026-03-02",
+      "population": "likely voters",
+      "sampleSize": 786,
+      "marginOfError": null,
+      "question": "Most important problem facing Florida (as reported)",
+      "questionType": "single",
+      "issues": [
+        {
+          "issue": "Affordability / cost of living",
+          "pct": 50
+        },
+        {
+          "issue": "Political division / polarization",
+          "pct": 12
+        },
+        {
+          "issue": "Immigration",
+          "pct": 8
+        }
+      ],
+      "aiOffered": null,
+      "labelType": "reported-fact",
+      "source": {
+        "title": "News4Jax: UNF poll: Likely voters in Florida still focused on affordability, most support eliminating property taxes (Mar. 4, 2026)",
+        "url": "https://www.news4jax.com/news/politics/2026/03/04/unf-poll-likely-voters-in-florida-still-focused-on-affordability-most-support-eliminating-property-taxes"
+      },
+      "additionalSources": [
+        {
+          "title": "WOKV: UNF poll: Affordability is biggest concern facing Florida voters (2026)",
+          "url": "https://www.wokv.com/news/local/unf-poll-affordability-is-biggest-concern-facing-florida-voters-2026/SRQYGJHKM5CI3DMEAF6MY6LIY4"
+        }
+      ],
+      "publishedDate": "2026-03-04",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WOKV)."
+        }
+      ]
+    },
+    {
+      "id": "vp-fl-university-of-north-florida--ai-qu-2",
+      "state": "FL",
+      "races": [
+        "fl-governor-2026",
+        "fl-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "University of North Florida Public Opinion Research Lab",
+      "sponsor": null,
+      "fieldStart": "2026-02-21",
+      "fieldEnd": "2026-03-02",
+      "population": "likely voters",
+      "sampleSize": 786,
+      "marginOfError": null,
+      "question": "Support or oppose the rollout of artificial intelligence (as reported)",
+      "figures": [
+        {
+          "label": "Support AI rollout",
+          "pct": 48
+        },
+        {
+          "label": "Oppose AI rollout",
+          "pct": 48
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "Action News Jax: UNF poll shows where Fla. voters stand on marijuana, AI, property taxes, firearms (Mar. 2026)",
+        "url": "https://www.actionnewsjax.com/news/local/unf-poll-shows-where-fla-voters-stand-marijuana-ai-property-taxes-firearms/K5QYYGISSZF6VBHEPUSFPP23LM/"
+      },
+      "additionalSources": [],
+      "publishedDate": "2026-03-04",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports."
+        }
+      ]
+    },
+    {
+      "id": "vp-fl-university-of-north-florida--ai-qu-3",
+      "state": "FL",
+      "races": [
+        "fl-governor-2026",
+        "fl-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "University of North Florida Public Opinion Research Lab",
+      "sponsor": null,
+      "fieldStart": "2026-07-08",
+      "fieldEnd": "2026-07-17",
+      "population": "likely voters",
+      "sampleSize": 848,
+      "marginOfError": 3.8,
+      "question": "Would you support or oppose building an AI data center in your local area? (as reported)",
+      "figures": [
+        {
+          "label": "Support an AI data center in local area",
+          "pct": 28
+        },
+        {
+          "label": "Oppose an AI data center in local area",
+          "pct": 68
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "WUSF: David Jolly said the vast majority of Floridians oppose new data centers. Polls back that up (Sept. 3, 2026)",
+        "url": "https://www.wusf.org/politics-issues/2026-09-03/david-jolly-said-the-vast-majority-of-floridians-oppose-new-data-centers-polls-back-that-up"
+      },
+      "additionalSources": [
+        {
+          "title": "PolitiFact: fact-check of David Jolly on AI data centers poll (Sept. 2, 2026)",
+          "url": "https://politifact.com/factchecks/2026/sep/02/david-jolly/ai-data-centers-florida-poll-governor-race/"
+        },
+        {
+          "title": "WPTV: Florida candidates clash over data centers as poll finds local opposition (2026)",
+          "url": "https://www.wptv.com/news/politics/florida-candidates-clash-over-data-centers-as-poll-finds-local-opposition"
+        },
+        {
+          "title": "News4Jax: Florida voters split on phasing out property taxes until budget effects are explained, UNF poll finds (July 20, 2026)",
+          "url": "https://www.news4jax.com/news/politics/2026/07/20/florida-voters-split-on-phasing-out-property-taxes-until-budget-effects-are-explained-unf-poll-finds/"
+        }
+      ],
+      "publishedDate": "2026-07-20",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (PolitiFact, WPTV, News4Jax)."
+        }
+      ]
+    },
+    {
+      "id": "vp-fl-university-of-north-florida--ai-qu-4",
+      "state": "FL",
+      "races": [
+        "fl-governor-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "University of North Florida Public Opinion Research Lab",
+      "sponsor": null,
+      "fieldStart": "2026-10-12",
+      "fieldEnd": "2026-10-19",
+      "population": "likely voters",
+      "sampleSize": 1471,
+      "marginOfError": 2.81,
+      "question": "Which governor candidate do you trust more on data centers? (as reported)",
+      "figures": [
+        {
+          "label": "Trust Jolly more on data centers",
+          "pct": 41
+        },
+        {
+          "label": "Trust Donalds more on data centers",
+          "pct": 37
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "News4Jax: UNF poll shows tight Florida governor, Senate races (Oct. 21, 2026)",
+        "url": "https://news4jax.com/news/local/2026/10/21/unf-poll-shows-tight-florida-governor-senate-races/"
+      },
+      "additionalSources": [
+        {
+          "title": "WUSF: UNF poll: Republicans Donalds, Moody hold slim leads in tightening governor, U.S. Senate races (Oct. 22, 2026)",
+          "url": "https://wusf.org/politics-issues/2026-10-22/unf-poll-republicans-donalds-moody-hold-slim-leads-tightening-governor-us-senate-races"
+        }
+      ],
+      "publishedDate": "2026-10-21",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WUSF)."
+        }
+      ]
+    },
+    {
+      "id": "vp-fl-stetson-university-ai-qu-5",
+      "state": "FL",
+      "races": [
+        "fl-governor-2026",
+        "fl-senate-2026"
+      ],
+      "kind": "ai-question",
+      "pollster": "Stetson University",
+      "sponsor": null,
+      "fieldStart": "2026-09-14",
+      "fieldEnd": "2026-09-21",
+      "population": "adults",
+      "sampleSize": 830,
+      "marginOfError": null,
+      "question": "Support or oppose large data centers in your own community (as reported; online nonprobability panel)",
+      "figures": [
+        {
+          "label": "Oppose large data centers in own community",
+          "pct": 54
+        },
+        {
+          "label": "Support large data centers in own community",
+          "pct": 27
+        }
+      ],
+      "labelType": "reported-fact",
+      "source": {
+        "title": "WPTV: Florida candidates clash over data centers as poll finds local opposition (2026)",
+        "url": "https://www.wptv.com/news/politics/florida-candidates-clash-over-data-centers-as-poll-finds-local-opposition"
+      },
+      "additionalSources": [
+        {
+          "title": "Tampa Bay 28: Florida candidates clash over data centers as poll finds local opposition (2026)",
+          "url": "https://www.tampabay28.com/news/state/florida-candidates-clash-over-data-centers-as-poll-finds-local-opposition"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Tampa Bay 28)."
+        }
+      ]
     }
   ]
 }

@@ -2956,6 +2956,636 @@
           "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 04): corrected, High confidence. Corrected from the Assembly's record: the resolution (no. 3293) was registered on Oct. 13, 2026, not Oct. 8, and is co-signed by individual Ecologist and Communist deputies rather than endorsed by their groups as such. Ruffin withdrew from the presidential race on Nov. 22."
         }
       ]
+    },
+    {
+      "id": "cr-fl-gov-donalds-1",
+      "raceId": "fl-governor-2026",
+      "candidateId": "byron-donalds",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In a Fox Business appearance, Donalds said parents and the state of Florida should lead decisions on regulating AI, and that protecting children and making sure parents know what their children are doing with AI tools is the top priority.",
+      "source": {
+        "title": "Floridian Press: Byron Donalds Says Parents, Florida Should Lead Regulation of AI (Feb. 17, 2026)",
+        "url": "https://floridianpress.com/2026/02/byron-donalds-says-parents-florida-should-lead-regulation-of-ai/"
+      },
+      "publishedDate": "2026-02-17",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "preemption": "opposes-preemption",
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-child-safety",
+        "ai-preemption"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Latin Times). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-gov-donalds-2",
+      "raceId": "fl-governor-2026",
+      "candidateId": "byron-donalds",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "A Florida Phoenix explainer on the stalled state AI Bill of Rights reported that Donalds thinks AI regulation should be left to the federal government, in line with President Trump's executive order on state AI laws. This is the outlet's description, not his own words, and it differs from his remarks in February and the fall.",
+      "source": {
+        "title": "Florida Phoenix: Florida's 'AI Bill of Rights': What happened, what's in it, and what's next? (Apr. 20, 2026)",
+        "url": "https://floridaphoenix.com/2026/04/20/floridas-ai-bill-of-rights-what-happened-whats-in-it-and-whats-next/"
+      },
+      "publishedDate": "2026-04-20",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "federal",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "preemption": "supports-preemption"
+      },
+      "categories": [
+        "ai-preemption"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-gov-donalds-3",
+      "raceId": "fl-governor-2026",
+      "candidateId": "byron-donalds",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "During the general-election campaign, Donalds called for an AI bill of rights similar to the proposal Gov. Ron DeSantis introduced to protect children and families, and said there are common-sense guardrails around AI that Florida can lead on.",
+      "source": {
+        "title": "Fox 13: Florida governor candidates clash over home insurance and AI data centers (2026)",
+        "url": "https://www.fox13news.com/news/florida-governor-candidates-clash-over-home-insurance-ai-data-centers"
+      },
+      "publishedDate": "2026-09",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "child-safety",
+          "safety"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-child-safety",
+        "ai-consumer-protection"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WPTV). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-gov-donalds-4",
+      "raceId": "fl-governor-2026",
+      "candidateId": "byron-donalds",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "As a U.S. House member, Donalds introduced H.R. 9777, the Protecting Ratepayers Act, which would require hyperscale AI data centers to supply their own power generation and water instead of relying on public utilities, so their costs do not raise utility bills.",
+      "source": {
+        "title": "GovInfo: H.R. 9777 (introduced in House), Protecting Ratepayers Act, 119th Congress (July 20, 2026)",
+        "url": "https://www.govinfo.gov/app/details/BILLS-119hr9777ih"
+      },
+      "publishedDate": "2026-07-20",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer",
+        "dc-water-environment"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WLRN (AP), WPTV). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-gov-donalds-5",
+      "raceId": "fl-governor-2026",
+      "candidateId": "byron-donalds",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Donalds said he opposes a statewide moratorium on data centers but favors slowing construction of new ones, and that decisions on where data centers are built belong to local governments, with safeguards for water supplies, electric customers and neighborhoods.",
+      "source": {
+        "title": "WUSF: Byron Donalds opposes a statewide moratorium on data centers (July 24, 2026)",
+        "url": "https://www.wusf.org/politics-issues/2026-07-24/byron-donalds-opposes-statewide-moratorium-data-centers"
+      },
+      "publishedDate": "2026-07-24",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-local-control",
+        "dc-moratorium",
+        "dc-water-environment",
+        "dc-ratepayer"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (News4Jax, Florida Phoenix). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-gov-jolly-1",
+      "raceId": "fl-governor-2026",
+      "candidateId": "david-jolly",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Jolly said that if elected he would impose a one-year moratorium on data center construction to study environmental, health and economic effects, citing a lack of environmental and labor protections and privacy and safety concerns.",
+      "source": {
+        "title": "David Jolly campaign: David Jolly calls for halt on construction of data centers (July 2026)",
+        "url": "https://davidjolly.com/david-jolly-calls-for-halt-on-construction-of-data-centers/"
+      },
+      "publishedDate": "2026-07-21",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "categories": [
+        "dc-moratorium"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (E&E News, Floridian Press). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-gov-jolly-2",
+      "raceId": "fl-governor-2026",
+      "candidateId": "david-jolly",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Jolly said a complete ban on data centers in Florida should be \"on the table,\" and argued data centers depress nearby home values.",
+      "source": {
+        "title": "Florida Phoenix: David Jolly: A complete ban on data centers in Florida should be on the table (Sept. 18, 2026)",
+        "url": "https://floridaphoenix.com/2026/09/18/david-jolly-a-complete-ban-on-data-centers-in-florida-should-be-on-the-table/"
+      },
+      "publishedDate": "2026-09-18",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "general-rhetoric",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "categories": [
+        "dc-moratorium"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Orlando Weekly). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-gov-jolly-3",
+      "raceId": "fl-governor-2026",
+      "candidateId": "david-jolly",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Jolly credited Gov. DeSantis for examining AI's effect on children, saying that until it is known AI cannot convince a young person to self-harm, \"we need to pump the brakes.\" Reports say he has raised concerns about chatbots' effects on teenagers.",
+      "source": {
+        "title": "Floridian Press: David Jolly Details Moratorium on Data Centers, Attacks Donalds on Issue (July 2026)",
+        "url": "https://floridianpress.com/2026/07/david-jolly-details-moratorium-on-data-centers-attacks-donalds-on-issue/"
+      },
+      "publishedDate": "2026-07-22",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "child-safety"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-child-safety"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-gov-jolly-4",
+      "raceId": "fl-governor-2026",
+      "candidateId": "david-jolly",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "In a sit-down interview on AI and data centers, Jolly focused on protecting families and children and said AI should not replace teachers; he did not detail what regulations he would pursue.",
+      "source": {
+        "title": "News4Jax: Jolly vs. Donalds: Where Florida's governor candidates stand on AI, data centers and Amendment 3 (Oct. 6, 2026)",
+        "url": "https://www.news4jax.com/news/politics/2026/10/06/jolly-vs-donalds-where-floridas-governor-candidates-stand-on-ai-data-centers-and-amendment-3/"
+      },
+      "publishedDate": "2026-10-06",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "labor",
+          "child-safety"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "workers": "active-protections"
+      },
+      "categories": [
+        "ai-workers",
+        "ai-child-safety"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-sen-moody-1",
+      "raceId": "fl-senate-2026",
+      "candidateId": "ashley-moody",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "As Florida attorney general, Moody joined a bipartisan coalition of 54 state and territorial attorneys general in a Sept. 5, 2023 letter asking Congress to create an expert commission on AI-enabled child exploitation and to expand child sexual abuse material laws to cover AI-generated material, including deepfakes.",
+      "source": {
+        "title": "Florida Attorney General's Office: Attorney General Moody Calls on Congress to Investigate AI and Child Exploitation (Sept. 2023)",
+        "url": "https://myfloridalegal.com/node/26608"
+      },
+      "publishedDate": "2023-09",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal",
+          "state"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "child-safety",
+          "deepfakes-elections"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "harmful-content": "supports-rules"
+      },
+      "categories": [
+        "ai-child-safety",
+        "ai-deepfakes"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Florida Daily, CBS12). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-sen-moody-2",
+      "raceId": "fl-senate-2026",
+      "candidateId": "ashley-moody",
+      "kind": "action",
+      "labelType": "source-summary",
+      "text": "The Senate voted 99-1 to strip a proposed 10-year moratorium on state AI laws from the budget reconciliation bill; Sen. Thom Tillis was the only senator voting no, which means Moody voted to remove the moratorium.",
+      "source": {
+        "title": "Time: Senators reject 10-year ban on state-level AI regulation in blow to Big Tech (July 1, 2025)",
+        "url": "https://www.time.com/7299044/senators-reject-10-year-ban-on-state-level-ai-regulation-in-blow-to-big-tech/"
+      },
+      "publishedDate": "2025-07-01",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "unclear",
+        "levelOfGovernment": [
+          "federal",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "voting-record",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {},
+      "categories": [
+        "ai-preemption"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Route Fifty, PBS NewsHour). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-sen-moody-3",
+      "raceId": "fl-senate-2026",
+      "candidateId": "ashley-moody",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Moody has said consumers should not be left paying the costs associated with data centers, that environmental protections and local input are important, and that decisions about data centers belong to communities and states.",
+      "source": {
+        "title": "Inside Climate News: Data Centers, Power Bills, Hurricanes: What's at Stake for the Environment in Florida's Senate Race (Oct. 27, 2026)",
+        "url": "https://insideclimatenews.org/news/27102026/florida-senate-race-data-centers-power-bills-hurricanes/"
+      },
+      "publishedDate": "2026-10",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "conditional"
+      },
+      "categories": [
+        "dc-ratepayer",
+        "dc-local-control",
+        "dc-water-environment"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WPTV). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-sen-nixon-1",
+      "raceId": "fl-senate-2026",
+      "candidateId": "angie-nixon",
+      "kind": "position",
+      "labelType": "source-summary",
+      "text": "Nixon called for a moratorium on new data centers until more research is done and federal safeguards exist, telling Inside Climate News \"There needs to be a moratorium\" and \"You cannot build any more data centers\"; she also wants communities to receive economic benefits where data centers are built.",
+      "source": {
+        "title": "Inside Climate News: Data Centers, Power Bills, Hurricanes: What's at Stake for the Environment in Florida's Senate Race (Oct. 27, 2026)",
+        "url": "https://insideclimatenews.org/news/27102026/florida-senate-race-data-centers-power-bills-hurricanes/"
+      },
+      "publishedDate": "2026-10",
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "data-centers": "pause"
+      },
+      "categories": [
+        "dc-moratorium",
+        "dc-economy-jobs"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Newsweek, Tampa Bay 28). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "cr-fl-sen-nixon-2",
+      "raceId": "fl-senate-2026",
+      "candidateId": "angie-nixon",
+      "kind": "statement",
+      "labelType": "source-summary",
+      "text": "Nixon said she is not opposed to AI or technological innovation but wants tougher guardrails around privacy, employment and the construction of data centers.",
+      "source": {
+        "title": "Newsweek: Angie Nixon, Ashley Moody, Trump, Florida data center, Mar-a-Lago (2026)",
+        "url": "https://www.newsweek.com/angie-nixon-ashley-moody-trump-florida-data-center-mar-a-lago-12490702"
+      },
+      "publishedDate": "2026-09",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "privacy",
+          "labor"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "stances": {
+        "workers": "active-protections"
+      },
+      "categories": [
+        "ai-privacy-surveillance",
+        "ai-workers"
+      ],
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Only the cited source was found; not yet checked against other reports. Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
     }
   ]
 }

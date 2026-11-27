@@ -622,6 +622,138 @@
         "figuresEntered": false,
         "source": null
       }
+    },
+    {
+      "id": "result-fl-governor-2026",
+      "raceId": "fl-governor-2026",
+      "labelType": "election-result",
+      "resultStatus": "unofficial",
+      "winner": {
+        "name": "Byron Donalds",
+        "party": "Republican",
+        "candidateId": "byron-donalds"
+      },
+      "call": "Called by the AP for Donalds at 9:09 p.m. ET on election night, Nov. 3, 2026; Jolly conceded that night.",
+      "figuresAsOf": "Unofficial AP-reported returns with about 99% of the vote counted, as reported by Newsweek on election night (Nov. 3-4, 2026); Florida Phoenix reported the same figures from state Division of Elections returns late on Nov. 3.",
+      "context": "Open seat: Republican Gov. Ron DeSantis was term-limited; the winner takes office Jan. 5, 2027.",
+      "candidates": [
+        {
+          "name": "Byron Donalds",
+          "party": "Republican",
+          "candidateId": "byron-donalds",
+          "votePct": 50.1
+        },
+        {
+          "name": "David Jolly",
+          "party": "Democratic",
+          "candidateId": "david-jolly",
+          "votePct": 48.7
+        }
+      ],
+      "source": {
+        "title": "Newsweek: Byron Donalds beats David Jolly, becoming Florida's first Black governor (Nov. 2026)",
+        "url": "https://newsweek.com/byron-donalds-beats-david-jolly-becoming-floridas-first-black-governor-12657167"
+      },
+      "additionalSources": [
+        {
+          "title": "Florida Phoenix: Donalds defeats Jolly, becoming Florida's first Black governor (Nov. 3, 2026)",
+          "url": "https://floridaphoenix.com/2026/11/03/donalds-defeats-jolly-becoming-floridas-first-black-governor/"
+        },
+        {
+          "title": "WPTV (AP): Republican Byron Donalds wins election for governor in Florida (Nov. 3, 2026)",
+          "url": "https://www.wptv.com/news/political/elections-local/republican-byron-donalds-wins-election-for-governor-in-florida"
+        },
+        {
+          "title": "Florida Trend (News Service of Florida): Donalds fends off Jolly, Moody hangs on to U.S. Senate seat (Nov. 4, 2026)",
+          "url": "https://www.floridatrend.com/articles/2026/11/04/donalds-fends-off-jolly-moody-hangs-us-senate-seat/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Florida Phoenix, WPTV (AP), Florida Trend (News Service of Florida))."
+        }
+      ],
+      "certification": {
+        "status": "pending",
+        "by": null,
+        "date": null,
+        "expected": null,
+        "figuresEntered": false,
+        "source": null,
+        "note": "The Elections Canvassing Commission was due to certify the results on Nov. 17, 2026; no report confirming that it did so was found."
+      }
+    },
+    {
+      "id": "result-fl-senate-2026",
+      "raceId": "fl-senate-2026",
+      "labelType": "election-result",
+      "resultStatus": "unofficial",
+      "winner": {
+        "name": "Ashley Moody",
+        "party": "Republican",
+        "candidateId": "ashley-moody"
+      },
+      "call": "Called by the AP on election night, Nov. 3, 2026, shortly after 8:30 p.m. ET (one report gives 8:34 p.m.); Nixon conceded shortly before 9 p.m.",
+      "figuresAsOf": "Unofficial results as reported by Ballotpedia News after the Nov. 3, 2026 election (exact date of the figures not shown in search results).",
+      "context": "Special election for the rest of Marco Rubio's term (expires January 2029); Gov. DeSantis appointed Ashley Moody in January 2025 after Rubio resigned to become secretary of state.",
+      "candidates": [
+        {
+          "name": "Ashley Moody",
+          "party": "Republican",
+          "candidateId": "ashley-moody",
+          "votePct": 50.9
+        },
+        {
+          "name": "Angie Nixon",
+          "party": "Democratic",
+          "candidateId": "angie-nixon",
+          "votePct": 48.0
+        }
+      ],
+      "source": {
+        "title": "Ballotpedia News: Florida U.S. Senate special election results (Nov. 2026)",
+        "url": "https://news.ballotpedia.org/?p=52218"
+      },
+      "additionalSources": [
+        {
+          "title": "Scripps News (AP): Republican Ashley Moody wins reelection to U.S. Senate from Florida (Nov. 3, 2026)",
+          "url": "https://www.scrippsnews.com/politics/america-votes/republican-ashley-moody-wins-reelection-to-us-senate-from-florida"
+        },
+        {
+          "title": "Florida Phoenix via News From The States: Florida U.S. Senate race results (Nov. 2026)",
+          "url": "https://www.newsfromthestates.com/node/436343"
+        },
+        {
+          "title": "Florida Trend (News Service of Florida): Donalds fends off Jolly, Moody hangs on to U.S. Senate seat (Nov. 4, 2026)",
+          "url": "https://www.floridatrend.com/articles/2026/11/04/donalds-fends-off-jolly-moody-hangs-us-senate-seat/"
+        }
+      ],
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Scripps News (AP), Florida Phoenix via News From The States, Florida Trend (News Service of Florida))."
+        }
+      ],
+      "certification": {
+        "status": "pending",
+        "by": null,
+        "date": null,
+        "expected": null,
+        "figuresEntered": false,
+        "source": null,
+        "note": "The Elections Canvassing Commission was due to certify the results on Nov. 17, 2026; no report confirming that it did so was found."
+      }
     }
   ]
 }

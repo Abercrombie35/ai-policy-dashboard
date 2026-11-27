@@ -5174,6 +5174,656 @@
           "note": "Found through the IAPP, NCSL and MultiState trackers (or reports citing them) by web search on 2026-11-26 and checked against the legislature's own record where a search result showed it; the pages themselves could not be opened from the build environment. Summary written by the project. Coding and categories by an AI model, not reviewed."
         }
       ]
+    },
+    {
+      "id": "fl-2026-sb484",
+      "state": "FL",
+      "session": "2026 session",
+      "billNumber": "SB 484",
+      "title": "Data Centers (CS/CS/SB 484)",
+      "sponsors": [
+        {
+          "name": "Bryan Ávila",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2026-05-07",
+      "statusNote": "The Senate first passed the bill unanimously on Feb. 26, 2026; the House amended and passed it 92-16, the Senate concurred 31-6 on March 13, 2026, and Gov. DeSantis signed it May 7, 2026 as Chapter 2026-65, effective July 1, 2026.",
+      "categories": [
+        "dc-ratepayer",
+        "dc-local-control",
+        "dc-water-environment",
+        "dc-transparency"
+      ],
+      "summary": "Regulates large-scale data centers and other large-load electricity customers (50 MW or more), barring utilities from shifting the costs of serving them onto other customers, preserving local governments' authority to reject such facilities, and letting water regulators require alternative water sources. It also directs OPPAGA to study data center construction and operation and report by July 1, 2027.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Florida Senate: CS/CS/SB 484 - Data Centers (2026)",
+        "url": "https://flsenate.gov/Session/Bill/2026/484"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Office of the Governor, WUSF, Florida Phoenix). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2026-sb1118",
+      "state": "FL",
+      "session": "2026 session",
+      "billNumber": "SB 1118",
+      "title": "Public Records/Data Centers (CS/SB 1118)",
+      "sponsors": [
+        {
+          "name": "Bryan Ávila",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "failed",
+      "statusDate": "2026-03-13",
+      "statusNote": "The committee substitute from Community Affairs died on the Senate calendar when the regular session ended March 13, 2026; the House tracker cross-references the enacted SB 484.",
+      "categories": [
+        "dc-transparency"
+      ],
+      "summary": "Would have created a temporary public records exemption for information about a person's plans or interest in locating a data center in a county or municipality, tied to the effective date of SB 484 and subject to future legislative review and repeal.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Florida Senate: CS/SB 1118 - Public Records/Data Centers (2026)",
+        "url": "https://flsenate.gov/Session/Bill/2026/1118"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "innovation-first",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (FlaglerLive, Holland & Knight). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2025-hb7031",
+      "state": "FL",
+      "session": "2025 session",
+      "billNumber": "HB 7031",
+      "title": "2025 tax package (data center sales tax exemption changes)",
+      "sponsors": [],
+      "sponsorsNote": "Committee bill (House Ways and Means Committee).",
+      "status": "enacted",
+      "statusDate": "2025-06-30",
+      "statusNote": "Gov. DeSantis signed the $1.6 billion tax package on June 30, 2025; the data center change took effect Aug. 1, 2025.",
+      "categories": [
+        "dc-tax-incentives"
+      ],
+      "summary": "Among other tax changes, limited the state sales tax exemption for data centers to facilities with at least 100 MW of critical IT load, with no grandfathering for smaller existing centers, and extended the deadline for exemption certificates from June 30, 2027 to June 30, 2037.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Florida Senate: Bill summary, HB 7031 (2025)",
+        "url": "https://flsenate.gov/Committees/BillSummaries/2025/html/7031"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Holland & Knight, Greenberg Traurig). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2026-sb482",
+      "state": "FL",
+      "session": "2026 session",
+      "billNumber": "SB 482",
+      "title": "Artificial Intelligence Bill of Rights (CS/SB 482)",
+      "sponsors": [
+        {
+          "name": "Tom Leek",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Alex Rizo",
+          "party": "Republican",
+          "role": "sponsor of House companion HB 1395",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "failed",
+      "statusDate": "2026-03-13",
+      "statusNote": "The Senate passed it 35-2 on March 4, 2026, but the House never heard it and it died in messages on March 13, 2026; House companion HB 1395 died in the Information Technology Budget & Policy Subcommittee the same day.",
+      "categories": [
+        "ai-child-safety",
+        "ai-consumer-protection"
+      ],
+      "summary": "Would have created a state 'Artificial Intelligence Bill of Rights,' including rules barring companion chatbots from interacting with minors without parental consent and requiring chatbots to disclose that they are not human. It was the legislative vehicle for Gov. DeSantis's AI proposal; House Speaker Daniel Perez said AI should be handled at the federal level.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Florida Senate: CS/SB 482 - Artificial Intelligence Bill of Rights (2026)",
+        "url": "https://www.flsenate.gov/Session/Bill/2026/482"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety",
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Central Florida Public Media, Florida Phoenix). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2026-proclamation-ai-special-session",
+      "state": "FL",
+      "session": "2026 special session (April 28-May 1)",
+      "billNumber": "Amended proclamation (executive action)",
+      "title": "Gov. DeSantis's amended special session proclamation adding artificial intelligence to the call",
+      "sponsors": [
+        {
+          "name": "Ron DeSantis",
+          "party": "Republican",
+          "role": "governor (issued proclamation)",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "announced",
+      "statusDate": "2026-04-15",
+      "statusNote": "Filed April 15, 2026, it moved the redistricting special session to April 28-May 1 and added AI and vaccine items; on April 28 Speaker Perez said the House would take up only redistricting.",
+      "categories": [
+        "ai-child-safety",
+        "ai-consumer-protection"
+      ],
+      "summary": "Expanded the congressional redistricting special session to include protecting Floridians from AI harms, including an AI Bill of Rights, and public records exemptions for investigations of alleged AI harms.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Florida Office of Economic and Demographic Research: Amended April special session proclamation, filed April 15, 2026 (PDF)",
+        "url": "https://www.edr.state.fl.us/Content/redistricting/2026redistricting/AprilSpecialSessionProclamationAmendment_Filed_4.15.26.pdf"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "child-safety",
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WUSF, Route Fifty). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2026d-sb2d",
+      "state": "FL",
+      "session": "2026 Special Session D",
+      "billNumber": "SB 2-D",
+      "title": "Artificial Intelligence Bill of Rights",
+      "sponsors": [],
+      "sponsorsNote": "Sponsor to verify (reported as Sen. Jason Brodeur, R).",
+      "status": "passed-one-chamber",
+      "statusDate": "2026-04-28",
+      "statusNote": "Filed April 24, 2026, it passed the Senate 37-1 during the April special session (Sen. Erin Grall voting no), but the House declined to consider AI legislation and the bill did not become law.",
+      "categories": [
+        "ai-child-safety",
+        "ai-consumer-protection"
+      ],
+      "summary": "A refiled version of the regular-session AI Bill of Rights (SB 482) covering chatbot and consumer protections; a companion, SB 4-D, creating public records exemptions for AI-related investigations passed the Senate 33-4.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Florida Senate: SB 2-D - Artificial Intelligence Bill of Rights (2026 Special Session D)",
+        "url": "https://www.flsenate.gov/Session/Bill/2026D/2D"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure",
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety",
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (The Florida Channel, The Floridian). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2025-desantis-ai-proposal",
+      "state": "FL",
+      "session": "2026 session (pre-session proposal)",
+      "billNumber": "Governor's proposal (no bill number)",
+      "title": "Citizen Bill of Rights for Artificial Intelligence and hyperscale data center proposal",
+      "sponsors": [
+        {
+          "name": "Ron DeSantis",
+          "party": "Republican",
+          "role": "governor (proposal)",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "announced",
+      "statusDate": "2025-12-04",
+      "statusNote": "Announced at a news conference in The Villages on Dec. 4, 2025; the proposals were later carried by SB 482 (AI) and SB 484 (data centers).",
+      "categories": [
+        "ai-child-safety",
+        "ai-deepfakes",
+        "ai-consumer-protection"
+      ],
+      "summary": "Paired an AI consumer-protection package (deepfake and explicit-content protections, parental controls, limits on AI use of name, image and likeness, and a ban on \"licensed\" AI therapy) with a proposal to keep utility customers from paying for hyperscale AI data centers and let local governments reject them; the data center half became SB 484.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Office of the Governor: Governor Ron DeSantis announces proposal for Citizen Bill of Rights for Artificial Intelligence (Dec. 2025)",
+        "url": "https://www.flgov.com/eog/news/press/2025/governor-ron-desantis-announces-proposal-citizen-bill-rights-artificial"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "child-safety",
+          "deepfakes-elections",
+          "privacy"
+        ],
+        "specificity": "concrete-proposal",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Greenberg Traurig, WUSF). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2025-desantis-preemption-statement",
+      "state": "FL",
+      "session": "2026 session (pre-session statement)",
+      "billNumber": "Governor's statement (no bill number)",
+      "title": "DeSantis says Trump's AI executive order cannot preempt Florida AI laws",
+      "sponsors": [
+        {
+          "name": "Ron DeSantis",
+          "party": "Republican",
+          "role": "governor (statement)",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "announced",
+      "statusDate": "2025-12-15",
+      "statusNote": "Speaking Dec. 15, 2025, days after President Trump's Dec. 11, 2025 order on a national AI policy framework, DeSantis said Florida would proceed with its AI Bill of Rights.",
+      "categories": [
+        "ai-preemption"
+      ],
+      "summary": "DeSantis said an executive order cannot preempt state AI laws and that only Congress can do so through legislation, and argued the order's language aligns with policies Florida is pursuing, such as child safety and data center rules.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "WUSF: DeSantis says his AI bill of rights will move forward despite Trump's executive order (Dec. 15, 2025)",
+        "url": "https://www.wusf.org/politics-issues/2025-12-15/desantis-says-his-ai-bill-of-rights-will-move-forward-despite-trumps-executive-order"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "state",
+          "preemption"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "innovation-competitiveness"
+        ],
+        "specificity": "stated-principle",
+        "evidenceType": "reported",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WLRN, Fox Business). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2025-hb1161",
+      "state": "FL",
+      "session": "2025 session",
+      "billNumber": "HB 1161",
+      "title": "Removal of Altered Sexual Depictions Posted Without Consent (\"Brooke's Law\")",
+      "sponsors": [
+        {
+          "name": "Wyman Duggan",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "enacted",
+      "statusDate": "2025-06-10",
+      "statusNote": "Passed the House April 16 and the Senate April 23, 2025; signed by Gov. DeSantis in Jacksonville on June 10, 2025 as Chapter 2025-133.",
+      "categories": [
+        "ai-deepfakes"
+      ],
+      "summary": "Requires platforms that host user-generated content to set up a process, by Dec. 31, 2025, for people to request removal of nonconsensual altered sexual depictions (deepfakes) of themselves and to remove them within 48 hours of a valid request, with platforms facing lawsuits for noncompliance.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Florida Senate: CS/CS/HB 1161 - Removal of Altered Sexual Depictions Posted Without Consent (2025)",
+        "url": "https://flsenate.gov/Session/Bill/2025/1161"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "liability"
+        ],
+        "issueAreas": [
+          "deepfakes-elections",
+          "privacy"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WUSF, News4Jax). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2026-hb527",
+      "state": "FL",
+      "session": "2026 session",
+      "billNumber": "HB 527",
+      "title": "Mandatory Human Reviews of Insurance Claim Denials (CS/CS/HB 527)",
+      "sponsors": [
+        {
+          "name": "Hillary Cassel",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "failed",
+      "statusDate": "2026-03-13",
+      "statusNote": "The House passed it unanimously (reported as March 5, 2026), but it died in the Senate when the session ended March 13, 2026; Senate companion SB 202 also died.",
+      "categories": [
+        "ai-consumer-protection"
+      ],
+      "summary": "Would have required a qualified human professional to make insurance claim denial or reduction decisions, barred AI output from being the sole basis for a denial, and required insurers to document AI use in claims-handling manuals.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Florida Senate: CS/CS/HB 527 - Mandatory Human Reviews of Insurance Claim Denials (2026)",
+        "url": "https://www.flsenate.gov/Session/Bill/2026/527"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "disclosure"
+        ],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Repairer Driven News, Insurance Journal). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "fl-2026-hb281",
+      "state": "FL",
+      "session": "2026 session",
+      "billNumber": "HB 281",
+      "title": "Use of Artificial Intelligence in Psychological, Clinical, Counseling, and Therapy Services",
+      "sponsors": [
+        {
+          "name": "Christine Hunschofsky",
+          "party": "Democratic",
+          "role": "sponsor",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "failed",
+      "statusDate": "2026-03-13",
+      "statusNote": "Died in the House Health Professions & Programs Subcommittee on March 13, 2026; Senate companion SB 344 died in Health Policy the same day.",
+      "categories": [
+        "ai-consumer-protection"
+      ],
+      "summary": "Would have barred licensed psychologists, clinical social workers, marriage and family therapists and mental health counselors from using AI to provide core therapy services, with some exceptions.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Florida Senate: HB 281 - Use of Artificial Intelligence in Psychological, Clinical, Counseling, and Therapy Services (2026)",
+        "url": "https://flsenate.gov/Session/Bill/2026/281"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "bans"
+        ],
+        "issueAreas": [
+          "safety"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (Florida's Voice, LegiScan). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
+    },
+    {
+      "id": "us-hr9777",
+      "state": "US",
+      "session": "119th Congress (2025-2026)",
+      "billNumber": "H.R. 9777",
+      "title": "Protecting Ratepayers Act",
+      "sponsors": [
+        {
+          "name": "Byron Donalds",
+          "party": "Republican",
+          "role": "sponsor",
+          "linkedCandidateId": "byron-donalds"
+        }
+      ],
+      "status": "introduced",
+      "statusDate": "2026-07-20",
+      "statusNote": "Announced by Rep. Donalds, a 2026 candidate for Florida governor, on Monday, July 20, 2026; no further action found.",
+      "categories": [
+        "dc-ratepayer",
+        "dc-water-environment"
+      ],
+      "summary": "Would require large-scale AI data centers to obtain all their electricity and water from private sources rather than the public power grid or public water systems, turning a voluntary Trump administration initiative into a federal requirement.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "WPTV: Florida Rep. Byron Donalds pushes bill requiring AI data centers to supply their own power, water (July 2026)",
+        "url": "https://www.wptv.com/news/local-news/our-community/west-palm-beach/florida-rep-byron-donalds-pushes-bill-requiring-ai-data-centers-to-supply-their-own-power-water"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "medium",
+      "coding": {
+        "regulatoryOrientation": "balanced",
+        "levelOfGovernment": [
+          "federal"
+        ],
+        "instruments": [],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 1,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-27",
+          "note": "Summarized from web search results citing this source on 2026-11-27; the page itself could not be opened from the build environment. Checked 2026-11-27 against other published reports: confirmed (WLRN (AP), Fortune). Coding, stance and categories were assigned by an AI model and have not been reviewed."
+        }
+      ]
     }
   ]
 }
