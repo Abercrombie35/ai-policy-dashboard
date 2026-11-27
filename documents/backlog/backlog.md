@@ -264,7 +264,7 @@ Acceptance criteria:
 - [ ] Deviation from the party lines shown for both races; Florida appears on the map, pop-up and Policy analysis page
 - [ ] Voter-priority polls and charts for both races (with AIPD-111 and AIPD-112); every claim checked; page tests pass
 
-Note: Florida's Senate seat is a 2026 special election. Note: the published criteria (AIPD-102) did not select it (no final rating found, no AI exchange between the candidates found), so decide whether Florida stays a Must on its own merits (state AI and data center activity, governor's race).
+Note: Decision (Nov. 27, 2026): stays a Must. The published criteria (AIPD-102) did not put Florida's Senate special election in the Senate sample (no final rating found, no AI exchange between the candidates found), so Florida is built out on its own merits (state AI and data center activity, the open governor's race) and profiled alongside the sample, not counted in it.
 
 #### AIPD-108: Certified election results
 *Must · 2 points · In progress (certification tracked; certified figures to be relayed: Michigan now, California after Dec. 11, Texas governor in January) · Proposal: §9 (record outcomes)*
