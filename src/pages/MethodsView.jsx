@@ -245,6 +245,16 @@ function MethodsView() {
       <section>
         <h3>Codebook ({codebook.version})</h3>
         <p>{codebook.status}</p>
+        {(codebook.changelog || []).length > 0 && (
+          <details className="codebook-changelog">
+            <summary>Codebook changes since the pilot draft ({codebook.changelog.length})</summary>
+            <ul>
+              {codebook.changelog.map((c, i) => (
+                <li key={i}><strong>{c.version}</strong>, {c.date}: {c.summary}</li>
+              ))}
+            </ul>
+          </details>
+        )}
         <div className="table-wrap" role="region" aria-label="Codebook dimensions and categories" tabIndex={0}>
           <table className="data-table">
             <thead><tr><th scope="col">Dimension</th><th scope="col">Categories</th></tr></thead>
