@@ -1,0 +1,176 @@
+[
+  {
+    "id": "cr-ct-house04-goldstein-1",
+    "verdict": "not-found",
+    "source_type": "other",
+    "source_url": "https://politicalemails.org/messages/2125190",
+    "source_title": "Supplied campaign-email archive reference",
+    "source_date": null,
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "The campaign email’s contents.",
+      "The February 7, 2026 date.",
+      "The specific attribution of electricity demand to data centers, AI computing and electrification mandates."
+    ],
+    "notes": "The supplied archive page would not open, and no original campaign copy of the email was located."
+  },
+  {
+    "id": "cr-ct-house04-goldstein-2",
+    "verdict": "partly-verified",
+    "source_type": "news",
+    "source_url": "https://www.ctpublic.org/news/2026-10-27/jim-himes-ct-4th-distict-congress-michael-goldstein",
+    "source_title": "Himes, Goldstein face off in rematch in CT’s 4th District",
+    "source_date": "2026-10-27",
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "The exact “AI-proof” wording.",
+      "The proposed requirement to disclose graduate salary ranges by degree."
+    ],
+    "notes": "The supplied report opened, and search located campaign material supporting vocational training and college transparency, but the two specific formulations were not established from an opened primary source."
+  },
+  {
+    "id": "cr-ct-house04-himes-3",
+    "verdict": "verified",
+    "source_type": "transcript",
+    "source_url": "https://www.cbsnews.com/news/jim-himes-connecticut-democrat-face-the-nation-transcript-11-15-2026/",
+    "source_title": "Transcript: Rep. Jim Himes on Face the Nation with Margaret Brennan, Nov. 15, 2026",
+    "source_date": "2026-11-15",
+    "exact_quote": "Nvidia could sell them to Megaspeed, Megaspeed gives them to China.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "Himes discussed possible chip diversion through Megaspeed and questioned the Commerce Department’s role in stopping the flow, presenting the diversion as a possibility requiring investigation."
+  },
+  {
+    "id": "cr-fr-melenchon-1",
+    "verdict": "verified",
+    "source_type": "campaign",
+    "source_url": "https://melenchon.fr/2026/07/22/une-nouvelle-gauche-daction-a-surgi-elle-est-faite-dinsoumis-et-de-verts-tous-ecologistes-interview-reporterre/",
+    "source_title": "Une nouvelle gauche d’action a surgi, elle est faite d’insoumis et de verts, tous écologistes — Interview Reporterre",
+    "source_date": "2026-07-22",
+    "exact_quote": "Oui, avec plusieurs précautions inscrites dans la loi que nous préparons.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "Mélenchon’s own reproduction of the interview confirms his affirmative answer and his proposed moratorium on data centers serving foreign private companies subject to American law."
+  },
+  {
+    "id": "cr-fr-philippe-2",
+    "verdict": "partly-verified",
+    "source_type": "campaign",
+    "source_url": "https://www.edouardphilippe.fr/programme/intelligence-artificielle",
+    "source_title": "Intelligence artificielle — Le programme — Avec Édouard 2027",
+    "source_date": null,
+    "exact_quote": "Édouard Philippe veut faire de l’Europe une puissance souveraine du numérique",
+    "corrections": [],
+    "not_confirmed": [
+      "The June 2026 VivaTech appearance and exact speech.",
+      "The characterization of that appearance as an early campaign credibility test."
+    ],
+    "notes": "His campaign confirms AI sovereignty as a policy priority, while the supplied Ecostylia article offers the campaign interpretation and acknowledges that it lacked a full public VivaTech speech transcript."
+  },
+  {
+    "id": "cr-mi-gov-benson-2",
+    "verdict": "partly-verified",
+    "source_type": "campaign",
+    "source_url": "https://www.jocelynbenson.com/news/jocelyn-benson-calls-for-moratorium-on-data-centers-in-new-michigan-first-ad",
+    "source_title": "Jocelyn Benson Calls for Moratorium on Data Centers in New Michigan First Ad",
+    "source_date": null,
+    "exact_quote": "Jocelyn Benson Calls for Moratorium on Data Centers in New “Michigan First” Ad",
+    "corrections": [],
+    "not_confirmed": [
+      "The September 13 launch date.",
+      "The exact ad language on tax breaks and electricity bills.",
+      "Whether the ad specified a duration."
+    ],
+    "notes": "The campaign URL opened as a news index containing the announcement title, without the announcement’s substantive text."
+  },
+  {
+    "id": "cr-mi-gov-james-1",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://clerk.house.gov/Votes/2025145",
+    "source_title": "House Roll Call 145, May 22, 2025",
+    "source_date": "2025-05-22",
+    "exact_quote": "James",
+    "corrections": [
+      {
+        "field": "scope and final enactment",
+        "correct": "The House proposal addressed state and local enforcement of AI regulation; its application to data-center regulation requires qualification, and the moratorium was removed before enactment.",
+        "evidence": "The opened Michigan Advance report reproduces the proposed AI-regulation moratorium and explains its removal from the final law: https://michiganadvance.com/2026/09/02/as-james-pushes-local-control-on-data-centers-past-congressional-votes-sought-to-limit-just-that/"
+      }
+    ],
+    "not_confirmed": [
+      "A categorical prohibition on all state and local data-center regulation."
+    ],
+    "notes": "The House Clerk records James voting yea on H.R. 1, but the contemporaneous House bill-text page on Congress.gov would not open."
+  },
+  {
+    "id": "cr-mi-gov-james-2",
+    "verdict": "partly-verified",
+    "source_type": "transcript",
+    "source_url": "https://www.cbsnews.com/news/john-james-michigan-republican-face-the-nation-transcript-08-30-2026/",
+    "source_title": "Transcript: Rep. John James on Face the Nation with Margaret Brennan, Aug. 30, 2026",
+    "source_date": "2026-08-30",
+    "exact_quote": "Our electricity bills can't go up. We must protect our water. We have to prevent pollution",
+    "corrections": [],
+    "not_confirmed": [
+      "The original August 1 campaign statement."
+    ],
+    "notes": "James personally affirmed the local-control and community-protection conditions in the later interview, but the supplied August 1 Detroit News article would not open."
+  },
+  {
+    "id": "cr-mi-sen-elsayed-2",
+    "verdict": "verified",
+    "source_type": "campaign",
+    "source_url": "https://abdulforsenate.com/2026/06/dr-abdul-el-sayed-announces-ai-policy-platform-ai-under-democracy/",
+    "source_title": "Dr. Abdul El-Sayed Announces AI Policy Platform: AI Under Democracy",
+    "source_date": "2026-06-29",
+    "exact_quote": "“AI Under Democracy” contains 22 distinct policy proposals.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The campaign announcement confirms the June 29 release, democratic ownership and governance, public control and protection of workers."
+  },
+  {
+    "id": "cr-mi-sen-elsayed-3",
+    "verdict": "not-found",
+    "source_type": "news",
+    "source_url": "https://www.washingtonpost.com/politics/2026/10/13/michigan-senate-candidate-el-sayed-issues-ai-policy/",
+    "source_title": "Abdul El-Sayed says voters are freaking out about AI. He wants to rein it in.",
+    "source_date": "2026-10-13",
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "The proposed freeze’s exact scope.",
+      "The conditions for resuming powerful-AI development.",
+      "Whether the proposal covered all new data centers or a narrower category."
+    ],
+    "notes": "The supplied Washington Post page opened without readable article text, and no opened primary platform establishing the October proposal was located."
+  },
+  {
+    "id": "cr-mi-sen-rogers-2",
+    "verdict": "partly-verified",
+    "source_type": "news",
+    "source_url": "https://www.eenews.net/articles/republican-mike-rogers-backs-michigan-data-center-moratorium/",
+    "source_title": "Republican Mike Rogers backs Michigan data center moratorium",
+    "source_date": null,
+    "exact_quote": "until we establish a fair, transparent approval process that puts local communities first.",
+    "corrections": [],
+    "not_confirmed": [
+      "The precise August 20 announcement date from a primary record."
+    ],
+    "notes": "E&E confirms the one-year Michigan pause and opposition to a national ban, while Rogers’s own later interview confirms support for a moratorium and local control; the supplied Hill page would not open: https://rogersforsenate.com/news/rogers-on-fox-amp-friends-listen-to-the-people-who-know-abdul"
+  },
+  {
+    "id": "cr-tx-gov-abbott-1",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149",
+    "source_title": "Texas Legislature Online — History for HB 149, 89th Regular Session",
+    "source_date": "2025-06-22",
+    "exact_quote": "Effective on 1/1/26",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The official history confirms Abbott’s June 22 signature, and the enrolled text establishes prohibited AI uses, government social-scoring restrictions and government-agency disclosure duties: https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.HTM"
+  }
+]

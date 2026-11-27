@@ -587,38 +587,41 @@
       "level": "medium"
     },
     "cr-ct-house04-goldstein-1": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The archived Feb. 7, 2026 campaign email ties a looming national electricity crisis to data centers, AI computing and electrification mandates; only the archive itself was found.",
+      "result": "not-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Not confirmed: the Political Emails archive page would not open and no original copy of the campaign email was found, so its contents and date have not been read. Earlier search results only showed the archive entry.",
       "sources": [
         {
-          "title": "Political Emails archive: The Goldstein Substack, Feb. 7, 2026",
+          "title": "Supplied campaign-email archive reference",
           "url": "https://politicalemails.org/messages/2125190"
-        },
-        {
-          "title": "Political Emails archive: message body",
-          "url": "https://politicalemails.org/messages/2125190/html_body"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The campaign email’s contents.",
+        "The February 7, 2026 date.",
+        "The specific attribution of electricity demand to data centers, AI computing and electrification mandates."
+      ],
+      "level": "low"
     },
     "cr-ct-house04-goldstein-2": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "CT Mirror's Oct. 27, 2026 race profile reports both of Goldstein's proposals: trade schools for 'AI-proof' jobs and salary disclosure by degree.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Partly confirmed: Connecticut Public's Oct. 27, 2026 profile opened, and campaign material supports expanding vocational training and college transparency, but the \"AI-proof\" wording and the requirement to disclose graduate salaries by degree were not found in an opened source.",
       "sources": [
         {
-          "title": "CT Mirror: Jim Himes, Michael Goldstein rematch in CT 4th District",
-          "url": "https://ctmirror.org/2026/10/27/jim-himes-michael-goldstein-rematch-in-ct-4th-district/"
-        },
-        {
-          "title": "Connecticut Public: Himes, Goldstein face off in CT's 4th District",
+          "title": "Himes, Goldstein face off in rematch in CT’s 4th District",
           "url": "https://www.ctpublic.org/news/2026-10-27/jim-himes-ct-4th-distict-congress-michael-goldstein"
-        },
-        {
-          "title": "Greenwich Free Press: Dr. Michael Goldstein to challenge Jim Himes",
-          "url": "https://greenwichfreepress.com/?p=245074"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The exact “AI-proof” wording.",
+        "The proposed requirement to disclose graduate salary ranges by degree."
+      ],
+      "level": "low"
     },
     "cr-ct-house04-himes-1": {
       "result": "confirmed",
@@ -652,18 +655,18 @@
     },
     "cr-ct-house04-himes-3": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The CBS transcript of Nov. 15, 2026 shows Himes saying the intermediary company Megaspeed may be a way of getting Nvidia chips to China, and CS Monitor reports him asking why Commerce (Lutnick) was a barrier to stopping the flow.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Confirmed in the CBS transcript of Face the Nation (Nov. 15, 2026): \"Nvidia could sell them to Megaspeed, Megaspeed gives them to China.\" He presented the diversion as a possibility to investigate and questioned the Commerce Department's role in stopping it.",
       "sources": [
         {
-          "title": "CBS News: Transcript: Rep. Jim Himes on Face the Nation with Margaret Brennan, Nov. 15, 2026",
+          "title": "Transcript: Rep. Jim Himes on Face the Nation with Margaret Brennan, Nov. 15, 2026",
           "url": "https://www.cbsnews.com/news/jim-himes-connecticut-democrat-face-the-nation-transcript-11-15-2026/"
-        },
-        {
-          "title": "Christian Science Monitor: Nvidia chips export, Bessent and Lutnick",
-          "url": "https://www.csmonitor.com/USA/Politics/2026/1118/nvidia-chips-export-bessent-lutnick?icid=rss"
         }
-      ]
+      ],
+      "quote": "Nvidia could sell them to Megaspeed, Megaspeed gives them to China.",
+      "level": "high"
     },
     "cr-fr-attal-1": {
       "result": "confirmed",
@@ -707,22 +710,18 @@
     },
     "cr-fr-melenchon-1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "In the Reporterre interview (republished July 22, 2026) Mélenchon backed a moratorium and slowdown with safeguards in a bill LFI is preparing, starting with data centers for foreign firms subject to U.S. law; Poliscope and Next.ink report the same moratorium.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Confirmed in the Reporterre interview as republished on his own site (July 22, 2026): asked about a moratorium and a slowdown, he answered \"Oui, avec plusieurs précautions inscrites dans la loi que nous préparons\" (yes, with several safeguards written into the bill we are preparing), and proposed a moratorium on data centers serving foreign private companies subject to U.S. law. His site is now the source.",
       "sources": [
         {
-          "title": "L'insoumission: « Notre espèce est menacée par des choix politiques », l'entretien de Jean-Luc Mélenchon au média Reporterre",
-          "url": "https://linsoumission.fr/2026/07/22/melenchon-entretien-reporterre/"
-        },
-        {
-          "title": "Poliscope: Instaurer un moratoire sur les data centers d'entreprises soumises au droit américain (Jean-Luc Mélenchon)",
-          "url": "https://www.poliscope.info/propositions/jean-luc-melenchon-moratoire-data-centers-etrangers"
-        },
-        {
-          "title": "Next.ink: Présidentielle 2027, LFI détaille son programme pour démocratiser la révolution numérique",
-          "url": "https://next.ink/267269/presidentielle-2027-lfi-detaille-son-programme-pour-democratiser-la-revolution-numerique/"
+          "title": "Une nouvelle gauche d’action a surgi, elle est faite d’insoumis et de verts, tous écologistes — Interview Reporterre",
+          "url": "https://melenchon.fr/2026/07/22/une-nouvelle-gauche-daction-a-surgi-elle-est-faite-dinsoumis-et-de-verts-tous-ecologistes-interview-reporterre/"
         }
-      ]
+      ],
+      "quote": "Oui, avec plusieurs précautions inscrites dans la loi que nous préparons.",
+      "level": "high"
     },
     "cr-fr-melenchon-2": {
       "result": "corrected",
@@ -759,23 +758,23 @@
       "level": "high"
     },
     "cr-fr-philippe-2": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The cited Ecostylia piece (June 2026) frames Philippe's VivaTech AI sovereignty pitch as an early credibility test, and a Le Monde item carried by Ground News confirms he spoke on AI at VivaTech.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Partly confirmed: his campaign programme makes European digital sovereignty, including in AI, a priority (\"Édouard Philippe veut faire de l'Europe une puissance souveraine du numérique\"). His June 2026 VivaTech appearance was not confirmed, and \"an early credibility test\" is Ecostylia's reading, which the outlet says lacked a full transcript; the text now attributes it.",
       "sources": [
         {
-          "title": "Ecostylia: At VivaTech, France's Edouard Philippe turns AI sovereignty into an early credibility test for his 2027 bid",
-          "url": "https://www.ecostylia.com/en/edouard-philippe-ai-2027/"
-        },
-        {
-          "title": "Ground News (Le Monde): President 2027: At VivaTech, Edouard Philippe affirms his will to invest massively in the AI",
-          "url": "https://groundnews.lakegeneva.lib.wi.us/article/president-2027-at-vivatech-edouard-philippe-affirms-his-will-to-invest-massively-in-the-ai"
-        },
-        {
-          "title": "PitchBook: France's 2027 campaign starts as pessimism deepens and AI divides emerge",
-          "url": "https://pitchbook.com/news/articles/frances-2027-campaign-starts-as-pessimism-deepens-and-ai-divides-emerge"
+          "title": "Intelligence artificielle — Le programme — Avec Édouard 2027",
+          "url": "https://www.edouardphilippe.fr/programme/intelligence-artificielle"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "His June 2026 VivaTech appearance and what he said there.",
+        "That the appearance was an early credibility test of his campaign (Ecostylia's reading)."
+      ],
+      "quote": "Édouard Philippe veut faire de l’Europe une puissance souveraine du numérique",
+      "level": "low"
     },
     "cr-fr-retailleau-1": {
       "result": "corrected",
@@ -853,61 +852,64 @@
       "level": "high"
     },
     "cr-mi-gov-benson-2": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The Detroit News report of Sept. 13, 2026 confirms the ad's launch that day and its call for a data center moratorium, an end to tax breaks and protection of electric bills.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Partly confirmed: her campaign's news page carries the announcement \"Jocelyn Benson Calls for Moratorium on Data Centers in New 'Michigan First' Ad\", but not its text. The Sept. 13 launch, the ad's wording on tax breaks and electric bills, and whether it set a duration rest on news reports that were not reopened.",
       "sources": [
         {
-          "title": "Yahoo News (The Detroit News): Jocelyn Benson's new ad calls for ending data center tax breaks",
-          "url": "https://www.yahoo.com/news/politics/articles/jocelyn-bensons-ad-calls-ending-100559557.html"
-        },
-        {
-          "title": "Benson campaign: Jocelyn Benson calls for moratorium on data centers in new 'Michigan First' ad",
+          "title": "Jocelyn Benson Calls for Moratorium on Data Centers in New Michigan First Ad",
           "url": "https://www.jocelynbenson.com/news/jocelyn-benson-calls-for-moratorium-on-data-centers-in-new-michigan-first-ad"
-        },
-        {
-          "title": "EUP News: Benson and James call for data center pause as back-to-back ads question their commitment",
-          "url": "https://www.eupnews.com/2026/09/benson-and-james-call-for-data-center-pause-as-back-to-back-ads-question-their-commitment/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The September 13 launch date.",
+        "The exact ad language on tax breaks and electricity bills.",
+        "Whether the ad specified a duration."
+      ],
+      "quote": "Jocelyn Benson Calls for Moratorium on Data Centers in New “Michigan First” Ad",
+      "level": "low"
     },
     "cr-mi-gov-james-1": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Michigan Advance reports James voted for the House budget bill that would have barred state and local AI regulation, including of data centers; the House passed it with the 10-year state AI moratorium on May 22, 2025.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Corrected: the House Clerk records him voting yes on H.R. 1 on May 22, 2025. The bill's 10-year moratorium barred state and local enforcement of AI regulations; whether it reached data center rules is Michigan Advance's reading, and the moratorium was removed before the bill became law. The bill text would not open, so the moratorium's content rests on the news report (Medium).",
       "sources": [
+        {
+          "title": "House Roll Call 145, May 22, 2025",
+          "url": "https://clerk.house.gov/Votes/2025145"
+        },
         {
           "title": "Michigan Advance: As James pushes local control on data centers, past congressional votes sought to limit just that",
           "url": "https://michiganadvance.com/2026/09/02/as-james-pushes-local-control-on-data-centers-past-congressional-votes-sought-to-limit-just-that/"
-        },
-        {
-          "title": "Tech Policy Press: US House passes 10-year moratorium on state AI laws",
-          "url": "https://techpolicy.press/us-house-passes-10year-moratorium-on-state-ai-laws"
-        },
-        {
-          "title": "Route Fifty: House-passed budget bill includes state AI moratorium",
-          "url": "https://www.route-fifty.com/artificial-intelligence/2025/05/house-passed-budget-bill-includes-state-ai-moratorium/405593"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "That the moratorium would have covered all state and local regulation of data centers."
+      ],
+      "quote": "James",
+      "level": "medium"
     },
     "cr-mi-gov-james-2": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The Detroit News story dated Aug. 1, 2026 confirms the James campaign's statement backing a data center moratorium until a local-control standard and environment and electricity-bill protections are in place.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Partly confirmed: on Face the Nation (Aug. 30, 2026, CBS transcript) he backed local control and protections for communities: \"Our electricity bills can't go up. We must protect our water. We have to prevent pollution.\" His campaign's Aug. 1 statement backing a moratorium (Detroit News) would not open.",
       "sources": [
         {
-          "title": "The Detroit News: John James favors moratorium on data centers, more local control",
-          "url": "https://www.detroitnews.com/story/news/politics/2026/08/01/john-james-data-center-moratorium-michigan-governor-race-perry-johnson/91134570007/"
-        },
-        {
-          "title": "Blue Water Healthy Living (reprint of The Detroit News): John James says he would let local leaders set data center policy",
-          "url": "https://bluewaterhealthyliving.com/news/local-news/michigan/john-james-says-he-would-let-local-leaders-set-data-center-policy/"
-        },
-        {
-          "title": "Michigan Advance: As James pushes local control on data centers, past congressional votes sought to limit just that",
-          "url": "https://michiganadvance.com/2026/09/02/as-james-pushes-local-control-on-data-centers-past-congressional-votes-sought-to-limit-just-that/"
+          "title": "Transcript: Rep. John James on Face the Nation with Margaret Brennan, Aug. 30, 2026",
+          "url": "https://www.cbsnews.com/news/john-james-michigan-republican-face-the-nation-transcript-08-30-2026/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The campaign's Aug. 1, 2026 statement backing a moratorium on new data centers."
+      ],
+      "quote": "Our electricity bills can't go up. We must protect our water. We have to prevent pollution",
+      "level": "low"
     },
     "cr-mi-gov-james-3": {
       "result": "corrected",
@@ -964,41 +966,37 @@
     },
     "cr-mi-sen-elsayed-2": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The campaign's June 2026 page confirms the 22-proposal 'AI Under Democracy' platform built around public ownership and governance of AI and protecting jobs; a July Puck piece and Common Dreams suggest the release may have been in late June or early July.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Confirmed on the campaign's announcement of June 29, 2026: \"AI Under Democracy\" contains 22 policy proposals built on democratic ownership and governance of AI, public control and protecting workers.",
       "sources": [
         {
-          "title": "El-Sayed campaign: Dr. Abdul El-Sayed Announces AI Policy Platform: AI Under Democracy",
+          "title": "Dr. Abdul El-Sayed Announces AI Policy Platform: AI Under Democracy",
           "url": "https://abdulforsenate.com/2026/06/dr-abdul-el-sayed-announces-ai-policy-platform-ai-under-democracy/"
-        },
-        {
-          "title": "Detroit Metro Times: Abdul El-Sayed wants to put AI under public control as jobs and democracy face new risks",
-          "url": "https://www.metrotimes.com/news/abdul-el-sayed-wants-to-put-ai-under-public-control-as-jobs-and-democracy-face-new-risks/"
-        },
-        {
-          "title": "Puck: Abdul El-Sayed's radical AI plan for Michigan",
-          "url": "https://puck.news/ai/2026/7/abdul-el-sayeds-radical-ai-plan-for-michigan"
         }
-      ]
+      ],
+      "quote": "“AI Under Democracy” contains 22 distinct policy proposals.",
+      "level": "high"
     },
     "cr-mi-sen-elsayed-3": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The Washington Post's Oct. 13, 2026 story (syndicated) and the campaign's release confirm El-Sayed proposed freezing development of the most powerful AI systems and new data centers until new rules are in place.",
+      "result": "not-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Not confirmed: The Washington Post page opened without readable text and no campaign platform setting out the October proposal was found, so the freeze's scope and conditions are unchecked.",
       "sources": [
         {
-          "title": "The Washington Post (via DNYUZ): Abdul El-Sayed issues AI policy designed to rally progressives",
-          "url": "https://dnyuz.com/2026/10/13/abdul-el-sayed-issues-ai-policy-designed-to-rally-progressives/"
-        },
-        {
-          "title": "El-Sayed campaign: Abdul El-Sayed releases plan to get AI under control",
-          "url": "https://abdulforsenate.com/2026/10/new-as-big-tech-billionaires-let-ai-wreak-havoc-abdul-el-sayed-releases-plan-to-get-ai-under-control/"
-        },
-        {
-          "title": "Crypto Briefing: Abdul El-Sayed proposes freeze on advanced AI development",
-          "url": "https://cryptobriefing.com/abdul-el-sayed-ai-development-freeze/"
+          "title": "Abdul El-Sayed says voters are freaking out about AI. He wants to rein it in.",
+          "url": "https://www.washingtonpost.com/politics/2026/10/13/michigan-senate-candidate-el-sayed-issues-ai-policy/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The proposed freeze’s exact scope.",
+        "The conditions for resuming powerful-AI development.",
+        "Whether the proposal covered all new data centers or a narrower category."
+      ],
+      "level": "low"
     },
     "cr-mi-sen-rogers-1": {
       "result": "corrected",
@@ -1024,41 +1022,44 @@
     },
     "cr-mi-sen-rogers-2": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "E&E News and Michigan Advance confirm that on Aug. 20, 2026 Rogers backed a one-year Michigan data center moratorium until a fair, transparent approval process exists, and said he does not support a national ban.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Confirmed in E&E News, which quotes his call for a one-year Michigan pause \"until we establish a fair, transparent approval process that puts local communities first\" and his opposition to a national ban; his campaign's later Fox & Friends post confirms his support for a moratorium and local control. The Aug. 20 date rests on news reports, so Medium. The Hill would not open; E&E News is now the source.",
       "sources": [
         {
-          "title": "E&E News: Republican Mike Rogers backs Michigan data center moratorium",
+          "title": "Republican Mike Rogers backs Michigan data center moratorium",
           "url": "https://www.eenews.net/articles/republican-mike-rogers-backs-michigan-data-center-moratorium/"
         },
         {
-          "title": "Michigan Advance: After data center investments revealed, Rogers backs statewide moratorium",
-          "url": "https://michiganadvance.com/2026/08/20/after-data-center-investments-revealed-rogers-backs-statewide-moratorium/"
-        },
-        {
-          "title": "WJLA: Michigan Republican Rogers backs temporary ban on data center construction",
-          "url": "https://wjla.com/news/nation-world/michigan-republican-gop-mike-rogers-backs-temporary-ban-on-data-center-construction-democrat-abdul-el-sayed-us-senate-race-election"
+          "title": "Rogers for Senate: Rogers on Fox & Friends",
+          "url": "https://rogersforsenate.com/news/rogers-on-fox-amp-friends-listen-to-the-people-who-know-abdul"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The Aug. 20, 2026 date from a primary record."
+      ],
+      "quote": "until we establish a fair, transparent approval process that puts local communities first.",
+      "level": "medium"
     },
     "cr-tx-gov-abbott-1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Law-firm and IAPP analyses confirm Abbott signed HB 149 on June 22, 2025, effective Jan. 1, 2026, with the listed bans and agency disclosure duty.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "07",
+      "note": "Confirmed on Texas Legislature Online: signed June 22, 2025, effective Jan. 1, 2026. The enrolled text sets out the prohibited AI uses, the limits on government social scoring and state agencies' duty to disclose AI use.",
       "sources": [
         {
-          "title": "IAPP: Governor signs Texas Responsible Artificial Intelligence Governance Act",
-          "url": "https://iapp.org/news/a/governor-signs-texas-responsible-artificial-intelligence-governance-act"
+          "title": "Texas Legislature Online — History for HB 149, 89th Regular Session",
+          "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149"
         },
         {
-          "title": "Haynes Boone: Texas Responsible Artificial Intelligence Governance Act, what businesses need to know",
-          "url": "https://www.haynesboone.com/news/publications/texas-responsible-artificial-intelligence-governance-act-what-businesses-need-to-know"
-        },
-        {
-          "title": "Littler: Texas joins fray and enacts AI legislation",
-          "url": "https://www.littler.com/news-analysis/asap/texas-joins-fray-and-enacts-ai-legislation"
+          "title": "Texas Legislature Online: HB 149, enrolled text",
+          "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.HTM"
         }
-      ]
+      ],
+      "quote": "Effective on 1/1/26",
+      "level": "high"
     },
     "cr-tx-gov-abbott-2": {
       "result": "corrected",
@@ -3809,6 +3810,13 @@
     },
     {
       "batch": "06",
+      "date": "2026-11-27",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "07",
       "date": "2026-11-27",
       "claims": 12,
       "tool": "ChatGPT (web browsing)",
