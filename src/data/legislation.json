@@ -551,25 +551,25 @@
         {
           "name": "Jennifer Wortz",
           "party": "Republican",
-          "role": "lead sponsor",
-          "linkedCandidateId": null
-        },
-        {
-          "name": "Joseph Fox",
-          "party": "Republican",
-          "role": "sponsor",
+          "role": "HB 5594",
           "linkedCandidateId": null
         },
         {
           "name": "Dylan Wegela",
           "party": "Democratic",
-          "role": "sponsor",
+          "role": "HB 5595",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Joseph Fox",
+          "party": "Republican",
+          "role": "HB 5596",
           "linkedCandidateId": null
         }
       ],
       "status": "introduced",
       "statusDate": "2026-02-26",
-      "statusNote": "Introduced Feb. 26, 2026; still in committee. Gov. Whitmer has said she will not sign a statewide moratorium.",
+      "statusNote": "Introduced Feb. 26, 2026 and referred to the Committee on Government Operations; no later action.",
       "tags": [
         "moratorium"
       ],
@@ -584,8 +584,8 @@
         "url": "https://www.themidwesterner.news/2026/02/bipartisan-house-bills-put-1-year-statewide-moratorium-on-data-centers/"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "low",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -602,7 +602,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 4,
+      "version": 5,
       "history": [
         {
           "version": 1,
@@ -623,6 +623,11 @@
           "version": 4,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (WKAR, Michigan Advance, LegiScan). The package is HB 5594-5596 (Wortz, Fox, Wegela), introduced Feb. 26, 2026, pausing permits and PSC approvals until April 1, 2027; it remains in committee, and Whitmer opposes a moratorium. NCSL's 'six-month' description conflicts with the bills' April 2027 end date. Bill numbers, sponsors and date added: HB 5594-5596, introduced Feb. 26, 2026 by Reps. Jennifer Wortz and Joseph Fox (R) and Dylan Wegela (D). Medium confidence."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 09): partly confirmed, Low confidence. Partly confirmed: the legislature's histories confirm HB 5594 (Wortz), HB 5595 (Wegela) and HB 5596 (Fox), introduced Feb. 26, 2026 and referred to the Committee on Government Operations with no later action. The April 1, 2027 end date and Gov. Whitmer's refusal to sign a statewide moratorium were not checked in the bill text or a statement of hers."
         }
       ]
     },
@@ -636,19 +641,13 @@
         {
           "name": "Jim Runestad",
           "party": "Republican",
-          "role": "sponsor",
-          "linkedCandidateId": null
-        },
-        {
-          "name": "Ruth Johnson",
-          "party": "Republican",
-          "role": "sponsor",
+          "role": "introduced SB 1018-1020",
           "linkedCandidateId": null
         }
       ],
       "status": "introduced",
       "statusDate": "2026-06-04",
-      "statusNote": "Introduced June 4, 2026; in the Senate Government Operations Committee with no later action found.",
+      "statusNote": "Introduced June 4, 2026 and referred to the Committee on Government Operations; no later action.",
       "tags": [
         "moratorium"
       ],
@@ -662,8 +661,8 @@
         "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1018"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "precautionary",
         "levelOfGovernment": [
@@ -671,6 +670,93 @@
         ],
         "instruments": [
           "bans"
+        ],
+        "issueAreas": [
+          "energy-data-centers"
+        ],
+        "specificity": "legislative-action",
+        "evidenceType": "bill",
+        "coder": "model-draft",
+        "reviewed": false
+      },
+      "version": 5,
+      "history": [
+        {
+          "version": 1,
+          "date": "2026-11-12",
+          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
+        },
+        {
+          "version": 2,
+          "date": "2026-11-16",
+          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-24",
+          "note": "Checked 2026-11-24 against other published reports: not confirmed. No result named SB 1018-1020; Republican Sen. Jim Runestad announced a Senate bill package for a 365-day statewide data center moratorium, which may be this package, but the bill numbers, sponsors and status could not be checked before the search budget ran out. Stays Low confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-24",
+          "note": "Second check 2026-11-24 against other published reports: confirmed (MichiganVotes, Michigan Advance, Sen. Jim Runestad). Republican Sens. Runestad and Johnson introduced SB 1018-1020 on June 4, 2026 for a moratorium on approvals and operation of new data centers until Apr. 1, 2027; the bills sit in Senate Government Operations with no later action found (statusDate can be set to 2026-06-04). Sponsors and date added: Sens. Jim Runestad (R) and Ruth Johnson (R), introduced June 4, 2026. Medium confidence."
+        },
+        {
+          "version": 5,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 09): corrected, High confidence. Confirmed on the legislature's histories: SB 1018-1020 were introduced June 4, 2026 and referred to the Committee on Government Operations with no later action. Corrected: Sen. Jim Runestad introduced all three; Sen. Ruth Johnson's role could not be confirmed."
+        }
+      ],
+      "sponsorsNote": "Sen. Ruth Johnson (R) was also reported as a sponsor; her role is not confirmed on the official record."
+    },
+    {
+      "id": "mi-hb5396",
+      "state": "MI",
+      "session": "2025-2026 session",
+      "billNumber": "HB 5396 (with HB 5397-5398)",
+      "title": "Repeal of data center sales and use tax exemptions",
+      "sponsors": [
+        {
+          "name": "Dylan Wegela",
+          "party": "Democratic",
+          "role": "HB 5396",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "James DeSana",
+          "party": "Republican",
+          "role": "HB 5397",
+          "linkedCandidateId": null
+        },
+        {
+          "name": "Erin Byrnes",
+          "party": "Democratic",
+          "role": "HB 5398",
+          "linkedCandidateId": null
+        }
+      ],
+      "status": "introduced",
+      "statusDate": "2025-12-17",
+      "statusNote": "Introduced Dec. 17, 2025 and referred to the Committee on Economic Competitiveness; still in committee (HB 5398 covers property tax).",
+      "categories": [
+        "dc-tax-incentives"
+      ],
+      "summary": "Would repeal the sales and use tax exemptions for data centers; companion bills address property tax treatment.",
+      "labelType": "source-summary",
+      "source": {
+        "title": "Bridge Michigan: Michigan lawmakers unveil plan to repeal data center tax breaks",
+        "url": "https://bridgemi.com/michigan-environment-watch/michigan-lawmakers-unveil-plan-to-repeal-data-center-tax-breaks/"
+      },
+      "publishedDate": null,
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
+      "coding": {
+        "regulatoryOrientation": "precautionary",
+        "levelOfGovernment": [
+          "state"
+        ],
+        "instruments": [
+          "funding"
         ],
         "issueAreas": [
           "energy-data-centers"
@@ -695,76 +781,12 @@
         {
           "version": 3,
           "date": "2026-11-24",
-          "note": "Checked 2026-11-24 against other published reports: not confirmed. No result named SB 1018-1020; Republican Sen. Jim Runestad announced a Senate bill package for a 365-day statewide data center moratorium, which may be this package, but the bill numbers, sponsors and status could not be checked before the search budget ran out. Stays Low confidence."
+          "note": "Second check 2026-11-24 against other published reports: confirmed (MichiganVotes, MichiganVotes, Bridge Michigan). Wegela's bipartisan HB 5396-5398, introduced Dec. 17, 2025, would repeal the data center sales and use tax exemptions (HB 5398 covers property tax) and remain in committee with no recorded action since introduction. Introduction date added: Dec. 17, 2025. Medium confidence."
         },
         {
           "version": 4,
-          "date": "2026-11-24",
-          "note": "Second check 2026-11-24 against other published reports: confirmed (MichiganVotes, Michigan Advance, Sen. Jim Runestad). Republican Sens. Runestad and Johnson introduced SB 1018-1020 on June 4, 2026 for a moratorium on approvals and operation of new data centers until Apr. 1, 2027; the bills sit in Senate Government Operations with no later action found (statusDate can be set to 2026-06-04). Sponsors and date added: Sens. Jim Runestad (R) and Ruth Johnson (R), introduced June 4, 2026. Medium confidence."
-        }
-      ]
-    },
-    {
-      "id": "mi-hb5396",
-      "state": "MI",
-      "session": "2025-2026 session",
-      "billNumber": "HB 5396 (with HB 5397-5398)",
-      "title": "Repeal of data center sales and use tax exemptions",
-      "sponsors": [
-        {
-          "name": "Dylan Wegela",
-          "party": "Democratic",
-          "role": "sponsor",
-          "linkedCandidateId": null
-        }
-      ],
-      "status": "introduced",
-      "statusDate": "2025-12-17",
-      "statusNote": "Introduced Dec. 17, 2025; still in committee (HB 5398, by Rep. Erin Byrnes, covers property tax).",
-      "categories": [
-        "dc-tax-incentives"
-      ],
-      "summary": "Would repeal the sales and use tax exemptions for data centers; companion bills address property tax treatment.",
-      "labelType": "source-summary",
-      "source": {
-        "title": "Bridge Michigan: Michigan lawmakers unveil plan to repeal data center tax breaks",
-        "url": "https://bridgemi.com/michigan-environment-watch/michigan-lawmakers-unveil-plan-to-repeal-data-center-tax-breaks/"
-      },
-      "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
-      "coding": {
-        "regulatoryOrientation": "precautionary",
-        "levelOfGovernment": [
-          "state"
-        ],
-        "instruments": [
-          "funding"
-        ],
-        "issueAreas": [
-          "energy-data-centers"
-        ],
-        "specificity": "legislative-action",
-        "evidenceType": "bill",
-        "coder": "model-draft",
-        "reviewed": false
-      },
-      "version": 3,
-      "history": [
-        {
-          "version": 1,
-          "date": "2026-11-12",
-          "note": "Entered from web search results on 2026-11-12; the source page itself could not be opened from the build environment. Bill number, sponsors, status and summary need checking against the official record. Coding by an AI model, not reviewed."
-        },
-        {
-          "version": 2,
-          "date": "2026-11-16",
-          "note": "Added policy categories so proposals can be grouped by type. Category assignment by an AI model; not reviewed."
-        },
-        {
-          "version": 3,
-          "date": "2026-11-24",
-          "note": "Second check 2026-11-24 against other published reports: confirmed (MichiganVotes, MichiganVotes, Bridge Michigan). Wegela's bipartisan HB 5396-5398, introduced Dec. 17, 2025, would repeal the data center sales and use tax exemptions (HB 5398 covers property tax) and remain in committee with no recorded action since introduction. Introduction date added: Dec. 17, 2025. Medium confidence."
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 09): confirmed, High confidence. Confirmed on the legislature's histories: Wegela's HB 5396, Rep. James DeSana's HB 5397 and Rep. Erin Byrnes's property-tax companion HB 5398 were introduced Dec. 17, 2025 and referred to the Committee on Economic Competitiveness, where they remain. Companion sponsors added."
         }
       ]
     },
@@ -1511,19 +1533,19 @@
       ],
       "status": "enacted",
       "statusDate": "2023-11-30",
-      "statusNote": "Enacted 2023, per a secondary tracker; verify.",
+      "statusNote": "Signed Nov. 30, 2023.",
       "categories": [
         "ai-deepfakes"
       ],
-      "summary": "Require disclosure of AI-generated content in political communications.",
+      "summary": "Require political ads generated wholly or substantially with AI to say so, and set penalties for distributing specified deceptive AI-generated election media.",
       "labelType": "source-summary",
       "source": {
-        "title": "iMiel: Michigan AI law 2026 (tracker)",
-        "url": "https://imiel.dev/explore/us-ai-legislation-2026/michigan/"
+        "title": "Office of the Governor of Michigan: Whitmer signs election bills package (Nov. 30, 2023)",
+        "url": "https://www.michigan.gov/whitmer/news/press-releases/2023/11/30/whitmer-signs-election-bills-to-ensure-every-vote-can-be-cast-and-counted"
       },
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
-      "confidence": "medium",
+      "lastVerified": "2026-11-27",
+      "confidence": "high",
       "coding": {
         "regulatoryOrientation": "balanced",
         "levelOfGovernment": [
@@ -1540,7 +1562,7 @@
         "coder": "model-draft",
         "reviewed": false
       },
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -1556,6 +1578,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: confirmed (Michigan Public, Michigan House Fiscal Agency, Miller Canfield). HB 5141, 5143 and 5144 were signed Nov. 30, 2023, requiring AI disclaimers on political ads and criminalizing deceptive election deepfakes; HB 5145 (Rep. Noah Arbit) was part of the same package. Sponsors and signing date added: Reps. Penelope Tsernoglou (D) and Matt Bierlein (R); signed Nov. 30, 2023. Medium confidence."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 09): confirmed, High confidence. Confirmed in Gov. Whitmer's Nov. 30, 2023 signing release: political ads generated wholly or substantially with AI must carry a statement saying so, with penalties for specified deceptive election media; Tsernoglou authored HB 5141 and 5144 and Bierlein HB 5143. The release is now the source."
         }
       ]
     },

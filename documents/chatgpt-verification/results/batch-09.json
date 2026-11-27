@@ -1,0 +1,167 @@
+[
+  {
+    "id": "fr-president-2027#context0",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.info.gouv.fr/actualite/election-presidentielle-2027",
+    "source_title": "Élection présidentielle 2027 : dates et vote",
+    "source_date": null,
+    "exact_quote": "La campagne officielle de l'élection présidentielle 2027 débutera le lundi 5 avril 2027",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The government confirms April 18 and May 2, with voting one day earlier in certain overseas territories."
+  },
+  {
+    "id": "fr-president-2027#context1",
+    "verdict": "partly-verified",
+    "source_type": "news",
+    "source_url": "https://www.eunews.it/en/2026/07/07/le-pen-convicted-on-appeal-45-month-ineligibility-but-she-can-still-run-in-2027/",
+    "source_title": "Le Pen convicted on appeal: 45-month ineligibility, but she can still run in 2027",
+    "source_date": "2026-07-07",
+    "exact_quote": "45 months’ ineligibility, 30 of which are suspended",
+    "corrections": [],
+    "not_confirmed": [
+      "Her same-day candidacy declaration.",
+      "The December 16 cassation hearing and anticipated ruling deadline.",
+      "Bardella’s conditional candidacy from an opened primary statement."
+    ],
+    "notes": "The report supports the appeal outcome, but the Court of Cassation’s procedural announcements required JavaScript and cookies and supplied no readable text."
+  },
+  {
+    "id": "international#es-2026-snap",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.boe.es/eli/es/rd/2026/10/05/806/dof/spa/pdf",
+    "source_title": "Real Decreto 806/2026, de 5 de octubre",
+    "source_date": "2026-10-06",
+    "exact_quote": "Se convocan elecciones a ambas Cámaras, que se celebrarán el domingo 29 de noviembre de 2026.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The published dissolution and election decree confirms November 29."
+  },
+  {
+    "id": "international#fi-2027-parliamentary",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.finlex.fi/en/legislation/2026/968",
+    "source_title": "Decree 968/2026 on parliamentary constituency seats for the 2027 election",
+    "source_date": "2026-11-05",
+    "exact_quote": "Vid det riksdagsval som förrättas den 18 april 2027",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The government decree explicitly identifies April 18, 2027 as election day."
+  },
+  {
+    "id": "international#fr-2027-presidential",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.service-public.gouv.fr/particuliers/actualites/A15053",
+    "source_title": "Les dates de l'élection présidentielle de 2027 sont annoncées",
+    "source_date": null,
+    "exact_quote": "le dimanche 18 avril 2027 pour le premier tour",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The official public-service announcement confirms April 18 and May 2, with overseas exceptions."
+  },
+  {
+    "id": "international#it-2027-general",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.camera.it/application/xmanager/projects/leg19/file/Costituzione_e_Regolamento_2022.pdf",
+    "source_title": "Costituzione della Repubblica Italiana e Regolamento della Camera",
+    "source_date": null,
+    "exact_quote": "La Camera dei deputati e il Senato della Repubblica sono eletti per cinque anni.",
+    "corrections": [],
+    "not_confirmed": [
+      "December 22, 2027 as the exact final permissible polling date.",
+      "An official decree setting the next general election."
+    ],
+    "notes": "Articles 60 and 61 establish five-year terms and elections within seventy days after their end, but the exact claimed deadline was not established."
+  },
+  {
+    "id": "international#pl-2027-parliamentary",
+    "verdict": "not-found",
+    "source_type": "official",
+    "source_url": "https://www.sejm.gov.pl/prawo/konst/angielski/kon1.htm",
+    "source_title": "Constitution of the Republic of Poland",
+    "source_date": null,
+    "exact_quote": "",
+    "corrections": [],
+    "not_confirmed": [
+      "November 11, 2027 as the statutory latest election date.",
+      "An officially scheduled 2027 polling date."
+    ],
+    "notes": "The primary constitutional page did not yield usable text, and the electoral-commission result retrieved concerned a Senate by-election rather than the 2027 general election."
+  },
+  {
+    "id": "mi-2023-election-deepfakes",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.michigan.gov/whitmer/news/press-releases/2023/11/30/whitmer-signs-election-bills-to-ensure-every-vote-can-be-cast-and-counted",
+    "source_title": "Governor Whitmer Signs Historic Election Bills Package to Ensure Every Vote Can be Cast and Counted",
+    "source_date": "2023-11-30",
+    "exact_quote": "requires political advertisements generated in whole or substantially with the use of artificial intelligence to include a statement",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The announcement identifies Tsernoglou as author of HB 5141 and 5144 and Bierlein as author of HB 5143, with disclosure requirements and penalties for specified deceptive election media."
+  },
+  {
+    "id": "mi-2026-house-moratorium",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5594",
+    "source_title": "House Bill 5594 of 2026",
+    "source_date": "2026-02-26",
+    "exact_quote": "referred to Committee on Government Operations",
+    "corrections": [],
+    "not_confirmed": [
+      "The April 1, 2027 endpoint from opened bill text.",
+      "Whitmer’s refusal to sign a statewide moratorium from a primary statement."
+    ],
+    "notes": "Official histories confirm Wortz’s HB 5594, Wegela’s HB 5595 and Fox’s HB 5596 remain at introduction and committee referral: https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5595 and https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5596"
+  },
+  {
+    "id": "mi-2026-sb1018",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1018",
+    "source_title": "Senate Bill 1018 of 2026",
+    "source_date": "2026-06-04",
+    "exact_quote": "REFERRED TO COMMITTEE ON GOVERNMENT OPERATIONS",
+    "corrections": [
+      {
+        "field": "primary authors",
+        "correct": "Jim Runestad introduced all three bills.",
+        "evidence": "The individual histories identify Runestad as introducer of SB 1018, 1019 and 1020."
+      }
+    ],
+    "not_confirmed": [
+      "Ruth Johnson’s precise sponsorship role."
+    ],
+    "notes": "The three official histories show June 4 introduction and referral with no subsequent action: https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1019 and https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1020"
+  },
+  {
+    "id": "mi-hb5396",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5396",
+    "source_title": "House Bill 5396 of 2025",
+    "source_date": "2025-12-17",
+    "exact_quote": "referred to Committee on Economic Competitiveness",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The histories confirm Wegela’s HB 5396, James DeSana’s HB 5397 and Erin Byrnes’s property-tax companion HB 5398 remain in committee: https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5397 and https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5398"
+  },
+  {
+    "id": "pl-d-data-centers#0",
+    "verdict": "verified",
+    "source_type": "transcript",
+    "source_url": "https://www.democrats.senate.gov/news/press-releases/leader-schumer-floor-remarks-urging-senate-republicans-to-join-democrats-to-take-real-action-on-ai",
+    "source_title": "Leader Schumer Floor Remarks Urging Senate Republicans To Join Democrats To Take Real Action On AI",
+    "source_date": "2026-09-30",
+    "exact_quote": "Senate Democrats want to make it mandatory for data centers to cover their own costs by law",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The same remarks call the Republican data-center bill toothless, and the official September 30 roll call confirms rejection of cloture: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm"
+  }
+]

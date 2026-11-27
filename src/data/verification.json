@@ -1524,181 +1524,188 @@
     },
     "fr-president-2027#context0": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "info.gouv.fr confirms the April 18 and May 2, 2027 rounds and an official campaign opening Monday April 5, 2027; some overseas territories vote a day earlier.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Confirmed on the government's official page: the official campaign opens Monday, April 5, 2027, with rounds on April 18 and May 2 (some overseas territories vote a day earlier).",
       "sources": [
         {
-          "title": "info.gouv.fr: Élection présidentielle 2027, dates et vote",
+          "title": "Élection présidentielle 2027 : dates et vote",
           "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2027"
-        },
-        {
-          "title": "CNews: Présidentielle 2027, voici les dates clés du scrutin",
-          "url": "https://www.cnews.fr/france/2026-09-11/presidentielle-2027-voici-les-dates-cles-du-scrutin-1916899"
-        },
-        {
-          "title": "Public Sénat: La prochaine élection présidentielle aura lieu les 18 avril et 2 mai 2027",
-          "url": "https://www.publicsenat.fr/actualites/politique/la-prochaine-election-presidentielle-aura-lieu-les-18-avril-et-2-mai-2027"
         }
-      ]
+      ],
+      "quote": "La campagne officielle de l'élection présidentielle 2027 débutera le lundi 5 avril 2027",
+      "level": "high"
     },
     "fr-president-2027#context1": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed: the July 7, 2026 appeal ruling left Le Pen eligible for 2027, her Cassation appeal is still pending (hearing Dec. 16, 2026; ruling expected by early April 2027), and Bardella is the fallback; some jurists dispute whether the appeal affects her eligibility.",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Partly confirmed: Eunews' July 7, 2026 report confirms the appeal ruling (45 months' ineligibility, 30 of them suspended), which lets her run in 2027. Her same-day declaration, the Dec. 16 Court of Cassation hearing and Bardella's fallback candidacy were not confirmed in an opened source; the court's pages would not display.",
       "sources": [
         {
-          "title": "Le Club des juristes: Marine Le Pen candidate à la présidentielle de 2027 malgré sa condamnation en appel",
-          "url": "https://www.leclubdesjuristes.com/en-bref/marine-le-pen-candidate-a-la-presidentielle-de-2027-malgre-sa-condamnation-en-appel-16843/"
-        },
-        {
-          "title": "Public Sénat: Condamnation de Marine Le Pen, la Cour de cassation pourrait se prononcer au plus tard début avril 2027",
-          "url": "https://www.publicsenat.fr/actualites/politique/condamnation-de-marine-le-pen-la-cour-de-cassation-pourrait-se-prononcer-au-plus-tard-debut-avril-2027"
-        },
-        {
-          "title": "AAP: Le Pen's French presidency bid at stake in court ruling",
-          "url": "https://aapnews.aap.com.au/news/le-pen-s-french-presidency-bid-at-stake-in-court-ruling"
+          "title": "Le Pen convicted on appeal: 45-month ineligibility, but she can still run in 2027",
+          "url": "https://www.eunews.it/en/2026/07/07/le-pen-convicted-on-appeal-45-month-ineligibility-but-she-can-still-run-in-2027/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "Her same-day candidacy declaration.",
+        "The December 16 cassation hearing and anticipated ruling deadline.",
+        "Bardella’s conditional candidacy from an opened primary statement."
+      ],
+      "quote": "45 months’ ineligibility, 30 of which are suspended",
+      "level": "low"
     },
     "international#es-2026-snap": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed: Spain's snap general election is on Nov. 29, 2026 (the claim text repeats '2026' by mistake).",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Confirmed in Royal Decree 806/2026 of Oct. 5 (Boletín Oficial del Estado, Oct. 6), which calls elections to both chambers for Sunday, Nov. 29, 2026.",
       "sources": [
         {
-          "title": "La Moncloa: Pedro Sánchez announces the calling of general elections for November 29th",
-          "url": "https://www.lamoncloa.gob.es/lang/en/presidente/news/Paginas/2026/20261005-institutional-statement.aspx"
-        },
-        {
-          "title": "Al Jazeera: Spain's Pedro Sanchez announces snap election amid housing crisis",
-          "url": "https://aljazeera.com/news/2026/10/5/spanish-prime-minister-pedro-sanchez-announces-snap-election"
-        },
-        {
-          "title": "Catalan News: Pedro Sánchez announces elections for November 29",
-          "url": "https://www.catalannews.com/politics/item/pedro-sanchez-calls-general-election-for-november-29"
+          "title": "Real Decreto 806/2026, de 5 de octubre",
+          "url": "https://www.boe.es/eli/es/rd/2026/10/05/806/dof/spa/pdf"
         }
-      ]
+      ],
+      "quote": "Se convocan elecciones a ambas Cámaras, que se celebrarán el domingo 29 de noviembre de 2026.",
+      "level": "high"
     },
     "international#fi-2027-parliamentary": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed: Finland's next parliamentary election is on Sunday, April 18, 2027.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Confirmed in government decree 968/2026 (Finlex, Nov. 5, 2026) on constituency seats, which names April 18, 2027 as election day.",
       "sources": [
         {
-          "title": "Wikipedia: 2027 Finnish parliamentary election",
-          "url": "https://en.wikipedia.org/wiki/2027_Finnish_parliamentary_election"
-        },
-        {
-          "title": "City of Vaasa: Elections",
-          "url": "https://www.vaasa.fi/en/living/get-involved-and-be-influential/elections/"
+          "title": "Decree 968/2026 on parliamentary constituency seats for the 2027 election",
+          "url": "https://www.finlex.fi/en/legislation/2026/968"
         }
-      ]
+      ],
+      "quote": "Vid det riksdagsval som förrättas den 18 april 2027",
+      "level": "high"
     },
     "international#fr-2027-presidential": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The government set the 2027 presidential election for April 18 (first round) and May 2 (runoff) at the July 1, 2026 Council of Ministers.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Confirmed on service-public.gouv.fr: first round Sunday, April 18, 2027 and runoff May 2, with exceptions for some overseas territories.",
       "sources": [
         {
-          "title": "info.gouv.fr: Élection présidentielle 2027, dates et vote",
-          "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2027"
-        },
-        {
-          "title": "Euronews: Présidentielle 2027, l'élection aura lieu les 18 avril et 2 mai",
-          "url": "https://fr.euronews.com/2026/07/01/presidentielle-2027-lelection-aura-lieu-les-18-avril-et-2-mai"
+          "title": "Les dates de l'élection présidentielle de 2027 sont annoncées",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A15053"
         }
-      ]
+      ],
+      "quote": "le dimanche 18 avril 2027 pour le premier tour",
+      "level": "high"
     },
     "international#it-2027-general": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed as the legal deadline: the election must be held by Dec. 22, 2027, though an earlier vote (e.g. spring 2027) is being discussed and no date has been called.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "The constitution confirms the rule (Articles 60 and 61): five-year terms, with elections within 70 days of the end of the previous chambers. Dec. 22, 2027 is 70 days after the fifth anniversary of the current chambers' first sitting (Oct. 13, 2022), a date not checked in an opened source, so Medium. No election date has been set.",
       "sources": [
         {
-          "title": "Wikipedia: Next Italian general election",
-          "url": "https://en.wikipedia.org/wiki/Next_Italian_general_election"
-        },
-        {
-          "title": "Il Sole 24 Ore: Early elections, 43.8 per cent of MPs face pension risks if the vote takes place before April 2027",
-          "url": "https://en.ilsole24ore.com/art/early-elections-438-per-cent-of-mps-face-pension-risks-if-the-vote-takes-place-before-april-2027-AIAmGBuD"
-        },
-        {
-          "title": "Il Foglio: So when is the vote?",
-          "url": "https://www.ilfoglio.it/en/politics/2026/09/08/news/so-when-is-the-vote--406901"
+          "title": "Costituzione della Repubblica Italiana e Regolamento della Camera",
+          "url": "https://www.camera.it/application/xmanager/projects/leg19/file/Costituzione_e_Regolamento_2022.pdf"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The first-sitting date the deadline is counted from (Oct. 13, 2022).",
+        "An official decree setting the election."
+      ],
+      "quote": "La Camera dei deputati e il Senato della Repubblica sono eletti per cinque anni.",
+      "level": "medium"
     },
     "international#pl-2027-parliamentary": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Confirmed as a legal deadline (by Nov. 11, 2027) from Wikipedia and the Electoral Code's timing rule; no news or official source with an announced date was found, since the President has not yet called the election.",
+      "result": "not-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Not confirmed: the constitution's page yielded no usable text and the electoral commission result found concerned a Senate by-election. \"By November 11\" is the legal deadline as reported by secondary sources; no date has been set.",
       "sources": [
         {
-          "title": "Wikipedia: Next Polish parliamentary election",
-          "url": "https://en.wikipedia.org/wiki/Next_Polish_parliamentary_election"
-        },
-        {
-          "title": "Lexlege: Kodeks wyborczy (Electoral Code), general rules",
-          "url": "https://lexlege.pl/kodeks-wyborczy/rozdzial-1-zasady-ogolne/5183"
+          "title": "Constitution of the Republic of Poland",
+          "url": "https://www.sejm.gov.pl/prawo/konst/angielski/kon1.htm"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "November 11, 2027 as the statutory latest election date.",
+        "An officially scheduled 2027 polling date."
+      ],
+      "level": "low"
     },
     "mi-2023-election-deepfakes": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "HB 5141, 5143 and 5144 were signed Nov. 30, 2023, requiring AI disclaimers on political ads and criminalizing deceptive election deepfakes; HB 5145 (Rep. Noah Arbit) was part of the same package. Sponsors and signing date added: Reps. Penelope Tsernoglou (D) and Matt Bierlein (R); signed Nov. 30, 2023.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Confirmed in Gov. Whitmer's Nov. 30, 2023 signing release: political ads generated wholly or substantially with AI must carry a statement saying so, with penalties for specified deceptive election media; Tsernoglou authored HB 5141 and 5144 and Bierlein HB 5143. The release is now the source.",
       "sources": [
         {
-          "title": "Michigan Public: Whitmer signs bills to require notice on AI-generated political ads",
-          "url": "https://www.michiganpublic.org/politics-government/2023-11-30/whitmer-signs-bills-to-require-notice-on-ai-generated-political-ads"
-        },
-        {
-          "title": "Michigan House Fiscal Agency: analysis of HB 5141-5145 (2023)",
-          "url": "https://ombudsman.legislature.mi.gov/documents/2023-2024/billanalysis/House/pdf/2023-HLA-5141-2E29B1B1.pdf"
-        },
-        {
-          "title": "Miller Canfield: Sweeping changes to Michigan election law enacted in advance of the 2024 contests",
-          "url": "https://www.millercanfield.com/resources-Sweeping-Changes-to-MI-Election-Law-Enacted-Before-2024-Contests.html"
+          "title": "Governor Whitmer Signs Historic Election Bills Package to Ensure Every Vote Can be Cast and Counted",
+          "url": "https://www.michigan.gov/whitmer/news/press-releases/2023/11/30/whitmer-signs-election-bills-to-ensure-every-vote-can-be-cast-and-counted"
         }
-      ]
+      ],
+      "quote": "requires political advertisements generated in whole or substantially with the use of artificial intelligence to include a statement",
+      "level": "high"
     },
     "mi-2026-house-moratorium": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The package is HB 5594-5596 (Wortz, Fox, Wegela), introduced Feb. 26, 2026, pausing permits and PSC approvals until April 1, 2027; it remains in committee, and Whitmer opposes a moratorium. NCSL's 'six-month' description conflicts with the bills' April 2027 end date. Bill numbers, sponsors and date added: HB 5594-5596, introduced Feb. 26, 2026 by Reps. Jennifer Wortz and Joseph Fox (R) and Dylan Wegela (D).",
+      "result": "partly-confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Partly confirmed: the legislature's histories confirm HB 5594 (Wortz), HB 5595 (Wegela) and HB 5596 (Fox), introduced Feb. 26, 2026 and referred to the Committee on Government Operations with no later action. The April 1, 2027 end date and Gov. Whitmer's refusal to sign a statewide moratorium were not checked in the bill text or a statement of hers.",
       "sources": [
         {
-          "title": "WKAR: Michigan House reps call for moratorium on data centers",
-          "url": "https://www.wkar.org/wkar-news/2026-02-26/michigan-house-reps-call-for-moratorium-on-data-centers"
+          "title": "House Bill 5594 of 2026",
+          "url": "https://legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5594"
         },
         {
-          "title": "Michigan Advance: Wortz spearheads bipartisan effort to halt data center construction in Michigan",
-          "url": "https://michiganadvance.com/briefs/wortz-spearheads-bipartisan-effort-to-halt-data-center-construction-in-michigan/"
+          "title": "Michigan Legislature: House Bill 5595 of 2026",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5595"
         },
         {
-          "title": "LegiScan: MI HB5594, 2025-2026, 103rd Legislature",
-          "url": "https://legiscan.com/MI/drafts/HB5594/2025"
+          "title": "Michigan Legislature: House Bill 5596 of 2026",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5596"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The April 1, 2027 end date, from the bill text.",
+        "Gov. Whitmer's refusal to sign a statewide moratorium, from a statement of hers."
+      ],
+      "quote": "referred to Committee on Government Operations",
+      "level": "low"
     },
     "mi-2026-sb1018": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Republican Sens. Runestad and Johnson introduced SB 1018-1020 on June 4, 2026 for a moratorium on approvals and operation of new data centers until Apr. 1, 2027; the bills sit in Senate Government Operations with no later action found (statusDate can be set to 2026-06-04). Sponsors and date added: Sens. Jim Runestad (R) and Ruth Johnson (R), introduced June 4, 2026.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Confirmed on the legislature's histories: SB 1018-1020 were introduced June 4, 2026 and referred to the Committee on Government Operations with no later action. Corrected: Sen. Jim Runestad introduced all three; Sen. Ruth Johnson's role could not be confirmed.",
       "sources": [
         {
-          "title": "MichiganVotes: 2026 Senate Bill 1018",
-          "url": "https://www.michiganvotes.org/legislation/2026/senate/bill-1018"
+          "title": "Senate Bill 1018 of 2026",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1018"
         },
         {
-          "title": "Michigan Advance: Runestad proposes one-year moratorium on data centers, urging caution and scrutiny",
-          "url": "https://michiganadvance.com/2026/06/04/runestad-proposes-one-year-moratorium-on-data-centers-urging-caution-and-scrutiny/"
+          "title": "Michigan Legislature: Senate Bill 1019 of 2026",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1019"
         },
         {
-          "title": "Sen. Jim Runestad: Runestad introduces legislation to create a 365-day moratorium on all data center projects in Michigan",
-          "url": "https://www.senatorjimrunestad.com/runestad-introduces-legislation-to-create-a-365-day-moratorium-on-all-data-center-projects-in-michigan/"
+          "title": "Michigan Legislature: Senate Bill 1020 of 2026",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2026-SB-1020"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "Sen. Ruth Johnson's role on the bills."
+      ],
+      "quote": "REFERRED TO COMMITTEE ON GOVERNMENT OPERATIONS",
+      "level": "high"
     },
     "mi-hb4047-4048": {
       "result": "confirmed",
@@ -1755,22 +1762,26 @@
     },
     "mi-hb5396": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Wegela's bipartisan HB 5396-5398, introduced Dec. 17, 2025, would repeal the data center sales and use tax exemptions (HB 5398 covers property tax) and remain in committee with no recorded action since introduction. Introduction date added: Dec. 17, 2025.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Confirmed on the legislature's histories: Wegela's HB 5396, Rep. James DeSana's HB 5397 and Rep. Erin Byrnes's property-tax companion HB 5398 were introduced Dec. 17, 2025 and referred to the Committee on Economic Competitiveness, where they remain. Companion sponsors added.",
       "sources": [
         {
-          "title": "MichiganVotes: 2025 House Bill 5396",
-          "url": "https://www.michiganvotes.org/legislation/2025/house/bill-5396"
+          "title": "House Bill 5396 of 2025",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5396"
         },
         {
-          "title": "MichiganVotes: 2025 House Bill 5398",
-          "url": "https://www.michiganvotes.org/legislation/2025/house/bill-5398"
+          "title": "Michigan Legislature: House Bill 5397 of 2025",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5397"
         },
         {
-          "title": "Bridge Michigan: Michigan lawmakers unveil plan to repeal data center tax breaks",
-          "url": "https://bridgemi.com/michigan-environment-watch/michigan-lawmakers-unveil-plan-to-repeal-data-center-tax-breaks/"
+          "title": "Michigan Legislature: House Bill 5398 of 2025",
+          "url": "https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5398"
         }
-      ]
+      ],
+      "quote": "referred to Committee on Economic Competitiveness",
+      "level": "high"
     },
     "mi-hb5899": {
       "result": "confirmed",
@@ -2351,22 +2362,22 @@
     },
     "pl-d-data-centers#0": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The Schumer quote, the 'toothless' label and the Sept. 30, 2026 57-43 failed vote are confirmed. The bill was led in the Senate by Sen. Husted (R) after passing the House 417-3.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "09",
+      "note": "Confirmed in the Senate Democrats' release of Schumer's Sept. 30, 2026 floor remarks, which also call the Republican bill toothless; the Senate roll call confirms cloture failed 57-43 that day. The release is now the source.",
       "sources": [
         {
-          "title": "Al Jazeera: US Senate rejects bill targeting AI data centre electricity costs",
-          "url": "https://aljazeera.com/news/2026/9/30/us-senate-rejects-bill-targeting-ai-data-centre-electricity-costs"
+          "title": "Leader Schumer Floor Remarks Urging Senate Republicans To Join Democrats To Take Real Action On AI",
+          "url": "https://www.democrats.senate.gov/news/press-releases/leader-schumer-floor-remarks-urging-senate-republicans-to-join-democrats-to-take-real-action-on-ai"
         },
         {
-          "title": "WJLA: Senate's top party leaders point fingers after data center bill fails",
-          "url": "https://wjla.com/news/nation-world/senates-top-party-leaders-chuck-schumer-john-thune-point-fingers-after-house-data-center-ai-bill-fails-congress"
-        },
-        {
-          "title": "The American Prospect: Senate Democrats block Husted's 'toothless' data center energy costs bill",
-          "url": "https://prospect.org/2026/10/01/senate-democrats-block-husteds-toothless-data-center-energy-costs-bill/"
+          "title": "U.S. Senate Roll Call Vote 254, 119th Congress, 2nd Session",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm"
         }
-      ]
+      ],
+      "quote": "Senate Democrats want to make it mandatory for data centers to cover their own costs by law",
+      "level": "high"
     },
     "pl-d-data-centers#1": {
       "result": "confirmed",
@@ -2406,23 +2417,19 @@
       "level": "medium"
     },
     "pl-d-harmful#0": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Multiple sources confirm Cruz and Klobuchar sponsored the Take It Down Act, which was signed May 19, 2025.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Sen. Cruz's release: the Take It Down Act was introduced by Sens. Ted Cruz (R) and Amy Klobuchar (D). Clarified that May 19, 2025 is the date it was signed into law, not introduced.",
       "sources": [
         {
-          "title": "Sen. Klobuchar: Victims of explicit deepfakes will now be able to take legal action against people who create them",
-          "url": "https://www.klobuchar.senate.gov/public/index.cfm/2025/5/victims-of-explicit-deepfakes-will-now-be-able-to-take-legal-action-against-people-who-create-them"
-        },
-        {
-          "title": "WHYY (AP): President Trump signed the Take It Down Act, addressing nonconsensual deepfakes",
-          "url": "https://whyy.org/articles/trump-take-it-down-act-nonconsensual-deepfakes/"
-        },
-        {
-          "title": "Orrick: TAKE IT DOWN Act Becomes Law",
-          "url": "https://www.orrick.com/insights/2025/05/TAKE-IT-DOWN-Act-Becomes-Law"
+          "title": "Cruz-Klobuchar Bill to Protect Teenagers from Deepfake Revenge Porn Unanimously Passes the Senate",
+          "url": "https://www.cruz.senate.gov/newsroom/press-releases/cruz-klobuchar-bill-to-protect-teenagers-from-deepfake-revenge-porn-unanimously-passes-the-senate"
         }
-      ]
+      ],
+      "quote": "introduced by U.S. Senate Commerce Committee Chairman Ted Cruz (R-Texas) and Senator Amy Klobuchar (D-Minn.)",
+      "level": "high"
     },
     "pl-d-preemption#0": {
       "result": "not-confirmed",
@@ -2444,209 +2451,185 @@
       "level": "low"
     },
     "pl-d-preemption#1": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Markey's office and Axios confirm his Dec. 2025 bill and Schatz's separate effort to block the order. Schatz's GUARDRAILS Act followed in March 2026.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Corrected the date: Sen. Ed Markey's release shows he introduced the States' Right to Regulate AI Act on Dec. 17, 2025, two days before the Axios report, with Democratic cosponsors and Sen. Bernie Sanders. Sen. Schatz's own action against the order could not be confirmed and was removed. Markey's release is now the source.",
       "sources": [
         {
-          "title": "Axios: Senate Dems fight back on Trump's AI order",
-          "url": "https://www.axios.com/2025/12/19/trump-democrats-fight-back-ai-order"
-        },
-        {
-          "title": "Sen. Markey: Senator Markey Introduces Legislation to Block Trump's Executive Order Blocking State AI Regulation",
+          "title": "Senator Markey Introduces Legislation to Block Trump’s Executive Order Blocking State AI Regulation",
           "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-introduces-legislation-to-block-trumps-executive-order-blocking-state-ai-regulation"
-        },
-        {
-          "title": "Broadband Breakfast: New Senate Bill Would Halt Federal Funding for Trump's AI Executive Order",
-          "url": "https://broadbandbreakfast.com/new-senate-bill-would-halt-federal-funding-for-trumps-ai-executive-order/"
         }
-      ]
+      ],
+      "quote": "introducing the States’ Right to Regulate AI Act",
+      "level": "high"
     },
     "pl-d-safety#0": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The Dec. 9, 2025 launch, the 'continue to thrive' language in the leadership release and Jeffries' 'aggressive framework' remark are all confirmed.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Jeffries' Dec. 9, 2025 release: the commission and its twin aims, American companies continuing \"to thrive\" and protection against AI harms. Corrected: \"an aggressive framework\" is not in the release and was removed.",
       "sources": [
         {
-          "title": "Rep. Zoe Lofgren: Leader Jeffries announces new House Democratic Commission on AI and the Innovation Economy",
-          "url": "https://lofgren.house.gov/media/press-releases/leader-jeffries-announces-new-house-democratic-commission-ai-and-innovation"
-        },
-        {
-          "title": "Truthout: Democrats backed by industry super PACs are writing the party's AI plan",
-          "url": "https://truthout.org/articles/democrats-backed-by-industry-super-pacs-are-writing-the-partys-ai-plan/"
-        },
-        {
-          "title": "Nextgov: New House commission to scrutinize AI's impact on the economy",
-          "url": "https://www.nextgov.com/artificial-intelligence/2025/12/new-house-commission-scrutinize-ai-impact-economy/410047"
+          "title": "Leader Jeffries Announces New House Democratic Commission on AI and the Innovation Economy",
+          "url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/"
         }
-      ]
+      ],
+      "quote": "It is important that American companies continue to thrive in this area.",
+      "level": "high"
     },
     "pl-d-safety#1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Reports from Sept. 14-15, 2026 confirm Schumer's demand for a classified all-senators briefing on frontier AI risks and his call for 'serious guardrails'; the cited Senate Democrats release itself did not surface in results, and these are distinct from his 2023 all-senators AI briefings.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in the Senate Democrats' release: Schumer demanded an immediate classified briefing for all senators on frontier-model testing, potentially catastrophic risks and safeguards. The release is undated; the September 2026 date rests on news reports, so Medium.",
       "sources": [
         {
-          "title": "Bloomberg Government: Schumer Calls for Senate AI Briefing From Trump Administration",
-          "url": "https://news.bgov.com/artificial-intelligence/schumer-calls-for-senate-ai-briefing-from-trump-administration"
-        },
-        {
-          "title": "FingerLakes1: Schumer seeks classified Senate briefing on AI risks and security",
-          "url": "https://www.fingerlakes1.com/2026/09/15/schumer-seeks-classified-senate-briefing-on-ai-risks-and-security/"
-        },
-        {
-          "title": "Crypto Briefing: Chuck Schumer calls for classified AI danger briefing from Trump administration",
-          "url": "https://cryptobriefing.com/schumer-classified-ai-danger-briefing/"
+          "title": "As AI Industry Leaders Sound Alarm On AI Risks & Trump Dismisses Warnings, Schumer Demands Immediate Classified All-Senators Briefing",
+          "url": "https://www.democrats.senate.gov/newsroom/press-releases/as-ai-industry-leaders-sound-alarm-on-ai-risks-and-trump-dismisses-warnings-schumer-demands-immediate-classified-all-senators-briefing"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The release date (September 2026, from news reports)."
+      ],
+      "quote": "Schumer Demands Immediate Classified All-Senators Briefing",
+      "level": "medium"
     },
     "pl-d-safety#2": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "IBTimes, drawing on Reuters, reports Democrats plan January bills on independent AI safety testing and AI liability. The original Reuters text was not seen.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Reuters' Nov. 6, 2026 report on Democrats' plans, including \"requiring independent testing of advanced AI systems and clarifying when AI companies can be held liable\". No bill text exists yet, so it rests on the report (Medium). Reuters is now the source.",
       "sources": [
         {
-          "title": "IBTimes: A Bill to Make Data Centers Pay for Grid Upgrades is Dividing Democrats as They Gear to Control Congress",
-          "url": "https://www.ibtimes.com/senate-data-center-power-infrastructure-bill-vote-3809557"
-        },
-        {
-          "title": "Crypto Briefing (citing Reuters): Democrats plan AI legislation in Congress in January",
-          "url": "https://cryptobriefing.com/democrats-plan-ai-legislation-congress-january/"
+          "title": "Democrats planning flood of AI bills when they take control of Congress",
+          "url": "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/"
         }
-      ]
+      ],
+      "quote": "requiring independent testing of advanced AI systems and clarifying when AI companies can be held liable",
+      "level": "medium"
     },
     "pl-d-workers#0": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Two searches found no release of the commission's framework (Lieu said in June 2026 it would come by year's end), so 'not confirmed as released' still holds; the Democratic 'blueprint' KATU quoted in November could not be tied to the commission.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Jeffries' Dec. 9, 2025 release, which sets up the commission and its remit. That no framework had been released by late November 2026 cannot be shown from a single source, so Medium.",
       "sources": [
         {
-          "title": "Roll Call: Rush to regulate AI divides Democrats in Congress",
-          "url": "https://rollcall.com/2026/06/10/rush-to-regulate-ai-divides-democrats-in-congress/"
-        },
-        {
-          "title": "Rep. Zoe Lofgren: Leader Jeffries announces new House Democratic Commission on AI and the Innovation Economy",
-          "url": "https://lofgren.house.gov/media/press-releases/leader-jeffries-announces-new-house-democratic-commission-ai-and-innovation"
-        },
-        {
-          "title": "The American Prospect: Democratic Voters Are Clamoring for AI Regulation. Their Leaders Aren't Interested.",
-          "url": "https://prospect.org/2025/12/12/democratic-voters-clamoring-for-ai-regulation-leaders-arent-interested/"
+          "title": "Leader Jeffries Announces New House Democratic Commission on AI and the Innovation Economy",
+          "url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "That the commission had not released a framework by Nov. 26, 2026."
+      ],
+      "quote": "House Democratic Commission on AI and the Innovation Economy",
+      "level": "medium"
     },
     "pl-r-chips#0": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "NBC, Bloomberg and The Register confirm the April 2025 H20 halt and the July 15, 2025 reversal allowing sales to resume.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Corrected: Nvidia's July 2025 announcement says the government assured it that H20 export licenses would be granted and that it hoped to start deliveries soon; it does not show that sales had resumed. The April 2025 halt was not checked on a government record, so Medium. Nvidia's announcement is now the source.",
       "sources": [
         {
-          "title": "NBC News: Nvidia will resume H20 AI chip sales to China soon",
-          "url": "https://www.nbcnews.com/tech/tech-news/nvidia-will-resume-h20-ai-chip-sales-china-soon-rcna218808"
-        },
-        {
-          "title": "Bloomberg: Nvidia, AMD to Resume AI Chip Sales to China in US Reversal",
-          "url": "https://www.bloomberg.com/news/articles/2025-07-15/nvidia-expects-license-to-sell-h20-ai-chip-to-china-again"
-        },
-        {
-          "title": "The Register: Nvidia to resume sales to China - with Trump administration approval",
-          "url": "https://www.theregister.com/2025/07/15/us_allows_nvidia_china_sales/"
+          "title": "NVIDIA CEO Jensen Huang Promotes AI in Washington, DC and China",
+          "url": "https://blogs.nvidia.com/blog/nvidia-ceo-promotes-ai-in-dc-and-china/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The exact date of the April 2025 restriction, from a government record."
+      ],
+      "quote": "The U.S. government has assured NVIDIA that licenses will be granted",
+      "level": "medium"
     },
     "pl-r-chips#1": {
-      "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "BIS and law-firm analyses confirm the rule took effect Jan. 15, 2026. The 25% share is collected as an import tariff on chips routed through the U.S., not as a license fee.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in the Bureau of Industry and Security's Jan. 13, 2026 release: license applications for the Nvidia H200, AMD MI325X and similar chips are reviewed case by case, following the president's Dec. 8, 2025 announcement. Corrected: the 25% share is collected through a separate semiconductor tariff, not a fee in the licensing rule (per legal analysis, so Medium); the date is now that of the BIS release.",
       "sources": [
         {
-          "title": "Bureau of Industry and Security: Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
-          "url": "https://bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
-        },
-        {
-          "title": "Mayer Brown: Administration Policies on Advanced AI Chips Codified",
-          "url": "https://www.mayerbrown.com/en/insights/publications/2026/01/administration-policies-on-advanced-ai-chips-codified"
-        },
-        {
-          "title": "Pillsbury: Trump administration targets advanced AI semiconductors",
-          "url": "https://pillsburylaw.com/en/news-and-insights/trump-advanced-ai-semiconductors-actions.html"
+          "title": "Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
+          "url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "The rule's Jan. 15, 2026 publication or effective date, from the Federal Register.",
+        "How the 25% share is collected, from a primary record."
+      ],
+      "quote": "review export license applications for the Nvidia H200, AMD MI325X, and similar chips on a case-by-case basis",
+      "level": "medium"
     },
     "pl-r-data-centers#0": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The White House fact sheet and Federal Register confirm the July 23, 2025 order speeding data center permitting and opening federal, including military, land.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in the White House fact sheet of July 23, 2025: expedited permitting for qualifying data center projects under FAST-41 and federal sites, including Defense Department land, for the infrastructure. The fact sheet is now the source.",
       "sources": [
         {
-          "title": "The White House: Fact Sheet: President Donald J. Trump Accelerates Federal Permitting of Data Center Infrastructure",
-          "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-accelerates-federal-permitting-of-data-center-infrastructure"
-        },
-        {
-          "title": "Federal Register (GovInfo): Executive Order 14318",
-          "url": "https://www.govinfo.gov/content/pkg/FR-2025-07-28/html/2025-14212.htm"
-        },
-        {
-          "title": "Greenberg Traurig: Trump administration seeks to streamline federal permitting for data centers with new executive order and action plan",
-          "url": "https://www.gtlaw.com/en/insights/2025/7/trump-administration-seeks-to-streamline-federal-permitting-for-data-centers-with-new-executive-order-and-action-plan"
+          "title": "Fact Sheet: President Donald J. Trump Accelerates Federal Permitting of Data Center Infrastructure",
+          "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-accelerates-federal-permitting-of-data-center-infrastructure/"
         }
-      ]
+      ],
+      "quote": "designating Qualified Projects for expedited permitting under the FAST-41 framework",
+      "level": "high"
     },
     "pl-r-data-centers#1": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The pledge was announced in the Feb. 24, 2026 State of the Union, and seven AI companies signed it on March 4. Its text asks them to build, bring or buy their own power, and coverage calls it nonbinding.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed on the White House's pledge page: companies commit to cover the added power and infrastructure costs of new data centers and \"will voluntarily negotiate new, separate rate structures\"; contemporaneous reports describe it as nonbinding. Its introduction in the Feb. 24 State of the Union was not checked against a transcript, so Medium. The pledge page is now the source.",
       "sources": [
         {
-          "title": "The White House: Ratepayer Protection Pledge",
-          "url": "https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge/"
-        },
-        {
-          "title": "Tom's Hardware: Trump orders Big Tech to generate its own power for AI data centers, reveals new Ratepayer Protection Pledge",
-          "url": "https://www.tomshardware.com/tech-industry/big-tech/trump-orders-big-tech-to-generate-its-own-power-for-ai-data-centers-reveals-new-ratepayer-protection-pledge-to-curb-rising-electricity-prices-in-the-u-s"
-        },
-        {
-          "title": "Tech Policy Press: What Trump did and didn't say about AI in the State of the Union",
-          "url": "https://techpolicy.press/what-trump-did-and-didnt-say-about-ai-in-the-state-of-the-union"
+          "title": "Ratepayer Protection Pledge",
+          "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/"
         }
-      ]
+      ],
+      "unconfirmed": [
+        "Its introduction in the Feb. 24, 2026 State of the Union, from a transcript."
+      ],
+      "quote": "Companies will voluntarily negotiate new, separate rate structures",
+      "level": "medium"
     },
     "pl-r-data-centers#2": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Several outlets quote Trump's Aug. 31, 2026 Truth Social post with both quotes word for word.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in The Spokesman-Review's Aug. 31, 2026 report quoting both lines of his post; the original post could not be read, so Medium.",
       "sources": [
         {
-          "title": "Al Jazeera: 'Let Data Reign': Trump decries opposition to data centres in US",
-          "url": "https://www.aljazeera.com/news/2026/8/31/let-data-reign-trump-decries-opposition-to-data-centres-in-us"
-        },
-        {
-          "title": "Newsweek: Trump on data centers and the AI movement",
-          "url": "https://www.newsweek.com/donald-trump-data-centers-ai-movement-rejection-list-12386732"
-        },
-        {
-          "title": "Philadelphia Inquirer: Trump says communities that don't support data centers will be 'backwards and poor'",
-          "url": "https://www.inquirer.com/news/nation-world/trump-data-centers-support-backwards-poor-elections-20260901.html"
+          "title": "Trump slams opposition to data centers: China could not be happier",
+          "url": "https://www.spokesman.com/stories/2026/aug/31/trump-slams-opposition-to-data-centers-china-could/"
         }
-      ]
+      ],
+      "quote": "China could not be happier with this anti Data Center movement.",
+      "level": "medium"
     },
     "pl-r-data-centers#3": {
       "result": "confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Trump's post saying the permitting bill would codify his Ratepayer Protection Pledge is confirmed; it went up on Sunday, Nov. 8, 2026, one day before the Nov. 9 date in the dataset.",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "10",
+      "note": "Confirmed in Reuters' Nov. 9, 2026 report, which quotes his post (\"Remember, China will take any Data Center that we don't want, and pay lots of money for it\") and his backing for the permitting bill; the original post could not be read, so Medium. Reuters is now the source.",
       "sources": [
         {
-          "title": "NewKerala (ANI): Trump urges senators to pass permitting bill, calls it a big win for US",
-          "url": "https://www.newkerala.com/news/a/this-bill-big-win-us-trump-urges-senators-547.htm"
-        },
-        {
-          "title": "Boston Globe (AP): Senate weighs sweeping energy legislation in first major action since midterm elections",
-          "url": "https://www.bostonglobe.com/2026/11/09/business/senate-energy-legislation-election/"
-        },
-        {
-          "title": "TIME: Congress's Permitting Bill Is a 'Massive Giveaway' to the AI Data Center Industry, Critics Warn",
-          "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers/"
+          "title": "US Congress gets first post-Blue Wave crack at data centers with permitting bill",
+          "url": "https://www.reuters.com/legal/litigation/us-congress-gets-first-post-blue-wave-crack-data-centers-with-permitting-bill-2026-11-09/"
         }
-      ]
+      ],
+      "quote": "Remember, China will take any Data Center that we don’t want, and pay lots of money for it",
+      "level": "medium"
     },
     "pl-r-harmful#0": {
       "result": "confirmed",
@@ -3831,6 +3814,20 @@
     },
     {
       "batch": "08",
+      "date": "2026-11-27",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "09",
+      "date": "2026-11-27",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "10",
       "date": "2026-11-27",
       "claims": 12,
       "tool": "ChatGPT (web browsing)",

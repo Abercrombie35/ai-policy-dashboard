@@ -1,0 +1,171 @@
+[
+  {
+    "id": "pl-d-harmful#0",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.cruz.senate.gov/newsroom/press-releases/cruz-klobuchar-bill-to-protect-teenagers-from-deepfake-revenge-porn-unanimously-passes-the-senate",
+    "source_title": "Cruz-Klobuchar Bill to Protect Teenagers from Deepfake Revenge Porn Unanimously Passes the Senate",
+    "source_date": null,
+    "exact_quote": "introduced by U.S. Senate Commerce Committee Chairman Ted Cruz (R-Texas) and Senator Amy Klobuchar (D-Minn.)",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The authorship claim is confirmed; May 19 refers to enactment rather than the bill’s introduction."
+  },
+  {
+    "id": "pl-d-preemption#1",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.markey.senate.gov/news/press-releases/senator-markey-introduces-legislation-to-block-trumps-executive-order-blocking-state-ai-regulation",
+    "source_title": "Senator Markey Introduces Legislation to Block Trump’s Executive Order Blocking State AI Regulation",
+    "source_date": "2025-12-17",
+    "exact_quote": "introducing the States’ Right to Regulate AI Act",
+    "corrections": [
+      {
+        "field": "introduction date",
+        "correct": "December 17, 2025.",
+        "evidence": "Markey’s announcement dates introduction two days before the supplied Axios article."
+      }
+    ],
+    "not_confirmed": [
+      "Schatz’s particular action against the order."
+    ],
+    "notes": "Markey’s announcement confirms the bill and lists its initial cosponsors, including several Democrats and Bernie Sanders."
+  },
+  {
+    "id": "pl-d-safety#0",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/",
+    "source_title": "Leader Jeffries Announces New House Democratic Commission on AI and the Innovation Economy",
+    "source_date": "2025-12-09",
+    "exact_quote": "It is important that American companies continue to thrive in this area.",
+    "corrections": [],
+    "not_confirmed": [
+      "The exact phrase “an aggressive framework” in the opened announcement."
+    ],
+    "notes": "The announcement confirms the commission and its dual emphasis on American innovation and protection against AI harms."
+  },
+  {
+    "id": "pl-d-safety#1",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.democrats.senate.gov/newsroom/press-releases/as-ai-industry-leaders-sound-alarm-on-ai-risks-and-trump-dismisses-warnings-schumer-demands-immediate-classified-all-senators-briefing",
+    "source_title": "As AI Industry Leaders Sound Alarm On AI Risks & Trump Dismisses Warnings, Schumer Demands Immediate Classified All-Senators Briefing",
+    "source_date": null,
+    "exact_quote": "Schumer Demands Immediate Classified All-Senators Briefing",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The official release confirms his request for answers about frontier-model testing, potentially catastrophic risks and safeguards."
+  },
+  {
+    "id": "pl-d-safety#2",
+    "verdict": "verified",
+    "source_type": "news",
+    "source_url": "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/",
+    "source_title": "Democrats planning flood of AI bills when they take control of Congress",
+    "source_date": "2026-11-06",
+    "exact_quote": "requiring independent testing of advanced AI systems and clarifying when AI companies can be held liable",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "No published bill text establishing these future proposals was located, so Reuters’ direct reporting on lawmakers’ plans supplies the evidence."
+  },
+  {
+    "id": "pl-d-workers#0",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://jeffries.house.gov/2025/12/09/leader-jeffries-announces-new-house-democratic-commission-on-ai-and-the-innovation-economy/",
+    "source_title": "Leader Jeffries Announces New House Democratic Commission on AI and the Innovation Economy",
+    "source_date": "2025-12-09",
+    "exact_quote": "House Democratic Commission on AI and the Innovation Economy",
+    "corrections": [],
+    "not_confirmed": [
+      "Whether a completed framework had been released by November 26, 2026."
+    ],
+    "notes": "The announcement establishes the commission and its remit, but cannot establish the absence of a later framework."
+  },
+  {
+    "id": "pl-r-chips#0",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://blogs.nvidia.com/blog/nvidia-ceo-promotes-ai-in-dc-and-china/",
+    "source_title": "NVIDIA CEO Jensen Huang Promotes AI in Washington, DC and China",
+    "source_date": null,
+    "exact_quote": "The U.S. government has assured NVIDIA that licenses will be granted",
+    "corrections": [
+      {
+        "field": "resumption",
+        "correct": "NVIDIA announced assurances of licensing approval and expected deliveries, rather than confirming that shipments had already resumed.",
+        "evidence": "The company said it was filing H20 applications and hoped to start deliveries soon."
+      }
+    ],
+    "not_confirmed": [
+      "The April restriction’s exact date from an opened government record."
+    ],
+    "notes": "The company’s primary announcement confirms the July policy reversal in prospect."
+  },
+  {
+    "id": "pl-r-chips#1",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china?api_key=key-67819102787f0&hashtag=dgovlive&include_snippets=0&max_results=50&sortdir=asc",
+    "source_title": "Department of Commerce Revises License Review Policy for Semiconductors Exported to China",
+    "source_date": "2026-01-13",
+    "exact_quote": "review export license applications for the Nvidia H200, AMD MI325X, and similar chips on a case-by-case basis",
+    "corrections": [],
+    "not_confirmed": [
+      "A 25% fee imposed by the BIS licensing rule itself.",
+      "January 15 as the rule’s publication or effective date from an opened Federal Register record."
+    ],
+    "notes": "BIS confirms the licensing change and December 8 presidential announcement, while the opened legal analysis treats the separate semiconductor tariff proclamation as part of the payment mechanism."
+  },
+  {
+    "id": "pl-r-data-centers#0",
+    "verdict": "verified",
+    "source_type": "official",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-accelerates-federal-permitting-of-data-center-infrastructure/?trk=article-ssr-frontend-pulse_little-text-block",
+    "source_title": "Fact Sheet: President Donald J. Trump Accelerates Federal Permitting of Data Center Infrastructure",
+    "source_date": "2025-07-23",
+    "exact_quote": "designating Qualified Projects for expedited permitting under the FAST-41 framework",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "The official explanation confirms accelerated permitting and identification of federal sites, including Defense Department land, for qualifying infrastructure."
+  },
+  {
+    "id": "pl-r-data-centers#1",
+    "verdict": "partly-verified",
+    "source_type": "official",
+    "source_url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+    "source_title": "Ratepayer Protection Pledge",
+    "source_date": null,
+    "exact_quote": "Companies will voluntarily negotiate new, separate rate structures",
+    "corrections": [],
+    "not_confirmed": [
+      "The February 24 State of the Union introduction from an opened speech transcript."
+    ],
+    "notes": "The official pledge confirms company commitments to cover additional power and infrastructure costs, while contemporaneous reporting describes the pledge as nonbinding."
+  },
+  {
+    "id": "pl-r-data-centers#2",
+    "verdict": "verified",
+    "source_type": "news",
+    "source_url": "https://www.spokesman.com/stories/2026/aug/31/trump-slams-opposition-to-data-centers-china-could/",
+    "source_title": "Trump slams opposition to data centers: China could not be happier",
+    "source_date": "2026-08-31",
+    "exact_quote": "China could not be happier with this anti Data Center movement.",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "No readable original post was located, so the opened contemporaneous report supplies both the China quotation and the characterization of opponents as wanting to become backwards and poor."
+  },
+  {
+    "id": "pl-r-data-centers#3",
+    "verdict": "verified",
+    "source_type": "news",
+    "source_url": "https://www.reuters.com/legal/litigation/us-congress-gets-first-post-blue-wave-crack-data-centers-with-permitting-bill-2026-11-09/",
+    "source_title": "US Congress gets first post-Blue Wave crack at data centers with permitting bill",
+    "source_date": "2026-11-09",
+    "exact_quote": "Remember, China will take any Data Center that we don’t want, and pay lots of money for it",
+    "corrections": [],
+    "not_confirmed": [],
+    "notes": "No readable original presidential post was located, so Reuters’ contemporaneous report supplies the quotation and his endorsement of the permitting legislation."
+  }
+]
