@@ -32,7 +32,7 @@
           "votePct": 1.0
         }
       ],
-      "figuresAsOf": "Unofficial results as of 2:30 p.m., Nov. 4, 2026, as reported by The Detroit News.",
+      "figuresAsOf": "Unofficial results as of 2:30 p.m., Nov. 4, 2026 (The Detroit News); Fox's later count rounds to the same shares. Michigan certified its results on Nov. 23, 2026; the certified figures have not yet been checked against the state's table.",
       "context": "Open seat: Sen. Gary Peters (D) retired.",
       "source": {
         "title": "The Detroit News: Abdul El-Sayed claims victory over Mike Rogers in Michigan Senate race",
@@ -50,12 +50,20 @@
         {
           "title": "NBC News: Michigan U.S. Senate Election 2026 Live Results",
           "url": "https://www.nbcnews.com/politics/2026-elections/michigan-senate-results"
+        },
+        {
+          "title": "Michigan Department of State: Board of State Canvassers certifies the 2026 general election (Nov. 23, 2026)",
+          "url": "https://www.michigan.gov/sos/resources/news/2026/11/23/michigan-board-of-state-canvassers-certifies-record-breaking-2026-general-election"
+        },
+        {
+          "title": "Fox News: Michigan 2026 results",
+          "url": "https://www.foxnews.com/elections/2026/midterm-results/state/michigan"
         }
       ],
       "publishedDate": "2026-11-03",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 3,
+      "version": 4,
       "history": [
         {
           "version": 1,
@@ -71,6 +79,11 @@
           "version": 3,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Michigan Advance, ClickOnDetroit, FOX 32 Chicago). El-Sayed's win, the AP (2:27 a.m.) and Fox calls, shares within about a point (51.9% to 46.1% at 85% counted) and Peters's retirement are confirmed; the Decision Desk HQ call, the Libertarian share and certification (deadline Nov. 23) were not found. Not confirmed: Exact Detroit News figures as of 2:30 p.m. Nov. 4, including Lydia Christensen's 1.0%; Decision Desk HQ call; Certification: Michigan's Board of State Canvassers had a Nov. 23, 2026 deadline, but no report that it certified was found; no certified figures found."
+        },
+        {
+          "version": 4,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 03): confirmed, Medium confidence. Confirmed: Fox's count (El-Sayed 52.54%, Rogers 45.46%, Christensen 1.04%) rounds to the shares shown; Fox and Decision Desk HQ called the race. Michigan certified its results on Nov. 23, 2026; the certified figures could not be opened."
         }
       ]
     },
@@ -84,7 +97,7 @@
         "party": "Democratic",
         "candidateId": "james-talarico"
       },
-      "call": "Called for Talarico by the Associated Press on election night. Paxton conceded the same night.",
+      "call": "Called for Talarico by the Associated Press at about 10:04 p.m. on election night (KUT); Paxton conceded shortly before 10:30 p.m.",
       "candidates": [
         {
           "name": "James Talarico",
@@ -100,17 +113,17 @@
         },
         {
           "name": "Ted Brown",
-          "party": "Other",
-          "partyNote": "Listed as independent in NBC's results summary; party to verify.",
+          "party": "Libertarian",
           "candidateId": null,
-          "votePct": 1.9
+          "votePct": 1.9,
+          "votes": 190237
         }
       ],
-      "figuresAsOf": "Unofficial results as shown on NBC News's results page when retrieved on Nov. 12, 2026.",
+      "figuresAsOf": "Unofficial returns from the Texas Secretary of State (last updated Nov. 4, 2026), including write-ins.",
       "context": "Sen. John Cornyn (R) lost the Republican primary runoff to Paxton, so the incumbent was not on the November ballot.",
       "source": {
-        "title": "NBC News: Texas U.S. Senate Election 2026 Live Results",
-        "url": "https://www.nbcnews.com/politics/2026-elections/texas-senate-results"
+        "title": "Texas Secretary of State: Election results, Nov. 3, 2026 (unofficial)",
+        "url": "https://electionresults.sos.state.tx.us/results.html"
       },
       "additionalSources": [
         {
@@ -123,9 +136,9 @@
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -136,6 +149,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Click2Houston, KSAT, Kalshi News). Talarico's win, the election-night AP call, Paxton's same-night concession and Paxton's runoff win over Cornyn are confirmed, and a ~12.1-point margin at ~99% counted matches the listed shares, but the individual shares and any certification were not found. Not confirmed: Exact shares 55.1% / 43.0% / 1.9% (only the ~12.1-point margin was found, not individual shares); Ted Brown's 1.9%; Certification: no report found that the Texas state canvass has certified the result as of Nov. 24, 2026; no certified figures found."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 03): corrected, Medium confidence. Corrected: Ted Brown ran on the Libertarian line (190,237 votes). The shares (Talarico 55.1%, Paxton 43.0%, Brown 1.9%) are confirmed on the Texas Secretary of State's returns; AP called the race at about 10:04 p.m. and Paxton conceded before 10:30 p.m. Still unofficial."
         }
       ]
     },
@@ -155,22 +173,25 @@
           "name": "Jocelyn Benson",
           "party": "Democratic",
           "candidateId": "jocelyn-benson",
-          "votePct": 54.56
+          "votePct": 54.57,
+          "votes": 2615251
         },
         {
           "name": "John James",
           "party": "Republican",
           "candidateId": "john-james",
-          "votePct": 43.72
+          "votePct": 43.71,
+          "votes": 2094566
         },
         {
           "name": "Anthony Hudson",
           "party": "Libertarian",
           "candidateId": null,
-          "votePct": 0.93
+          "votePct": 0.93,
+          "votes": 44497
         }
       ],
-      "figuresAsOf": "Unofficial results as shown by Decision Desk HQ when retrieved on Nov. 12, 2026.",
+      "figuresAsOf": "Decision Desk HQ count (race called Nov. 3, 10:45 p.m.). Michigan's Board of State Canvassers certified the results on Nov. 23, 2026; the certified figures have not yet been checked against the state's table.",
       "context": "Open seat: Gov. Gretchen Whitmer (D) was term-limited. Former Detroit mayor Mike Duggan ended his independent campaign in May 2026 and was not on the ballot.",
       "source": {
         "title": "Decision Desk HQ: 2026 Michigan Governor General Election Results",
@@ -188,12 +209,16 @@
         {
           "title": "Bridge Michigan: Mike Duggan drops governor bid",
           "url": "https://bridgemi.com/michigan-government/mike-duggan-drops-governor-bid-in-michigan-election-shocker/"
+        },
+        {
+          "title": "Michigan Department of State: Board of State Canvassers certifies the 2026 general election (Nov. 23, 2026)",
+          "url": "https://www.michigan.gov/sos/resources/news/2026/11/23/michigan-board-of-state-canvassers-certifies-record-breaking-2026-general-election"
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -204,6 +229,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (ClickOnDetroit, Axios Detroit, Bridge Michigan). Benson's win (AP call at 1:45 a.m., 53.7% to 44.6%, within a point of the listed shares), Whitmer's term limit and Duggan's May 21 exit are confirmed; the other outlets' calls, the Libertarian share and any certification (deadline Nov. 23) were not found. Not confirmed: Specific calls by NBC News, The Washington Post, Decision Desk HQ and MultiState (the AP call was found instead); Anthony Hudson's 0.93%; That Duggan's name was not on the November ballot (only that he ended his campaign in May); Certification: the Board of State Canvassers' deadline was Nov. 23, 2026, but no report that it certified was found; no certified figures found."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 03): corrected, Medium confidence. Updated to Decision Desk HQ's final count: Benson 2,615,251 (54.57%), James 2,094,566 (43.71%), Hudson 44,497 (0.93%); Decision Desk HQ called it at 10:45 p.m. on Nov. 3. Michigan certified its results on Nov. 23, 2026, but the certified figures could not be opened, so the result stays Unofficial here."
         }
       ]
     },
@@ -223,7 +253,8 @@
           "name": "Gina Hinojosa",
           "party": "Democratic",
           "candidateId": "gina-hinojosa",
-          "votePct": 52.8
+          "votePct": 52.8,
+          "votes": 5230789
         },
         {
           "name": "Greg Abbott",
@@ -238,11 +269,11 @@
           "votePct": 1.5
         }
       ],
-      "figuresAsOf": "Unofficial results as shown by Decision Desk HQ (more than 95% of the vote counted) when retrieved on Nov. 12, 2026. Shares are rounded.",
+      "figuresAsOf": "Unofficial returns from the Texas Secretary of State (last updated Nov. 4, 2026), including write-ins. The incoming Legislature canvasses the governor's race when it meets in January.",
       "context": "Gov. Greg Abbott (R), elected in 2014, 2018 and 2022, sought a fourth term.",
       "source": {
-        "title": "Decision Desk HQ: 2026 Texas Governor General Election Results",
-        "url": "https://votes.decisiondeskhq.com/races/2026-11-03/texas-governor-general-election"
+        "title": "Texas Secretary of State: Election results, Nov. 3, 2026 (unofficial)",
+        "url": "https://electionresults.sos.state.tx.us/results.html"
       },
       "additionalSources": [
         {
@@ -255,9 +286,9 @@
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -268,6 +299,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (KUTV, FOX 4, KATU). Hinojosa's win, Abbott's election-night concession and his bid for a fourth term are confirmed; the listed shares (only early returns of ~57% to 41.7% were found) and certification were not found. Not confirmed: Vote shares 52.8% / 45.7% / 1.5% (only early returns of about 57% to 41.7% were found, too early in the count to compare); Pat Dixon's 1.5%; Certification: no report of the Texas state canvass for the governor's race found as of Nov. 24, 2026; no certified figures found."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 03): confirmed, Medium confidence. Confirmed on the Texas Secretary of State's returns (including write-ins): Hinojosa 52.8% (5,230,789 votes), Abbott 45.7%, Dixon 1.5%. Still unofficial: the incoming Legislature canvasses the governor's race in January."
         }
       ]
     },
@@ -281,7 +317,7 @@
         "party": "Democratic",
         "candidateId": "ned-lamont"
       },
-      "call": "Called for Lamont by the Associated Press shortly before 9:20 p.m. on election night.",
+      "call": "Called for Lamont by the Associated Press at 9:18 p.m. on election night (WFSB).",
       "candidates": [
         {
           "name": "Ned Lamont",
@@ -298,8 +334,8 @@
           "votes": 524701
         }
       ],
-      "figuresAsOf": "Unofficial results as listed by MultiState when retrieved on Nov. 16, 2026. An earlier NBC News count (about 94% of the expected vote) showed 58.8% to 41.2%.",
-      "context": "Lamont won a third term; his two previous wins were over Bob Stefanowski (2018, 2022).",
+      "figuresAsOf": "Unofficial shares as listed by MultiState (Nov. 16, 2026). Connecticut completed its official canvass on Nov. 25, 2026; the official statement of vote, with certified totals, is due in early 2027.",
+      "context": "Lamont won a third term; he defeated Bob Stefanowski in 2018 and 2022.",
       "source": {
         "title": "MultiState: Connecticut Governor Election Results 2026",
         "url": "https://www.multistate.us/elections/governor-race/connecticut-2026"
@@ -312,12 +348,16 @@
         {
           "title": "NBC News: Connecticut Governor Midterm Election 2026 Live Results",
           "url": "https://www.nbcnews.com/politics/2026-elections/connecticut-governor-results"
+        },
+        {
+          "title": "Connecticut Secretary of the State: official canvass of the 2026 general election completed (Nov. 25, 2026)",
+          "url": "https://portal.ct.gov/sots/press-releases/2026-press-releases/connecticut-completes-official-canvass-of-2026-general-election-results"
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -328,6 +368,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (CT Mirror, WFSB). Lamont's third-term win over Fazio and the AP call around 9:20 p.m. are confirmed, as is his 2018 win over Stefanowski; the vote shares, the 2022 opponent and certification were not found. Not confirmed: Vote shares 59.6% / 40.4% (MultiState) and the earlier NBC count of 58.8% / 41.2%: no general-election percentages appeared in the results; That Lamont's 2022 win was also over Stefanowski (no 2022 race details in the results); Certification: no report of the Connecticut state canvass found as of Nov. 24, 2026; no certified figures found."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 03): confirmed, Medium confidence. Confirmed: Lamont won (AP call 9:18 p.m. on Nov. 3, per WFSB); unofficial shares 59.6% to 40.4% (MultiState). Connecticut completed its official canvass on Nov. 25, 2026; its statement of vote, with certified totals, is due in early 2027."
         }
       ]
     },
@@ -341,7 +386,7 @@
         "party": "Democratic",
         "candidateId": "jim-himes"
       },
-      "call": "Called for Himes by the Associated Press on Nov. 4, 2026.",
+      "call": "Called for Himes by the Associated Press at 9:58 p.m. on election night (News 12, CT Insider).",
       "candidates": [
         {
           "name": "Jim Himes",
@@ -365,11 +410,11 @@
           "votes": 4594
         }
       ],
-      "figuresAsOf": "Unofficial results from the FOX61 live results page with 98.44% of the vote counted, as reported in search results on Nov. 16, 2026.",
-      "context": "Himes won a 10th term and is expected to chair the House Intelligence Committee in the new Democratic majority.",
+      "figuresAsOf": "Unofficial results as listed by Decision Desk HQ. Connecticut completed its official canvass on Nov. 25, 2026; certified totals are due in early 2027.",
+      "context": "Himes, first elected in 2008, won a 10th term and is expected to chair the House Intelligence Committee in the new Democratic majority.",
       "source": {
-        "title": "FOX61: Live election results, Nov. 3, 2026",
-        "url": "https://www.fox61.com/elections"
+        "title": "Decision Desk HQ: Connecticut U.S. House District 4, general election",
+        "url": "https://votes.decisiondeskhq.com/races/2026-11-03/connecticut-us-house-4-general-election"
       },
       "additionalSources": [
         {
@@ -379,12 +424,16 @@
         {
           "title": "WFSB: Himes wins reelection in Connecticut's 4th District",
           "url": "https://www.wfsb.com/2026/11/03/connecticuts-4th-congressional-district-three-way-race/"
+        },
+        {
+          "title": "Connecticut Secretary of the State: official canvass of the 2026 general election completed (Nov. 25, 2026)",
+          "url": "https://portal.ct.gov/sots/press-releases/2026-press-releases/connecticut-completes-official-canvass-of-2026-general-election-results"
         }
       ],
       "publishedDate": null,
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-27",
       "confidence": "medium",
-      "version": 2,
+      "version": 3,
       "history": [
         {
           "version": 1,
@@ -395,6 +444,11 @@
           "version": 2,
           "date": "2026-11-24",
           "note": "Second check 2026-11-24 against other published reports: partly confirmed (Patch, Connecticut Public, CT Mirror). Himes's reelection over Goldstein is confirmed, but the Nov. 4 AP call date, the vote shares, the 10th-term count, the expected Intelligence chairmanship and certification were not found. Not confirmed: AP call on Nov. 4, 2026 (an AP race-call item was found but it is undated and describes a ninth term, so it may be from 2024); Vote shares 65.58% / 32.51% / 1.91%: no 2026 percentages found; That this is his 10th term (consistent with first election in 2008, but not stated in the results); That Democrats won the House majority and that Himes is expected to chair the Intelligence Committee; Certification: no report found as of Nov. 24, 2026; no certified figures found."
+        },
+        {
+          "version": 3,
+          "date": "2026-11-27",
+          "note": "Checked against the primary source with ChatGPT (web browsing), relayed by the project owner on 2026-11-27 (batch 03): corrected, Medium confidence. Corrected: the Associated Press called the race for Himes at 9:58 p.m. on Nov. 3, 2026 (News 12, CT Insider), not Nov. 4. The unofficial figures are confirmed by Decision Desk HQ. Connecticut completed its canvass on Nov. 25; certified totals are due in early 2027."
         }
       ]
     },

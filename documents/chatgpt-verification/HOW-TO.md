@@ -36,6 +36,7 @@ What Claude does with your results:
 |---|---|---|---|
 | 01 | 12 | 2026-11-26 | 8 High (7 corrected to match the primary source, 1 verified), 4 Medium (2 dates unconfirmed, 2 resting partly on news reports) |
 | 02 | 12 | 2026-11-27 | 8 High (6 corrected, 2 verified), 4 Medium (James and Rogers rest partly on news reports, a Schumer remark reported by Reuters, California's result still unofficial). Ruffin withdrew on Nov. 22. |
+| 03 | 12 | 2026-11-27 | 5 High (S. 5653 passed the Senate Nov. 19 as an amendment to H.R. 2347; GRID Act text; SB 296; Wyden's bill; Himes), 7 Medium (election results stay unofficial until certified figures are checked; Fazio's reason rests on a news report). Michigan certified Nov. 23; Connecticut completed its canvass Nov. 25. |
 
 ChatGPT's replies are kept in `results/` (one file per batch) as the record of each check, and Claude's
 claim-by-claim decisions in `decisions/`. They are applied with `tools/import_chatgpt.py` (usage at the top of

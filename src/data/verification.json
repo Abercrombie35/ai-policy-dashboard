@@ -461,23 +461,23 @@
       "level": "high"
     },
     "cr-ct-gov-fazio-1": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Date corrected from May to April 21, 2026, the day the Senate passed SB 5 by 32-4 (CT Mirror). The vote and his federal-level reasoning are confirmed.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "His no vote on SB 5 on Apr. 21, 2026 (passed 32-4) is confirmed on the Senate roll call; his reason, that AI is better handled federally, is as reported by CT News Junkie, so Medium.",
       "sources": [
         {
-          "title": "CT Mirror: CT Senate passes AI regulation bill (April 21, 2026)",
-          "url": "https://ctmirror.org/2026/04/21/artificial-intelligence-regulation-senate-ct/"
+          "title": "Vote for SB-5 — Sequence Number 128",
+          "url": "https://www.cga.ct.gov/2026/VOTE/S/PDF/2026SV-00128-R00SB00005-SV.PDF"
         },
         {
-          "title": "CT News Junkie: AI regulation takes center stage as campaign issue",
+          "title": "CT News Junkie: AI regulation takes center stage as campaign issue (Sept. 24, 2026)",
           "url": "https://ctnewsjunkie.com/2026/09/24/ai-regulation-takes-center-stage-as-campaign-issue/"
-        },
-        {
-          "title": "CT News Junkie: 71% of voters want stricter AI guardrails, Q poll finds",
-          "url": "https://ctnewsjunkie.com/2026/10/01/71-of-voters-want-stricter-ai-guardrails-q-poll-finds/"
         }
-      ]
+      ],
+      "quote": "N | 36 | RYAN FAZIO",
+      "level": "medium"
     },
     "cr-ct-gov-fazio-2": {
       "result": "confirmed",
@@ -628,23 +628,19 @@
       ]
     },
     "cr-ct-house04-himes-1": {
-      "result": "corrected",
-      "checkedOn": "2026-11-24",
-      "note": "Date corrected to Oct. 21, 2026, the day of the Brookings \"AI on the Ballot\" event (Oct. 26 is the date of the news report). The statement is confirmed.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Confirmed in the Brookings transcript of the Oct. 21, 2026 event (\"the one real lever we have there ... is just slowing the dispersion of advanced chips into China\"), which now serves as the source.",
       "sources": [
         {
-          "title": "The Star (SCMP): Top Democrat says chip restrictions are 'key lever' for US AI edge over China",
-          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/26/top-democrat-says-chip-restrictions-are-key-lever-for-us-ai-edge-over-china"
-        },
-        {
-          "title": "South China Morning Post: Top Democrat says chip restrictions are key lever for US AI edge over China",
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3371692/top-democrat-says-chip-restrictions-are-key-lever-us-ai-edge-over-china"
-        },
-        {
-          "title": "Brookings: AI on the Ballot event transcript (Oct. 21, 2026)",
+          "title": "AI on the Ballot: Data Centers and the 2026 Midterms",
           "url": "https://www.brookings.edu/wp-content/uploads/2026/10/aiet_20261021_ai_midterms_transcript.pdf"
         }
-      ]
+      ],
+      "quote": "And the one real lever we have there, of course, is just slowing the dispersion of advanced chips into China.",
+      "level": "high"
     },
     "cr-ct-house04-himes-2": {
       "result": "confirmed",
@@ -2998,147 +2994,100 @@
       "level": "medium"
     },
     "result-ct-governor-2026": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Lamont's third-term win over Fazio and the AP call around 9:20 p.m. are confirmed, as is his 2018 win over Stefanowski; the vote shares, the 2022 opponent and certification were not found.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Confirmed: Lamont won (AP call 9:18 p.m. on Nov. 3, per WFSB); unofficial shares 59.6% to 40.4% (MultiState). Connecticut completed its official canvass on Nov. 25, 2026; its statement of vote, with certified totals, is due in early 2027.",
       "sources": [
         {
-          "title": "CT Mirror: Gov. Ned Lamont defeats Ryan Fazio, winning 3rd term",
-          "url": "https://ctmirror.org/2026/11/03/gov-ned-lamont-defeats-ryan-fazio-winning-3rd-term/"
-        },
-        {
-          "title": "WFSB: Lamont wins third term as Democrats expand majority in Connecticut legislature",
-          "url": "https://www.wfsb.com/2026/11/04/lamont-wins-historic-third-term-connecticut-governor/"
+          "title": "Connecticut Completes Official Canvass of 2026 General Election Results",
+          "url": "https://portal.ct.gov/sots/press-releases/2026-press-releases/connecticut-completes-official-canvass-of-2026-general-election-results"
         }
       ],
-      "unconfirmed": [
-        "Vote shares 59.6% / 40.4% (MultiState) and the earlier NBC count of 58.8% / 41.2%: no general-election percentages appeared in the results",
-        "That Lamont's 2022 win was also over Stefanowski (no 2022 race details in the results)",
-        "Certification: no report of the Connecticut state canvass found as of Nov. 24, 2026; no certified figures found"
-      ]
+      "quote": "The vote reports will go to the General Assembly for final acceptance in January.",
+      "level": "medium"
     },
     "result-ct-house-04-2026": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Himes's reelection over Goldstein is confirmed, but the Nov. 4 AP call date, the vote shares, the 10th-term count, the expected Intelligence chairmanship and certification were not found.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Corrected: the Associated Press called the race for Himes at 9:58 p.m. on Nov. 3, 2026 (News 12, CT Insider), not Nov. 4. The unofficial figures are confirmed by Decision Desk HQ. Connecticut completed its canvass on Nov. 25; certified totals are due in early 2027.",
       "sources": [
         {
-          "title": "Patch: CT 4th Congressional District race: Himes wins re-election",
-          "url": "https://patch.com/connecticut/across-ct/ct-4th-congressional-district-race-himes-wins-re-election"
-        },
-        {
-          "title": "Connecticut Public: Jim Himes and Michael Goldstein in CT 4th District race",
-          "url": "https://www.ctpublic.org/news/2026-10-27/jim-himes-ct-4th-distict-congress-michael-goldstein"
-        },
-        {
-          "title": "CT Mirror: Luke Bronin declares victory as CT Democrats anticipate sweep in U.S. House races",
-          "url": "https://ctmirror.org/2026/11/03/luke-bronin-declares-victory-as-ct-democrats-anticipate-sweep-in-u-s-house-races/"
+          "title": "Connecticut Completes Official Canvass of 2026 General Election Results",
+          "url": "https://portal.ct.gov/sots/press-releases/2026-press-releases/connecticut-completes-official-canvass-of-2026-general-election-results"
         }
       ],
-      "unconfirmed": [
-        "AP call on Nov. 4, 2026 (an AP race-call item was found but it is undated and describes a ninth term, so it may be from 2024)",
-        "Vote shares 65.58% / 32.51% / 1.91%: no 2026 percentages found",
-        "That this is his 10th term (consistent with first election in 2008, but not stated in the results)",
-        "That Democrats won the House majority and that Himes is expected to chair the Intelligence Committee",
-        "Certification: no report found as of Nov. 24, 2026; no certified figures found"
-      ]
+      "quote": "completes the state's formal canvass of congressional and legislative election results",
+      "level": "medium"
     },
     "result-mi-governor-2026": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Benson's win (AP call at 1:45 a.m., 53.7% to 44.6%, within a point of the listed shares), Whitmer's term limit and Duggan's May 21 exit are confirmed; the other outlets' calls, the Libertarian share and any certification (deadline Nov. 23) were not found.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Updated to Decision Desk HQ's final count: Benson 2,615,251 (54.57%), James 2,094,566 (43.71%), Hudson 44,497 (0.93%); Decision Desk HQ called it at 10:45 p.m. on Nov. 3. Michigan certified its results on Nov. 23, 2026, but the certified figures could not be opened, so the result stays Unofficial here.",
       "sources": [
         {
-          "title": "ClickOnDetroit: Jocelyn Benson wins Michigan governor race, AP projects",
-          "url": "https://www.clickondetroit.com/decision-2026/2026/11/04/jocelyn-benson-wins-michigan-governor-race-ap-projects/"
-        },
-        {
-          "title": "Axios Detroit: Duggan exits governor race",
-          "url": "https://www.axios.com/local/detroit/2026/05/21/mike-duggan-exits-governor-race"
-        },
-        {
-          "title": "Bridge Michigan: 2026 is a midterm election year, and all of Michigan's top state offices are up for grabs",
-          "url": "https://bridgemi.com/michigan-government/michigan-faces-a-huge-election-year-these-are-the-2026-races-to-watch/"
+          "title": "Michigan Board of State Canvassers certifies record-breaking 2026 General Election",
+          "url": "https://www.michigan.gov/sos/resources/news/2026/11/23/michigan-board-of-state-canvassers-certifies-record-breaking-2026-general-election"
         }
       ],
       "unconfirmed": [
-        "Specific calls by NBC News, The Washington Post, Decision Desk HQ and MultiState (the AP call was found instead)",
-        "Anthony Hudson's 0.93%",
-        "That Duggan's name was not on the November ballot (only that he ended his campaign in May)",
-        "Certification: the Board of State Canvassers' deadline was Nov. 23, 2026, but no report that it certified was found; no certified figures found"
-      ]
+        "Certified figures from the state's own results table"
+      ],
+      "quote": "the bipartisan Board of State Canvassers voted to certify Michigan’s 2026 General Election results",
+      "level": "medium"
     },
     "result-mi-senate-2026": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "El-Sayed's win, the AP (2:27 a.m.) and Fox calls, shares within about a point (51.9% to 46.1% at 85% counted) and Peters's retirement are confirmed; the Decision Desk HQ call, the Libertarian share and certification (deadline Nov. 23) were not found.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Confirmed: Fox's count (El-Sayed 52.54%, Rogers 45.46%, Christensen 1.04%) rounds to the shares shown; Fox and Decision Desk HQ called the race. Michigan certified its results on Nov. 23, 2026; the certified figures could not be opened.",
       "sources": [
         {
-          "title": "Michigan Advance: El-Sayed declares victory and storms into the US Senate",
-          "url": "https://michiganadvance.com/?p=115406"
-        },
-        {
-          "title": "ClickOnDetroit: Abdul El-Sayed wins Michigan US Senate race, AP projects",
-          "url": "https://www.clickondetroit.com/news/local/2026/11/04/abdul-el-sayed-wins-michigan-us-senate-race-ap-projects/"
-        },
-        {
-          "title": "FOX 32 Chicago: Abdul El-Sayed wins Michigan's Senate seat, beating Mike Rogers",
-          "url": "https://www.fox32chicago.com/news/abdul-el-sayed-mike-rogers-us-senate-michigan-2026-midterm"
+          "title": "Michigan Board of State Canvassers certifies record-breaking 2026 General Election",
+          "url": "https://www.michigan.gov/sos/resources/news/2026/11/23/michigan-board-of-state-canvassers-certifies-record-breaking-2026-general-election"
         }
       ],
-      "unconfirmed": [
-        "Exact Detroit News figures as of 2:30 p.m. Nov. 4, including Lydia Christensen's 1.0%",
-        "Decision Desk HQ call",
-        "Certification: Michigan's Board of State Canvassers had a Nov. 23, 2026 deadline, but no report that it certified was found; no certified figures found"
-      ]
+      "quote": "Certified election results are now available online",
+      "level": "medium"
     },
     "result-tx-governor-2026": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Hinojosa's win, Abbott's election-night concession and his bid for a fourth term are confirmed; the listed shares (only early returns of ~57% to 41.7% were found) and certification were not found.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Confirmed on the Texas Secretary of State's returns (including write-ins): Hinojosa 52.8% (5,230,789 votes), Abbott 45.7%, Dixon 1.5%. Still unofficial: the incoming Legislature canvasses the governor's race in January.",
       "sources": [
         {
-          "title": "KUTV: Hinojosa defeats Abbott, becomes first Democratic Texas governor since 1995",
-          "url": "https://kutv.com/news/nation-world/gov-greg-abbott-to-watch-election-day-results-in-austin"
-        },
-        {
-          "title": "FOX 4: Texas governor's race 2026: Hinojosa defeats Abbott to become state's first Democratic governor in decades",
-          "url": "https://www.fox4news.com/news/texas-governors-race-2026-hinojosa-defeats-abbott-become-states-first-democratic-governor-decades.amp"
-        },
-        {
-          "title": "KATU: Hinojosa defeats Abbott, becomes first Democratic Texas governor since 1995",
-          "url": "https://katu.com/news/nation-world/gov-greg-abbott-to-watch-election-day-results-in-austin"
+          "title": "Election Results — Tuesday, November 3, 2026",
+          "url": "https://electionresults.sos.state.tx.us/results.html"
         }
       ],
-      "unconfirmed": [
-        "Vote shares 52.8% / 45.7% / 1.5% (only early returns of about 57% to 41.7% were found, too early in the count to compare)",
-        "Pat Dixon's 1.5%",
-        "Certification: no report of the Texas state canvass for the governor's race found as of Nov. 24, 2026; no certified figures found"
-      ]
+      "quote": "DEMOCRATIC | GINA HINOJOSA | 5,230,789",
+      "level": "medium"
     },
     "result-tx-senate-2026": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Talarico's win, the election-night AP call, Paxton's same-night concession and Paxton's runoff win over Cornyn are confirmed, and a ~12.1-point margin at ~99% counted matches the listed shares, but the individual shares and any certification were not found.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Corrected: Ted Brown ran on the Libertarian line (190,237 votes). The shares (Talarico 55.1%, Paxton 43.0%, Brown 1.9%) are confirmed on the Texas Secretary of State's returns; AP called the race at about 10:04 p.m. and Paxton conceded before 10:30 p.m. Still unofficial.",
       "sources": [
         {
-          "title": "Click2Houston: Ken Paxton concedes Texas U.S. Senate race to James Talarico",
-          "url": "https://click2houston.com/decision-2026/2026/11/04/ken-paxton-concedes-texas-us-senate-race-to-james-talarico"
-        },
-        {
-          "title": "KSAT: James Talarico defeats Ken Paxton, giving Democrats their first US Senate win in Texas since 1988",
-          "url": "https://www.ksat.com/news/texas/2026/11/04/james-talarico-defeats-ken-paxton-giving-democrats-their-first-us-senate-win-in-texas-since-1988/"
-        },
-        {
-          "title": "Kalshi News: 2026 Texas Senate results: James Talarico defeats Ken Paxton",
-          "url": "https://news.kalshi.com/p/2026-texas-senate-results-james-talarico-defeats-ken-paxton"
+          "title": "Election Results — Tuesday, November 3, 2026",
+          "url": "https://electionresults.sos.state.tx.us/results.html"
         }
       ],
       "unconfirmed": [
-        "Exact shares 55.1% / 43.0% / 1.9% (only the ~12.1-point margin was found, not individual shares)",
-        "Ted Brown's 1.9%",
-        "Certification: no report found that the Texas state canvass has certified the result as of Nov. 24, 2026; no certified figures found"
-      ]
+        "Completion of the statewide canvass and certified figures"
+      ],
+      "quote": "LIBERTARIAN | TED BROWN | 190,237",
+      "level": "medium"
     },
     "tx-89r-hb149": {
       "result": "confirmed",
@@ -3274,23 +3223,19 @@
       ]
     },
     "tx-90r-sb296": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "The bill tracker and GovTech confirm Gutierrez's SB 296, filed Nov. 9, 2026, with a two-year pause, then local voter approval, plus annual payments to county residents in the caption; the quoted bill wording itself was not found.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Confirmed in the bill text as filed: a two-year pause on new or expanded data center connections, then local majority approval and yearly payments to host-county residents.",
       "sources": [
         {
-          "title": "FastDemocracy: TX SB 296 (90th Legislature) bill record",
-          "url": "https://fastdemocracy.com/bill-search/tx/90/bills/TXB00084833/"
-        },
-        {
-          "title": "GovTech: Texas lawmakers will scrutinize data center permitting costs",
-          "url": "https://www.govtech.com/artificial-intelligence/texas-lawmakers-will-scrutinize-data-center-permitting-costs"
+          "title": "90(R) SB 296 — Introduced version",
+          "url": "https://capitol.texas.gov/tlodocs/90R/billtext/pdf/SB00296I.pdf"
         }
       ],
-      "unconfirmed": [
-        "Exact quoted wording \"a utility may not energize a new or expanded electric service connection for a project\"",
-        "How the yearly payments to county residents work"
-      ]
+      "quote": "a utility may not energize a new or expanded electric service connection for a project",
+      "level": "high"
     },
     "tx-90r-sb33": {
       "result": "confirmed",
@@ -3483,26 +3428,19 @@
       ]
     },
     "us-s3852-grid-act": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "Hawley's office confirms a public electricity-usage reporting requirement, but no result describes five-year utility-use estimates; Blumenthal has said the bill text changed after introduction.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Corrected from the bill text: existing data centers keep grid power during a 10-year transition only while they hold a one-year \"Zero Rate Effect Certificate\"; planned sites would disclose utility-use estimates for their first year and the next five, existing sites for the current and next five years plus up to five past years. Introduced Feb. 11, 2026 by Hawley with Blumenthal.",
       "sources": [
         {
-          "title": "Sen. Hawley: Hawley, Blumenthal Introduce Bill to Prevent Data Centers from Increasing Electricity Costs for Americans",
-          "url": "https://www.hawley.senate.gov/hawley-blumenthal-introduce-bill-to-prevent-data-centers-from-increasing-electricity-costs-for-americans"
-        },
-        {
-          "title": "E&E News: Bipartisan bill would force data centers to find own power sources",
-          "url": "https://www.eenews.net/articles/bipartisan-bill-would-force-data-centers-to-find-own-power-sources"
-        },
-        {
-          "title": "NBC News: Senators introduce first bipartisan effort to curb utility bill hikes related to data centers",
-          "url": "https://www.nbcnews.com/politics/congress/senators-introduce-first-bipartisan-effort-curb-utility-bill-hikes-rel-rcna258577"
+          "title": "S. 3852 — Guaranteeing Rate Insulation from Data Centers Act",
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm"
         }
       ],
-      "unconfirmed": [
-        "That the disclosure takes the form of five-year utility-use estimates"
-      ]
+      "quote": "obtaining and maintaining an unexpired Zero Rate Effect Certificate",
+      "level": "high"
     },
     "us-s4213": {
       "result": "confirmed",
@@ -3562,49 +3500,45 @@
       ]
     },
     "us-s5653": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "S. 5653 has cleared procedural votes but awaits final Senate passage; no source shows Heinrich or Trump saying it codifies the Ratepayer Protection Pledge, which coverage links instead to the separate Ratepayer Protection Act.",
+      "result": "corrected",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Corrected: S. 5653 was introduced Sept. 30, 2026 by Sen. Shelley Moore Capito (R) with Sens. Lee (R), Whitehouse (D) and Heinrich (D). The Senate voted on the package as an amendment to H.R. 2347: cloture 73-25 on Nov. 9, then passage 62-33 on Nov. 19, sending it back to the House. The White House says it puts the Ratepayer Protection Pledge into law; Heinrich's own codification wording was not found.",
       "sources": [
         {
-          "title": "OPB: Senate advances sweeping energy legislation in first major action since midterm elections",
-          "url": "https://www.opb.org/article/2026/11/09/senate-advances-sweeping-energy-legislation-in-first-major-action-since-midterm-elections/"
+          "title": "Thursday, November 19, 2026 — U.S. Senate Daily Press",
+          "url": "https://www.dailypress.senate.gov/thursday-november-19-2026/"
         },
         {
-          "title": "Axios: The path ahead for the permitting bill",
-          "url": "https://axios.com/2026/11/10/baaja-permitting-bill-senate"
+          "title": "The White House: Statement of administration policy on S. 5653 (Nov. 2026)",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf"
         },
         {
-          "title": "CRS (EveryCRSReport): Bipartisan American Affordability and Jobs Act (BAAJA) of 2026: Summary of All Sections",
-          "url": "https://www.everycrsreport.com/reports/R49506.html"
+          "title": "GovInfo: S. 5653 (introduced Sept. 30, 2026)",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s5653is"
         }
       ],
       "unconfirmed": [
-        "That Heinrich and Trump say the bill codifies the White House Ratepayer Protection Pledge (results tie the pledge to the separate Ratepayer Protection Act, which Heinrich opposed in Sept. 2026)",
-        "Critics' 'giveaway to the industry' wording for the data center provisions"
-      ]
+        "Heinrich personally saying it codifies the Ratepayer Protection Pledge"
+      ],
+      "quote": "By a vote of 62 to 33, the Senate passed H.R.2347, Bipartisan American Affordability and Jobs Act of 2026, as amended.",
+      "level": "high"
     },
     "us-s5658": {
-      "result": "partly-confirmed",
-      "checkedOn": "2026-11-24",
-      "note": "S. 5658 and Wyden's Oct. 1 announcement of a public-lands data center ban match in timing and substance, but no result explicitly names Wyden on the S. 5658 record.",
+      "result": "confirmed",
+      "checkedOn": "2026-11-27",
+      "method": "chatgpt-primary-source",
+      "relay": "03",
+      "note": "Confirmed in the bill text: introduced by Sen. Ron Wyden (D) on Sept. 30, 2026 and referred to Energy and Natural Resources; it covers National Forest System and Interior-managed land, excluding specified Tribal lands.",
       "sources": [
         {
-          "title": "Quiver Quantitative: S. 5658",
-          "url": "https://www.quiverquant.com/bills/119/s-5658"
-        },
-        {
-          "title": "Common Dreams: Wyden data center amendment",
-          "url": "https://www.commondreams.org/news/wyden-data-center-amendment"
-        },
-        {
-          "title": "Salt Lake Tribune: Democrats move to ban data centers on public lands (Nov. 19, 2026)",
-          "url": "https://www.sltrib.com/news/politics/2026/11/19/democrats-move-ban-data-centers/"
+          "title": "S. 5658 — To prohibit the construction of data centers on Federal land, and for other purposes",
+          "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5658is/xhtml/BILLS-119s5658is.html"
         }
       ],
-      "unconfirmed": [
-        "A bill record naming Wyden as the sponsor of S. 5658 (trackers in the results don't name the sponsor, and Wyden coverage doesn't give the bill number)"
-      ]
+      "quote": "Mr. Wyden introduced the following bill; which was read twice and referred to the Committee on Energy and Natural Resources",
+      "level": "high"
     },
     "us-states-right-to-regulate-ai": {
       "result": "confirmed",
@@ -3882,6 +3816,13 @@
     },
     {
       "batch": "02",
+      "date": "2026-11-27",
+      "claims": 12,
+      "tool": "ChatGPT (web browsing)",
+      "relayedBy": "project owner"
+    },
+    {
+      "batch": "03",
       "date": "2026-11-27",
       "claims": 12,
       "tool": "ChatGPT (web browsing)",
